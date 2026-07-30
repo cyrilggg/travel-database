@@ -23,7 +23,7 @@
 
 ## 行前入口
 
-- 全省文旅公告与景区信息：[青海省文化和旅游厅](https://whlyt.qinghai.gov.cn/)
+- 全省文旅公告与景区信息：[文化和旅游部青海信息页](https://www.mct.gov.cn/whzx/qgwhxxlb/qh/)
 - 公路路况与运输公告：[青海省交通运输厅](https://jtyst.qinghai.gov.cn/)
 - 天气预报与预警：[青海省气象局](http://qh.cma.gov.cn/)
 - 铁路车次与车站服务：[中国铁路 12306](https://www.12306.cn/)
