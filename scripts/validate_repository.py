@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate researched city guides and the sparse China coverage ledger."""
+"""Validate researched guides and both sparse China coverage ledgers."""
 
 from __future__ import annotations
 
@@ -43,6 +43,7 @@ PLACEHOLDER_PATTERNS = (
     re.compile(r"\bTODO\b", re.IGNORECASE),
     re.compile(r"<!--.*?-->", re.DOTALL),
 )
+MOJIBAKE_MARKERS = ("ä¸", "å±", "æ—", "ç›", "â€", "Ã", "Â")
 DIALOGUE_HEADING = re.compile(r"^#{2,3}\s+(?:先|怎样|怎么|是否|适不适合)")
 FRONT_MATTER_LINE = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*):\s*(.*?)\s*$")
 LOCAL_LINK = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
@@ -88,15 +89,25 @@ def validate_headings(path: Path, text: str, errors: list[str]) -> None:
     headings = [line[3:].strip() for line in text.splitlines() if line.startswith("## ")]
     positions: list[int] = []
     for heading in REQUIRED_HEADINGS:
-        if heading not in headings:
+        count = headings.count(heading)
+        if count == 0:
             errors.append(f"{path}: missing required heading '## {heading}'")
             continue
+        if count > 1:
+            errors.append(f"{path}: duplicate required heading '## {heading}'")
         positions.append(headings.index(heading))
     if len(positions) == len(REQUIRED_HEADINGS) and positions != sorted(positions):
         errors.append(f"{path}: required headings are out of order")
+    unexpected = [heading for heading in headings if heading not in REQUIRED_HEADINGS]
+    if unexpected:
+        errors.append(
+            f"{path}: unexpected H2 headings: " + ", ".join(repr(item) for item in unexpected)
+        )
 
 
 def validate_copy(path: Path, text: str, errors: list[str]) -> None:
+    if "中国" in path.parts and any(marker in text for marker in MOJIBAKE_MARKERS):
+        errors.append(f"{path}: contains likely UTF-8 mojibake")
     for phrase in BANNED_PHRASES:
         if phrase in text:
             errors.append(f"{path}: contains banned personalized/workflow phrase {phrase!r}")
@@ -134,7 +145,120 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
-def validate_repository(repository: Path, snapshot_date: str) -> dict[str, object]:
+def validate_legal_city_ledger(
+    repository: Path,
+    snapshot_date: str,
+    city_pages: dict[str, tuple[Path, dict[str, str]]],
+    errors: list[str],
+) -> dict[str, object]:
+    snapshot = repository / "coverage" / "legal-cities" / snapshot_date
+    if not snapshot.is_dir():
+        return {"available": False, "snapshot_date": snapshot_date}
+
+    inventory_rows = read_csv(snapshot / "inventory" / "CN-legal-cities.csv")
+    decisions = read_csv(snapshot / "decisions" / "CN.csv")
+    inventory: dict[str, dict[str, str]] = {}
+    for row_number, row in enumerate(inventory_rows, start=2):
+        code = row.get("administrative_code", "")
+        label = f"{snapshot / 'inventory' / 'CN-legal-cities.csv'}:{row_number}"
+        if not re.fullmatch(r"\d{6}", code):
+            errors.append(f"{label}: invalid six-digit administrative_code {code!r}")
+            continue
+        if code in inventory:
+            errors.append(f"{label}: duplicate legal-city administrative_code {code}")
+            continue
+        if row.get("source_cutoff") != snapshot_date:
+            errors.append(f"{label}: source_cutoff does not match snapshot directory")
+        if row.get("city_level") not in {
+            "direct_municipality",
+            "prefecture_level_city",
+            "county_level_city",
+        }:
+            errors.append(f"{label}: invalid city_level {row.get('city_level')!r}")
+        inventory[code] = row
+
+    decisions_by_code: dict[str, dict[str, str]] = {}
+    mapped_geonames: dict[str, str] = {}
+    level_counts = {
+        level: 0
+        for level in (
+            "direct_municipality",
+            "prefecture_level_city",
+            "county_level_city",
+        )
+    }
+    for row_number, row in enumerate(decisions, start=2):
+        code = row.get("administrative_code", "")
+        label = f"{snapshot / 'decisions' / 'CN.csv'}:{row_number}"
+        if code in decisions_by_code:
+            errors.append(f"{label}: duplicate legal-city decision for {code}")
+            continue
+        decisions_by_code[code] = row
+        inventory_row = inventory.get(code)
+        if inventory_row is None:
+            errors.append(f"{label}: administrative_code is not present in legal-city inventory")
+            continue
+        if row.get("status") != "researched":
+            errors.append(f"{label}: legal-city completed status must be 'researched'")
+            continue
+        for key in (
+            "page_path",
+            "geonameid",
+            "reviewed_by",
+            "reviewed_at",
+            "quality_gate_version",
+        ):
+            if not row.get(key):
+                errors.append(f"{label}: missing {key}")
+        if row.get("reviewed_at"):
+            parse_iso_date(row["reviewed_at"], label, errors)
+        geonames_id = row.get("geonameid", "")
+        if geonames_id in mapped_geonames:
+            errors.append(
+                f"{label}: geonameid {geonames_id} is already mapped from legal city "
+                f"{mapped_geonames[geonames_id]}"
+            )
+        else:
+            mapped_geonames[geonames_id] = code
+        raw_page_path = row.get("page_path", "")
+        page_path = repository / Path(raw_page_path)
+        if not raw_page_path or not page_path.is_file():
+            errors.append(f"{label}: researched page does not exist: {raw_page_path!r}")
+            continue
+        page = city_pages.get(geonames_id)
+        if page is None or page[0].resolve() != page_path.resolve():
+            errors.append(f"{label}: page front matter does not match geonameid/path")
+            continue
+        front_matter = page[1]
+        if front_matter.get("country_code") != "CN":
+            errors.append(f"{label}: legal-city page is not a CN page")
+        if front_matter.get("city") != inventory_row.get("name"):
+            errors.append(
+                f"{label}: page city {front_matter.get('city')!r} does not match "
+                f"legal-city name {inventory_row.get('name')!r}"
+            )
+        level = inventory_row.get("city_level", "")
+        if level in level_counts:
+            level_counts[level] += 1
+
+    processed = sum(level_counts.values())
+    return {
+        "available": True,
+        "snapshot_date": snapshot_date,
+        "inventory_count": len(inventory),
+        "decision_count": len(decisions_by_code),
+        "researched_count": processed,
+        "unprocessed_count": len(inventory) - processed,
+        "completion_fraction": processed / len(inventory) if inventory else 0.0,
+        "researched_counts_by_city_level": level_counts,
+    }
+
+
+def validate_repository(
+    repository: Path,
+    snapshot_date: str,
+    legal_snapshot_date: str = "2025-12-31",
+) -> dict[str, object]:
     errors: list[str] = []
     destinations = repository / "destinations"
     city_pages: dict[str, tuple[Path, dict[str, str]]] = {}
@@ -150,6 +274,7 @@ def validate_repository(repository: Path, snapshot_date: str) -> dict[str, objec
         except ValidationFailure as exc:
             errors.append(str(exc))
             continue
+        validate_copy(path, text, errors)
         if not front_matter:
             validate_internal_links(repository, path, text, errors)
             continue
@@ -185,7 +310,6 @@ def validate_repository(repository: Path, snapshot_date: str) -> dict[str, objec
         if front_matter.get("last_researched"):
             parse_iso_date(front_matter["last_researched"], str(path), errors)
         validate_headings(path, text, errors)
-        validate_copy(path, text, errors)
         validate_internal_links(repository, path, text, errors)
 
     snapshot = repository / "coverage" / "geonames" / snapshot_date
@@ -249,6 +373,9 @@ def validate_repository(repository: Path, snapshot_date: str) -> dict[str, objec
             if not decision or decision.get("status") != "researched":
                 errors.append(f"{path}: researched CN page lacks a researched decision row")
 
+    legal_city_coverage = validate_legal_city_ledger(
+        repository, legal_snapshot_date, city_pages, errors
+    )
     processed = sum(status_counts.values())
     return {
         "schema_version": 1,
@@ -261,6 +388,7 @@ def validate_repository(repository: Path, snapshot_date: str) -> dict[str, objec
         "status_counts": status_counts,
         "phase_status_counts": phase_counts,
         "researched_page_count_all_countries": len(city_pages),
+        "legal_city_coverage": legal_city_coverage,
         "errors": errors,
     }
 
@@ -269,6 +397,7 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repository", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--snapshot-date", default="2026-07-30")
+    parser.add_argument("--legal-snapshot-date", default="2025-12-31")
     parser.add_argument("--json", action="store_true", help="print the complete report as JSON")
     return parser.parse_args(argv)
 
@@ -276,7 +405,9 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
 def main(argv: Iterable[str] | None = None) -> int:
     args = parse_args(argv)
     try:
-        report = validate_repository(args.repository.resolve(), args.snapshot_date)
+        report = validate_repository(
+            args.repository.resolve(), args.snapshot_date, args.legal_snapshot_date
+        )
     except (OSError, ValidationFailure) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
@@ -287,6 +418,12 @@ def main(argv: Iterable[str] | None = None) -> int:
             f"CN coverage: {report['processed_count']}/{report['inventory_count']} processed; "
             f"researched pages across all countries: {report['researched_page_count_all_countries']}"
         )
+        legal = report["legal_city_coverage"]
+        if legal["available"]:
+            print(
+                f"CN legal cities: {legal['researched_count']}/"
+                f"{legal['inventory_count']} researched"
+            )
         for error in report["errors"]:
             print(f"error: {error}", file=sys.stderr)
     return 1 if report["errors"] else 0

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行政区划代码</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link href="base/layui/css/layui.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+    <link href="css/resource.css?v=202601305" rel="stylesheet" type="text/css"/>
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="css/headers.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="css/indexMobile.css" rel="stylesheet" type="text/css"/>
+    <link href="css/listMobile.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link href="css/xzqh.css?v=20260205" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="header">
+
+</div>
+<div class="content content-list">
+    <div class="content-title">
+        <a>当前位置：</a><a href="index.html">首页</a><a>></a><a href="XzqhVersionPublish.html">行政区划代码</a>
+        <a class="showClose" style="float: right;display: none;" onclick="closeList()">返回</a>
+    </div>
+    <div class="choosePolar tree" style="display: none;border-radius: 5px;">
+        <div class="backcolor cntn1 other1" onclick="event.cancelBubble = true" style="background-color:#388aff">
+            <div id="xzqhTree"></div>
+        </div>
+    </div>
+    <div class="list showInfos" style="display: none;">
+        <div class="condition" style="font-size: 16px;padding-top: 30px;padding-bottom: 20px">
+            行政区划名称：<input type="text" id="areaName" name="title" class="layui-input condition-input titles">
+            行政区划代码：<input type="text" id="areaCode" name="title" class="layui-input condition-input titles">
+            <button class="searchCode btn-warning"><i class="iconfont icon-sousuo"></i>搜索</button>
+            <button class="reset btn-warning">重置</button>
+        </div>
+        <div class="tableTitle">
+            <div class="tTitle lefts">行政区划名称</div>
+            <div class="tTitle">所在行政区</div>
+            <div class="tTitle rights">行政区划代码</div>
+        </div>
+        <div class="tableDiv">
+            <table class="layui-table">
+                <colgroup class="first">
+                    <col width="40%">
+                    <col width="30%">
+                    <col width="30%">
+                </colgroup>
+                <colgroup class="second">
+                    <col width="40%">
+                    <col width="40%">
+                    <col width="20%">
+                </colgroup>
+                <tbody class="list-content xzqhList">
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination" id="pagination2">
+
+        </div>
+    </div>
+    <div class="list list2 showLists">
+        <input type="text" name="placeName" class="placeName" lay-verify="title" style="font-size: 1.3rem;height: 3.5rem;"
+               autocomplete="off" placeholder="请输入行政区划名称或行政区划代码">
+        <div class="searchBtn iconfont icon-sousuo" style="height: 3.5rem;line-height: 3.5rem;"></div>
+        <div class="btns">
+            <div class="provinceBtn" code="11" val="北京市">北京</div><div class="provinceBtn" code="12" val="天津市">天津</div><div class="provinceBtn" code="13" val="河北省">河北</div>
+            <div class="provinceBtn" code="14" val="山西省">山西</div><div class="provinceBtn" code="15" val="内蒙古自治区">内蒙古</div><div class="provinceBtn" code="21" val="辽宁省">辽宁</div>
+            <div class="provinceBtn" code="22" val="吉林省">吉林</div><div class="provinceBtn" code="23" val="黑龙江省">黑龙江</div><div class="provinceBtn" code="31" val="上海市">上海</div>
+            <div class="provinceBtn" code="32" val="江苏省">江苏</div><div class="provinceBtn" code="33" val="浙江省">浙江</div><div class="provinceBtn" code="34" val="安徽省">安徽</div>
+            <div class="provinceBtn" code="35" val="福建省">福建</div><div class="provinceBtn" code="36" val="江西省">江西</div><div class="provinceBtn" code="37" val="山东省">山东</div>
+            <div class="provinceBtn" code="41" val="河南省">河南</div><div class="provinceBtn" code="42" val="湖北省">湖北</div><div class="provinceBtn" code="43" val="湖南省">湖南</div>
+            <div class="provinceBtn" code="44" val="广东省">广东</div><div class="provinceBtn" code="45" val="广西壮族自治区">广西</div><div class="provinceBtn" code="46" val="海南省">海南</div>
+            <div class="provinceBtn" code="50" val="重庆市">重庆</div><div class="provinceBtn" code="51" val="四川省">四川</div><div class="provinceBtn" code="52" val="贵州省">贵州</div>
+            <div class="provinceBtn" code="53" val="云南省">云南</div><div class="provinceBtn" code="54" val="西藏自治区">西藏</div><div class="provinceBtn" code="61" val="陕西省">陕西</div>
+            <div class="provinceBtn" code="62" val="甘肃省">甘肃</div><div class="provinceBtn" code="63" val="青海省">青海</div><div class="provinceBtn" code="64" val="宁夏回族自治区">宁夏</div>
+            <div class="provinceBtn" code="65" val="新疆维吾尔自治区">新疆</div><div class="provinceBtn" code="81" val="香港特别行政区">香港</div>
+            <div class="provinceBtn" code="82" val="澳门特别行政区">澳门</div><div class="provinceBtn" code="资料暂缺" val="台湾省">台湾</div>
+        </div>
+        <div class="showLocalTips" style="font-size: 1.1rem;margin-top: 7rem;">
+            <p style="text-align: center;font-size: 1.3rem;font-weight: bold;letter-spacing: 15px;margin-right: 1rem;">说明</p>
+            <p style="text-indent: 2rem;">根据《行政区划代码管理办法》，本库发布的行政区划代码信息包括全国省、地、县、乡四级行政区划建制的行政区划代码。数据截止日期为2025年12月31日。省级、地级、县级行政区划建制的行政区划代码由国务院民政部门确定，乡级行政区划建制的行政区划代码由省、自治区、直辖市人民政府民政部门确定。</p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+
+</div>
+<script src="base/jquery-3.6.0.min.js"></script>
+<script src="base/layui/layui.js"></script>
+<script src="common/common.js"></script>
+<script src="common/baseUrl.js"></script>
+<script>
+    let pageSize = 20,localData = null,tableName = 'Xzqh20251231',code = '',areaType = 2,clickType = 2,
+        cityName = null,areaName = null,name = null,isCheck = null;
+    $(function () {
+        $("a").click(function () {
+            sessionStorage.setItem('status',1);
+        })
+        $(window).bind('beforeunload',function () {
+            if(sessionStorage.getItem('status') == 2){
+                sessionStorage.setItem('status',3);
+            }
+        })
+        isCheck = sessionStorage.getItem('status');
+        setTree();
+        // getVersionList();
+        if(isCheck == 3){
+            $('.showInfos').css("display","block");
+            $(".showLists").css("display","none");
+            $('.tree').css("display","block");
+            $('.showClose').css("display","block");
+            code = "";
+            areaType = 2;
+        }
+        $(".provinceBtn").click(function(){
+            sessionStorage.setItem('status',2);
+            $('.showInfos').css("display","block");
+            $(".showLists").css("display","none");
+            $('.tree').css("display","block");
+            $('.showClose').css("display","block");
+
+            let name = $(this).attr("val");
+            code = $(this).attr("code");
+            $(".layui-tree-txt").each(function(){
+                let content = $(this).html();
+                if(content == name){
+                    clickType = 1;
+                    $(this).click();
+                    getXzqhList(1,pageSize);
+                }
+            })
+        })
+        $(".searchBtn").click(function () {
+            sessionStorage.setItem('status',2);
+            $('.showInfos').css("display","block");
+            $(".showLists").css("display","none");
+            $('.tree').css("display","block");
+            $('.showClose').css("display","block");
+            //加入查询内容并进行查询
+            let content = $(".placeName").val();
+            if(isNumeric(content)){
+                $("#areaCode").val(content);
+            }else{
+                $("#areaName").val(content);
+            }
+            code = "";
+            if(content==null||content.length==0){
+                code = "11";
+            }
+            areaType = null;
+            getXzqhList(1,pageSize);
+            $(".placeName").val('');
+        })
+        $(".placeName").keyup(function(event){
+            if(event.which === 13){
+                sessionStorage.setItem('status',2);
+                $('.showInfos').css("display","block");
+                $(".showLists").css("display","none");
+                $('.tree').css("display","block");
+                $('.showClose').css("display","block");
+                //重置树
+                $(".layui-tree-entry").css("background-color","#388aff");
+                setTree();
+                //加入查询内容并进行查询
+                let content = $(".placeName").val();
+                if(isNumeric(content)){
+                    $("#areaCode").val(content);
+                }else{
+                    $("#areaName").val(content);
+                }
+                code = "";
+                if(content==null||content.length==0){
+                    code = "11";
+                }
+                areaType = null;
+                getXzqhList(1,pageSize);
+                $(".placeName").val('');
+            }
+        });
+        $(".searchCode").click(function () {
+            let cd = $("#areaCode").val();
+            let nn = $("#areaName").val();
+            if(code.length==0&&cd.length==0&&nn.length==0){
+                areaType = 2;
+            }else{
+                areaType = null;
+            }
+            getXzqhList(1,pageSize);
+        })
+        $("#areaName").keyup(function(event){
+            if(event.which === 13){
+                let cd = $("#areaCode").val();
+                let nn = $("#areaName").val();
+                if(code.length==0&&cd.length==0&&nn.length==0){
+                    areaType = 2;
+                }else{
+                    areaType = null;
+                }
+                getXzqhList(1,pageSize);
+            }
+        });
+        $("#areaCode").keyup(function(event){
+            if(event.which === 13){
+                let cd = $("#areaCode").val();
+                let nn = $("#areaName").val();
+                if(code.length==0&&cd.length==0&&nn.length==0){
+                    areaType = 2;
+                }else{
+                    areaType = null;
+                }
+                getXzqhList(1,pageSize);
+            }
+        });
+        $(".reset").click(function () {
+            $("#areaCode").val('');
+            $("#areaName").val('');
+            code = "11";
+            areaType = 2;
+            //重置树
+            $(".layui-tree-entry").css("background-color","#388aff");
+            setTree();
+            //清空列表
+            $(".xzqhList").html('');
+            //展开默认点开树据
+            // getXzqhList(1,pageSize);
+            // areaType = 2;
+        })
+    })
+    function setTree(){
+        layui.use(['tree', 'laytpl', 'layer','carousel'], function() {
+            var tree = layui.tree;
+            var laytpl = layui.laytpl;
+            var layer = layui.layer;
+            var carousel = layui.carousel;
+            getXzqhData(function(xzqhData){
+                //渲染
+                var inst1 = tree.render({
+                    elem: '#xzqhTree', //绑定元素
+                    data: convertData([xzqhData.data]),
+                    click: function(obj) {
+                        $("#areaCode").val('');
+                        $("#areaName").val('');
+                        //var id = obj.data.id;
+                        code = obj.data.id;
+                        let nodes = document.getElementsByClassName("layui-tree-txt");
+                        for (var i = 0; i < nodes.length; i++) {
+                            nodes[i].style.color = "#fff";//灰色
+                        }
+                        if(clickType == 2&&areaType!=null){
+                            areaType = 3;
+                            getXzqhList(1,pageSize);
+                        }
+                        areaType = 2;
+                        clickType = 2;
+                        $(".layui-tree-entry").click(function () {
+                            let i = $(".layui-tree-entry").index(this);
+                            $(".layui-tree-entry").css("background-color","#388aff");
+                            $(".layui-tree-entry").eq(i).css("background-color","#1670ea")
+                        })
+                    }
+                    ,accordion: true
+                    ,isJump: true
+                    ,showLine: false  //是否开启连接线
+                });
+                if(isCheck == 3){
+                    isCheck = 2;
+                    code = "11";
+                    sessionStorage.setItem('status',2);
+                    getXzqhList(1,pageSize);
+                }
+                $(".layui-tree-set").each(function(){
+                    let id = $(this).attr("data-id");
+                    if(id.length==2){
+                        id = id + "0000";
+                    }
+                    if(id.length==4){
+                        id = id + "00";
+                    }
+                    if(id=="81"||id=="82"||id=="71"||id=="资料暂缺"){
+                        $(this).css("padding-left","10px");
+                    }
+                    let className = $(this).children("div").children("div").children(".layui-tree-txt").html();
+                    $(this).find(".layui-tree-txt").eq(0).addClass(id+className);
+                })
+                $(".layui-tree-entry").eq(0).css("display","none");
+            });
+        });
+    }
+    function closeList(){
+        sessionStorage.setItem('status',1);
+        $('.showInfos').css("display","none");
+        $(".showLists").css("display","block");
+        $('.tree').css("display","none");
+        $('.showClose').css("display","none");
+        $("#areaCode").val('');
+        $("#areaName").val('');
+    }
+    function getXzqhList(page,size){
+        $('html, body').stop(true, true);
+        let tn = tableName;
+        let url = "xzqh/getCodeList";
+        let cd = $("#areaCode").val();
+        let nn = $("#areaName").val();
+        let pcd = code;
+        if(cd.length!=0||nn.length!=0){
+            clickType = 1;
+            areaType = null;
+            pcd = '';
+            //重置树
+            $(".layui-tree-entry").css("background-color","#388aff");
+            setTree();
+        }else if(areaType == null){
+            areaType = 2;
+        }
+        if(areaType != null){
+            $(".pagination").css("display","none");
+        }else{
+            $(".pagination").css("display","block");
+        }
+        if(areaType == 3&&code.length>2){
+            $(".list-content").html('');
+            url = "xzqh/getCodeList2"
+        }
+        $.ajax({
+            url: url,
+            data: {
+                parentCode: pcd,
+                placeCode: cd,
+                title: nn,
+                tableName: tn,
+                type: areaType,
+                pageNum: page,
+                pageSize: size
+            },
+            type: "POST",
+            dataType: "json",
+            success: function (e) {
+                if(e.status==200){
+                    if(areaType == null){
+                        setPage(e.total,page)
+                    }
+                    $(".xzqhList").html('');let content = '';
+                    if(e.data.length==0){
+                        return false;
+                    }
+                    localData = e.data;
+                    for(let i in e.data){
+                        let item = e.data[i];
+                        let nn = "/"+item.name;
+                        let n1 = item.namePath.split("全国/").join("");
+                        let np = n1.split(nn).join("");let m = "mores1";
+                        let cent = '<td class="left moveRight tct" aria-label="'+np+'">'+np+'</td>';
+                        if(areaType == null){
+                            m = "";
+                        }
+                        // if(areaType==1){
+                        //     $(".first").css("display","contents");
+                        //     $(".second").css("display","none");
+                        //     cent = '';
+                        // }else{
+                        // }
+                        if(item.code.substr(0,6) == code){
+                            m = m + " mores2"
+                        }
+                        if(item.level == 1){
+                            cent = '<td class="left moveRight tct" aria-label="'+np+'"></td>';
+                            if(item.name=="台湾省"){
+                                content = content + '<tr><td class="left tct moveRight moreColor" aria-label="'+item.name+'" style="font-size: 1.5rem;font-weight: bold;">'+item.name+'</td>' +
+                                    cent+'<td class="left">资料暂缺</td></tr>';
+                            }else{
+                                content = content + '<tr><td class="left tct moveRight moreColor" aria-label="'+item.name+'" style="font-size: 1.5rem;font-weight: bold;">'+item.name+'</td>' +
+                                    cent+'<td class="left">'+item.code.substr(0,6)+'</td></tr>';
+                            }
+                        }else if(item.level == 2){
+                            if(code != item.code.substr(0,6)&&code.substr(0,4) == item.code.substr(0,4)&&item.code.substr(0,6).endsWith("00")){
+                                m = m + " mores2"
+                            }
+                            if(areaType==null){
+                                content = content + '<tr class="otherTwo" code="'+item.code.substr(0,6)+'" name="'+item.name+'"><td class="left moveRight tct moreColor" ' +
+                                    'code="'+item.code.substr(0,6)+'" level="'+item.level+'" ' +
+                                    'aria-label="'+item.name+'" style="font-size: 1.45rem;font-weight: bold;"><div class="showTips '+m+'">'+item.name+'</div></td>' +
+                                    cent+'<td class="left">'+item.code.substr(0,6)+'</td></tr>';
+                            }else{
+                                content = content + '<tr class="otherTwo" code="'+item.code.substr(0,6)+'" name="'+item.name+'"><td class="clickFun left moveRight tct moreColor" ' +
+                                    'code="'+item.code.substr(0,6)+'" level="'+item.level+'" ' +
+                                    'aria-label="'+item.name+'" style="font-size: 1.45rem;font-weight: bold;"><div class="showTips '+m+'">'+item.name+'</div></td>' +
+                                    cent+'<td class="left">'+item.code.substr(0,6)+'</td></tr>';
+                            }
+                        }else if(item.level == 3){
+
+                            let tt = "otherThree",m2 = "mores1";
+                            if(item.parentCode.substr(2,10)=="0000000000"){
+                                tt = "dicCode";
+                            }
+                            for(let i in localData){
+                                if(localData[i].parentCode == item.code){
+                                    m2 = m2 + "mores2"
+                                }
+                            }
+                            if(areaType==null){
+                                content = content + '<tr class="otherTwo '+tt+'" code="'+item.code.substr(0,6)+'" name="'+item.name+'"><td class="left moveRight tct" ' +
+                                    'code="'+item.code.substr(0,6)+'" level="'+item.level+'" ' +
+                                    'aria-label="'+item.name+'" style="font-size: 1.4rem;font-weight: bold;"><div class="showTips '+m2+'">'+item.name+'</div></td>' +
+                                    cent+'<td class="left">'+item.code.substr(0,6)+'</td></tr>';
+                            }else{
+                                content = content + '<tr class="otherTwo '+tt+'" code="'+item.code.substr(0,6)+'" name="'+item.name+'"><td class="clickFun left moveRight tct" ' +
+                                    'code="'+item.code.substr(0,6)+'" level="'+item.level+'" ' +
+                                    'aria-label="'+item.name+'" style="font-size: 1.4rem;font-weight: bold;"><div class="showTips '+m2+'">'+item.name+'</div></td>' +
+                                    cent+'<td class="left">'+item.code.substr(0,6)+'</td></tr>';
+                            }
+                            //content = content + '<tr class="otherTwo otherThree" code="'+item.code.substr(0,6)+'" name="'+item.name+'"><td class="left moveRight tct lThree" ' +
+                            //    'code="'+item.code.substr(0,6)+'" onclick="getXzqhList2('+item.code.substr(0,6)+','+item.level+')" code="'+item.code.substr(0,6)+'" ' +
+                            //    'aria-label="'+item.name+'" style="font-size: 1.4rem;font-weight: bold;"><div class="showTips '+m+'">'+item.name+'</div></td>' +
+                            //    cent+'<td class="left">'+item.code.substr(0,6)+'</td></tr>';
+                        }else{
+                            let tt = "level3";
+                            if(item.parentCode.substr(4,10)=="00000000"){
+                                tt = "otherTwo";
+                            }
+                            if(item.code.substr(0,9)!="632823105"&&item.code.substr(0,9)!="632823106"){
+                                content = content + '<tr class="otherThree '+tt+'"><td class="left moveRight tct" aria-label="'+item.name+'" style="font-size: 1.3rem;">'+item.name+'</td>' +
+                                    cent+'<td class="left">'+item.code+'</td></tr>';
+                            }
+                        }
+                    }
+                    $(".xzqhList").html(content);
+                    $('.dicCode').off('click');
+                    $(".dicCode").click(function () {
+                        $(".mores1").removeClass("mores2");
+                        $(".otherThree").remove();
+                    })
+                    $('.clickFun').off('click');
+                    $(".clickFun").click(function(){
+                        let cdd = $(this).attr("code");
+                        let level = $(this).attr("level");
+                        getXzqhList2(cdd,level);
+                    })
+                }
+            },
+            complete: function(xhr, status) {
+                $(".otherTwo").each(function(){
+                    let code = $(this).attr("code");
+                    if(pcd == code){
+                        $('.tableDiv').stop(true, true).animate({
+                            scrollTop: $(this).offset().top - 400 // 60 = 顶部导航栏高度（根据实际调整）
+                        }, 500, 'swing', function() {
+                            $('html, body').stop(true, true);
+                        });
+                    }
+                })
+            }
+        })
+        $('html, body').stop(true, true);
+    }
+    function getXzqhList2(curCode,level){
+        $('html, body').stop(true, true);
+        let flag = 1;
+        $(".mores2").parent("td").each(function () {
+            let cd = $(this).attr("code");
+            if(cd==curCode){
+                flag = 2;
+            }
+        })
+        if(cityName!=null){
+            $(".layui-tree-txt").each(function(){
+                let content = $(this).html();
+                if(level == 2&&content == cityName&&name!=cityName){
+                    cityName = name;
+                    clickType = 1;
+                    $(this).click();
+                    return true;
+                }
+                if(level == 3&&content == areaName&&name!=areaName){
+                    areaName = name;
+                    clickType = 1;
+                    $(this).click();
+                    return true;
+                }
+            })
+        }
+        if(level==2){
+            $(".mores1").removeClass("mores2");
+            $(".otherThree").remove();
+        }
+        if(level==3){
+            $(".otherThree").each(function(){
+                $(this).children("td").eq(0).children("div").eq(0).removeClass("mores2");
+            })
+            $(".dicCode").each(function(){
+                $(this).children("td").eq(0).children("div").eq(0).removeClass("mores2");
+            })
+            $('.level3').remove();
+        }
+        if(flag==2&&level!=1){
+            flag = 1;
+            return false;
+        }
+        if(level == 1){
+            $(".list-content").html('');
+        }
+        $(".pagination").css("display","none");
+        $.ajax({
+            url:  "xzqh/getCodeList",
+            data: {
+                parentCode: curCode,
+                placeCode: "",
+                title: "",
+                tableName: tableName,
+                type: areaType
+            },
+            type: "POST",
+            dataType: "json",
+            success: function (e) {
+                if(e.status==200){
+                    let content = '';
+                    if(e.data.length==0){
+                        return false;
+                    }
+                    for(let i in e.data){
+                        let item = e.data[i];
+                        let nn = "/"+item.name;
+                        let n1 = item.namePath.split("全国/").join("");
+                        let np = n1.split(nn).join("");
+                        let cent = '<td class="left moveRight tct" aria-label="'+np+'">'+np+'</td>';
+                        if(item.level == 3){
+                            content = content + '<tr class="otherTwo otherThree" code="'+item.code.substr(0,6)+'" name="'+item.name+'"><td class="clickFun left moveRight tct lThree" ' +
+                                'code="'+item.code.substr(0,6)+'" level="'+item.level+'" aria-label="'+item.name+'" ' +
+                                'style="font-size: 1.4rem;font-weight: bold;"><div class="showTips mores1">'+item.name+'</div></td>' +
+                                cent+'<td class="left">'+item.code.substr(0,6)+'</td></tr>';
+                        }else{
+                            let tt = "level3";
+                            if(item.parentCode.substr(4,10)=="00000000"){
+                                tt = "otherTwo";
+                            }
+                            if(item.code.substr(0,9)!="632823105"&&item.code.substr(0,9)!="632823106"){
+                                content = content + '<tr class="otherThree '+tt+'"><td class="left moveRight tct" aria-label="'+item.name+'" style="font-size: 1.3rem;">'+item.name+'</td>' +
+                                    cent+'<td class="left">'+item.code+'</td></tr>';
+                            }
+                        }
+                    }
+
+                    $(".otherTwo").each(function(){
+                        let code = $(this).attr("code");
+                        if(curCode == code){
+                            $(this).children("td").eq(0).children("div").eq(0).addClass("mores2");
+                            $(this).after(content);
+                            name = $(this).attr("name");
+                            clickType = 1;
+                            if(level == 2){
+                                cityName = name;
+                                $("."+code+name).click();
+                            }else{
+                                areaName = name;
+                                $("."+code+name).click();
+                            }
+                            return false;
+                        }
+                    })
+                    $('.clickFun').off('click');
+                    $(".clickFun").click(function(){
+                        let cdd = $(this).attr("code");
+                        let level = $(this).attr("level");
+                        getXzqhList2(cdd,level);
+                    })
+                }
+            }
+        })
+    }
+    function setPage(total,page){
+        layui.use('laypage', function(){
+            var laypage = layui.laypage;
+            //执行一个laypage实例
+            if($("body").width()<540){
+                laypage.render({
+                    elem: 'pagination' //注意，这里的 test1 是 ID，不用加 # 号
+                    ,limit: pageSize
+                    ,count: total
+                    ,curr: page
+                    ,layout: ['page']
+                    ,jump: function(obj,first){
+                        if(!first){
+                            areaType = null;
+                            getXzqhList(obj.curr,obj.limit);
+                        }
+                    }
+                });
+            }else{
+                laypage.render({
+                    elem: 'pagination2' //注意，这里的 test1 是 ID，不用加 # 号
+                    ,limit: pageSize
+                    ,count: total
+                    ,curr: page
+                    ,first: '首页'
+                    ,last: '尾页'
+                    ,prev: '上一页'
+                    ,next: '下一页'
+                    ,jump: function(obj,first){
+                        if(!first){
+                            areaType = null;
+                            getXzqhList(obj.curr,obj.limit);
+                        }
+                    }
+                });
+            }
+        });
+    }
+    function getVersionList(){
+        $.ajax({
+            url:  "xzqh/getVersionList",
+            data: {
+                placeCode: '',
+                title: $("#titles").val(),
+            },
+            type: "POST",
+            dataType: "json",
+            success: function (e) {
+                if(e.total>0){
+                    tableName = e.data[0].tableName;
+                    // getXzqhList(1,pageSize);
+                }
+            }
+        })
+    }
+    function getXzqhData(cb){
+        $.ajax({
+            url:  baseUrl.xzqhList,
+            data: {
+                code: "0",
+                trimCode:true,
+                maxLevel: 3
+            },
+            type: "GET",
+            dataType: "json",
+            cache:true,
+            success: function (e) {
+                cb(e);
+            },
+            cache: false
+        })
+    }
+    function convertData(data) {
+        var attr = [];
+        for (var i in data) {
+            var obj = {};
+            var item = data[i];
+            obj.id = item.code;
+            obj.title = item.name ? item.name : '中国';
+            obj.spread = item.level == 0?true:false;
+            obj.icon = "layui-icon layui-icon-star"
+            if (item.children) {
+                obj.children = convertData(item.children)
+            }
+            attr.push(obj);
+        }
+        return attr;
+    }
+    function setList(tn){
+        tableName = tn;
+        window.location.href = "XzqhVersion.html?tableName="+tn;
+        // $('.showLists').css("display","none");
+        // $(".showInfos").css("display","block");
+        // $(".tree").css("display","block");
+        // $(".showClose").css("display","block");
+        // getXzqhList(1,20);
+    }
+    function isNumeric(str) {
+        return /^\d+$/.test(str);
+    }
+</script>
+</body>
+</html>

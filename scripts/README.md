@@ -1,4 +1,4 @@
-# GeoNames 中国清单工具
+# 中国覆盖清单工具
 
 `build_cn_inventory.py` 从本地 GeoNames `cities15000`、`cities5000`、`cities1000`、`cities500` 文件生成中国清单。脚本不访问网络，也不创建城市页。
 
@@ -36,7 +36,29 @@ py -3 -B scripts/build_cn_inventory.py `
 
 JSON 报告保留各输入的文件与内部文本 SHA-256、总行数、唯一 ID 数、中国记录数、各档两两交集与差集数量，以及层级异常的具体 ID。层级异常默认写进报告而不会丢弃记录；需要把异常视为失败时增加 `--strict-hierarchy`。任何重复 ID、跨档事实冲突、格式错误或预期校验不匹配都会阻止输出。脚本也会拒绝把输出路径指向任何输入或校验文件。
 
-运行自测：
+## 法定城市交叉核对
+
+`build_cn_legal_city_inventory.py` 使用民政部行政区划代码服务，建立与 GeoNames 候选清单相互独立的法定城市核对表。网络获取和离线生成是两个明确步骤：
+
+```powershell
+py -3 -B scripts/build_cn_legal_city_inventory.py fetch `
+  --expected-cutoff 2025-12-31 `
+  --output-dir coverage/legal-cities/2025-12-31/raw
+
+py -3 -B scripts/build_cn_legal_city_inventory.py build `
+  --expected-cutoff 2025-12-31 `
+  --raw-dir coverage/legal-cities/2025-12-31/raw `
+  --output coverage/legal-cities/2025-12-31/inventory/CN-legal-cities.csv `
+  --report coverage/legal-cities/2025-12-31/CN.build-report.json
+```
+
+`fetch` 会先从版本页核对数据截止日，再固定大陆 31 个省级行政区的接口响应、获取时间和 SHA-256；若目录已经存在或截止日不符，脚本会拒绝覆盖。`build` 不访问网络，只从固定响应中提取直辖市、地级市和县级市。自治州、地区、盟、县、市辖区与乡级节点不会因名称或层级相近而自动算作法定城市。
+
+城市指南与法定城市代码对齐后，重建人类可读摘要：
+
+```powershell
+py -3 -B scripts/generate_cn_legal_summary.py --as-of 2026-07-30
+```
 
 ## 质量检查与摘要
 

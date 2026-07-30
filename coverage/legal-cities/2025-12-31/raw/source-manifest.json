@@ -1,0 +1,325 @@
+{
+  "province_sources": [
+    {
+      "archive_sha256": "0dcc4eda1f05fad536b32d8c0ab45ed24af61cc640f304d7207a9b18fefcf9f7",
+      "archive_size_bytes": 3483,
+      "filename": "11.json.gz",
+      "payload_sha256": "193ea9acb9aa0400bcf82a90119b7f5c39384214ff671eacaa8983c2b6cd6305",
+      "payload_size_bytes": 29427,
+      "province_code": "11",
+      "province_name": "北京市",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=11&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "0681439e7ca3d8c7370682ecc09949262856f2c3e4d24f894b1ba90472831254",
+      "archive_size_bytes": 2638,
+      "filename": "12.json.gz",
+      "payload_sha256": "fedf0628fc7a30e8c4d8ea53e9cb6d5ec2463117e8a1f6319a554ac9160b640e",
+      "payload_size_bytes": 21994,
+      "province_code": "12",
+      "province_name": "天津市",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=12&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "649a1c767b9ee19e969a7f0cc0ecaf34f5bd35956a85948ef1457cab22585dc1",
+      "archive_size_bytes": 1763,
+      "filename": "13.json.gz",
+      "payload_sha256": "56be7d00a79baa51437ea3909c464776c0b6db0a80bf96af65c86066834b07c3",
+      "payload_size_bytes": 13862,
+      "province_code": "13",
+      "province_name": "河北省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=13&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "c4dfb023d3cdfc2b70404ff921cce99170b7ba8bcca498623b3f71fcfa5697fc",
+      "archive_size_bytes": 1293,
+      "filename": "14.json.gz",
+      "payload_sha256": "fc4030fdb23bf358059d4a70ebe9e6527d6d870849c64015c543e0571ce4d567",
+      "payload_size_bytes": 9808,
+      "province_code": "14",
+      "province_name": "山西省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=14&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "88078ba67bab4a4105daa739b979b6c80ad2b19fbc2661ecdc23851f7a9c02ee",
+      "archive_size_bytes": 1432,
+      "filename": "15.json.gz",
+      "payload_sha256": "5011f5bfecafc3ac94db6588a31f59e313896b53f4789d06811179e133a2a935",
+      "payload_size_bytes": 9332,
+      "province_code": "15",
+      "province_name": "内蒙古自治区",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=15&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "8f789369b7908d9bdffc69621f18bd6d88bd24ee6baee9d086a1fc9d55686923",
+      "archive_size_bytes": 1275,
+      "filename": "21.json.gz",
+      "payload_sha256": "751c27eb1864c34c1140f63cdd9184fc83c69e3ab366eaef83a8d08719b586b9",
+      "payload_size_bytes": 9258,
+      "province_code": "21",
+      "province_name": "辽宁省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=21&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "5e014f2e7602d42253c4561bc964f403156384520b7a189f0de74dd36e74bfe1",
+      "archive_size_bytes": 895,
+      "filename": "22.json.gz",
+      "payload_sha256": "fe068edda3700ab9f7f37fba74aeaa4173c84784e4d06456d582f8dacba4dc31",
+      "payload_size_bytes": 5598,
+      "province_code": "22",
+      "province_name": "吉林省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=22&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "a64841f2a3bb30fa74ccdf752549891947549a2f5a168661bb93867c119ce3e5",
+      "archive_size_bytes": 1471,
+      "filename": "23.json.gz",
+      "payload_sha256": "5eab3a54041e67bd62b78326faf014739663d51873c73f5224af46f2a04dada8",
+      "payload_size_bytes": 10636,
+      "province_code": "23",
+      "province_name": "黑龙江省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=23&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "489e0981ca5b1e4d9a549b8000e52d337fc350a61b179ef4a79b39e5063c8df5",
+      "archive_size_bytes": 2256,
+      "filename": "31.json.gz",
+      "payload_sha256": "7bcc06719273cb1ef311188715dc8d98cd63c3510d2073abf753364208bb7ce2",
+      "payload_size_bytes": 19000,
+      "province_code": "31",
+      "province_name": "上海市",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=31&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "cdf864e172d97cbae7c96918d7439d88b8f6ac32106c3bc8fd3c60b8008a2ba9",
+      "archive_size_bytes": 1166,
+      "filename": "32.json.gz",
+      "payload_sha256": "a610cce9b5193aa9cf5b5ef4d0859735881ec3dd77d05379755a0b6a4c92f238",
+      "payload_size_bytes": 8619,
+      "province_code": "32",
+      "province_name": "江苏省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=32&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "829e7bda450b84c3b48409b792ac7350daf61b47b87583ac942935395c1a785e",
+      "archive_size_bytes": 1125,
+      "filename": "33.json.gz",
+      "payload_sha256": "b53107042d1ddbb1400796c13a42b36b6704b450e2ec65c7fab5a2346006e0a2",
+      "payload_size_bytes": 7993,
+      "province_code": "33",
+      "province_name": "浙江省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=33&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "9717ed158ebd84d9f104cfd5b73990941e878ec6f4ae6e8c254432258827b1c2",
+      "archive_size_bytes": 1251,
+      "filename": "34.json.gz",
+      "payload_sha256": "69905922f71a81ec8be3ef329de2d4db219e45d1922a26af07f595e745418e38",
+      "payload_size_bytes": 9369,
+      "province_code": "34",
+      "province_name": "安徽省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=34&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "1006fd151fb385bacddc946961805ece36410c128134437763bbc9bba86d4314",
+      "archive_size_bytes": 1008,
+      "filename": "35.json.gz",
+      "payload_sha256": "0cdcddc600df81b8fb19fbdc62ff96009bbaeee0ee44dabad08cf4aee126da88",
+      "payload_size_bytes": 7290,
+      "province_code": "35",
+      "province_name": "福建省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=35&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "76e1540dd461428192b5cac81b0f2555e819774762a0dd5b54eaa4d92f55812f",
+      "archive_size_bytes": 1179,
+      "filename": "36.json.gz",
+      "payload_sha256": "d0f42c9abd713b060598be1aae15e1a48783294d7e5fb1a7eff93522f05ec696",
+      "payload_size_bytes": 8625,
+      "province_code": "36",
+      "province_name": "江西省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=36&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "3644c1b154381a177e3d63568d2654f67c1add7822b76b12a156b1b2e7eace99",
+      "archive_size_bytes": 1508,
+      "filename": "37.json.gz",
+      "payload_sha256": "f43ed91ea47b23a36332fc7114048779e27722b2bf4a40324deed410a54954e7",
+      "payload_size_bytes": 11914,
+      "province_code": "37",
+      "province_name": "山东省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=37&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "6b5fe5e624874874502f7d6f7ba79e4752469b9ae8a926b5500fc394bd2f3748",
+      "archive_size_bytes": 1705,
+      "filename": "41.json.gz",
+      "payload_sha256": "7efbff3f61eabf6dc3e19469bf0b89bea2705e58e9704ef86cde2c7da13b7e03",
+      "payload_size_bytes": 13497,
+      "province_code": "41",
+      "province_name": "河南省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=41&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "fae0c06d606a11ba1a061648d6ad9877603f0977836debbaf4a3b047a743f6ba",
+      "archive_size_bytes": 1294,
+      "filename": "42.json.gz",
+      "payload_sha256": "740aae75ece29690c46ab62edd8cc28b5a568bfb20b4e44c36a61b77180961a9",
+      "payload_size_bytes": 9226,
+      "province_code": "42",
+      "province_name": "湖北省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=42&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "16b9074140d5e34fd9dc434eda7b5823efe718b13929013d32a843030fd86d3b",
+      "archive_size_bytes": 1422,
+      "filename": "43.json.gz",
+      "payload_sha256": "3e6f65341ad0bfc4f0f30a5edf269379ba9e8d9caa233b1ed54c4c627463668e",
+      "payload_size_bytes": 10718,
+      "province_code": "43",
+      "province_name": "湖南省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=43&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "6c8f6836434be6e1369776602c00f3a53363349c965f623f8e4137572fa082e6",
+      "archive_size_bytes": 1483,
+      "filename": "44.json.gz",
+      "payload_sha256": "bbac0e06b3c0a93174de8de1bab837b4785793f7b527e87788fd5bec2a7e5a5c",
+      "payload_size_bytes": 11340,
+      "province_code": "44",
+      "province_name": "广东省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=44&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "eb148e503f63d5d6e1e2f09103328e02a2f3ae40e16ed974066480de990f9be1",
+      "archive_size_bytes": 1354,
+      "filename": "45.json.gz",
+      "payload_sha256": "08fa1fa4f7f217f01b03195902ac1a94d79bec5fc6dbde2d36388014933b43c3",
+      "payload_size_bytes": 9970,
+      "province_code": "45",
+      "province_name": "广西壮族自治区",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=45&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "8f315b5ca065e710b73a9beb8ff1380238f6ea58402a3007a69231d9dbe8e64b",
+      "archive_size_bytes": 494,
+      "filename": "46.json.gz",
+      "payload_sha256": "4970ac8056d07cfb66ba86bda831681294c358e694277cc9a77c3a4404cc8959",
+      "payload_size_bytes": 2498,
+      "province_code": "46",
+      "province_name": "海南省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=46&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "185096eac3694f23103c5dc5c128acd9e544e9a94e8d8b91cf3101582fa5dcad",
+      "archive_size_bytes": 8917,
+      "filename": "50.json.gz",
+      "payload_sha256": "b50c64aa961cbb2b8cbbc3e7e2951d60565b8481f714afc4032ca32716725724",
+      "payload_size_bytes": 84827,
+      "province_code": "50",
+      "province_name": "重庆市",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=50&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "7a387be7ef99ecd61ae5166196a3e80cfb64bd58d7e0709cda4a4430b44d086d",
+      "archive_size_bytes": 2028,
+      "filename": "51.json.gz",
+      "payload_sha256": "7a232796d7dae3f046ba134f3b952968893efa3ee6a04c8c4b988deb0348e4e5",
+      "payload_size_bytes": 15852,
+      "province_code": "51",
+      "province_name": "四川省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=51&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "31c65d6deade8161893b797585ef7f45382de1c79875539e34055b56233878b0",
+      "archive_size_bytes": 1193,
+      "filename": "52.json.gz",
+      "payload_sha256": "a7b46b8e659f116b5abe6efafbca30f713f42d60c0413ec3ea44791d17947076",
+      "payload_size_bytes": 7838,
+      "province_code": "52",
+      "province_name": "贵州省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=52&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "cc81988e0bcdc46a6cbf87d22ad15254d99a5f02d5d611df034da86e1abab5d7",
+      "archive_size_bytes": 1673,
+      "filename": "53.json.gz",
+      "payload_sha256": "7de0f09461f537f070145b19e027984f21a8edd7271361346c507a7c23497fc5",
+      "payload_size_bytes": 11936,
+      "province_code": "53",
+      "province_name": "云南省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=53&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "c76596cafc94491faa35dbdce08d6fc7c78021857970050b2dda1bf214edf7e8",
+      "archive_size_bytes": 957,
+      "filename": "54.json.gz",
+      "payload_sha256": "19e732e0f2b5762fd048ba278607ae2724e1fb59ba0325a30e4f36a36a9dea1b",
+      "payload_size_bytes": 6246,
+      "province_code": "54",
+      "province_name": "西藏自治区",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=54&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "70a9b2851a6e476114ade0dae7b1c54dd486993b2a5da9b5ce9de4f8a50f72b6",
+      "archive_size_bytes": 1220,
+      "filename": "61.json.gz",
+      "payload_sha256": "e975092680352bdf1c1e351c9271e8a2e21731d5c6b629ea932e5b8c2352a8fa",
+      "payload_size_bytes": 9018,
+      "province_code": "61",
+      "province_name": "陕西省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=61&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "f840bf7f902389e3e51ee358640b0998aaa46035b97c190314eedbb7be89b0ad",
+      "archive_size_bytes": 1166,
+      "filename": "62.json.gz",
+      "payload_sha256": "882720383b978a48ff4e1e9fc221c2b7864b329b3fd8177c9e9c2d1a669de783",
+      "payload_size_bytes": 7869,
+      "province_code": "62",
+      "province_name": "甘肃省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=62&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "8c9b6736491b086fec7693de22b24fa912a9c1d1ce062a30c1c09f62545b82eb",
+      "archive_size_bytes": 724,
+      "filename": "63.json.gz",
+      "payload_sha256": "eb2235beac902dd3605b9286e106a892633601b756e4f32af0684e9d324c7595",
+      "payload_size_bytes": 4304,
+      "province_code": "63",
+      "province_name": "青海省",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=63&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "78098c94f2ff52f607ded868b11a1de74969843e5f656852e16521b341edbdee",
+      "archive_size_bytes": 487,
+      "filename": "64.json.gz",
+      "payload_sha256": "7da484916a2e7c51a58bdd02a5f3933e97f4e4676b946d978c71dbe1b49f200b",
+      "payload_size_bytes": 2238,
+      "province_code": "64",
+      "province_name": "宁夏回族自治区",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=64&trimCode=true&maxLevel=3"
+    },
+    {
+      "archive_sha256": "bafcb8934149eb5f61616f0b49df45e8e11871b1db42ea1e27f1f1b9fe618db1",
+      "archive_size_bytes": 1507,
+      "filename": "65.json.gz",
+      "payload_sha256": "e55a0121afa3684182ba9805917f5bd581023e365cd9ebe3b1a491f44fcb0773",
+      "payload_size_bytes": 10084,
+      "province_code": "65",
+      "province_name": "新疆维吾尔自治区",
+      "url": "https://dmfw.mca.gov.cn/xzqh/getList?code=65&trimCode=true&maxLevel=3"
+    }
+  ],
+  "retrieved_at_utc": "2026-07-30T17:37:47Z",
+  "schema_version": 1,
+  "scope": "31 mainland provincial-level divisions; HK, MO and TW not requested",
+  "source_cutoff": "2025-12-31",
+  "source_name": "中华人民共和国民政部行政区划代码",
+  "version_page": {
+    "filename": "version-page.html",
+    "sha256": "4b5198d67feed8fce221ecfdacd551793a629d3f0bb3e12ffed57de9539530fe",
+    "size_bytes": 32547,
+    "url": "https://dmfw.mca.gov.cn/XzqhVersionPublish.html"
+  }
+}

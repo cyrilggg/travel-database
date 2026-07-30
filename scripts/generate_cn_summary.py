@@ -43,8 +43,8 @@ def render_summary(repository: Path, snapshot_date: str, as_of: str) -> str:
     lines = [
         "# GeoNames 中国 CN 快照摘要",
         "",
-        f"> 快照日期：{snapshot_date}  ",
-        f"> 统计更新：{as_of}  ",
+        f"> 快照日期：{snapshot_date}<br>",
+        f"> 统计更新：{as_of}<br>",
         "> 工程边界：固定 `cities500` 快照中 `country_code == CN` 的唯一 GeoNames ID",
         "",
         "## 当前进度",

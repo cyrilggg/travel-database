@@ -3,3 +3,8 @@ coverage/geonames/*/raw/*.txt -text
 coverage/geonames/*/*.json -text
 coverage/geonames/*/inventory/*.csv -text
 coverage/geonames/*/crosswalk/*.csv -text
+coverage/legal-cities/*/raw/*.json.gz -text
+coverage/legal-cities/*/raw/*.html binary
+coverage/legal-cities/*/raw/*.json -text
+coverage/legal-cities/*/inventory/*.csv -text
+coverage/legal-cities/*/*.json -text

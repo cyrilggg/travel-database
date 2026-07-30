@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-003,1795565,Shenzhen,PPLA2,广东省,destinations/中国/广东省/深圳市.md,沿海超大城市与跨境口岸及半岛远郊边界
+CN-cities15000-003,1797929,Qingdao,PPLA2,山东省,destinations/中国/山东省/青岛市.md,滨海老城与跨湾城区及山岳远郊
+CN-cities15000-003,2037013,Harbin,PPLA,黑龙江省,destinations/中国/黑龙江省/哈尔滨市.md,高纬度冬季城市与冰雪季节性风险
+CN-cities15000-003,1790645,Xiamen,PPLA2,福建省,destinations/中国/福建省/厦门市.md,海岛主城与鼓浪屿及跨湾行政边界
+CN-cities15000-003,1529102,Ürümqi,PPLA,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/乌鲁木齐市.md,内陆高纬度枢纽与长距离山地远郊
+CN-cities15000-003,1799869,Nanning,PPLA,广西壮族自治区,destinations/中国/广西壮族自治区/南宁市.md,亚热带区域中心与喀斯特及边境方向边界
+CN-cities15000-003,1810821,Fuzhou,PPLA,福建省,destinations/中国/福建省/福州市.md,山水老城与滨海县域及海岛边界
+CN-cities15000-003,1784658,Zhengzhou,PPLA,河南省,destinations/中国/河南省/郑州市.md,国家铁路枢纽与嵩山少林远郊尺度
