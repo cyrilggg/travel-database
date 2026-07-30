@@ -76,3 +76,13 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1796134,researched,destinations/中国/河南省/商丘市.md,,,,,,codex,2026-07-30,1
 1806299,researched,destinations/中国/广东省/江门市.md,,,,,,codex,2026-07-30,1
 1800146,researched,destinations/中国/四川省/南充市.md,,,,,,codex,2026-07-30,1
+11072148,merged,,1796236,destinations/中国/上海市/上海市.md,merged_urban_section,上海市政府将黄浦江两岸明确为东侧浦东和西侧浦西；浦西是连续上海城区的一部分且规范上海页已覆盖其核心片区与跨江关系,https://english.shanghai.gov.cn/en-Transportation/20250910/65267b72530645bdacc119d56380d363.html,codex,2026-07-30,1
+1798524,merged,,1796236,destinations/中国/上海市/上海市.md,merged_urban_section,浦东是上海市辖浦东新区的城市点而非独立城市；上海市政府明确其属于上海且规范上海页已覆盖陆家嘴花木迪士尼和临港等主要旅行片区,https://www.shanghai.gov.cn/pudong/index.html,codex,2026-07-30,1
+1810845,researched,destinations/中国/安徽省/阜阳市.md,,,,,,codex,2026-07-30,1
+1793724,researched,destinations/中国/山东省/泰安市.md,,,,,,codex,2026-07-30,1
+1797945,researched,destinations/中国/广东省/清远市.md,,,,,,codex,2026-07-30,1
+11838258,researched,destinations/中国/内蒙古自治区/巴彦淖尔市.md,,,,,,codex,2026-07-30,1
+1807681,researched,destinations/中国/安徽省/淮南市.md,,,,,,codex,2026-07-30,1
+1815395,researched,destinations/中国/广东省/潮州市.md,,,,,,codex,2026-07-30,1
+1785623,researched,destinations/中国/江苏省/昆山市.md,,,,,,codex,2026-07-30,1
+1793743,researched,destinations/中国/安徽省/宿州市.md,,,,,,codex,2026-07-30,1
