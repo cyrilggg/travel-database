@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-002,1796236,Shanghai,PPLA,上海市,destinations/中国/上海市/上海市.md,滨水超大城市与双机场枢纽
+CN-cities15000-002,1792947,Tianjin,PPLA,天津市,destinations/中国/天津市/天津市.md,直辖市主城与滨海新区边界
+CN-cities15000-002,1799962,Nanjing,PPLA,江苏省,destinations/中国/江苏省/南京市.md,多朝古都与山水城林关系
+CN-cities15000-002,1808926,Hangzhou,PPLA,浙江省,destinations/中国/浙江省/杭州市.md,西湖核心与运河及远郊分区
+CN-cities15000-002,1815286,Chengdu,PPLA,四川省,destinations/中国/四川省/成都市.md,平原超大城市与跨区世界遗产方向
+CN-cities15000-002,1791247,Wuhan,PPLA,湖北省,destinations/中国/湖北省/武汉市.md,三镇两江与湖泊城市格局
+CN-cities15000-002,1815577,Changsha,PPLA,湖南省,destinations/中国/湖南省/长沙市.md,湘江两岸与夜间餐饮节奏
+CN-cities15000-002,1804651,Kunming,PPLA,云南省,destinations/中国/云南省/昆明市.md,高原湖滨城市与喀斯特远郊
