@@ -3,6 +3,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 120000,researched,destinations/中国/天津市/天津市.md,1792947,codex,2026-07-30,1
 130100,researched,destinations/中国/河北省/石家庄市.md,1795270,codex,2026-07-30,1
 130200,researched,destinations/中国/河北省/唐山市.md,1793346,codex,2026-07-30,1
+130600,researched,destinations/中国/河北省/保定市.md,1816971,codex,2026-07-30,1
 140100,researched,destinations/中国/山西省/太原市.md,1793511,codex,2026-07-30,1
 141100,researched,destinations/中国/山西省/吕梁市.md,13512505,codex,2026-07-30,1
 150100,researched,destinations/中国/内蒙古自治区/呼和浩特市.md,2036892,codex,2026-07-30,1
@@ -15,8 +16,10 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 320200,researched,destinations/中国/江苏省/无锡市.md,1790923,codex,2026-07-30,1
 320400,researched,destinations/中国/江苏省/常州市.md,1815456,codex,2026-07-30,1
 320500,researched,destinations/中国/江苏省/苏州市.md,1886760,codex,2026-07-30,1
+320800,researched,destinations/中国/江苏省/淮安市.md,1797873,codex,2026-07-30,1
 330100,researched,destinations/中国/浙江省/杭州市.md,1808926,codex,2026-07-30,1
 330200,researched,destinations/中国/浙江省/宁波市.md,1799397,codex,2026-07-30,1
+330300,researched,destinations/中国/浙江省/温州市.md,1791388,codex,2026-07-30,1
 340100,researched,destinations/中国/安徽省/合肥市.md,1808722,codex,2026-07-30,1
 341000,researched,destinations/中国/安徽省/黄山市.md,1792359,codex,2026-07-30,1
 350100,researched,destinations/中国/福建省/福州市.md,1810821,codex,2026-07-30,1
@@ -37,12 +40,14 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 441300,researched,destinations/中国/广东省/惠州市.md,1806776,codex,2026-07-30,1
 441900,researched,destinations/中国/广东省/东莞市.md,1812545,codex,2026-07-30,1
 442000,researched,destinations/中国/广东省/中山市.md,6986104,codex,2026-07-30,1
+445300,researched,destinations/中国/广东省/云浮市.md,1785725,codex,2026-07-30,1
 450100,researched,destinations/中国/广西壮族自治区/南宁市.md,1799869,codex,2026-07-30,1
 450300,researched,destinations/中国/广西壮族自治区/桂林市.md,1809498,codex,2026-07-30,1
 460100,researched,destinations/中国/海南省/海口市.md,1809078,codex,2026-07-30,1
 460200,researched,destinations/中国/海南省/三亚市.md,1796556,codex,2026-07-30,1
 500000,researched,destinations/中国/重庆市/重庆市.md,1814906,codex,2026-07-30,1
 510100,researched,destinations/中国/四川省/成都市.md,1815286,codex,2026-07-30,1
+511900,researched,destinations/中国/四川省/巴中市.md,11995100,codex,2026-07-30,1
 520100,researched,destinations/中国/贵州省/贵阳市.md,1809461,codex,2026-07-30,1
 530100,researched,destinations/中国/云南省/昆明市.md,1804651,codex,2026-07-30,1
 540100,researched,destinations/中国/西藏自治区/拉萨市.md,1280737,codex,2026-07-30,1
