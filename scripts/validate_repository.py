@@ -47,6 +47,8 @@ MOJIBAKE_MARKERS = ("ä¸", "å±", "æ—", "ç›", "â€", "Ã", "Â")
 DIALOGUE_HEADING = re.compile(r"^#{2,3}\s+(?:先|怎样|怎么|是否|适不适合)")
 FRONT_MATTER_LINE = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*):\s*(.*?)\s*$")
 LOCAL_LINK = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
+TABLE_DELIMITER_CELL = re.compile(r"^:?-{3,}:?$")
+FENCE_LINE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
 
 
 class ValidationFailure(RuntimeError):
@@ -117,6 +119,117 @@ def validate_copy(path: Path, text: str, errors: list[str]) -> None:
     for pattern in PLACEHOLDER_PATTERNS:
         if pattern.search(text):
             errors.append(f"{path}: contains placeholder matching {pattern.pattern!r}")
+
+
+def split_markdown_table_row(line: str) -> list[str] | None:
+    """Return pipe-delimited cells, excluding optional outer pipes.
+
+    A pipe preceded by an odd number of backslashes is escaped and remains in
+    its cell. Indented code is deliberately excluded before table detection.
+    """
+    if line.startswith("\t") or len(line) - len(line.lstrip(" ")) >= 4:
+        return None
+    candidate = line.strip()
+    separators: list[int] = []
+    for index, character in enumerate(candidate):
+        if character != "|":
+            continue
+        backslashes = 0
+        cursor = index - 1
+        while cursor >= 0 and candidate[cursor] == "\\":
+            backslashes += 1
+            cursor -= 1
+        if backslashes % 2 == 0:
+            separators.append(index)
+    if not separators:
+        return None
+
+    cells: list[str] = []
+    start = 0
+    for separator in separators:
+        cells.append(candidate[start:separator].strip())
+        start = separator + 1
+    cells.append(candidate[start:].strip())
+    if separators[0] == 0:
+        cells.pop(0)
+    if separators[-1] == len(candidate) - 1:
+        cells.pop()
+    return cells or None
+
+
+def fenced_code_lines(lines: list[str]) -> set[int]:
+    """Return zero-based line indexes belonging to Markdown code fences."""
+    fenced: set[int] = set()
+    fence_character = ""
+    fence_length = 0
+    for index, line in enumerate(lines):
+        match = FENCE_LINE.match(line)
+        if not fence_character:
+            if match:
+                marker = match.group(1)
+                fence_character = marker[0]
+                fence_length = len(marker)
+                fenced.add(index)
+            continue
+        fenced.add(index)
+        if match:
+            marker = match.group(1)
+            if (
+                marker[0] == fence_character
+                and len(marker) >= fence_length
+                and not match.group(2).strip()
+            ):
+                fence_character = ""
+                fence_length = 0
+    return fenced
+
+
+def validate_markdown_tables(
+    repository: Path, path: Path, text: str, errors: list[str]
+) -> None:
+    """Check column counts in recognized Markdown pipe-table blocks."""
+    try:
+        display_path = path.resolve().relative_to(repository.resolve()).as_posix()
+    except ValueError:
+        display_path = path.as_posix()
+
+    lines = text.splitlines()
+    fenced = fenced_code_lines(lines)
+    index = 0
+    while index + 1 < len(lines):
+        if index in fenced or index + 1 in fenced:
+            index += 1
+            continue
+        header = split_markdown_table_row(lines[index])
+        delimiter = split_markdown_table_row(lines[index + 1])
+        if (
+            header is None
+            or delimiter is None
+            or not delimiter
+            or not all(TABLE_DELIMITER_CELL.fullmatch(cell) for cell in delimiter)
+        ):
+            index += 1
+            continue
+
+        expected = len(header)
+        if len(delimiter) != expected:
+            errors.append(
+                f"{display_path}:{index + 2}: table row has {len(delimiter)} columns; "
+                f"expected {expected} from header on line {index + 1}"
+            )
+
+        row_index = index + 2
+        while row_index < len(lines) and row_index not in fenced:
+            row = split_markdown_table_row(lines[row_index])
+            if row is None:
+                break
+            if len(row) != expected:
+                errors.append(
+                    f"{display_path}:{row_index + 1}: table row has {len(row)} columns; "
+                    f"expected {expected} from header on line {index + 1}"
+                )
+            row_index += 1
+        index = max(row_index, index + 2)
 
 
 def validate_internal_links(repository: Path, path: Path, text: str, errors: list[str]) -> None:
@@ -310,6 +423,7 @@ def validate_repository(
         if front_matter.get("last_researched"):
             parse_iso_date(front_matter["last_researched"], str(path), errors)
         validate_headings(path, text, errors)
+        validate_markdown_tables(repository, path, text, errors)
         validate_internal_links(repository, path, text, errors)
 
     snapshot = repository / "coverage" / "geonames" / snapshot_date

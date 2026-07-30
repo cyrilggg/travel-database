@@ -221,6 +221,95 @@ class ValidateRepositoryTests(unittest.TestCase):
 
         self.assertTrue(any("unexpected H2 headings" in item for item in report["errors"]))
 
+    def test_rejects_table_row_with_wrong_column_count_and_reports_location(self):
+        original = self.city_path.read_text(encoding="utf-8")
+        self.city_path.write_text(
+            original + "\n| first | second |\n| --- | --- |\n| only one |\n",
+            encoding="utf-8",
+        )
+        bad_line = self.city_path.read_text(encoding="utf-8").splitlines().index(
+            "| only one |"
+        ) + 1
+        self.write_decisions(
+            [
+                {
+                    "geonameid": "1",
+                    "status": "researched",
+                    "page_path": self.city_path.relative_to(self.root).as_posix(),
+                    "reviewed_by": "reviewer",
+                    "reviewed_at": "2026-07-30",
+                    "quality_gate_version": "1",
+                }
+            ]
+        )
+
+        report = validate_repository(self.root, "2026-07-30")
+
+        relative_path = self.city_path.relative_to(self.root).as_posix()
+        self.assertTrue(
+            any(
+                item.startswith(f"{relative_path}:{bad_line}: table row has 1 columns")
+                for item in report["errors"]
+            )
+        )
+
+    def test_table_column_count_ignores_escaped_pipes(self):
+        original = self.city_path.read_text(encoding="utf-8")
+        self.city_path.write_text(
+            original
+            + "\n| first | second |\n"
+            + "| --- | --- |\n"
+            + "| bus \\| ferry | valid cell |\n",
+            encoding="utf-8",
+        )
+        self.write_decisions(
+            [
+                {
+                    "geonameid": "1",
+                    "status": "researched",
+                    "page_path": self.city_path.relative_to(self.root).as_posix(),
+                    "reviewed_by": "reviewer",
+                    "reviewed_at": "2026-07-30",
+                    "quality_gate_version": "1",
+                }
+            ]
+        )
+
+        report = validate_repository(self.root, "2026-07-30")
+
+        self.assertEqual(report["errors"], [])
+
+    def test_table_detection_ignores_plain_pipe_text_and_fenced_examples(self):
+        original = self.city_path.read_text(encoding="utf-8")
+        self.city_path.write_text(
+            original
+            + "\nThis A | B expression is prose, not a table.\n"
+            + "| This looks | table-like |\n"
+            + "but | this is not a delimiter row\n"
+            + "\n```markdown\n"
+            + "| first | second |\n"
+            + "| --- | --- |\n"
+            + "| only one |\n"
+            + "```\n",
+            encoding="utf-8",
+        )
+        self.write_decisions(
+            [
+                {
+                    "geonameid": "1",
+                    "status": "researched",
+                    "page_path": self.city_path.relative_to(self.root).as_posix(),
+                    "reviewed_by": "reviewer",
+                    "reviewed_at": "2026-07-30",
+                    "quality_gate_version": "1",
+                }
+            ]
+        )
+
+        report = validate_repository(self.root, "2026-07-30")
+
+        self.assertEqual(report["errors"], [])
+
     def test_audit_decision_requires_reason_evidence_and_target(self):
         self.city_path.unlink()
         self.write_decisions(
