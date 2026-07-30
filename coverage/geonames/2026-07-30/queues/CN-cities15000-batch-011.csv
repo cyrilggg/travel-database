@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-011,1785623,Kunshan,PPLA3,江苏省,destinations/中国/江苏省/昆山市.md,县级昆山市与苏州地级市并行建页及古镇湖区和上海通勤边界
+CN-cities15000-011,1815251,Jiangyin,PPLA3,江苏省,destinations/中国/江苏省/江阴市.md,县级江阴市的长江港城要塞工业与无锡地级市边界
+CN-cities15000-011,7283386,Changshu,PPLA3,江苏省,destinations/中国/江苏省/常熟市.md,县级常熟市的虞山尚湖古城与苏州地级市边界
+CN-cities15000-011,1807681,Huainan,PPL,安徽省,destinations/中国/安徽省/淮南市.md,淮河煤电城市与寿县古城及八公山跨区县关系
+CN-cities15000-011,1793743,Suzhou,PPLA2,安徽省,destinations/中国/安徽省/宿州市.md,皖北宿州主城与埇桥符离及砀山萧县等县域边界和同名消歧
+CN-cities15000-011,1802206,Lu’an,PPLA2,安徽省,destinations/中国/安徽省/六安市.md,大别山北麓主城与金寨霍山舒城等广域山区边界
+CN-cities15000-011,1787746,Yancheng,PPLA2,江苏省,destinations/中国/江苏省/盐城市.md,黄海湿地城市与沿海保护地及东台射阳等县市边界
+CN-cities15000-011,1814870,Yiwu,PPLA3,浙江省,destinations/中国/浙江省/义乌市.md,县级义乌市的国际商贸城市与金华地级市及周边县市边界
