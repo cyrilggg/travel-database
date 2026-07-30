@@ -16,6 +16,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 220100,researched,destinations/中国/吉林省/长春市.md,2038180,codex,2026-07-30,1
 220200,researched,destinations/中国/吉林省/吉林市.md,2036502,codex,2026-07-30,1
 230100,researched,destinations/中国/黑龙江省/哈尔滨市.md,2037013,codex,2026-07-30,1
+230600,researched,destinations/中国/黑龙江省/大庆市.md,2037860,codex,2026-07-30,1
 310000,researched,destinations/中国/上海市/上海市.md,1796236,codex,2026-07-30,1
 320100,researched,destinations/中国/江苏省/南京市.md,1799962,codex,2026-07-30,1
 320200,researched,destinations/中国/江苏省/无锡市.md,1790923,codex,2026-07-30,1
@@ -27,11 +28,13 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 320600,researched,destinations/中国/江苏省/南通市.md,1799722,codex,2026-07-30,1
 320700,researched,destinations/中国/江苏省/连云港市.md,10859300,codex,2026-07-30,1
 320800,researched,destinations/中国/江苏省/淮安市.md,1797873,codex,2026-07-30,1
+321200,researched,destinations/中国/江苏省/泰州市.md,1793505,codex,2026-07-30,1
 330100,researched,destinations/中国/浙江省/杭州市.md,1808926,codex,2026-07-30,1
 330200,researched,destinations/中国/浙江省/宁波市.md,1799397,codex,2026-07-30,1
 330300,researched,destinations/中国/浙江省/温州市.md,1791388,codex,2026-07-30,1
 330600,researched,destinations/中国/浙江省/绍兴市.md,1795855,codex,2026-07-30,1
 340100,researched,destinations/中国/安徽省/合肥市.md,1808722,codex,2026-07-30,1
+340200,researched,destinations/中国/安徽省/芜湖市.md,1791236,codex,2026-07-30,1
 340400,researched,destinations/中国/安徽省/淮南市.md,1807681,codex,2026-07-30,1
 341000,researched,destinations/中国/安徽省/黄山市.md,1792359,codex,2026-07-30,1
 341200,researched,destinations/中国/安徽省/阜阳市.md,1810845,codex,2026-07-30,1
@@ -73,6 +76,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 500000,researched,destinations/中国/重庆市/重庆市.md,1814906,codex,2026-07-30,1
 510100,researched,destinations/中国/四川省/成都市.md,1815286,codex,2026-07-30,1
 511300,researched,destinations/中国/四川省/南充市.md,1800146,codex,2026-07-30,1
+511700,researched,destinations/中国/四川省/达州市.md,1813325,codex,2026-07-30,1
 511900,researched,destinations/中国/四川省/巴中市.md,11995100,codex,2026-07-30,1
 520100,researched,destinations/中国/贵州省/贵阳市.md,1809461,codex,2026-07-30,1
 520300,researched,destinations/中国/贵州省/遵义市.md,1783621,codex,2026-07-30,1
