@@ -4,7 +4,9 @@
 
 ## 当前阶段
 
-固定的 GeoNames 全球快照尚未导入。仓库当前只有苏州、东京和巴黎三座结构验证样例，因此不发布全球分母、完成数或完成百分比。页面样式确认后再建立第一份不可变快照；快照建立前，任何样例数量都不得表述为全球覆盖率。
+仓库已经固定 2026-07-30 GeoNames 四档城市文件，并建立第一份中国大陆 `country_code=CN` 清单。最终 `cities500` 分母为 **16,049 个唯一 GeoNames ID**；四档实际严格嵌套。当前处理结果见 [2026-07-30 中国快照摘要](./geonames/2026-07-30/summary.md)，中国范围与行政映射规则见 [中国城市覆盖口径](./CN-SCOPE.md)。
+
+这不是全球快照，也不代表中国内容已经完成。仓库只公布固定分母下的实际状态，不用样例数量、目录数量或自动页面代替完成率。
 
 ## 快照目录
 
@@ -14,20 +16,29 @@ coverage/
   geonames/
     YYYY-MM-DD/
       manifest.yml
+      source-checks.json
+      CN.build-report.json
+      raw/
+        cities*.zip
+        readme.txt
+        admin1CodesASCII.txt
+        admin2Codes.txt
+        countryInfo.txt
+        featureCodes_en.txt
       inventory/
         CN.csv
-        FR.csv
-        JP.csv
       decisions/
         CN.csv
-        FR.csv
-        JP.csv
+      crosswalk/
+        CN-admin1.csv
       summary.md
 ```
 
 - `manifest.yml` 记录上游文件、获取时间、校验值、实际行数和生成版本；
+- `raw/` 用 Git LFS 保存与清单对应的原始压缩包，小型说明和代码表直接版本化；
 - `inventory/` 是不可变的固定基线，按国家拆分便于审阅；
-- `decisions/` 记录可变的处理状态和人工排除决定；
+- `decisions/` 是稀疏审计账本，只写已经完成研究或人工审计的记录；未列出的库存记录均为未处理；
+- `crosswalk/` 保存 GeoNames 代码与项目目录或官方行政代码的版本化映射；
 - `summary.md` 由前两者生成，只用于阅读，不作为事实源。
 
 若原始压缩包不放入 Git，必须保存在可长期取回的 Release 或 LFS 资产中。只有 SHA-256 而没有可取回的原文件，不能完整复核旧快照。

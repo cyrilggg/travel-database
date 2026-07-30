@@ -4,13 +4,17 @@
 
 Markdown 是主要产品。覆盖清单与辅助脚本只用于审计和维护，不代替城市内容，也不会通过生成空页制造完成度。
 
-> **当前阶段：页面结构验证。** 仓库目前以苏州、东京和巴黎三座差异较大的城市为研究样例。固定的全球 GeoNames 快照尚未导入，因此暂不发布“全球完成率”。
+> **当前阶段：中国固定清单与分批扩展。** 仓库已保存 2026-07-30 GeoNames 四档原始快照，并建立 `country_code=CN` 的 16,049 条固定清单。全球分母尚未建立；中国进度只按已研究页面和有证据的审计决定计算。
 
 ## 浏览城市
 
 | 国家 | 一级行政区 | 城市指南 | 旅行重点 | 状态 |
 |---|---|---|---|---|
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [重庆](./destinations/中国/重庆市/重庆市.md) | 山城地形、两江四岸、立体交通、火锅与小面 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [广州](./destinations/中国/广东省/广州市.md) | 西关骑楼、岭南工艺、南越遗址、粤菜与珠江 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [桂林](./destinations/中国/广西壮族自治区/桂林市.md) | 喀斯特峰林、漓江、城中湖泊、桂林米粉 | `researched` |
 | [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [苏州](./destinations/中国/江苏省/苏州市.md) | 园林、古城、水巷、博物馆、苏帮菜 | `researched` |
+| [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [西安](./destinations/中国/陕西省/西安市.md) | 秦汉唐考古、明城墙、博物馆、关中面食 | `researched` |
 | [日本](./destinations/日本/README.md) | [东京都](./destinations/日本/东京都/README.md) | [东京](./destinations/日本/东京都/东京.md) | 超大城市片区、传统街区、博物馆、都市餐饮 | `researched` |
 | [法国](./destinations/法国/README.md) | [法兰西岛大区](./destinations/法国/法兰西岛大区/README.md) | [巴黎](./destinations/法国/法兰西岛大区/巴黎.md) | 塞纳河两岸、艺术场馆、街区漫步、法式餐饮 | `researched` |
 
@@ -59,7 +63,7 @@ GeoNames 官方提供四档城市摘录：
 
 这些数量只是 [GeoNames dump README](https://download.geonames.org/export/dump/readme.txt) 中的约数。覆盖率分母必须使用固定快照中实际的唯一 `geonameid` 数量。官方说明没有承诺四个文件严格嵌套，因此清单会保存记录在四档文件中的实际成员关系，不按人口或名称自行推断。
 
-项目按 `cities15000 → cities5000 → cities1000 → cities500` 分阶段推进，最终边界可固定为某一日期的 `cities500` 快照。当前阶段不会导入或批量生成这个清单；页面样式确认后，再建立带获取时间、SHA-256、实际记录数和生成版本的快照。详细审计规则见 [覆盖与完成度](./coverage/README.md)。
+项目按 `cities15000 → cities5000 → cities1000 → cities500` 分阶段推进。中国阶段以 2026-07-30 的 `cities500` CN 集合作为最终工程边界，并保留四档真实成员关系、获取时间、SHA-256、实际记录数和生成版本。详细审计规则见 [覆盖与完成度](./coverage/README.md)，中国行政映射和排除阈值见 [中国城市覆盖口径](./coverage/CN-SCOPE.md)。
 
 完成记录只有两类：
 
@@ -70,7 +74,7 @@ GeoNames 官方提供四档城市摘录：
 
 ## 贡献指南
 
-1. 在固定覆盖清单建立后，从未处理记录中选择城市，并确认 GeoNames ID 没有对应其他页面；样例阶段可直接提出新城市，但不得声称它已进入全球分母。
+1. 从固定覆盖清单的未处理记录中选择城市，并确认 GeoNames ID 没有对应其他页面；中国清单已建立，其他国家在各自快照建立前不得声称进入全球分母。
 2. 复制 [城市模板](./templates/city.md)，按 `国家/一级行政区/城市.md` 建立页面，保持 `content_status: draft`。
 3. 优先使用政府、官方旅游机构、景区或场馆官网、公共交通运营方和开放数据源，独立概括事实，不复制网页长段文字。
 4. 完成城市格局、景点、美食、可用路线、住宿、交通、不同旅行者须知、行前核对和来源记录；删除所有占位符、空表与不适用小节。

@@ -1,0 +1,148 @@
+schema_version: 1
+snapshot_id: geonames-cities-2026-07-30
+snapshot_date: 2026-07-30
+retrieved_at_utc: 2026-07-30T15:47:45Z
+license_spdx: CC-BY-4.0
+attribution: "GeoNames (https://www.geonames.org/)"
+readme_url: https://download.geonames.org/export/dump/readme.txt
+raw_storage: "Git LFS paths under raw/; the exact archives are versioned with this manifest"
+normalizer_path: scripts/build_cn_inventory.py
+normalizer_version: 1
+normalizer_commit: same_commit_as_manifest
+
+scope:
+  country_code: CN
+  final_dataset: cities500
+  rule: "Every unique record with country_code == CN in the fixed cities500 archive"
+  distinct_geonameid_count: 16049
+  excluded_country_codes: [HK, MO, TW]
+  note: "HK, MO and TW are separate GeoNames datasets and are not silently included in the CN denominator."
+
+sources:
+  - dataset: cities15000
+    source_url: https://download.geonames.org/export/dump/cities15000.zip
+    raw_path: raw/cities15000.zip
+    http_last_modified: "Thu, 30 Jul 2026 01:38:53 GMT"
+    http_etag: '"326469-657ca2274ebae"'
+    archive_size_bytes: 3302505
+    archive_sha256: fe29918676f550efaa8c83908579d0005910c71bac25c5a3ef53f315dbc5609c
+    inner_filename: cities15000.txt
+    inner_size_bytes: 8393353
+    inner_sha256: d7761aa73de6d0d33595236c4307ab73790e4340cca1c4f983527f035d53b9ba
+    row_count: 34049
+    distinct_geonameid_count: 34049
+    duplicate_geonameid_count: 0
+    cn_row_count: 2106
+  - dataset: cities5000
+    source_url: https://download.geonames.org/export/dump/cities5000.zip
+    raw_path: raw/cities5000.zip
+    http_last_modified: "Thu, 30 Jul 2026 01:38:53 GMT"
+    http_etag: '"556f86-657ca2274ebae"'
+    archive_size_bytes: 5599110
+    archive_sha256: d374174d736677d6d66c981a5be394d458d6cbf345bcbe7a02d301a4219b296b
+    inner_filename: cities5000.txt
+    inner_size_bytes: 14954885
+    inner_sha256: 8a971736dc0f7148f1a5a6d4abd69fca92b0938d7cd61cdc0120adec425c919b
+    row_count: 69542
+    distinct_geonameid_count: 69542
+    duplicate_geonameid_count: 0
+    cn_row_count: 2879
+  - dataset: cities1000
+    source_url: https://download.geonames.org/export/dump/cities1000.zip
+    raw_path: raw/cities1000.zip
+    http_last_modified: "Thu, 30 Jul 2026 01:38:53 GMT"
+    http_etag: '"a3c51c-657ca2274e7c6"'
+    archive_size_bytes: 10732828
+    archive_sha256: 2ef839bf0c3359c3ad28818fb5fc216f5c9c0fe31ef4b25ae7f7c62d667008df
+    inner_filename: cities1000.txt
+    inner_size_bytes: 31045891
+    inner_sha256: 9be42e78dfa87cd7b87f6db29b11bb6085465079d9df59a3b5ebe10f45f856dc
+    row_count: 170523
+    distinct_geonameid_count: 170523
+    duplicate_geonameid_count: 0
+    cn_row_count: 4964
+  - dataset: cities500
+    source_url: https://download.geonames.org/export/dump/cities500.zip
+    raw_path: raw/cities500.zip
+    http_last_modified: "Thu, 30 Jul 2026 01:38:53 GMT"
+    http_etag: '"ce15ff-657ca2274e7c6"'
+    archive_size_bytes: 13506047
+    archive_sha256: 3c2f9d4bc6ae50e171865ade920f1a311db86059f6d1d713bbe3588146b5ced2
+    inner_filename: cities500.txt
+    inner_size_bytes: 40630887
+    inner_sha256: f7f284d91f517c10b21bb7aa8c38e7a408b188c7cd6eb7e40e9f90a872959501
+    row_count: 235073
+    distinct_geonameid_count: 235073
+    duplicate_geonameid_count: 0
+    cn_row_count: 16049
+
+supporting_sources:
+  - filename: readme.txt
+    source_url: https://download.geonames.org/export/dump/readme.txt
+    retrieved_at_utc: 2026-07-30T15:57:36Z
+    http_last_modified: "Thu, 30 Jul 2026 01:29:51 GMT"
+    http_etag: '"228b-657ca02253356"'
+    size_bytes: 8843
+    sha256: b1957379b6c1242c700c98ac9a8aa0a09f56c3c0a50ee72175527005f48ef2c5
+  - filename: admin1CodesASCII.txt
+    source_url: https://download.geonames.org/export/dump/admin1CodesASCII.txt
+    retrieved_at_utc: 2026-07-30T15:57:36Z
+    http_last_modified: "Thu, 30 Jul 2026 01:38:53 GMT"
+    http_etag: '"25014-657ca2274ef96"'
+    size_bytes: 151572
+    sha256: 34784457b76b988a669dff7c3e4b104e4902c0875643cff019281ac79dfa2992
+  - filename: admin2Codes.txt
+    source_url: https://download.geonames.org/export/dump/admin2Codes.txt
+    retrieved_at_utc: 2026-07-30T16:02:22Z
+    http_last_modified: "Thu, 30 Jul 2026 01:38:53 GMT"
+    http_etag: '"242b73-657ca2274ef96"'
+    size_bytes: 2370419
+    sha256: a261db15d273b7147a07e1813854ac33561c1b0aed5e37c45a1d6cd2d0165338
+  - filename: countryInfo.txt
+    source_url: https://download.geonames.org/export/dump/countryInfo.txt
+    retrieved_at_utc: 2026-07-30T15:57:36Z
+    http_last_modified: "Thu, 30 Jul 2026 01:43:56 GMT"
+    http_etag: '"7bbe-657ca34853d45"'
+    size_bytes: 31678
+    sha256: 93bafc525813f22e4711ff9ed6d626343094ce48c26388dc7c49189b3d7d5512
+  - filename: featureCodes_en.txt
+    source_url: https://download.geonames.org/export/dump/featureCodes_en.txt
+    retrieved_at_utc: 2026-07-30T15:57:36Z
+    http_last_modified: "Thu, 30 Jul 2026 01:29:51 GMT"
+    http_etag: '"e512-657ca022742a6"'
+    size_bytes: 58642
+    sha256: d44f129c1cffdeabf759c99fe7ea5b84f615c7f3e7366fb76ccf990f408f6af7
+
+membership:
+  strictly_nested: true
+  cities15000:
+    total_cn: 2106
+    assigned_phase_count: 2106
+  cities5000:
+    total_cn: 2879
+    assigned_phase_count: 773
+  cities1000:
+    total_cn: 4964
+    assigned_phase_count: 2085
+  cities500:
+    total_cn: 16049
+    assigned_phase_count: 11085
+
+outputs:
+  inventory:
+    path: inventory/CN.csv
+    size_bytes: 2007757
+    sha256: 91d80b151b1485ac6dcb059363bf99ce80875589102aa946e42e6f7e1369070b
+    row_count: 16049
+  build_report:
+    path: CN.build-report.json
+    size_bytes: 3525
+    sha256: fd3204091d808b66bf5c568963ff82ac92d6fbd8c69b664c528813fd0165361d
+  source_checks:
+    path: source-checks.json
+    size_bytes: 1296
+    sha256: 20934da4221ee5c8fc537b899914a61031a59f60ec269705763f0b6ea469bf18
+  admin1_crosswalk:
+    path: crosswalk/CN-admin1.csv
+    size_bytes: 1979
+    sha256: a4fe470d72e52eb73b4febcf4839cffe894e92b7b5ec17dbfa1d8981bec6b37f

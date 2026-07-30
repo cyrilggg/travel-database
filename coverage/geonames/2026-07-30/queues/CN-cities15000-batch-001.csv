@@ -1,0 +1,10 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-001,1816670,Beijing,PPLC,北京市,destinations/中国/北京市/北京市.md,直辖市与超大城市片区边界
+CN-cities15000-001,1814906,Chongqing,PPLA,重庆市,destinations/中国/重庆市/重庆市.md,山地直辖市与广域远郊边界
+CN-cities15000-001,1809858,Guangzhou,PPLA,广东省,destinations/中国/广东省/广州市.md,普通省会与成熟轨道交通
+CN-cities15000-001,1790630,Xi’an,PPLA,陕西省,destinations/中国/陕西省/西安市.md,古城核心与临潼远郊锚点
+CN-cities15000-001,1809498,Guilin,PPLA2,广西壮族自治区,destinations/中国/广西壮族自治区/桂林市.md,中心城区与跨县域山水走廊
+CN-cities15000-001,1529531,Dunhuang,PPLA3,甘肃省,destinations/中国/甘肃省/敦煌市.md,县级旅游城市与沙漠长距离交通
+CN-cities15000-001,1280737,Lhasa,PPLA,西藏自治区,destinations/中国/西藏自治区/拉萨市.md,高海拔与动态旅行规则
+CN-cities15000-001,1796556,Sanya,PPLA2,海南省,destinations/中国/海南省/三亚市.md,分散海湾与台风海况风险
+CN-cities15000-001,1792359,Huangshan,PPLA3,安徽省,destinations/中国/安徽省/黄山市.md,城市与同名风景区消歧

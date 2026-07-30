@@ -1,0 +1,128 @@
+import csv
+from pathlib import Path
+import sys
+import tempfile
+import unittest
+
+
+REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPOSITORY_ROOT / "scripts"))
+
+from validate_repository import REQUIRED_HEADINGS, validate_repository  # noqa: E402
+
+
+DECISION_FIELDS = (
+    "geonameid",
+    "status",
+    "page_path",
+    "canonical_geonameid",
+    "canonical_page_path",
+    "reason_code",
+    "reason",
+    "evidence_url",
+    "reviewed_by",
+    "reviewed_at",
+    "quality_gate_version",
+)
+
+
+class ValidateRepositoryTests(unittest.TestCase):
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory()
+        self.root = Path(self.temporary.name)
+        self.city_dir = self.root / "destinations" / "中国" / "测试省"
+        self.city_dir.mkdir(parents=True)
+        self.city_path = self.city_dir / "测试市.md"
+        headings = "\n\n".join(f"## {heading}\n\n有效内容。" for heading in REQUIRED_HEADINGS)
+        self.city_path.write_text(
+            "---\n"
+            "schema_version: 1\n"
+            'title: "测试市旅行指南"\n'
+            'country: "中国"\n'
+            'country_code: "CN"\n'
+            'admin_area: "测试省"\n'
+            'city: "测试市"\n'
+            "geonames_id: 1\n"
+            'wikidata_id: "Q1"\n'
+            "last_researched: 2026-07-30\n"
+            "content_status: researched\n"
+            "languages:\n  - zh-CN\n"
+            "---\n\n"
+            "# 测试市旅行指南\n\n"
+            "公开旅行资料。\n\n"
+            f"{headings}\n",
+            encoding="utf-8",
+        )
+        (self.city_dir / "README.md").write_text(
+            "# 测试省\n\n[测试市](./测试市.md)\n", encoding="utf-8"
+        )
+        snapshot = self.root / "coverage" / "geonames" / "2026-07-30"
+        (snapshot / "inventory").mkdir(parents=True)
+        (snapshot / "decisions").mkdir(parents=True)
+        with (snapshot / "inventory" / "CN.csv").open(
+            "w", encoding="utf-8", newline=""
+        ) as handle:
+            writer = csv.DictWriter(handle, fieldnames=("geonameid", "assigned_phase"))
+            writer.writeheader()
+            writer.writerow({"geonameid": "1", "assigned_phase": "cities15000"})
+        self.decisions_path = snapshot / "decisions" / "CN.csv"
+
+    def tearDown(self):
+        self.temporary.cleanup()
+
+    def write_decisions(self, rows):
+        with self.decisions_path.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=DECISION_FIELDS)
+            writer.writeheader()
+            writer.writerows(rows)
+
+    def test_accepts_researched_page_matching_sparse_ledger(self):
+        self.write_decisions(
+            [
+                {
+                    "geonameid": "1",
+                    "status": "researched",
+                    "page_path": "destinations/中国/测试省/测试市.md",
+                    "reviewed_by": "reviewer",
+                    "reviewed_at": "2026-07-30",
+                    "quality_gate_version": "1",
+                }
+            ]
+        )
+
+        report = validate_repository(self.root, "2026-07-30")
+
+        self.assertEqual(report["errors"], [])
+        self.assertEqual(report["processed_count"], 1)
+        self.assertEqual(report["status_counts"]["researched"], 1)
+
+    def test_researched_page_without_decision_is_not_complete(self):
+        self.write_decisions([])
+
+        report = validate_repository(self.root, "2026-07-30")
+
+        self.assertTrue(any("lacks a researched decision" in item for item in report["errors"]))
+        self.assertEqual(report["processed_count"], 0)
+
+    def test_audit_decision_requires_reason_evidence_and_target(self):
+        self.city_path.unlink()
+        self.write_decisions(
+            [
+                {
+                    "geonameid": "1",
+                    "status": "merged",
+                    "reviewed_by": "reviewer",
+                    "reviewed_at": "2026-07-30",
+                    "quality_gate_version": "1",
+                }
+            ]
+        )
+
+        report = validate_repository(self.root, "2026-07-30")
+
+        self.assertTrue(any("merged decision is missing reason" in item for item in report["errors"]))
+        self.assertTrue(any("lacks a canonical target" in item for item in report["errors"]))
+
+
+if __name__ == "__main__":
+    unittest.main()

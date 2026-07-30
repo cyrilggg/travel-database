@@ -1,0 +1,118 @@
+{
+  "checks": {
+    "checks_filename": "source-checks.json",
+    "passed": true
+  },
+  "country_code": "CN",
+  "hierarchy": {
+    "expected_order": [
+      "cities15000",
+      "cities5000",
+      "cities1000",
+      "cities500"
+    ],
+    "is_strictly_nested": true,
+    "pairwise": {
+      "cities1000_vs_cities500": {
+        "intersection_count": 4964,
+        "left_only_count": 0,
+        "right_only_count": 11085
+      },
+      "cities15000_vs_cities1000": {
+        "intersection_count": 2106,
+        "left_only_count": 0,
+        "right_only_count": 2858
+      },
+      "cities15000_vs_cities500": {
+        "intersection_count": 2106,
+        "left_only_count": 0,
+        "right_only_count": 13943
+      },
+      "cities15000_vs_cities5000": {
+        "intersection_count": 2106,
+        "left_only_count": 0,
+        "right_only_count": 773
+      },
+      "cities5000_vs_cities1000": {
+        "intersection_count": 2879,
+        "left_only_count": 0,
+        "right_only_count": 2085
+      },
+      "cities5000_vs_cities500": {
+        "intersection_count": 2879,
+        "left_only_count": 0,
+        "right_only_count": 13170
+      }
+    },
+    "violations": {
+      "cities1000_not_in_cities500": {
+        "count": 0,
+        "geonameids": []
+      },
+      "cities15000_not_in_cities5000": {
+        "count": 0,
+        "geonameids": []
+      },
+      "cities5000_not_in_cities1000": {
+        "count": 0,
+        "geonameids": []
+      },
+      "earlier_phases_not_in_cities500": {
+        "count": 0,
+        "geonameids": []
+      }
+    }
+  },
+  "inventory": {
+    "distinct_geonameid_count": 16049,
+    "filename": "CN.csv",
+    "row_count": 16049
+  },
+  "schema_version": 1,
+  "sources": {
+    "cities1000": {
+      "cn_row_count": 4964,
+      "distinct_geonameid_count": 170523,
+      "duplicate_geonameid_count": 0,
+      "file_sha256": "2ef839bf0c3359c3ad28818fb5fc216f5c9c0fe31ef4b25ae7f7c62d667008df",
+      "inner_filename": "cities1000.txt",
+      "inner_sha256": "9be42e78dfa87cd7b87f6db29b11bb6085465079d9df59a3b5ebe10f45f856dc",
+      "input_type": "zip",
+      "row_count": 170523,
+      "source_filename": "cities1000.zip"
+    },
+    "cities15000": {
+      "cn_row_count": 2106,
+      "distinct_geonameid_count": 34049,
+      "duplicate_geonameid_count": 0,
+      "file_sha256": "fe29918676f550efaa8c83908579d0005910c71bac25c5a3ef53f315dbc5609c",
+      "inner_filename": "cities15000.txt",
+      "inner_sha256": "d7761aa73de6d0d33595236c4307ab73790e4340cca1c4f983527f035d53b9ba",
+      "input_type": "zip",
+      "row_count": 34049,
+      "source_filename": "cities15000.zip"
+    },
+    "cities500": {
+      "cn_row_count": 16049,
+      "distinct_geonameid_count": 235073,
+      "duplicate_geonameid_count": 0,
+      "file_sha256": "3c2f9d4bc6ae50e171865ade920f1a311db86059f6d1d713bbe3588146b5ced2",
+      "inner_filename": "cities500.txt",
+      "inner_sha256": "f7f284d91f517c10b21bb7aa8c38e7a408b188c7cd6eb7e40e9f90a872959501",
+      "input_type": "zip",
+      "row_count": 235073,
+      "source_filename": "cities500.zip"
+    },
+    "cities5000": {
+      "cn_row_count": 2879,
+      "distinct_geonameid_count": 69542,
+      "duplicate_geonameid_count": 0,
+      "file_sha256": "d374174d736677d6d66c981a5be394d458d6cbf345bcbe7a02d301a4219b296b",
+      "inner_filename": "cities5000.txt",
+      "inner_sha256": "8a971736dc0f7148f1a5a6d4abd69fca92b0938d7cd61cdc0120adec425c919b",
+      "input_type": "zip",
+      "row_count": 69542,
+      "source_filename": "cities5000.zip"
+    }
+  }
+}

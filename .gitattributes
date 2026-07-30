@@ -1,0 +1,5 @@
+coverage/geonames/*/raw/*.zip filter=lfs diff=lfs merge=lfs -text
+coverage/geonames/*/raw/*.txt -text
+coverage/geonames/*/*.json -text
+coverage/geonames/*/inventory/*.csv -text
+coverage/geonames/*/crosswalk/*.csv -text
