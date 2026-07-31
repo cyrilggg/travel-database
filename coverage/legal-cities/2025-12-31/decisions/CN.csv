@@ -4,6 +4,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 130100,researched,destinations/中国/河北省/石家庄市.md,1795270,codex,2026-07-30,1
 130200,researched,destinations/中国/河北省/唐山市.md,1793346,codex,2026-07-30,1
 130400,researched,destinations/中国/河北省/邯郸市.md,1808963,codex,2026-07-31,1
+130500,researched,destinations/中国/河北省/邢台市.md,1788927,codex,2026-07-31,1
 130600,researched,destinations/中国/河北省/保定市.md,1816971,codex,2026-07-30,1
 131000,researched,destinations/中国/河北省/廊坊市.md,1804540,codex,2026-07-31,1
 131082,researched,destinations/中国/河北省/三河市.md,1796823,codex,2026-07-31,1
@@ -69,10 +70,12 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 340600,researched,destinations/中国/安徽省/淮北市.md,1807700,codex,2026-07-31,1
 340800,researched,destinations/中国/安徽省/安庆市.md,1817993,codex,2026-07-31,1
 341000,researched,destinations/中国/安徽省/黄山市.md,1792359,codex,2026-07-30,1
+341100,researched,destinations/中国/安徽省/滁州市.md,1814757,codex,2026-07-31,1
 341200,researched,destinations/中国/安徽省/阜阳市.md,1810845,codex,2026-07-30,1
 341300,researched,destinations/中国/安徽省/宿州市.md,1793743,codex,2026-07-30,1
 341500,researched,destinations/中国/安徽省/六安市.md,1802206,codex,2026-07-31,1
 341600,researched,destinations/中国/安徽省/亳州市.md,1816234,codex,2026-07-31,1
+341800,researched,destinations/中国/安徽省/宣城市.md,1788081,codex,2026-07-31,1
 350100,researched,destinations/中国/福建省/福州市.md,1810821,codex,2026-07-30,1
 350200,researched,destinations/中国/福建省/厦门市.md,1790645,codex,2026-07-30,1
 350300,researched,destinations/中国/福建省/莆田市.md,1798449,codex,2026-07-30,1
@@ -112,6 +115,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 411100,researched,destinations/中国/河南省/漯河市.md,1801934,codex,2026-07-31,1
 411300,researched,destinations/中国/河南省/南阳市.md,1799629,codex,2026-07-30,1
 411400,researched,destinations/中国/河南省/商丘市.md,1796134,codex,2026-07-30,1
+411500,researched,destinations/中国/河南省/信阳市.md,1788534,codex,2026-07-31,1
 420100,researched,destinations/中国/湖北省/武汉市.md,1791247,codex,2026-07-30,1
 420300,researched,destinations/中国/湖北省/十堰市.md,1794903,codex,2026-07-30,1
 420500,researched,destinations/中国/湖北省/宜昌市.md,1786764,codex,2026-07-31,1
@@ -149,6 +153,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 450100,researched,destinations/中国/广西壮族自治区/南宁市.md,1799869,codex,2026-07-30,1
 450200,researched,destinations/中国/广西壮族自治区/柳州市.md,1803300,codex,2026-07-31,1
 450300,researched,destinations/中国/广西壮族自治区/桂林市.md,1809498,codex,2026-07-30,1
+450400,researched,destinations/中国/广西壮族自治区/梧州市.md,1790840,codex,2026-07-31,1
 450700,researched,destinations/中国/广西壮族自治区/钦州市.md,1797551,codex,2026-07-31,1
 450800,researched,destinations/中国/广西壮族自治区/贵港市.md,1809532,codex,2026-07-31,1
 450900,researched,destinations/中国/广西壮族自治区/玉林市.md,1785781,codex,2026-07-31,1
@@ -159,6 +164,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 500000,researched,destinations/中国/重庆市/重庆市.md,1814906,codex,2026-07-30,1
 510100,researched,destinations/中国/四川省/成都市.md,1815286,codex,2026-07-30,1
 510300,researched,destinations/中国/四川省/自贡市.md,1783745,codex,2026-07-31,1
+510400,researched,destinations/中国/四川省/攀枝花市.md,6929460,codex,2026-07-31,1
 510500,researched,destinations/中国/四川省/泸州市.md,1801640,codex,2026-07-31,1
 510700,researched,destinations/中国/四川省/绵阳市.md,1800627,codex,2026-07-30,1
 511000,researched,destinations/中国/四川省/内江市.md,1799491,codex,2026-07-31,1
@@ -172,10 +178,12 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 520100,researched,destinations/中国/贵州省/贵阳市.md,1809461,codex,2026-07-30,1
 520200,researched,destinations/中国/贵州省/六盘水市.md,8533133,codex,2026-07-31,1
 520300,researched,destinations/中国/贵州省/遵义市.md,1783621,codex,2026-07-30,1
+520400,researched,destinations/中国/贵州省/安顺市.md,1817968,codex,2026-07-31,1
 520500,researched,destinations/中国/贵州省/毕节市.md,1816373,codex,2026-07-31,1
 530100,researched,destinations/中国/云南省/昆明市.md,1804651,codex,2026-07-30,1
 530300,researched,destinations/中国/云南省/曲靖市.md,1797318,codex,2026-07-31,1
 530500,researched,destinations/中国/云南省/保山市.md,1281673,codex,2026-07-31,1
+530600,researched,destinations/中国/云南省/昭通市.md,1784841,codex,2026-07-31,1
 540100,researched,destinations/中国/西藏自治区/拉萨市.md,1280737,codex,2026-07-30,1
 610100,researched,destinations/中国/陕西省/西安市.md,1790630,codex,2026-07-30,1
 610300,researched,destinations/中国/陕西省/宝鸡市.md,10942359,codex,2026-07-30,1
