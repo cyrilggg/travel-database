@@ -28,6 +28,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 320600,researched,destinations/中国/江苏省/南通市.md,1799722,codex,2026-07-30,1
 320700,researched,destinations/中国/江苏省/连云港市.md,10859300,codex,2026-07-30,1
 320800,researched,destinations/中国/江苏省/淮安市.md,1797873,codex,2026-07-30,1
+321000,researched,destinations/中国/江苏省/扬州市.md,1787227,codex,2026-07-30,1
 321200,researched,destinations/中国/江苏省/泰州市.md,1793505,codex,2026-07-30,1
 330100,researched,destinations/中国/浙江省/杭州市.md,1808926,codex,2026-07-30,1
 330200,researched,destinations/中国/浙江省/宁波市.md,1799397,codex,2026-07-30,1
@@ -41,6 +42,8 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 341300,researched,destinations/中国/安徽省/宿州市.md,1793743,codex,2026-07-30,1
 350100,researched,destinations/中国/福建省/福州市.md,1810821,codex,2026-07-30,1
 350200,researched,destinations/中国/福建省/厦门市.md,1790645,codex,2026-07-30,1
+350300,researched,destinations/中国/福建省/莆田市.md,1798449,codex,2026-07-30,1
+350500,researched,destinations/中国/福建省/泉州市.md,1797353,codex,2026-07-30,1
 360100,researched,destinations/中国/江西省/南昌市.md,1800163,codex,2026-07-30,1
 360700,researched,destinations/中国/江西省/赣州市.md,1810638,codex,2026-07-30,1
 370100,researched,destinations/中国/山东省/济南市.md,1805753,codex,2026-07-30,1
@@ -62,6 +65,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 440500,researched,destinations/中国/广东省/汕头市.md,1795940,codex,2026-07-30,1
 440600,researched,destinations/中国/广东省/佛山市.md,1811103,codex,2026-07-30,1
 440700,researched,destinations/中国/广东省/江门市.md,1806299,codex,2026-07-30,1
+441200,researched,destinations/中国/广东省/肇庆市.md,1784853,codex,2026-07-30,1
 441300,researched,destinations/中国/广东省/惠州市.md,1806776,codex,2026-07-30,1
 441800,researched,destinations/中国/广东省/清远市.md,1797945,codex,2026-07-30,1
 441900,researched,destinations/中国/广东省/东莞市.md,1812545,codex,2026-07-30,1
@@ -75,6 +79,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 460200,researched,destinations/中国/海南省/三亚市.md,1796556,codex,2026-07-30,1
 500000,researched,destinations/中国/重庆市/重庆市.md,1814906,codex,2026-07-30,1
 510100,researched,destinations/中国/四川省/成都市.md,1815286,codex,2026-07-30,1
+510700,researched,destinations/中国/四川省/绵阳市.md,1800627,codex,2026-07-30,1
 511300,researched,destinations/中国/四川省/南充市.md,1800146,codex,2026-07-30,1
 511700,researched,destinations/中国/四川省/达州市.md,1813325,codex,2026-07-30,1
 511900,researched,destinations/中国/四川省/巴中市.md,11995100,codex,2026-07-30,1
