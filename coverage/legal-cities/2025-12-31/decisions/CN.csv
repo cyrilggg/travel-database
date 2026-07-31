@@ -5,6 +5,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 130200,researched,destinations/中国/河北省/唐山市.md,1793346,codex,2026-07-30,1
 130400,researched,destinations/中国/河北省/邯郸市.md,1808963,codex,2026-07-31,1
 130600,researched,destinations/中国/河北省/保定市.md,1816971,codex,2026-07-30,1
+131082,researched,destinations/中国/河北省/三河市.md,1796823,codex,2026-07-31,1
 140100,researched,destinations/中国/山西省/太原市.md,1793511,codex,2026-07-30,1
 140200,researched,destinations/中国/山西省/大同市.md,2037799,codex,2026-07-30,1
 140400,researched,destinations/中国/山西省/长治市.md,1808956,codex,2026-07-31,1
@@ -18,6 +19,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 210200,researched,destinations/中国/辽宁省/大连市.md,1814087,codex,2026-07-30,1
 210300,researched,destinations/中国/辽宁省/鞍山市.md,2038632,codex,2026-07-30,1
 210400,researched,destinations/中国/辽宁省/抚顺市.md,2037355,codex,2026-07-31,1
+210500,researched,destinations/中国/辽宁省/本溪市.md,2038300,codex,2026-07-31,1
 211100,researched,destinations/中国/辽宁省/盘锦市.md,10794003,codex,2026-07-31,1
 220100,researched,destinations/中国/吉林省/长春市.md,2038180,codex,2026-07-30,1
 220200,researched,destinations/中国/吉林省/吉林市.md,2036502,codex,2026-07-30,1
@@ -53,6 +55,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 331000,researched,destinations/中国/浙江省/台州市.md,8400694,codex,2026-07-30,1
 340100,researched,destinations/中国/安徽省/合肥市.md,1808722,codex,2026-07-30,1
 340200,researched,destinations/中国/安徽省/芜湖市.md,1791236,codex,2026-07-30,1
+340300,researched,destinations/中国/安徽省/蚌埠市.md,1816440,codex,2026-07-31,1
 340400,researched,destinations/中国/安徽省/淮南市.md,1807681,codex,2026-07-30,1
 340600,researched,destinations/中国/安徽省/淮北市.md,1807700,codex,2026-07-31,1
 341000,researched,destinations/中国/安徽省/黄山市.md,1792359,codex,2026-07-30,1
@@ -78,6 +81,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 370500,researched,destinations/中国/山东省/东营市.md,1812101,codex,2026-07-31,1
 370600,researched,destinations/中国/山东省/烟台市.md,1787093,codex,2026-07-30,1
 370700,researched,destinations/中国/山东省/潍坊市.md,1791681,codex,2026-07-30,1
+370782,researched,destinations/中国/山东省/诸城市.md,7602670,codex,2026-07-31,1
 370800,researched,destinations/中国/山东省/济宁市.md,1805518,codex,2026-07-31,1
 370900,researched,destinations/中国/山东省/泰安市.md,1793724,codex,2026-07-30,1
 371300,researched,destinations/中国/山东省/临沂市.md,1803318,codex,2026-07-30,1
@@ -86,6 +90,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 410100,researched,destinations/中国/河南省/郑州市.md,1784658,codex,2026-07-30,1
 410200,researched,destinations/中国/河南省/开封市.md,1804879,codex,2026-07-30,1
 410300,researched,destinations/中国/河南省/洛阳市.md,1801792,codex,2026-07-31,1
+410400,researched,destinations/中国/河南省/平顶山市.md,1798827,codex,2026-07-31,1
 410500,researched,destinations/中国/河南省/安阳市.md,1785294,codex,2026-07-31,1
 410700,researched,destinations/中国/河南省/新乡市.md,1788572,codex,2026-07-31,1
 411000,researched,destinations/中国/河南省/许昌市.md,1788046,codex,2026-07-31,1
@@ -99,7 +104,9 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 421000,researched,destinations/中国/湖北省/荆州市.md,1805540,codex,2026-07-31,1
 430100,researched,destinations/中国/湖南省/长沙市.md,1815577,codex,2026-07-30,1
 430200,researched,destinations/中国/湖南省/株洲市.md,1783763,codex,2026-07-31,1
+430300,researched,destinations/中国/湖南省/湘潭市.md,1790492,codex,2026-07-31,1
 430400,researched,destinations/中国/湖南省/衡阳市.md,1808370,codex,2026-07-31,1
+430600,researched,destinations/中国/湖南省/岳阳市.md,1927639,codex,2026-07-31,1
 430700,researched,destinations/中国/湖南省/常德市.md,1791121,codex,2026-07-30,1
 431100,researched,destinations/中国/湖南省/永州市.md,1786217,codex,2026-07-31,1
 440100,researched,destinations/中国/广东省/广州市.md,1809858,codex,2026-07-30,1
@@ -113,6 +120,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 440900,researched,destinations/中国/广东省/茂名市.md,1801180,codex,2026-07-31,1
 441200,researched,destinations/中国/广东省/肇庆市.md,1784853,codex,2026-07-30,1
 441300,researched,destinations/中国/广东省/惠州市.md,1806776,codex,2026-07-30,1
+441400,researched,destinations/中国/广东省/梅州市.md,1800779,codex,2026-07-31,1
 441700,researched,destinations/中国/广东省/阳江市.md,1806408,codex,2026-07-31,1
 441800,researched,destinations/中国/广东省/清远市.md,1797945,codex,2026-07-30,1
 441900,researched,destinations/中国/广东省/东莞市.md,1812545,codex,2026-07-30,1
