@@ -32,8 +32,11 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 321200,researched,destinations/中国/江苏省/泰州市.md,1793505,codex,2026-07-30,1
 330100,researched,destinations/中国/浙江省/杭州市.md,1808926,codex,2026-07-30,1
 330200,researched,destinations/中国/浙江省/宁波市.md,1799397,codex,2026-07-30,1
+330282,researched,destinations/中国/浙江省/慈溪市.md,1806602,codex,2026-07-30,1
 330300,researched,destinations/中国/浙江省/温州市.md,1791388,codex,2026-07-30,1
 330600,researched,destinations/中国/浙江省/绍兴市.md,1795855,codex,2026-07-30,1
+330700,researched,destinations/中国/浙江省/金华市.md,1805528,codex,2026-07-30,1
+331000,researched,destinations/中国/浙江省/台州市.md,8400694,codex,2026-07-30,1
 340100,researched,destinations/中国/安徽省/合肥市.md,1808722,codex,2026-07-30,1
 340200,researched,destinations/中国/安徽省/芜湖市.md,1791236,codex,2026-07-30,1
 340400,researched,destinations/中国/安徽省/淮南市.md,1807681,codex,2026-07-30,1
@@ -59,6 +62,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 420100,researched,destinations/中国/湖北省/武汉市.md,1791247,codex,2026-07-30,1
 420300,researched,destinations/中国/湖北省/十堰市.md,1794903,codex,2026-07-30,1
 430100,researched,destinations/中国/湖南省/长沙市.md,1815577,codex,2026-07-30,1
+430700,researched,destinations/中国/湖南省/常德市.md,1791121,codex,2026-07-30,1
 440100,researched,destinations/中国/广东省/广州市.md,1809858,codex,2026-07-30,1
 440300,researched,destinations/中国/广东省/深圳市.md,1795565,codex,2026-07-30,1
 440400,researched,destinations/中国/广东省/珠海市.md,1790437,codex,2026-07-30,1
