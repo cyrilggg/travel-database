@@ -238,3 +238,13 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1816336,researched,destinations/中国/山东省/滨州市.md,,,,,,codex,2026-07-31,1
 1785738,researched,destinations/中国/山西省/运城市.md,,,,,,codex,2026-07-31,1
 1812955,researched,destinations/中国/山东省/德州市.md,,,,,,codex,2026-07-31,1
+1796669,researched,destinations/中国/河南省/三门峡市.md,,,,,,codex,2026-07-31,1
+6642286,researched,destinations/中国/湖北省/鄂州市.md,,,,,,codex,2026-07-31,1
+2035715,researched,destinations/中国/黑龙江省/牡丹江市.md,,,,,,codex,2026-07-31,1
+1804153,researched,destinations/中国/四川省/乐山市.md,,,,,,codex,2026-07-31,1
+9072919,researched,destinations/中国/山东省/日照市.md,,,,,,codex,2026-07-31,1
+1793900,researched,destinations/中国/四川省/遂宁市.md,,,,,,codex,2026-07-31,1
+9181182,researched,destinations/中国/河南省/濮阳市.md,,,,,,codex,2026-07-31,1
+1808770,researched,destinations/中国/河南省/鹤壁市.md,,,,,,codex,2026-07-31,1
+1808090,merged,,1796236,destinations/中国/上海市/上海市.md,merged_urban_section,虹口是上海市辖区而非独立法定城市；规范上海页已实质覆盖虹口滨江文博住宿和路线关系,https://www.shanghai.gov.cn/cmsres/a2/a29e8e1ead694bc3b5fcfa2c8f25acb1/e23ff47a54e4002e1357b799a1c502fb.pdf,codex,2026-07-31,1
+1811619,duplicate,,6642286,destinations/中国/湖北省/鄂州市.md,duplicate_same_settlement,该居民点与规范鄂州行政中心点同属鄂城连续主城且名称与行政链一致；两坐标约相距5.1公里并保留信息更完整的6642286作为规范标识,https://www.geonames.org/1811619/ezhou.html,codex,2026-07-31,1

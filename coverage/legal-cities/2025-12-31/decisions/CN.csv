@@ -37,6 +37,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 230200,researched,destinations/中国/黑龙江省/齐齐哈尔市.md,2035265,codex,2026-07-31,1
 230400,researched,destinations/中国/黑龙江省/鹤岗市.md,2036986,codex,2026-07-31,1
 230600,researched,destinations/中国/黑龙江省/大庆市.md,2037860,codex,2026-07-30,1
+231000,researched,destinations/中国/黑龙江省/牡丹江市.md,2035715,codex,2026-07-31,1
 310000,researched,destinations/中国/上海市/上海市.md,1796236,codex,2026-07-30,1
 320100,researched,destinations/中国/江苏省/南京市.md,1799962,codex,2026-07-30,1
 320200,researched,destinations/中国/江苏省/无锡市.md,1790923,codex,2026-07-30,1
@@ -109,6 +110,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 370800,researched,destinations/中国/山东省/济宁市.md,1805518,codex,2026-07-31,1
 370900,researched,destinations/中国/山东省/泰安市.md,1793724,codex,2026-07-30,1
 371000,researched,destinations/中国/山东省/威海市.md,1791673,codex,2026-07-31,1
+371100,researched,destinations/中国/山东省/日照市.md,9072919,codex,2026-07-31,1
 371300,researched,destinations/中国/山东省/临沂市.md,1803318,codex,2026-07-30,1
 371400,researched,destinations/中国/山东省/德州市.md,1812955,codex,2026-07-31,1
 371500,researched,destinations/中国/山东省/聊城市.md,1803834,codex,2026-07-31,1
@@ -119,10 +121,13 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 410300,researched,destinations/中国/河南省/洛阳市.md,1801792,codex,2026-07-31,1
 410400,researched,destinations/中国/河南省/平顶山市.md,1798827,codex,2026-07-31,1
 410500,researched,destinations/中国/河南省/安阳市.md,1785294,codex,2026-07-31,1
+410600,researched,destinations/中国/河南省/鹤壁市.md,1808770,codex,2026-07-31,1
 410700,researched,destinations/中国/河南省/新乡市.md,1788572,codex,2026-07-31,1
 410800,researched,destinations/中国/河南省/焦作市.md,1805987,codex,2026-07-31,1
+410900,researched,destinations/中国/河南省/濮阳市.md,9181182,codex,2026-07-31,1
 411000,researched,destinations/中国/河南省/许昌市.md,1788046,codex,2026-07-31,1
 411100,researched,destinations/中国/河南省/漯河市.md,1801934,codex,2026-07-31,1
+411200,researched,destinations/中国/河南省/三门峡市.md,1796669,codex,2026-07-31,1
 411300,researched,destinations/中国/河南省/南阳市.md,1799629,codex,2026-07-30,1
 411400,researched,destinations/中国/河南省/商丘市.md,1796134,codex,2026-07-30,1
 411500,researched,destinations/中国/河南省/信阳市.md,1788534,codex,2026-07-31,1
@@ -132,6 +137,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 420300,researched,destinations/中国/湖北省/十堰市.md,1794903,codex,2026-07-30,1
 420500,researched,destinations/中国/湖北省/宜昌市.md,1786764,codex,2026-07-31,1
 420600,researched,destinations/中国/湖北省/襄阳市.md,1790587,codex,2026-07-31,1
+420700,researched,destinations/中国/湖北省/鄂州市.md,6642286,codex,2026-07-31,1
 420900,researched,destinations/中国/湖北省/孝感市.md,1790254,codex,2026-07-31,1
 421000,researched,destinations/中国/湖北省/荆州市.md,1805540,codex,2026-07-31,1
 430100,researched,destinations/中国/湖南省/长沙市.md,1815577,codex,2026-07-30,1
@@ -182,7 +188,9 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 510500,researched,destinations/中国/四川省/泸州市.md,1801640,codex,2026-07-31,1
 510600,researched,destinations/中国/四川省/德阳市.md,1812961,codex,2026-07-31,1
 510700,researched,destinations/中国/四川省/绵阳市.md,1800627,codex,2026-07-30,1
+510900,researched,destinations/中国/四川省/遂宁市.md,1793900,codex,2026-07-31,1
 511000,researched,destinations/中国/四川省/内江市.md,1799491,codex,2026-07-31,1
+511100,researched,destinations/中国/四川省/乐山市.md,1804153,codex,2026-07-31,1
 511300,researched,destinations/中国/四川省/南充市.md,1800146,codex,2026-07-30,1
 511400,researched,destinations/中国/四川省/眉山市.md,1800818,codex,2026-07-31,1
 511500,researched,destinations/中国/四川省/宜宾市.md,1786770,codex,2026-07-31,1
