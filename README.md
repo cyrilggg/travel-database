@@ -80,6 +80,7 @@ Markdown 是主要产品。覆盖清单与辅助脚本只用于审计和维护�
 | [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [九江](./destinations/中国/江西省/九江市.md) | 浔阳古城、长江港城、鄱阳湖、庐山文化景观、候鸟与浔阳菜 | `researched` |
 | [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [抚州](./destinations/中国/江西省/抚州市.md) | 临川文化、汤显祖与戏曲、文昌里、生活古村、雕版印刷与莲乡 | `researched` |
 | [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [上饶](./destinations/中国/江西省/上饶市.md) | 三清山、婺源古村、信州历史、鄱阳湿地、书院与赣东北饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [宜春](./destinations/中国/江西省/宜春市.md) | 袁州古城史、明月山、温汤温泉、禅宗祖庭、赣西北森林与宜春米粉 | `researched` |
 | [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [济南](./destinations/中国/山东省/济南市.md) | 泉水系统、明府城、大明湖、千佛山、省级场馆与鲁菜 | `researched` |
 | [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [青岛](./destinations/中国/山东省/青岛市.md) | 栈桥与老城、八大关、浮山湾、啤酒工业、海鲜与崂山 | `researched` |
 | [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [泰安](./destinations/中国/山东省/泰安市.md) | 泰山、岱庙、登山御道、石刻、大汶口文化与山城轴线 | `researched` |
@@ -98,13 +99,16 @@ Markdown 是主要产品。覆盖清单与辅助脚本只用于审计和维护�
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [南阳](./destinations/中国/河南省/南阳市.md) | 卧龙岗、汉画像石、南阳府衙、仲景文化、内乡县衙与伏牛山水 | `researched` |
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [商丘](./destinations/中国/河南省/商丘市.md) | 归德古城、商文化、应天书院、商丘博物馆与芒砀山汉代遗存 | `researched` |
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [许昌](./destinations/中国/河南省/许昌市.md) | 曹魏历史、城市博物馆、汉魏考古、明清古建、护城河与花木 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [新乡](./destinations/中国/河南省/新乡市.md) | 牧野文化、地方博物馆、明代藩王墓、豫北饮食与太行峡谷 | `researched` |
 | [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [武汉](./destinations/中国/湖北省/武汉市.md) | 两江三镇、黄鹤楼、汉口历史街区、东湖、荆楚文物与过早 | `researched` |
 | [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [十堰](./destinations/中国/湖北省/十堰市.md) | 武当山、东风汽车与三线建设、丹江口水库、汉江与郧阳文化 | `researched` |
 | [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [宜昌](./destinations/中国/湖北省/宜昌市.md) | 沿江主城、西陵峡、三峡工程、峡江游船、巴楚文化与清江 | `researched` |
 | [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [襄阳](./destinations/中国/湖北省/襄阳市.md) | 汉江两岸、襄阳古城、三国文化、博物馆、牛肉面与鄂西北远郊 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [荆州](./destinations/中国/湖北省/荆州市.md) | 楚文化、古城墙、荆州博物馆、沙市商埠、长江与湿地 | `researched` |
 | [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [长沙](./destinations/中国/湖南省/长沙市.md) | 湘江、岳麓山与书院、橘子洲、博物馆、老街与湘菜 | `researched` |
 | [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [株洲](./destinations/中国/湖南省/株洲市.md) | 湘江、铁路工业、轨道交通制造、醴陵陶瓷、炎帝文化与湘东山地 | `researched` |
 | [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [常德](./destinations/中国/湖南省/常德市.md) | 沅江诗墙、柳叶湖、河街、桃花源、史前考古与常德米粉 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [衡阳](./destinations/中国/湖南省/衡阳市.md) | 湘江、石鼓书院、南岳衡山、抗战记忆、蔡伦文化与衡阳米粉 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [广州](./destinations/中国/广东省/广州市.md) | 西关骑楼、岭南工艺、南越遗址、粤菜与珠江 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [佛山](./destinations/中国/广东省/佛山市.md) | 祖庙与岭南街区、石湾陶艺、西樵山、顺德园林与美食 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [深圳](./destinations/中国/广东省/深圳市.md) | 特区城市史、福田中轴、深圳湾、蛇口、罗湖老城与大鹏海岸 | `researched` |
@@ -122,10 +126,13 @@ Markdown 是主要产品。覆盖清单与辅助脚本只用于审计和维护�
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [湛江](./destinations/中国/广东省/湛江市.md) | 湛江湾、广州湾历史建筑、湖光岩、火山海岛、红树林与粤西海鲜 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [茂名](./destinations/中国/广东省/茂名市.md) | 工业遗产、粤西海岸、冼太文化、荔枝、化橘红与云开山地 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [阳江](./destinations/中国/广东省/阳江市.md) | 南海Ⅰ号、海陵岛、漠阳文化、沙滩、渔港与海鲜 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [韶关](./destinations/中国/广东省/韶关市.md) | 北江山城、丹霞地貌、禅宗寺院、史前考古、粤北饮食与南岭生态 | `researched` |
 | [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [桂林](./destinations/中国/广西壮族自治区/桂林市.md) | 喀斯特峰林、漓江、城中湖泊、桂林米粉 | `researched` |
 | [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [南宁](./destinations/中国/广西壮族自治区/南宁市.md) | 邕江老城、青秀山、广西多民族历史、东盟城市界面与老友粉 | `researched` |
 | [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [柳州](./destinations/中国/广西壮族自治区/柳州市.md) | 柳江环城山水、柳宗元、工业城市、喀斯特公园与螺蛳粉 | `researched` |
 | [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [钦州](./destinations/中国/广西壮族自治区/钦州市.md) | 岭南旧城、刘冯旧居、坭兴陶、三娘湾、红树林、港城与北部湾饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [贵港](./destinations/中国/广西壮族自治区/贵港市.md) | 郁江港城、荷文化、汉代考古、桂平西山、森林山地与水利航运 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [玉林](./destinations/中国/广西壮族自治区/玉林市.md) | 岭南骑楼、地方博物馆、容县建筑、侨乡文化、森林与牛腩粉 | `researched` |
 | [中国](./destinations/中国/README.md) | [海南省](./destinations/中国/海南省/README.md) | [海口](./destinations/中国/海南省/海口市.md) | 骑楼老街、琼北历史、海口湾与海甸岛、火山地貌、老爸茶和海南粉 | `researched` |
 | [中国](./destinations/中国/README.md) | [海南省](./destinations/中国/海南省/README.md) | [三亚](./destinations/中国/海南省/三亚市.md) | 热带海湾、海岛、山海景观、海鲜与崖州文化 | `researched` |
 | [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [重庆](./destinations/中国/重庆市/重庆市.md) | 山城地形、两江四岸、立体交通、火锅与小面 | `researched` |
@@ -147,6 +154,7 @@ Markdown 是主要产品。覆盖清单与辅助脚本只用于审计和维护�
 | [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [西安](./destinations/中国/陕西省/西安市.md) | 秦汉唐考古、明城墙、博物馆、关中面食 | `researched` |
 | [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [宝鸡](./destinations/中国/陕西省/宝鸡市.md) | 青铜器、周秦遗址、抗战工业遗产、西府饮食与秦岭山地 | `researched` |
 | [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [渭南](./destinations/中国/陕西省/渭南市.md) | 关中东部、华州皮影、渭华起义、少华山、唐陵与黄河湿地 | `researched` |
+| [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [咸阳](./destinations/中国/陕西省/咸阳市.md) | 秦汉都城、汉唐帝陵、渭河、考古博物馆与关中面食 | `researched` |
 | [中国](./destinations/中国/README.md) | [甘肃省](./destinations/中国/甘肃省/README.md) | [兰州](./destinations/中国/甘肃省/兰州市.md) | 黄河河谷、丝路文博、中山桥、白塔山、简牍与牛肉面 | `researched` |
 | [中国](./destinations/中国/README.md) | [甘肃省](./destinations/中国/甘肃省/README.md) | [庆阳](./destinations/中国/甘肃省/庆阳市.md) | 黄土塬、史前考古、北石窟、农耕文化、红色历史与皮影 | `researched` |
 | [中国](./destinations/中国/README.md) | [甘肃省](./destinations/中国/甘肃省/README.md) | [敦煌](./destinations/中国/甘肃省/敦煌市.md) | 石窟艺术、绿洲、沙漠景观、丝路关隘与长距离远郊 | `researched` |
