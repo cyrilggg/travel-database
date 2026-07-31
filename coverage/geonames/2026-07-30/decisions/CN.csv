@@ -275,3 +275,12 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1788450,researched,destinations/中国/山西省/忻州市.md,,,,,,codex,2026-07-31,1
 1798821,researched,destinations/中国/山东省/平度市.md,,,,,,codex,2026-07-31,1
 1806445,researched,destinations/中国/江西省/吉安市.md,,,,,,codex,2026-07-31,1
+12446699,out_of_scope,,,,not_populated_place,官方机构为大兴安岭地区行政公署且现行代码232700代表地区而非法定城市；该记录名称人口对应行政地区范围而非具名城市聚居点,https://www.dxal.gov.cn/dxal/c100014/tydp.shtml,codex,2026-07-31,1
+1809412,researched,destinations/中国/浙江省/永康市.md,,,,,,codex,2026-07-31,1
+1529660,researched,destinations/中国/新疆维吾尔自治区/阿克苏市.md,,,,,,codex,2026-07-31,1
+1796068,researched,destinations/中国/陕西省/商洛市.md,,,,,,codex,2026-07-31,1
+1806488,researched,destinations/中国/海南省/琼海市.md,,,,,,codex,2026-07-31,1
+1816080,researched,destinations/中国/河北省/沧州市.md,,,,,,codex,2026-07-31,1
+1816705,researched,destinations/中国/广西壮族自治区/北海市.md,,,,,,codex,2026-07-31,1
+1808392,researched,destinations/中国/河北省/衡水市.md,,,,,,codex,2026-07-31,1
+1806466,researched,destinations/中国/四川省/广元市.md,,,,,,codex,2026-07-31,1
