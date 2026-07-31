@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-023,1797264,Quzhou,PPL,浙江省,destinations/中国/浙江省/衢州市.md,浙西衢江古城与南孔文化山地县域及江山市法定县级市和同名曲周消歧边界
+CN-cities15000-023,1785453,Zaozhuang,PPL,山东省,destinations/中国/山东省/枣庄市.md,鲁南多中心城市与台儿庄运河煤矿工业及滕州市法定县级市和景区去重边界
+CN-cities15000-023,1798654,Pingxiang,PPLA2,江西省,destinations/中国/江西省/萍乡市.md,赣西工业城市与安源武功山及跨市山体景区和广西凭祥同名消歧边界
+CN-cities15000-023,1886762,Zhoushan,PPLA3,浙江省,destinations/中国/浙江省/舟山市.md,群岛港城与定海普陀岱山嵊泗船班海况及港区保护地和岛际边界
+CN-cities15000-023,2035265,Qiqihar,PPLA2,黑龙江省,destinations/中国/黑龙江省/齐齐哈尔市.md,嫩江平原老城工业与扎龙湿地及讷河市法定县级市和冬季生态边界
+CN-cities15000-023,1802940,Puning,PPL,广东省,destinations/中国/广东省/普宁市.md,揭阳代管法定县级市与潮汕侨乡商贸非遗及揭阳主城去重和生产空间边界
+CN-cities15000-023,1789065,Ankang,PPLA2,陕西省,destinations/中国/陕西省/安康市.md,汉江谷地秦巴山地与地方文博及旬阳市法定县级市和云南同名点消歧边界
+CN-cities15000-023,1804540,Langfang,PPLA2,河北省,destinations/中国/河北省/廊坊市.md,京津之间分割市域与主城运河文化及霸州三河法定县级市和燕郊归属边界
