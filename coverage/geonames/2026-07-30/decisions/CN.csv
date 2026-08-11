@@ -293,3 +293,13 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1798760,researched,destinations/中国/甘肃省/平凉市.md,,,,,,codex,2026-07-31,1
 1802238,researched,destinations/中国/湖南省/娄底市.md,,,,,,codex,2026-07-31,1
 1783988,duplicate,,7602670,destinations/中国/山东省/诸城市.md,duplicate_same_settlement,两条PPLA3记录同属CN.25.3707行政链且坐标约相距0.459公里；现有规范页已按法定代码370782完整覆盖诸城市并明确说明两条GeoNames记录关系,https://www.geonames.org/1783988/zhucheng.html,codex,2026-07-31,1
+1795928,researched,destinations/中国/广东省/汕尾市.md,,,,,,codex,2026-08-11,1
+1789647,researched,destinations/中国/四川省/西昌市.md,,,,,,codex,2026-08-11,1
+1805741,researched,destinations/中国/山西省/晋城市.md,,,,,,codex,2026-08-11,1
+1787765,researched,destinations/中国/陕西省/延安市.md,,,,,,codex,2026-08-11,1
+1794794,researched,destinations/中国/山东省/寿光市.md,,,,,,codex,2026-08-11,1
+1805680,researched,destinations/中国/江西省/景德镇市.md,,,,,,codex,2026-08-11,1
+1799846,researched,destinations/中国/福建省/南平市.md,,,,,,codex,2026-08-11,1
+2036109,researched,destinations/中国/吉林省/辽源市.md,,,,,,codex,2026-08-11,1
+13527052,merged,,1280737,destinations/中国/西藏自治区/拉萨市.md,merged_urban_section,固定记录名为城关区且坐标位于拉萨主城区；拉萨市政府确认城关区为市辖区，现有拉萨规范页已以城关老城为核心实质覆盖景点住宿和市内交通,https://www.lasa.gov.cn/lasa/cssy/cs.shtml,codex,2026-08-11,1
+1809061,merged,,8400694,destinations/中国/浙江省/台州市.md,merged_urban_section,GeoNames将该记录标为PPLX且Wikidata Q513077对应椒江区；台州市民政局确认椒江为市辖区且市政府驻椒江，现有台州规范页已实质覆盖椒江主城住宿铁路市域交通和大陈岛关系,https://mzj.zjtz.gov.cn/art/2019/4/18/art_1229045495_43430969.html,codex,2026-08-11,1

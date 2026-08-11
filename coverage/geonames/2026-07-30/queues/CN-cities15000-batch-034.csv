@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-034,1795928,Shanwei,PPLA2,广东省,destinations/中国/广东省/汕尾市.md,粤东海陆丰文化与海岸湿地城市及县域海岛生产边界；法定实体Q59189没有P1566而居民点实体Q28795072连接固定记录1795928
+CN-cities15000-034,1789647,Xichang,PPLA2,四川省,destinations/中国/四川省/西昌市.md,凉山州驻地县级城市邛海泸山与航天文化及高原山地州域远线边界
+CN-cities15000-034,1805741,Jincheng,PPLA2,山西省,destinations/中国/山西省/晋城市.md,太行南麓古堡古建与煤炭工业城市及跨县山地和高平县级市边界
+CN-cities15000-034,1787765,Yan’an,PPLA2,陕西省,destinations/中国/陕西省/延安市.md,黄土高原历史城市革命旧址与广域县域景观；法定实体Q515388仍保留陈旧P1566 11372001而固定队列采用现行居民点1787765
+CN-cities15000-034,1794794,Shouguang,PPL,山东省,destinations/中国/山东省/寿光市.md,潍坊代管县级城市蔬菜产业与沿海湿地及温室盐田港区生产边界
+CN-cities15000-034,1805680,Jingdezhen,PPLA2,江西省,destinations/中国/江西省/景德镇市.md,陶瓷城市历史窑业与县域山水；法定实体Q34405连接行政记录1805679而居民点实体Q28794437连接固定记录1805680
+CN-cities15000-034,1799846,Nanping,PPLA2,福建省,destinations/中国/福建省/南平市.md,闽北双城格局与武夷山国家公园广域交通及三座县级市行政边界
+CN-cities15000-034,2036109,Longshan,PPLA2,吉林省,destinations/中国/吉林省/辽源市.md,固定记录名称Longshan但人口坐标和居民点实体Q35716708对应辽源城市驻地；须与龙山区实体Q955102及GeoNames 6587806分开
