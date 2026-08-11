@@ -284,3 +284,12 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1816705,researched,destinations/中国/广西壮族自治区/北海市.md,,,,,,codex,2026-07-31,1
 1808392,researched,destinations/中国/河北省/衡水市.md,,,,,,codex,2026-07-31,1
 1806466,researched,destinations/中国/四川省/广元市.md,,,,,,codex,2026-07-31,1
+1790396,researched,destinations/中国/湖北省/咸宁市.md,,,,,,codex,2026-07-31,1
+2034414,researched,destinations/中国/吉林省/通化市.md,,,,,,codex,2026-07-31,1
+12492662,researched,destinations/中国/四川省/绵竹市.md,,,,,,codex,2026-07-31,1
+1785036,researched,destinations/中国/甘肃省/张掖市.md,,,,,,codex,2026-07-31,1
+1280849,researched,destinations/中国/新疆维吾尔自治区/喀什市.md,,,,,,codex,2026-07-31,1
+1784130,researched,destinations/中国/河南省/周口市.md,,,,,,codex,2026-07-31,1
+1798760,researched,destinations/中国/甘肃省/平凉市.md,,,,,,codex,2026-07-31,1
+1802238,researched,destinations/中国/湖南省/娄底市.md,,,,,,codex,2026-07-31,1
+1783988,duplicate,,7602670,destinations/中国/山东省/诸城市.md,duplicate_same_settlement,两条PPLA3记录同属CN.25.3707行政链且坐标约相距0.459公里；现有规范页已按法定代码370782完整覆盖诸城市并明确说明两条GeoNames记录关系,https://www.geonames.org/1783988/zhucheng.html,codex,2026-07-31,1

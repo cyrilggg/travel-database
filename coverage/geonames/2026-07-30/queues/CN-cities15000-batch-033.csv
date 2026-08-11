@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-033,1790396,Xianning,PPLA2,湖北省,destinations/中国/湖北省/咸宁市.md,鄂南温泉湿地与三国文化区域城市及跨县山水边界；Wikidata连接行政记录1790395而固定队列保留居民点1790396
+CN-cities15000-033,2034414,Tonghua,PPLA2,吉林省,destinations/中国/吉林省/通化市.md,长白山南麓医药工业与冰雪山林城市及边境县域边界；Wikidata连接行政记录2034413且GeoNames居民点的通化县ADM3挂接须按官方220500市域纠正理解
+CN-cities15000-033,12492662,"Mianzhu, Deyang, Sichuan",PPLL,四川省,destinations/中国/四川省/绵竹市.md,德阳代管县级城市年画酒文化与龙门山沿山空间；固定记录为PPLL且Wikidata仍连接相邻旧驻地点1800624须公开区分标识用途
+CN-cities15000-033,1785036,Zhangye,PPLA2,甘肃省,destinations/中国/甘肃省/张掖市.md,河西走廊历史城市丹霞湿地与祁连山远郊及广域县域生态交通边界
+CN-cities15000-033,1280849,Kashgar,PPLA2,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/喀什市.md,喀什地区驻地县级城市古城多民族文化与绿洲边境交通；PPLA2表示地区驻地角色而非法定地级市
+CN-cities15000-033,1784130,Zhoukou,PPLA2,河南省,destinations/中国/河南省/周口市.md,沙颍河平原城市历史文化与广域农业县域及项城县级市和水域生产边界
+CN-cities15000-033,1798760,Pingliang,PPLA2,甘肃省,destinations/中国/甘肃省/平凉市.md,陇东门户城市崆峒山历史文化与跨县山地游线及华亭县级市和生态文保边界
+CN-cities15000-033,1802238,Loudi,PPLA2,湖南省,destinations/中国/湖南省/娄底市.md,湘中城市梅山文化喀斯特山水与广域县域景区及冷水江涟源两座县级市边界
