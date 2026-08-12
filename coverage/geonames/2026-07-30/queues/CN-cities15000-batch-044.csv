@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-044,1805733,Jinchang,PPLA2,甘肃省,destinations/中国/甘肃省/金昌市.md,河西走廊资源型地级城市的金川主城镍都工业紫金花城与永昌远线边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-044,1805618,Jingling,PPL,湖北省,destinations/中国/湖北省/天门市.md,湖北省直辖县级城市的竟陵主城陆羽茶文化石家河考古与江汉平原生产边界；固定城市点连接竟陵街道而法定天门实体另连市级记录；双粒度证据充分且assigned_phase为cities15000
+CN-cities15000-044,2036973,Heihe,PPLA2,黑龙江省,destinations/中国/黑龙江省/黑河市.md,中俄边境地级城市的爱辉主城界江口岸瑷珲历史与广域县市边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-044,1788618,Xintai,PPL,山东省,destinations/中国/山东省/新泰市.md,泰安代管县级城市的城区新汶组团莲花山山地与矿业生产边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-044,1790894,Wuxue,PPLA3,湖北省,destinations/中国/湖北省/武穴市.md,黄冈代管县级城市的长江港城医药文化山地与港区生产边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-044,1791249,Wuhai,PPLA2,内蒙古自治区,destinations/中国/内蒙古自治区/乌海市.md,黄河沿岸地级城市的海勃湾主城乌海湖沙漠岩画与三城区工业边界；固定记录同时连接法定城市和海勃湾区实体；双粒度证据充分且assigned_phase为cities15000
+CN-cities15000-044,1786577,Yingtan,PPLA2,江西省,destinations/中国/江西省/鹰潭市.md,赣东北地级城市的月湖主城铁路枢纽龙虎山道文化与贵溪独立县级市边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-044,1813253,Lijiang,PPLA2,云南省,destinations/中国/云南省/丽江市.md,滇西北高原地级城市的古城主城纳西文化玉龙雪山泸沽湖远线与保护区边界；法定实体直接连接固定记录且assigned_phase为cities15000

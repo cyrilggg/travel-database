@@ -388,3 +388,15 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1814093,researched,destinations/中国/云南省/大理市.md,,,,,,codex,2026-08-12,1
 1280957,researched,destinations/中国/甘肃省/嘉峪关市.md,,,,,,codex,2026-08-12,1
 1785974,merged,,10942283,destinations/中国/山西省/晋中市.md,merged_urban_section,榆次区是晋中市政府驻地且为晋中中心城区；现有晋中规范页已实质覆盖榆次老城文博景点完整路线住宿铁路公交与行前核对,https://dmfw.mca.gov.cn/xzqh/getList?code=140700&trimCode=false&maxLevel=3,codex,2026-08-12,1
+1805733,researched,destinations/中国/甘肃省/金昌市.md,,,,,,codex,2026-08-12,1
+1805618,researched,destinations/中国/湖北省/天门市.md,,,,,,codex,2026-08-12,1
+2036973,researched,destinations/中国/黑龙江省/黑河市.md,,,,,,codex,2026-08-12,1
+1788618,researched,destinations/中国/山东省/新泰市.md,,,,,,codex,2026-08-12,1
+1790894,researched,destinations/中国/湖北省/武穴市.md,,,,,,codex,2026-08-12,1
+1791249,researched,destinations/中国/内蒙古自治区/乌海市.md,,,,,,codex,2026-08-12,1
+1786577,researched,destinations/中国/江西省/鹰潭市.md,,,,,,codex,2026-08-12,1
+1813253,researched,destinations/中国/云南省/丽江市.md,,,,,,codex,2026-08-12,1
+2035225,merged,,2037860,destinations/中国/黑龙江省/大庆市.md,merged_urban_section,中央政府采购公告将奋斗街道明确列在大庆市让胡路区；现有大庆规范页已实质覆盖让胡路西城的区域关系石油文化景点完整路线住宿和交通,https://www.ccgp.gov.cn/cggg/zygg/cjgg/202607/t20260727_27016442.htm,codex,2026-08-12,1
+1795196,merged,,7064006,destinations/中国/陕西省/铜川市.md,merged_urban_section,固定记录Tongchuanshi定位铜川北部旧主城区且与约23公里外定位南部新区的规范点7064006并非同一聚居点；两者同属法定铜川的南北城市组团，现有铜川页已在区域关系、景点、完整路线、住宿和交通五项实质承接北部旧城,https://fgw.tongchuan.gov.cn/news_show.rt?channlId=88&contentId=8333,codex,2026-08-12,1
+12358616,merged,,7064006,destinations/中国/陕西省/铜川市.md,merged_urban_section,印台是铜川市辖区并与王益共同构成北市区；现有铜川规范页已实质覆盖印台区域陈炉与工业遗产景点完整路线住宿铁路公交和行前核对,https://fgw.tongchuan.gov.cn/news_show.rt?channlId=88&contentId=8333,codex,2026-08-12,1
+1801909,merged,,1812961,destinations/中国/四川省/德阳市.md,merged_urban_section,罗江已撤县设区并成为德阳市辖区；现有德阳规范页已实质覆盖罗江城区白马关景点完整路线住宿铁路接驳和行前核对,https://www.luojiang.gov.cn/mllj.htm,codex,2026-08-12,1
