@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-043,1529484,Hami,PPL,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/哈密市.md,东疆地级城市的伊州主城绿洲文博大海道与巴里坤伊吾远线边界；固定城市点对应伊州区驻地、法定地级市实体另连行政记录；双粒度证据充分且assigned_phase为cities15000
+CN-cities15000-043,1806988,Huayin,PPL,陕西省,destinations/中国/陕西省/华阴市.md,渭南代管县级城市的华山门户古建道教文化山岳交通与景区安全边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-043,1805012,Jiyuan,PPLA2,河南省,destinations/中国/河南省/济源市.md,河南省直辖县级城市的济水文化王屋山黄河小浪底与生产生态边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-043,1790371,Xiantao,PPL,湖北省,destinations/中国/湖北省/仙桃市.md,湖北省直辖县级城市的江汉平原水乡体操文化湿地与农业生产边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-043,1786731,Qingzhou,PPL,山东省,destinations/中国/山东省/青州市.md,潍坊代管县级城市的古城石窟博物馆山地与花卉生产边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-043,8521718,Bole,PPL,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/博乐市.md,博尔塔拉州驻地县级城市的绿洲主城赛里木湖阿拉山口远线与边境准入边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-043,1814093,Dali,PPLA2,云南省,destinations/中国/云南省/大理市.md,大理州驻地县级城市的下关古城双核心苍山洱海文博与生态边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-043,1280957,Jiayuguan,PPLA2,甘肃省,destinations/中国/甘肃省/嘉峪关市.md,河西走廊地级城市的关城长城工业主城戈壁天气与生产边界；法定实体直接连接固定记录且assigned_phase为cities15000
