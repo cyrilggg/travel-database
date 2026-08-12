@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-042,1529401,Karamay,PPLA2,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/克拉玛依市.md,北疆资源型地级城市的主城油田荒漠地貌与独山子分离组团边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-042,2034400,Tongliao,PPLA2,内蒙古自治区,destinations/中国/内蒙古自治区/通辽市.md,科尔沁主城草原农牧文化与广域旗县边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-042,1799471,Nianbo,PPL,青海省,destinations/中国/青海省/海东市.md,河湟谷地乐都平安双核心与四县远线边界；固定记录实时名称已更新为海东且assigned_phase为cities15000
+CN-cities15000-042,10942183,Rugao,PPLA3,江苏省,destinations/中国/江苏省/如皋市.md,南通代管县级城市的如城古城园林长寿文化与江港生产边界；固定居民点与法定实体旧驻地点分工清楚且assigned_phase为cities15000
+CN-cities15000-042,1800234,Nada,PPLA3,海南省,destinations/中国/海南省/儋州市.md,海南西部地级城市的那大主城东坡文化热带农业环新英湾与洋浦生产边界；固定记录实时名称已更新为儋州且assigned_phase为cities15000
+CN-cities15000-042,1804386,Laohekou,PPL,湖北省,destinations/中国/湖北省/老河口市.md,襄阳代管县级城市的汉江老城丹渠水利工业与乡镇边界；法定实体同时连接城市点和行政记录且assigned_phase为cities15000
+CN-cities15000-042,2034655,Suihua,PPLA2,黑龙江省,destinations/中国/黑龙江省/绥化市.md,松嫩平原地级城市的北林主城农业湿地严寒交通与独立县级市边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-042,1816790,Beibei,PPLA3,重庆市,destinations/中国/重庆市/北碚区.md,重庆北部区级城市组团的缙云山嘉陵江温泉文博与山火地灾边界；按万州涪陵先例建立可独立使用的区级指南且assigned_phase为cities15000
