@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-035,1786112,Heyuan,PPLA2,广东省,destinations/中国/广东省/河源市.md,东江上游主城与万绿湖水库及广域县域山地旅行边界；法定地级市实体Q59205直接连接固定记录
+CN-cities15000-035,1792260,Wafangdian,PPL,辽宁省,destinations/中国/辽宁省/瓦房店市.md,大连代管县级城市复州历史与辽东海岸温泉及长兴岛管理生产边界
+CN-cities15000-035,1784818,Yongji,PPL,山西省,destinations/中国/山西省/永济市.md,运城代管县级城市黄河古渡古建与中条山地；须与吉林永吉县及Wikidata薄居民点实体消歧
+CN-cities15000-035,1803245,Lishui,PPLA2,浙江省,destinations/中国/浙江省/丽水市.md,浙西南山地城市莲都主城与古堰画乡及广域县域；法定实体Q58294连接行政记录1803243而居民点Q28794623连接固定记录
+CN-cities15000-035,8505006,Wenshan City,PPLA2,云南省,destinations/中国/云南省/文山市.md,文山州驻地县级城市民族文化与喀斯特山地；法定实体Q1201048连接行政记录1791425而薄居民点Q28795301连接固定记录且坐标需以快照核对
+CN-cities15000-035,2038087,Chengde,PPL,河北省,destinations/中国/河北省/承德市.md,燕山地级城市世界遗产皇家园林寺庙与广域县域；固定记录admin3异常挂接承德县记录2038084须以法定代码130800和主城坐标校正
+CN-cities15000-035,1816858,Basuo,PPLA3,海南省,destinations/中国/海南省/东方市.md,固定名称Basuo对应东方市驻地八所且P1566直接连接法定省直管县级东方市Q174123；须区分八所镇与完整市域
+CN-cities15000-035,1813171,Zhangjiajie,PPLA2,湖南省,destinations/中国/湖南省/张家界市.md,武陵山地城市永定主城天门山与武陵源世界遗产的双住宿交通锚点及大型景区运营边界
