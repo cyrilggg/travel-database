@@ -319,3 +319,13 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 7064006,researched,destinations/中国/陕西省/铜川市.md,,,,,,codex,2026-08-12,1
 1809152,researched,destinations/中国/宁夏回族自治区/固原市.md,,,,,,codex,2026-08-12,1
 2038120,researched,destinations/中国/辽宁省/朝阳市.md,,,,,,codex,2026-08-12,1
+1281019,researched,destinations/中国/新疆维吾尔自治区/和田市.md,,,,,,codex,2026-08-12,1
+2036389,researched,destinations/中国/黑龙江省/鸡西市.md,,,,,,codex,2026-08-12,1
+1792621,researched,destinations/中国/安徽省/铜陵市.md,,,,,,codex,2026-08-12,1
+1810458,researched,destinations/中国/山东省/高密市.md,,,,,,codex,2026-08-12,1
+12159964,researched,destinations/中国/广西壮族自治区/崇左市.md,,,,,,codex,2026-08-12,1
+8537264,researched,destinations/中国/湖北省/黄冈市.md,,,,,,codex,2026-08-12,1
+1817990,researched,destinations/中国/山东省/安丘市.md,,,,,,codex,2026-08-12,1
+8067345,researched,destinations/中国/西藏自治区/山南市.md,,,,,,codex,2026-08-12,1
+2033574,merged,,2033196,destinations/中国/河北省/张家口市.md,merged_urban_section,现行行政区划将宣化列为张家口市辖区130705而非独立法定城市；现有张家口规范页已实质覆盖宣化古城场馆住宿交通与完整路线,https://dmfw.mca.gov.cn/xzqh/getList?code=130700&trimCode=false&maxLevel=3,codex,2026-08-12,1
+1805029,merged,,1808392,destinations/中国/河北省/衡水市.md,renamed_or_reorganized,2016年撤销县级冀州市并设衡水市冀州区且现行代码为131103；现有衡水规范页已实质覆盖冀州城区场馆住宿交通与湖区路线,https://dmfw.mca.gov.cn/xzqh/getList?code=131100&trimCode=false&maxLevel=3,codex,2026-08-12,1
