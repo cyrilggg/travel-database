@@ -401,6 +401,14 @@ Markdown 是主要产品。覆盖清单与辅助脚本只用于审计和维护�
 | [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [宜都](./destinations/中国/湖北省/宜都市.md) | 陆城、清江长江交汇、九凤谷、石林与枝城工业水域 | `researched` |
 | [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [伊春](./destinations/中国/黑龙江省/伊春市.md) | 林都主城、红松林海、汤旺河石林与森林康养 | `researched` |
 | [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [广水](./destinations/中国/湖北省/广水市.md) | 应山—广水双中心、中华山、三潭、徐家河与铁路记忆 | `researched` |
+| [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [福安](./destinations/中国/福建省/福安市.md) | 韩阳老城、白云山地质景观、溪塔葡萄沟与畲族文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [肇东](./destinations/中国/黑龙江省/肇东市.md) | 松嫩平原城市文博、寒地农业、铁路联程与严寒冰雪 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [五家渠](./destinations/中国/新疆维吾尔自治区/五家渠市.md) | 军垦城市、青格达湖、现代农业与第六师师市空间 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [阳春](./destinations/中国/广东省/阳春市.md) | 凌霄岩、春湾石林、鸡笼顶与粤西喀斯特 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [定州](./destinations/中国/河北省/定州市.md) | 中山文化、开元寺塔、贡院与古城文博 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [北镇](./destinations/中国/辽宁省/北镇市.md) | 医巫闾山、北镇庙、广宁古城与辽西山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [敦化](./destinations/中国/吉林省/敦化市.md) | 六鼎山、渤海文化、历史博物馆与山林湿地 | `researched` |
+| [中国](./destinations/中国/README.md) | [安徽省](./destinations/中国/安徽省/README.md) | [广德](./destinations/中国/安徽省/广德市.md) | 太极洞、卢湖竹海、竹乡画廊与三省交界山水 | `researched` |
 | [日本](./destinations/日本/README.md) | [东京都](./destinations/日本/东京都/README.md) | [东京](./destinations/日本/东京都/东京.md) | 超大城市片区、传统街区、博物馆、都市餐饮 | `researched` |
 | [法国](./destinations/法国/README.md) | [法兰西岛大区](./destinations/法国/法兰西岛大区/README.md) | [巴黎](./destinations/法国/法兰西岛大区/巴黎.md) | 塞纳河两岸、艺术场馆、街区漫步、法式餐饮 | `researched` |
 

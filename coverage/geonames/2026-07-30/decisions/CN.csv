@@ -442,3 +442,14 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 2037620,merged,,2034937,destinations/中国/辽宁省/沈阳市.md,merged_urban_section,固定Dongling记录对应旧东陵城市点；沈阳规范页已实质覆盖现行浑南与东部区域关系具体景点完整路线住宿和交通,https://www.hunnan.gov.cn/,codex,2026-08-12,1
 2036920,merged,,2036389,destinations/中国/黑龙江省/鸡西市.md,merged_urban_section,固定Hengshan记录对应鸡西市恒山区城市点；鸡西规范页已实质覆盖恒山区域矿山公园完整路线住宿和交通,https://www.jixi.gov.cn/,codex,2026-08-12,1
 8416218,merged,,1810979,destinations/中国/重庆市/涪陵区.md,merged_urban_section,固定Lizhi记录对应涪陵区荔枝街道居民点；涪陵规范页已实质覆盖城区区域具体景点完整路线住宿和交通,https://www.fl.gov.cn/,codex,2026-08-12,1
+1808872,researched,destinations/中国/福建省/福安市.md,,,,,,codex,2026-08-12,1
+2033168,researched,destinations/中国/黑龙江省/肇东市.md,,,,,,codex,2026-08-12,1
+1529085,researched,destinations/中国/新疆维吾尔自治区/五家渠市.md,,,,,,codex,2026-08-12,1
+1789273,merged,,1811103,destinations/中国/广东省/佛山市.md,merged_urban_section,固定Sanshui记录对应佛山市三水区城市点；佛山规范页已实质覆盖三水区域具体景点完整路线住宿和跨区交通,https://www.ss.gov.cn/,codex,2026-08-12,1
+1816265,merged,,1785286,destinations/中国/山东省/淄博市.md,merged_urban_section,固定Boshan记录对应淄博市博山区城区点；淄博规范页已实质覆盖博山区域陶琉景点完整路线住宿和交通,https://www.boshan.gov.cn/,codex,2026-08-12,1
+1814786,researched,destinations/中国/广东省/阳春市.md,,,,,,codex,2026-08-12,1
+1812728,researched,destinations/中国/河北省/定州市.md,,,,,,codex,2026-08-12,1
+2035980,merged,,2037860,destinations/中国/黑龙江省/大庆市.md,merged_urban_section,固定Longfeng记录对应大庆市龙凤区城市点；大庆规范页已实质覆盖龙凤区域具体景点完整路线住宿和交通,https://www.daqing.gov.cn/,codex,2026-08-12,1
+2037201,researched,destinations/中国/辽宁省/北镇市.md,,,,,,codex,2026-08-12,1
+2037534,researched,destinations/中国/吉林省/敦化市.md,,,,,,codex,2026-08-12,1
+1793092,researched,destinations/中国/安徽省/广德市.md,,,,,,codex,2026-08-12,1
