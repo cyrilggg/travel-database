@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-046,1805798,Jijiang,PPLA3,重庆市,destinations/中国/重庆市/江津区.md,重庆远郊市辖区的几江主城四面山中山古镇白沙古镇与长江交通多日尺度；按既有区级指南先例独立研究并透明解释城市点与行政区粒度
+CN-cities15000-046,1808950,Hanfeng,PPLA3,重庆市,destinations/中国/重庆市/开州区.md,重庆东北市辖区的汉丰湖主城红色文博雪宝山远线与库岸水域边界；固定汉丰驻地点与现行开州区行政实体粒度不同
+CN-cities15000-046,1786378,Yongchuan,PPLA3,重庆市,destinations/中国/重庆市/永川区.md,重庆西部市辖区的独立高铁住宿城区茶山竹海乐和乐都松溉古镇与生产生态边界；固定城市点与现行永川区行政记录粒度不同
+CN-cities15000-046,1792585,Fuding,PPLA3,福建省,destinations/中国/福建省/福鼎市.md,宁德代管县级城市的桐山主城太姥山嵛山海岛茶区与山海天气交通边界；固定主城点与法定县级市行政实体粒度透明
+CN-cities15000-046,2037086,Haicheng,PPLA3,辽宁省,destinations/中国/辽宁省/海城市.md,鞍山代管县级城市的海州主城厝石山牛庄古镇矿山温泉与生产空间边界；法定实体精确连接固定记录且需从父页迁回内容所有权
+CN-cities15000-046,2038342,Beipiao,PPL,辽宁省,destinations/中国/辽宁省/北票市.md,朝阳代管县级城市的主城文博化石地质森林山地与矿业生产边界；法定实体精确连接固定记录且具有独立住宿交通尺度
+CN-cities15000-046,1529651,Jinshanlu,PPLA3,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/阿勒泰市.md,阿勒泰地区驻地县级城市的金山路主城克兰河将军山冰雪交通与边境山地边界；固定名称标签与法定阿勒泰市用途需透明解释
+CN-cities15000-046,1804578,Laizhou,PPLA3,山东省,destinations/中国/山东省/莱州市.md,烟台代管县级城市的掖城主城云峰山大基山海岸文保与矿业生产边界；法定实体连接固定记录且需从父页迁回具体旅行内容
