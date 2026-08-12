@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-047,1815477,Changyuan,PPLA3,重庆市,destinations/中国/重庆市/荣昌区.md,重庆西部市辖区的昌元主城安陶夏布万灵古镇与乡村非遗多日尺度；固定主城点与法定荣昌区行政记录粒度不同
+CN-cities15000-047,7910932,Shangri-La,PPLA2,云南省,destinations/中国/云南省/香格里拉市.md,迪庆州府县级城市的独克宗主城松赞林寺纳帕海普达措与高海拔山地边界；固定主城点与法定县级市行政记录粒度不同
+CN-cities15000-047,8417605,Yangcheng,PPLA4,重庆市,destinations/中国/重庆市/合川区.md,重庆北部市辖区的合阳城主城钓鱼城涞滩三江岸线与跨区交通尺度；固定合阳城点与法定合川区行政记录粒度不同
+CN-cities15000-047,1785462,Zaoyang,PPL,湖北省,destinations/中国/湖北省/枣阳市.md,襄阳代管县级城市的主城汉文化白水寺农业乡村与独立住宿交通边界；法定实体精确连接固定记录
+CN-cities15000-047,2038584,Baishan,PPLA2,吉林省,destinations/中国/吉林省/白山市.md,长白山西南麓地级城市的浑江主城抗联矿业松花江上游与边境山地尺度；法定实体精确连接固定记录
+CN-cities15000-047,2038650,Anda,PPLA3,黑龙江省,destinations/中国/黑龙江省/安达市.md,绥化代管县级城市的乳业寒地农业草原湿地铁路城镇与严寒交通边界；固定城市点与法定实体用途透明
+CN-cities15000-047,1786067,Qianjiang,PPLA4,湖北省,destinations/中国/湖北省/潜江市.md,湖北省直辖县级城市的曹禺文化返湾湖江汉油田小龙虾与湿地生产边界；法定实体精确连接固定记录
+CN-cities15000-047,1784580,Zhenzhou,PPLA3,江苏省,destinations/中国/江苏省/仪征市.md,扬州代管县级城市的真州主城捺山地质枣林湾园博与沿江工业生态边界；固定真州点与法定仪征行政记录粒度不同
