@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-040,1817240,Baiyin,PPLA2,甘肃省,destinations/中国/甘肃省/白银市.md,甘肃中部资源型地级城市的白银区工矿主城黄河地貌与三县一区远线边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-040,1810295,Gaozhou,PPL,广东省,destinations/中国/广东省/高州市.md,茂名代管县级城市的冼夫人文化荔枝农业古城与山地远线边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-040,1812990,Dengzhou,PPLA3,河南省,destinations/中国/河南省/邓州市.md,南阳代管县级城市的花洲古城湍河公共文化与铁路门户边界；固定居民点服务城市定位且assigned_phase为cities15000
+CN-cities15000-040,1281743,Artux,PPLA2,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/阿图什市.md,克州州府县级城市的公共文化林果乡村山地远线与边境管理边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-040,1811720,Enshi,PPLA2,湖北省,destinations/中国/湖北省/恩施市.md,恩施州州府县级城市的州城文化喀斯特峡谷与州内县市边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-040,1783633,Zoucheng,PPL,山东省,destinations/中国/山东省/邹城市.md,济宁代管县级城市的孟子文化地方文博摩崖石刻与峄山边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-040,12269572,Fangchenggang,PPLA2,广西壮族自治区,destinations/中国/广西壮族自治区/防城港市.md,北部湾边境地级城市的西湾港城海岸渔村与上思森林远线边界；固定居民点服务城市定位且assigned_phase为cities15000
+CN-cities15000-040,1804866,Kaili,PPLA2,贵州省,destinations/中国/贵州省/凯里市.md,黔东南州州府县级城市的城区生活清水江古镇乡村与山地边界；固定居民点服务城市定位且assigned_phase为cities15000

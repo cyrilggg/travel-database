@@ -350,3 +350,13 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1787824,merged,,10630003,destinations/中国/江苏省/徐州市.md,merged_urban_section,江苏省现行行政区划将铜山列为徐州市辖区320312而非独立法定城市；现有徐州规范页已覆盖铜山区与主城的空间关系区域导航和县域交通,https://www.jiangsu.gov.cn/col/col88749/index.html,codex,2026-08-12,1
 6958518,merged,,1795565,destinations/中国/广东省/深圳市.md,merged_urban_section,深圳官方标准地名资料将潭头列为宝安区松岗街道社区而非独立城市；现有深圳规范页已覆盖宝安的交通住宿餐饮及全市跨片区关系,https://www.sz.gov.cn/attachment/1/1229/1229661/10334111.pdf,codex,2026-08-12,1
 2036434,merged,,2036662,destinations/中国/辽宁省/葫芦岛市.md,merged_urban_section,辽宁省现行行政区划将连山列为葫芦岛市辖区而非独立法定城市；现有葫芦岛规范页已实质覆盖连山主城场馆住宿交通和完整路线,https://www.ln.gov.cn/web/sqgk/xzqh/2025101310554615413/index.shtml,codex,2026-08-12,1
+1817240,researched,destinations/中国/甘肃省/白银市.md,,,,,,codex,2026-08-12,1
+1810295,researched,destinations/中国/广东省/高州市.md,,,,,,codex,2026-08-12,1
+1812990,researched,destinations/中国/河南省/邓州市.md,,,,,,codex,2026-08-12,1
+1281743,researched,destinations/中国/新疆维吾尔自治区/阿图什市.md,,,,,,codex,2026-08-12,1
+1811720,researched,destinations/中国/湖北省/恩施市.md,,,,,,codex,2026-08-12,1
+1783633,researched,destinations/中国/山东省/邹城市.md,,,,,,codex,2026-08-12,1
+12269572,researched,destinations/中国/广西壮族自治区/防城港市.md,,,,,,codex,2026-08-12,1
+1804866,researched,destinations/中国/贵州省/凯里市.md,,,,,,codex,2026-08-12,1
+1788245,merged,,1809078,destinations/中国/海南省/海口市.md,merged_urban_section,海南省政府现行城市资料将秀英列为海口市辖区而非独立法定城市；现有海口规范页已实质覆盖秀英区域关系景点住宿交通与相关路线,https://en.hainan.gov.cn/englishsite/Cities/202506/76231efa339f405fbb5ce6f633973421.shtml,codex,2026-08-12,1
+1798097,merged,,1796236,destinations/中国/上海市/上海市.md,merged_urban_section,上海市现行行政区划将七宝列为闵行区所辖镇而非独立法定城市；现有上海规范页已实质覆盖七宝古镇区域景点半日路线住宿和轨道交通,https://www.shanghai.gov.cn/nw12344/20230105/6c75c59dad84431a8ad49a9c8f2ca8cb.html,codex,2026-08-12,1
