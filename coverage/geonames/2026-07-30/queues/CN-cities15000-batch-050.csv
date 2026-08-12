@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-050,1788816,Xinji,PPLA3,河北省,destinations/中国/河北省/辛集市.md,河北省直管县级城市的皮革文化农民画平原乡村与独立住宿交通尺度；固定居民点与法定实体连接的行政记录粒度不同
+CN-cities15000-050,1793700,Taishan,PPLA3,广东省,destinations/中国/广东省/台山市.md,江门代管县级城市的侨乡建筑梅家大院海口埠川岛海岸与轮渡住宿尺度；法定实体精确连接固定记录
+CN-cities15000-050,2038679,Acheng,PPLA3,黑龙江省,destinations/中国/黑龙江省/阿城区.md,哈尔滨市辖区的金上京历史遗址博物馆陵址石刻山地森林与独立旅行尺度；不计入法定城市分母
+CN-cities15000-050,2037075,Hailin,PPLA3,黑龙江省,destinations/中国/黑龙江省/海林市.md,牡丹江代管县级城市的横道河子中国雪乡林海雪原山地森林与独立住宿交通尺度；法定实体精确连接固定记录
+CN-cities15000-050,8408334,Qianjiang,PPLA3,重庆市,destinations/中国/重庆市/黔江区.md,重庆市辖区的城市峡谷濯水古镇蒲花暗河小南海阿蓬江与独立交通住宿尺度；不计入法定城市分母
+CN-cities15000-050,1805844,Jieshou,PPL,安徽省,destinations/中国/安徽省/界首市.md,阜阳代管县级城市的彩陶地方文博沙颍河城市生活与独立住宿交通尺度；法定实体精确连接固定记录
+CN-cities15000-050,1281105,Yushu,PPLA2,青海省,destinations/中国/青海省/玉树市.md,玉树州驻地县级城市的结古嘉那嘛呢文成公主庙勒巴沟高海拔与生态保护边界；固定城市点与法定实体连接的行政记录粒度不同
+CN-cities15000-050,2037222,Gongzhuling,PPL,吉林省,destinations/中国/吉林省/公主岭市.md,长春代管县级城市的地方文博农业文化松辽平原乡村与独立住宿交通尺度；法定实体精确连接固定记录

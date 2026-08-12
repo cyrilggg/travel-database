@@ -2,6 +2,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 110000,researched,destinations/中国/北京市/北京市.md,1816670,codex,2026-07-30,1
 120000,researched,destinations/中国/天津市/天津市.md,1792947,codex,2026-07-30,1
 130100,researched,destinations/中国/河北省/石家庄市.md,1795270,codex,2026-07-30,1
+130181,researched,destinations/中国/河北省/辛集市.md,1788816,codex,2026-08-12,1
 130200,researched,destinations/中国/河北省/唐山市.md,1793346,codex,2026-07-30,1
 130300,researched,destinations/中国/河北省/秦皇岛市.md,1797595,codex,2026-07-31,1
 130400,researched,destinations/中国/河北省/邯郸市.md,1808963,codex,2026-07-31,1
@@ -56,6 +57,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 211381,researched,destinations/中国/辽宁省/北票市.md,2038342,codex,2026-08-12,1
 211400,researched,destinations/中国/辽宁省/葫芦岛市.md,2036662,codex,2026-07-31,1
 220100,researched,destinations/中国/吉林省/长春市.md,2038180,codex,2026-07-30,1
+220184,researched,destinations/中国/吉林省/公主岭市.md,2037222,codex,2026-08-12,1
 220200,researched,destinations/中国/吉林省/吉林市.md,2036502,codex,2026-07-30,1
 220300,researched,destinations/中国/吉林省/四平市.md,2034714,codex,2026-07-31,1
 220400,researched,destinations/中国/吉林省/辽源市.md,2036109,codex,2026-08-11,1
@@ -74,6 +76,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 230800,researched,destinations/中国/黑龙江省/佳木斯市.md,2036581,codex,2026-07-31,1
 230900,researched,destinations/中国/黑龙江省/七台河市.md,2035261,codex,2026-08-12,1
 231000,researched,destinations/中国/黑龙江省/牡丹江市.md,2035715,codex,2026-07-31,1
+231083,researched,destinations/中国/黑龙江省/海林市.md,2037075,codex,2026-08-12,1
 231100,researched,destinations/中国/黑龙江省/黑河市.md,2036973,codex,2026-08-12,1
 231181,researched,destinations/中国/黑龙江省/北安市.md,2038365,codex,2026-08-12,1
 231200,researched,destinations/中国/黑龙江省/绥化市.md,2034655,codex,2026-08-12,1
@@ -130,6 +133,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 341000,researched,destinations/中国/安徽省/黄山市.md,1792359,codex,2026-07-30,1
 341100,researched,destinations/中国/安徽省/滁州市.md,1814757,codex,2026-07-31,1
 341200,researched,destinations/中国/安徽省/阜阳市.md,1810845,codex,2026-07-30,1
+341282,researched,destinations/中国/安徽省/界首市.md,1805844,codex,2026-08-12,1
 341300,researched,destinations/中国/安徽省/宿州市.md,1793743,codex,2026-07-30,1
 341500,researched,destinations/中国/安徽省/六安市.md,1802206,codex,2026-07-31,1
 341600,researched,destinations/中国/安徽省/亳州市.md,1816234,codex,2026-07-31,1
@@ -250,6 +254,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 440500,researched,destinations/中国/广东省/汕头市.md,1795940,codex,2026-07-30,1
 440600,researched,destinations/中国/广东省/佛山市.md,1811103,codex,2026-07-30,1
 440700,researched,destinations/中国/广东省/江门市.md,1806299,codex,2026-07-30,1
+440781,researched,destinations/中国/广东省/台山市.md,1793700,codex,2026-08-12,1
 440800,researched,destinations/中国/广东省/湛江市.md,1784990,codex,2026-07-31,1
 440900,researched,destinations/中国/广东省/茂名市.md,1801180,codex,2026-07-31,1
 440981,researched,destinations/中国/广东省/高州市.md,1810295,codex,2026-08-12,1
@@ -363,6 +368,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 622901,researched,destinations/中国/甘肃省/临夏市.md,1803331,codex,2026-08-12,1
 630100,researched,destinations/中国/青海省/西宁市.md,1788852,codex,2026-07-30,1
 630200,researched,destinations/中国/青海省/海东市.md,1799471,codex,2026-08-12,1
+632701,researched,destinations/中国/青海省/玉树市.md,1281105,codex,2026-08-12,1
 640100,researched,destinations/中国/宁夏回族自治区/银川市.md,1786657,codex,2026-07-30,1
 640200,researched,destinations/中国/宁夏回族自治区/石嘴山市.md,12324556,codex,2026-07-31,1
 640300,researched,destinations/中国/宁夏回族自治区/吴忠市.md,1790842,codex,2026-07-30,1
