@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-039,12358476,Hechi,PPLA2,广西壮族自治区,destinations/中国/广西壮族自治区/河池市.md,桂西北喀斯特广域地级城市的金城江主城宜州行政中心与多县远郊边界；固定居民点位于金城江而法定城市驻地已迁宜州且assigned_phase为cities15000
+CN-cities15000-039,2033467,Yanji,PPLA2,吉林省,destinations/中国/吉林省/延吉市.md,延边州驻地县级城市的朝鲜族文化文博城市生活与周边县市边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-039,1803590,Lincang,PPLA2,云南省,destinations/中国/云南省/临沧市.md,滇西南广域地级城市临翔主城茶文化民族村寨与边境县域边界；法定实体连接行政记录而固定居民点代表主城且assigned_phase为cities15000
+CN-cities15000-039,1807566,Xingyi,PPLA3,贵州省,destinations/中国/贵州省/兴义市.md,黔西南州驻地县级城市的喀斯特峰林峡谷湖泊与州内县市边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-039,2038569,Baicheng,PPLA2,吉林省,destinations/中国/吉林省/白城市.md,吉林西部地级城市洮北主城湿地草原生态与代管县级市边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-039,1815482,Changyi,PPLA3,山东省,destinations/中国/山东省/昌邑市.md,潍坊代管县级城市的胶东平原丝绸民俗滨海湿地与生产空间边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-039,1789262,Xinyi,PPLA3,江苏省,destinations/中国/江苏省/新沂市.md,徐州代管县级城市的古镇山地湖区考古与跨市水域边界；法定实体直接连接固定居民点且assigned_phase为cities15000
+CN-cities15000-039,1794209,Pu'er,PPLA3,云南省,destinations/中国/云南省/普洱市.md,滇西南广域地级城市思茅主城茶文化世界遗产与边境县域边界；法定实体的GeoNames声明误连思茅区行政记录而固定居民点代表主城且assigned_phase为cities15000

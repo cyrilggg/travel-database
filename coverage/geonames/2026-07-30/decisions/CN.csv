@@ -339,3 +339,14 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 2034439,researched,destinations/中国/辽宁省/铁岭市.md,,,,,,codex,2026-08-12,1
 12277239,merged,,10630003,destinations/中国/江苏省/徐州市.md,merged_urban_section,现行省级行政区划将云龙列为徐州市辖区而非独立法定城市；现有徐州规范页已实质覆盖云龙区老城汉文化景区住宿交通与多日路线,https://www.jiangsu.gov.cn/col/col88749/index.html,codex,2026-08-12,1
 1795060,merged,,6986104,destinations/中国/广东省/中山市.md,merged_urban_section,中山市政府现行行政区划将石岐列为街道而非独立法定城市；现有中山规范页已实质覆盖石岐老城场馆餐饮住宿交通与完整路线,https://www.zs.gov.cn/zjzs/wrgl/content/post_226670.html,codex,2026-08-12,1
+12358476,researched,destinations/中国/广西壮族自治区/河池市.md,,,,,,codex,2026-08-12,1
+2033467,researched,destinations/中国/吉林省/延吉市.md,,,,,,codex,2026-08-12,1
+1803590,researched,destinations/中国/云南省/临沧市.md,,,,,,codex,2026-08-12,1
+1807566,researched,destinations/中国/贵州省/兴义市.md,,,,,,codex,2026-08-12,1
+2038569,researched,destinations/中国/吉林省/白城市.md,,,,,,codex,2026-08-12,1
+1815482,researched,destinations/中国/山东省/昌邑市.md,,,,,,codex,2026-08-12,1
+1789262,researched,destinations/中国/江苏省/新沂市.md,,,,,,codex,2026-08-12,1
+1794209,researched,destinations/中国/云南省/普洱市.md,,,,,,codex,2026-08-12,1
+1787824,merged,,10630003,destinations/中国/江苏省/徐州市.md,merged_urban_section,江苏省现行行政区划将铜山列为徐州市辖区320312而非独立法定城市；现有徐州规范页已覆盖铜山区与主城的空间关系区域导航和县域交通,https://www.jiangsu.gov.cn/col/col88749/index.html,codex,2026-08-12,1
+6958518,merged,,1795565,destinations/中国/广东省/深圳市.md,merged_urban_section,深圳官方标准地名资料将潭头列为宝安区松岗街道社区而非独立城市；现有深圳规范页已覆盖宝安的交通住宿餐饮及全市跨片区关系,https://www.sz.gov.cn/attachment/1/1229/1229661/10334111.pdf,codex,2026-08-12,1
+2036434,merged,,2036662,destinations/中国/辽宁省/葫芦岛市.md,merged_urban_section,辽宁省现行行政区划将连山列为葫芦岛市辖区而非独立法定城市；现有葫芦岛规范页已实质覆盖连山主城场馆住宿交通和完整路线,https://www.ln.gov.cn/web/sqgk/xzqh/2025101310554615413/index.shtml,codex,2026-08-12,1
