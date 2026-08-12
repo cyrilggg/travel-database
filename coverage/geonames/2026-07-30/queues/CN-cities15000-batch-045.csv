@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-045,1785710,Jinghong,PPLA3,云南省,destinations/中国/云南省/景洪市.md,西双版纳州府县级市的主城澜沧江傣族文化热带植物亚洲象保护与跨县雨林边界；法定实体精确连接固定记录且assigned_phase为cities15000
+CN-cities15000-045,8544703,Nanchuan,PPLA3,重庆市,destinations/中国/重庆市/南川区.md,重庆远郊市辖区的独立高铁住宿城区底盘与金佛山神龙峡山王坪多日尺度；按万州涪陵北碚先例建立独立指南且assigned_phase为cities15000
+CN-cities15000-045,13512708,Nyingchi,PPLA2,西藏自治区,destinations/中国/西藏自治区/林芝市.md,藏东南地级城市的巴宜主城尼洋河谷鲁朗波密森林冰川与边境远线边界；固定居民点与法定实体粒度透明且assigned_phase为cities15000
+CN-cities15000-045,1803551,Beiliu,PPL,广西壮族自治区,destinations/中国/广西壮族自治区/北流市.md,玉林代管县级城市的城区勾漏喀斯特铜石岭大容山与陶瓷产业边界；法定实体精确连接固定记录且assigned_phase为cities15000
+CN-cities15000-045,1529569,Changji,PPLA2,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/昌吉市.md,昌吉州府县级城市的绿洲文博现代农业回族饮食与天山北坡道路边界；固定居民点和法定实体粒度透明且assigned_phase为cities15000
+CN-cities15000-045,1811764,Duyun,PPL,贵州省,destinations/中国/贵州省/都匀市.md,黔南州府县级城市的剑江老城三线工业东部新城茶山与保护地边界；法定实体精确连接固定记录且assigned_phase为cities15000
+CN-cities15000-045,1804850,Kaiyuan,PPL,云南省,destinations/中国/云南省/开远市.md,红河州独立县级城市的滇越铁路工业记忆喀斯特花卉产业与厂矿生产边界；法定实体精确连接固定记录且assigned_phase为cities15000
+CN-cities15000-045,13512503,Lushui,PPLA2,云南省,destinations/中国/云南省/泸水市.md,怒江州府县级城市的六库峡谷门户傈僳文化片马边境与跨县山地边界；固定城市点和法定实体旧行政记录粒度透明且assigned_phase为cities15000

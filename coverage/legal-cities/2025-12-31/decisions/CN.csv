@@ -256,6 +256,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 450700,researched,destinations/中国/广西壮族自治区/钦州市.md,1797551,codex,2026-07-31,1
 450800,researched,destinations/中国/广西壮族自治区/贵港市.md,1809532,codex,2026-07-31,1
 450900,researched,destinations/中国/广西壮族自治区/玉林市.md,1785781,codex,2026-07-31,1
+450981,researched,destinations/中国/广西壮族自治区/北流市.md,1803551,codex,2026-08-12,1
 451000,researched,destinations/中国/广西壮族自治区/百色市.md,1816269,codex,2026-07-31,1
 451100,researched,destinations/中国/广西壮族自治区/贺州市.md,7576887,codex,2026-07-31,1
 451200,researched,destinations/中国/广西壮族自治区/河池市.md,12358476,codex,2026-08-12,1
@@ -296,6 +297,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 520500,researched,destinations/中国/贵州省/毕节市.md,1816373,codex,2026-07-31,1
 522301,researched,destinations/中国/贵州省/兴义市.md,1807566,codex,2026-08-12,1
 522601,researched,destinations/中国/贵州省/凯里市.md,1804866,codex,2026-08-12,1
+522701,researched,destinations/中国/贵州省/都匀市.md,1811764,codex,2026-08-12,1
 530100,researched,destinations/中国/云南省/昆明市.md,1804651,codex,2026-07-30,1
 530300,researched,destinations/中国/云南省/曲靖市.md,1797318,codex,2026-07-31,1
 530500,researched,destinations/中国/云南省/保山市.md,1281673,codex,2026-07-31,1
@@ -304,10 +306,14 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 530800,researched,destinations/中国/云南省/普洱市.md,1794209,codex,2026-08-12,1
 530900,researched,destinations/中国/云南省/临沧市.md,1803590,codex,2026-08-12,1
 532301,researched,destinations/中国/云南省/楚雄市.md,1814760,codex,2026-07-31,1
+532502,researched,destinations/中国/云南省/开远市.md,1804850,codex,2026-08-12,1
 532503,researched,destinations/中国/云南省/蒙自市.md,13512502,codex,2026-07-31,1
 532601,researched,destinations/中国/云南省/文山市.md,8505006,codex,2026-08-11,1
+532801,researched,destinations/中国/云南省/景洪市.md,1785710,codex,2026-08-12,1
 532901,researched,destinations/中国/云南省/大理市.md,1814093,codex,2026-08-12,1
+533301,researched,destinations/中国/云南省/泸水市.md,13512503,codex,2026-08-12,1
 540100,researched,destinations/中国/西藏自治区/拉萨市.md,1280737,codex,2026-07-30,1
+540400,researched,destinations/中国/西藏自治区/林芝市.md,13512708,codex,2026-08-12,1
 540500,researched,destinations/中国/西藏自治区/山南市.md,8067345,codex,2026-08-12,1
 610100,researched,destinations/中国/陕西省/西安市.md,1790630,codex,2026-07-30,1
 610200,researched,destinations/中国/陕西省/铜川市.md,7064006,codex,2026-08-12,1
@@ -343,6 +349,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 650200,researched,destinations/中国/新疆维吾尔自治区/克拉玛依市.md,1529401,codex,2026-08-12,1
 650400,researched,destinations/中国/新疆维吾尔自治区/吐鲁番市.md,1529114,codex,2026-08-12,1
 650500,researched,destinations/中国/新疆维吾尔自治区/哈密市.md,1529484,codex,2026-08-12,1
+652301,researched,destinations/中国/新疆维吾尔自治区/昌吉市.md,1529569,codex,2026-08-12,1
 652701,researched,destinations/中国/新疆维吾尔自治区/博乐市.md,8521718,codex,2026-08-12,1
 652801,researched,destinations/中国/新疆维吾尔自治区/库尔勒市.md,1529376,codex,2026-07-31,1
 652901,researched,destinations/中国/新疆维吾尔自治区/阿克苏市.md,1529660,codex,2026-07-31,1
