@@ -1,0 +1,24 @@
+.retryButton {
+  width: max-content;
+  min-height: 38px;
+  margin-top: 10px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 10px;
+  color: #fffaf2;
+  background: #294b47;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.retryButton:focus-visible {
+  outline: 3px solid rgba(196, 82, 55, 0.28);
+  outline-offset: 2px;
+}
+
+@media (max-width: 840px) {
+  .retryButton {
+    min-height: 44px;
+  }
+}

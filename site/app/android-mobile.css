@@ -1,0 +1,273 @@
+/* Android/coarse-pointer refinements kept separate from the shared desktop styles. */
+
+@media (max-width: 840px), (orientation: landscape) and (max-height: 520px) {
+  .travel-app {
+    --android-safe-top: env(safe-area-inset-top, 0px);
+    --android-safe-right: env(safe-area-inset-right, 0px);
+    --android-safe-bottom: env(safe-area-inset-bottom, 0px);
+    --android-safe-left: env(safe-area-inset-left, 0px);
+    --android-edge-gap: 8px;
+    --android-header-height: 48px;
+    --android-sheet-height: clamp(280px, 46dvh, 430px);
+    height: 100dvh;
+    min-height: 0;
+    overscroll-behavior: none;
+  }
+
+  .travel-app .experience-shell {
+    height: 100%;
+    min-height: 0;
+  }
+
+  .travel-app .app-header {
+    top: calc(var(--android-safe-top) + var(--android-edge-gap));
+    right: calc(var(--android-safe-right) + var(--android-edge-gap));
+    left: calc(var(--android-safe-left) + var(--android-edge-gap));
+    width: auto;
+  }
+
+  .travel-app .city-search,
+  .travel-app .city-search input,
+  .travel-app .city-search button,
+  .travel-app .all-cities-button {
+    min-height: 44px;
+  }
+
+  .travel-app .city-search input {
+    font-size: 16px;
+  }
+
+  .travel-app .map-toolbar {
+    top: calc(var(--android-safe-top) + 64px);
+    left: calc(var(--android-safe-left) + var(--android-edge-gap));
+    grid-template-columns: repeat(3, 44px);
+    touch-action: manipulation;
+  }
+
+  .travel-app .map-toolbar button,
+  .travel-app .map-toolbar button:last-child,
+  .travel-app .terrain-toggle {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .travel-app .terrain-toggle {
+    top: calc(var(--android-safe-top) + 64px);
+    left: calc(var(--android-safe-left) + 158px);
+  }
+
+  .travel-app .terrain-map,
+  .travel-app .terrain-map .maplibregl-canvas {
+    touch-action: none;
+  }
+
+  .travel-app .panel-dock,
+  .travel-app .panel-dock.is-expanded {
+    top: auto;
+    right: calc(var(--android-safe-right) + var(--android-edge-gap));
+    bottom: calc(var(--android-safe-bottom) + var(--android-edge-gap));
+    left: calc(var(--android-safe-left) + var(--android-edge-gap));
+    width: auto;
+    height: var(--android-sheet-height);
+    min-height: 0;
+    transform: none;
+  }
+
+  .travel-app .panel-dock.is-expanded {
+    top: calc(var(--android-safe-top) + 132px);
+    height: auto;
+  }
+
+  .travel-app .panel-dock.is-collapsed {
+    top: auto;
+    right: calc(var(--android-safe-right) + var(--android-edge-gap));
+    bottom: calc(var(--android-safe-bottom) + var(--android-edge-gap));
+    left: auto;
+    width: 52px;
+    height: 52px;
+    min-height: 52px;
+  }
+
+  .travel-app .panel-dock.is-collapsed .panel-dock-toggle {
+    inset: 0;
+    width: 52px;
+    height: 52px;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 17px;
+  }
+
+  .travel-app .panel-dock.is-collapsed .panel-dock-toggle strong {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  .travel-app .panel-dock-toggle,
+  .travel-app .sheet-handle,
+  .travel-app .panel-utility-bar button,
+  .travel-app .panel-actions button,
+  .travel-app .reading-tabs button,
+  .travel-app .map-scope-toggle button,
+  .travel-app .city-index button,
+  .travel-app .nearby-guides button,
+  .travel-app .explore-result-list button,
+  .travel-app .read-full-button,
+  .travel-app .random-explore {
+    min-height: 44px;
+  }
+
+  .travel-app .sheet-handle {
+    width: 96px;
+    height: 44px;
+    touch-action: none;
+  }
+
+  .travel-app .sheet-handle span {
+    width: 38px;
+    height: 4px;
+  }
+
+  .travel-app .guide-panel-scroll {
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .travel-app .terrain-map .maplibregl-ctrl-bottom-left {
+    right: auto;
+    bottom: calc(var(--android-sheet-height) + var(--android-safe-bottom) + 16px);
+    left: calc(var(--android-safe-left) + var(--android-edge-gap));
+    z-index: 24;
+    margin: 0;
+  }
+
+  .travel-app.is-panel-collapsed .terrain-map .maplibregl-ctrl-bottom-left {
+    top: auto;
+    bottom: calc(var(--android-safe-bottom) + var(--android-edge-gap));
+  }
+
+  .travel-app.is-panel-expanded .terrain-map .maplibregl-ctrl-bottom-left {
+    top: calc(var(--android-safe-top) + 64px);
+    bottom: auto;
+  }
+
+  .travel-app .terrain-map .maplibregl-ctrl-attrib {
+    max-width: min(240px, calc(100vw - var(--android-safe-left) - var(--android-safe-right) - 112px));
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    border-radius: 12px;
+  }
+
+  .travel-app .terrain-map .maplibregl-ctrl-attrib-button,
+  .travel-app .terrain-map .maplibregl-ctrl-attrib summary {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .travel-app.is-panel-expanded .map-toolbar,
+  .travel-app.is-panel-expanded .terrain-toggle {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .travel-app.is-mobile-keyboard-open {
+    position: fixed;
+    top: var(--android-visual-top, 0px);
+    right: 0;
+    bottom: auto;
+    left: 0;
+    height: var(--android-visual-height, 100dvh);
+  }
+
+  .travel-app.is-mobile-keyboard-open .panel-dock {
+    opacity: 0;
+    transform: translateY(calc(100% + var(--android-safe-bottom) + 16px));
+    pointer-events: none;
+  }
+
+  .travel-app.is-mobile-keyboard-open .map-toolbar,
+  .travel-app.is-mobile-keyboard-open .terrain-toggle {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .travel-app.is-mobile-keyboard-open .terrain-map .maplibregl-ctrl-bottom-left {
+    bottom: calc(var(--android-safe-bottom) + var(--android-edge-gap));
+  }
+}
+
+@media (orientation: landscape) and (max-height: 520px) {
+  .travel-app {
+    --android-edge-gap: 6px;
+    --android-sheet-height: min(44dvh, 180px);
+  }
+
+  .travel-app .app-header {
+    height: 44px;
+    grid-template-columns: minmax(140px, 220px) minmax(180px, 300px);
+  }
+
+  .travel-app .brand-lockup,
+  .travel-app .city-search {
+    height: 44px;
+  }
+
+  .travel-app .brand-lockup p {
+    display: none;
+  }
+
+  .travel-app .map-toolbar {
+    top: calc(var(--android-safe-top) + 56px);
+    display: grid;
+    grid-template-columns: repeat(5, 44px);
+    flex-direction: initial;
+  }
+
+  .travel-app .city-search {
+    display: grid;
+  }
+
+  .travel-app .sheet-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 35;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    transform: translateX(-50%);
+    border: 0;
+    background: transparent;
+  }
+
+  .travel-app .terrain-toggle {
+    top: calc(var(--android-safe-top) + 56px);
+    left: calc(var(--android-safe-left) + 238px);
+  }
+
+  .travel-app .panel-dock.is-expanded {
+    top: calc(var(--android-safe-top) + 116px);
+  }
+
+  .travel-app.is-panel-expanded .terrain-map .maplibregl-ctrl-bottom-left {
+    top: calc(var(--android-safe-top) + 54px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .travel-app .panel-dock,
+  .travel-app .guide-panel,
+  .travel-app .map-toolbar,
+  .travel-app .terrain-toggle {
+    transition: none !important;
+  }
+}

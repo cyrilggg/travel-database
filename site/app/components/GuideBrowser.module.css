@@ -1,0 +1,364 @@
+.browser {
+  margin-top: 26px;
+}
+
+.explainer {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 11px;
+  align-items: start;
+  padding: 14px;
+  border: 1px solid rgba(35, 70, 74, 0.12);
+  border-radius: 15px;
+  color: #40514e;
+  background: linear-gradient(135deg, rgba(237, 241, 235, 0.9), rgba(255, 253, 248, 0.86));
+}
+
+.explainerMark {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  color: #fffaf2;
+  background: #294b47;
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.explainer h3,
+.explainer p {
+  margin: 0;
+}
+
+.explainer h3 {
+  color: #294b47;
+  font-family: var(--font-serif);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.explainer p {
+  margin-top: 4px;
+  color: #66736e;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.accordion {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.topic {
+  overflow: hidden;
+  border: 1px solid rgba(35, 70, 74, 0.11);
+  border-radius: 15px;
+  background: rgba(255, 253, 248, 0.74);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.topicOpen {
+  border-color: rgba(35, 70, 74, 0.2);
+  box-shadow: 0 12px 30px rgba(39, 58, 53, 0.07);
+}
+
+.topic h3 {
+  margin: 0;
+}
+
+.topic h3 > button {
+  width: 100%;
+  min-height: 62px;
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) auto 18px;
+  gap: 9px;
+  align-items: center;
+  padding: 10px 13px;
+  border: 0;
+  color: #2b4442;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.topic h3 > button:hover {
+  background: rgba(235, 239, 232, 0.72);
+}
+
+.topic h3 > button:focus-visible,
+.topicFooter button:focus-visible,
+.empty button:focus-visible,
+.links a:focus-visible {
+  outline: 3px solid rgba(196, 82, 55, 0.28);
+  outline-offset: -3px;
+}
+
+.topicIndex {
+  color: #c45237;
+  font-family: Georgia, serif;
+  font-size: 11px;
+}
+
+.topicTitle {
+  min-width: 0;
+}
+
+.topicTitle strong,
+.topicTitle small {
+  display: block;
+}
+
+.topicTitle strong {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.topicTitle small {
+  margin-top: 2px;
+  overflow: hidden;
+  color: #77807b;
+  font-size: 9px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.topicCount {
+  color: #6d7974;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.topicToggle {
+  color: #294b47;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.topicPanel {
+  padding: 0 12px 13px;
+  border-top: 1px solid rgba(35, 70, 74, 0.08);
+}
+
+.topicPanel[hidden] {
+  display: none;
+}
+
+.sourceLine {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 2px 9px;
+  color: #7a837e;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.sourceLine span:last-child {
+  flex: 0 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
+  gap: 9px;
+}
+
+.card {
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid rgba(35, 70, 74, 0.09);
+  border-radius: 12px;
+  background: #f7f4ec;
+}
+
+.card h4,
+.card p {
+  margin: 0;
+}
+
+.card h4 {
+  color: #284845;
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.description {
+  display: -webkit-box;
+  margin-top: 7px !important;
+  overflow: hidden;
+  color: #40524e;
+  font-family: var(--font-serif);
+  font-size: 13px;
+  line-height: 1.7;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.badges span {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 3px 6px;
+  border-radius: 999px;
+  color: #783d2c;
+  background: #f3e3d8;
+  font-size: 11px;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fields {
+  display: grid;
+  gap: 7px;
+  margin: 10px 0 0;
+  padding-top: 9px;
+  border-top: 1px solid rgba(35, 70, 74, 0.08);
+}
+
+.fields > div {
+  min-width: 0;
+}
+
+.fields dt {
+  color: #5f6b67;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.fields dd {
+  display: -webkit-box;
+  margin: 2px 0 0;
+  overflow: hidden;
+  color: #3c4e4a;
+  font-size: 12px;
+  line-height: 1.6;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.fields dd .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.links a {
+  color: #b74f35;
+  text-decoration-color: rgba(183, 79, 53, 0.3);
+  text-underline-offset: 2px;
+}
+
+.topicFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+  padding: 10px 2px 0;
+  border-top: 1px solid rgba(35, 70, 74, 0.08);
+}
+
+.topicFooter > span {
+  color: #5f6b67;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.topicFooter button,
+.empty button {
+  min-height: 44px;
+  flex: 0 0 auto;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 10px;
+  color: #fffaf2;
+  background: #294b47;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.coverageNote {
+  margin: 11px 3px 0;
+  color: #65716d;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.empty {
+  display: grid;
+  gap: 5px;
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid rgba(35, 70, 74, 0.12);
+  border-radius: 14px;
+  color: #61706b;
+  background: #f4f1e9;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.empty strong {
+  color: #294b47;
+  font-family: var(--font-serif);
+  font-size: 13px;
+}
+
+.empty button {
+  width: max-content;
+  margin-top: 8px;
+}
+
+@media (max-width: 520px) {
+  .explainer {
+    grid-template-columns: 30px minmax(0, 1fr);
+    padding: 12px;
+  }
+
+  .explainerMark {
+    width: 30px;
+    height: 30px;
+  }
+
+  .topic h3 > button {
+    grid-template-columns: 25px minmax(0, 1fr) auto 16px;
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+
+  .topicCount {
+    display: none;
+  }
+
+  .topicFooter {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .topicFooter button {
+    width: 100%;
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .topic {
+    transition: none;
+  }
+}
