@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-048,1789137,Xindi,PPL,湖北省,destinations/中国/湖北省/洪湖市.md,荆州代管县级城市的新堤主城洪湖湿地瞿家湾水乡饮食与湖区保护边界；固定居民点与法定县级市行政记录粒度不同
+CN-cities15000-048,1804586,Laiyang,PPL,山东省,destinations/中国/山东省/莱阳市.md,烟台代管县级城市的主城白垩纪地质梨乡物候乡村花事与独立住宿交通尺度；法定实体精确连接固定记录
+CN-cities15000-048,2034312,Ulanhot,PPL,内蒙古自治区,destinations/中国/内蒙古自治区/乌兰浩特市.md,兴安盟驻地县级城市的民族解放史科尔沁城市生活盟府边界与草原山地远线；法定实体精确连接固定记录
+CN-cities15000-048,1792520,Tongzhou,PPL,北京市,destinations/中国/北京市/通州区.md,北京城市副中心的大运河三庙一塔城市绿心与环球度假区独立多日旅行尺度；固定居民点与法定通州区行政记录粒度不同
+CN-cities15000-048,1529167,Tacheng,PPLA2,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/塔城市.md,塔城地区驻地县级城市的红楼手风琴地区文博巴克图口岸与边境山地尺度；法定实体同时连接固定点和行政记录
+CN-cities15000-048,1784554,Zhicheng,PPLA4,湖北省,destinations/中国/湖北省/宜都市.md,宜昌代管县级城市的枝城镇固定点陆城主城清江山地乡村与工业水域边界；固定点与法定宜都市行政记录粒度不同
+CN-cities15000-048,2033413,Yichun,PPL,黑龙江省,destinations/中国/黑龙江省/伊春市.md,小兴安岭地级城市的伊美乌翠主城红松森林汤旺河石林与分散县域交通尺度；法定实体精确连接固定记录
+CN-cities15000-048,1809879,Guangshui,PPLA4,湖北省,destinations/中国/湖北省/广水市.md,随州代管县级城市的应山广水双中心鄂北山地水库铁路记忆与独立住宿交通尺度；固定街道点与法定县级市行政记录粒度不同
