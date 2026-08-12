@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-038,8054802,Xilinhot,PPLA2,内蒙古自治区,destinations/中国/内蒙古自治区/锡林浩特市.md,锡林郭勒盟驻地县级城市的草原文博城市服务与远郊牧区边界；固定记录行政链对应锡林浩特且assigned_phase为cities15000
+CN-cities15000-038,12548253,Hulunbuir,PPLA2,内蒙古自治区,destinations/中国/内蒙古自治区/呼伦贝尔市.md,内蒙古东北部广域地级城市海拉尔主城与草原林区边境县市的旅行边界；固定记录行政链对应法定呼伦贝尔市且assigned_phase为cities15000
+CN-cities15000-038,1813206,Daye,PPL,湖北省,destinations/中国/湖北省/大冶市.md,黄石代管县级城市的铜矿历史工业遗产湖区与乡镇旅行边界；固定记录行政链对应法定大冶市且assigned_phase为cities15000
+CN-cities15000-038,2038067,Chifeng,PPLA2,内蒙古自治区,destinations/中国/内蒙古自治区/赤峰市.md,内蒙古东部广域地级城市红山文化主城与草原沙地旗县的旅行边界；固定记录行政链对应法定赤峰市且assigned_phase为cities15000
+CN-cities15000-038,2035261,Qitaihe,PPLA2,黑龙江省,destinations/中国/黑龙江省/七台河市.md,黑龙江东部资源型地级城市煤矿工业城市文博与周边县区边界；固定记录行政链对应法定七台河市且assigned_phase为cities15000
+CN-cities15000-038,1785716,Pizhou,PPLA3,江苏省,destinations/中国/江苏省/邳州市.md,徐州代管县级城市的运河古镇银杏与淮海战役遗址旅行边界；固定记录行政链对应法定邳州市且assigned_phase为cities15000
+CN-cities15000-038,1794479,Laixi,PPLA3,山东省,destinations/中国/山东省/莱西市.md,青岛代管县级城市的胶东内陆湖库乡村文博与区域联程边界；固定记录行政链对应法定莱西市且assigned_phase为cities15000
+CN-cities15000-038,2034439,Tieling,PPL,辽宁省,destinations/中国/辽宁省/铁岭市.md,辽北地级城市银州主城历史文博与广域县市旅行边界；固定记录行政链对应法定铁岭市且assigned_phase为cities15000

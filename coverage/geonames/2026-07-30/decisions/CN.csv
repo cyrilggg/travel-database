@@ -329,3 +329,13 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 8067345,researched,destinations/中国/西藏自治区/山南市.md,,,,,,codex,2026-08-12,1
 2033574,merged,,2033196,destinations/中国/河北省/张家口市.md,merged_urban_section,现行行政区划将宣化列为张家口市辖区130705而非独立法定城市；现有张家口规范页已实质覆盖宣化古城场馆住宿交通与完整路线,https://dmfw.mca.gov.cn/xzqh/getList?code=130700&trimCode=false&maxLevel=3,codex,2026-08-12,1
 1805029,merged,,1808392,destinations/中国/河北省/衡水市.md,renamed_or_reorganized,2016年撤销县级冀州市并设衡水市冀州区且现行代码为131103；现有衡水规范页已实质覆盖冀州城区场馆住宿交通与湖区路线,https://dmfw.mca.gov.cn/xzqh/getList?code=131100&trimCode=false&maxLevel=3,codex,2026-08-12,1
+8054802,researched,destinations/中国/内蒙古自治区/锡林浩特市.md,,,,,,codex,2026-08-12,1
+12548253,researched,destinations/中国/内蒙古自治区/呼伦贝尔市.md,,,,,,codex,2026-08-12,1
+1813206,researched,destinations/中国/湖北省/大冶市.md,,,,,,codex,2026-08-12,1
+2038067,researched,destinations/中国/内蒙古自治区/赤峰市.md,,,,,,codex,2026-08-12,1
+2035261,researched,destinations/中国/黑龙江省/七台河市.md,,,,,,codex,2026-08-12,1
+1785716,researched,destinations/中国/江苏省/邳州市.md,,,,,,codex,2026-08-12,1
+1794479,researched,destinations/中国/山东省/莱西市.md,,,,,,codex,2026-08-12,1
+2034439,researched,destinations/中国/辽宁省/铁岭市.md,,,,,,codex,2026-08-12,1
+12277239,merged,,10630003,destinations/中国/江苏省/徐州市.md,merged_urban_section,现行省级行政区划将云龙列为徐州市辖区而非独立法定城市；现有徐州规范页已实质覆盖云龙区老城汉文化景区住宿交通与多日路线,https://www.jiangsu.gov.cn/col/col88749/index.html,codex,2026-08-12,1
+1795060,merged,,6986104,destinations/中国/广东省/中山市.md,merged_urban_section,中山市政府现行行政区划将石岐列为街道而非独立法定城市；现有中山规范页已实质覆盖石岐老城场馆餐饮住宿交通与完整路线,https://www.zs.gov.cn/zjzs/wrgl/content/post_226670.html,codex,2026-08-12,1
