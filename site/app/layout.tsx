@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
+import "./android-mobile.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://travel-map.brown-pear-9939.chatgpt.site"),

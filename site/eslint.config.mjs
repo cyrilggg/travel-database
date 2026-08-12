@@ -11,8 +11,11 @@ const eslintConfig = defineConfig([
   globalIgnores([
     ".next/**",
     "dist/**",
+    "pages-dist/**",
     "out/**",
     "build/**",
+    "app/generated/**",
+    "public/maplibre-v3/**",
     "next-env.d.ts",
   ]),
   eslint.configs.recommended,

@@ -1,6 +1,7 @@
 "use client";
 
 import { type FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import GuideBrowser from "./GuideBrowser";
 import GuideContentLoader from "./GuideContentLoader";
 import TerrainMap from "./TerrainMap";
 import { guides, type TravelGuide } from "../generated/guides";
@@ -73,6 +74,9 @@ export default function TravelMap() {
   );
   const panelScrollRef = useRef<HTMLDivElement>(null);
   const panelDockToggleRef = useRef<HTMLButtonElement>(null);
+  const overviewTabRef = useRef<HTMLButtonElement>(null);
+  const fullReadingTabRef = useRef<HTMLButtonElement>(null);
+  const previousReadingModeRef = useRef(readingMode);
 
   const panelExpanded = panelLayout === "expanded";
   const panelCollapsed = panelLayout === "collapsed";
@@ -123,7 +127,11 @@ export default function TravelMap() {
         : "攻略";
 
   useEffect(() => {
-    panelScrollRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    panelScrollRef.current?.scrollTo({
+      top: 0,
+      behavior: reduceMotion ? "auto" : "smooth",
+    });
   }, [panel, readingMode]);
 
   useEffect(() => {
@@ -131,6 +139,13 @@ export default function TravelMap() {
       panelDockToggleRef.current?.focus({ preventScroll: true });
     }
   }, [panelCollapsed]);
+
+  useEffect(() => {
+    if (previousReadingModeRef.current === readingMode) return;
+    previousReadingModeRef.current = readingMode;
+    const target = readingMode === "full" ? fullReadingTabRef : overviewTabRef;
+    target.current?.focus({ preventScroll: true });
+  }, [readingMode]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -142,6 +157,11 @@ export default function TravelMap() {
         ) {
           return;
         }
+        if (readingMode === "full") {
+          setReadingMode("overview");
+          setPanelLayout("docked");
+          return;
+        }
         setPanelLayout((layout) =>
           layout === "expanded" ? "docked" : "collapsed",
         );
@@ -149,7 +169,7 @@ export default function TravelMap() {
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, []);
+  }, [readingMode]);
 
   const openGuide = (guide: TravelGuide) => {
     setPanel({ kind: "city", guideId: guide.id });
@@ -172,9 +192,24 @@ export default function TravelMap() {
 
   const openFullReading = () => {
     setReadingMode("full");
-    if (window.matchMedia("(max-width: 840px)").matches) {
-      setPanelLayout("expanded");
+    setPanelLayout("expanded");
+  };
+
+  const openOverview = () => {
+    setReadingMode("overview");
+    setPanelLayout("docked");
+  };
+
+  const togglePanelReadingWidth = () => {
+    if (readingMode === "full") {
+      openOverview();
+      return;
     }
+    setPanelLayout(panelExpanded ? "docked" : "expanded");
+  };
+
+  const hidePanel = () => {
+    setPanelLayout("collapsed");
   };
 
   const exploreRandomGuide = () => {
@@ -291,7 +326,6 @@ export default function TravelMap() {
   );
 
   const renderCity = (guide: TravelGuide) => {
-    const topSections = guide.sections.filter((section) => section.level === 2).slice(0, 8);
     const nearby = nearestGuides(guide.coordinates, 3, guide.id);
 
     return (
@@ -304,10 +338,14 @@ export default function TravelMap() {
           <div className="panel-actions">
             <button
               type="button"
-              onClick={() => setPanelLayout(panelExpanded ? "docked" : "expanded")}
-              aria-label={panelExpanded ? "回到地图视图" : "宽屏阅读攻略"}
+              onClick={togglePanelReadingWidth}
+              aria-label={
+                readingMode === "full" || panelExpanded
+                  ? "回到地图与攻略重点"
+                  : "宽屏浏览攻略重点"
+              }
             >
-              {panelExpanded ? "回到地图" : "宽屏阅读"}
+              {readingMode === "full" || panelExpanded ? "回到地图" : "宽屏浏览"}
             </button>
             <button
               className="panel-close"
@@ -329,15 +367,19 @@ export default function TravelMap() {
 
         <nav className="reading-tabs" aria-label="攻略阅读模式">
           <button
+            ref={overviewTabRef}
             type="button"
             className={readingMode === "overview" ? "is-active" : ""}
-            onClick={() => setReadingMode("overview")}
+            aria-pressed={readingMode === "overview"}
+            onClick={openOverview}
           >
-            速览
+            攻略重点
           </button>
           <button
+            ref={fullReadingTabRef}
             type="button"
             className={readingMode === "full" ? "is-active" : ""}
+            aria-pressed={readingMode === "full"}
             onClick={openFullReading}
           >
             完整攻略
@@ -363,6 +405,29 @@ export default function TravelMap() {
               ))}
             </div>
 
+            <GuideContentLoader
+              contentPath={guide.markdownPath}
+              loadingLabel="正在整理攻略重点"
+            >
+              {(markdown) => (
+                <GuideBrowser
+                  key={guide.id}
+                  guideId={guide.id}
+                  markdown={markdown}
+                  sections={guide.sections}
+                  onOpenFullGuide={openFullReading}
+                />
+              )}
+            </GuideContentLoader>
+
+            <button
+              className="read-full-button"
+              type="button"
+              onClick={openFullReading}
+            >
+              打开完整攻略 <span aria-hidden="true">→</span>
+            </button>
+
             <section className="nearby-guides" aria-labelledby={`${guide.id}-nearby`}>
               <div className="nearby-guides__heading">
                 <div>
@@ -387,24 +452,6 @@ export default function TravelMap() {
                 ))}
               </div>
             </section>
-
-            <div className="section-list">
-              <span className="section-list__label">这篇攻略包含</span>
-              {topSections.map((section, index) => (
-                <div key={`${guide.id}-${section.id}`}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <strong>{section.title}</strong>
-                </div>
-              ))}
-            </div>
-
-            <button
-              className="read-full-button"
-              type="button"
-              onClick={openFullReading}
-            >
-              打开完整攻略 <span aria-hidden="true">→</span>
-            </button>
           </div>
         ) : (
           <div className="full-guide-wrap">
@@ -563,15 +610,25 @@ export default function TravelMap() {
           >
             <div className="panel-utility-bar">
               <span>{panelDockContext}</span>
-              <button type="button" onClick={() => setPanelLayout("collapsed")}>
-                隐藏侧栏 <span aria-hidden="true">→</span>
+              <button
+                type="button"
+                onClick={readingMode === "full" ? openOverview : hidePanel}
+              >
+                {readingMode === "full" ? "回到地图与重点" : "隐藏侧栏"}{" "}
+                <span aria-hidden="true">→</span>
               </button>
             </div>
             <button
               className="sheet-handle"
               type="button"
-              onClick={() => setPanelLayout(panelExpanded ? "docked" : "expanded")}
-              aria-label={panelExpanded ? "回到半屏攻略" : "展开攻略"}
+              onClick={togglePanelReadingWidth}
+              aria-label={
+                readingMode === "full"
+                  ? "回到地图与攻略重点"
+                  : panelExpanded
+                    ? "回到半屏攻略"
+                    : "展开攻略"
+              }
             >
               <span />
             </button>

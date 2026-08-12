@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex -- Markdown table overflow regions must be keyboard-scrollable. */
 import { Children, isValidElement, type ReactNode } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -111,7 +112,12 @@ function createMarkdownComponents(firstH1Line: number | undefined): Components {
     },
     table(props) {
       return (
-        <div className="guide-table-scroll">
+        <div
+          className="guide-table-scroll"
+          role="region"
+          tabIndex={0}
+          aria-label="攻略表格，可左右滚动查看更多"
+        >
           <table {...withoutMarkdownNode(props)} />
         </div>
       );

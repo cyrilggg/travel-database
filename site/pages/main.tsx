@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "../app/globals.css";
+import "../app/android-mobile.css";
 import TravelMap from "../app/components/TravelMap";
 
 const root = document.getElementById("root");
