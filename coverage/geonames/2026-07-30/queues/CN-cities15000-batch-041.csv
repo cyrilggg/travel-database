@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-041,8594670,Xingning,PPLA3,广东省,destinations/中国/广东省/兴宁市.md,梅州代管县级城市的客家古城古民居神光山与乡镇农业边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-041,1803331,Linxia Chengguanzhen,PPLA3,甘肃省,destinations/中国/甘肃省/临夏市.md,临夏州州府县级城市的河州老城民族文化公共文博与周边州县边界；法定实体直接连接固定记录且assigned_phase为cities15000
+CN-cities15000-041,1529114,Turpan,PPLA2,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/吐鲁番市.md,东疆绿洲地级城市的高昌主城遗址葡萄农业极端高温与广域县区边界；固定记录连接高昌区且assigned_phase为cities15000
+CN-cities15000-041,1529435,Ghulja,PPLA2,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/伊宁市.md,伊犁州州府县级城市的河谷城市多民族文化公共空间与州内草原口岸边界；固定居民点服务城市定位且assigned_phase为cities15000
+CN-cities15000-041,1810979,Fuling,PPLA3,重庆市,destinations/中国/重庆市/涪陵区.md,重庆市辖区级城市组团的两江山城榨菜工业文博与武陵山远线边界；按万州先例建立可独立使用的区级指南且assigned_phase为cities15000
+CN-cities15000-041,1786640,Chengzhong,PPLA4,湖北省,destinations/中国/湖北省/应城市.md,孝感代管县级城市的膏盐矿业温泉湿地与分散乡镇边界；固定点定位城中主城且assigned_phase为cities15000
+CN-cities15000-041,1812521,Donghai,PPLA3,广东省,destinations/中国/广东省/陆丰市.md,汕尾代管县级城市的东海主城碣石古镇革命史与分散海岸边界；固定点对应东海街道驻地且assigned_phase为cities15000
+CN-cities15000-041,1812228,Dongtai,PPLA3,江苏省,destinations/中国/江苏省/东台市.md,盐城代管县级城市的里下河老城黄海森林潮间带与沿海保护边界；固定点对应东台镇驻地且assigned_phase为cities15000
