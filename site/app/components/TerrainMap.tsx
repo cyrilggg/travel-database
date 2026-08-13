@@ -9,7 +9,7 @@ import {
   setWorkerUrl,
 } from "maplibre-gl";
 import { useEffect, useRef, useState } from "react";
-import type { TravelGuide } from "../generated/guides";
+import type { TravelGuide } from "../generated/publicGuides";
 
 const BASE_STYLE = "https://tiles.openfreemap.org/styles/bright";
 const TERRAIN_TILEJSON = "https://tiles.mapterhorn.com/tilejson.json";
@@ -205,7 +205,6 @@ const addTerrainLayers = (map: MapLibreMap) => {
     );
   }
 
-  map.setTerrain({ source: TERRAIN_SOURCE_ID, exaggeration: 0.72 });
 };
 
 export default function TerrainMap({
@@ -234,7 +233,7 @@ export default function TerrainMap({
   const panelLayoutRef = useRef(panelLayout);
   const appliedPanelLayoutRef = useRef<PanelLayout | null>(null);
   const explorePointRef = useRef(explorePoint);
-  const terrainEnabledRef = useRef(true);
+  const terrainEnabledRef = useRef(false);
   const mobileExperienceRef = useRef(false);
   const reducedMotionRef = useRef(false);
   const panelHistoryReadyRef = useRef(false);
@@ -242,7 +241,7 @@ export default function TerrainMap({
   const previousHistoryPanelRef = useRef(panelLayout);
   const [mapReady, setMapReady] = useState(false);
   const [mapFailed, setMapFailed] = useState(false);
-  const [terrainEnabled, setTerrainEnabled] = useState(true);
+  const [terrainEnabled, setTerrainEnabled] = useState(false);
   const [mobileExperience, setMobileExperience] = useState(false);
 
   useEffect(() => {
@@ -585,7 +584,7 @@ export default function TerrainMap({
       zoom: 3.2,
       minZoom: 1.8,
       maxZoom: 16,
-      pitch: 18,
+      pitch: 0,
       bearing: 0,
       maxPitch: 60,
       renderWorldCopies: false,
@@ -601,6 +600,7 @@ export default function TerrainMap({
     });
 
     mapRef.current = map;
+    map.keyboard.disable();
     if (mobileMode) map.touchZoomRotate.disableRotation();
     map.addControl(
       new AttributionControl({
@@ -624,6 +624,39 @@ export default function TerrainMap({
       className: "terrain-guide-popup",
     });
     let blankClickTimer: number | undefined;
+    const pressedArrows = new Set<string>();
+    let panFrame = 0;
+    let lastPanTime = 0;
+    const runKeyboardPan = (time: number) => {
+      const horizontal = Number(pressedArrows.has("ArrowRight")) - Number(pressedArrows.has("ArrowLeft"));
+      const vertical = Number(pressedArrows.has("ArrowDown")) - Number(pressedArrows.has("ArrowUp"));
+      if (horizontal || vertical) {
+        const elapsed = lastPanTime ? Math.min(32, time - lastPanTime) : 16;
+        const speed = 0.34 * elapsed;
+        map.panBy([horizontal * speed, vertical * speed], { duration: 0 });
+        lastPanTime = time;
+        panFrame = window.requestAnimationFrame(runKeyboardPan);
+      } else {
+        lastPanTime = 0;
+        panFrame = 0;
+      }
+    };
+    const handleArrowDown = (event: KeyboardEvent) => {
+      if (!event.key.startsWith("Arrow")) return;
+      const target = event.target;
+      if (target instanceof HTMLElement && (target.isContentEditable || ["INPUT", "TEXTAREA", "SELECT", "BUTTON"].includes(target.tagName))) return;
+      event.preventDefault();
+      pressedArrows.add(event.key);
+      if (!panFrame) panFrame = window.requestAnimationFrame(runKeyboardPan);
+    };
+    const handleArrowUp = (event: KeyboardEvent) => {
+      if (!event.key.startsWith("Arrow")) return;
+      pressedArrows.delete(event.key);
+    };
+    const clearArrows = () => pressedArrows.clear();
+    window.addEventListener("keydown", handleArrowDown);
+    window.addEventListener("keyup", handleArrowUp);
+    window.addEventListener("blur", clearArrows);
 
     const publishViewportGuides = () => {
       if (!map.getSource(GUIDE_SOURCE_ID)) return;
@@ -989,6 +1022,10 @@ export default function TerrainMap({
     let resizeFrame = 0;
     const scheduleResize = () => {
       window.cancelAnimationFrame(resizeFrame);
+      window.cancelAnimationFrame(panFrame);
+      window.removeEventListener("keydown", handleArrowDown);
+      window.removeEventListener("keyup", handleArrowUp);
+      window.removeEventListener("blur", clearArrows);
       resizeFrame = window.requestAnimationFrame(() => {
         map.resize();
         map.setPadding(mapPadding(panelLayoutRef.current, containerRef.current));
@@ -1165,6 +1202,7 @@ export default function TerrainMap({
       )}
 
       <div className="map-toolbar" aria-label="地图控制">
+        <div className="map-toolbar-group" aria-label="缩放与复位">
         <button
           type="button"
           onClick={() =>
@@ -1184,8 +1222,10 @@ export default function TerrainMap({
           −
         </button>
         <button type="button" onClick={resetMap} aria-label="回到全国视图">
-          ◎
+          <span aria-hidden="true">⌂</span><small>全国</small>
         </button>
+        </div>
+        <div className="map-toolbar-group is-explore" aria-label="探索地图">
         <button
           type="button"
           className="map-toolbar-action"
@@ -1206,6 +1246,7 @@ export default function TerrainMap({
           <span className="map-toolbar-action-icon" aria-hidden="true">✦</span>
           <span className="map-toolbar-action-label">随机</span>
         </button>
+        </div>
       </div>
 
       <button
@@ -1215,7 +1256,7 @@ export default function TerrainMap({
         aria-pressed={terrainEnabled}
       >
         <span aria-hidden="true" />
-        {terrainEnabled ? "立体地形" : "平面地形"}
+        {terrainEnabled ? "立体" : "平面"}
       </button>
 
       <div className="map-legend" aria-hidden="true">

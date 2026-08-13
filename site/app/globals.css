@@ -1643,13 +1643,26 @@ body,
   display: flex;
   grid-template-columns: none;
   flex-direction: column;
-  gap: 2px;
-  padding: 4px;
+  gap: 6px;
+  padding: 5px;
   border: 1px solid rgba(46, 68, 62, 0.13);
   border-radius: 14px;
   background: rgba(251, 249, 242, 0.9);
   box-shadow: 0 12px 34px rgba(32, 53, 48, 0.14);
   backdrop-filter: blur(14px);
+}
+
+.map-toolbar-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(46, 68, 62, 0.1);
+}
+
+.map-toolbar-group:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .map-toolbar button,
@@ -1663,8 +1676,13 @@ body,
 }
 
 .map-toolbar button:last-child {
-  border-top: 1px solid rgba(46, 68, 62, 0.1);
   font-size: 14px;
+}
+
+.map-toolbar button small {
+  display: block;
+  font-size: 7px;
+  font-weight: 800;
 }
 
 .terrain-toggle {
@@ -2587,7 +2605,7 @@ body,
   justify-content: center;
   flex-direction: column;
   gap: 1px;
-  border-top: 1px solid rgba(46, 68, 62, 0.1);
+  border-top: 0;
   line-height: 1;
 }
 
