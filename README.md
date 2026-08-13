@@ -635,6 +635,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [泰兴](./destinations/中国/江苏省/泰兴市.md) | 泰兴城区、黄桥历史、沿江文化与地方饮食 | `researched` |
 | [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [栖霞](./destinations/中国/山东省/栖霞市.md) | 牟氏庄园、苹果产区、山地生态与胶东乡村 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [南雄](./destinations/中国/广东省/南雄市.md) | 珠玑古巷、梅关古道、帽子峰与粤北乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [图们](./destinations/中国/吉林省/图们市.md) | 图们江口岸、朝鲜族文化、铁路记忆与边境城市生活 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [肥城](./destinations/中国/山东省/肥城市.md) | 桃文化、城区文博、牛山与泰山西麓乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [介休](./destinations/中国/山西省/介休市.md) | 绵山、张壁古堡、后土庙与晋中南部古建 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [珲春](./destinations/中国/吉林省/珲春市.md) | 三疆地理、口岸城市、湿地候鸟与海鲜饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [启东](./destinations/中国/江苏省/启东市.md) | 江海门户、圆陀角、沿海湿地与吕四港城 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [新民](./destinations/中国/辽宁省/新民市.md) | 辽河平原主城、地方文博、乡村与季节湿地 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [兰溪](./destinations/中国/浙江省/兰溪市.md) | 兰溪古城、兰江、诸葛古村、游埠与山地洞穴 | `researched` |
+| [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [根河](./destinations/中国/内蒙古自治区/根河市.md) | 大兴安岭林业城市、使鹿文化、湿地与高寒森林 | `researched` |
 
 ## 项目维护
 
