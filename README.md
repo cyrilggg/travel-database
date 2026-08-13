@@ -619,6 +619,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [湘乡](./destinations/中国/湖南省/湘乡市.md) | 东山书院、涟水城区、东台山与水府方向 | `researched` |
 | [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [密山](./destinations/中国/黑龙江省/密山市.md) | 兴凯湖、地方文博、北大荒农垦与边境湿地 | `researched` |
 | [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [嫩江](./destinations/中国/黑龙江省/嫩江市.md) | 墨尔根历史、嫩江岸线、科洛火山与寒地农业 | `researched` |
+| [中国](./destinations/中国/README.md) | [西藏自治区](./destinations/中国/西藏自治区/README.md) | [昌都](./destinations/中国/西藏自治区/昌都市.md) | 卡若主城、强巴林寺、茶马文化与横断山远线 | `researched` |
+| [中国](./destinations/中国/README.md) | [甘肃省](./destinations/中国/甘肃省/README.md) | [陇南](./destinations/中国/甘肃省/陇南市.md) | 武都河谷、地方文博、官鹅沟与陇蜀山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [和龙](./destinations/中国/吉林省/和龙市.md) | 朝鲜族文化、地方文博、仙景台与森林山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [曲阜](./destinations/中国/山东省/曲阜市.md) | 三孔世界遗产、孔子博物馆、鲁国故城与儒家文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [津市](./destinations/中国/湖南省/津市市.md) | 澧水城市、地方文博、药山寺、嘉山与牛肉粉 | `researched` |
+| [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [原平](./destinations/中国/山西省/原平市.md) | 地方文博、崞阳古建、天涯山与滹沱河谷 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [义马](./destinations/中国/河南省/义马市.md) | 煤矿城市史、地方文博、鸿庆寺石窟与生态修复 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [南宫](./destinations/中国/河北省/南宫市.md) | 冀南平原城市、地方文博、红色记忆与非遗乡村 | `researched` |
 
 ## 项目维护
 
