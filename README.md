@@ -595,6 +595,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [新乐](./destinations/中国/河北省/新乐市.md) | 伏羲台遗址、伏羲祭典、文化片区与公共艺术 | `researched` |
 | [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [兴城](./destinations/中国/辽宁省/兴城市.md) | 明代古城、兴城海滨、觉华岛与温泉 | `researched` |
 | [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [任丘](./destinations/中国/河北省/任丘市.md) | 华北油田城市史、白洋淀西缘、鄚州与水乡生态 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [绥芬河](./destinations/中国/黑龙江省/绥芬河市.md) | 国境口岸、铁路城市史、俄式街区与边境旅行 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [京山](./destinations/中国/湖北省/京山市.md) | 新市主城、温泉、绿林山地、湿地与乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [信宜](./destinations/中国/广东省/信宜市.md) | 玉文化、山地森林、乡村古村与粤西饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [醴陵](./destinations/中国/湖南省/醴陵市.md) | 陶瓷文化、渌江书院、红色文博与湘东乡镇 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [五常](./destinations/中国/黑龙江省/五常市.md) | 稻作文化、凤凰山、雪谷、龙凤山与林区 | `researched` |
+| [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [南安](./destinations/中国/福建省/南安市.md) | 海丝遗产、侨乡古厝、石井海岸与闽南饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [双辽](./destinations/中国/吉林省/双辽市.md) | 郑家屯历史、森林湿地、平原乡村与季节旅行 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [大安](./destinations/中国/吉林省/大安市.md) | 嫩江湿地、盐碱地治理、渔业文化与平原城市 | `researched` |
 
 ## 项目维护
 

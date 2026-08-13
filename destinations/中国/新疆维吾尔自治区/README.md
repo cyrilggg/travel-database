@@ -18,7 +18,7 @@
 | [伊宁](./伊宁市.md) | 伊犁州文博、六星街、喀赞其、伊犁河与河谷城市餐饮 | 市区 2 天；跨县市联程另留 1 天以上 | `researched` | 2026-08-12 |
 | [博乐](./博乐市.md) | 博州文博、博尔塔拉河、赛里木湖、达勒特遗址与多民族餐饮 | 主城 1–2 天；赛里木湖另留整日 | `researched` | 2026-08-12 |
 | [石河子](./石河子市.md) | 军垦历史、旧工业遗产、绿洲城市、玛纳斯河、现代农业与石河子凉皮 | 市区 1–2 天；远郊或区域联游另留 1 天 | `researched` | 2026-07-31 |
-| [克拉玛依](./克拉玛依市.md) | 石油工业史、黑油山、世界魔鬼城、百里油区与独山子峡谷 | 主城 1 天；乌尔禾和独山子分别另留整日 | `researched` | 2026-08-12 |
+| [克拉玛依](./克拉玛依市.md) | 石油工业史、黑油山、世界魔鬼城、白碱滩百里油区与独山子峡谷 | 主城 1 天；乌尔禾和独山子分别另留整日 | `researched` | 2026-08-13 |
 | [阿勒泰](./阿勒泰市.md) | 地区文博、克兰河、桦林公园、将军山滑雪与阿禾公路市域段 | 非雪季 2–3 天；滑雪为主 3–5 天 | `researched` | 2026-08-12 |
 | [图木舒克](./图木舒克市.md) | 屯垦历史、唐王城、永安湖、土陶、胡杨与兵团绿洲城市 | 主城 1 天；唐王城和永安湖各留完整时段 | `researched` | 2026-08-13 |
 | [阿拉尔](./阿拉尔市.md) | 塔里木河绿洲、三五九旅屯垦史、塔里木大学、沙漠边缘与兵团城市 | 主城 1 天；河流或团场方向另留 1 天 | `researched` | 2026-08-13 |
@@ -165,6 +165,6 @@
 
 和田的县级市与地区驻地关系参考[和田市人民政府概况](https://www.hts.gov.cn/mobile/jinrihetian/)和[基层权责清单](https://www.hts.gov.cn/xinxigongkai/list.php?catid=94)，团城、地区博物馆、吉亚乡艾德莱斯、大漠湖杨及跨县边界参考[自治区文旅厅非遗集市公示](https://wlt.xinjiang.gov.cn/wlt/tzgg/202305/627763f977fe4348b36f879db0d26282.shtml)、[和田非遗美食线路](https://wlt.xinjiang.gov.cn/wlt/c112786/202402/091b4d66a1584f1489e786aadb377874.shtml)和[冬春精品线路](https://wlt.xinjiang.gov.cn/wlt/wltyw/202501/648c2ea41e8f43f5b7c9c05b8ef3e37f.shtml)。和田城市点使用 **GeoNames 1281019**，城市实体使用 **Wikidata Q235389**，法定行政代码为 **653201**；河道采挖与开放边界另以[自治区水利厅执法资料](https://slt.xinjiang.gov.cn/xjslt/c114510/202104/9a50bd0e4b3e4bf4872eb4d00ad0a783.shtml)及属地主管部门公告核对。
 
-克拉玛依的地级市与四区关系参考[克拉玛依市建置沿革](https://www.klmy.gov.cn/klmys/lsrw/202511/cc61b1d333f34cc5bfec0f7aca9c06a1.shtml)、[独山子区概况](https://dsz.gov.cn/dsz/zjdsz/zjdszq.shtml)和[独山子客运站服务指南](https://www.klmy.gov.cn/klmys/xxgkmljbszn/202504/c9e03c0a8ba748d88b4efc359afdb2ac.shtml)，据此把独山子按南部分离片区核算到发与住宿；景区与生产空间边界参考[白碱滩区旅游信息服务指南](https://www.bjtq.gov.cn/bjtq/bjtly/202505/f209a7194d074b1496e28e971a8d5687.shtml)、[百里油区正式景区资料](https://www.klmy.gov.cn/klmys/tzdt/202603/a4a1053366b7434682d77641fba54624.shtml)及[自治区国土空间规划报道](https://zrzyt.xinjiang.gov.cn/xjgtzy/dzdt/202407/7c22aa1f468042518fae5ae36799f5ab.shtml)。城市标识使用 **GeoNames 1529401** 与 **Wikidata Q658240**，法定行政代码为 **650200**。
+克拉玛依的地级市与四区关系参考[克拉玛依市建置沿革](https://www.klmy.gov.cn/klmys/lsrw/202511/cc61b1d333f34cc5bfec0f7aca9c06a1.shtml)、[独山子区概况](https://dsz.gov.cn/dsz/zjdsz/zjdszq.shtml)和[独山子客运站服务指南](https://www.klmy.gov.cn/klmys/xxgkmljbszn/202504/c9e03c0a8ba748d88b4efc359afdb2ac.shtml)，据此把独山子按南部分离片区核算到发与住宿；景区与生产空间边界参考[白碱滩区旅游信息服务指南](https://www.bjtq.gov.cn/bjtq/bjtly/202505/f209a7194d074b1496e28e971a8d5687.shtml)、[百里油区正式景区资料](https://www.klmy.gov.cn/klmys/tzdt/202603/a4a1053366b7434682d77641fba54624.shtml)及[自治区国土空间规划报道](https://zrzyt.xinjiang.gov.cn/xjgtzy/dzdt/202407/7c22aa1f468042518fae5ae36799f5ab.shtml)。城市标识使用 **GeoNames 1529401** 与 **Wikidata Q658240**，法定行政代码为 **650200**；GeoNames `1529626` 用于定位白碱滩城市模块。
 
 本索引中的链接均可直接进入完整城市指南。若一个旅行产品从乌鲁木齐、昌吉、吐鲁番、哈密、伊宁、博乐、石河子、克拉玛依、阿勒泰、塔城、库尔勒、阿克苏、喀什、阿图什或和田出发，其所到达的其他地州、县市或团场仍按实际属地理解，不归入出发城市。实时票价、班次、航站楼、道路通行、景区开放、证件和安全规则须在出发前重查。

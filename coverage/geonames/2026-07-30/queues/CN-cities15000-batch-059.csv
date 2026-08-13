@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-059,2034657,Suifenhe,PPL,黑龙江省,destinations/中国/黑龙江省/绥芬河市.md,牡丹江代管县级口岸城市的铁路史口岸文化街区与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-059,1788638,Xinshi,PPLA3,湖北省,destinations/中国/湖北省/京山市.md,荆门代管县级城市的主城温泉山地湿地与独立住宿交通尺度；固定点为旧新市驻地标签且法定实体连接另一行政记录
+CN-cities15000-059,1812057,Xinyi,PPL,广东省,destinations/中国/广东省/信宜市.md,茂名代管县级山地城市的玉文化主城森林乡村与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-059,1803616,Xishan,PPLA3,湖南省,destinations/中国/湖南省/醴陵市.md,株洲代管县级城市的陶瓷书院红色文博与独立住宿交通尺度；法定实体精确连接固定驻地点
+CN-cities15000-059,2034141,Wuchang,PPLA3,黑龙江省,destinations/中国/黑龙江省/五常市.md,哈尔滨代管县级城市的稻作文化森林雪谷水库与独立住宿交通尺度；固定驻地点与法定实体所连行政记录粒度不同
+CN-cities15000-059,1789289,Ximeicun,PPL,福建省,destinations/中国/福建省/南安市.md,泉州代管县级城市的海丝遗产侨乡古厝石井海岸与独立住宿交通尺度；固定主城点与法定实体所连行政记录粒度不同
+CN-cities15000-059,2033135,Shuangliao,PPLA3,吉林省,destinations/中国/吉林省/双辽市.md,四平代管县级城市的郑家屯历史森林湿地乡村与独立住宿交通尺度；固定驻地点与法定实体所连行政记录粒度不同
+CN-cities15000-059,2037930,Dalai,PPL,吉林省,destinations/中国/吉林省/大安市.md,白城代管县级城市的嫩江湿地盐碱地治理与独立住宿交通尺度；固定大赉城市点与法定实体所连行政记录粒度不同

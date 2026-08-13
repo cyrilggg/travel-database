@@ -548,3 +548,13 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 2033766,researched,destinations/中国/辽宁省/兴城市.md,,,,,,codex,2026-08-13,1
 1797181,researched,destinations/中国/河北省/任丘市.md,,,,,,codex,2026-08-13,1
 1812256,merged,,8347664,destinations/中国/内蒙古自治区/鄂尔多斯市.md,merged_urban_section,固定Dongsheng记录对应鄂尔多斯市东胜区城市点；鄂尔多斯指南已实质覆盖东胜区域具体景点完整路线住宿和交通,https://www.ordos.gov.cn/sq_127930/csgk/qqgk/dsq/,codex,2026-08-13,1
+2034657,researched,destinations/中国/黑龙江省/绥芬河市.md,,,,,,codex,2026-08-13,1
+1788638,researched,destinations/中国/湖北省/京山市.md,,,,,,codex,2026-08-13,1
+1812057,researched,destinations/中国/广东省/信宜市.md,,,,,,codex,2026-08-13,1
+1803616,researched,destinations/中国/湖南省/醴陵市.md,,,,,,codex,2026-08-13,1
+1795632,merged,,1886762,destinations/中国/浙江省/舟山市.md,merged_urban_section,固定Shenjiamen记录对应舟山市普陀区沈家门城市点；舟山指南以东港沈家门模块覆盖区域具体景点完整路线住宿和交通,https://www.geonames.org/1795632/shenjiamen.html,codex,2026-08-13,1
+2034141,researched,destinations/中国/黑龙江省/五常市.md,,,,,,codex,2026-08-13,1
+1789289,researched,destinations/中国/福建省/南安市.md,,,,,,codex,2026-08-13,1
+1529626,merged,,1529401,destinations/中国/新疆维吾尔自治区/克拉玛依市.md,merged_urban_section,固定Baijiantan记录对应克拉玛依市白碱滩区城市点；克拉玛依指南以北向模块覆盖区域具体景点完整路线住宿和交通,https://www.geonames.org/1529626/baijiantan.html,codex,2026-08-13,1
+2033135,researched,destinations/中国/吉林省/双辽市.md,,,,,,codex,2026-08-13,1
+2037930,researched,destinations/中国/吉林省/大安市.md,,,,,,codex,2026-08-13,1
