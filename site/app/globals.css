@@ -356,11 +356,6 @@ input:focus-visible {
     0 7px 14px rgba(116, 44, 28, 0.25);
 }
 
-.city-marker.is-partial .marker-dot {
-  border-color: var(--cinnabar);
-  background: #fffaf2;
-}
-
 .marker-label {
   position: absolute;
   top: 2px;
@@ -592,6 +587,21 @@ input:focus-visible {
   line-height: 1.9;
 }
 
+.coverage-summary {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin-top: 12px;
+  color: var(--ink-soft);
+  font-size: 11px;
+}
+
+.coverage-summary strong {
+  color: var(--teal);
+  font-family: var(--font-serif);
+  font-size: 25px;
+}
+
 .itinerary-card {
   position: relative;
   width: 100%;
@@ -724,6 +734,16 @@ input:focus-visible {
   background: #fffdf8;
 }
 
+.city-index button.is-missing {
+  border-color: rgba(111, 143, 120, 0.2);
+  background: rgba(224, 235, 222, 0.5);
+}
+
+.city-index button.is-missing small {
+  color: #587261;
+  font-weight: 750;
+}
+
 .city-index button span {
   font-family: var(--font-serif);
   font-size: 15px;
@@ -823,9 +843,9 @@ input:focus-visible {
   font-weight: 800;
 }
 
-.guide-meta-row > span:first-child.is-partial {
-  color: #9d572f;
-  background: #f6e5d3;
+.guide-meta-row > span:first-child.is-missing {
+  color: #4f6c58;
+  background: #e0ebde;
 }
 
 .reading-tabs {
@@ -1078,17 +1098,6 @@ input:focus-visible {
 
 .full-guide-wrap {
   padding-top: 26px;
-}
-
-.partial-notice {
-  margin-bottom: 20px;
-  padding: 13px 15px;
-  border: 1px solid #efd2b1;
-  border-radius: 12px;
-  color: #8c522d;
-  background: #fbefdf;
-  font-size: 11px;
-  line-height: 1.7;
 }
 
 .guide-content {
@@ -1787,10 +1796,10 @@ body,
   border-color: #c45237;
 }
 
-.legend-dot.is-partial {
+.legend-dot.is-missing {
   border-color: #fff8ec;
-  background: #e3a43b;
-  box-shadow: 0 0 0 1px #a96e1c;
+  background: #6f8f78;
+  box-shadow: 0 0 0 1px #486853;
 }
 
 .guide-panel,

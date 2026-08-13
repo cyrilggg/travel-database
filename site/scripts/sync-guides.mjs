@@ -25,6 +25,15 @@ const publicGuidesPath = path.join(publicRoot, "guides");
 const guidesRoot = "destinations/中国";
 const coordinateInventoryPath =
   "coverage/geonames/2026-07-30/inventory/CN.csv";
+const legalCityInventoryPath =
+  "coverage/legal-cities/2025-12-31/inventory/CN-legal-cities.csv";
+const legalCityDecisionsPath =
+  "coverage/legal-cities/2025-12-31/decisions/CN.csv";
+const legalCityCentersPath = path.join(
+  siteRoot,
+  "data",
+  "cn-legal-city-centers.csv",
+);
 
 class SourceRefUnavailableError extends Error {}
 
@@ -132,6 +141,51 @@ async function loadCoordinates() {
   }
 
   return coordinates;
+}
+
+async function loadLegalMapCities(guides) {
+  const [inventoryCsv, decisionsCsv, centersCsv] = await Promise.all([
+    readSourceFile(legalCityInventoryPath),
+    readSourceFile(legalCityDecisionsPath),
+    readFile(legalCityCentersPath, "utf8"),
+  ]);
+  const decisionsByCode = new Map(
+    parseCsv(decisionsCsv).map((row) => [row.administrative_code, row]),
+  );
+  const centersByCode = new Map(
+    parseCsv(centersCsv).map((row) => [row.administrative_code, row]),
+  );
+  const guidesBySourcePath = new Map(
+    guides.map((guide) => [guide.sourcePath, guide]),
+  );
+
+  return parseCsv(inventoryCsv).map((city) => {
+    const decision = decisionsByCode.get(city.administrative_code);
+    const guide = decision
+      ? guidesBySourcePath.get(decision.page_path)
+      : undefined;
+    const center = centersByCode.get(city.administrative_code);
+    if (!center) {
+      throw new Error(`${city.name}（${city.administrative_code}）缺少地图中心点`);
+    }
+    if (decision && !guide) {
+      throw new Error(`${city.name} 的覆盖账本指向不存在的单城市攻略：${decision.page_path}`);
+    }
+
+    return {
+      id: `legal-${city.administrative_code}`,
+      administrativeCode: city.administrative_code,
+      city: city.name,
+      adminArea: city.province_name,
+      cityLevel: city.city_level,
+      coverage: guide ? 1 : 0,
+      ...(guide ? { guideId: guide.id } : {}),
+      coordinates: {
+        longitude: Number(center.longitude),
+        latitude: Number(center.latitude),
+      },
+    };
+  });
 }
 
 function displayNameForObsidianTarget(target) {
@@ -341,7 +395,6 @@ async function loadCityGuides(coordinateByGeonamesId) {
       markdownPath,
       lastResearched: normalizeDate(parsed.data.last_researched),
       contentStatus,
-      completeness: contentStatus === "researched" ? "complete" : "partial",
       summary: firstProseParagraph(rawMarkdown),
       suggestedStay: extractSuggestedStay(rawMarkdown),
       keywords: extractKeywords(rawMarkdown),
@@ -359,13 +412,11 @@ async function loadCityGuides(coordinateByGeonamesId) {
   };
 }
 
-function buildGeneratedModule(guides, sourceRevision) {
+function buildGeneratedModule(guides, mapCities, sourceRevision) {
   const provinceCount = new Set(guides.map((guide) => guide.adminArea)).size;
 
   return `// 此文件由 scripts/sync-guides.mjs 自动生成，请勿手工修改。
 // 城市正文位于 public/guides，页面应按 markdownPath 懒加载。
-
-export type GuideCompleteness = "complete" | "partial";
 
 export interface GuideCoordinates {
   longitude: number;
@@ -390,7 +441,6 @@ export interface TravelGuide {
   markdownPath: string;
   lastResearched: string;
   contentStatus: string;
-  completeness: GuideCompleteness;
   summary: string;
   suggestedStay: string;
   keywords: string[];
@@ -398,9 +448,22 @@ export interface TravelGuide {
   coordinates: GuideCoordinates;
 }
 
+export interface MapCity {
+  id: string;
+  administrativeCode: string;
+  city: string;
+  adminArea: string;
+  cityLevel: string;
+  coverage: 0 | 1;
+  guideId?: string;
+  coordinates: GuideCoordinates;
+}
+
 export const sourceRevision = ${serialize(sourceRevision)};
 
 export const guides: TravelGuide[] = ${serialize(guides)};
+
+export const mapCities: MapCity[] = ${serialize(mapCities)};
 
 export const cityGuides = guides;
 
@@ -411,6 +474,8 @@ export const guideById: Record<string, TravelGuide> =
 
 export const guideCount = guides.length;
 export const provinceCount = ${provinceCount};
+export const targetCityCount = mapCities.length;
+export const coveredCityCount = mapCities.filter((city) => city.coverage === 1).length;
 `;
 }
 
@@ -505,7 +570,12 @@ async function syncGuides() {
     );
   }
 
-  const generatedModule = buildGeneratedModule(cityResult.guides, sourceRevision);
+  const mapCities = await loadLegalMapCities(cityResult.guides);
+  const generatedModule = buildGeneratedModule(
+    cityResult.guides,
+    mapCities,
+    sourceRevision,
+  );
 
   await publishMarkdown(cityResult.markdownFiles);
   await mkdir(generatedDirectory, { recursive: true });
@@ -514,8 +584,9 @@ async function syncGuides() {
   const provinceCount = new Set(
     cityResult.guides.map((guide) => guide.adminArea),
   ).size;
+  const coveredCount = mapCities.filter((city) => city.coverage === 1).length;
   console.log(
-    `已从当前仓库@${sourceRevision.slice(0, 7)} 同步 ${cityResult.guides.length} 个单城市攻略（${provinceCount} 个省级地区）`,
+    `已从当前仓库@${sourceRevision.slice(0, 7)} 同步 ${cityResult.guides.length} 个单城市攻略；法定城市覆盖 ${coveredCount}/${mapCities.length}（${provinceCount} 个省级地区）`,
   );
 }
 

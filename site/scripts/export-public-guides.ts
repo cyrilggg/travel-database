@@ -1,7 +1,7 @@
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { guides } from "../app/generated/guides";
+import { guides, mapCities } from "../app/generated/guides";
 import { parseGuideBrowse } from "../app/components/guideBrowse";
 
 const siteRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -33,7 +33,6 @@ const publicGuides = await Promise.all(
       geonamesId: guide.geonamesId,
       lastResearched: guide.lastResearched,
       contentStatus: guide.contentStatus,
-      completeness: guide.completeness,
       summary: guide.summary,
       suggestedStay: guide.suggestedStay,
       keywords: guide.keywords,
@@ -50,8 +49,37 @@ const provinceCount = new Set(publicGuides.map((guide) => guide.adminArea)).size
 const serialized = JSON.stringify(publicGuides, null, 2)
   .replaceAll("\u2028", "\\u2028")
   .replaceAll("\u2029", "\\u2029");
+const serializedMapCities = JSON.stringify(mapCities, null, 2)
+  .replaceAll("\u2028", "\\u2028")
+  .replaceAll("\u2029", "\\u2029");
 
-const moduleSource = `// 由私有攻略生成的公开结构化数据；不含原始 Markdown。\n\nexport type GuideCompleteness = "complete" | "partial";\nexport type GuideBrowseKey = "overview" | "regions" | "attractions" | "food" | "itinerary" | "stay" | "transport" | "checklist";\nexport interface GuideCoordinates { longitude: number; latitude: number; }\nexport interface GuideBrowseLink { label: string; href: string; }\nexport interface GuideBrowseField { label: string; value: string; links?: GuideBrowseLink[]; }\nexport interface GuideBrowseItem { id: string; title: string; description?: string; badges: string[]; fields: GuideBrowseField[]; }\nexport interface GuideBrowseSection { key: GuideBrowseKey; label: string; hint: string; sourceTitle: string; items: GuideBrowseItem[]; totalCount: number; }\nexport interface TravelGuide {\n  kind: "city"; id: string; title: string; city: string; adminArea: string; geonamesId: string;\n  lastResearched: string; contentStatus: string; completeness: GuideCompleteness; summary: string;\n  suggestedStay: string; keywords: string[]; coordinates: GuideCoordinates; structuredPath: string;\n}\nexport const guides: TravelGuide[] = ${serialized};\nexport const cityGuides = guides;\nexport const allGuides = guides;\nexport const guideById: Record<string, TravelGuide> = Object.fromEntries(guides.map((guide) => [guide.id, guide]));\nexport const guideCount = guides.length;\nexport const provinceCount = ${provinceCount};\n`;
+const moduleSource = `// 由私有攻略生成的公开结构化数据；不含原始 Markdown。
+
+export type GuideBrowseKey = "overview" | "regions" | "attractions" | "food" | "itinerary" | "stay" | "transport" | "checklist";
+export interface GuideCoordinates { longitude: number; latitude: number; }
+export interface GuideBrowseLink { label: string; href: string; }
+export interface GuideBrowseField { label: string; value: string; links?: GuideBrowseLink[]; }
+export interface GuideBrowseItem { id: string; title: string; description?: string; badges: string[]; fields: GuideBrowseField[]; }
+export interface GuideBrowseSection { key: GuideBrowseKey; label: string; hint: string; sourceTitle: string; items: GuideBrowseItem[]; totalCount: number; }
+export interface TravelGuide {
+  kind: "city"; id: string; title: string; city: string; adminArea: string; geonamesId: string;
+  lastResearched: string; contentStatus: string; summary: string;
+  suggestedStay: string; keywords: string[]; coordinates: GuideCoordinates; structuredPath: string;
+}
+export interface MapCity {
+  id: string; administrativeCode: string; city: string; adminArea: string; cityLevel: string;
+  coverage: 0 | 1; guideId?: string; coordinates: GuideCoordinates;
+}
+export const guides: TravelGuide[] = ${serialized};
+export const mapCities: MapCity[] = ${serializedMapCities};
+export const cityGuides = guides;
+export const allGuides = guides;
+export const guideById: Record<string, TravelGuide> = Object.fromEntries(guides.map((guide) => [guide.id, guide]));
+export const guideCount = guides.length;
+export const provinceCount = ${provinceCount};
+export const targetCityCount = mapCities.length;
+export const coveredCityCount = mapCities.filter((city) => city.coverage === 1).length;
+`;
 
 await mkdir(path.dirname(outputPath), { recursive: true });
 await writeFile(outputPath, moduleSource, "utf8");

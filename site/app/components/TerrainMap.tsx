@@ -9,7 +9,7 @@ import {
   setWorkerUrl,
 } from "maplibre-gl";
 import { useEffect, useRef, useState } from "react";
-import type { TravelGuide } from "../generated/publicGuides";
+import type { MapCity } from "../generated/publicGuides";
 
 const BASE_STYLE = "https://tiles.openfreemap.org/styles/bright";
 const TERRAIN_TILEJSON = "https://tiles.mapterhorn.com/tilejson.json";
@@ -43,15 +43,15 @@ const CHINA_BOUNDS: [[number, number], [number, number]] = [
 ];
 
 type TerrainMapProps = {
-  guides: TravelGuide[];
-  activeGuideId?: string;
+  cities: MapCity[];
+  activeCityId?: string;
   showItineraryRoute: boolean;
   itineraryActive: boolean;
   panelLayout: "collapsed" | "docked" | "expanded";
   explorePoint?: { longitude: number; latitude: number };
-  onSelectGuide: (guide: TravelGuide) => void;
+  onSelectCity: (city: MapCity) => void;
   onExploreNear: (point: { longitude: number; latitude: number }) => void;
-  onViewportGuidesChange: (ids: string[]) => void;
+  onViewportCitiesChange: (ids: string[]) => void;
   resetSignal: number;
 };
 
@@ -138,21 +138,20 @@ const mapPadding = (layout: PanelLayout, container?: MapContainer) => {
   };
 };
 
-const guideFeatureCollection = (guides: TravelGuide[]) => ({
+const guideFeatureCollection = (cities: MapCity[]) => ({
   type: "FeatureCollection" as const,
-  features: guides.map((guide) => ({
+  features: cities.map((city) => ({
     type: "Feature" as const,
     properties: {
-      id: guide.id,
-      city: shortCityName(guide.city),
-      adminArea: guide.adminArea,
-      stay: guide.suggestedStay.split(/[；。]/)[0],
-      summary: guide.summary,
-      completeness: guide.completeness,
+      id: city.id,
+      guideId: city.guideId ?? "",
+      city: shortCityName(city.city),
+      adminArea: city.adminArea,
+      coverage: city.coverage,
     },
     geometry: {
       type: "Point" as const,
-      coordinates: [guide.coordinates.longitude, guide.coordinates.latitude],
+      coordinates: [city.coordinates.longitude, city.coordinates.latitude],
     },
   })),
 });
@@ -208,23 +207,23 @@ const addTerrainLayers = (map: MapLibreMap) => {
 };
 
 export default function TerrainMap({
-  guides,
-  activeGuideId,
+  cities,
+  activeCityId,
   showItineraryRoute,
   itineraryActive,
   panelLayout,
   explorePoint,
-  onSelectGuide,
+  onSelectCity,
   onExploreNear,
-  onViewportGuidesChange,
+  onViewportCitiesChange,
   resetSignal,
 }: TerrainMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
-  const guidesRef = useRef(guides);
-  const onSelectGuideRef = useRef(onSelectGuide);
+  const citiesRef = useRef(cities);
+  const onSelectCityRef = useRef(onSelectCity);
   const onExploreNearRef = useRef(onExploreNear);
-  const onViewportGuidesChangeRef = useRef(onViewportGuidesChange);
+  const onViewportCitiesChangeRef = useRef(onViewportCitiesChange);
   const showItineraryRouteRef = useRef(showItineraryRoute);
   const itineraryActiveRef = useRef(itineraryActive);
   const panelLayoutRef = useRef(panelLayout);
@@ -243,11 +242,11 @@ export default function TerrainMap({
   const [mobileExperience, setMobileExperience] = useState(false);
 
   useEffect(() => {
-    guidesRef.current = guides;
-    onSelectGuideRef.current = onSelectGuide;
+    citiesRef.current = cities;
+    onSelectCityRef.current = onSelectCity;
     onExploreNearRef.current = onExploreNear;
-    onViewportGuidesChangeRef.current = onViewportGuidesChange;
-  }, [guides, onExploreNear, onSelectGuide, onViewportGuidesChange]);
+    onViewportCitiesChangeRef.current = onViewportCitiesChange;
+  }, [cities, onExploreNear, onSelectCity, onViewportCitiesChange]);
 
   useEffect(() => {
     showItineraryRouteRef.current = showItineraryRoute;
@@ -658,7 +657,7 @@ export default function TerrainMap({
       if (!map.getSource(GUIDE_SOURCE_ID)) return;
       const padding = mapPadding(panelLayoutRef.current, containerRef.current);
       const canvas = map.getCanvas();
-      const visibleGuideIds = guidesRef.current
+      const visibleGuideIds = citiesRef.current
         .filter(({ coordinates }) => {
           const projected = map.project([coordinates.longitude, coordinates.latitude]);
           return (
@@ -669,7 +668,7 @@ export default function TerrainMap({
           );
         })
         .map(({ id }) => id);
-      onViewportGuidesChangeRef.current(visibleGuideIds);
+      onViewportCitiesChangeRef.current(visibleGuideIds);
     };
 
     const handleBlankMapClick = (event: MapMouseEvent) => {
@@ -716,8 +715,8 @@ export default function TerrainMap({
       addTerrainLayers(map);
 
       const routeGuides = ["杭州市", "苏州市", "上海市"]
-        .map((city) => guidesRef.current.find((guide) => guide.city === city))
-        .filter((guide): guide is TravelGuide => Boolean(guide));
+        .map((city) => citiesRef.current.find((guide) => guide.city === city))
+        .filter((guide): guide is MapCity => Boolean(guide));
 
       if (!map.getSource(ROUTE_SOURCE_ID) && routeGuides.length > 1) {
         map.addSource(ROUTE_SOURCE_ID, {
@@ -777,12 +776,12 @@ export default function TerrainMap({
           clusterMaxZoom: 6,
           clusterRadius: 42,
           clusterProperties: {
-            partial_count: [
+            missing_count: [
               "+",
-              ["case", ["==", ["get", "completeness"], "partial"], 1, 0],
+              ["case", ["==", ["get", "coverage"], 0], 1, 0],
             ],
           },
-          data: guideFeatureCollection(guidesRef.current),
+          data: guideFeatureCollection(citiesRef.current),
         });
 
         map.addLayer({
@@ -792,7 +791,7 @@ export default function TerrainMap({
           filter: [
             "all",
             ["has", "point_count"],
-            [">", ["get", "partial_count"], 0],
+            [">", ["get", "missing_count"], 0],
           ],
           paint: {
             "circle-color": "rgba(0,0,0,0)",
@@ -863,21 +862,21 @@ export default function TerrainMap({
           paint: {
             "circle-color": [
               "case",
-              ["==", ["get", "completeness"], "partial"],
-              "#e3a43b",
+              ["==", ["get", "coverage"], 0],
+              "#6f8f78",
               "#c45237",
             ],
             "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 4.5, 7, 6.5, 10, 8],
             "circle-stroke-color": [
               "case",
-              ["==", ["get", "completeness"], "partial"],
+              ["==", ["get", "coverage"], 0],
               "#fff8ec",
               "#fff8ec",
             ],
             "circle-stroke-width": [
               "case",
-              ["==", ["get", "completeness"], "partial"],
-              3,
+              ["==", ["get", "coverage"], 0],
+              2.5,
               2,
             ],
           },
@@ -947,14 +946,14 @@ export default function TerrainMap({
 
         map.on("click", GUIDE_HIT_LAYER_ID, (event) => {
           const guideId = String(event.features?.[0]?.properties?.id ?? "");
-          const guide = guidesRef.current.find((item) => item.id === guideId);
-          if (guide) onSelectGuideRef.current(guide);
+          const guide = citiesRef.current.find((item) => item.id === guideId);
+          if (guide) onSelectCityRef.current(guide);
         });
 
         map.on("click", GUIDE_LABEL_LAYER_ID, (event) => {
           const guideId = String(event.features?.[0]?.properties?.id ?? "");
-          const guide = guidesRef.current.find((item) => item.id === guideId);
-          if (guide) onSelectGuideRef.current(guide);
+          const guide = citiesRef.current.find((item) => item.id === guideId);
+          if (guide) onSelectCityRef.current(guide);
         });
 
         const setPointerCursor = () => {
@@ -982,15 +981,13 @@ export default function TerrainMap({
               feature.properties?.adminArea ?? "",
             )}`;
             const stay = document.createElement("span");
-            const stayText = String(feature.properties?.stay ?? "");
-            stay.textContent =
-              feature.properties?.completeness === "partial"
-                ? `待补全 · ${stayText}`
-                : stayText;
+            stay.textContent = Number(feature.properties?.coverage) === 1
+              ? "已有攻略"
+              : "尚未收录";
             const summary = document.createElement("small");
-            const summaryText = String(feature.properties?.summary ?? "");
-            summary.textContent =
-              summaryText.length > 46 ? `${summaryText.slice(0, 46)}…` : summaryText;
+            summary.textContent = Number(feature.properties?.coverage) === 1
+              ? "点击查看城市攻略"
+              : "这座城市的攻略还在路上";
             card.append(title, stay, summary);
 
             hoverPopup
@@ -1081,8 +1078,8 @@ export default function TerrainMap({
     const map = mapRef.current;
     const source = map?.getSource(GUIDE_SOURCE_ID) as GeoJSONSource | undefined;
     if (!mapReady || !map || !source) return;
-    source.setData(guideFeatureCollection(guides));
-  }, [guides, mapReady]);
+    source.setData(guideFeatureCollection(cities));
+  }, [cities, mapReady]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -1109,13 +1106,13 @@ export default function TerrainMap({
     if (!mapReady || !map) return;
 
     if (map.getLayer(ACTIVE_POINT_LAYER_ID)) {
-      map.setFilter(ACTIVE_POINT_LAYER_ID, ["==", ["get", "id"], activeGuideId ?? ""]);
+      map.setFilter(ACTIVE_POINT_LAYER_ID, ["==", ["get", "id"], activeCityId ?? ""]);
     }
 
     const padding = mapPadding(panelLayoutRef.current, containerRef.current);
 
-    if (activeGuideId) {
-      const guide = guidesRef.current.find((item) => item.id === activeGuideId);
+    if (activeCityId) {
+      const guide = citiesRef.current.find((item) => item.id === activeCityId);
       if (!guide) return;
       map.flyTo({
         center: [guide.coordinates.longitude, guide.coordinates.latitude],
@@ -1159,7 +1156,7 @@ export default function TerrainMap({
       bearing: 0,
       duration: reducedMotionRef.current ? 0 : 720,
     });
-  }, [activeGuideId, exploreLatitude, exploreLongitude, itineraryActive, mapReady]);
+  }, [activeCityId, exploreLatitude, exploreLongitude, itineraryActive, mapReady]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -1189,7 +1186,7 @@ export default function TerrainMap({
     setTerrainEnabled(next);
     map.setTerrain(next ? { source: TERRAIN_SOURCE_ID, exaggeration: 0.72 } : null);
     map.easeTo({
-      pitch: next ? (activeGuideId ? 38 : 18) : 0,
+      pitch: next ? (activeCityId ? 38 : 18) : 0,
       duration: reducedMotionRef.current ? 0 : 480,
     });
   };
@@ -1256,8 +1253,8 @@ export default function TerrainMap({
       </button>
 
       <div className="map-legend" aria-hidden="true">
-        <span><i className="legend-dot" /> 城市攻略</span>
-        <span><i className="legend-dot is-partial" /> 待补全</span>
+        <span><i className="legend-dot" /> 已有攻略</span>
+        <span><i className="legend-dot is-missing" /> 尚未收录</span>
       </div>
     </div>
   );
