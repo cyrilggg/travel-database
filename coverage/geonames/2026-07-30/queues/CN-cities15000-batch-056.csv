@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-056,2036337,Kaiyuan,PPL,辽宁省,destinations/中国/辽宁省/开原市.md,铁岭代管县级城市的辽北文博乡村山林与独立住宿交通尺度；固定居民点与法定实体所连行政记录粒度不同
+CN-cities15000-056,1916012,Wuzhishan,PPLA2,海南省,destinations/中国/海南省/五指山市.md,海南省直辖县级城市的黎苗文化雨林山地与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-056,1811729,Encheng,PPLA3,广东省,destinations/中国/广东省/恩平市.md,江门代管县级城市的航空史温泉乡村山地与独立住宿交通尺度；固定恩城驻地点与法定恩平实体所连行政记录粒度不同
+CN-cities15000-056,1783940,Zhuji,PPLA3,浙江省,destinations/中国/浙江省/诸暨市.md,绍兴代管县级城市的西施文化五泄山水珍珠产业与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-056,1803367,Qingnian,PPLA3,山东省,destinations/中国/山东省/临清市.md,聊城代管县级城市的运河商贸遗产地方文博与独立住宿交通尺度；固定快照旧标签与实时临清名称指向同一城市点
+CN-cities15000-056,2037069,Hailun,PPLA3,黑龙江省,destinations/中国/黑龙江省/海伦市.md,绥化代管县级城市的寒地黑土农业地方文博与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-056,1786546,Zhongxiang,PPL,湖北省,destinations/中国/湖北省/钟祥市.md,荆门代管县级城市的世界遗产汉江平原山地温泉与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-056,2037712,Dehui,PPLA3,吉林省,destinations/中国/吉林省/德惠市.md,长春代管县级城市的松辽平原地方文博农业乡村与独立住宿交通尺度；法定实体精确连接固定城市点
