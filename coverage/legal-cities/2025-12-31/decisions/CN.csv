@@ -48,6 +48,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 210100,researched,destinations/中国/辽宁省/沈阳市.md,2034937,codex,2026-07-30,1
 210200,researched,destinations/中国/辽宁省/大连市.md,1814087,codex,2026-07-30,1
 210281,researched,destinations/中国/辽宁省/瓦房店市.md,1792260,codex,2026-08-11,1
+210283,researched,destinations/中国/辽宁省/庄河市.md,1784055,codex,2026-08-13,1
 210300,researched,destinations/中国/辽宁省/鞍山市.md,2038632,codex,2026-07-30,1
 210381,researched,destinations/中国/辽宁省/海城市.md,2037086,codex,2026-08-12,1
 210400,researched,destinations/中国/辽宁省/抚顺市.md,2037355,codex,2026-07-31,1
@@ -57,6 +58,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 210700,researched,destinations/中国/辽宁省/锦州市.md,2036427,codex,2026-07-31,1
 210782,researched,destinations/中国/辽宁省/北镇市.md,2037201,codex,2026-08-12,1
 210800,researched,destinations/中国/辽宁省/营口市.md,2033370,codex,2026-07-31,1
+210882,researched,destinations/中国/辽宁省/大石桥市.md,2037823,codex,2026-08-13,1
 210900,researched,destinations/中国/辽宁省/阜新市.md,2037346,codex,2026-07-31,1
 211000,researched,destinations/中国/辽宁省/辽阳市.md,2036113,codex,2026-07-31,1
 211100,researched,destinations/中国/辽宁省/盘锦市.md,10794003,codex,2026-07-31,1
@@ -75,6 +77,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 220281,researched,destinations/中国/吉林省/蛟河市.md,2036536,codex,2026-08-13,1
 220282,researched,destinations/中国/吉林省/桦甸市.md,2036776,codex,2026-08-13,1
 220283,researched,destinations/中国/吉林省/舒兰市.md,2036418,codex,2026-08-13,1
+220284,researched,destinations/中国/吉林省/磐石市.md,2035511,codex,2026-08-13,1
 220300,researched,destinations/中国/吉林省/四平市.md,2034714,codex,2026-07-31,1
 220382,researched,destinations/中国/吉林省/双辽市.md,2033135,codex,2026-08-13,1
 220400,researched,destinations/中国/吉林省/辽源市.md,2036109,codex,2026-08-11,1
@@ -141,6 +144,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 321100,researched,destinations/中国/江苏省/镇江市.md,1784642,codex,2026-07-31,1
 321200,researched,destinations/中国/江苏省/泰州市.md,1793505,codex,2026-07-30,1
 321281,researched,destinations/中国/江苏省/兴化市.md,1784820,codex,2026-08-13,1
+321283,researched,destinations/中国/江苏省/泰兴市.md,1793533,codex,2026-08-13,1
 321300,researched,destinations/中国/江苏省/宿迁市.md,1793771,codex,2026-07-31,1
 330100,researched,destinations/中国/浙江省/杭州市.md,1808926,codex,2026-07-30,1
 330200,researched,destinations/中国/浙江省/宁波市.md,1799397,codex,2026-07-30,1
@@ -217,6 +221,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 370682,researched,destinations/中国/山东省/莱阳市.md,1804586,codex,2026-08-12,1
 370683,researched,destinations/中国/山东省/莱州市.md,1804578,codex,2026-08-12,1
 370685,researched,destinations/中国/山东省/招远市.md,1784953,codex,2026-08-13,1
+370686,researched,destinations/中国/山东省/栖霞市.md,1797438,codex,2026-08-13,1
 370700,researched,destinations/中国/山东省/潍坊市.md,1791681,codex,2026-07-30,1
 370781,researched,destinations/中国/山东省/青州市.md,1786731,codex,2026-08-12,1
 370782,researched,destinations/中国/山东省/诸城市.md,7602670,codex,2026-07-31,1
@@ -314,6 +319,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 440100,researched,destinations/中国/广东省/广州市.md,1809858,codex,2026-07-30,1
 440200,researched,destinations/中国/广东省/韶关市.md,1795874,codex,2026-07-31,1
 440281,researched,destinations/中国/广东省/乐昌市.md,1804252,codex,2026-08-13,1
+440282,researched,destinations/中国/广东省/南雄市.md,1788402,codex,2026-08-13,1
 440300,researched,destinations/中国/广东省/深圳市.md,1795565,codex,2026-07-30,1
 440400,researched,destinations/中国/广东省/珠海市.md,1790437,codex,2026-07-30,1
 440500,researched,destinations/中国/广东省/汕头市.md,1795940,codex,2026-07-30,1
@@ -426,6 +432,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 533301,researched,destinations/中国/云南省/泸水市.md,13512503,codex,2026-08-12,1
 533401,researched,destinations/中国/云南省/香格里拉市.md,7910932,codex,2026-08-12,1
 540100,researched,destinations/中国/西藏自治区/拉萨市.md,1280737,codex,2026-07-30,1
+540200,researched,destinations/中国/西藏自治区/日喀则市.md,1279715,codex,2026-08-13,1
 540300,researched,destinations/中国/西藏自治区/昌都市.md,1280281,codex,2026-08-13,1
 540400,researched,destinations/中国/西藏自治区/林芝市.md,13512708,codex,2026-08-12,1
 540500,researched,destinations/中国/西藏自治区/山南市.md,8067345,codex,2026-08-12,1

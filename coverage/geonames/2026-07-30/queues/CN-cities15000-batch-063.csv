@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-063,1785964,Yudong,PPL,重庆市,destinations/中国/重庆市/巴南区.md,重庆主城南部市辖区的鱼洞龙洲湾温泉古镇与独立住宿交通尺度；固定点与法定区实体精确对应
+CN-cities15000-063,1784055,Zhuanghe,PPL,辽宁省,destinations/中国/辽宁省/庄河市.md,大连代管县级城市的峡谷山地海岸海岛与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-063,2037823,Dashiqiao,PPLA3,辽宁省,destinations/中国/辽宁省/大石桥市.md,营口代管县级城市的古人类遗址山地乡村镁都背景与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-063,2035511,Panshi,PPLA3,吉林省,destinations/中国/吉林省/磐石市.md,吉林代管县级城市的地方文博红石官马山地乡村与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-063,1279715,Rikaze,PPLA2,西藏自治区,destinations/中国/西藏自治区/日喀则市.md,后藏地级城市的主城寺院文博与多县高海拔远线独立住宿交通尺度；固定城市点与法定实体精确对应
+CN-cities15000-063,1793533,Taixing,PPLA3,江苏省,destinations/中国/江苏省/泰兴市.md,泰州代管县级城市的黄桥历史沿江与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-063,1797438,Zhuangyuan,PPLA3,山东省,destinations/中国/山东省/栖霞市.md,烟台代管县级城市的牟氏庄园苹果产区山地与独立住宿交通尺度；固定庄园街道驻地点对应法定栖霞市
+CN-cities15000-063,1788402,Xiongzhou,PPLA3,广东省,destinations/中国/广东省/南雄市.md,韶关代管县级城市的珠玑梅关帽子峰乡村与独立住宿交通尺度；固定雄州驻地点对应法定南雄市

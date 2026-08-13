@@ -627,6 +627,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [原平](./destinations/中国/山西省/原平市.md) | 地方文博、崞阳古建、天涯山与滹沱河谷 | `researched` |
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [义马](./destinations/中国/河南省/义马市.md) | 煤矿城市史、地方文博、鸿庆寺石窟与生态修复 | `researched` |
 | [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [南宫](./destinations/中国/河北省/南宫市.md) | 冀南平原城市、地方文博、红色记忆与非遗乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [巴南](./destinations/中国/重庆市/巴南区.md) | 鱼洞—龙洲湾、南温泉、丰盛古镇与东温泉 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [庄河](./destinations/中国/辽宁省/庄河市.md) | 冰峪、海王九岛、天门山、步云山温泉与黄海海岸 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [大石桥](./destinations/中国/辽宁省/大石桥市.md) | 金牛山古人类、蟠龙山、辽南乡村与镁都背景 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [磐石](./destinations/中国/吉林省/磐石市.md) | 城区文博、红石、官马山地与乡村方向 | `researched` |
+| [中国](./destinations/中国/README.md) | [西藏自治区](./destinations/中国/西藏自治区/README.md) | [日喀则](./destinations/中国/西藏自治区/日喀则市.md) | 后藏主城、扎什伦布寺、地方文博与高海拔远线 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [泰兴](./destinations/中国/江苏省/泰兴市.md) | 泰兴城区、黄桥历史、沿江文化与地方饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [栖霞](./destinations/中国/山东省/栖霞市.md) | 牟氏庄园、苹果产区、山地生态与胶东乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [南雄](./destinations/中国/广东省/南雄市.md) | 珠玑古巷、梅关古道、帽子峰与粤北乡村 | `researched` |
 
 ## 项目维护
 
