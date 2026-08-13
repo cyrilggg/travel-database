@@ -20,6 +20,7 @@ const ROUTE_GLOW_LAYER_ID = "travel-route-glow";
 const ROUTE_LAYER_ID = "travel-route";
 const GUIDE_SOURCE_ID = "travel-guide-points";
 const CLUSTER_LAYER_ID = "travel-guide-clusters";
+const CLUSTER_PARTIAL_RING_LAYER_ID = "travel-guide-cluster-partial-ring";
 const CLUSTER_HIT_LAYER_ID = "travel-guide-cluster-hit-area";
 const CLUSTER_COUNT_LAYER_ID = "travel-guide-cluster-count";
 const GUIDE_POINT_LAYER_ID = "travel-guide-point";
@@ -238,6 +239,7 @@ export default function TerrainMap({
   const [mapReady, setMapReady] = useState(false);
   const [mapFailed, setMapFailed] = useState(false);
   const [terrainEnabled, setTerrainEnabled] = useState(false);
+  const [clusterEnabled, setClusterEnabled] = useState(true);
   const [mobileExperience, setMobileExperience] = useState(false);
 
   useEffect(() => {
@@ -673,6 +675,7 @@ export default function TerrainMap({
     const handleBlankMapClick = (event: MapMouseEvent) => {
       const interactiveLayers = [
         CLUSTER_LAYER_ID,
+        CLUSTER_PARTIAL_RING_LAYER_ID,
         CLUSTER_HIT_LAYER_ID,
         CLUSTER_COUNT_LAYER_ID,
         GUIDE_POINT_LAYER_ID,
@@ -773,7 +776,31 @@ export default function TerrainMap({
           cluster: true,
           clusterMaxZoom: 6,
           clusterRadius: 42,
+          clusterProperties: {
+            partial_count: [
+              "+",
+              ["case", ["==", ["get", "completeness"], "partial"], 1, 0],
+            ],
+          },
           data: guideFeatureCollection(guidesRef.current),
+        });
+
+        map.addLayer({
+          id: CLUSTER_PARTIAL_RING_LAYER_ID,
+          type: "circle",
+          source: GUIDE_SOURCE_ID,
+          filter: [
+            "all",
+            ["has", "point_count"],
+            [">", ["get", "partial_count"], 0],
+          ],
+          paint: {
+            "circle-color": "rgba(0,0,0,0)",
+            "circle-radius": ["step", ["get", "point_count"], 20, 8, 24, 18, 29],
+            "circle-stroke-color": "#e3a43b",
+            "circle-stroke-width": 3,
+            "circle-opacity": 0.98,
+          },
         });
 
         map.addLayer({
@@ -824,7 +851,7 @@ export default function TerrainMap({
             "circle-color": "rgba(0,0,0,0)",
             "circle-radius": mobileMode
               ? ["step", ["get", "point_count"], 24, 8, 27, 18, 31]
-              : ["step", ["get", "point_count"], 16, 8, 20, 18, 25],
+              : ["step", ["get", "point_count"], 20, 8, 24, 18, 29],
           },
         });
 
@@ -837,17 +864,22 @@ export default function TerrainMap({
             "circle-color": [
               "case",
               ["==", ["get", "completeness"], "partial"],
-              "#fffaf0",
+              "#e3a43b",
               "#c45237",
             ],
             "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 4.5, 7, 6.5, 10, 8],
             "circle-stroke-color": [
               "case",
               ["==", ["get", "completeness"], "partial"],
-              "#c45237",
+              "#fff8ec",
               "#fff8ec",
             ],
-            "circle-stroke-width": 2,
+            "circle-stroke-width": [
+              "case",
+              ["==", ["get", "completeness"], "partial"],
+              3,
+              2,
+            ],
           },
         });
 
@@ -950,7 +982,11 @@ export default function TerrainMap({
               feature.properties?.adminArea ?? "",
             )}`;
             const stay = document.createElement("span");
-            stay.textContent = String(feature.properties?.stay ?? "");
+            const stayText = String(feature.properties?.stay ?? "");
+            stay.textContent =
+              feature.properties?.completeness === "partial"
+                ? `待补全 · ${stayText}`
+                : stayText;
             const summary = document.createElement("small");
             const summaryText = String(feature.properties?.summary ?? "");
             summary.textContent =
@@ -1158,6 +1194,18 @@ export default function TerrainMap({
     });
   };
 
+  const toggleClustering = async () => {
+    const source = mapRef.current?.getSource(GUIDE_SOURCE_ID) as GeoJSONSource | undefined;
+    if (!source) return;
+    const next = !clusterEnabled;
+    setClusterEnabled(next);
+    await source.setClusterOptions({
+      cluster: next,
+      clusterMaxZoom: 6,
+      clusterRadius: 42,
+    });
+  };
+
   return (
     <div
       className={`terrain-map-shell is-panel-${panelLayout}${
@@ -1188,6 +1236,17 @@ export default function TerrainMap({
 
       <button
         type="button"
+        className={`cluster-toggle${clusterEnabled ? " is-active" : ""}`}
+        onClick={toggleClustering}
+        aria-pressed={clusterEnabled}
+        aria-label={clusterEnabled ? "关闭城市点聚合" : "开启城市点聚合"}
+      >
+        <span className="cluster-toggle__dots" aria-hidden="true"><i /><i /><i /></span>
+        聚合
+      </button>
+
+      <button
+        type="button"
         className={`terrain-toggle${terrainEnabled ? " is-active" : ""}`}
         onClick={toggleTerrain}
         aria-pressed={terrainEnabled}
@@ -1198,7 +1257,7 @@ export default function TerrainMap({
 
       <div className="map-legend" aria-hidden="true">
         <span><i className="legend-dot" /> 城市攻略</span>
-        <span><i className="legend-dot is-hollow" /> 待补全</span>
+        <span><i className="legend-dot is-partial" /> 待补全</span>
       </div>
     </div>
   );

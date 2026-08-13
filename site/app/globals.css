@@ -1709,10 +1709,10 @@ body,
   font-weight: 800;
 }
 
-.terrain-toggle {
+.terrain-toggle,
+.cluster-toggle {
   position: absolute;
   bottom: 34px;
-  left: 16px;
   z-index: 12;
   height: 36px;
   display: inline-flex;
@@ -1730,6 +1730,34 @@ body,
   backdrop-filter: blur(14px);
 }
 
+.cluster-toggle {
+  left: 16px;
+}
+
+.terrain-toggle {
+  left: 94px;
+}
+
+.cluster-toggle__dots {
+  position: relative;
+  width: 17px;
+  height: 12px;
+  display: inline-block;
+}
+
+.cluster-toggle__dots i {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #fff8ec;
+  border-radius: 50%;
+  background: #c45237;
+}
+
+.cluster-toggle__dots i:nth-child(1) { left: 0; top: 4px; }
+.cluster-toggle__dots i:nth-child(2) { left: 5px; top: 0; }
+.cluster-toggle__dots i:nth-child(3) { right: 0; top: 4px; }
+
 .terrain-toggle > span {
   width: 14px;
   height: 9px;
@@ -1738,7 +1766,8 @@ body,
   box-shadow: inset -2px -2px 3px rgba(36, 57, 54, 0.18);
 }
 
-.terrain-toggle.is-active {
+.terrain-toggle.is-active,
+.cluster-toggle.is-active {
   color: #fffaf0;
   border-color: rgba(41, 75, 71, 0.82);
   background: rgba(41, 75, 71, 0.94);
@@ -1746,7 +1775,7 @@ body,
 
 .map-legend {
   bottom: 34px;
-  left: 140px;
+  left: 176px;
   z-index: 11;
   gap: 13px;
   border: 1px solid rgba(46, 68, 62, 0.1);
@@ -1756,6 +1785,12 @@ body,
 .legend-dot {
   background: #c45237;
   border-color: #c45237;
+}
+
+.legend-dot.is-partial {
+  border-color: #fff8ec;
+  background: #e3a43b;
+  box-shadow: 0 0 0 1px #a96e1c;
 }
 
 .guide-panel,
@@ -2005,12 +2040,15 @@ body,
     height: 44px;
   }
 
-  .terrain-toggle {
+  .terrain-toggle,
+  .cluster-toggle {
     top: 66px;
     bottom: auto;
-    left: 158px;
     height: 44px;
   }
+
+  .cluster-toggle { left: 8px; }
+  .terrain-toggle { left: 86px; }
 
   .map-legend {
     display: none;
