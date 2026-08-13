@@ -441,6 +441,14 @@ Markdown 是主要产品。覆盖清单与辅助脚本只用于审计和维护�
 | [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [沙河](./destinations/中国/河北省/沙河市.md) | 太行山古村、秦王湖、玻璃产业与冀南饮食 | `researched` |
 | [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [榆树](./destinations/中国/吉林省/榆树市.md) | 松辽平原城市生活、地方文博、农业与乡村季节景观 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [乐昌](./destinations/中国/广东省/乐昌市.md) | 乐城主城、坪石门户、古道古村与粤北山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [蛟河](./destinations/中国/吉林省/蛟河市.md) | 拉法山、红叶谷、森林山地与松花湖沿岸 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [石首](./destinations/中国/湖北省/石首市.md) | 天鹅洲科普、桃花山、长江湿地与地方文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [铁力](./destinations/中国/黑龙江省/铁力市.md) | 小兴安岭森林、桃源湖、日月峡与冰雪乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [利川](./destinations/中国/湖北省/利川市.md) | 腾龙洞、清江水乡、山地避暑与龙船调 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [凤城](./destinations/中国/辽宁省/凤城市.md) | 凤凰山、大梨树、蒲石河森林与东汤温泉 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [招远](./destinations/中国/山东省/招远市.md) | 黄金文化、罗山金镇、乡村休闲与北部海岸 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [韶山](./destinations/中国/湖南省/韶山市.md) | 核心纪念区、滴水洞、韶峰与银田乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [龙井](./destinations/中国/吉林省/龙井市.md) | 朝鲜族文化、琵岩山、明东村与乡村历史 | `researched` |
 | [日本](./destinations/日本/README.md) | [东京都](./destinations/日本/东京都/README.md) | [东京](./destinations/日本/东京都/东京.md) | 超大城市片区、传统街区、博物馆、都市餐饮 | `researched` |
 | [法国](./destinations/法国/README.md) | [法兰西岛大区](./destinations/法国/法兰西岛大区/README.md) | [巴黎](./destinations/法国/法兰西岛大区/巴黎.md) | 塞纳河两岸、艺术场馆、街区漫步、法式餐饮 | `researched` |
 

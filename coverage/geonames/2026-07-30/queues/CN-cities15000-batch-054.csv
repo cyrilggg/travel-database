@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-054,2036536,Jiaohe,PPLA3,吉林省,destinations/中国/吉林省/蛟河市.md,吉林代管县级城市的拉法山红叶谷森林湖岸与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-054,1788268,Xiulin,PPL,湖北省,destinations/中国/湖北省/石首市.md,荆州代管县级城市的长江湿地保护桃花山科普与独立住宿交通尺度；固定居民点与法定实体连接的行政记录粒度不同
+CN-cities15000-054,2035669,Lianhe,PPLA3,黑龙江省,destinations/中国/黑龙江省/铁力市.md,伊春代管县级城市的小兴安岭森林冰雪乡村与独立住宿交通尺度；固定驻地点与法定实体连接的行政记录粒度不同
+CN-cities15000-054,1803782,Lichuan,PPL,湖北省,destinations/中国/湖北省/利川市.md,恩施州县级城市的洞穴水乡山地避暑非遗与独立住宿交通尺度；固定居民点与法定实体连接的行政记录粒度不同
+CN-cities15000-054,2037411,Fengcheng,PPL,辽宁省,destinations/中国/辽宁省/凤城市.md,丹东代管县级城市的凤凰山乡村森林温泉与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-054,1784953,Zhaoyuan,PPLA3,山东省,destinations/中国/山东省/招远市.md,烟台代管县级城市的黄金文化罗山乡村海岸与独立住宿交通尺度；法定实体精确连接固定驻地点
+CN-cities15000-054,1795860,Shaoshan,PPL,湖南省,destinations/中国/湖南省/韶山市.md,湘潭代管县级城市的革命纪念山地乡村与独立预约换乘住宿尺度；法定实体未配置P1566而固定点承担主城定位
+CN-cities15000-054,2035966,Longjing,PPLA3,吉林省,destinations/中国/吉林省/龙井市.md,延边州县级城市的朝鲜族文化山地乡村历史与独立住宿交通尺度；法定实体精确连接固定城市点
