@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-055,2033536,Yakeshi,PPLA3,内蒙古自治区,destinations/中国/内蒙古自治区/牙克石市.md,呼伦贝尔代管县级城市的林业历史森林冰雪与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-055,1804169,Lengshuijiang,PPLA3,湖南省,destinations/中国/湖南省/冷水江市.md,娄底代管县级城市的锑矿工业岩溶地貌与独立住宿交通尺度；法定实体同时连接城市点与行政记录
+CN-cities15000-055,1785545,Yuyao,PPLA3,浙江省,destinations/中国/浙江省/余姚市.md,宁波代管县级城市的河姆渡文化四明山水乡与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-055,1791706,Wayaobu,PPLA3,陕西省,destinations/中国/陕西省/子长市.md,延安代管县级城市的瓦窑堡革命史钟山石窟黄土高原与独立住宿交通尺度；固定驻地点与法定实体连接的行政记录粒度不同
+CN-cities15000-055,2035399,Songyuan,PPLA2,吉林省,destinations/中国/吉林省/松原市.md,法定地级城市的松嫩平原查干湖民族文化石油农业与独立住宿交通尺度；法定实体当前未配置P1566
+CN-cities15000-055,2034497,Taonan,PPLA3,吉林省,destinations/中国/吉林省/洮南市.md,白城代管县级城市的古城街区湿地草原农业与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-055,1795857,Shaowu,PPLA3,福建省,destinations/中国/福建省/邵武市.md,南平代管县级城市的武夷山南麓古城峡谷森林与独立住宿交通尺度；法定实体当前未配置P1566
+CN-cities15000-055,1280570,Mengmao,PPLA3,云南省,destinations/中国/云南省/瑞丽市.md,德宏州县级城市的口岸贸易民族文化热带雨林与独立住宿交通尺度；法定实体同时连接固定城市点与行政记录

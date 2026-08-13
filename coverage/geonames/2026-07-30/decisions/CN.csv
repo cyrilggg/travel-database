@@ -509,3 +509,14 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1784953,researched,destinations/中国/山东省/招远市.md,,,,,,codex,2026-08-13,1
 1795860,researched,destinations/中国/湖南省/韶山市.md,,,,,,codex,2026-08-13,1
 2035966,researched,destinations/中国/吉林省/龙井市.md,,,,,,codex,2026-08-13,1
+2033536,researched,destinations/中国/内蒙古自治区/牙克石市.md,,,,,,codex,2026-08-13,1
+1804169,researched,destinations/中国/湖南省/冷水江市.md,,,,,,codex,2026-08-13,1
+1785545,researched,destinations/中国/浙江省/余姚市.md,,,,,,codex,2026-08-13,1
+1791706,researched,destinations/中国/陕西省/子长市.md,,,,,,codex,2026-08-13,1
+2035399,researched,destinations/中国/吉林省/松原市.md,,,,,,codex,2026-08-13,1
+2034497,researched,destinations/中国/吉林省/洮南市.md,,,,,,codex,2026-08-13,1
+1795857,researched,destinations/中国/福建省/邵武市.md,,,,,,codex,2026-08-13,1
+1280570,researched,destinations/中国/云南省/瑞丽市.md,,,,,,codex,2026-08-13,1
+1817441,merged,,1805798,destinations/中国/重庆市/江津区.md,merged_urban_section,固定Baisha记录对应江津区白沙镇城市内部点；江津指南已实质覆盖白沙区域具体景点完整路线住宿和交通,https://www.geonames.org/1817441/,codex,2026-08-13,1
+1791536,merged,,1791673,destinations/中国/山东省/威海市.md,merged_urban_section,固定Tianfu记录对应文登城区天福片区；威海指南已实质覆盖文登区域具体景点完整路线住宿和交通,https://www.geonames.org/1791536/,codex,2026-08-13,1
+1801615,merged,,1795874,destinations/中国/广东省/韶关市.md,merged_urban_section,固定Maba记录对应韶关市曲江区马坝城区；韶关指南已实质覆盖曲江区域具体景点完整路线住宿和交通,https://sws.geonames.org/1801615/about.rdf,codex,2026-08-13,1
