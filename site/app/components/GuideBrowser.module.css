@@ -4,7 +4,7 @@
 
 .explainer {
   display: grid;
-  grid-template-columns: 34px minmax(0, 1fr);
+  grid-template-columns: 34px minmax(0, 1fr) auto;
   gap: 11px;
   align-items: start;
   padding: 14px;
@@ -12,6 +12,23 @@
   border-radius: 15px;
   color: #40514e;
   background: linear-gradient(135deg, rgba(237, 241, 235, 0.9), rgba(255, 253, 248, 0.86));
+}
+
+.expandAll {
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid rgba(35, 70, 74, 0.14);
+  border-radius: 10px;
+  color: #294b47;
+  background: rgba(255, 253, 248, 0.72);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.expandAll:focus-visible {
+  outline: 3px solid rgba(196, 82, 55, 0.28);
+  outline-offset: 2px;
 }
 
 .explainerMark {

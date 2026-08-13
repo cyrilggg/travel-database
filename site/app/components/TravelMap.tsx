@@ -2,9 +2,9 @@
 
 import { type FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import GuideBrowser from "./GuideBrowser";
-import GuideContentLoader from "./GuideContentLoader";
+import GuideStructureLoader from "./GuideStructureLoader";
 import TerrainMap from "./TerrainMap";
-import { guides, type TravelGuide } from "../generated/guides";
+import { guides, type TravelGuide } from "../generated/publicGuides";
 
 type PanelState =
   | { kind: "home" }
@@ -63,9 +63,6 @@ const nearestGuides = (point: MapPoint, limit: number, excludedGuideId?: string)
 
 export default function TravelMap() {
   const [panel, setPanel] = useState<PanelState>({ kind: "home" });
-  const [readingMode, setReadingMode] = useState<"overview" | "full">(
-    "overview",
-  );
   const [panelLayout, setPanelLayout] = useState<PanelLayout>("docked");
   const [searchQuery, setSearchQuery] = useState("");
   const [guideScope, setGuideScope] = useState<"viewport" | "all">("viewport");
@@ -74,9 +71,6 @@ export default function TravelMap() {
   );
   const panelScrollRef = useRef<HTMLDivElement>(null);
   const panelDockToggleRef = useRef<HTMLButtonElement>(null);
-  const overviewTabRef = useRef<HTMLButtonElement>(null);
-  const fullReadingTabRef = useRef<HTMLButtonElement>(null);
-  const previousReadingModeRef = useRef(readingMode);
 
   const panelExpanded = panelLayout === "expanded";
   const panelCollapsed = panelLayout === "collapsed";
@@ -132,20 +126,13 @@ export default function TravelMap() {
       top: 0,
       behavior: reduceMotion ? "auto" : "smooth",
     });
-  }, [panel, readingMode]);
+  }, [panel]);
 
   useEffect(() => {
     if (panelCollapsed) {
       panelDockToggleRef.current?.focus({ preventScroll: true });
     }
   }, [panelCollapsed]);
-
-  useEffect(() => {
-    if (previousReadingModeRef.current === readingMode) return;
-    previousReadingModeRef.current = readingMode;
-    const target = readingMode === "full" ? fullReadingTabRef : overviewTabRef;
-    target.current?.focus({ preventScroll: true });
-  }, [readingMode]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -157,11 +144,6 @@ export default function TravelMap() {
         ) {
           return;
         }
-        if (readingMode === "full") {
-          setReadingMode("overview");
-          setPanelLayout("docked");
-          return;
-        }
         setPanelLayout((layout) =>
           layout === "expanded" ? "docked" : "collapsed",
         );
@@ -169,42 +151,25 @@ export default function TravelMap() {
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [readingMode]);
+  }, []);
 
   const openGuide = (guide: TravelGuide) => {
     setPanel({ kind: "city", guideId: guide.id });
-    setReadingMode("overview");
     setPanelLayout("docked");
   };
 
   const openHome = (scope?: "viewport" | "all") => {
     setPanel({ kind: "home" });
-    setReadingMode("overview");
     setPanelLayout("docked");
     if (scope) setGuideScope(scope);
   };
 
   const openNearby = (point: MapPoint) => {
     setPanel({ kind: "nearby", ...point });
-    setReadingMode("overview");
-    setPanelLayout("docked");
-  };
-
-  const openFullReading = () => {
-    setReadingMode("full");
-    setPanelLayout("expanded");
-  };
-
-  const openOverview = () => {
-    setReadingMode("overview");
     setPanelLayout("docked");
   };
 
   const togglePanelReadingWidth = () => {
-    if (readingMode === "full") {
-      openOverview();
-      return;
-    }
     setPanelLayout(panelExpanded ? "docked" : "expanded");
   };
 
@@ -339,13 +304,9 @@ export default function TravelMap() {
             <button
               type="button"
               onClick={togglePanelReadingWidth}
-              aria-label={
-                readingMode === "full" || panelExpanded
-                  ? "回到地图与攻略重点"
-                  : "宽屏浏览攻略重点"
-              }
+              aria-label={panelExpanded ? "回到地图" : "宽屏浏览结构化攻略"}
             >
-              {readingMode === "full" || panelExpanded ? "回到地图" : "宽屏浏览"}
+              {panelExpanded ? "回到地图" : "宽屏浏览"}
             </button>
             <button
               className="panel-close"
@@ -365,29 +326,7 @@ export default function TravelMap() {
           <span>最近整理 {formatDate(guide.lastResearched)}</span>
         </div>
 
-        <nav className="reading-tabs" aria-label="攻略阅读模式">
-          <button
-            ref={overviewTabRef}
-            type="button"
-            className={readingMode === "overview" ? "is-active" : ""}
-            aria-pressed={readingMode === "overview"}
-            onClick={openOverview}
-          >
-            攻略重点
-          </button>
-          <button
-            ref={fullReadingTabRef}
-            type="button"
-            className={readingMode === "full" ? "is-active" : ""}
-            aria-pressed={readingMode === "full"}
-            onClick={openFullReading}
-          >
-            完整攻略
-          </button>
-        </nav>
-
-        {readingMode === "overview" ? (
-          <div className="guide-overview">
+        <div className="guide-overview">
             <p className="guide-summary">{guide.summary}</p>
             <div className="quick-facts">
               <div>
@@ -396,7 +335,7 @@ export default function TravelMap() {
               </div>
               <div>
                 <span>攻略结构</span>
-                <strong>{guide.sections.filter((section) => section.level === 2).length} 个主题</strong>
+                <strong>8 类主题</strong>
               </div>
             </div>
             <div className="keyword-list" aria-label="旅行关键词">
@@ -405,28 +344,15 @@ export default function TravelMap() {
               ))}
             </div>
 
-            <GuideContentLoader
-              contentPath={guide.markdownPath}
-              loadingLabel="正在整理攻略重点"
-            >
-              {(markdown) => (
+            <GuideStructureLoader contentPath={guide.structuredPath}>
+              {(sections) => (
                 <GuideBrowser
                   key={guide.id}
                   guideId={guide.id}
-                  markdown={markdown}
-                  sections={guide.sections}
-                  onOpenFullGuide={openFullReading}
+                  sections={sections}
                 />
               )}
-            </GuideContentLoader>
-
-            <button
-              className="read-full-button"
-              type="button"
-              onClick={openFullReading}
-            >
-              打开完整攻略 <span aria-hidden="true">→</span>
-            </button>
+            </GuideStructureLoader>
 
             <section className="nearby-guides" aria-labelledby={`${guide.id}-nearby`}>
               <div className="nearby-guides__heading">
@@ -453,17 +379,6 @@ export default function TravelMap() {
               </div>
             </section>
           </div>
-        ) : (
-          <div className="full-guide-wrap">
-            {guide.completeness === "partial" && (
-              <div className="partial-notice">
-                这篇攻略目前只有速览与城市格局，后续章节仍待补充。
-              </div>
-            )}
-            <GuideContentLoader contentPath={guide.markdownPath} />
-            <p className="source-path">源文件：{guide.sourcePath}</p>
-          </div>
-        )}
       </>
     );
   };
@@ -612,9 +527,9 @@ export default function TravelMap() {
               <span>{panelDockContext}</span>
               <button
                 type="button"
-                onClick={readingMode === "full" ? openOverview : hidePanel}
+                onClick={hidePanel}
               >
-                {readingMode === "full" ? "回到地图与重点" : "隐藏侧栏"}{" "}
+                隐藏侧栏{" "}
                 <span aria-hidden="true">→</span>
               </button>
             </div>
@@ -622,13 +537,7 @@ export default function TravelMap() {
               className="sheet-handle"
               type="button"
               onClick={togglePanelReadingWidth}
-              aria-label={
-                readingMode === "full"
-                  ? "回到地图与攻略重点"
-                  : panelExpanded
-                    ? "回到半屏攻略"
-                    : "展开攻略"
-              }
+              aria-label={panelExpanded ? "回到半屏攻略" : "展开攻略"}
             >
               <span />
             </button>

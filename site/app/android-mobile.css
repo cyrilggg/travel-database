@@ -40,8 +40,17 @@
   .travel-app .map-toolbar {
     top: calc(var(--android-safe-top) + 64px);
     left: calc(var(--android-safe-left) + var(--android-edge-gap));
-    grid-template-columns: repeat(3, 44px);
+    display: flex;
+    flex-direction: row;
     touch-action: manipulation;
+  }
+
+  .travel-app .map-toolbar-group {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+    border: 0;
   }
 
   .travel-app .map-toolbar button,
@@ -227,9 +236,8 @@
 
   .travel-app .map-toolbar {
     top: calc(var(--android-safe-top) + 56px);
-    display: grid;
-    grid-template-columns: repeat(5, 44px);
-    flex-direction: initial;
+    display: flex;
+    flex-direction: row;
   }
 
   .travel-app .city-search {

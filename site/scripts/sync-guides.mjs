@@ -213,7 +213,13 @@ function extractCalloutField(markdown, fieldName) {
 }
 
 function extractSuggestedStay(markdown) {
-  return extractCalloutField(markdown, "建议停留");
+  const calloutValue = extractCalloutField(markdown, "建议停留");
+  if (calloutValue) return calloutValue;
+
+  const tableRow = markdown.match(
+    /^\|\s*(?:\*\*|__)?建议停留(?:\*\*|__)?\s*\|\s*([^|\n]+?)\s*\|\s*$/m,
+  );
+  return tableRow ? plainText(tableRow[1]) : "";
 }
 
 function extractKeywords(markdown) {
