@@ -2,16 +2,9 @@
   margin-top: 26px;
 }
 
-.explainer {
-  display: grid;
-  grid-template-columns: 34px minmax(0, 1fr) auto;
-  gap: 11px;
-  align-items: start;
-  padding: 14px;
-  border: 1px solid rgba(35, 70, 74, 0.12);
-  border-radius: 15px;
-  color: #40514e;
-  background: linear-gradient(135deg, rgba(237, 241, 235, 0.9), rgba(255, 253, 248, 0.86));
+.browserActions {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .expandAll {
@@ -29,38 +22,6 @@
 .expandAll:focus-visible {
   outline: 3px solid rgba(196, 82, 55, 0.28);
   outline-offset: 2px;
-}
-
-.explainerMark {
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border-radius: 11px;
-  color: #fffaf2;
-  background: #294b47;
-  font-family: var(--font-serif);
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.explainer h3,
-.explainer p {
-  margin: 0;
-}
-
-.explainer h3 {
-  color: #294b47;
-  font-family: var(--font-serif);
-  font-size: 14px;
-  line-height: 1.45;
-}
-
-.explainer p {
-  margin-top: 4px;
-  color: #66736e;
-  font-size: 10px;
-  line-height: 1.7;
 }
 
 .accordion {
@@ -311,12 +272,6 @@
   font-weight: 800;
 }
 
-.coverageNote {
-  margin: 11px 3px 0;
-  color: #65716d;
-  font-size: 11px;
-  line-height: 1.6;
-}
 
 .empty {
   display: grid;
@@ -343,16 +298,6 @@
 }
 
 @media (max-width: 520px) {
-  .explainer {
-    grid-template-columns: 30px minmax(0, 1fr);
-    padding: 12px;
-  }
-
-  .explainerMark {
-    width: 30px;
-    height: 30px;
-  }
-
   .topic h3 > button {
     grid-template-columns: 25px minmax(0, 1fr) auto 16px;
     padding-right: 11px;
