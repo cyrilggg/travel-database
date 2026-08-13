@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-060,1803841,Lianzhou,PPLA3,广东省,destinations/中国/广东省/连州市.md,清远代管县级城市的主城洞穴峡谷文化与独立住宿交通尺度；法定实体精确连接固定驻地点
+CN-cities15000-060,1813828,Danjiangkou,PPL,湖北省,destinations/中国/湖北省/丹江口市.md,十堰代管县级城市的水利工程滨水山地与独立住宿交通尺度；固定主城点与法定实体所连行政记录粒度不同
+CN-cities15000-060,1806960,Huazhou,PPL,广东省,destinations/中国/广东省/化州市.md,茂名代管县级城市的古城化橘红文化鉴江与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-060,1788944,Xingren,PPLA3,贵州省,destinations/中国/贵州省/兴仁市.md,黔西南州县级城市的主城草原乡村产业与独立住宿交通尺度；固定驻地点与法定实体所连行政记录粒度不同
+CN-cities15000-060,1786855,Yatou,PPLA3,山东省,destinations/中国/山东省/荣成市.md,威海代管县级海岸城市的主城海岬山地海洋文化与独立住宿交通尺度；固定崖头驻地点与法定实体所连记录粒度不同
+CN-cities15000-060,2036075,Lingyuan,PPL,辽宁省,destinations/中国/辽宁省/凌源市.md,朝阳代管县级城市的主城牛河梁考古山地与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-060,1810309,Gaoyou,PPLA3,江苏省,destinations/中国/江苏省/高邮市.md,扬州代管县级城市的运河遗产湖区文博与独立住宿交通尺度；法定实体精确连接固定驻地点
+CN-cities15000-060,1785777,Yulinshi,PPLA2,陕西省,destinations/中国/陕西省/榆林市.md,陕北地级城市的古城长城文博能源边界与独立住宿交通尺度；法定实体精确连接固定驻地点

@@ -603,6 +603,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [南安](./destinations/中国/福建省/南安市.md) | 海丝遗产、侨乡古厝、石井海岸与闽南饮食 | `researched` |
 | [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [双辽](./destinations/中国/吉林省/双辽市.md) | 郑家屯历史、森林湿地、平原乡村与季节旅行 | `researched` |
 | [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [大安](./destinations/中国/吉林省/大安市.md) | 嫩江湿地、盐碱地治理、渔业文化与平原城市 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [连州](./destinations/中国/广东省/连州市.md) | 连州城区、地下河、湟川三峡与粤北山地文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [丹江口](./destinations/中国/湖北省/丹江口市.md) | 水利工程、汉江滨水、城市文博与库区保护 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [化州](./destinations/中国/广东省/化州市.md) | 化州古城、化橘红文化、鉴江与粤西县级市生活 | `researched` |
+| [中国](./destinations/中国/README.md) | [贵州省](./destinations/中国/贵州省/README.md) | [兴仁](./destinations/中国/贵州省/兴仁市.md) | 兴仁城区、放马坪草原、乡村接待与薏仁米产业 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [荣成](./destinations/中国/山东省/荣成市.md) | 崖头主城、成山头、赤山、海岸与海洋文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [凌源](./destinations/中国/辽宁省/凌源市.md) | 凌源城区、牛河梁考古、温泉与辽西山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [高邮](./destinations/中国/江苏省/高邮市.md) | 盂城驿、运河遗产、高邮湖与地方文博 | `researched` |
+| [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [榆林](./destinations/中国/陕西省/榆林市.md) | 榆林古城、镇北台、红石峡与陕北长城文化 | `researched` |
 
 ## 项目维护
 
