@@ -6,6 +6,7 @@ on:
     paths:
       - "destinations/中国/**"
       - "coverage/geonames/2026-07-30/inventory/CN.csv"
+      - "coverage/legal-cities/**"
       - "site/**"
       - ".github/workflows/travel-map-pages.yml"
   workflow_dispatch:
