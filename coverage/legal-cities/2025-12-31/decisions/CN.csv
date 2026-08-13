@@ -32,6 +32,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 140900,researched,destinations/中国/山西省/忻州市.md,1788450,codex,2026-07-31,1
 140981,researched,destinations/中国/山西省/原平市.md,1786060,codex,2026-08-13,1
 141000,researched,destinations/中国/山西省/临汾市.md,1803567,codex,2026-07-31,1
+141082,researched,destinations/中国/山西省/霍州市.md,1788462,codex,2026-08-13,1
 141100,researched,destinations/中国/山西省/吕梁市.md,13512505,codex,2026-07-30,1
 150100,researched,destinations/中国/内蒙古自治区/呼和浩特市.md,2036892,codex,2026-07-30,1
 150200,researched,destinations/中国/内蒙古自治区/包头市.md,2038432,codex,2026-07-30,1
@@ -45,6 +46,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 150785,researched,destinations/中国/内蒙古自治区/根河市.md,2037252,codex,2026-08-13,1
 150800,researched,destinations/中国/内蒙古自治区/巴彦淖尔市.md,11838258,codex,2026-07-30,1
 150900,researched,destinations/中国/内蒙古自治区/乌兰察布市.md,8335361,codex,2026-07-31,1
+150981,researched,destinations/中国/内蒙古自治区/丰镇市.md,2037391,codex,2026-08-13,1
 152201,researched,destinations/中国/内蒙古自治区/乌兰浩特市.md,2034312,codex,2026-08-12,1
 152502,researched,destinations/中国/内蒙古自治区/锡林浩特市.md,8054802,codex,2026-08-12,1
 210100,researched,destinations/中国/辽宁省/沈阳市.md,2034937,codex,2026-07-30,1
@@ -132,6 +134,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 320381,researched,destinations/中国/江苏省/新沂市.md,1789262,codex,2026-08-12,1
 320382,researched,destinations/中国/江苏省/邳州市.md,1785716,codex,2026-08-12,1
 320400,researched,destinations/中国/江苏省/常州市.md,1815456,codex,2026-07-30,1
+320481,researched,destinations/中国/江苏省/溧阳市.md,1802788,codex,2026-08-13,1
 320500,researched,destinations/中国/江苏省/苏州市.md,1886760,codex,2026-07-30,1
 320581,researched,destinations/中国/江苏省/常熟市.md,7283386,codex,2026-07-30,1
 320582,researched,destinations/中国/江苏省/张家港市.md,1787331,codex,2026-07-31,1
@@ -159,6 +162,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 330300,researched,destinations/中国/浙江省/温州市.md,1791388,codex,2026-07-30,1
 330381,researched,destinations/中国/浙江省/瑞安市.md,1797063,codex,2026-07-31,1
 330400,researched,destinations/中国/浙江省/嘉兴市.md,1805953,codex,2026-07-31,1
+330481,researched,destinations/中国/浙江省/海宁市.md,1789799,codex,2026-08-13,1
 330500,researched,destinations/中国/浙江省/湖州市.md,1806535,codex,2026-07-31,1
 330600,researched,destinations/中国/浙江省/绍兴市.md,1795855,codex,2026-07-30,1
 330681,researched,destinations/中国/浙江省/诸暨市.md,1783940,codex,2026-08-13,1
@@ -288,6 +292,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 420882,researched,destinations/中国/湖北省/京山市.md,1788638,codex,2026-08-13,1
 420900,researched,destinations/中国/湖北省/孝感市.md,1790254,codex,2026-07-31,1
 420981,researched,destinations/中国/湖北省/应城市.md,1786640,codex,2026-08-12,1
+420982,researched,destinations/中国/湖北省/安陆市.md,1818016,codex,2026-08-13,1
 420984,researched,destinations/中国/湖北省/汉川市.md,1808977,codex,2026-08-13,1
 421000,researched,destinations/中国/湖北省/荆州市.md,1805540,codex,2026-07-31,1
 421081,researched,destinations/中国/湖北省/石首市.md,1788268,codex,2026-08-13,1
@@ -369,6 +374,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 450681,researched,destinations/中国/广西壮族自治区/东兴市.md,1812138,codex,2026-08-13,1
 450700,researched,destinations/中国/广西壮族自治区/钦州市.md,1797551,codex,2026-07-31,1
 450800,researched,destinations/中国/广西壮族自治区/贵港市.md,1809532,codex,2026-07-31,1
+450881,researched,destinations/中国/广西壮族自治区/桂平市.md,1809486,codex,2026-08-13,1
 450900,researched,destinations/中国/广西壮族自治区/玉林市.md,1785781,codex,2026-07-31,1
 450981,researched,destinations/中国/广西壮族自治区/北流市.md,1803551,codex,2026-08-12,1
 451000,researched,destinations/中国/广西壮族自治区/百色市.md,1816269,codex,2026-07-31,1
@@ -432,6 +438,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 532501,researched,destinations/中国/云南省/个旧市.md,1810240,codex,2026-08-13,1
 532502,researched,destinations/中国/云南省/开远市.md,1804850,codex,2026-08-12,1
 532503,researched,destinations/中国/云南省/蒙自市.md,13512502,codex,2026-07-31,1
+532504,researched,destinations/中国/云南省/弥勒市.md,1800430,codex,2026-08-13,1
 532601,researched,destinations/中国/云南省/文山市.md,8505006,codex,2026-08-11,1
 532801,researched,destinations/中国/云南省/景洪市.md,1785710,codex,2026-08-12,1
 532901,researched,destinations/中国/云南省/大理市.md,1814093,codex,2026-08-12,1
@@ -492,6 +499,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 653201,researched,destinations/中国/新疆维吾尔自治区/和田市.md,1281019,codex,2026-08-12,1
 654002,researched,destinations/中国/新疆维吾尔自治区/伊宁市.md,1529435,codex,2026-08-12,1
 654201,researched,destinations/中国/新疆维吾尔自治区/塔城市.md,1529167,codex,2026-08-12,1
+654202,researched,destinations/中国/新疆维吾尔自治区/乌苏市.md,1529099,codex,2026-08-13,1
 654301,researched,destinations/中国/新疆维吾尔自治区/阿勒泰市.md,1529651,codex,2026-08-12,1
 659001,researched,destinations/中国/新疆维吾尔自治区/石河子市.md,1529195,codex,2026-07-31,1
 659002,researched,destinations/中国/新疆维吾尔自治区/阿拉尔市.md,1529641,codex,2026-08-13,1

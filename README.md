@@ -643,6 +643,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [新民](./destinations/中国/辽宁省/新民市.md) | 辽河平原主城、地方文博、乡村与季节湿地 | `researched` |
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [兰溪](./destinations/中国/浙江省/兰溪市.md) | 兰溪古城、兰江、诸葛古村、游埠与山地洞穴 | `researched` |
 | [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [根河](./destinations/中国/内蒙古自治区/根河市.md) | 大兴安岭林业城市、使鹿文化、湿地与高寒森林 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [乌苏](./destinations/中国/新疆维吾尔自治区/乌苏市.md) | 天山北坡交通门户、佛山文化、泥火山与绿洲生活 | `researched` |
+| [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [弥勒](./destinations/中国/云南省/弥勒市.md) | 湖泉城区、东风韵、太平湖与红河州高原风光 | `researched` |
+| [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [丰镇](./destinations/中国/内蒙古自治区/丰镇市.md) | 塞北古城、地方文博、商贸通道与月饼饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [霍州](./destinations/中国/山西省/霍州市.md) | 霍州署、鼓楼、陶唐峪与晋南古建 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [溧阳](./destinations/中国/江苏省/溧阳市.md) | 天目湖、南山竹海、溧阳城区与乡村度假 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [安陆](./destinations/中国/湖北省/安陆市.md) | 府河古城、李白文化、白兆山与银杏山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [桂平](./destinations/中国/广西壮族自治区/桂平市.md) | 西山、浔江、金田历史与龙潭山林 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [海宁](./destinations/中国/浙江省/海宁市.md) | 盐官观潮、古城、名人故居与皮革产业 | `researched` |
 
 ## 项目维护
 

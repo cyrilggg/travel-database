@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-065,1529099,Wusu,PPLA3,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/乌苏市.md,塔城地区代管县级城市的交通门户佛山文化泥火山与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-065,1800430,Miyang,PPLA3,云南省,destinations/中国/云南省/弥勒市.md,红河州代管县级城市的湖泉城区东风韵太平湖与独立住宿交通尺度；固定弥阳驻地点与法定弥勒实体分属不同GeoNames粒度
+CN-cities15000-065,2037391,Beichengqu,PPLA3,内蒙古自治区,destinations/中国/内蒙古自治区/丰镇市.md,乌兰察布代管县级城市的塞北古城饮食商贸与独立住宿交通尺度；固定北城区驻地点与法定丰镇实体分属不同GeoNames粒度
+CN-cities15000-065,1788462,Xinzhi,PPL,山西省,destinations/中国/山西省/霍州市.md,临汾代管县级城市的州署鼓楼陶唐峪与独立住宿交通尺度；固定辛置城市点与法定霍州实体分属不同GeoNames粒度
+CN-cities15000-065,1802788,Licheng,PPLA3,江苏省,destinations/中国/江苏省/溧阳市.md,常州代管县级城市的城区天目湖竹海乡村与独立住宿交通尺度；固定溧城驻地点与法定溧阳实体分属不同GeoNames粒度
+CN-cities15000-065,1818016,Anlu,PPLA3,湖北省,destinations/中国/湖北省/安陆市.md,孝感代管县级城市的府河古城李白文化银杏山地与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-065,1809486,Guiping,PPLA3,广西壮族自治区,destinations/中国/广西壮族自治区/桂平市.md,贵港代管县级城市的西山浔江金田龙潭与独立住宿交通尺度；法定实体连接固定城市点及行政记录
+CN-cities15000-065,1789799,Haining,PPLA3,浙江省,destinations/中国/浙江省/海宁市.md,嘉兴代管县级城市的盐官观潮古城名人故居与独立住宿交通尺度；法定实体精确连接固定城市点
