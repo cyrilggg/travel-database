@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-052,1795055,Shiqiao,PPLA3,广东省,destinations/中国/广东省/番禺区.md,广州南部市辖区的主题乐园古镇园林大学城海岛与独立住宿交通尺度；区级指南不计入法定城市分母
+CN-cities15000-052,1798473,Puqi,PPL,湖北省,destinations/中国/湖北省/赤壁市.md,咸宁代管县级城市的三国遗址茶乡湖泊水利与独立住宿交通尺度；固定居民点与法定实体连接的行政记录粒度不同
+CN-cities15000-052,1791272,Wugang,PPLA3,湖南省,destinations/中国/湖南省/武冈市.md,邵阳代管县级城市的古城云山洞穴文保非遗饮食与独立住宿交通尺度；法定实体同时保留城市点和行政记录
+CN-cities15000-052,2033225,Zhalantun,PPLA3,内蒙古自治区,destinations/中国/内蒙古自治区/扎兰屯市.md,呼伦贝尔代管县级城市的历史城区火山森林湿地冰雪与独立住宿交通尺度；法定实体精确连接固定记录
+CN-cities15000-052,2035002,Shangzhi,PPLA3,黑龙江省,destinations/中国/黑龙江省/尚志市.md,哈尔滨代管县级城市的抗联历史亚布力冰雪森林山地与独立住宿交通尺度；法定实体精确连接固定记录
+CN-cities15000-052,2034834,Shuangcheng,PPLA3,黑龙江省,destinations/中国/黑龙江省/双城区.md,哈尔滨市辖区的老城革命旧址铁路黑土地农业与独立旅行尺度；区级指南不计入法定城市分母
+CN-cities15000-052,1791056,Dongyang,PPLA3,浙江省,destinations/中国/浙江省/东阳市.md,金华代管县级城市的卢宅木雕影视古镇山地与独立住宿交通尺度；法定实体精确连接固定记录
+CN-cities15000-052,1798655,Pingxiang,PPL,广西壮族自治区,destinations/中国/广西壮族自治区/凭祥市.md,崇左代管县级城市的友谊关边城口岸红木与独立住宿交通尺度；法定实体精确连接固定记录

@@ -474,3 +474,16 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 10020191,merged,,8533133,destinations/中国/贵州省/六盘水市.md,merged_urban_section,固定Liuzhi记录对应六盘水市六枝特区城市内部点；六盘水规范页已实质覆盖六枝区域具体景点完整路线住宿和交通,https://www.liuzhi.gov.cn/,codex,2026-08-13,1
 1805857,merged,,1812521,destinations/中国/广东省/陆丰市.md,merged_urban_section,固定Jieshi记录对应陆丰市碣石镇城市内部点；陆丰规范页已实质覆盖碣石区域具体景点完整路线住宿和交通,https://www.lufengshi.gov.cn/lfsjsz/,codex,2026-08-13,1
 1794806,merged,,12324556,destinations/中国/宁夏回族自治区/石嘴山市.md,merged_urban_section,固定Huinong记录对应石嘴山市惠农城市内部点；石嘴山规范页已实质覆盖惠农区域具体景点完整路线住宿和交通,https://www.huinong.gov.cn/,codex,2026-08-13,1
+1795055,researched,destinations/中国/广东省/番禺区.md,,,,,,codex,2026-08-13,1
+1798473,researched,destinations/中国/湖北省/赤壁市.md,,,,,,codex,2026-08-13,1
+1791272,researched,destinations/中国/湖南省/武冈市.md,,,,,,codex,2026-08-13,1
+2033225,researched,destinations/中国/内蒙古自治区/扎兰屯市.md,,,,,,codex,2026-08-13,1
+2035002,researched,destinations/中国/黑龙江省/尚志市.md,,,,,,codex,2026-08-13,1
+2034834,researched,destinations/中国/黑龙江省/双城区.md,,,,,,codex,2026-08-13,1
+1791056,researched,destinations/中国/浙江省/东阳市.md,,,,,,codex,2026-08-13,1
+1798655,researched,destinations/中国/广西壮族自治区/凭祥市.md,,,,,,codex,2026-08-13,1
+8419424,merged,,1786378,destinations/中国/重庆市/永川区.md,merged_urban_section,固定Shenglilu记录对应永川区胜利路街道城市点；永川规范页已实质覆盖主城区域具体景点完整路线住宿和交通,https://www.cqyc.gov.cn/,codex,2026-08-13,1
+1805962,merged,,10630003,destinations/中国/江苏省/徐州市.md,merged_urban_section,固定Jiawang记录对应徐州市贾汪区城市点；徐州规范页已实质覆盖贾汪区域具体景点完整路线住宿和交通,https://www.xzjw.gov.cn/,codex,2026-08-13,1
+1813344,merged,,12324556,destinations/中国/宁夏回族自治区/石嘴山市.md,merged_urban_section,固定Dawukou记录对应石嘴山市大武口城区点；石嘴山规范页已实质覆盖大武口区域具体景点完整路线住宿和交通,https://www.dwk.gov.cn/,codex,2026-08-13,1
+1801401,merged,,1804651,destinations/中国/云南省/昆明市.md,merged_urban_section,固定Majie记录对应昆明市西山区马街城市点；昆明规范页已实质覆盖西山区域具体景点完整路线住宿和交通,https://www.kmxs.gov.cn/,codex,2026-08-13,1
+1791325,merged,,1791249,destinations/中国/内蒙古自治区/乌海市.md,merged_urban_section,固定Wuda记录对应乌海市乌达区城市点；乌海规范页已实质覆盖乌达区域具体景点完整路线住宿和交通,https://www.wuda.gov.cn/,codex,2026-08-13,1
