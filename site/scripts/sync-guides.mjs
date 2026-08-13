@@ -158,8 +158,9 @@ async function loadLegalMapCities(guides) {
   const guidesBySourcePath = new Map(
     guides.map((guide) => [guide.sourcePath, guide]),
   );
+  const mappedGuideIds = new Set();
 
-  return parseCsv(inventoryCsv).map((city) => {
+  const legalCities = parseCsv(inventoryCsv).map((city) => {
     const decision = decisionsByCode.get(city.administrative_code);
     const guide = decision
       ? guidesBySourcePath.get(decision.page_path)
@@ -171,6 +172,7 @@ async function loadLegalMapCities(guides) {
     if (decision && !guide) {
       throw new Error(`${city.name} 的覆盖账本指向不存在的单城市攻略：${decision.page_path}`);
     }
+    if (guide) mappedGuideIds.add(guide.id);
 
     return {
       id: `legal-${city.administrative_code}`,
@@ -186,6 +188,32 @@ async function loadLegalMapCities(guides) {
       },
     };
   });
+
+  const additionalGuideDestinations = guides
+    .filter((guide) => !mappedGuideIds.has(guide.id))
+    .map((guide) => ({
+      id: `guide-${guide.id}`,
+      administrativeCode: `geonames:${guide.geonamesId}`,
+      city: guide.city,
+      adminArea: guide.adminArea,
+      cityLevel: "guide_destination",
+      coverage: 1,
+      guideId: guide.id,
+      coordinates: guide.coordinates,
+    }));
+
+  const mapCities = [...legalCities, ...additionalGuideDestinations];
+  const visibleGuideIds = mapCities.flatMap((city) =>
+    city.guideId ? [city.guideId] : [],
+  );
+  if (
+    visibleGuideIds.length !== guides.length ||
+    new Set(visibleGuideIds).size !== guides.length
+  ) {
+    throw new Error("地图入口没有逐一覆盖所有单目的地攻略");
+  }
+
+  return mapCities;
 }
 
 function displayNameForObsidianTarget(target) {
@@ -585,8 +613,9 @@ async function syncGuides() {
     cityResult.guides.map((guide) => guide.adminArea),
   ).size;
   const coveredCount = mapCities.filter((city) => city.coverage === 1).length;
+  const missingCount = mapCities.filter((city) => city.coverage === 0).length;
   console.log(
-    `已从当前仓库@${sourceRevision.slice(0, 7)} 同步 ${cityResult.guides.length} 个单城市攻略；法定城市覆盖 ${coveredCount}/${mapCities.length}（${provinceCount} 个省级地区）`,
+    `已从当前仓库@${sourceRevision.slice(0, 7)} 同步 ${cityResult.guides.length} 个单目的地攻略；地图显示 ${coveredCount} 个已有攻略点、${missingCount} 个尚未收录点（${provinceCount} 个省级地区）`,
   );
 }
 
