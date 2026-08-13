@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-061,1792592,Tongren,PPLA2,贵州省,destinations/中国/贵州省/铜仁市.md,黔东北地级城市的碧江主城万山工业遗产与县域山地独立住宿交通尺度；固定城市点与法定实体所连行政记录粒度不同
+CN-cities15000-061,2037375,Fujin,PPLA3,黑龙江省,destinations/中国/黑龙江省/富锦市.md,佳木斯代管县级城市的三江平原农业湿地与独立住宿交通尺度；固定驻地点与法定实体所连行政记录粒度不同
+CN-cities15000-061,1812138,Dongxing,PPL,广西壮族自治区,destinations/中国/广西壮族自治区/东兴市.md,防城港代管县级边境城市的口岸海岸京族文化与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-061,1785566,Yuzhou,PPLA3,河南省,destinations/中国/河南省/禹州市.md,许昌代管县级城市的钧瓷古镇山地与独立住宿交通尺度；固定驻地点与法定实体所连行政记录粒度不同
+CN-cities15000-061,1808977,Hanchuan,PPL,湖北省,destinations/中国/湖北省/汉川市.md,孝感代管县级城市的汉江湖区湿地与独立住宿交通尺度；固定城市点用于定位且法定实体暂无P1566
+CN-cities15000-061,1790471,Xiangxiang,PPL,湖南省,destinations/中国/湖南省/湘乡市.md,湘潭代管县级城市的书院山地水府方向与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-061,2035746,Mishan,PPL,黑龙江省,destinations/中国/黑龙江省/密山市.md,鸡西代管县级城市的兴凯湖农垦边境与独立住宿交通尺度；固定城市点与法定实体所连行政记录粒度不同
+CN-cities15000-061,2035601,Nenjiang,PPLA3,黑龙江省,destinations/中国/黑龙江省/嫩江市.md,黑河代管县级城市的墨尔根历史火山森林农业与独立住宿交通尺度；固定驻地点用于定位且法定实体暂无P1566

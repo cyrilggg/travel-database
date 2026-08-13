@@ -566,3 +566,15 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 2036075,researched,destinations/中国/辽宁省/凌源市.md,,,,,,codex,2026-08-13,1
 1810309,researched,destinations/中国/江苏省/高邮市.md,,,,,,codex,2026-08-13,1
 1785777,researched,destinations/中国/陕西省/榆林市.md,,,,,,codex,2026-08-13,1
+1792592,researched,destinations/中国/贵州省/铜仁市.md,,,,,,codex,2026-08-13,1
+2037375,researched,destinations/中国/黑龙江省/富锦市.md,,,,,,codex,2026-08-13,1
+1812138,researched,destinations/中国/广西壮族自治区/东兴市.md,,,,,,codex,2026-08-13,1
+1785566,researched,destinations/中国/河南省/禹州市.md,,,,,,codex,2026-08-13,1
+1808977,researched,destinations/中国/湖北省/汉川市.md,,,,,,codex,2026-08-13,1
+1790471,researched,destinations/中国/湖南省/湘乡市.md,,,,,,codex,2026-08-13,1
+2035746,researched,destinations/中国/黑龙江省/密山市.md,,,,,,codex,2026-08-13,1
+2035601,researched,destinations/中国/黑龙江省/嫩江市.md,,,,,,codex,2026-08-13,1
+1808879,merged,,1791681,destinations/中国/山东省/潍坊市.md,merged_urban_section,固定Hanting记录对应潍坊市寒亭区城市点；潍坊指南已覆盖区域关系杨家埠具体景点完整寒亭路线住宿和交通,https://www.geonames.org/1808879/hanting.html,codex,2026-08-13,1
+1804162,merged,,1786217,destinations/中国/湖南省/永州市.md,merged_urban_section,固定Lengshuitan记录对应永州市冷水滩区城市点；永州指南已覆盖区域关系具体景点完整冷水滩路线住宿和交通,https://www.geonames.org/1804162/lengshuitan.html,codex,2026-08-13,1
+8403611,merged,,12358576,destinations/中国/重庆市/万州区.md,merged_urban_section,固定Zhoujiaba记录对应万州区周家坝城市点；万州指南已覆盖区域关系天生城具体景点完整路线住宿和交通,https://www.geonames.org/8403611/zhoujiaba.html,codex,2026-08-13,1
+1797535,merged,,1809078,destinations/中国/海南省/海口市.md,merged_urban_section,固定Qiongshan记录对应海口府城琼山城市点；海口指南已覆盖区域关系具体景点完整路线住宿和交通,https://www.geonames.org/1797535/qiongshan.html,codex,2026-08-13,1

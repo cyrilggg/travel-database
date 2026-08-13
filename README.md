@@ -611,6 +611,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [凌源](./destinations/中国/辽宁省/凌源市.md) | 凌源城区、牛河梁考古、温泉与辽西山地 | `researched` |
 | [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [高邮](./destinations/中国/江苏省/高邮市.md) | 盂城驿、运河遗产、高邮湖与地方文博 | `researched` |
 | [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [榆林](./destinations/中国/陕西省/榆林市.md) | 榆林古城、镇北台、红石峡与陕北长城文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [贵州省](./destinations/中国/贵州省/README.md) | [铜仁](./destinations/中国/贵州省/铜仁市.md) | 碧江主城、万山工业遗产、梵净山与石阡远线 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [富锦](./destinations/中国/黑龙江省/富锦市.md) | 三江平原农业、地方文博、湿地与松花江岸线 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [东兴](./destinations/中国/广西壮族自治区/东兴市.md) | 口岸城市、北仑河、竹山与京族三岛 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [禹州](./destinations/中国/河南省/禹州市.md) | 钧瓷文化、神垕古镇、地方文博与山地远线 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [汉川](./destinations/中国/湖北省/汉川市.md) | 汉江主城、汈汊湖、天屿湖与湿地边界 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [湘乡](./destinations/中国/湖南省/湘乡市.md) | 东山书院、涟水城区、东台山与水府方向 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [密山](./destinations/中国/黑龙江省/密山市.md) | 兴凯湖、地方文博、北大荒农垦与边境湿地 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [嫩江](./destinations/中国/黑龙江省/嫩江市.md) | 墨尔根历史、嫩江岸线、科洛火山与寒地农业 | `researched` |
 
 ## 项目维护
 
