@@ -64,6 +64,7 @@ const nearestGuides = (point: MapPoint, limit: number, excludedGuideId?: string)
 export default function TravelMap() {
   const [panel, setPanel] = useState<PanelState>({ kind: "home" });
   const [panelLayout, setPanelLayout] = useState<PanelLayout>("docked");
+  const [mapResetSignal, setMapResetSignal] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
   const [guideScope, setGuideScope] = useState<"viewport" | "all">("viewport");
   const [viewportGuideIds, setViewportGuideIds] = useState<string[]>(() =>
@@ -185,6 +186,11 @@ export default function TravelMap() {
     const pool = candidates.length > 0 ? candidates : guides;
     const guide = pool[Math.floor(Math.random() * pool.length)];
     openGuide(guide);
+  };
+
+  const resetToNation = () => {
+    openHome("viewport");
+    setMapResetSignal((signal) => signal + 1);
   };
 
   const updateViewportGuides = (ids: string[]) => {
@@ -455,7 +461,10 @@ export default function TravelMap() {
           <span className="brand-mark" aria-hidden="true">游</span>
           <div>
             <h1>旅行地图</h1>
-            <p>分级地形 · 城市攻略</p>
+          </div>
+          <div className="header-map-actions" aria-label="地图快捷操作">
+            <button type="button" onClick={resetToNation}>全国</button>
+            <button type="button" onClick={exploreRandomGuide}>随机</button>
           </div>
         </div>
         <form className="city-search" onSubmit={handleSearch} role="search">
@@ -475,13 +484,6 @@ export default function TravelMap() {
           </datalist>
           <button type="submit">查找</button>
         </form>
-        <button
-          className="all-cities-button"
-          type="button"
-          onClick={() => openHome("all")}
-        >
-          城市列表
-        </button>
       </header>
 
       <main className="experience-shell">
@@ -495,9 +497,8 @@ export default function TravelMap() {
             explorePoint={explorePoint}
             onSelectGuide={openGuide}
             onExploreNear={openNearby}
-            onExploreRandom={exploreRandomGuide}
             onViewportGuidesChange={updateViewportGuides}
-            onReset={() => openHome("viewport")}
+            resetSignal={mapResetSignal}
           />
         </section>
 

@@ -72,7 +72,7 @@ input:focus-visible {
   z-index: 20;
   height: 68px;
   display: grid;
-  grid-template-columns: minmax(300px, 1fr) minmax(280px, 420px) auto;
+  grid-template-columns: minmax(300px, 1fr) minmax(280px, 420px);
   align-items: center;
   gap: 18px;
   padding: 0 24px;
@@ -106,6 +106,30 @@ input:focus-visible {
 .brand-lockup h1,
 .brand-lockup p {
   margin: 0;
+}
+
+.header-map-actions {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.header-map-actions button {
+  min-width: 44px;
+  height: 36px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 10px;
+  color: #294b47;
+  background: rgba(35, 70, 74, 0.08);
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.header-map-actions button:hover {
+  color: #fffaf2;
+  background: #294b47;
 }
 
 .brand-lockup h1 {
@@ -1484,7 +1508,7 @@ body,
   width: min(800px, calc(100vw - var(--panel-w) - 52px));
   height: auto;
   display: grid;
-  grid-template-columns: minmax(270px, 330px) minmax(230px, 320px) auto;
+  grid-template-columns: minmax(310px, 390px) minmax(230px, 320px);
   gap: 10px;
   padding: 0;
   border: 0;
@@ -1939,6 +1963,17 @@ body,
 
   .brand-lockup h1 {
     font-size: 15px;
+  }
+
+  .header-map-actions {
+    gap: 2px;
+  }
+
+  .header-map-actions button {
+    min-width: 38px;
+    height: 34px;
+    padding: 0 7px;
+    font-size: 10px;
   }
 
   .brand-lockup p,

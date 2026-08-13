@@ -69,12 +69,8 @@ export default function GuideBrowser({
 
   return (
     <section className={styles.browser} aria-labelledby={`${idPrefix}-${guideId}-browser-title`}>
-      <div className={styles.explainer}>
-        <span className={styles.explainerMark} aria-hidden="true">原</span>
-        <div>
-          <h3 id={`${idPrefix}-${guideId}-browser-title`}>按主题浏览攻略重点</h3>
-          <p>卡片由私有攻略离线整理，保留原意和顺序，但不会公开原始文档。</p>
-        </div>
+      <div className={styles.browserActions}>
+        <h3 className="sr-only" id={`${idPrefix}-${guideId}-browser-title`}>城市攻略</h3>
         <button
           type="button"
           className={styles.expandAll}
@@ -136,8 +132,6 @@ export default function GuideBrowser({
           );
         })}
       </div>
-
-      <p className={styles.coverageNote}>公开站只展示结构化信息，不提供私有攻略原文或下载入口。</p>
     </section>
   );
 }

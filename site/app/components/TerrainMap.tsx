@@ -50,9 +50,8 @@ type TerrainMapProps = {
   explorePoint?: { longitude: number; latitude: number };
   onSelectGuide: (guide: TravelGuide) => void;
   onExploreNear: (point: { longitude: number; latitude: number }) => void;
-  onExploreRandom: () => void;
   onViewportGuidesChange: (ids: string[]) => void;
-  onReset: () => void;
+  resetSignal: number;
 };
 
 type PanelLayout = TerrainMapProps["panelLayout"];
@@ -216,18 +215,15 @@ export default function TerrainMap({
   explorePoint,
   onSelectGuide,
   onExploreNear,
-  onExploreRandom,
   onViewportGuidesChange,
-  onReset,
+  resetSignal,
 }: TerrainMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const guidesRef = useRef(guides);
   const onSelectGuideRef = useRef(onSelectGuide);
   const onExploreNearRef = useRef(onExploreNear);
-  const onExploreRandomRef = useRef(onExploreRandom);
   const onViewportGuidesChangeRef = useRef(onViewportGuidesChange);
-  const onResetRef = useRef(onReset);
   const showItineraryRouteRef = useRef(showItineraryRoute);
   const itineraryActiveRef = useRef(itineraryActive);
   const panelLayoutRef = useRef(panelLayout);
@@ -248,10 +244,8 @@ export default function TerrainMap({
     guidesRef.current = guides;
     onSelectGuideRef.current = onSelectGuide;
     onExploreNearRef.current = onExploreNear;
-    onExploreRandomRef.current = onExploreRandom;
     onViewportGuidesChangeRef.current = onViewportGuidesChange;
-    onResetRef.current = onReset;
-  }, [guides, onExploreNear, onExploreRandom, onReset, onSelectGuide, onViewportGuidesChange]);
+  }, [guides, onExploreNear, onSelectGuide, onViewportGuidesChange]);
 
   useEffect(() => {
     showItineraryRouteRef.current = showItineraryRoute;
@@ -1133,6 +1127,17 @@ export default function TerrainMap({
 
   useEffect(() => {
     const map = mapRef.current;
+    if (!mapReady || !map || resetSignal === 0) return;
+    map.fitBounds(CHINA_BOUNDS, {
+      padding: mapPadding(panelLayoutRef.current, containerRef.current),
+      pitch: terrainEnabledRef.current ? 18 : 0,
+      bearing: 0,
+      duration: reducedMotionRef.current ? 0 : 720,
+    });
+  }, [mapReady, resetSignal]);
+
+  useEffect(() => {
+    const map = mapRef.current;
     if (!mapReady || !map || !map.getLayer(ROUTE_LAYER_ID)) return;
     const visibility = showItineraryRoute ? "visible" : "none";
     map.setLayoutProperty(ROUTE_LAYER_ID, "visibility", visibility);
@@ -1151,26 +1156,6 @@ export default function TerrainMap({
       pitch: next ? (activeGuideId ? 38 : 18) : 0,
       duration: reducedMotionRef.current ? 0 : 480,
     });
-  };
-
-  const resetMap = () => {
-    onResetRef.current();
-    mapRef.current?.fitBounds(CHINA_BOUNDS, {
-      padding: mapPadding(panelLayoutRef.current, containerRef.current),
-      pitch: terrainEnabledRef.current ? 18 : 0,
-      bearing: 0,
-      duration: reducedMotionRef.current ? 0 : 720,
-    });
-  };
-
-  const exploreMapCenter = () => {
-    const center = mapRef.current?.getCenter();
-    if (!center) return;
-    onExploreNearRef.current({ longitude: center.lng, latitude: center.lat });
-  };
-
-  const exploreRandomly = () => {
-    onExploreRandomRef.current();
   };
 
   return (
@@ -1200,54 +1185,6 @@ export default function TerrainMap({
           <span>城市列表和攻略仍然可以正常使用。</span>
         </div>
       )}
-
-      <div className="map-toolbar" aria-label="地图控制">
-        <div className="map-toolbar-group" aria-label="缩放与复位">
-        <button
-          type="button"
-          onClick={() =>
-            mapRef.current?.zoomIn({ duration: reducedMotionRef.current ? 0 : 220 })
-          }
-          aria-label="放大地图"
-        >
-          ＋
-        </button>
-        <button
-          type="button"
-          onClick={() =>
-            mapRef.current?.zoomOut({ duration: reducedMotionRef.current ? 0 : 220 })
-          }
-          aria-label="缩小地图"
-        >
-          −
-        </button>
-        <button type="button" onClick={resetMap} aria-label="回到全国视图">
-          <span aria-hidden="true">⌂</span><small>全国</small>
-        </button>
-        </div>
-        <div className="map-toolbar-group is-explore" aria-label="探索地图">
-        <button
-          type="button"
-          className="map-toolbar-action"
-          onClick={exploreMapCenter}
-          aria-label="探索地图中心附近"
-          title="探索地图中心附近"
-        >
-          <span className="map-toolbar-action-icon" aria-hidden="true">⌖</span>
-          <span className="map-toolbar-action-label">附近</span>
-        </button>
-        <button
-          type="button"
-          className="map-toolbar-action"
-          onClick={exploreRandomly}
-          aria-label="随机探索"
-          title="随机探索"
-        >
-          <span className="map-toolbar-action-icon" aria-hidden="true">✦</span>
-          <span className="map-toolbar-action-label">随机</span>
-        </button>
-        </div>
-      </div>
 
       <button
         type="button"
