@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-053,1804208,Leiyang,PPLA3,湖南省,destinations/中国/湖南省/耒阳市.md,衡阳代管县级城市的蔡伦纸文化竹海主城生活与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-053,1885823,Jiangyou,PPL,四川省,destinations/中国/四川省/江油市.md,绵阳代管县级城市的李白文化青莲山地古建餐饮与独立住宿交通尺度；固定居民点与法定实体连接的记录粒度不同
+CN-cities15000-053,1279891,Tengyue,PPLA3,云南省,destinations/中国/云南省/腾冲市.md,保山代管县级城市的侨乡抗战火山地热湿地边境与独立住宿交通尺度；法定实体同时保留城市点和行政记录
+CN-cities15000-053,1801582,Macheng,PPL,湖北省,destinations/中国/湖北省/麻城市.md,黄冈代管县级城市的大别山革命史杜鹃花季主城与独立住宿交通尺度；固定居民点与法定实体连接的行政记录粒度不同
+CN-cities15000-053,1529641,Ālā'ĕr,PPLA3,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/阿拉尔市.md,第一师师市合一县级城市的屯垦史塔里木河绿洲大学与独立住宿交通尺度；法定实体精确连接固定记录
+CN-cities15000-053,1796421,Shahecheng,PPL,河北省,destinations/中国/河北省/沙河市.md,邢台代管县级城市的太行山古村水库玻璃产业与独立住宿交通尺度；固定居民点与法定实体连接的行政记录粒度不同
+CN-cities15000-053,2033242,Yushu,PPLA3,吉林省,destinations/中国/吉林省/榆树市.md,长春代管县级城市的松辽平原地方文博农业与独立住宿交通尺度；法定实体精确连接固定记录
+CN-cities15000-053,1804252,Lecheng,PPLA3,广东省,destinations/中国/广东省/乐昌市.md,韶关代管县级城市的乐城坪石古道山地峡谷与独立住宿交通尺度；固定点对应乐城街道而法定实体连接另一记录
