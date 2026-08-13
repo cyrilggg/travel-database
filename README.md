@@ -587,6 +587,15 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 
 许可作用域和第三方署名要求见 [LICENSE.md](./LICENSE.md)。图片和其他媒体必须逐项确认许可；本阶段不复制第三方地图、点评集合或图片。
 
+| [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [水富](./destinations/中国/云南省/水富市.md) | 金沙江港城、邵女坪高峡平湖、西部大峡谷温泉与铜锣坝森林 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [廉江](./destinations/中国/广东省/廉江市.md) | 安铺古镇、鹤地水库、高桥红树林与粤西饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [康定](./destinations/中国/四川省/康定市.md) | 州府河谷、木格措、新都桥、塔公草原与贡嘎山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [芒市](./destinations/中国/云南省/芒市.md) | 勐焕塔群、州博、热带园林、孔雀湖与民族饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [梅河口](./destinations/中国/吉林省/梅河口市.md) | 海龙湖、知北村、东北不夜城、腾龙阁与五奎山 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [新乐](./destinations/中国/河北省/新乐市.md) | 伏羲台遗址、伏羲祭典、文化片区与公共艺术 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [兴城](./destinations/中国/辽宁省/兴城市.md) | 明代古城、兴城海滨、觉华岛与温泉 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [任丘](./destinations/中国/河北省/任丘市.md) | 华北油田城市史、白洋淀西缘、鄚州与水乡生态 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)

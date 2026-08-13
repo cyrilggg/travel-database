@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-058,6648023,Shuifu,PPLA3,云南省,destinations/中国/云南省/水富市.md,昭通代管县级城市的金沙江港城温泉森林与独立住宿交通尺度；固定驻地点与法定实体所连行政记录粒度不同
+CN-cities15000-058,1804120,Lianjiang,PPL,广东省,destinations/中国/广东省/廉江市.md,湛江代管县级城市的安铺古镇鹤地水库红树林与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-058,1802171,Kangding,PPLA2,四川省,destinations/中国/四川省/康定市.md,甘孜州州府县级城市的河谷州府木格措新都桥与独立高原住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-058,12358512,Menghuan,PPLA3,云南省,destinations/中国/云南省/芒市.md,德宏州州府县级城市的勐焕主城民族文化热带园林与独立住宿交通尺度；固定驻地点与法定实体所连旧行政记录粒度不同
+CN-cities15000-058,2035801,Meihekou,PPLA3,吉林省,destinations/中国/吉林省/梅河口市.md,通化代管县级城市的城市公园主题村落夜游山地与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-058,1812647,Xinle,PPLA3,河北省,destinations/中国/河北省/新乐市.md,石家庄代管县级城市的伏羲遗址非遗祭典与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-058,2033766,Xingcheng,PPL,辽宁省,destinations/中国/辽宁省/兴城市.md,葫芦岛代管县级城市的明代古城海滨海岛温泉与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-058,1797181,Renqiu,PPLA3,河北省,destinations/中国/河北省/任丘市.md,沧州代管县级城市的油田城市白洋淀西缘水乡与独立住宿交通尺度；法定实体精确连接固定城市点
