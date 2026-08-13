@@ -417,6 +417,14 @@ Markdown 是主要产品。覆盖清单与辅助脚本只用于审计和维护�
 | [中国](./destinations/中国/README.md) | [安徽省](./destinations/中国/安徽省/README.md) | [界首](./destinations/中国/安徽省/界首市.md) | 彩陶、地方文博、沙颍河与皖北小城生活 | `researched` |
 | [中国](./destinations/中国/README.md) | [青海省](./destinations/中国/青海省/README.md) | [玉树](./destinations/中国/青海省/玉树市.md) | 结古、嘉那嘛呢、文成公主庙、勒巴沟与三江源 | `researched` |
 | [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [公主岭](./destinations/中国/吉林省/公主岭市.md) | 地方文博、于凤至故居、农业文化与松辽平原乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [桦甸](./destinations/中国/吉林省/桦甸市.md) | 黄金文化、红石湖、森林山地与季节远线 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [扶余](./destinations/中国/吉林省/扶余市.md) | 辽金碑刻、湿地、平原乡村与非遗 | `researched` |
+| [中国](./destinations/中国/README.md) | [安徽省](./destinations/中国/安徽省/README.md) | [巢湖](./destinations/中国/安徽省/巢湖市.md) | 城区湖岸、中庙—姥山岛、洞穴与山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [梁平](./destinations/中国/重庆市/梁平区.md) | 双桂湖、古寨、竹海、古蜀道与非遗 | `researched` |
+| [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [武夷山](./destinations/中国/福建省/武夷山市.md) | 天游峰、九曲溪、岩茶、世界遗产与国家公园 | `researched` |
+| [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [个旧](./destinations/中国/云南省/个旧市.md) | 高原湖城、锡工业史、老阴山与季节乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [加格达奇](./destinations/中国/黑龙江省/加格达奇区.md) | 大兴安岭门户、民俗、湿地、森林与冰雪 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [图木舒克](./destinations/中国/新疆维吾尔自治区/图木舒克市.md) | 屯垦历史、唐王城、永安湖、胡杨与绿洲城市 | `researched` |
 | [日本](./destinations/日本/README.md) | [东京都](./destinations/日本/东京都/README.md) | [东京](./destinations/日本/东京都/东京.md) | 超大城市片区、传统街区、博物馆、都市餐饮 | `researched` |
 | [法国](./destinations/法国/README.md) | [法兰西岛大区](./destinations/法国/法兰西岛大区/README.md) | [巴黎](./destinations/法国/法兰西岛大区/巴黎.md) | 塞纳河两岸、艺术场馆、街区漫步、法式餐饮 | `researched` |
 

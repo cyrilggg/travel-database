@@ -59,10 +59,12 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 220100,researched,destinations/中国/吉林省/长春市.md,2038180,codex,2026-07-30,1
 220184,researched,destinations/中国/吉林省/公主岭市.md,2037222,codex,2026-08-12,1
 220200,researched,destinations/中国/吉林省/吉林市.md,2036502,codex,2026-07-30,1
+220282,researched,destinations/中国/吉林省/桦甸市.md,2036776,codex,2026-08-13,1
 220300,researched,destinations/中国/吉林省/四平市.md,2034714,codex,2026-07-31,1
 220400,researched,destinations/中国/吉林省/辽源市.md,2036109,codex,2026-08-11,1
 220500,researched,destinations/中国/吉林省/通化市.md,2034414,codex,2026-07-31,1
 220600,researched,destinations/中国/吉林省/白山市.md,2038584,codex,2026-08-12,1
+220781,researched,destinations/中国/吉林省/扶余市.md,2037335,codex,2026-08-13,1
 220800,researched,destinations/中国/吉林省/白城市.md,2038569,codex,2026-08-12,1
 222401,researched,destinations/中国/吉林省/延吉市.md,2033467,codex,2026-08-12,1
 222403,researched,destinations/中国/吉林省/敦化市.md,2037534,codex,2026-08-12,1
@@ -123,6 +125,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 331000,researched,destinations/中国/浙江省/台州市.md,8400694,codex,2026-07-30,1
 331100,researched,destinations/中国/浙江省/丽水市.md,1803245,codex,2026-08-11,1
 340100,researched,destinations/中国/安徽省/合肥市.md,1808722,codex,2026-07-30,1
+340181,researched,destinations/中国/安徽省/巢湖市.md,1815427,codex,2026-08-13,1
 340200,researched,destinations/中国/安徽省/芜湖市.md,1791236,codex,2026-07-30,1
 340300,researched,destinations/中国/安徽省/蚌埠市.md,1816440,codex,2026-07-31,1
 340400,researched,destinations/中国/安徽省/淮南市.md,1807681,codex,2026-07-30,1
@@ -148,6 +151,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 350582,researched,destinations/中国/福建省/晋江市.md,1797658,codex,2026-07-31,1
 350600,researched,destinations/中国/福建省/漳州市.md,1785018,codex,2026-07-31,1
 350700,researched,destinations/中国/福建省/南平市.md,1799846,codex,2026-08-11,1
+350782,researched,destinations/中国/福建省/武夷山市.md,1922014,codex,2026-08-13,1
 350800,researched,destinations/中国/福建省/龙岩市.md,1802276,codex,2026-07-31,1
 350900,researched,destinations/中国/福建省/宁德市.md,1806097,codex,2026-08-12,1
 350981,researched,destinations/中国/福建省/福安市.md,1808872,codex,2026-08-12,1
@@ -333,6 +337,7 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 530800,researched,destinations/中国/云南省/普洱市.md,1794209,codex,2026-08-12,1
 530900,researched,destinations/中国/云南省/临沧市.md,1803590,codex,2026-08-12,1
 532301,researched,destinations/中国/云南省/楚雄市.md,1814760,codex,2026-07-31,1
+532501,researched,destinations/中国/云南省/个旧市.md,1810240,codex,2026-08-13,1
 532502,researched,destinations/中国/云南省/开远市.md,1804850,codex,2026-08-12,1
 532503,researched,destinations/中国/云南省/蒙自市.md,13512502,codex,2026-07-31,1
 532601,researched,destinations/中国/云南省/文山市.md,8505006,codex,2026-08-11,1
@@ -389,4 +394,5 @@ administrative_code,status,page_path,geonameid,reviewed_by,reviewed_at,quality_g
 654201,researched,destinations/中国/新疆维吾尔自治区/塔城市.md,1529167,codex,2026-08-12,1
 654301,researched,destinations/中国/新疆维吾尔自治区/阿勒泰市.md,1529651,codex,2026-08-12,1
 659001,researched,destinations/中国/新疆维吾尔自治区/石河子市.md,1529195,codex,2026-07-31,1
+659003,researched,destinations/中国/新疆维吾尔自治区/图木舒克市.md,12022102,codex,2026-08-13,1
 659004,researched,destinations/中国/新疆维吾尔自治区/五家渠市.md,1529085,codex,2026-08-12,1

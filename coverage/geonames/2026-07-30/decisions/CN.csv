@@ -462,3 +462,15 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1281105,researched,destinations/中国/青海省/玉树市.md,,,,,,codex,2026-08-12,1
 2037222,researched,destinations/中国/吉林省/公主岭市.md,,,,,,codex,2026-08-12,1
 8417607,merged,,8417605,destinations/中国/重庆市/合川区.md,merged_urban_section,固定Nanjin记录对应合川区南津街道城市点；合川规范页已实质覆盖南津街主城区域具体景点完整路线住宿和交通,https://www.hc.gov.cn/,codex,2026-08-12,1
+2036776,researched,destinations/中国/吉林省/桦甸市.md,,,,,,codex,2026-08-13,1
+2037335,researched,destinations/中国/吉林省/扶余市.md,,,,,,codex,2026-08-13,1
+1815427,researched,destinations/中国/安徽省/巢湖市.md,,,,,,codex,2026-08-13,1
+12489673,researched,destinations/中国/重庆市/梁平区.md,,,,,,codex,2026-08-13,1
+1922014,researched,destinations/中国/福建省/武夷山市.md,,,,,,codex,2026-08-13,1
+1810240,researched,destinations/中国/云南省/个旧市.md,,,,,,codex,2026-08-13,1
+2036597,researched,destinations/中国/黑龙江省/加格达奇区.md,,,,,,codex,2026-08-13,1
+12022102,researched,destinations/中国/新疆维吾尔自治区/图木舒克市.md,,,,,,codex,2026-08-13,1
+2034996,merged,,1797595,destinations/中国/河北省/秦皇岛市.md,merged_urban_section,固定Shanhaiguan记录对应秦皇岛市山海关城市内部点；秦皇岛规范页已实质覆盖山海关区域具体景点完整路线住宿和交通,https://www.shanhaiguan.gov.cn/,codex,2026-08-13,1
+10020191,merged,,8533133,destinations/中国/贵州省/六盘水市.md,merged_urban_section,固定Liuzhi记录对应六盘水市六枝特区城市内部点；六盘水规范页已实质覆盖六枝区域具体景点完整路线住宿和交通,https://www.liuzhi.gov.cn/,codex,2026-08-13,1
+1805857,merged,,1812521,destinations/中国/广东省/陆丰市.md,merged_urban_section,固定Jieshi记录对应陆丰市碣石镇城市内部点；陆丰规范页已实质覆盖碣石区域具体景点完整路线住宿和交通,https://www.lufengshi.gov.cn/lfsjsz/,codex,2026-08-13,1
+1794806,merged,,12324556,destinations/中国/宁夏回族自治区/石嘴山市.md,merged_urban_section,固定Huinong记录对应石嘴山市惠农城市内部点；石嘴山规范页已实质覆盖惠农区域具体景点完整路线住宿和交通,https://www.huinong.gov.cn/,codex,2026-08-13,1

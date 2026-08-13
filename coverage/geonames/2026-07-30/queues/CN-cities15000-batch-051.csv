@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-051,2036776,Huadian,PPLA3,吉林省,destinations/中国/吉林省/桦甸市.md,吉林市代管县级城市的黄金文化红石湖森林山地与独立住宿交通尺度；法定实体精确连接固定记录
+CN-cities15000-051,2037335,Fuyu,PPL,吉林省,destinations/中国/吉林省/扶余市.md,松原代管县级城市的辽金碑刻湿地平原乡村与独立住宿交通尺度；固定居民点与法定实体连接的行政记录粒度不同
+CN-cities15000-051,1815427,Chaohu,PPL,安徽省,destinations/中国/安徽省/巢湖市.md,合肥代管县级城市的湖岸岛屿洞穴山地与独立住宿交通尺度；固定居民点与法定实体连接的行政记录粒度不同
+CN-cities15000-051,12489673,Liangping,PPLA3,重庆市,destinations/中国/重庆市/梁平区.md,重庆市辖区的平坝湿地禅宗古建古寨竹海非遗与独立旅行尺度；区级指南不计入法定城市分母
+CN-cities15000-051,1922014,Wuyishan,PPLA3,福建省,destinations/中国/福建省/武夷山市.md,南平代管县级城市的丹霞山水九曲溪理学岩茶世界遗产与独立住宿交通尺度；法定实体精确连接固定记录
+CN-cities15000-051,1810240,Gejiu,PPLA3,云南省,destinations/中国/云南省/个旧市.md,红河州县级城市的高原湖城锡工业山地温泉乡村与独立住宿交通尺度；法定实体精确连接固定记录
+CN-cities15000-051,2036597,Jiagedaqi,PPL,黑龙江省,destinations/中国/黑龙江省/加格达奇区.md,大兴安岭地区驻地的林区门户民俗湿地森林冰雪与独立旅行尺度；区级指南不计入法定城市分母
+CN-cities15000-051,12022102,Tumxuk,PPLA2,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/图木舒克市.md,第三师师市合一县级城市的屯垦历史唐王城永安湖绿洲胡杨与独立住宿交通尺度；固定城市点与法定实体连接的行政记录粒度不同
