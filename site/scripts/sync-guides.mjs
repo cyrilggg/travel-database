@@ -34,6 +34,11 @@ const legalCityCentersPath = path.join(
   "data",
   "cn-legal-city-centers.csv",
 );
+const taiwanCityCentersPath = path.join(
+  siteRoot,
+  "data",
+  "tw-city-centers.csv",
+);
 
 class SourceRefUnavailableError extends Error {}
 
@@ -143,12 +148,14 @@ async function loadCoordinates() {
   return coordinates;
 }
 
-async function loadLegalMapCities(guides) {
-  const [inventoryCsv, decisionsCsv, centersCsv] = await Promise.all([
-    readSourceFile(legalCityInventoryPath),
-    readSourceFile(legalCityDecisionsPath),
-    readFile(legalCityCentersPath, "utf8"),
-  ]);
+async function loadMapCities(guides) {
+  const [inventoryCsv, decisionsCsv, centersCsv, taiwanCitiesCsv] =
+    await Promise.all([
+      readSourceFile(legalCityInventoryPath),
+      readSourceFile(legalCityDecisionsPath),
+      readFile(legalCityCentersPath, "utf8"),
+      readFile(taiwanCityCentersPath, "utf8"),
+    ]);
   const decisionsByCode = new Map(
     parseCsv(decisionsCsv).map((row) => [row.administrative_code, row]),
   );
@@ -157,6 +164,9 @@ async function loadLegalMapCities(guides) {
   );
   const guidesBySourcePath = new Map(
     guides.map((guide) => [guide.sourcePath, guide]),
+  );
+  const guidesByGeonamesId = new Map(
+    guides.map((guide) => [guide.geonamesId, guide]),
   );
   const mappedGuideIds = new Set();
 
@@ -189,6 +199,27 @@ async function loadLegalMapCities(guides) {
     };
   });
 
+  const taiwanCities = parseCsv(taiwanCitiesCsv).map((city) => {
+    const guide = city.geonames_id
+      ? guidesByGeonamesId.get(city.geonames_id)
+      : undefined;
+    if (guide) mappedGuideIds.add(guide.id);
+
+    return {
+      id: `taiwan-${city.administrative_code}`,
+      administrativeCode: `tw:${city.administrative_code}`,
+      city: city.name,
+      adminArea: city.admin_area,
+      cityLevel: `taiwan_${city.city_level}`,
+      coverage: guide ? 1 : 0,
+      ...(guide ? { guideId: guide.id } : {}),
+      coordinates: {
+        longitude: Number(city.longitude),
+        latitude: Number(city.latitude),
+      },
+    };
+  });
+
   const additionalGuideDestinations = guides
     .filter((guide) => !mappedGuideIds.has(guide.id))
     .map((guide) => ({
@@ -202,7 +233,11 @@ async function loadLegalMapCities(guides) {
       coordinates: guide.coordinates,
     }));
 
-  const mapCities = [...legalCities, ...additionalGuideDestinations];
+  const mapCities = [
+    ...legalCities,
+    ...taiwanCities,
+    ...additionalGuideDestinations,
+  ];
   const visibleGuideIds = mapCities.flatMap((city) =>
     city.guideId ? [city.guideId] : [],
   );
@@ -598,7 +633,7 @@ async function syncGuides() {
     );
   }
 
-  const mapCities = await loadLegalMapCities(cityResult.guides);
+  const mapCities = await loadMapCities(cityResult.guides);
   const generatedModule = buildGeneratedModule(
     cityResult.guides,
     mapCities,
