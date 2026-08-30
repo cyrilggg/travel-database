@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-066,2036069,Linjiang,PPLA3,吉林省,destinations/中国/吉林省/临江市.md,白山代管县级城市的鸭绿江主城松岭雪村沿边公路与独立住宿交通尺度；法定实体同时连接城市点与行政记录
+CN-cities15000-066,1800519,Mingguang,PPLA3,安徽省,destinations/中国/安徽省/明光市.md,滁州代管县级城市的女山湖女山地质八岭湖与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-066,1787873,Xunyang,PPL,陕西省,destinations/中国/陕西省/旬阳市.md,安康代管县级城市的汉江主城蜀河古镇与独立住宿交通尺度；固定驻地点与法定旬阳实体分属不同GeoNames粒度
+CN-cities15000-066,1804451,Lianyuan,PPLA3,湖南省,destinations/中国/湖南省/涟源市.md,娄底代管县级城市的湄江岩溶龙山森林与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-066,2038482,Muling,PPL,黑龙江省,destinations/中国/黑龙江省/穆棱市.md,牡丹江代管县级城市的八面通主城抗联遗址六峰湖与独立住宿交通尺度；固定驻地点与法定穆棱实体分属不同GeoNames粒度
+CN-cities15000-066,2037611,Dongning,PPLA3,黑龙江省,destinations/中国/黑龙江省/东宁市.md,牡丹江代管县级城市的东宁要塞三岔口沿边公路与独立住宿交通尺度；固定城市点与法定实体所连行政记录分属不同GeoNames粒度
+CN-cities15000-066,1786759,Yicheng,PPL,湖北省,destinations/中国/湖北省/宜城市.md,襄阳代管县级城市的楚皇城汉江主城楚文化与独立住宿交通尺度；固定驻地点与法定宜城实体分属不同GeoNames粒度
+CN-cities15000-066,1816924,Langzhong,PPLA3,四川省,destinations/中国/四川省/阆中市.md,南充代管县级城市的古城嘉陵江春节文化与独立住宿交通尺度；法定实体精确连接固定城市点
