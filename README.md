@@ -728,6 +728,13 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [天津市](./destinations/中国/天津市/README.md) | [滨海新区](./destinations/中国/天津市/滨海新区.md) | 海洋文博、大沽海防、东疆亲海与汉沽航母 | `researched` |
 | [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [綦江](./destinations/中国/重庆市/綦江区.md) | 古剑山、老瀛山、东溪古镇与避暑度假 | `researched` |
 | [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [璧山](./destinations/中国/重庆市/璧山区.md) | 秀湖、枫香湖、古道湾与城市公园慢游 | `researched` |
+| [中国](./destinations/中国/README.md) | [北京市](./destinations/中国/北京市/README.md) | [门头沟](./destinations/中国/北京市/门头沟区.md) | 潭柘寺、戒台寺、京西古道与古村山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [沛县](./destinations/中国/江苏省/沛县.md) | 汉文化、城市公园与微山湖湿地 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [正定](./destinations/中国/河北省/正定县.md) | 隆兴寺、古城墙、寺塔群与荣国府 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [垫江](./destinations/中国/重庆市/垫江县.md) | 牡丹园群、湿地湖泊与花乡慢游 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [镇平](./destinations/中国/河南省/镇平县.md) | 玉雕产业、红色文化、山寺与农旅 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [平武](./destinations/中国/四川省/平武县.md) | 报恩寺、王朗、白马文化与山谷生态 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [丰都](./destinations/中国/重庆市/丰都县.md) | 名山民俗、洞穴地质与南天湖度假 | `researched` |
 
 ## 项目维护
 

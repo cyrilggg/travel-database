@@ -726,3 +726,11 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 6958503,out_of_scope,,,,source_data_error,固定Gongheyong记录名称坐标实际对应宝安区共和涌河道；深圳官方河道代码表将共和涌列为河流而非人口聚居点,https://amr.sz.gov.cn/attachment/1/1436/1436621/11237623.pdf,codex,2026-09-01,1
 1816329,researched,destinations/中国/重庆市/璧山区.md,,,,,,codex,2026-09-01,1
 1787592,merged,,1814544,destinations/中国/上海市/宝山区.md,merged_urban_section,固定Yanghang记录对应宝山区杨行镇；宝山指南已覆盖杨行区内关系白沙公园田园路线住宿与轨道公交,https://xxgk.shbsq.gov.cn/article.html?infoid=c2e54c53-cfa6-4879-a412-818b0737f078,codex,2026-09-01,1
+1800657,researched,destinations/中国/北京市/门头沟区.md,,,,,,codex,2026-09-01,1
+1798972,researched,destinations/中国/江苏省/沛县.md,,,,,,codex,2026-09-01,1
+1784712,researched,destinations/中国/河北省/正定县.md,,,,,,codex,2026-09-01,1
+1803842,merged,,1791214,destinations/中国/广西壮族自治区/合浦县.md,canonical_admin_record,固定Hepu记录是合浦县行政实体对应记录；既有合浦县指南已按法定县域覆盖县城文博古城海丝遗产星岛湖红树林与完整路线住宿交通,https://www.wikidata.org/wiki/Q1268277,codex,2026-09-01,1
+1809467,researched,destinations/中国/重庆市/垫江县.md,,,,,,codex,2026-09-01,1
+1784617,researched,destinations/中国/河南省/镇平县.md,,,,,,codex,2026-09-01,1
+12492669,researched,destinations/中国/四川省/平武县.md,,,,,,codex,2026-09-01,1
+8416626,researched,destinations/中国/重庆市/丰都县.md,,,,,,codex,2026-09-01,1
