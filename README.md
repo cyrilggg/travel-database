@@ -707,6 +707,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [建水](./destinations/中国/云南省/建水县.md) | 临安古城、文庙、米轨乡村、团山与紫陶 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [坦洲](./destinations/中国/广东省/坦洲镇.md) | 咸水歌、磨刀门水乡、特色水果与农业旅游 | `researched` |
 | [中国](./destinations/中国/README.md) | [上海市](./destinations/中国/上海市/README.md) | [宝山](./destinations/中国/上海市/宝山区.md) | 吴淞口、抗战纪念、工业文博、顾村与罗店 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [凤凰](./destinations/中国/湖南省/凤凰县.md) | 凤凰古城、沱江、奇梁洞、南方长城与苗乡 | `researched` |
+| [中国](./destinations/中国/README.md) | [上海市](./destinations/中国/上海市/README.md) | [奉贤](./destinations/中国/上海市/奉贤区.md) | 上海之鱼、青溪、庄行、森林公园与滨海 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [霍城](./destinations/中国/新疆维吾尔自治区/霍城县.md) | 惠远古城、薰衣草、福寿山、沙漠与果子沟 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [彭泽](./destinations/中国/江西省/彭泽县.md) | 龙宫洞、马当要塞、长江历史与桃红岭 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [阳朔](./destinations/中国/广西壮族自治区/阳朔县.md) | 遇龙河、十里画廊、兴坪、漓江与西街 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [临朐](./destinations/中国/山东省/临朐县.md) | 沂山、老龙湾、石门坊与山旺地质遗产 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [新源](./destinations/中国/新疆维吾尔自治区/新源县.md) | 那拉提、吐尔根杏花谷、湿地与肖尔布拉克 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [唐河](./destinations/中国/河南省/唐河县.md) | 冯友兰纪念、唐河湿地、石柱山与乡村花事 | `researched` |
 
 ## 项目维护
 
