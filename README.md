@@ -781,6 +781,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [河间](./destinations/中国/河北省/河间市.md) | 河间府署、地方文博、光明戏院与驴肉火烧 | `researched` |
 | [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [霸州](./destinations/中国/河北省/霸州市.md) | 益津书院、地方收藏、戏曲文化与胜芳古镇 | `researched` |
 | [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [深州](./destinations/中国/河北省/深州市.md) | 地方博物馆、盈亿义仓、形意拳与蜜桃乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [盖州](./destinations/中国/辽宁省/盖州市.md) | 古城文物、万福赤山、双台温泉与辽南海岸 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [集安](./destinations/中国/吉林省/集安市.md) | 高句丽世界遗产、鸭绿江国门、五女峰与边境饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [虎林](./destinations/中国/黑龙江省/虎林市.md) | 虎头历史、珍宝岛湿地、乌苏里江与东方红森林 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [抚远](./destinations/中国/黑龙江省/抚远市.md) | 华夏东极、黑瞎子岛湿地、赫哲文化与流域鱼类 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [宁安](./destinations/中国/黑龙江省/宁安市.md) | 渤海上京遗址、镜泊湖、火山森林与朝鲜族乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [五大连池](./destinations/中国/黑龙江省/五大连池市.md) | 新期火山、熔岩台地、堰塞湖、温泊与冷矿泉 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [漠河](./destinations/中国/黑龙江省/漠河市.md) | 北极村、龙江第一湾、乌苏里浅滩与森林防灾 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [桐乡](./destinations/中国/浙江省/桐乡市.md) | 乌镇、濮院、丰子恺文化、蚕桑与时尚产业 | `researched` |
 
 ## 项目维护
 
