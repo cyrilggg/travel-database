@@ -756,6 +756,9 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [嘉善](./destinations/中国/浙江省/嘉善县.md) | 西塘古镇、大云度假区、祥符荡与姚庄水乡 | `researched` |
 | [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [泸县](./destinations/中国/四川省/泸县.md) | 宋代石刻、玉蟾山、龙脑桥与龙桥群 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [揭西](./destinations/中国/广东省/揭西县.md) | 黄满寨、大北山、棉湖古镇与三山国王祖庙 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [南头镇](./destinations/中国/广东省/南头镇.md) | 罐头工业更新、水上运动公园、非遗馆与家电展陈 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [甲子镇](./destinations/中国/广东省/甲子镇.md) | 待渡山、甲秀楼、瀛江港镇、海岸与甲子鱼丸 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [莎车](./destinations/中国/新疆维吾尔自治区/莎车县.md) | 莎车老城、十二木卡姆、博物馆、湿地与叶尔羌河 | `researched` |
 
 ## 项目维护
 
