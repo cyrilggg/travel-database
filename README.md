@@ -735,6 +735,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [镇平](./destinations/中国/河南省/镇平县.md) | 玉雕产业、红色文化、山寺与农旅 | `researched` |
 | [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [平武](./destinations/中国/四川省/平武县.md) | 报恩寺、王朗、白马文化与山谷生态 | `researched` |
 | [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [丰都](./destinations/中国/重庆市/丰都县.md) | 名山民俗、洞穴地质与南天湖度假 | `researched` |
+| [中国](./destinations/中国/README.md) | [吉林省](./destinations/中国/吉林省/README.md) | [九台](./destinations/中国/吉林省/九台区.md) | 冰雪温泉、乡村红色与暖季山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [增城](./destinations/中国/广东省/增城区.md) | 白水寨、增江水岸、老街与温泉 | `researched` |
+| [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [霞浦](./destinations/中国/福建省/霞浦县.md) | 海岸光影、滩涂、溪谷与离岛 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [潮安](./destinations/中国/广东省/潮安区.md) | 龙湖古寨、凤凰茶山与韩江 | `researched` |
+| [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [宁洱](./destinations/中国/云南省/宁洱哈尼族彝族自治县.md) | 茶马古道、磨黑古镇与民族团结 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [丰县](./destinations/中国/江苏省/丰县.md) | 汉文化、黄河故道湿地与梨果农旅 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [南票](./destinations/中国/辽宁省/南票区.md) | 考古、工业记忆、长城山地与乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [宜州](./destinations/中国/广西壮族自治区/宜州区.md) | 刘三姐歌谣、下枧河、古镇与乡村 | `researched` |
 
 ## 项目维护
 
