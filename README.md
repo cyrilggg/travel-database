@@ -749,6 +749,13 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [澄海](./destinations/中国/广东省/澄海区.md) | 前美侨乡、樟林古港、莲华与玩具产业 | `researched` |
 | [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [苏家屯](./destinations/中国/辽宁省/苏家屯区.md) | 铁路陈列馆、白清寨、马耳山与杨城寨 | `researched` |
 | [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [红岗](./destinations/中国/黑龙江省/红岗区.md) | 铁人一口井、油田社区、百湖生态与工业遗产 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [五华](./destinations/中国/广东省/五华县.md) | 球王故里、长乐学宫、益塘水库与七目嶂 | `researched` |
+| [中国](./destinations/中国/README.md) | [西藏自治区](./destinations/中国/西藏自治区/README.md) | [堆龙德庆](./destinations/中国/西藏自治区/堆龙德庆区.md) | 拉萨西站、东嘎新城、德吉藏家与楚布沟 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [合江](./destinations/中国/四川省/合江县.md) | 合江县城、尧坝古镇、福宝古镇与法王寺 | `researched` |
+| [中国](./destinations/中国/README.md) | [上海市](./destinations/中国/上海市/README.md) | [青浦](./destinations/中国/上海市/青浦区.md) | 崧泽遗址、朱家角、淀山湖与青西三镇 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [嘉善](./destinations/中国/浙江省/嘉善县.md) | 西塘古镇、大云度假区、祥符荡与姚庄水乡 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [泸县](./destinations/中国/四川省/泸县.md) | 宋代石刻、玉蟾山、龙脑桥与龙桥群 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [揭西](./destinations/中国/广东省/揭西县.md) | 黄满寨、大北山、棉湖古镇与三山国王祖庙 | `researched` |
 
 ## 项目维护
 

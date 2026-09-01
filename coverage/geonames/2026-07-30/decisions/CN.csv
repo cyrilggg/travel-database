@@ -750,3 +750,11 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 2036876,researched,destinations/中国/黑龙江省/红岗区.md,,,,,,codex,2026-09-01,1
 1786395,merged,,8397878,destinations/中国/重庆市/奉节县.md,merged_urban_section,固定Yong'an记录对应奉节县永安街道；奉节指南已覆盖县城关系白帝夔门三峡之巅天坑地缝以及七条路线住宿与交通,https://www.wikidata.org/wiki/Q1362044,codex,2026-09-01,1
 8406214,merged,,8416626,destinations/中国/重庆市/丰都县.md,merged_urban_section,固定Sanhe记录对应丰都县三合街道；丰都指南已覆盖县城关系名山雪玉洞南天湖以及七条路线住宿与交通,https://www.wikidata.org/wiki/Q737865,codex,2026-09-01,1
+1794371,researched,destinations/中国/广东省/五华县.md,,,,,,codex,2026-09-01,1
+1785916,merged,,1814544,destinations/中国/上海市/宝山区.md,merged_urban_section,固定Yuepu记录对应宝山区月浦镇；宝山指南已覆盖区内关系沪北乡野花漫公园与月浦顽酷乡村替代路线以及住宿和末段交通,https://xxgk.shbsq.gov.cn/article.html?infoid=c2e54c53-cfa6-4879-a412-818b0737f078,codex,2026-09-01,1
+6559683,researched,destinations/中国/西藏自治区/堆龙德庆区.md,,,,,,codex,2026-09-01,1
+1808612,researched,destinations/中国/四川省/合江县.md,,,,,,codex,2026-09-01,1
+7845495,researched,destinations/中国/上海市/青浦区.md,,,,,,codex,2026-09-01,1
+7303248,researched,destinations/中国/浙江省/嘉善县.md,,,,,,codex,2026-09-01,1
+1811028,researched,destinations/中国/四川省/泸县.md,,,,,,codex,2026-09-01,1
+1808336,researched,destinations/中国/广东省/揭西县.md,,,,,,codex,2026-09-01,1
