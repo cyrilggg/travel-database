@@ -759,6 +759,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [南头镇](./destinations/中国/广东省/南头镇.md) | 罐头工业更新、水上运动公园、非遗馆与家电展陈 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [甲子镇](./destinations/中国/广东省/甲子镇.md) | 待渡山、甲秀楼、瀛江港镇、海岸与甲子鱼丸 | `researched` |
 | [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [莎车](./destinations/中国/新疆维吾尔自治区/莎车县.md) | 莎车老城、十二木卡姆、博物馆、湿地与叶尔羌河 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [海安](./destinations/中国/江苏省/海安市.md) | 青墩考古、县域文博、苏中抗战史与江海饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [靖江](./destinations/中国/江苏省/靖江市.md) | 马洲城市史、孤山、滨江空间与地方饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [丹阳](./destinations/中国/江苏省/丹阳市.md) | 齐梁石刻、季子文化、眼镜产业与地方文博 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [句容](./destinations/中国/江苏省/句容市.md) | 茅山、宝华山、赤山湖与丘陵农业 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [扬中](./destinations/中国/江苏省/扬中市.md) | 江岛地理、渡江文化、圩田生态与河豚饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [建德](./destinations/中国/浙江省/建德市.md) | 新安江、严州古城、大慈岩、新叶古村与灵栖洞 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [温岭](./destinations/中国/浙江省/温岭市.md) | 长屿硐天、石塘海岸、方山地质与海鲜饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [临海](./destinations/中国/浙江省/临海市.md) | 台州府城、紫阳街、桃渚海防与括苍山 | `researched` |
 
 ## 项目维护
 
