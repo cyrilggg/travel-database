@@ -767,6 +767,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [建德](./destinations/中国/浙江省/建德市.md) | 新安江、严州古城、大慈岩、新叶古村与灵栖洞 | `researched` |
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [温岭](./destinations/中国/浙江省/温岭市.md) | 长屿硐天、石塘海岸、方山地质与海鲜饮食 | `researched` |
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [临海](./destinations/中国/浙江省/临海市.md) | 台州府城、紫阳街、桃渚海防与括苍山 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [晋州](./destinations/中国/河北省/晋州市.md) | 魏征文化、周家庄、鸭梨产业与滹沱河 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [遵化](./destinations/中国/河北省/遵化市.md) | 清东陵、明长城、燕山湖谷与冀东抗战史 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [迁安](./destinations/中国/河北省/迁安市.md) | 山叶口地质、白羊峪长城、滦河与矿业城市转型 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [滦州](./destinations/中国/河北省/滦州市.md) | 地方文博、评剧、滦州古城与滦河 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [武安](./destinations/中国/河北省/武安市.md) | 东太行、京娘湖、七步沟、磁山文化与地方戏曲 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [涿州](./destinations/中国/河北省/涿州市.md) | 范阳地方史、双塔、永济桥、三义宫与影视文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [安国](./destinations/中国/河北省/安国市.md) | 药王庙、传统药市、数字中药都与药用植物 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [高碑店](./destinations/中国/河北省/高碑店市.md) | 开善寺、督亢历史、门窗工业与白沟商贸 | `researched` |
 
 ## 项目维护
 
