@@ -691,6 +691,12 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [澜沧](./destinations/中国/云南省/澜沧拉祜族自治县.md) | 景迈山古茶林、翁基糯干与老达保 | `researched` |
 | [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [石柱](./destinations/中国/重庆市/石柱土家族自治县.md) | 黄水、大风堡、千野草场与西沱古镇 | `researched` |
 | [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [云阳](./destinations/中国/重庆市/云阳县.md) | 张飞庙、三峡梯城、龙缸与恐龙化石 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [两江新区](./destinations/中国/重庆市/两江新区.md) | 观音桥、江北嘴、中央公园、龙兴与玉峰山 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [伊宁县](./destinations/中国/新疆维吾尔自治区/伊宁县.md) | 托乎拉苏、天山花海、杏园与天鹅泉 | `researched` |
+| [中国](./destinations/中国/README.md) | [甘肃省](./destinations/中国/甘肃省/README.md) | [文县](./destinations/中国/甘肃省/文县.md) | 天池、白马河民俗、碧口古镇与茶园 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [武隆](./destinations/中国/重庆市/武隆区.md) | 天生三桥、仙女山、芙蓉洞与龙水峡地缝 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [酉阳](./destinations/中国/重庆市/酉阳土家族苗族自治县.md) | 桃花源、龚滩古镇、乌江画廊与龙潭 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [大足](./destinations/中国/重庆市/大足区.md) | 宝顶山与北山石刻、昌州古城与五金文化 | `researched` |
 
 ## 项目维护
 
