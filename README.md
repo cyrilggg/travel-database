@@ -775,6 +775,12 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [涿州](./destinations/中国/河北省/涿州市.md) | 范阳地方史、双塔、永济桥、三义宫与影视文化 | `researched` |
 | [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [安国](./destinations/中国/河北省/安国市.md) | 药王庙、传统药市、数字中药都与药用植物 | `researched` |
 | [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [高碑店](./destinations/中国/河北省/高碑店市.md) | 开善寺、督亢历史、门窗工业与白沟商贸 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [平泉](./destinations/中国/河北省/平泉市.md) | 地方文博、契丹文化、辽河源、菌菇产业与乡村线路 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [泊头](./destinations/中国/河北省/泊头市.md) | 清真寺建筑、地方文博、红色遗址与平原产业记忆 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [黄骅](./destinations/中国/河北省/黄骅市.md) | 海盐文化、郛堤城遗址、沿海湿地与港城产业 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [河间](./destinations/中国/河北省/河间市.md) | 河间府署、地方文博、光明戏院与驴肉火烧 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [霸州](./destinations/中国/河北省/霸州市.md) | 益津书院、地方收藏、戏曲文化与胜芳古镇 | `researched` |
+| [中国](./destinations/中国/README.md) | [河北省](./destinations/中国/河北省/README.md) | [深州](./destinations/中国/河北省/深州市.md) | 地方博物馆、盈亿义仓、形意拳与蜜桃乡村 | `researched` |
 
 ## 项目维护
 
