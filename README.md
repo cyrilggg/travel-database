@@ -683,6 +683,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [富蕴](./destinations/中国/新疆维吾尔自治区/富蕴县.md) | 可可托海、三号矿脉、额尔齐斯大峡谷与滑雪 | `researched` |
 | [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [二连浩特](./destinations/中国/内蒙古自治区/二连浩特市.md) | 国门、恐龙化石、伊林驿站与口岸文化 | `researched` |
 | [中国](./destinations/中国/README.md) | [甘肃省](./destinations/中国/甘肃省/README.md) | [玉门](./destinations/中国/甘肃省/玉门市.md) | 油田工业史、老君庙、昌马与戈壁地质 | `researched` |
+| [中国](./destinations/中国/README.md) | [甘肃省](./destinations/中国/甘肃省/README.md) | [秦安](./destinations/中国/甘肃省/秦安县.md) | 大地湾史前考古、女娲文化、街亭与乡村非遗 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [合浦](./destinations/中国/广西壮族自治区/合浦县.md) | 汉代海丝考古、海丝首港、南珠与红树林 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [长寿](./destinations/中国/重庆市/长寿区.md) | 三倒拐、菩提山古镇、长寿湖与水电史 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [彭水](./destinations/中国/重庆市/彭水苗族土家族自治县.md) | 蚩尤九黎城、阿依河、摩围山与乌江画廊 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [奉节](./destinations/中国/重庆市/奉节县.md) | 白帝城、瞿塘峡、三峡之巅与天坑地缝 | `researched` |
+| [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [澜沧](./destinations/中国/云南省/澜沧拉祜族自治县.md) | 景迈山古茶林、翁基糯干与老达保 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [石柱](./destinations/中国/重庆市/石柱土家族自治县.md) | 黄水、大风堡、千野草场与西沱古镇 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [云阳](./destinations/中国/重庆市/云阳县.md) | 张飞庙、三峡梯城、龙缸与恐龙化石 | `researched` |
 
 ## 项目维护
 

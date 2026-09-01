@@ -665,3 +665,12 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 2037485,researched,destinations/中国/内蒙古自治区/二连浩特市.md,,,,,,codex,2026-09-01,1
 13535802,researched,destinations/中国/甘肃省/玉门市.md,,,,,,codex,2026-09-01,1
 1280625,merged,,1281003,destinations/中国/青海省/茫崖市.md,merged_urban_section,固定Mangnai Zhen记录对应茫崖市另一城市点；茫崖指南已覆盖区域关系具体景点完整路线住宿和交通,https://paper.people.com.cn/rmrbhwb/pc/attachement/202602/04/09bf2736-03f9-4943-acf3-2116fe90fb5c.pdf,codex,2026-09-01,1
+1817306,researched,destinations/中国/甘肃省/秦安县.md,,,,,,codex,2026-09-01,1
+1791214,researched,destinations/中国/广西壮族自治区/合浦县.md,,,,,,codex,2026-09-01,1
+8416213,researched,destinations/中国/重庆市/长寿区.md,,,,,,codex,2026-09-01,1
+1810552,researched,destinations/中国/重庆市/彭水苗族土家族自治县.md,,,,,,codex,2026-09-01,1
+8397878,researched,destinations/中国/重庆市/奉节县.md,,,,,,codex,2026-09-01,1
+12358503,researched,destinations/中国/云南省/澜沧拉祜族自治县.md,,,,,,codex,2026-09-01,1
+1813315,researched,destinations/中国/重庆市/石柱土家族自治县.md,,,,,,codex,2026-09-01,1
+8400139,researched,destinations/中国/重庆市/云阳县.md,,,,,,codex,2026-09-01,1
+8399052,merged,,8397878,destinations/中国/重庆市/奉节县.md,merged_urban_section,固定Fengping记录对应奉节县内部城市点；奉节指南已覆盖县域关系具体景点完整路线住宿和交通,https://www.cq.gov.cn/ywdt/zwhd/qxdt/202305/t20230529_12005403.html,codex,2026-09-01,1
