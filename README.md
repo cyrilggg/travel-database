@@ -803,6 +803,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [卫辉](./destinations/中国/河南省/卫辉市.md) | 古卫州城、望京楼、比干文化与太行山前 | `researched` |
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [辉县](./destinations/中国/河南省/辉县市.md) | 百泉、八里沟、万仙山、宝泉与南太行村落 | `researched` |
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [长垣](./destinations/中国/河南省/长垣市.md) | 烹饪文化、地方文博、学堂岗圣庙与沿黄湿地 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [新密](./destinations/中国/河南省/新密市.md) | 密县县衙、打虎亭汉墓、伏羲山与史前考古 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [登封](./destinations/中国/河南省/登封市.md) | 少林寺、天地之中历史建筑群、观星台与嵩山 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [沁阳](./destinations/中国/河南省/沁阳市.md) | 神农山、朱载堉音乐科学、地方文博与怀庆古建 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [孟州](./destinations/中国/河南省/孟州市.md) | 韩愈文化、莫沟窑洞村落、黄河湿地与桑坡商贸 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [长葛](./destinations/中国/河南省/长葛市.md) | 葛天乐舞、钟繇书法、双洎河湿地与佛耳湖 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [灵宝](./destinations/中国/河南省/灵宝市.md) | 函谷关、汉山、燕子山、黄帝文化与苹果果乡 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [永城](./destinations/中国/河南省/永城市.md) | 芒砀山汉文化、陈官庄、日月湖与面粉产业 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [项城](./destinations/中国/河南省/项城市.md) | 南顿故城、袁寨古民居、近代人物与地方非遗 | `researched` |
 
 ## 项目维护
 
