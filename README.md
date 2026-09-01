@@ -795,6 +795,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [永安](./destinations/中国/福建省/永安市.md) | 桃源洞丹霞、鳞隐石林、安贞堡与抗战旧址 | `researched` |
 | [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [石狮](./destinations/中国/福建省/石狮市.md) | 永宁古卫城、海丝双塔、黄金海岸与服装产业 | `researched` |
 | [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [漳平](./destinations/中国/福建省/漳平市.md) | 永福樱花茶园、九鹏溪、水仙茶与天台山森林 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [荥阳](./destinations/中国/河南省/荥阳市.md) | 青台考古、广武秦汉地景、黄河文化与环翠峪 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [新郑](./destinations/中国/河南省/新郑市.md) | 郑韩故城、郑国车马坑、黄帝文化与裴李岗考古 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [舞钢](./destinations/中国/河南省/舞钢市.md) | 冶铁城市、石漫滩、二郎山、灯台架与峡谷森林 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [汝州](./destinations/中国/河南省/汝州市.md) | 汝瓷、张公巷窑址、风穴寺与伏牛山东缘山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [林州](./destinations/中国/河南省/林州市.md) | 红旗渠、太行大峡谷、石板岩与山地村落 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [卫辉](./destinations/中国/河南省/卫辉市.md) | 古卫州城、望京楼、比干文化与太行山前 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [辉县](./destinations/中国/河南省/辉县市.md) | 百泉、八里沟、万仙山、宝泉与南太行村落 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [长垣](./destinations/中国/河南省/长垣市.md) | 烹饪文化、地方文博、学堂岗圣庙与沿黄湿地 | `researched` |
 
 ## 项目维护
 
