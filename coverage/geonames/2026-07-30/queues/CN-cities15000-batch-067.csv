@@ -1,0 +1,9 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-067,1801455,Zhijiang,PPLA3,湖北省,destinations/中国/湖北省/枝江市.md,宜昌代管县级城市的长江城区田园花景柑橘农业与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-067,1529239,Sandaohezi,PPLA3,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/沙湾市.md,塔城地区县级城市的大盘鸡鹿角湾温泉与独立高山交通尺度；固定驻地点与法定沙湾实体所连行政记录分属不同GeoNames粒度
+CN-cities15000-067,1808106,Hongjiang,PPLA3,湖南省,destinations/中国/湖南省/洪江市.md,怀化代管县级城市的黔阳古城安江农校与独立双城住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-067,1806167,Jian'ou,PPLA3,福建省,destinations/中国/福建省/建瓯市.md,南平代管县级城市的建州古城北苑贡茶闽北山水与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-067,1808181,Hezuo,PPLA2,甘肃省,destinations/中国/甘肃省/合作市.md,甘南州府县级城市的宗教文化高原草原与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-067,1816868,Barkam,PPLA2,四川省,destinations/中国/四川省/马尔康市.md,阿坝州府县级城市的卓克基西索松岗与独立高原住宿交通尺度；法定实体同时连接固定城市点与行政记录
+CN-cities15000-067,1808981,Hancheng,PPLA3,陕西省,destinations/中国/陕西省/韩城市.md,渭南代管县级城市的古城司马迁祠党家村与独立住宿交通尺度；法定实体精确连接固定城市点
+CN-cities15000-067,2037913,Linghai,PPLA3,辽宁省,destinations/中国/辽宁省/凌海市.md,锦州代管县级城市的红色乡村山地温泉湿地与独立住宿交通尺度；固定城市点与法定实体经行政代码对齐

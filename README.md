@@ -659,6 +659,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [安陆](./destinations/中国/湖北省/安陆市.md) | 府河古城、李白文化、白兆山与银杏山地 | `researched` |
 | [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [桂平](./destinations/中国/广西壮族自治区/桂平市.md) | 西山、浔江、金田历史与龙潭山林 | `researched` |
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [海宁](./destinations/中国/浙江省/海宁市.md) | 盐官观潮、古城、名人故居与皮革产业 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [枝江](./destinations/中国/湖北省/枝江市.md) | 长江城市、同心花海、柑橘农业与田园项目 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [沙湾](./destinations/中国/新疆维吾尔自治区/沙湾市.md) | 沙湾大盘鸡、鹿角湾高山草原与温泉 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [洪江](./destinations/中国/湖南省/洪江市.md) | 黔阳古城、安江农校、雪峰山与稻作文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [建瓯](./destinations/中国/福建省/建瓯市.md) | 建州古城、建州博物馆、北苑贡茶与闽北饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [甘肃省](./destinations/中国/甘肃省/README.md) | [合作](./destinations/中国/甘肃省/合作市.md) | 米拉日巴佛阁、当周草原、美仁草原与高原适应 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [马尔康](./destinations/中国/四川省/马尔康市.md) | 卓克基—西索、松岗、嘉绒文化与高原河谷 | `researched` |
+| [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [韩城](./destinations/中国/陕西省/韩城市.md) | 韩城古城、司马迁祠、党家村与黄河地理 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [凌海](./destinations/中国/辽宁省/凌海市.md) | 牤牛屯前线指挥所、岩井寺、温泉与滨海湿地 | `researched` |
 
 ## 项目维护
 
