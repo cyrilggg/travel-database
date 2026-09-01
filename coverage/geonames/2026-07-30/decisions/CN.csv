@@ -656,3 +656,12 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1785805,merged,,1813171,destinations/中国/湖南省/张家界市.md,merged_urban_section,固定Wulingyuan记录对应张家界市武陵源区城市点；张家界指南已覆盖区域关系核心景区具体景点完整路线住宿和交通,https://whhlyt.hunan.gov.cn/whhlyt/wldhjqjd/202208/t20220825_27778600.html,codex,2026-09-01,1
 1280623,merged,,12358512,destinations/中国/云南省/芒市.md,merged_urban_section,固定Mangshi旧行政记录与规范勐焕城市点共同指向法定芒市；芒市指南已覆盖区域关系具体景点完整路线住宿和交通,https://www.wikidata.org/wiki/Q1023762,codex,2026-09-01,1
 13527318,out_of_scope,,,,source_data_error,固定CN记录的名称与坐标实际对应澳门风顺堂区；GeoNames将澳门作为MO独立数据分区且本工程CN分母不纳入澳门记录,https://bo.dsaj.gov.mo/bo/i/91/16/declei26_cn.asp?printer=1,codex,2026-09-01,1
+1281003,researched,destinations/中国/青海省/茫崖市.md,,,,,,codex,2026-09-01,1
+1280003,researched,destinations/中国/西藏自治区/狮泉河镇.md,,,,,,codex,2026-09-01,1
+1803449,researched,destinations/中国/宁夏回族自治区/灵武市.md,,,,,,codex,2026-09-01,1
+1529594,researched,destinations/中国/新疆维吾尔自治区/北屯市.md,,,,,,codex,2026-09-01,1
+1529574,researched,destinations/中国/新疆维吾尔自治区/布尔津县.md,,,,,,codex,2026-09-01,1
+1529504,researched,destinations/中国/新疆维吾尔自治区/富蕴县.md,,,,,,codex,2026-09-01,1
+2037485,researched,destinations/中国/内蒙古自治区/二连浩特市.md,,,,,,codex,2026-09-01,1
+13535802,researched,destinations/中国/甘肃省/玉门市.md,,,,,,codex,2026-09-01,1
+1280625,merged,,1281003,destinations/中国/青海省/茫崖市.md,merged_urban_section,固定Mangnai Zhen记录对应茫崖市另一城市点；茫崖指南已覆盖区域关系具体景点完整路线住宿和交通,https://paper.people.com.cn/rmrbhwb/pc/attachement/202602/04/09bf2736-03f9-4943-acf3-2116fe90fb5c.pdf,codex,2026-09-01,1

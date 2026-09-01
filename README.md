@@ -675,6 +675,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [额尔古纳](./destinations/中国/内蒙古自治区/额尔古纳市.md) | 湿地、白桦林、恩和、室韦与莫尔道嘎 | `researched` |
 | [中国](./destinations/中国/README.md) | [西藏自治区](./destinations/中国/西藏自治区/README.md) | [那曲](./destinations/中国/西藏自治区/那曲市.md) | 色尼适应、羌塘文化与东西高原环线 | `researched` |
 | [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [胡杨河](./destinations/中国/新疆维吾尔自治区/胡杨河市.md) | 军垦新城、戈壁母亲、胡杨湿地与峡谷 | `researched` |
+| [中国](./destinations/中国/README.md) | [青海省](./destinations/中国/青海省/README.md) | [茫崖](./destinations/中国/青海省/茫崖市.md) | 花土沟、翡翠湖、艾肯泉、冷湖工业遗存与天文 | `researched` |
+| [中国](./destinations/中国/README.md) | [西藏自治区](./destinations/中国/西藏自治区/README.md) | [狮泉河](./destinations/中国/西藏自治区/狮泉河镇.md) | 高原适应、阿里文化、加木湿地与暗夜公园 | `researched` |
+| [中国](./destinations/中国/README.md) | [宁夏回族自治区](./destinations/中国/宁夏回族自治区/README.md) | [灵武](./destinations/中国/宁夏回族自治区/灵武市.md) | 水洞沟、灵州文博、恐龙地质与长枣 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [北屯](./destinations/中国/新疆维吾尔自治区/北屯市.md) | 军垦史、得仁山、边境团场与白沙湖 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [布尔津](./destinations/中国/新疆维吾尔自治区/布尔津县.md) | 七彩河、五彩滩、喀纳斯与禾木 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [富蕴](./destinations/中国/新疆维吾尔自治区/富蕴县.md) | 可可托海、三号矿脉、额尔齐斯大峡谷与滑雪 | `researched` |
+| [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [二连浩特](./destinations/中国/内蒙古自治区/二连浩特市.md) | 国门、恐龙化石、伊林驿站与口岸文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [甘肃省](./destinations/中国/甘肃省/README.md) | [玉门](./destinations/中国/甘肃省/玉门市.md) | 油田工业史、老君庙、昌马与戈壁地质 | `researched` |
 
 ## 项目维护
 
