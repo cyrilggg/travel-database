@@ -667,6 +667,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [马尔康](./destinations/中国/四川省/马尔康市.md) | 卓克基—西索、松岗、嘉绒文化与高原河谷 | `researched` |
 | [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [韩城](./destinations/中国/陕西省/韩城市.md) | 韩城古城、司马迁祠、党家村与黄河地理 | `researched` |
 | [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [凌海](./destinations/中国/辽宁省/凌海市.md) | 牤牛屯前线指挥所、岩井寺、温泉与滨海湿地 | `researched` |
+| [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [巩义](./destinations/中国/河南省/巩义市.md) | 康百万庄园、巩县石窟、杜甫故里与双槐树 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [邛崃](./destinations/中国/四川省/邛崃市.md) | 临邛古城、邛窑、平乐古镇与天台山 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [宁乡](./destinations/中国/湖南省/宁乡市.md) | 花明楼、炭河里青铜文明、灰汤与沩山 | `researched` |
+| [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [满洲里](./destinations/中国/内蒙古自治区/满洲里市.md) | 国门、中东铁路城市、套娃与边境文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [共青城](./destinations/中国/江西省/共青城市.md) | 富华山、垦荒史、生态科普与南湖 | `researched` |
+| [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [额尔古纳](./destinations/中国/内蒙古自治区/额尔古纳市.md) | 湿地、白桦林、恩和、室韦与莫尔道嘎 | `researched` |
+| [中国](./destinations/中国/README.md) | [西藏自治区](./destinations/中国/西藏自治区/README.md) | [那曲](./destinations/中国/西藏自治区/那曲市.md) | 色尼适应、羌塘文化与东西高原环线 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [胡杨河](./destinations/中国/新疆维吾尔自治区/胡杨河市.md) | 军垦新城、戈壁母亲、胡杨湿地与峡谷 | `researched` |
 
 ## 项目维护
 
