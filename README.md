@@ -715,6 +715,13 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [临朐](./destinations/中国/山东省/临朐县.md) | 沂山、老龙湾、石门坊与山旺地质遗产 | `researched` |
 | [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [新源](./destinations/中国/新疆维吾尔自治区/新源县.md) | 那拉提、吐尔根杏花谷、湿地与肖尔布拉克 | `researched` |
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [唐河](./destinations/中国/河南省/唐河县.md) | 冯友兰纪念、唐河湿地、石柱山与乡村花事 | `researched` |
+| [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [龙陵](./destinations/中国/云南省/龙陵县.md) | 松山抗战遗址、邦腊掌温泉与山地乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [昌乐](./destinations/中国/山东省/昌乐县.md) | 火山地质、蓝宝石文化、首阳山与县城文博 | `researched` |
+| [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [睢宁](./destinations/中国/江苏省/睢宁县.md) | 儿童画、白塘河湿地、九顶山与下邳历史 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [石碣](./destinations/中国/广东省/石碣镇.md) | 袁崇焕纪念、水南村史、紫檀工艺与东江水乡 | `researched` |
+| [中国](./destinations/中国/README.md) | [上海市](./destinations/中国/上海市/README.md) | [普陀](./destinations/中国/上海市/普陀区.md) | 半马苏河、工业遗产、长风公园与社区建筑 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [饶平](./destinations/中国/广东省/饶平县.md) | 土楼古村、苏区文化、地质景观与柘林湾 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [金州](./destinations/中国/辽宁省/金州区.md) | 金州老城、大黑山、关向应纪念与金石滩 | `researched` |
 
 ## 项目维护
 
