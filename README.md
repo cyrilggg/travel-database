@@ -789,6 +789,12 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [五大连池](./destinations/中国/黑龙江省/五大连池市.md) | 新期火山、熔岩台地、堰塞湖、温泊与冷矿泉 | `researched` |
 | [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [漠河](./destinations/中国/黑龙江省/漠河市.md) | 北极村、龙江第一湾、乌苏里浅滩与森林防灾 | `researched` |
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [桐乡](./destinations/中国/浙江省/桐乡市.md) | 乌镇、濮院、丰子恺文化、蚕桑与时尚产业 | `researched` |
+| [中国](./destinations/中国/README.md) | [安徽省](./destinations/中国/安徽省/README.md) | [桐城](./destinations/中国/安徽省/桐城市.md) | 六尺巷、桐城文庙、桐城派、孔城老街与龙眠山水 | `researched` |
+| [中国](./destinations/中国/README.md) | [安徽省](./destinations/中国/安徽省/README.md) | [天长](./destinations/中国/安徽省/天长市.md) | 地方文博、龙岗红色古镇、红草湖湿地与草庙山乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [福清](./destinations/中国/福建省/福清市.md) | 石竹山、利桥古街、龙江桥、东关寨与侨乡山海 | `researched` |
+| [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [永安](./destinations/中国/福建省/永安市.md) | 桃源洞丹霞、鳞隐石林、安贞堡与抗战旧址 | `researched` |
+| [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [石狮](./destinations/中国/福建省/石狮市.md) | 永宁古卫城、海丝双塔、黄金海岸与服装产业 | `researched` |
+| [中国](./destinations/中国/README.md) | [福建省](./destinations/中国/福建省/README.md) | [漳平](./destinations/中国/福建省/漳平市.md) | 永福樱花茶园、九鹏溪、水仙茶与天台山森林 | `researched` |
 
 ## 项目维护
 
