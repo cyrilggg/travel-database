@@ -722,6 +722,12 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [上海市](./destinations/中国/上海市/README.md) | [普陀](./destinations/中国/上海市/普陀区.md) | 半马苏河、工业遗产、长风公园与社区建筑 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [饶平](./destinations/中国/广东省/饶平县.md) | 土楼古村、苏区文化、地质景观与柘林湾 | `researched` |
 | [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [金州](./destinations/中国/辽宁省/金州区.md) | 金州老城、大黑山、关向应纪念与金石滩 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [龙岗](./destinations/中国/广东省/龙岗区.md) | 甘坑与鹤湖客家文化、大芬艺术和大运文体 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [潼南](./destinations/中国/重庆市/潼南区.md) | 大佛寺、双江古镇、杨闇公故里与崇龛花海 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [铜梁](./destinations/中国/重庆市/铜梁区.md) | 铜梁龙舞、玄天湖、安居古城与邱少云纪念 | `researched` |
+| [中国](./destinations/中国/README.md) | [天津市](./destinations/中国/天津市/README.md) | [滨海新区](./destinations/中国/天津市/滨海新区.md) | 海洋文博、大沽海防、东疆亲海与汉沽航母 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [綦江](./destinations/中国/重庆市/綦江区.md) | 古剑山、老瀛山、东溪古镇与避暑度假 | `researched` |
+| [中国](./destinations/中国/README.md) | [重庆市](./destinations/中国/重庆市/README.md) | [璧山](./destinations/中国/重庆市/璧山区.md) | 秀湖、枫香湖、古道湾与城市公园慢游 | `researched` |
 
 ## 项目维护
 
