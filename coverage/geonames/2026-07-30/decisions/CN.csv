@@ -742,3 +742,11 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1811200,researched,destinations/中国/江苏省/丰县.md,,,,,,codex,2026-09-01,1
 2035644,researched,destinations/中国/辽宁省/南票区.md,,,,,,codex,2026-09-01,1
 1797632,researched,destinations/中国/广西壮族自治区/宜州区.md,,,,,,codex,2026-09-01,1
+1788669,researched,destinations/中国/上海市/松江区.md,,,,,,codex,2026-09-01,1
+1919014,researched,destinations/中国/浙江省/上虞区.md,,,,,,codex,2026-09-01,1
+1798919,researched,destinations/中国/上海市/静安区.md,,,,,,codex,2026-09-01,1
+1815302,researched,destinations/中国/广东省/澄海区.md,,,,,,codex,2026-09-01,1
+2034638,researched,destinations/中国/辽宁省/苏家屯区.md,,,,,,codex,2026-09-01,1
+2036876,researched,destinations/中国/黑龙江省/红岗区.md,,,,,,codex,2026-09-01,1
+1786395,merged,,8397878,destinations/中国/重庆市/奉节县.md,merged_urban_section,固定Yong'an记录对应奉节县永安街道；奉节指南已覆盖县城关系白帝夔门三峡之巅天坑地缝以及七条路线住宿与交通,https://www.wikidata.org/wiki/Q1362044,codex,2026-09-01,1
+8406214,merged,,8416626,destinations/中国/重庆市/丰都县.md,merged_urban_section,固定Sanhe记录对应丰都县三合街道；丰都指南已覆盖县城关系名山雪玉洞南天湖以及七条路线住宿与交通,https://www.wikidata.org/wiki/Q737865,codex,2026-09-01,1

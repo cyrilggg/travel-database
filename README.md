@@ -743,6 +743,12 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [江苏省](./destinations/中国/江苏省/README.md) | [丰县](./destinations/中国/江苏省/丰县.md) | 汉文化、黄河故道湿地与梨果农旅 | `researched` |
 | [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [南票](./destinations/中国/辽宁省/南票区.md) | 考古、工业记忆、长城山地与乡村 | `researched` |
 | [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [宜州](./destinations/中国/广西壮族自治区/宜州区.md) | 刘三姐歌谣、下枧河、古镇与乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [上海市](./destinations/中国/上海市/README.md) | [松江](./destinations/中国/上海市/松江区.md) | 广富林、江南园林、辰山植物园、佘山与主题乐园 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [上虞](./destinations/中国/浙江省/上虞区.md) | 曹娥江、中华孝德园、祝家庄、东山与覆卮山 | `researched` |
+| [中国](./destinations/中国/README.md) | [上海市](./destinations/中国/上海市/README.md) | [静安](./destinations/中国/上海市/静安区.md) | 南京西路、自然博物馆、苏河湾、四行仓库与大宁 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [澄海](./destinations/中国/广东省/澄海区.md) | 前美侨乡、樟林古港、莲华与玩具产业 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [苏家屯](./destinations/中国/辽宁省/苏家屯区.md) | 铁路陈列馆、白清寨、马耳山与杨城寨 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [红岗](./destinations/中国/黑龙江省/红岗区.md) | 铁人一口井、油田社区、百湖生态与工业遗产 | `researched` |
 
 ## 项目维护
 
