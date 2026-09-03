@@ -811,6 +811,12 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [灵宝](./destinations/中国/河南省/灵宝市.md) | 函谷关、汉山、燕子山、黄帝文化与苹果果乡 | `researched` |
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [永城](./destinations/中国/河南省/永城市.md) | 芒砀山汉文化、陈官庄、日月湖与面粉产业 | `researched` |
 | [中国](./destinations/中国/README.md) | [河南省](./destinations/中国/河南省/README.md) | [项城](./destinations/中国/河南省/项城市.md) | 南顿故城、袁寨古民居、近代人物与地方非遗 | `researched` |
+| [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [古交](./destinations/中国/山西省/古交市.md) | 汾河谷地、矿业城市史、生态修复与吕梁山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [怀仁](./destinations/中国/山西省/怀仁市.md) | 陶瓷产业、金沙滩、清凉山与晋北民俗 | `researched` |
+| [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [侯马](./destinations/中国/山西省/侯马市.md) | 侯马盟书、晋国遗址、铁路商贸与河谷城市 | `researched` |
+| [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [霍林郭勒](./destinations/中国/内蒙古自治区/霍林郭勒市.md) | 可汗山、额仑草原、工业研学与生态修复 | `researched` |
+| [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [阿尔山](./destinations/中国/内蒙古自治区/阿尔山市.md) | 温泉山城、火山森林、白狼林俗与冰雪 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [东港](./destinations/中国/辽宁省/东港市.md) | 鸭绿江口湿地、大孤山、海岛、海鲜与草莓 | `researched` |
 
 ## 项目维护
 
