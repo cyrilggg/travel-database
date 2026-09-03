@@ -856,6 +856,9 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [华蓥](./destinations/中国/四川省/华蓥市.md) | 华蓥山石林、红岩文化、三线工业、宝鼎与禄市梨乡 | `researched` |
 | [中国](./destinations/中国/README.md) | [贵州省](./destinations/中国/贵州省/README.md) | [仁怀](./destinations/中国/贵州省/仁怀市.md) | 茅台镇、酒文化展陈、四渡赤水遗址与赤水河谷 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [简阳](./destinations/中国/四川省/简阳市.md) | 简城、鳌山、沱江、三岔湖与龙泉山丘陵 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [会理](./destinations/中国/四川省/会理市.md) | 会理古城、长征纪念、皎平渡、龙肘山与石榴农业 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)
