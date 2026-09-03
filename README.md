@@ -817,6 +817,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [霍林郭勒](./destinations/中国/内蒙古自治区/霍林郭勒市.md) | 可汗山、额仑草原、工业研学与生态修复 | `researched` |
 | [中国](./destinations/中国/README.md) | [内蒙古自治区](./destinations/中国/内蒙古自治区/README.md) | [阿尔山](./destinations/中国/内蒙古自治区/阿尔山市.md) | 温泉山城、火山森林、白狼林俗与冰雪 | `researched` |
 | [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [东港](./destinations/中国/辽宁省/东港市.md) | 鸭绿江口湿地、大孤山、海岛、海鲜与草莓 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [嵊州](./destinations/中国/浙江省/嵊州市.md) | 越剧、剡溪、崇仁古镇、金庭书法与浙东山水 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [玉环](./destinations/中国/浙江省/玉环市.md) | 漩门湾、坎门渔港、大鹿岛、鸡山岛与文旦果乡 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [乐平](./destinations/中国/江西省/乐平市.md) | 古戏台、赣剧文化、洪岩山水与南窑遗址 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [庐山](./destinations/中国/江西省/庐山市.md) | 庐山文化景观、牯岭山城、白鹿洞书院与鄱阳湖生态 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [贵溪](./destinations/中国/江西省/贵溪市.md) | 龙虎山丹霞、泸溪河、上清古镇与象山书院 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [瑞金](./destinations/中国/江西省/瑞金市.md) | 叶坪、沙洲坝、长征历史、主城文博与罗汉岩 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [龙南](./destinations/中国/江西省/龙南市.md) | 客家围屋、关西新围、杨村围屋、南武当山与九连山 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [井冈山](./destinations/中国/江西省/井冈山市.md) | 茨坪、黄洋界、龙潭、茅坪与革命历史 | `researched` |
 
 ## 项目维护
 
