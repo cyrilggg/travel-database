@@ -1,0 +1,4 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-096,1281184,Golmud,PPLA3,青海省,destinations/中国/青海省/格尔木市.md,固定Golmud记录直接对应格尔木主城页面按现行县级市组织盐湖昆仑高原城市住宿与交通
+CN-county-level-cities-096,1281378,Delingha,PPLA3,青海省,destinations/中国/青海省/德令哈市.md,固定Delingha记录直接对应德令哈主城页面按现行县级市组织巴音河咸淡湖湿地州府住宿与交通
+CN-county-level-cities-096,1797119,Xuanwei,PPLA3,云南省,destinations/中国/云南省/宣威市.md,固定Xuanwei记录直接对应宣威主城页面按现行县级市组织火腿文化峡谷古道住宿与交通

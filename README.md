@@ -859,6 +859,10 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [简阳](./destinations/中国/四川省/简阳市.md) | 简城、鳌山、沱江、三岔湖与龙泉山丘陵 | `researched` |
 | [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [会理](./destinations/中国/四川省/会理市.md) | 会理古城、长征纪念、皎平渡、龙肘山与石榴农业 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [青海省](./destinations/中国/青海省/README.md) | [格尔木](./destinations/中国/青海省/格尔木市.md) | 将军楼、察尔汗盐湖、昆仑山、胡杨林与高原公路 | `researched` |
+| [中国](./destinations/中国/README.md) | [青海省](./destinations/中国/青海省/README.md) | [德令哈](./destinations/中国/青海省/德令哈市.md) | 巴音河、海子诗歌、柏树山与可鲁克湖—托素湖 | `researched` |
+| [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [宣威](./destinations/中国/云南省/宣威市.md) | 火腿文化、城市文博、东山、尼珠河与杨柳古道 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)
