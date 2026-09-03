@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-111,1529377,Qarasu,PPLA3,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/霍尔果斯市.md,固定Qarasu记录别名直接含霍尔果斯且距法定城市中心约一点六公里页面按现行县级市组织国门边境合作中心与口岸城市路线
+CN-county-level-cities-111,8059273,Xoixar,PPLA3,西藏自治区,destinations/中国/西藏自治区/错那市.md,固定Xoixar记录保留错那县旧名且自治区撤县设市公告明确原行政区域整体承接为错那市页面按北部高原与勒布沟组织路线

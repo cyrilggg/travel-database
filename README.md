@@ -901,6 +901,8 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [奎屯](./destinations/中国/新疆维吾尔自治区/奎屯市.md) | 驿马巷、锦绣园、润民河、绿洲城市与独库北向联程 | `researched` |
 | [中国](./destinations/中国/README.md) | [贵州省](./destinations/中国/贵州省/README.md) | [赤水](./destinations/中国/贵州省/赤水市.md) | 赤水丹霞、瀑布峡谷、竹林生态、丙安与大同古镇 | `researched` |
 | [中国](./destinations/中国/README.md) | [贵州省](./destinations/中国/贵州省/README.md) | [黔西](./destinations/中国/贵州省/黔西市.md) | 水西文化、城市湿地、化屋苗寨、东风湖与乌江源百里画廊 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [霍尔果斯](./destinations/中国/新疆维吾尔自治区/霍尔果斯市.md) | 国门文化、边境合作中心、中亚风情街与口岸城市生活 | `researched` |
+| [中国](./destinations/中国/README.md) | [西藏自治区](./destinations/中国/西藏自治区/README.md) | [错那](./destinations/中国/西藏自治区/错那市.md) | 勒布沟、门巴文化、曲卓木沙棘林与拿日雍措 | `researched` |
 
 ## 项目维护
 
