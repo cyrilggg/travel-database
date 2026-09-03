@@ -878,6 +878,9 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [甘肃省](./destinations/中国/甘肃省/README.md) | [华亭](./destinations/中国/甘肃省/华亭市.md) | 关山莲花台、米家沟、汭河、安口陶瓷与乡村休闲 | `researched` |
 | [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [横州](./destinations/中国/广西壮族自治区/横州市.md) | 茉莉花与花茶、郁江、西津湖、湿地与山地茶乡 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [兴平](./destinations/中国/陕西省/兴平市.md) | 茂陵、霍去病墓、西汉石刻、杨贵妃墓与马嵬驿 | `researched` |
+| [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [彬州](./destinations/中国/陕西省/彬州市.md) | 大佛寺石窟、泾河、侍郎湖、罗店柿园与豳风 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)
