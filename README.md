@@ -881,6 +881,9 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [兴平](./destinations/中国/陕西省/兴平市.md) | 茂陵、霍去病墓、西汉石刻、杨贵妃墓与马嵬驿 | `researched` |
 | [中国](./destinations/中国/README.md) | [陕西省](./destinations/中国/陕西省/README.md) | [彬州](./destinations/中国/陕西省/彬州市.md) | 大佛寺石窟、泾河、侍郎湖、罗店柿园与豳风 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [澄江](./destinations/中国/云南省/澄江市.md) | 澄江化石地、抚仙湖、禄充、帽天山与湖滨慢游 | `researched` |
+| [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [禄丰](./destinations/中国/云南省/禄丰市.md) | 世界恐龙谷、黑井盐文化、金山古镇、罗次温泉与铁路记忆 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)

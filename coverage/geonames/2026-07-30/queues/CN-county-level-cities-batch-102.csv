@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-102,1811281,Fenglu,PPLA3,云南省,destinations/中国/云南省/澄江市.md,固定Fenglu记录自带Chengjiang澄江与凤麓别名且行政代码5304与主城坐标闭合页面按现行县级市组织化石地抚仙湖与帽天山
+CN-county-level-cities-102,1805399,Jinshan,PPLA3,云南省,destinations/中国/云南省/禄丰市.md,固定Jinshan记录自带Lufeng禄丰别名且行政代码5323与金山主城坐标闭合页面按现行县级市组织恐龙谷黑井与罗次温泉
