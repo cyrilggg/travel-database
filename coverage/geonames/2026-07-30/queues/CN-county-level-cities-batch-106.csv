@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-106,1802929,Liushi,PPLA4,浙江省,destinations/中国/浙江省/乐清市.md,固定Liushi记录对应乐清市柳市镇且行政代码3303与市域坐标闭合页面按现行县级市组织北雁荡中雁荡灵山古村与乐清湾
+CN-county-level-cities-106,1784800,Zhapu,PPLA4,浙江省,destinations/中国/浙江省/平湖市.md,固定Zhapu记录对应平湖市乍浦镇且行政代码3304与市域坐标闭合页面按现行县级市组织当湖水乡乍浦海防与九龙山海岸

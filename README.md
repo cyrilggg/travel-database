@@ -891,6 +891,8 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [监利](./destinations/中国/湖北省/监利市.md) | 周老嘴革命旧址群、柳关烈士陵园、江汉平原水乡与黄鳝饮食 | `researched` |
 | [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [瑞昌](./destinations/中国/江西省/瑞昌市.md) | 铜岭铜矿、青铜文明、瑞昌竹编、秦山与长江南岸 | `researched` |
 | [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [樟树](./destinations/中国/江西省/樟树市.md) | 中国药都、樟帮炮制、三皇宫、吴城遗址与阁皂山 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [乐清](./destinations/中国/浙江省/乐清市.md) | 雁荡山火山地貌、中雁荡山、黄檀硐与乐清湾 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [平湖](./destinations/中国/浙江省/平湖市.md) | 东湖、南河头、莫氏庄园、李叔同与乍浦海防 | `researched` |
 
 ## 项目维护
 
