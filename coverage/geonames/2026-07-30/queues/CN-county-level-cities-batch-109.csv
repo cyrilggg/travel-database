@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-109,1793036,Chengtangcun,PPL,山东省,destinations/中国/山东省/滕州市.md,固定Chengtangcun记录保留Tengzhou城市识别且人口坐标与枣庄3704滕州城区闭合页面按现行县级市组织墨班文博微山湖湿地与鲁南考古
+CN-county-level-cities-109,1529355,Ittipaq,PPLA3,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/奎屯市.md,固定Ittipaq记录位于奎屯城区且与伊犁州民政资料所列团结街驻地闭合页面按现行县级市组织公园水系夜间街区与独库北向联程

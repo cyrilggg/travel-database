@@ -897,6 +897,8 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [龙泉](./destinations/中国/浙江省/龙泉市.md) | 龙泉青瓷、宝剑文化、大窑遗址、宝溪工坊与龙泉山 | `researched` |
 | [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [阜康](./destinations/中国/新疆维吾尔自治区/阜康市.md) | 天山天池、博格达世界遗产、生态教育与山前城市生活 | `researched` |
 | [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [库车](./destinations/中国/新疆维吾尔自治区/库车市.md) | 龟兹文化、老城、苏巴什、克孜尔尕哈烽燧与天山峡谷 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [滕州](./destinations/中国/山东省/滕州市.md) | 墨子与鲁班、一塔六馆、微山湖红荷湿地、岗上遗址与莲青山 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [奎屯](./destinations/中国/新疆维吾尔自治区/奎屯市.md) | 驿马巷、锦绣园、润民河、绿洲城市与独库北向联程 | `researched` |
 
 ## 项目维护
 
