@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-112,6975019,Guangsheng,PPLA4,四川省,destinations/中国/四川省/崇州市.md,固定Guangsheng记录别名直接含观胜镇且崇州市政府设有观胜镇官方页面坐标位于崇州市域内页面按现行县级市组织主城古镇竹艺与山地路线
+CN-county-level-cities-112,10188294,Yuquanying,PPL,宁夏回族自治区,destinations/中国/宁夏回族自治区/青铜峡市.md,固定Yuquanying记录对应青铜峡市邵岗镇玉泉营一带坐标与地方区划资料闭合归属页面按现行县级市组织黄河大峡谷董府古灌区与农业路线
