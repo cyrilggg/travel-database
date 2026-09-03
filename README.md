@@ -825,6 +825,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [瑞金](./destinations/中国/江西省/瑞金市.md) | 叶坪、沙洲坝、长征历史、主城文博与罗汉岩 | `researched` |
 | [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [龙南](./destinations/中国/江西省/龙南市.md) | 客家围屋、关西新围、杨村围屋、南武当山与九连山 | `researched` |
 | [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [井冈山](./destinations/中国/江西省/井冈山市.md) | 茨坪、黄洋界、龙潭、茅坪与革命历史 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [丰城](./destinations/中国/江西省/丰城市.md) | 洪州窑、剑邑主城、传统村落、赣江与富硒农业 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [高安](./destinations/中国/江西省/高安市.md) | 元青花、贾家古村、华林山与地方陶瓷农业 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [德兴](./destinations/中国/江西省/德兴市.md) | 凤凰湖、铜都工业史、大茅山与古塔古桥 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [龙口](./destinations/中国/山东省/龙口市.md) | 丁氏故宅、南山、东海海岸、桑岛与港口工业 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [海阳](./destinations/中国/山东省/海阳市.md) | 万米海滩、招虎山、地雷战、大秧歌与航天科普 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [乳山](./destinations/中国/山东省/乳山市.md) | 银滩、大乳山、牡蛎产业、马石山与胶东山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [乐陵](./destinations/中国/山东省/乐陵市.md) | 千年枣林、金丝小枣、冀鲁边区历史与湿地 | `researched` |
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [禹城](./destinations/中国/山东省/禹城市.md) | 大禹文化、禹王亭文博、徒骇河、糖业与农业 | `researched` |
 
 ## 项目维护
 
