@@ -848,6 +848,11 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [英德](./destinations/中国/广东省/英德市.md) | 宝晶宫、英西峰林、洞天仙境、九龙峰林与红茶 | `researched` |
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [罗定](./destinations/中国/广东省/罗定市.md) | 学宫、文塔、长岗坡、蔡廷锴故居与南药乡村 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [射洪](./destinations/中国/四川省/射洪市.md) | 金华山陈子昂、中华侏罗纪、文宗苑与沱牌酒文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [广汉](./destinations/中国/四川省/广汉市.md) | 三星堆、房湖、文庙、雒城老街与乡村湿地 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [什邡](./destinations/中国/四川省/什邡市.md) | 雍湖、罗汉寺、蓥华山、神瀑沟与川西坝子 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [隆昌](./destinations/中国/四川省/隆昌市.md) | 石牌坊、古宇湖、云顶古寨、夏布与青石文化 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)

@@ -1,0 +1,5 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-093,1793684,Taihe,PPLA3,四川省,destinations/中国/四川省/射洪市.md,固定Taihe记录对应射洪太和主城页面按现行县级市组织诗文地质酒文化住宿与交通
+CN-county-level-cities-093,1801982,Luocheng,PPLA3,四川省,destinations/中国/四川省/广汉市.md,固定Luocheng记录对应广汉雒城主城页面按现行县级市组织三星堆古城乡村住宿与交通
+CN-county-level-cities-093,1811533,Fangting,PPLA3,四川省,destinations/中国/四川省/什邡市.md,固定Fangting记录对应什邡方亭主城页面按现行县级市组织城市湖园龙门山乡村住宿与交通
+CN-county-level-cities-093,1805709,Jin'e,PPLA3,四川省,destinations/中国/四川省/隆昌市.md,固定Jin'e记录对应隆昌金鹅主城页面按现行县级市组织石牌坊湖泊古寨工艺住宿与交通
