@@ -334,7 +334,7 @@ function extractSuggestedStay(markdown) {
   if (calloutValue) return calloutValue;
 
   const tableRow = markdown.match(
-    /^\|\s*(?:\*\*|__)?建议停留(?:\*\*|__)?\s*\|\s*([^|\n]+?)\s*\|\s*$/m,
+    /^\|\s*(?:\*\*|__)?(?:建议停留|停留)(?:\*\*|__)?\s*\|\s*([^|\n]+?)\s*\|\s*$/m,
   );
   return tableRow ? plainText(tableRow[1]) : "";
 }
@@ -401,7 +401,10 @@ function assertRequiredFrontmatter(data, sourcePath) {
     "content_status",
   ];
   const missingFields = requiredFields.filter(
-    (field) => data[field] === undefined || data[field] === null || data[field] === "",
+    (field) =>
+      data[field] === undefined ||
+      data[field] === "" ||
+      (data[field] === null && field !== "wikidata_id"),
   );
 
   if (missingFields.length) {
@@ -424,7 +427,10 @@ async function loadCityGuides(coordinateByGeonamesId) {
     const city = String(parsed.data.city).trim();
     const adminArea = String(parsed.data.admin_area).trim();
     const geonamesId = String(parsed.data.geonames_id).trim();
-    const wikidataId = String(parsed.data.wikidata_id).trim();
+    const wikidataId =
+      parsed.data.wikidata_id === null
+        ? null
+        : String(parsed.data.wikidata_id).trim();
     const coordinates = coordinateByGeonamesId.get(geonamesId);
 
     if (parsed.data.country !== "中国" || parsed.data.country_code !== "CN") {
@@ -499,7 +505,7 @@ export interface TravelGuide {
   city: string;
   adminArea: string;
   geonamesId: string;
-  wikidataId: string;
+  wikidataId: string | null;
   sourcePath: string;
   markdownPath: string;
   lastResearched: string;
