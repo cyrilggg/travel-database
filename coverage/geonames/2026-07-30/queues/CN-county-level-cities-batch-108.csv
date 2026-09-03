@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-108,1529506,Bofeng,PPLA3,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/阜康市.md,固定Bofeng记录对应阜康市博峰街办事处且行政代码6523与市域坐标闭合页面按现行县级市组织天山天池博格达生态与城区服务
+CN-county-level-cities-108,1529363,Xincheng,PPLA3,新疆维吾尔自治区,destinations/中国/新疆维吾尔自治区/库车市.md,固定Xincheng记录对应库车市政府驻地新城街道且行政代码6529与市域坐标闭合页面按现行县级市组织龟兹老城丝路遗产与独库公路南段

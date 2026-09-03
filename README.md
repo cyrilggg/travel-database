@@ -895,6 +895,8 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [平湖](./destinations/中国/浙江省/平湖市.md) | 东湖、南河头、莫氏庄园、李叔同与乍浦海防 | `researched` |
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [江山](./destinations/中国/浙江省/江山市.md) | 江郎山、廿八都、仙霞古道、清湖码头与三卿口制瓷 | `researched` |
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [龙泉](./destinations/中国/浙江省/龙泉市.md) | 龙泉青瓷、宝剑文化、大窑遗址、宝溪工坊与龙泉山 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [阜康](./destinations/中国/新疆维吾尔自治区/阜康市.md) | 天山天池、博格达世界遗产、生态教育与山前城市生活 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [库车](./destinations/中国/新疆维吾尔自治区/库车市.md) | 龟兹文化、老城、苏巴什、克孜尔尕哈烽燧与天山峡谷 | `researched` |
 
 ## 项目维护
 
