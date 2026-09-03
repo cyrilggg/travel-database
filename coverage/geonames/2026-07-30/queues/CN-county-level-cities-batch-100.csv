@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-100,1812488,Donghua,PPLA3,甘肃省,destinations/中国/甘肃省/华亭市.md,固定Donghua记录对应华亭市政府驻地主城且行政代码6208与坐标闭合页面按现行县级市组织主城米家沟关山莲花台与安口方向
+CN-county-level-cities-100,1808361,Heng,PPLA3,广西壮族自治区,destinations/中国/广西壮族自治区/横州市.md,固定Heng记录对应原横县县城现横州市主城且行政代码4501与坐标闭合页面按现行县级市组织茉莉花郁江西津湖与山地茶乡

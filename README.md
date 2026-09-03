@@ -875,6 +875,9 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [彭州](./destinations/中国/四川省/彭州市.md) | 天彭牡丹、龙兴寺、白鹿、湔江河谷与龙门山 | `researched` |
 | [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [峨眉山](./destinations/中国/四川省/峨眉山市.md) | 世界遗产、金顶、山麓寺院、中山森林与茶文化 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [甘肃省](./destinations/中国/甘肃省/README.md) | [华亭](./destinations/中国/甘肃省/华亭市.md) | 关山莲花台、米家沟、汭河、安口陶瓷与乡村休闲 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [横州](./destinations/中国/广西壮族自治区/横州市.md) | 茉莉花与花茶、郁江、西津湖、湿地与山地茶乡 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)
