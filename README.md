@@ -833,6 +833,14 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [乳山](./destinations/中国/山东省/乳山市.md) | 银滩、大乳山、牡蛎产业、马石山与胶东山地 | `researched` |
 | [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [乐陵](./destinations/中国/山东省/乐陵市.md) | 千年枣林、金丝小枣、冀鲁边区历史与湿地 | `researched` |
 | [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [禹城](./destinations/中国/山东省/禹城市.md) | 大禹文化、禹王亭文博、徒骇河、糖业与农业 | `researched` |
+| [中国](./destinations/中国/README.md) | [安徽省](./destinations/中国/安徽省/README.md) | [无为](./destinations/中国/安徽省/无为市.md) | 米公祠、黄金塔、西九华山、竹丝湖与板鸭产业 | `researched` |
+| [中国](./destinations/中国/README.md) | [安徽省](./destinations/中国/安徽省/README.md) | [潜山](./destinations/中国/安徽省/潜山市.md) | 天柱山、山谷流泉、三祖寺、薛家岗与皖公文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [安徽省](./destinations/中国/安徽省/README.md) | [宁国](./destinations/中国/安徽省/宁国市.md) | 青龙湾、皖南川藏线、山门洞、木屋村与畲乡 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [常宁](./destinations/中国/湖南省/常宁市.md) | 中国印山、中田古民居、水口山、天堂山与塔山瑶乡 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [邵东](./destinations/中国/湖南省/邵东市.md) | 荫家堂、佘湖山、流光湖、大云山与商贸产业 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [汨罗](./destinations/中国/湖南省/汨罗市.md) | 汨罗江、屈子文化园、任弼时纪念馆、长乐与湿地 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [临湘](./destinations/中国/湖南省/临湘市.md) | 五尖山、龙窖山瑶文化、聂市茶乡与黄盖湖 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [沅江](./destinations/中国/湖南省/沅江市.md) | 琼湖、南洞庭湿地、胭脂湖、赤山岛与湖乡产业 | `researched` |
 
 ## 项目维护
 
