@@ -1,0 +1,6 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-092,1783688,Tangdong,PPLA3,湖南省,destinations/中国/湖南省/资兴市.md,固定Tangdong记录对应资兴唐洞主城页面按现行县级市组织东江湖山地古村住宿与交通
+CN-county-level-cities-092,1797417,Wuxi,PPLA3,湖南省,destinations/中国/湖南省/祁阳市.md,固定Wuxi记录对应祁阳浯溪主城页面按现行县级市组织碑林红色历史湘江山地住宿与交通
+CN-county-level-cities-092,1804243,Leizhou,PPLA3,广东省,destinations/中国/广东省/雷州市.md,固定Leizhou记录对应雷城主城页面按现行县级市组织古城非遗半岛海岸农业住宿与交通
+CN-county-level-cities-092,1786634,Yingcheng,PPLA3,广东省,destinations/中国/广东省/英德市.md,固定Yingcheng记录对应英德英城主城页面按现行县级市组织峰林溶洞茶乡北江住宿与交通
+CN-county-level-cities-092,1801967,Luocheng,PPLA3,广东省,destinations/中国/广东省/罗定市.md,固定Luocheng记录对应罗定罗城主城页面按现行县级市组织古城水利工程故居南药住宿与交通

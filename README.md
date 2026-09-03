@@ -842,6 +842,12 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [临湘](./destinations/中国/湖南省/临湘市.md) | 五尖山、龙窖山瑶文化、聂市茶乡与黄盖湖 | `researched` |
 | [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [沅江](./destinations/中国/湖南省/沅江市.md) | 琼湖、南洞庭湿地、胭脂湖、赤山岛与湖乡产业 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [资兴](./destinations/中国/湖南省/资兴市.md) | 小东江、东江大坝、兜率灵岩、流华湾与回龙山 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖南省](./destinations/中国/湖南省/README.md) | [祁阳](./destinations/中国/湖南省/祁阳市.md) | 浯溪碑林、陶铸纪念、石洞源、祁剧与金洞山水 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [雷州](./destinations/中国/广东省/雷州市.md) | 雷祖祠、西湖、三元塔、雷剧石狗与半岛乡海 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [英德](./destinations/中国/广东省/英德市.md) | 宝晶宫、英西峰林、洞天仙境、九龙峰林与红茶 | `researched` |
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [罗定](./destinations/中国/广东省/罗定市.md) | 学宫、文塔、长岗坡、蔡廷锴故居与南药乡村 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)
