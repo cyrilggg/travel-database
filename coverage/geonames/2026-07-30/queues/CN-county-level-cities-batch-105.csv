@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-105,7643655,Baiyang,PPLA4,江西省,destinations/中国/江西省/瑞昌市.md,固定Baiyang记录对应瑞昌市白杨镇且行政代码3604与市域坐标闭合页面按现行县级市组织铜岭矿冶主城文博与秦山白杨乡村
+CN-county-level-cities-105,1924728,Daqiao,PPLA4,江西省,destinations/中国/江西省/樟树市.md,固定Daqiao记录对应樟树市大桥街道且行政代码3609与市域坐标闭合页面按现行县级市组织药都文化吴城筑卫城考古与阁皂山

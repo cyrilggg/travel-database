@@ -889,6 +889,8 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 
 | [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [松滋](./destinations/中国/湖北省/松滋市.md) | 洈水湖、曲尺河温泉、九号宇宙、颜将军洞与土家山地 | `researched` |
 | [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [监利](./destinations/中国/湖北省/监利市.md) | 周老嘴革命旧址群、柳关烈士陵园、江汉平原水乡与黄鳝饮食 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [瑞昌](./destinations/中国/江西省/瑞昌市.md) | 铜岭铜矿、青铜文明、瑞昌竹编、秦山与长江南岸 | `researched` |
+| [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [樟树](./destinations/中国/江西省/樟树市.md) | 中国药都、樟帮炮制、三皇宫、吴城遗址与阁皂山 | `researched` |
 
 ## 项目维护
 
