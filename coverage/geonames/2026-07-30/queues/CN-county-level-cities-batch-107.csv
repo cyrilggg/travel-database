@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-107,1808750,Hecun,PPLA4,浙江省,destinations/中国/浙江省/江山市.md,固定Hecun记录对应江山市贺村镇且行政代码3308与市域坐标闭合页面按现行县级市组织江郎山廿八都仙霞古道与三卿口制瓷
+CN-county-level-cities-107,1817827,Badu,PPLA4,浙江省,destinations/中国/浙江省/龙泉市.md,固定Badu记录对应龙泉市八都镇且行政代码3311与市域坐标闭合页面按现行县级市组织剑瓷文化大窑宝溪与龙泉山

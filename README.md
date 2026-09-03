@@ -893,6 +893,8 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [江西省](./destinations/中国/江西省/README.md) | [樟树](./destinations/中国/江西省/樟树市.md) | 中国药都、樟帮炮制、三皇宫、吴城遗址与阁皂山 | `researched` |
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [乐清](./destinations/中国/浙江省/乐清市.md) | 雁荡山火山地貌、中雁荡山、黄檀硐与乐清湾 | `researched` |
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [平湖](./destinations/中国/浙江省/平湖市.md) | 东湖、南河头、莫氏庄园、李叔同与乍浦海防 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [江山](./destinations/中国/浙江省/江山市.md) | 江郎山、廿八都、仙霞古道、清湖码头与三卿口制瓷 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [龙泉](./destinations/中国/浙江省/龙泉市.md) | 龙泉青瓷、宝剑文化、大窑遗址、宝溪工坊与龙泉山 | `researched` |
 
 ## 项目维护
 
