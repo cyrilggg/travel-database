@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-104,7696234,Nanhai,PPLA4,湖北省,destinations/中国/湖北省/松滋市.md,固定Nanhai记录位于松滋市南海镇且行政代码4210与市域坐标闭合页面按现行县级市组织洈水曲尺河九号宇宙与平原乡镇
+CN-county-level-cities-104,8513606,Futiansi,PPLA4,湖北省,destinations/中国/湖北省/监利市.md,固定Futiansi记录对应监利市福田寺镇且官方党史资料明确柳关烈士陵园位于该镇页面按现行县级市组织周老嘴柳关与江汉平原水乡

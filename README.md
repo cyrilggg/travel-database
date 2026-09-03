@@ -887,6 +887,9 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [四会](./destinations/中国/广东省/四会市.md) | 玉器产业、贞山、六祖寺、奇石河与古法造纸 | `researched` |
 | [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [当阳](./destinations/中国/湖北省/当阳市.md) | 玉泉寺及铁塔、关陵、长坂坡与三国文化 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [松滋](./destinations/中国/湖北省/松滋市.md) | 洈水湖、曲尺河温泉、九号宇宙、颜将军洞与土家山地 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [监利](./destinations/中国/湖北省/监利市.md) | 周老嘴革命旧址群、柳关烈士陵园、江汉平原水乡与黄鳝饮食 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)
