@@ -905,6 +905,8 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [西藏自治区](./destinations/中国/西藏自治区/README.md) | [错那](./destinations/中国/西藏自治区/错那市.md) | 勒布沟、门巴文化、曲卓木沙棘林与拿日雍措 | `researched` |
 | [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [崇州](./destinations/中国/四川省/崇州市.md) | 罨画池、街子与元通古镇、竹编、川西林盘与龙门山前 | `researched` |
 | [中国](./destinations/中国/README.md) | [宁夏回族自治区](./destinations/中国/宁夏回族自治区/README.md) | [青铜峡](./destinations/中国/宁夏回族自治区/青铜峡市.md) | 黄河大峡谷、一百零八塔、古灌区、水利工程与董府 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [铁门关](./destinations/中国/新疆维吾尔自治区/铁门关市.md) | 第二师新城、军垦文化、绿洲农业与分散团场专题 | `researched` |
+| [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [可克达拉](./destinations/中国/新疆维吾尔自治区/可克达拉市.md) | 第四师新城、公共文化、伊犁河开放岸线与团场绿洲 | `researched` |
 
 ## 项目维护
 
