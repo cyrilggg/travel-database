@@ -872,6 +872,9 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [阿拉山口](./destinations/中国/新疆维吾尔自治区/阿拉山口市.md) | 国门口岸史、英雄山、八字湖与艾比湖北岸胡杨 | `researched` |
 | [中国](./destinations/中国/README.md) | [西藏自治区](./destinations/中国/西藏自治区/README.md) | [米林](./destinations/中国/西藏自治区/米林市.md) | 南伊沟、雅鲁藏布大峡谷、南迦巴瓦与佛掌沙丘 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [彭州](./destinations/中国/四川省/彭州市.md) | 天彭牡丹、龙兴寺、白鹿、湔江河谷与龙门山 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [峨眉山](./destinations/中国/四川省/峨眉山市.md) | 世界遗产、金顶、山麓寺院、中山森林与茶文化 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)

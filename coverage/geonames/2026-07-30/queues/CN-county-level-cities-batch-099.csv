@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-099,1792916,Tianpeng,PPLA3,四川省,destinations/中国/四川省/彭州市.md,固定Tianpeng记录对应彭州主城且行政代码5101与坐标闭合页面按现行县级市组织天彭丹景山白鹿湔江河谷与龙门山
+CN-county-level-cities-099,1793892,Suishan,PPLA3,四川省,destinations/中国/四川省/峨眉山市.md,固定Suishan记录对应峨眉山市主城且行政代码5111与坐标闭合页面按现行县级市组织绥山主城山麓门户世界遗产高山与乡村方向
