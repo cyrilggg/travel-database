@@ -884,6 +884,9 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [澄江](./destinations/中国/云南省/澄江市.md) | 澄江化石地、抚仙湖、禄充、帽天山与湖滨慢游 | `researched` |
 | [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [禄丰](./destinations/中国/云南省/禄丰市.md) | 世界恐龙谷、黑井盐文化、金山古镇、罗次温泉与铁路记忆 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [广东省](./destinations/中国/广东省/README.md) | [四会](./destinations/中国/广东省/四会市.md) | 玉器产业、贞山、六祖寺、奇石河与古法造纸 | `researched` |
+| [中国](./destinations/中国/README.md) | [湖北省](./destinations/中国/湖北省/README.md) | [当阳](./destinations/中国/湖北省/当阳市.md) | 玉泉寺及铁塔、关陵、长坂坡与三国文化 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)

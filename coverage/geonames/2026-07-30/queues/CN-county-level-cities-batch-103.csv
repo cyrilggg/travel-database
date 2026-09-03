@@ -1,0 +1,3 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-county-level-cities-103,6970623,Dongcheng,PPLA4,广东省,destinations/中国/广东省/四会市.md,固定Dongcheng记录对应现行四会市政府驻地东城街道且行政代码4412与主城坐标闭合页面按县级市组织玉器贞山奇石河与古法造纸
+CN-county-level-cities-103,7696240,Yuquan,PPLA4,湖北省,destinations/中国/湖北省/当阳市.md,固定Yuquan记录对应当阳玉泉街道核心旅行区且行政代码4205与市域坐标闭合页面按县级市组织玉泉寺关陵长坂坡与乡村路线
