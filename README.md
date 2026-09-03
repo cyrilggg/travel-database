@@ -863,6 +863,12 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [青海省](./destinations/中国/青海省/README.md) | [德令哈](./destinations/中国/青海省/德令哈市.md) | 巴音河、海子诗歌、柏树山与可鲁克湖—托素湖 | `researched` |
 | [中国](./destinations/中国/README.md) | [云南省](./destinations/中国/云南省/README.md) | [宣威](./destinations/中国/云南省/宣威市.md) | 火腿文化、城市文博、东山、尼珠河与杨柳古道 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [荔浦](./destinations/中国/广西壮族自治区/荔浦市.md) | 银子岩、丰鱼岩、荔江湾、湿地与荔浦芋 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [岑溪](./destinations/中国/广西壮族自治区/岑溪市.md) | 东山、天龙顶、白霜涧、南渡与石材文化 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [靖西](./destinations/中国/广西壮族自治区/靖西市.md) | 鹅泉、旧州、峡谷、渠洋湖与壮族绣球 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [平果](./destinations/中国/广西壮族自治区/平果市.md) | 芦仙湖、通天河、平治河地质与铝城背景 | `researched` |
+| [中国](./destinations/中国/README.md) | [广西壮族自治区](./destinations/中国/广西壮族自治区/README.md) | [合山](./destinations/中国/广西壮族自治区/合山市.md) | 矿山公园、第一口井、奇石文化与红水河 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)
