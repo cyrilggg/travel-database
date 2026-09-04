@@ -1,23 +1,54 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import type { GuideBrowseItem, GuideBrowseKey, GuideBrowseSection } from "../generated/publicGuides";
 import styles from "./GuideBrowser.module.css";
 
 type GuideBrowserProps = {
   guideId: string;
   sections: readonly GuideBrowseSection[];
+  activeMapItemId?: string;
+  activeMapItemTitle?: string;
+  getMapItemId?: (key: GuideBrowseKey, item: GuideBrowseItem) => string | undefined;
+  onMapItemSelect?: (key: GuideBrowseKey, item: GuideBrowseItem, mapItemId: string) => void;
+  onSectionOpen?: (key: GuideBrowseKey) => void;
 };
 
-function BrowseCard({ item }: { item: GuideBrowseItem }) {
+function BrowseCard({
+  item,
+  mapItemId,
+  mapActive,
+  onMapSelect,
+}: {
+  item: GuideBrowseItem;
+  mapItemId?: string;
+  mapActive: boolean;
+  onMapSelect?: () => void;
+}) {
   return (
-    <article className={styles.card}>
+    <article
+      className={`${styles.card} ${mapActive ? styles.cardMapActive : ""}`}
+      data-map-item-id={mapItemId}
+      data-map-item-title={item.title}
+    >
       {item.badges.length > 0 && (
         <div className={styles.badges} aria-label="条目标签">
           {item.badges.map((badge) => <span key={badge}>{badge}</span>)}
         </div>
       )}
-      <h4>{item.title}</h4>
+      <div className={styles.cardHeading}>
+        <h4>{item.title}</h4>
+        {mapItemId && onMapSelect && (
+          <button
+            type="button"
+            className={styles.mapButton}
+            aria-pressed={mapActive}
+            onClick={onMapSelect}
+          >
+            {mapActive ? "地图已定位" : "在地图上看"}
+          </button>
+        )}
+      </div>
       {item.description && <p className={styles.description}>{item.description}</p>}
       {item.fields.length > 0 && (
         <dl className={styles.fields}>
@@ -52,11 +83,30 @@ function BrowseCard({ item }: { item: GuideBrowseItem }) {
 export default function GuideBrowser({
   guideId,
   sections,
+  activeMapItemId,
+  activeMapItemTitle,
+  getMapItemId,
+  onMapItemSelect,
+  onSectionOpen,
 }: GuideBrowserProps) {
   const idPrefix = useId().replace(/:/g, "");
+  const browserRef = useRef<HTMLElement>(null);
   const [openKeys, setOpenKeys] = useState<Set<GuideBrowseKey>>(
     () => new Set(sections[0] ? [sections[0].key] : []),
   );
+
+  useEffect(() => {
+    if (!activeMapItemId) return;
+    window.requestAnimationFrame(() => {
+      const candidates = browserRef.current?.querySelectorAll<HTMLElement>(
+        `[data-map-item-id="${activeMapItemId}"]`,
+      );
+      const target = [...(candidates ?? [])].find(
+        (candidate) => !activeMapItemTitle || candidate.dataset.mapItemTitle === activeMapItemTitle,
+      );
+      target?.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  }, [activeMapItemId, activeMapItemTitle]);
 
   if (sections.length === 0) {
     return (
@@ -68,7 +118,11 @@ export default function GuideBrowser({
   }
 
   return (
-    <section className={styles.browser} aria-labelledby={`${idPrefix}-${guideId}-browser-title`}>
+    <section
+      ref={browserRef}
+      className={styles.browser}
+      aria-labelledby={`${idPrefix}-${guideId}-browser-title`}
+    >
       <div className={styles.browserActions}>
         <h3 className="sr-only" id={`${idPrefix}-${guideId}-browser-title`}>城市攻略</h3>
         <button
@@ -96,7 +150,12 @@ export default function GuideBrowser({
                   aria-controls={panelId}
                   onClick={() => setOpenKeys((current) => {
                     const next = new Set(current);
-                    if (isOpen) next.delete(section.key); else next.add(section.key);
+                    if (isOpen) {
+                      next.delete(section.key);
+                    } else {
+                      next.add(section.key);
+                      onSectionOpen?.(section.key);
+                    }
                     return next;
                   })}
                 >
@@ -122,7 +181,24 @@ export default function GuideBrowser({
                   <span>共 {section.totalCount} 条</span>
                 </div>
                 <div className={styles.cards}>
-                  {section.items.map((item) => <BrowseCard key={item.id} item={item} />)}
+                  {section.items.map((item) => {
+                    const mapItemId = getMapItemId?.(section.key, item);
+                    return (
+                      <BrowseCard
+                        key={item.id}
+                        item={item}
+                        mapItemId={mapItemId}
+                        mapActive={Boolean(
+                          mapItemId &&
+                          mapItemId === activeMapItemId &&
+                          (!activeMapItemTitle || item.title === activeMapItemTitle),
+                        )}
+                        onMapSelect={mapItemId && onMapItemSelect
+                          ? () => onMapItemSelect(section.key, item, mapItemId)
+                          : undefined}
+                      />
+                    );
+                  })}
                 </div>
                 <div className={styles.topicFooter}>
                   <span>当前主题的结构化要点已全部展示</span>

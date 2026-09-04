@@ -9,9 +9,18 @@ import {
   guides,
   mapCities,
   targetCityCount,
+  type GuideBrowseItem,
+  type GuideBrowseKey,
   type MapCity,
   type TravelGuide,
 } from "../generated/publicGuides";
+import {
+  getGuideMapContent,
+  getGuideMapItemId,
+  mapModeForSection,
+  type GuideMapMode,
+  type GuideMapSelection,
+} from "./guideMapData";
 
 type PanelState =
   | { kind: "home" }
@@ -79,6 +88,9 @@ export default function TravelMap() {
   const [viewportCityIds, setViewportCityIds] = useState<string[]>(() =>
     mapCities.map((city) => city.id),
   );
+  const [guideMapSelection, setGuideMapSelection] = useState<GuideMapSelection>({
+    mode: "overview",
+  });
   const panelScrollRef = useRef<HTMLDivElement>(null);
   const panelDockToggleRef = useRef<HTMLButtonElement>(null);
 
@@ -124,6 +136,11 @@ export default function TravelMap() {
       : activeGuide
         ? mapCities.find((city) => city.guideId === activeGuide.id)
         : undefined;
+
+  const activeGuideMap = activeGuide ? getGuideMapContent(activeGuide.id) : undefined;
+
+  const resolveGuideMapItemId = (key: GuideBrowseKey, item: GuideBrowseItem) =>
+    activeGuideMap ? getGuideMapItemId(activeGuideMap, key, item) : undefined;
 
   const explorePoint =
     panel.kind === "nearby"
@@ -175,6 +192,7 @@ export default function TravelMap() {
   const openGuide = (guide: TravelGuide) => {
     setPanel({ kind: "city", guideId: guide.id });
     setPanelLayout("docked");
+    setGuideMapSelection({ mode: "overview" });
   };
 
   const openMapCity = (city: MapCity) => {
@@ -266,6 +284,50 @@ export default function TravelMap() {
       openGuide(match);
       setSearchQuery(cityName(match.city));
     }
+  };
+
+  const selectGuideMapMode = (mode: GuideMapMode) => {
+    if (mode === "itinerary") {
+      setGuideMapSelection({
+        mode,
+        routeId: activeGuideMap?.routes[0]?.id,
+      });
+      return;
+    }
+    setGuideMapSelection({ mode });
+  };
+
+  const handleGuideSectionOpen = (key: GuideBrowseKey) => {
+    const mode = mapModeForSection(key);
+    if (mode) selectGuideMapMode(mode);
+  };
+
+  const handleGuideMapItemSelect = (
+    key: GuideBrowseKey,
+    _item: GuideBrowseItem,
+    mapItemId: string,
+  ) => {
+    if (key === "itinerary") {
+      setGuideMapSelection({
+        mode: "itinerary",
+        routeId: mapItemId,
+        itemTitle: _item.title,
+      });
+      return;
+    }
+    const mode = mapModeForSection(key) ?? "overview";
+    setGuideMapSelection({ mode, itemId: mapItemId, itemTitle: _item.title });
+  };
+
+  const handleMapGuideItemSelect = (itemId: string) => {
+    const place = activeGuideMap?.places.find((candidate) => candidate.id === itemId);
+    if (!place) return;
+    setGuideMapSelection({
+      mode: place.kind === "food-area" ? "food" : "attractions",
+      itemId,
+      itemTitle: place.itemTitles[0],
+    });
+    if (panelCollapsed) setPanelLayout("docked");
   };
 
   const renderHome = () => (
@@ -402,12 +464,47 @@ export default function TravelMap() {
               ))}
             </div>
 
+            {activeGuideMap && (
+              <section className="guide-map-toolbar" aria-label="攻略地图联动">
+                <div className="guide-map-toolbar__heading">
+                  <div>
+                    <span>地图联动 · 城市样板</span>
+                    <strong>从空间关系理解成都</strong>
+                  </div>
+                  <small>点击攻略卡片可继续定位</small>
+                </div>
+                <div className="guide-map-toolbar__modes" role="group" aria-label="地图内容">
+                  {([
+                    ["overview", "首访"],
+                    ["attractions", "景点"],
+                    ["itinerary", "线路"],
+                    ["food", "美食片区"],
+                  ] as const).map(([mode, label]) => (
+                    <button
+                      key={mode}
+                      type="button"
+                      className={guideMapSelection.mode === mode ? "is-active" : ""}
+                      aria-pressed={guideMapSelection.mode === mode}
+                      onClick={() => selectGuideMapMode(mode)}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              </section>
+            )}
+
             <GuideStructureLoader contentPath={guide.structuredPath}>
               {(sections) => (
                 <GuideBrowser
                   key={guide.id}
                   guideId={guide.id}
                   sections={sections}
+                  activeMapItemId={guideMapSelection.itemId ?? guideMapSelection.routeId}
+                  activeMapItemTitle={guideMapSelection.itemTitle}
+                  getMapItemId={activeGuideMap ? resolveGuideMapItemId : undefined}
+                  onMapItemSelect={activeGuideMap ? handleGuideMapItemSelect : undefined}
+                  onSectionOpen={activeGuideMap ? handleGuideSectionOpen : undefined}
                 />
               )}
             </GuideStructureLoader>
@@ -599,11 +696,12 @@ export default function TravelMap() {
           <TerrainMap
             cities={mapCities}
             activeCityId={activeMapCity?.id}
-            showItineraryRoute={false}
-            itineraryActive={false}
+            guideMap={activeGuideMap}
+            guideMapSelection={guideMapSelection}
             panelLayout={panelLayout}
             explorePoint={explorePoint}
             onSelectCity={openMapCity}
+            onSelectGuideItem={handleMapGuideItemSelect}
             onExploreNear={openNearby}
             onViewportCitiesChange={updateViewportCities}
             resetSignal={mapResetSignal}

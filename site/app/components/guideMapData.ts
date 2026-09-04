@@ -1,0 +1,314 @@
+import type { GuideBrowseItem, GuideBrowseKey } from "../generated/publicGuides";
+
+export type GuideMapMode = "overview" | "attractions" | "itinerary" | "food";
+
+export type GuideMapPlace = {
+  id: string;
+  name: string;
+  longitude: number;
+  latitude: number;
+  kind: "attraction" | "food-area";
+  itemTitles: string[];
+  priority?: "A" | "B" | "C" | "route";
+  featured?: boolean;
+};
+
+export type GuideMapRouteStop = {
+  placeId: string;
+  label?: string;
+};
+
+export type GuideMapRoute = {
+  id: string;
+  title: string;
+  itemTitle: string;
+  stops: GuideMapRouteStop[];
+};
+
+export type GuideMapContent = {
+  guideId: string;
+  places: GuideMapPlace[];
+  routes: GuideMapRoute[];
+};
+
+export type GuideMapSelection = {
+  mode: GuideMapMode;
+  itemId?: string;
+  itemTitle?: string;
+  routeId?: string;
+};
+
+const chengduMap: GuideMapContent = {
+  guideId: "cn-1815286",
+  places: [
+    {
+      id: "chengdu-museum",
+      name: "成都博物馆",
+      longitude: 104.06245,
+      latitude: 30.65742,
+      kind: "attraction",
+      itemTitles: ["成都博物馆"],
+      priority: "A",
+      featured: true,
+    },
+    {
+      id: "peoples-park",
+      name: "人民公园",
+      longitude: 104.0551,
+      latitude: 30.65663,
+      kind: "attraction",
+      itemTitles: ["人民公园"],
+      priority: "B",
+      featured: true,
+    },
+    {
+      id: "kuanzhai-alley",
+      name: "宽窄巷子",
+      longitude: 104.0502,
+      latitude: 30.66928,
+      kind: "attraction",
+      itemTitles: ["宽窄巷子"],
+      priority: "B",
+      featured: true,
+    },
+    {
+      id: "wenshu-monastery",
+      name: "文殊院",
+      longitude: 104.07221,
+      latitude: 30.67949,
+      kind: "attraction",
+      itemTitles: ["文殊院"],
+      priority: "B",
+      featured: true,
+    },
+    {
+      id: "chunxi-taikoo-li",
+      name: "春熙路—太古里",
+      longitude: 104.08115,
+      latitude: 30.65457,
+      kind: "attraction",
+      itemTitles: ["春熙路—太古里"],
+      priority: "route",
+      featured: true,
+    },
+    {
+      id: "wuhou-shrine",
+      name: "武侯祠",
+      longitude: 104.04777,
+      latitude: 30.64538,
+      kind: "attraction",
+      itemTitles: ["成都武侯祠博物馆"],
+      priority: "A",
+      featured: true,
+    },
+    {
+      id: "jinli",
+      name: "锦里",
+      longitude: 104.04712,
+      latitude: 30.64446,
+      kind: "attraction",
+      itemTitles: ["锦里"],
+      priority: "route",
+    },
+    {
+      id: "dufu-thatched-cottage",
+      name: "杜甫草堂",
+      longitude: 104.02868,
+      latitude: 30.66004,
+      kind: "attraction",
+      itemTitles: ["杜甫草堂博物馆"],
+      priority: "A",
+      featured: true,
+    },
+    {
+      id: "jinsha-site-museum",
+      name: "金沙遗址博物馆",
+      longitude: 104.01298,
+      latitude: 30.68028,
+      kind: "attraction",
+      itemTitles: ["金沙遗址博物馆"],
+      priority: "A",
+    },
+    {
+      id: "sichuan-museum",
+      name: "四川博物院",
+      longitude: 104.03404,
+      latitude: 30.65749,
+      kind: "attraction",
+      itemTitles: ["四川博物院"],
+      priority: "B",
+    },
+    {
+      id: "panda-base",
+      name: "大熊猫基地",
+      longitude: 104.14556,
+      latitude: 30.73896,
+      kind: "attraction",
+      itemTitles: ["成都大熊猫繁育研究基地"],
+      priority: "A",
+      featured: true,
+    },
+    {
+      id: "dujiangyan-scenic-area",
+      name: "都江堰景区",
+      longitude: 103.60738,
+      latitude: 31.00522,
+      kind: "attraction",
+      itemTitles: ["都江堰景区"],
+      priority: "C",
+    },
+    {
+      id: "mount-qingcheng",
+      name: "青城山",
+      longitude: 103.57011,
+      latitude: 30.89972,
+      kind: "attraction",
+      itemTitles: ["青城山"],
+      priority: "C",
+    },
+    {
+      id: "food-yulin",
+      name: "玉林—芳草街",
+      longitude: 104.05742,
+      latitude: 30.62548,
+      kind: "food-area",
+      itemTitles: [
+        "成都火锅",
+        "串串香与冒菜",
+        "麻婆豆腐、回锅肉等家常川菜",
+        "豆花、蹄花与较温和汤菜",
+      ],
+    },
+    {
+      id: "food-kuixinglou",
+      name: "宽窄巷子—奎星楼",
+      longitude: 104.05268,
+      latitude: 30.6708,
+      kind: "food-area",
+      itemTitles: ["成都火锅", "冰粉、红糖糍粑与蛋烘糕"],
+    },
+    {
+      id: "food-wenshu",
+      name: "文殊院—骡马市",
+      longitude: 104.07154,
+      latitude: 30.67621,
+      kind: "food-area",
+      itemTitles: [
+        "担担面、甜水面与杂酱面",
+        "钟水饺与龙抄手类小吃",
+        "盖碗茶与茶馆小食",
+      ],
+    },
+    {
+      id: "food-chunxi",
+      name: "春熙路—盐市口",
+      longitude: 104.0789,
+      latitude: 30.65502,
+      kind: "food-area",
+      itemTitles: [
+        "麻婆豆腐、回锅肉等家常川菜",
+        "担担面、甜水面与杂酱面",
+        "钟水饺与龙抄手类小吃",
+      ],
+    },
+    {
+      id: "food-jianshe-road",
+      name: "建设路",
+      longitude: 104.10318,
+      latitude: 30.67158,
+      kind: "food-area",
+      itemTitles: ["串串香与冒菜", "夫妻肺片、兔头与冷吃兔"],
+    },
+  ],
+  routes: [
+    {
+      id: "one-day-classic",
+      title: "一日老城核心",
+      itemTitle: "一日经典路线",
+      stops: [
+        { placeId: "chengdu-museum" },
+        { placeId: "peoples-park" },
+        { placeId: "kuanzhai-alley" },
+        { placeId: "wuhou-shrine" },
+        { placeId: "jinli" },
+      ],
+    },
+    {
+      id: "two-day-city",
+      title: "两日城市路线 · 第 2 天",
+      itemTitle: "两日城市路线",
+      stops: [
+        { placeId: "panda-base" },
+        { placeId: "wenshu-monastery" },
+        { placeId: "chunxi-taikoo-li" },
+      ],
+    },
+    {
+      id: "three-day-west",
+      title: "三日深度路线 · 城西日",
+      itemTitle: "三日深度路线",
+      stops: [
+        { placeId: "jinsha-site-museum" },
+        { placeId: "dufu-thatched-cottage" },
+        { placeId: "sichuan-museum" },
+      ],
+    },
+    {
+      id: "rainy-day",
+      title: "雨天路线",
+      itemTitle: "雨天路线",
+      stops: [
+        { placeId: "chengdu-museum" },
+        { placeId: "sichuan-museum" },
+      ],
+    },
+    {
+      id: "family-low-energy",
+      title: "亲子与低体力路线",
+      itemTitle: "亲子或低体力路线",
+      stops: [
+        { placeId: "chengdu-museum" },
+        { placeId: "peoples-park" },
+        { placeId: "kuanzhai-alley" },
+      ],
+    },
+    {
+      id: "dujiangyan-day-trip",
+      title: "远郊一日 · 都江堰",
+      itemTitle: "远郊一日路线",
+      stops: [
+        { placeId: "chengdu-museum", label: "成都市区" },
+        { placeId: "dujiangyan-scenic-area" },
+      ],
+    },
+  ],
+};
+
+const guideMaps = new Map<string, GuideMapContent>([[chengduMap.guideId, chengduMap]]);
+
+export function getGuideMapContent(guideId: string) {
+  return guideMaps.get(guideId);
+}
+
+export function getGuideMapItemId(
+  content: GuideMapContent,
+  key: GuideBrowseKey,
+  item: Pick<GuideBrowseItem, "title">,
+) {
+  if (key === "itinerary") {
+    return content.routes.find((route) => route.itemTitle === item.title)?.id;
+  }
+  if (key === "attractions" || key === "food") {
+    const kind = key === "attractions" ? "attraction" : "food-area";
+    return content.places.find(
+      (place) => place.kind === kind && place.itemTitles.includes(item.title),
+    )?.id;
+  }
+  return undefined;
+}
+
+export function mapModeForSection(key: GuideBrowseKey): GuideMapMode | undefined {
+  if (key === "attractions" || key === "itinerary" || key === "food") return key;
+  if (key === "overview" || key === "regions") return "overview";
+  return undefined;
+}

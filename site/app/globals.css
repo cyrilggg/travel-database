@@ -938,6 +938,80 @@ input:focus-visible {
   font-size: 9px;
 }
 
+.guide-map-toolbar {
+  display: grid;
+  gap: 13px;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid rgba(196, 82, 55, 0.2);
+  border-radius: 16px;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 240, 0.96), rgba(241, 235, 220, 0.9));
+  box-shadow: 0 12px 28px rgba(57, 65, 57, 0.08);
+}
+
+.guide-map-toolbar__heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.guide-map-toolbar__heading span,
+.guide-map-toolbar__heading strong {
+  display: block;
+}
+
+.guide-map-toolbar__heading span {
+  color: var(--cinnabar);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.guide-map-toolbar__heading strong {
+  margin-top: 4px;
+  color: var(--teal);
+  font-family: var(--font-serif);
+  font-size: 15px;
+}
+
+.guide-map-toolbar__heading small {
+  color: var(--ink-soft);
+  font-size: 11px;
+  text-align: right;
+}
+
+.guide-map-toolbar__modes {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.guide-map-toolbar__modes button {
+  min-height: 38px;
+  padding: 0 8px;
+  border: 1px solid rgba(35, 70, 74, 0.14);
+  border-radius: 10px;
+  color: var(--teal);
+  background: rgba(255, 253, 248, 0.82);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.guide-map-toolbar__modes button:hover,
+.guide-map-toolbar__modes button.is-active {
+  border-color: var(--cinnabar);
+  color: #fffaf2;
+  background: var(--cinnabar);
+}
+
+.guide-map-toolbar__modes button:focus-visible {
+  outline: 3px solid rgba(196, 82, 55, 0.28);
+  outline-offset: 2px;
+}
+
 .related-route {
   width: 100%;
   margin-top: 22px;
@@ -1480,6 +1554,19 @@ input:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .guide-map-toolbar__heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .guide-map-toolbar__heading small {
+    text-align: left;
+  }
+
+  .guide-map-toolbar__modes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .marker-label {
     min-width: 92px;
     padding: 5px 7px;
@@ -1800,6 +1887,18 @@ body,
   border-color: #fff8ec;
   background: #6f8f78;
   box-shadow: 0 0 0 1px #486853;
+}
+
+.legend-dot.is-secondary {
+  border-color: #fff8ec;
+  background: #d58a42;
+  box-shadow: 0 0 0 1px #a6652f;
+}
+
+.legend-dot.is-food-area {
+  border-color: #356958;
+  background: rgba(53, 105, 88, 0.3);
+  box-shadow: 0 0 0 3px rgba(53, 105, 88, 0.13);
 }
 
 .guide-panel,
