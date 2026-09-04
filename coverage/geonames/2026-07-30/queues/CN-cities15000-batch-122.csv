@@ -1,0 +1,6 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-122,1790920,Wushan,PPLA3,重庆市,destinations/中国/重庆市/巫山县.md,固定巫山人口点对应巫山县城并由独立指南承接三峡水路神女景区与北部山地
+CN-cities15000-122,2034754,Shunyi,PPL,北京市,destinations/中国/北京市/顺义区.md,固定顺义人口点对应顺义新城并由独立指南承接水岸湿地浅山与机场会展片区
+CN-cities15000-122,1809408,Gulin,PPLA3,四川省,destinations/中国/四川省/泸州市.md,固定古蔺人口点对应古蔺县城旧古蔺镇范围且泸州页已覆盖古蔺县域旅行结构
+CN-cities15000-122,1815276,Chenggu,PPLA3,陕西省,destinations/中国/陕西省/汉中市.md,固定城固人口点对应城固县城博望街道且汉中页已覆盖完整县域模块
+CN-cities15000-122,1807301,Dasha,PPLA4,广东省,destinations/中国/广东省/广州市.md,固定大沙人口点对应黄埔区大沙街道且广州页补足黄埔旅行住宿与交通承接

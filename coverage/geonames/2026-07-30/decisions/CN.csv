@@ -916,3 +916,8 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1787901,merged,,1786770,destinations/中国/四川省/宜宾市.md,merged_urban_section,巡场记录对应珙县巡场镇和县城区且现有宜宾页已完整覆盖珙县旅行模块,https://www.sc.gov.cn/10462/10778/10876/2023/1/16/1235a74c94284404979250f4308dabec/files/%E5%AE%9C%E5%AE%BE%E5%B8%82%E5%8E%86%E5%8F%B2%E6%96%87%E5%8C%96%E5%90%8D%E5%9F%8E%E4%BF%9D%E6%8A%A4%E8%A7%84%E5%88%92-%E6%96%87%E6%9C%AC%E3%80%81%E9%99%84%E5%BD%95.pdf,codex,2026-09-04,1
 1800175,merged,,1813315,destinations/中国/重庆市/石柱土家族自治县.md,merged_urban_section,南宾记录对应石柱县南宾街道和县城连续建成区且页面已完整覆盖交通住宿与补给,https://www.cq.gov.cn/zwgk/zfxxgkml/szfwj/qtgw/201510/t20151014_8613740.html,codex,2026-09-04,1
 1801969,merged,,1814544,destinations/中国/上海市/宝山区.md,merged_urban_section,罗店记录对应宝山区罗店镇且现有宝山页已完整覆盖古镇美兰湖住宿与交通,https://xxgk.shbsq.gov.cn/department.html?infoid=930f9df7-0b09-405e-be0a-3798e575f18d,codex,2026-09-04,1
+1790920,researched,destinations/中国/重庆市/巫山县.md,,,,,,codex,2026-09-04,1
+2034754,researched,destinations/中国/北京市/顺义区.md,,,,,,codex,2026-09-04,1
+1809408,merged,,1801640,destinations/中国/四川省/泸州市.md,merged_urban_section,古蔺记录对应古蔺县城旧古蔺镇一带且现有泸州页已完整覆盖古蔺县域旅行结构,https://www.geonames.org/1809408/,codex,2026-09-04,1
+1815276,merged,,1808857,destinations/中国/陕西省/汉中市.md,merged_urban_section,城固记录对应城固县城博望街道且现有汉中页已完整覆盖景点路线住宿与交通,https://www.chenggu.gov.cn/,codex,2026-09-04,1
+1807301,merged,,1809858,destinations/中国/广东省/广州市.md,merged_urban_section,大沙记录对应黄埔区大沙街道且广州页已覆盖黄埔旅行并补足东部住宿交通,https://www.hp.gov.cn/gzjg/jz/dsjdbsc/qygk/content/post_10482469.html,codex,2026-09-04,1
