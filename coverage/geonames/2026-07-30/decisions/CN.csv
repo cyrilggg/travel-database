@@ -906,3 +906,8 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1789703,merged,,1805518,destinations/中国/山东省/济宁市.md,merged_urban_section,夏镇是微山县城区街道且现有济宁页已完整覆盖微山县旅行模块,https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=19856,codex,2026-09-04,1
 1809062,merged,,1795940,destinations/中国/广东省/汕头市.md,merged_urban_section,海门是潮阳区辖镇且现有汕头页已完整覆盖海门莲花峰及潮阳旅行模块,https://www.shantou.gov.cn/cnst/ztzl/zyjhjs/content/post_2278017.html,codex,2026-09-04,1
 1800130,merged,,1798821,destinations/中国/山东省/平度市.md,merged_urban_section,南村是平度市辖镇且作为南部城镇与生产边界模块并入现有平度页,https://www.qingdao.gov.cn/lslm/zt/wmcs/xwbd/202111/t20211123_3860939.shtml,codex,2026-09-04,1
+2036403,merged,,2038632,destinations/中国/辽宁省/鞍山市.md,merged_urban_section,Jiupu按坐标对应鞍山旧堡片区且属于现有鞍山页主城范围,https://spj.anshan.gov.cn/xxgk/025001/20250804/0a670247-619f-47f9-8f4e-84a1a8e4bb40.html,codex,2026-09-04,1
+2038438,merged,,2034786,destinations/中国/黑龙江省/双鸭山市.md,merged_urban_section,宝山记录对应双鸭山市宝山区组团且现有页面已明确覆盖该区及矿业边界,https://www.hlj.gov.cn/hlj/c108499/redirect_firstChannel.shtml,codex,2026-09-04,1
+1801799,merged,,1806776,destinations/中国/广东省/惠州市.md,merged_urban_section,罗阳记录对应博罗县县城街道且现有惠州页已完整覆盖博罗住宿交通与罗浮山方向,https://mzj.huizhou.gov.cn/zwgk/mzdt/content/post_5827499.html,codex,2026-09-04,1
+1790442,researched,destinations/中国/云南省/祥云县.md,,,,,,codex,2026-09-04,1
+1802420,merged,,1904046,destinations/中国/重庆市/大足区.md,merged_urban_section,龙水记录对应大足区龙水镇且现有大足页已完整覆盖五金文化住宿交通与生产边界,https://www.cq.gov.cn/ywdt/zwhd/qxdt/202311/t20231122_12591810.html,codex,2026-09-04,1

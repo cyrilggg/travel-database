@@ -1,0 +1,6 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-120,2036403,Jiupu,PPL,辽宁省,destinations/中国/辽宁省/鞍山市.md,固定Jiupu人口点按坐标对应鞍山旧堡片区且现有鞍山页已覆盖主城南部交通与生产边界
+CN-cities15000-120,2038438,Baoshan,PPLA3,黑龙江省,destinations/中国/黑龙江省/双鸭山市.md,固定宝山人口点对应双鸭山市宝山区组团且页面已覆盖分散城区与矿业生产边界
+CN-cities15000-120,1801799,Luoyang,PPLA3,广东省,destinations/中国/广东省/惠州市.md,固定罗阳人口点对应博罗县县城街道且惠州页已覆盖博罗住宿交通与罗浮山完整日
+CN-cities15000-120,1790442,Xiangcheng,PPLA3,云南省,destinations/中国/云南省/祥云县.md,固定祥城人口点对应祥云县县城并由独立指南承接云南驿水目山与县域旅行结构
+CN-cities15000-120,1802420,Longshui,PPLA4,重庆市,destinations/中国/重庆市/大足区.md,固定龙水人口点对应大足区龙水镇且大足页已覆盖五金文化住宿交通与生产边界
