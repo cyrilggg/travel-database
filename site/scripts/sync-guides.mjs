@@ -133,7 +133,11 @@ function parseCsv(csv) {
 }
 
 async function loadCoordinates() {
-  const csv = await readSourceFile(coordinateInventoryPath);
+  const [csv, legalDecisionsCsv, legalCentersCsv] = await Promise.all([
+    readSourceFile(coordinateInventoryPath),
+    readSourceFile(legalCityDecisionsPath),
+    readFile(legalCityCentersPath, "utf8"),
+  ]);
   const coordinates = new Map();
 
   for (const row of parseCsv(csv)) {
@@ -143,6 +147,19 @@ async function loadCoordinates() {
     if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) continue;
 
     coordinates.set(String(row.geonameid), { longitude, latitude });
+  }
+
+  const legalCentersByCode = new Map(
+    parseCsv(legalCentersCsv).map((row) => [row.administrative_code, row]),
+  );
+  for (const decision of parseCsv(legalDecisionsCsv)) {
+    if (!decision.geonameid || coordinates.has(decision.geonameid)) continue;
+    const center = legalCentersByCode.get(decision.administrative_code);
+    const latitude = Number(center?.latitude);
+    const longitude = Number(center?.longitude);
+    if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) continue;
+
+    coordinates.set(String(decision.geonameid), { longitude, latitude });
   }
 
   return coordinates;

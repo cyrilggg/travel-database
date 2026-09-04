@@ -1,0 +1,6 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-126,1808916,Hanjia,PPLA3,重庆市,destinations/中国/重庆市/彭水苗族土家族自治县.md,固定汉葭人口点对应彭水县汉葭街道且彭水页已有县城住宿公共文化与各景区接驳
+CN-cities15000-126,8403612,Taibai,PPLA4,重庆市,destinations/中国/重庆市/万州区.md,固定太白人口点对应万州主城太白街道且万州页已有太白岩北岸住宿与跨片区交通
+CN-cities15000-126,1787828,Xuyong,PPLA3,四川省,destinations/中国/四川省/泸州市.md,固定叙永人口点对应叙永县城且泸州页已有县城住宿边界地理路线餐饮与交通
+CN-cities15000-126,2036595,Jalai Nur,PPLA4,内蒙古自治区,destinations/中国/内蒙古自治区/呼伦贝尔市.md,固定扎赉诺尔人口点对应呼伦贝尔市扎赉诺尔区且页面补足猛犸矿业住宿与交通承接
+CN-cities15000-126,2035970,Longjiang,PPLA3,黑龙江省,destinations/中国/黑龙江省/齐齐哈尔市.md,固定龙江人口点对应龙江县城且齐齐哈尔页补足新功杜鹃山库勒湾住宿与县域交通
