@@ -918,6 +918,11 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [同江](./destinations/中国/黑龙江省/同江市.md) | 三江汇流、赫哲文化、街津口、界江湿地与同三起点 | `researched` |
 | [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [龙港](./destinations/中国/浙江省/龙港市.md) | 撤镇设市、印刷产业、夹纻漆器、青龙湖与舥艚渔港 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [山东省](./destinations/中国/山东省/README.md) | [邹平](./destinations/中国/山东省/邹平市.md) | 鹤伴山、范公文化、魏氏庄园、古村与工业城市 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [都江堰](./destinations/中国/四川省/都江堰市.md) | 世界遗产水利工程、青城山、灌县古城与熊猫谷 | `researched` |
+| [中国](./destinations/中国/README.md) | [四川省](./destinations/中国/四川省/README.md) | [万源](./destinations/中国/四川省/万源市.md) | 红军文化、八台山、龙潭河、黑宝山与大巴山茶乡 | `researched` |
+| [中国](./destinations/中国/README.md) | [贵州省](./destinations/中国/贵州省/README.md) | [清镇](./destinations/中国/贵州省/清镇市.md) | 红枫湖、时光贵州、乡愁贵州、卫城与茶马古道 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)

@@ -1,0 +1,5 @@
+batch,administrative_code,official_admin_name,geonameid,geonames_name,coverage_scope,target_page,selection_rationale
+CN-county-level-cities-116,371681,邹平市,1783641,Zouping,legal_city_only,destinations/中国/山东省/邹平市.md,同名城市点与法定邹平市名称坐标行政归属闭合但人口字段为零未进入固定cities500快照
+CN-county-level-cities-116,510181,都江堰市,1809831,Dujiangyan,legal_city_only,destinations/中国/四川省/都江堰市.md,同名城市点与法定都江堰市名称坐标行政归属闭合但人口字段为零未进入固定cities500快照
+CN-county-level-cities-116,511781,万源市,1791738,Wanyuan Shi,legal_city_only,destinations/中国/四川省/万源市.md,同名ADM3记录直接对应法定万源市且位于固定cities500快照外
+CN-county-level-cities-116,520181,清镇市,1797609,Qingzhen Shi,legal_city_only,destinations/中国/贵州省/清镇市.md,同名ADM3记录直接对应法定清镇市且位于固定cities500快照外
