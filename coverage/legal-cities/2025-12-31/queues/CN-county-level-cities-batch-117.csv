@@ -1,0 +1,4 @@
+batch,administrative_code,official_admin_name,geonameid,geonames_name,coverage_scope,target_page,selection_rationale
+CN-county-level-cities-117,520281,盘州市,1799007,Panxian,legal_city_only,destinations/中国/贵州省/盘州市.md,原盘县同一城市驻地点与现行法定盘州市名称坐标行政归属闭合且位于固定cities500快照外
+CN-county-level-cities-117,522702,福泉市,1810938,Fuquan Shi,legal_city_only,destinations/中国/贵州省/福泉市.md,同名ADM3记录直接对应法定福泉市且位于固定cities500快照外
+CN-county-level-cities-117,610881,神木市,1795617,Shenmu,legal_city_only,destinations/中国/陕西省/神木市.md,同名城市点与法定神木市名称坐标行政归属闭合且位于固定cities500快照外
