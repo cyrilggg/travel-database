@@ -913,6 +913,11 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [孝义](./destinations/中国/山西省/孝义市.md) | 三皇庙、中阳楼、孝河湿地、金龙山与皮影木偶 | `researched` |
 | [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [汾阳](./destinations/中国/山西省/汾阳市.md) | 杏花村汾酒文化、贾家庄、文峰塔与城区古建 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [灯塔](./destinations/中国/辽宁省/灯塔市.md) | 燕州城山城、李兆麟红色记忆、太子河与葡萄乡村 | `researched` |
+| [中国](./destinations/中国/README.md) | [辽宁省](./destinations/中国/辽宁省/README.md) | [调兵山](./destinations/中国/辽宁省/调兵山市.md) | 蒸汽机车博物馆、旅游专列、工业城市与金文化地名 | `researched` |
+| [中国](./destinations/中国/README.md) | [黑龙江省](./destinations/中国/黑龙江省/README.md) | [同江](./destinations/中国/黑龙江省/同江市.md) | 三江汇流、赫哲文化、街津口、界江湿地与同三起点 | `researched` |
+| [中国](./destinations/中国/README.md) | [浙江省](./destinations/中国/浙江省/README.md) | [龙港](./destinations/中国/浙江省/龙港市.md) | 撤镇设市、印刷产业、夹纻漆器、青龙湖与舥艚渔港 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)

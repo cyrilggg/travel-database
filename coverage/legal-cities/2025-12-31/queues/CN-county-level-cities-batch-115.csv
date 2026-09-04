@@ -1,0 +1,5 @@
+batch,administrative_code,official_admin_name,geonameid,geonames_name,coverage_scope,target_page,selection_rationale
+CN-county-level-cities-115,211081,灯塔市,2037704,Dengta Shi,legal_city_only,destinations/中国/辽宁省/灯塔市.md,同名ADM3记录直接对应法定灯塔市且位于固定cities500快照外
+CN-county-level-cities-115,211281,调兵山市,2034444,Diaobingshan Shi,legal_city_only,destinations/中国/辽宁省/调兵山市.md,同名ADM3记录直接对应法定调兵山市且位于固定cities500快照外
+CN-county-level-cities-115,230881,同江市,2034407,Tongjiang,legal_city_only,destinations/中国/黑龙江省/同江市.md,同名城市点坐标与法定同江市城市核心及ADM3父级闭合但人口字段为零未进入固定cities500快照
+CN-county-level-cities-115,330383,龙港市,1893461,Longgang,legal_city_only,destinations/中国/浙江省/龙港市.md,同名城市点坐标对应现龙港城市核心且由撤镇设市后法定代码闭合但人口字段为零未进入固定cities500快照
