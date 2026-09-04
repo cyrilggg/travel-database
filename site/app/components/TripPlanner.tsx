@@ -35,8 +35,8 @@ export default function TripPlanner({
     <section className="trip-planner" aria-labelledby="trip-planner-title">
       <div className="trip-planner__title">
         <div>
-          <span>自选路线</span>
-          <strong id="trip-planner-title">选好地点，地图自动分日</strong>
+          <span>行程规划</span>
+          <strong id="trip-planner-title">选择地点，生成分日路线</strong>
         </div>
         {selectedIds.length > 0 && <button type="button" onClick={onClear}>清空</button>}
       </div>

@@ -2940,6 +2940,154 @@ body,
   font-weight: 800;
 }
 
+.planning-entry {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.planning-entry__button {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  min-height: 82px;
+  padding: 14px 15px;
+  border: 1px solid rgba(196, 82, 55, 0.34);
+  border-radius: 16px;
+  color: #fffaf2;
+  background:
+    linear-gradient(135deg, rgba(35, 70, 74, 0.98), rgba(42, 87, 84, 0.96));
+  box-shadow: 0 16px 32px rgba(35, 70, 74, 0.2);
+  cursor: pointer;
+  text-align: left;
+}
+
+.planning-entry__button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 19px 38px rgba(35, 70, 74, 0.24);
+}
+
+.planning-entry__button:focus-visible,
+.planning-entry__city-list button:focus-visible {
+  outline: 3px solid rgba(196, 82, 55, 0.32);
+  outline-offset: 3px;
+}
+
+.planning-entry__mark {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid rgba(255, 250, 242, 0.32);
+  border-radius: 14px;
+  color: #fffaf2;
+  background: var(--cinnabar);
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.planning-entry__copy strong,
+.planning-entry__copy small {
+  display: block;
+}
+
+.planning-entry__copy strong {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  letter-spacing: 0.04em;
+}
+
+.planning-entry__copy small {
+  margin-top: 5px;
+  color: rgba(255, 250, 242, 0.72);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.planning-entry__action {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #fffaf2;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.planning-entry__action i,
+.planning-entry__city-list i {
+  font-style: normal;
+}
+
+.planning-entry__destinations {
+  display: grid;
+  gap: 11px;
+  padding: 14px;
+  border: 1px solid rgba(35, 70, 74, 0.13);
+  border-radius: 14px;
+  background: rgba(255, 253, 248, 0.94);
+  box-shadow: 0 12px 28px rgba(35, 70, 74, 0.08);
+}
+
+.planning-entry__destinations > div:first-child {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.planning-entry__destinations > div:first-child strong {
+  color: var(--teal);
+  font-size: 14px;
+}
+
+.planning-entry__destinations > div:first-child span {
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
+.planning-entry__city-list {
+  display: grid;
+  gap: 7px;
+}
+
+.planning-entry__city-list button {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 9px;
+  min-height: 48px;
+  padding: 0 13px;
+  border: 1px solid rgba(35, 70, 74, 0.12);
+  border-radius: 11px;
+  color: var(--teal);
+  background: #f5f2e9;
+  cursor: pointer;
+  text-align: left;
+}
+
+.planning-entry__city-list button:hover {
+  border-color: rgba(196, 82, 55, 0.45);
+  background: #fff6ed;
+}
+
+.planning-entry__city-list button strong {
+  font-size: 15px;
+}
+
+.planning-entry__city-list button span {
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+.planning-entry__city-list button i {
+  color: var(--cinnabar);
+  font-size: 16px;
+}
+
 .guide-map-toolbar__planner-button:hover,
 .guide-map-toolbar__planner-button.is-active {
   color: #fffaf2;
@@ -3141,6 +3289,23 @@ body,
 }
 
 @media (max-width: 520px) {
+  .planning-entry__button {
+    grid-template-columns: 42px minmax(0, 1fr);
+    min-height: 76px;
+    padding: 12px;
+  }
+
+  .planning-entry__mark {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 19px;
+  }
+
+  .planning-entry__action {
+    grid-column: 2;
+  }
+
   .trip-planner {
     padding: 15px;
   }

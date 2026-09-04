@@ -42,6 +42,9 @@ const mappedGuideIds = new Set(
   mapCities.flatMap((city) => (city.guideId ? [city.guideId] : [])),
 );
 const coveredGuides = guides.filter((guide) => mappedGuideIds.has(guide.id));
+const plannableGuides = coveredGuides.filter((guide) =>
+  getGuideMapContent(guide.id)?.places.some((place) => place.kind === "attraction"),
+);
 
 const formatDate = (value: string) => {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
@@ -96,6 +99,7 @@ export default function TravelMap() {
   const [tripPlannerOpen, setTripPlannerOpen] = useState(false);
   const [plannerPlaceIds, setPlannerPlaceIds] = useState<string[]>([]);
   const [plannerDayCount, setPlannerDayCount] = useState(2);
+  const [planningDestinationsOpen, setPlanningDestinationsOpen] = useState(false);
   const panelScrollRef = useRef<HTMLDivElement>(null);
   const panelDockToggleRef = useRef<HTMLButtonElement>(null);
 
@@ -212,13 +216,14 @@ export default function TravelMap() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
-  const openGuide = (guide: TravelGuide) => {
+  const openGuide = (guide: TravelGuide, options?: { planning?: boolean }) => {
     setPanel({ kind: "city", guideId: guide.id });
     setPanelLayout("docked");
-    setGuideMapSelection({ mode: "overview" });
-    setTripPlannerOpen(false);
+    setGuideMapSelection({ mode: options?.planning ? "attractions" : "overview" });
+    setTripPlannerOpen(Boolean(options?.planning));
     setPlannerPlaceIds([]);
     setPlannerDayCount(2);
+    setPlanningDestinationsOpen(false);
   };
 
   const openMapCity = (city: MapCity) => {
@@ -238,6 +243,7 @@ export default function TravelMap() {
     setPanelLayout("docked");
     setTripPlannerOpen(false);
     setPlannerPlaceIds([]);
+    setPlanningDestinationsOpen(false);
     if (scope) setCityScope(scope);
   };
 
@@ -416,6 +422,47 @@ export default function TravelMap() {
         朱砂色表示已有单城市攻略，绿色表示尚未收录。拖动或缩放地图，目录会跟着当前视野变化。
       </p>
 
+      <section className="planning-entry" aria-labelledby="planning-entry-title">
+        <button
+          type="button"
+          className="planning-entry__button"
+          aria-expanded={planningDestinationsOpen}
+          aria-controls="planning-destinations"
+          onClick={() => setPlanningDestinationsOpen((open) => !open)}
+        >
+          <span className="planning-entry__mark" aria-hidden="true">程</span>
+          <span className="planning-entry__copy">
+            <strong id="planning-entry-title">行程规划</strong>
+            <small>选择目的地、景点与天数，生成分日路线</small>
+          </span>
+          <span className="planning-entry__action">
+            {planningDestinationsOpen ? "收起" : "开始规划"}
+            <i aria-hidden="true">→</i>
+          </span>
+        </button>
+        {planningDestinationsOpen && (
+          <div className="planning-entry__destinations" id="planning-destinations">
+            <div>
+              <strong>选择目的地</strong>
+              <span>已开放行程规划的城市</span>
+            </div>
+            <div className="planning-entry__city-list">
+              {plannableGuides.map((guide) => (
+                <button
+                  key={guide.id}
+                  type="button"
+                  onClick={() => openGuide(guide, { planning: true })}
+                >
+                  <strong>{cityName(guide.city)}</strong>
+                  <span>{guide.adminArea}</span>
+                  <i aria-hidden="true">→</i>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+      </section>
+
       <div className="coverage-summary" aria-label="城市攻略覆盖进度">
         <strong>{coveredCityCount}</strong>
         <span>座城市已有攻略 · {targetCityCount - coveredCityCount} 座尚未收录</span>
@@ -577,7 +624,7 @@ export default function TravelMap() {
                   onClick={toggleTripPlanner}
                 >
                   <span aria-hidden="true">✦</span>
-                  {tripPlannerOpen ? "收起自选路线" : "自己选景点，自动排行程"}
+                  {tripPlannerOpen ? "收起行程规划" : "行程规划"}
                 </button>
               </section>
             )}

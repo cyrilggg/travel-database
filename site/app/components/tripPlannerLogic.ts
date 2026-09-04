@@ -122,7 +122,7 @@ export function buildTripPlan(
         route: {
           id: `planner-day-${index + 1}`,
           title: `第 ${index + 1} 天`,
-          itemTitle: "自选行程",
+          itemTitle: "规划行程",
           stops: places.map((place) => ({ placeId: place.id })),
         },
         places,
