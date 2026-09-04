@@ -23,6 +23,7 @@ import {
   type GuideMapSelection,
 } from "./guideMapData";
 import { buildJourneyPlan } from "./journeyPlannerLogic";
+import { administrativeTypeInfoOf } from "./administrativeType";
 
 type PanelState =
   | { kind: "home" }
@@ -192,7 +193,7 @@ export default function TravelMap() {
 
   const panelDockContext =
     activeMapCity
-      ? `${cityName(activeMapCity.city)} · ${activeMapCity.coverage === 1 ? "已有攻略" : "尚未收录"}`
+      ? `${cityName(activeMapCity.city)} · ${administrativeTypeInfoOf(activeMapCity).label} · ${activeMapCity.coverage === 1 ? "已有攻略" : "尚未收录"}`
       : activeGuide
       ? `${cityName(activeGuide.city)}攻略`
       : panel.kind === "nearby"
@@ -417,7 +418,7 @@ export default function TravelMap() {
       <p className="panel-eyebrow">旅行地图</p>
       <h2>从地图开始</h2>
       <p className="panel-intro">
-        朱砂色表示已有单城市攻略，绿色表示尚未收录。拖动或缩放地图，目录会跟着当前视野变化。
+        地图颜色区分地级市、县级市、县与区；实心表示已有攻略，空心表示尚未收录。拖动或缩放地图，目录会跟着当前视野变化。
       </p>
 
       <section className="planning-entry" aria-labelledby="planning-entry-title">
@@ -511,7 +512,14 @@ export default function TravelMap() {
                     type="button"
                     onClick={() => openMapCity(city)}
                   >
-                    <span>{cityName(city.city)}</span>
+                    <span className="city-index__name">
+                      <i
+                        className="city-type-dot"
+                        style={{ backgroundColor: administrativeTypeInfoOf(city).color }}
+                        aria-hidden="true"
+                      />
+                      {cityName(city.city)}
+                    </span>
                     <small>{city.coverage === 1 ? "已有攻略" : "尚未收录"}</small>
                   </button>
                 ))}
@@ -560,6 +568,7 @@ export default function TravelMap() {
 
         <div className="guide-meta-row">
           <span>已有攻略</span>
+          {activeMapCity && <span>{administrativeTypeInfoOf(activeMapCity).label}</span>}
           <span>最近整理 {formatDate(guide.lastResearched)}</span>
         </div>
 
@@ -679,6 +688,7 @@ export default function TravelMap() {
 
         <div className="guide-meta-row">
           <span className="is-missing">尚未收录</span>
+          <span>{administrativeTypeInfoOf(city).label}</span>
         </div>
 
         <div className="guide-overview missing-guide-overview">

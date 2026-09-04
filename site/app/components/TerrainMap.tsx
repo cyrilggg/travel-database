@@ -14,6 +14,12 @@ import type {
   GuideMapContent,
   GuideMapSelection,
 } from "./guideMapData";
+import {
+  ADMINISTRATIVE_TYPE_INFO,
+  ADMINISTRATIVE_TYPE_LEGEND,
+  administrativeTypeInfoOf,
+  administrativeTypeOf,
+} from "./administrativeType";
 
 const BASE_STYLE = "https://tiles.openfreemap.org/styles/bright";
 const TERRAIN_TILEJSON = "https://tiles.mapterhorn.com/tilejson.json";
@@ -77,6 +83,20 @@ const REDUCED_MOTION_QUERY = "(prefers-reduced-motion: reduce)";
 const PANEL_HISTORY_KEY = "__travelMapPanel";
 
 const shortCityName = (name: string) => name.replace(/[市区]$/, "");
+
+const administrativeColorExpression = [
+  "match",
+  ["get", "administrativeType"],
+  "prefecture",
+  ADMINISTRATIVE_TYPE_INFO.prefecture.color,
+  "county-city",
+  ADMINISTRATIVE_TYPE_INFO["county-city"].color,
+  "county",
+  ADMINISTRATIVE_TYPE_INFO.county.color,
+  "district",
+  ADMINISTRATIVE_TYPE_INFO.district.color,
+  ADMINISTRATIVE_TYPE_INFO.other.color,
+] as const;
 
 const isMobileMapExperience = () =>
   typeof window !== "undefined" && window.matchMedia(MOBILE_MAP_QUERY).matches;
@@ -160,6 +180,8 @@ const guideFeatureCollection = (cities: MapCity[]) => ({
       guideId: city.guideId ?? "",
       city: shortCityName(city.city),
       adminArea: city.adminArea,
+      administrativeType: administrativeTypeOf(city),
+      administrativeTypeLabel: administrativeTypeInfoOf(city).label,
       coverage: city.coverage,
     },
     geometry: {
@@ -1118,14 +1140,14 @@ export default function TerrainMap({
             "circle-color": [
               "case",
               ["==", ["get", "coverage"], 0],
-              "#6f8f78",
-              "#c45237",
+              "#fffaf0",
+              administrativeColorExpression,
             ],
             "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 4.5, 7, 6.5, 10, 8],
             "circle-stroke-color": [
               "case",
               ["==", ["get", "coverage"], 0],
-              "#fff8ec",
+              administrativeColorExpression,
               "#fff8ec",
             ],
             "circle-stroke-width": [
@@ -1156,7 +1178,7 @@ export default function TerrainMap({
           source: GUIDE_SOURCE_ID,
           filter: ["==", ["get", "id"], ""],
           paint: {
-            "circle-color": "#c45237",
+            "circle-color": administrativeColorExpression,
             "circle-radius": 9,
             "circle-stroke-color": "rgba(255,248,236,0.72)",
             "circle-stroke-width": 6,
@@ -1236,9 +1258,11 @@ export default function TerrainMap({
               feature.properties?.adminArea ?? "",
             )}`;
             const stay = document.createElement("span");
-            stay.textContent = Number(feature.properties?.coverage) === 1
-              ? "已有攻略"
-              : "尚未收录";
+            stay.textContent = `${String(
+              feature.properties?.administrativeTypeLabel ?? "",
+            )} · ${
+              Number(feature.properties?.coverage) === 1 ? "已有攻略" : "尚未收录"
+            }`;
             const summary = document.createElement("small");
             summary.textContent = Number(feature.properties?.coverage) === 1
               ? "点击查看城市攻略"
@@ -1584,7 +1608,10 @@ export default function TerrainMap({
         {terrainEnabled ? "立体" : "平面"}
       </button>
 
-      <div className={`map-legend${guideMap ? " is-guide-map" : ""}`} aria-hidden="true">
+      <div
+        className={`map-legend${guideMap ? " is-guide-map" : ""}`}
+        aria-label={guideMap ? "攻略地图图例" : "行政层级地图图例"}
+      >
         {guideMap ? (
           guideMapSelection.mode === "itinerary" ? (
             <>
@@ -1604,8 +1631,15 @@ export default function TerrainMap({
           )
         ) : (
           <>
-            <span><i className="legend-dot" /> 已有攻略</span>
-            <span><i className="legend-dot is-missing" /> 尚未收录</span>
+            {ADMINISTRATIVE_TYPE_LEGEND.map(({ type, label, color }) => (
+              <span key={type}>
+                <i className="legend-dot" style={{ backgroundColor: color, borderColor: color }} />
+                {label}
+              </span>
+            ))}
+            <span className="legend-status">
+              <i className="legend-dot is-hollow" /> 空心为尚未收录
+            </span>
           </>
         )}
       </div>
