@@ -3319,3 +3319,316 @@ body,
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+.planning-entry__destinations > .journey-planner,
+.journey-planner {
+  display: grid;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+}
+
+.journey-planner__search {
+  position: relative;
+  display: grid;
+  gap: 6px;
+}
+
+.journey-planner__search > label,
+.journey-planner__heading strong {
+  color: var(--teal);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.journey-planner__search > span,
+.journey-planner__heading span {
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.journey-planner__search > div:not(.journey-planner__matches) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.journey-planner__search input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 13px;
+  border: 1px solid rgba(35, 70, 74, 0.18);
+  border-radius: 11px;
+  color: var(--ink);
+  background: #fffdf8;
+  font-size: 14px;
+}
+
+.journey-planner__search input:focus {
+  border-color: var(--cinnabar);
+  outline: 3px solid rgba(196, 82, 55, 0.15);
+}
+
+.journey-planner__search > div > strong {
+  min-width: 48px;
+  color: var(--cinnabar);
+  font-size: 14px;
+  text-align: right;
+}
+
+.journey-planner__matches {
+  display: grid;
+  max-height: 238px;
+  overflow-y: auto;
+  border: 1px solid rgba(35, 70, 74, 0.13);
+  border-radius: 11px;
+  background: #fffdf8;
+  box-shadow: 0 12px 26px rgba(35, 70, 74, 0.12);
+}
+
+.journey-planner__matches button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 52px;
+  padding: 8px 12px;
+  border: 0;
+  border-bottom: 1px solid rgba(35, 70, 74, 0.09);
+  color: var(--teal);
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.journey-planner__matches button:last-child {
+  border-bottom: 0;
+}
+
+.journey-planner__matches button:hover,
+.journey-planner__matches button.is-selected {
+  background: #fff3e9;
+}
+
+.journey-planner__matches button span,
+.journey-planner__matches button strong,
+.journey-planner__matches button small {
+  display: block;
+}
+
+.journey-planner__matches button strong {
+  font-size: 14px;
+}
+
+.journey-planner__matches button small {
+  margin-top: 3px;
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
+.journey-planner__matches button i {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  color: #fffaf2;
+  background: var(--cinnabar);
+  font-size: 16px;
+  font-style: normal;
+}
+
+.journey-planner__matches p {
+  margin: 0;
+  padding: 15px;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.journey-planner__heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(35, 70, 74, 0.11);
+}
+
+.journey-planner__heading strong,
+.journey-planner__heading span {
+  display: block;
+}
+
+.journey-planner__heading span {
+  margin-top: 4px;
+}
+
+.journey-planner__heading > button {
+  border: 0;
+  color: var(--ink-soft);
+  background: transparent;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.journey-planner__empty {
+  padding: 16px;
+  border-radius: 11px;
+  color: var(--ink-soft);
+  background: #f4f1e9;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.journey-planner__route {
+  display: grid;
+}
+
+.journey-planner__route article {
+  display: grid;
+}
+
+.journey-planner__transfer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  padding-left: 21px;
+  color: var(--cinnabar);
+}
+
+.journey-planner__transfer small {
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
+.journey-planner__stop {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 9px;
+  padding: 12px;
+  border: 1px solid rgba(35, 70, 74, 0.13);
+  border-radius: 12px;
+  background: #f7f4eb;
+}
+
+.journey-planner__route article.is-start .journey-planner__stop {
+  border-color: rgba(196, 82, 55, 0.48);
+  box-shadow: inset 3px 0 0 var(--cinnabar);
+}
+
+.journey-planner__order {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fffaf2;
+  background: var(--cinnabar);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.journey-planner__city strong,
+.journey-planner__city small {
+  display: block;
+}
+
+.journey-planner__city strong {
+  color: var(--teal);
+  font-family: var(--font-serif);
+  font-size: 16px;
+}
+
+.journey-planner__city small {
+  margin-top: 4px;
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
+.journey-planner__days {
+  display: grid;
+  grid-template-columns: 30px minmax(46px, auto) 30px;
+  align-items: center;
+  border: 1px solid rgba(35, 70, 74, 0.13);
+  border-radius: 9px;
+  overflow: hidden;
+  background: #fffdf8;
+}
+
+.journey-planner__days button {
+  height: 32px;
+  border: 0;
+  color: var(--teal);
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.journey-planner__days button:hover {
+  background: #f1e8dc;
+}
+
+.journey-planner__days strong {
+  font-size: 13px;
+  text-align: center;
+}
+
+.journey-planner__stop-actions {
+  grid-column: 2 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.journey-planner__stop-actions button {
+  border: 0;
+  color: var(--ink-soft);
+  background: transparent;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.journey-planner__stop-actions button.is-active {
+  color: var(--cinnabar);
+  font-weight: 800;
+}
+
+.journey-planner__summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 13px;
+  border-top: 1px solid rgba(35, 70, 74, 0.11);
+}
+
+.journey-planner__summary span {
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: var(--teal);
+  background: #eef0e8;
+  font-size: 13px;
+}
+
+.journey-planner__summary strong {
+  color: var(--cinnabar);
+}
+
+@media (max-width: 520px) {
+  .journey-planner__stop {
+    grid-template-columns: 28px minmax(0, 1fr);
+  }
+
+  .journey-planner__days {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .journey-planner__stop-actions {
+    grid-column: 2;
+  }
+}

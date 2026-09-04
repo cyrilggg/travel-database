@@ -3,8 +3,8 @@
 import { type FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import GuideBrowser from "./GuideBrowser";
 import GuideStructureLoader from "./GuideStructureLoader";
+import JourneyPlanner from "./JourneyPlanner";
 import TerrainMap from "./TerrainMap";
-import TripPlanner from "./TripPlanner";
 import {
   coveredCityCount,
   guides,
@@ -22,7 +22,7 @@ import {
   type GuideMapMode,
   type GuideMapSelection,
 } from "./guideMapData";
-import { buildTripPlan } from "./tripPlannerLogic";
+import { buildJourneyPlan } from "./journeyPlannerLogic";
 
 type PanelState =
   | { kind: "home" }
@@ -42,9 +42,7 @@ const mappedGuideIds = new Set(
   mapCities.flatMap((city) => (city.guideId ? [city.guideId] : [])),
 );
 const coveredGuides = guides.filter((guide) => mappedGuideIds.has(guide.id));
-const plannableGuides = coveredGuides.filter((guide) =>
-  getGuideMapContent(guide.id)?.places.some((place) => place.kind === "attraction"),
-);
+const planningCities = mapCities.filter((city) => city.coverage === 1 && city.guideId);
 
 const formatDate = (value: string) => {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
@@ -96,10 +94,10 @@ export default function TravelMap() {
   const [guideMapSelection, setGuideMapSelection] = useState<GuideMapSelection>({
     mode: "overview",
   });
-  const [tripPlannerOpen, setTripPlannerOpen] = useState(false);
-  const [plannerPlaceIds, setPlannerPlaceIds] = useState<string[]>([]);
-  const [plannerDayCount, setPlannerDayCount] = useState(2);
   const [planningDestinationsOpen, setPlanningDestinationsOpen] = useState(false);
+  const [journeyCityIds, setJourneyCityIds] = useState<string[]>([]);
+  const [journeyDaysByCityId, setJourneyDaysByCityId] = useState<Record<string, number>>({});
+  const [journeyStartCityId, setJourneyStartCityId] = useState<string>();
   const panelScrollRef = useRef<HTMLDivElement>(null);
   const panelDockToggleRef = useRef<HTMLButtonElement>(null);
 
@@ -147,24 +145,42 @@ export default function TravelMap() {
         : undefined;
 
   const activeGuideMap = activeGuide ? getGuideMapContent(activeGuide.id) : undefined;
-
-  const plannerPlaces = activeGuideMap?.places.filter(
-    (place) => place.kind === "attraction",
-  ) ?? [];
-  const tripPlans = activeGuide && activeGuideMap
-    ? buildTripPlan(
-        activeGuideMap.places,
-        plannerPlaceIds,
-        plannerDayCount,
-        activeGuide.coordinates,
-      )
-    : [];
-  const displayedGuideMap = activeGuideMap && tripPlans.length > 0
+  const journeyPlan = buildJourneyPlan(
+    planningCities,
+    journeyCityIds,
+    journeyDaysByCityId,
+    journeyStartCityId,
+  );
+  const journeyGuideMap = panel.kind === "home" && planningDestinationsOpen && journeyPlan.stops.length > 0
     ? {
-        ...activeGuideMap,
-        routes: [...activeGuideMap.routes, ...tripPlans.map((plan) => plan.route)],
+        guideId: "cross-city-planner",
+        scope: "journey" as const,
+        places: journeyPlan.stops.map((stop) => ({
+          id: `journey-city:${stop.city.id}`,
+          name: cityName(stop.city.city),
+          longitude: stop.city.coordinates.longitude,
+          latitude: stop.city.coordinates.latitude,
+          kind: "attraction" as const,
+          itemTitles: [cityName(stop.city.city)],
+          priority: "route" as const,
+          featured: true,
+        })),
+        routes: journeyPlan.stops.length > 1
+          ? [{
+              id: "cross-city-route",
+              title: "跨城路线",
+              itemTitle: "行程规划",
+              stops: journeyPlan.stops.map((stop) => ({ placeId: `journey-city:${stop.city.id}` })),
+            }]
+          : [],
       }
-    : activeGuideMap;
+    : undefined;
+  const mapGuideMap = journeyGuideMap ?? activeGuideMap;
+  const mapGuideSelection: GuideMapSelection = journeyGuideMap
+    ? journeyGuideMap.routes.length > 0
+      ? { mode: "itinerary", routeId: "cross-city-route" }
+      : { mode: "attractions" }
+    : guideMapSelection;
 
   const resolveGuideMapItemId = (key: GuideBrowseKey, item: GuideBrowseItem) =>
     activeGuideMap ? getGuideMapItemId(activeGuideMap, key, item) : undefined;
@@ -216,17 +232,18 @@ export default function TravelMap() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
-  const openGuide = (guide: TravelGuide, options?: { planning?: boolean }) => {
+  const openGuide = (guide: TravelGuide) => {
     setPanel({ kind: "city", guideId: guide.id });
     setPanelLayout("docked");
-    setGuideMapSelection({ mode: options?.planning ? "attractions" : "overview" });
-    setTripPlannerOpen(Boolean(options?.planning));
-    setPlannerPlaceIds([]);
-    setPlannerDayCount(2);
+    setGuideMapSelection({ mode: "overview" });
     setPlanningDestinationsOpen(false);
   };
 
   const openMapCity = (city: MapCity) => {
+    if (panel.kind === "home" && planningDestinationsOpen && city.coverage === 1) {
+      toggleJourneyCity(city.id);
+      return;
+    }
     if (city.coverage === 1 && city.guideId) {
       const guide = guides.find((candidate) => candidate.id === city.guideId);
       if (guide) {
@@ -241,8 +258,6 @@ export default function TravelMap() {
   const openHome = (scope?: "viewport" | "all") => {
     setPanel({ kind: "home" });
     setPanelLayout("docked");
-    setTripPlannerOpen(false);
-    setPlannerPlaceIds([]);
     setPlanningDestinationsOpen(false);
     if (scope) setCityScope(scope);
   };
@@ -353,59 +368,42 @@ export default function TravelMap() {
     setGuideMapSelection({ mode, itemId: mapItemId, itemTitle: _item.title });
   };
 
-  const plannerSelection = (placeIds: string[], days: number) => {
-    if (!activeGuide || !activeGuideMap) return;
-    const plans = buildTripPlan(
-      activeGuideMap.places,
-      placeIds,
-      days,
-      activeGuide.coordinates,
-    );
-    setGuideMapSelection(
-      plans.length >= 1 && placeIds.length >= 2
-        ? { mode: "itinerary", routeId: plans[0].route.id }
-        : { mode: "attractions", selectedItemIds: placeIds },
-    );
+  const toggleJourneyCity = (cityId: string) => {
+    const selected = journeyCityIds.includes(cityId);
+    const next = selected
+      ? journeyCityIds.filter((id) => id !== cityId)
+      : [...journeyCityIds, cityId];
+    setJourneyCityIds(next);
+    setJourneyDaysByCityId((current) => {
+      if (!selected) return { ...current, [cityId]: current[cityId] ?? 1 };
+      const updated = { ...current };
+      delete updated[cityId];
+      return updated;
+    });
+    if (!journeyStartCityId && !selected) setJourneyStartCityId(cityId);
+    if (selected && journeyStartCityId === cityId) setJourneyStartCityId(next[0]);
   };
 
-  const togglePlannerPlace = (placeId: string) => {
-    const next = plannerPlaceIds.includes(placeId)
-      ? plannerPlaceIds.filter((id) => id !== placeId)
-      : [...plannerPlaceIds, placeId];
-    setPlannerPlaceIds(next);
-    plannerSelection(next, plannerDayCount);
+  const changeJourneyDays = (cityId: string, days: number) => {
+    setJourneyDaysByCityId((current) => ({
+      ...current,
+      [cityId]: Math.max(1, Math.min(14, days)),
+    }));
   };
 
-  const changePlannerDays = (days: number) => {
-    setPlannerDayCount(days);
-    plannerSelection(plannerPlaceIds, days);
-  };
-
-  const activatePlannerDay = (routeId: string) => {
-    setGuideMapSelection({ mode: "itinerary", routeId });
-  };
-
-  const clearPlanner = () => {
-    setPlannerPlaceIds([]);
-    setGuideMapSelection({ mode: "attractions" });
-  };
-
-  const toggleTripPlanner = () => {
-    const nextOpen = !tripPlannerOpen;
-    setTripPlannerOpen(nextOpen);
-    if (nextOpen) {
-      plannerSelection(plannerPlaceIds, plannerDayCount);
-    }
+  const clearJourney = () => {
+    setJourneyCityIds([]);
+    setJourneyDaysByCityId({});
+    setJourneyStartCityId(undefined);
   };
 
   const handleMapGuideItemSelect = (itemId: string) => {
-    const place = activeGuideMap?.places.find((candidate) => candidate.id === itemId);
-    if (!place) return;
-    if (tripPlannerOpen && place.kind === "attraction") {
-      togglePlannerPlace(itemId);
-      if (panelCollapsed) setPanelLayout("docked");
+    if (itemId.startsWith("journey-city:")) {
+      toggleJourneyCity(itemId.slice("journey-city:".length));
       return;
     }
+    const place = activeGuideMap?.places.find((candidate) => candidate.id === itemId);
+    if (!place) return;
     setGuideMapSelection({
       mode: place.kind === "food-area" ? "food" : "attractions",
       itemId,
@@ -417,7 +415,7 @@ export default function TravelMap() {
   const renderHome = () => (
     <div className="panel-home">
       <p className="panel-eyebrow">旅行地图</p>
-      <h2>从一座城市开始</h2>
+      <h2>从地图开始</h2>
       <p className="panel-intro">
         朱砂色表示已有单城市攻略，绿色表示尚未收录。拖动或缩放地图，目录会跟着当前视野变化。
       </p>
@@ -433,7 +431,7 @@ export default function TravelMap() {
           <span className="planning-entry__mark" aria-hidden="true">程</span>
           <span className="planning-entry__copy">
             <strong id="planning-entry-title">行程规划</strong>
-            <small>选择目的地、景点与天数，生成分日路线</small>
+            <small>跨城市选择目的地，分配停留天数并生成路线</small>
           </span>
           <span className="planning-entry__action">
             {planningDestinationsOpen ? "收起" : "开始规划"}
@@ -442,23 +440,17 @@ export default function TravelMap() {
         </button>
         {planningDestinationsOpen && (
           <div className="planning-entry__destinations" id="planning-destinations">
-            <div>
-              <strong>选择目的地</strong>
-              <span>已开放行程规划的城市</span>
-            </div>
-            <div className="planning-entry__city-list">
-              {plannableGuides.map((guide) => (
-                <button
-                  key={guide.id}
-                  type="button"
-                  onClick={() => openGuide(guide, { planning: true })}
-                >
-                  <strong>{cityName(guide.city)}</strong>
-                  <span>{guide.adminArea}</span>
-                  <i aria-hidden="true">→</i>
-                </button>
-              ))}
-            </div>
+            <JourneyPlanner
+              cities={planningCities}
+              selectedCityIds={journeyCityIds}
+              daysByCityId={journeyDaysByCityId}
+              startCityId={journeyStartCityId}
+              plan={journeyPlan}
+              onToggleCity={toggleJourneyCity}
+              onChangeDays={changeJourneyDays}
+              onSetStart={setJourneyStartCityId}
+              onClear={clearJourney}
+            />
           </div>
         )}
       </section>
@@ -614,35 +606,9 @@ export default function TravelMap() {
                     >
                       {label}
                     </button>
-                    ))}
+                  ))}
                 </div>
-                <button
-                  type="button"
-                  className={`guide-map-toolbar__planner-button${tripPlannerOpen ? " is-active" : ""}`}
-                  aria-expanded={tripPlannerOpen}
-                  aria-controls="trip-planner"
-                  onClick={toggleTripPlanner}
-                >
-                  <span aria-hidden="true">✦</span>
-                  {tripPlannerOpen ? "收起行程规划" : "行程规划"}
-                </button>
               </section>
-            )}
-
-            {activeGuideMap && tripPlannerOpen && (
-              <div id="trip-planner">
-                <TripPlanner
-                  places={plannerPlaces}
-                  selectedIds={plannerPlaceIds}
-                  dayCount={plannerDayCount}
-                  plans={tripPlans}
-                  activeRouteId={guideMapSelection.routeId}
-                  onTogglePlace={togglePlannerPlace}
-                  onDayCountChange={changePlannerDays}
-                  onActivateDay={activatePlannerDay}
-                  onClear={clearPlanner}
-                />
-              </div>
             )}
 
             <GuideStructureLoader contentPath={guide.structuredPath}>
@@ -847,8 +813,8 @@ export default function TravelMap() {
           <TerrainMap
             cities={mapCities}
             activeCityId={activeMapCity?.id}
-            guideMap={displayedGuideMap}
-            guideMapSelection={guideMapSelection}
+            guideMap={mapGuideMap}
+            guideMapSelection={mapGuideSelection}
             panelLayout={panelLayout}
             explorePoint={explorePoint}
             onSelectCity={openMapCity}

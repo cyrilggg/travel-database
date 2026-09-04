@@ -28,6 +28,7 @@ export type GuideMapRoute = {
 
 export type GuideMapContent = {
   guideId: string;
+  scope?: "city" | "journey";
   places: GuideMapPlace[];
   routes: GuideMapRoute[];
 };
@@ -35,7 +36,6 @@ export type GuideMapContent = {
 export type GuideMapSelection = {
   mode: GuideMapMode;
   itemId?: string;
-  selectedItemIds?: string[];
   itemTitle?: string;
   routeId?: string;
 };

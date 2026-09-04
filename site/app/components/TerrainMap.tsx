@@ -229,10 +229,7 @@ const guideContentFeatureCollection = (
           kind: selection.mode === "itinerary" ? "route-stop" : place.kind,
           priority: place.priority ?? "",
           order: "routeOrder" in place ? place.routeOrder : 0,
-          active:
-            place.id === selection.itemId || selection.selectedItemIds?.includes(place.id)
-              ? 1
-              : 0,
+          active: place.id === selection.itemId ? 1 : 0,
         },
         geometry: {
           type: "Point" as const,
@@ -1365,9 +1362,10 @@ export default function TerrainMap({
       ACTIVE_POINT_LAYER_ID,
       GUIDE_LABEL_LAYER_ID,
     ];
+    const hideCityLayers = Boolean(guideMap && guideMap.scope !== "journey");
     cityLayers.forEach((layerId) => {
       if (map.getLayer(layerId)) {
-        map.setLayoutProperty(layerId, "visibility", guideMap ? "none" : "visible");
+        map.setLayoutProperty(layerId, "visibility", hideCityLayers ? "none" : "visible");
       }
     });
   }, [guideMap, guideMapSelection, mapReady]);
