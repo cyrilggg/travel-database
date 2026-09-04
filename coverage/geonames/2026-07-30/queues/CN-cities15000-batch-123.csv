@@ -1,0 +1,6 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-123,1818020,Anliu,PPLA4,广东省,destinations/中国/广东省/五华县.md,固定安流人口点对应五华县安流镇且五华页补足圩镇公共空间与县域交通承接
+CN-cities15000-123,1800498,Mingshui,PPL,山东省,destinations/中国/山东省/济南市.md,固定明水人口点对应章丘区明水街道且济南页已覆盖百脉泉明水古城与章丘线路
+CN-cities15000-123,1798131,Qiaotou,PPLA3,青海省,destinations/中国/青海省/大通回族土族自治县.md,固定桥头人口点对应大通县城并由独立指南承接老爷山森林公园与北川河谷
+CN-cities15000-123,2033147,Zhaozhou,PPLA3,黑龙江省,destinations/中国/黑龙江省/肇州县.md,固定肇州人口点对应肇州县城并由独立指南承接辽金民俗红色研学与寒地乡村
+CN-cities15000-123,1791765,Wansheng,PPLA3,重庆市,destinations/中国/重庆市/万盛经开区.md,固定万盛人口点对应万盛城区并由独立指南承接黑山谷石林矿业转型与山地度假
