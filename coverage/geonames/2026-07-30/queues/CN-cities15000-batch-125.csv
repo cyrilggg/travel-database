@@ -1,0 +1,6 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-125,1813425,Datun,PPL,江苏省,destinations/中国/江苏省/沛县.md,固定大屯人口点对应沛县大屯街道且沛县页补足煤电社区住宿县域公交与生产边界
+CN-cities15000-125,1803352,Linshui,PPL,河北省,destinations/中国/河北省/邯郸市.md,固定临水人口点对应峰峰矿区连续城区且邯郸页已有峰峰住宿响堂山磁州窑路线与交通
+CN-cities15000-125,1795184,Shilong,PPLA4,广东省,destinations/中国/广东省/东莞市.md,固定石龙人口点对应东莞市石龙镇且东莞页补足老城碧道路线住宿与东莞站交通
+CN-cities15000-125,1806439,Jianchang,PPLA3,江西省,destinations/中国/江西省/抚州市.md,固定建昌人口点对应南城县建昌镇且抚州页补足县城住宿建昌帮麻姑山路线与交通
+CN-cities15000-125,2036671,Hulan,PPLA3,黑龙江省,destinations/中国/黑龙江省/哈尔滨市.md,固定呼兰人口点对应哈尔滨市呼兰区且哈尔滨页补足萧红文学湿地路线住宿与交通
