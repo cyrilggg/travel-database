@@ -901,3 +901,8 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 10188294,researched,destinations/中国/宁夏回族自治区/青铜峡市.md,,,,,,codex,2026-09-03,1
 12420886,researched,destinations/中国/新疆维吾尔自治区/铁门关市.md,,,,,,codex,2026-09-04,1
 1538358,researched,destinations/中国/新疆维吾尔自治区/可克达拉市.md,,,,,,codex,2026-09-04,1
+1805543,merged,,1817990,destinations/中国/山东省/安丘市.md,merged_urban_section,景芝是安丘市辖镇且现有安丘页已完整覆盖景芝旅行模块,https://jtt.shandong.gov.cn/art/2024/11/20/art_101906_10322105.html,codex,2026-09-04,1
+1806881,merged,,1797121,destinations/中国/广东省/揭阳市.md,merged_urban_section,惠城是惠来县城镇且现有揭阳页已完整覆盖惠来县旅行模块,https://qfhl.huilai.gov.cn/index/index/detail?ID=20191,codex,2026-09-04,1
+1789703,merged,,1805518,destinations/中国/山东省/济宁市.md,merged_urban_section,夏镇是微山县城区街道且现有济宁页已完整覆盖微山县旅行模块,https://www.jining.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/detail?iid=19856,codex,2026-09-04,1
+1809062,merged,,1795940,destinations/中国/广东省/汕头市.md,merged_urban_section,海门是潮阳区辖镇且现有汕头页已完整覆盖海门莲花峰及潮阳旅行模块,https://www.shantou.gov.cn/cnst/ztzl/zyjhjs/content/post_2278017.html,codex,2026-09-04,1
+1800130,merged,,1798821,destinations/中国/山东省/平度市.md,merged_urban_section,南村是平度市辖镇且作为南部城镇与生产边界模块并入现有平度页,https://www.qingdao.gov.cn/lslm/zt/wmcs/xwbd/202111/t20211123_3860939.shtml,codex,2026-09-04,1

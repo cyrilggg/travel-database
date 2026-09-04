@@ -1,0 +1,6 @@
+batch,geonameid,geonames_name,feature_code,official_admin_name,target_page,selection_rationale
+CN-cities15000-119,1805543,Jingzhi,PPL,山东省,destinations/中国/山东省/安丘市.md,固定景芝人口点对应安丘市景芝镇且现有安丘页已覆盖景芝饮食酒文化交通和生产边界
+CN-cities15000-119,1806881,Huicheng,PPLA3,广东省,destinations/中国/广东省/揭阳市.md,固定惠城人口点对应惠来县城镇且现有揭阳页已覆盖惠来县城住宿海岸交通和生产边界
+CN-cities15000-119,1789703,Xiazhen,PPL,山东省,destinations/中国/山东省/济宁市.md,固定夏镇人口点对应微山县城区街道且现有济宁页已覆盖微山县住宿湖区交通与水域边界
+CN-cities15000-119,1809062,Haimen,PPLA4,广东省,destinations/中国/广东省/汕头市.md,固定海门人口点对应潮阳区海门镇且现有汕头页已覆盖海门莲花峰交通和临港边界
+CN-cities15000-119,1800130,Nancun,PPLA4,山东省,destinations/中国/山东省/平度市.md,固定南村人口点对应平度市南村镇并作为南部城镇与生产边界模块并入现有平度页
