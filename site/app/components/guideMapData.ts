@@ -35,6 +35,7 @@ export type GuideMapContent = {
 export type GuideMapSelection = {
   mode: GuideMapMode;
   itemId?: string;
+  selectedItemIds?: string[];
   itemTitle?: string;
   routeId?: string;
 };

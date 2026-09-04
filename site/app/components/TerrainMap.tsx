@@ -229,7 +229,10 @@ const guideContentFeatureCollection = (
           kind: selection.mode === "itinerary" ? "route-stop" : place.kind,
           priority: place.priority ?? "",
           order: "routeOrder" in place ? place.routeOrder : 0,
-          active: place.id === selection.itemId ? 1 : 0,
+          active:
+            place.id === selection.itemId || selection.selectedItemIds?.includes(place.id)
+              ? 1
+              : 0,
         },
         geometry: {
           type: "Point" as const,

@@ -4,6 +4,7 @@ import { type FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import GuideBrowser from "./GuideBrowser";
 import GuideStructureLoader from "./GuideStructureLoader";
 import TerrainMap from "./TerrainMap";
+import TripPlanner from "./TripPlanner";
 import {
   coveredCityCount,
   guides,
@@ -21,6 +22,7 @@ import {
   type GuideMapMode,
   type GuideMapSelection,
 } from "./guideMapData";
+import { buildTripPlan } from "./tripPlannerLogic";
 
 type PanelState =
   | { kind: "home" }
@@ -91,6 +93,9 @@ export default function TravelMap() {
   const [guideMapSelection, setGuideMapSelection] = useState<GuideMapSelection>({
     mode: "overview",
   });
+  const [tripPlannerOpen, setTripPlannerOpen] = useState(false);
+  const [plannerPlaceIds, setPlannerPlaceIds] = useState<string[]>([]);
+  const [plannerDayCount, setPlannerDayCount] = useState(2);
   const panelScrollRef = useRef<HTMLDivElement>(null);
   const panelDockToggleRef = useRef<HTMLButtonElement>(null);
 
@@ -138,6 +143,24 @@ export default function TravelMap() {
         : undefined;
 
   const activeGuideMap = activeGuide ? getGuideMapContent(activeGuide.id) : undefined;
+
+  const plannerPlaces = activeGuideMap?.places.filter(
+    (place) => place.kind === "attraction",
+  ) ?? [];
+  const tripPlans = activeGuide && activeGuideMap
+    ? buildTripPlan(
+        activeGuideMap.places,
+        plannerPlaceIds,
+        plannerDayCount,
+        activeGuide.coordinates,
+      )
+    : [];
+  const displayedGuideMap = activeGuideMap && tripPlans.length > 0
+    ? {
+        ...activeGuideMap,
+        routes: [...activeGuideMap.routes, ...tripPlans.map((plan) => plan.route)],
+      }
+    : activeGuideMap;
 
   const resolveGuideMapItemId = (key: GuideBrowseKey, item: GuideBrowseItem) =>
     activeGuideMap ? getGuideMapItemId(activeGuideMap, key, item) : undefined;
@@ -193,6 +216,9 @@ export default function TravelMap() {
     setPanel({ kind: "city", guideId: guide.id });
     setPanelLayout("docked");
     setGuideMapSelection({ mode: "overview" });
+    setTripPlannerOpen(false);
+    setPlannerPlaceIds([]);
+    setPlannerDayCount(2);
   };
 
   const openMapCity = (city: MapCity) => {
@@ -210,6 +236,8 @@ export default function TravelMap() {
   const openHome = (scope?: "viewport" | "all") => {
     setPanel({ kind: "home" });
     setPanelLayout("docked");
+    setTripPlannerOpen(false);
+    setPlannerPlaceIds([]);
     if (scope) setCityScope(scope);
   };
 
@@ -319,9 +347,59 @@ export default function TravelMap() {
     setGuideMapSelection({ mode, itemId: mapItemId, itemTitle: _item.title });
   };
 
+  const plannerSelection = (placeIds: string[], days: number) => {
+    if (!activeGuide || !activeGuideMap) return;
+    const plans = buildTripPlan(
+      activeGuideMap.places,
+      placeIds,
+      days,
+      activeGuide.coordinates,
+    );
+    setGuideMapSelection(
+      plans.length >= 1 && placeIds.length >= 2
+        ? { mode: "itinerary", routeId: plans[0].route.id }
+        : { mode: "attractions", selectedItemIds: placeIds },
+    );
+  };
+
+  const togglePlannerPlace = (placeId: string) => {
+    const next = plannerPlaceIds.includes(placeId)
+      ? plannerPlaceIds.filter((id) => id !== placeId)
+      : [...plannerPlaceIds, placeId];
+    setPlannerPlaceIds(next);
+    plannerSelection(next, plannerDayCount);
+  };
+
+  const changePlannerDays = (days: number) => {
+    setPlannerDayCount(days);
+    plannerSelection(plannerPlaceIds, days);
+  };
+
+  const activatePlannerDay = (routeId: string) => {
+    setGuideMapSelection({ mode: "itinerary", routeId });
+  };
+
+  const clearPlanner = () => {
+    setPlannerPlaceIds([]);
+    setGuideMapSelection({ mode: "attractions" });
+  };
+
+  const toggleTripPlanner = () => {
+    const nextOpen = !tripPlannerOpen;
+    setTripPlannerOpen(nextOpen);
+    if (nextOpen) {
+      plannerSelection(plannerPlaceIds, plannerDayCount);
+    }
+  };
+
   const handleMapGuideItemSelect = (itemId: string) => {
     const place = activeGuideMap?.places.find((candidate) => candidate.id === itemId);
     if (!place) return;
+    if (tripPlannerOpen && place.kind === "attraction") {
+      togglePlannerPlace(itemId);
+      if (panelCollapsed) setPanelLayout("docked");
+      return;
+    }
     setGuideMapSelection({
       mode: place.kind === "food-area" ? "food" : "attractions",
       itemId,
@@ -468,8 +546,8 @@ export default function TravelMap() {
               <section className="guide-map-toolbar" aria-label="攻略地图联动">
                 <div className="guide-map-toolbar__heading">
                   <div>
-                    <span>地图联动 · 城市样板</span>
-                    <strong>从空间关系理解成都</strong>
+                    <span>攻略地图</span>
+                    <strong>从空间关系理解{cityName(guide.city)}</strong>
                   </div>
                   <small>点击攻略卡片可继续定位</small>
                 </div>
@@ -489,9 +567,35 @@ export default function TravelMap() {
                     >
                       {label}
                     </button>
-                  ))}
+                    ))}
                 </div>
+                <button
+                  type="button"
+                  className={`guide-map-toolbar__planner-button${tripPlannerOpen ? " is-active" : ""}`}
+                  aria-expanded={tripPlannerOpen}
+                  aria-controls="trip-planner"
+                  onClick={toggleTripPlanner}
+                >
+                  <span aria-hidden="true">✦</span>
+                  {tripPlannerOpen ? "收起自选路线" : "自己选景点，自动排行程"}
+                </button>
               </section>
+            )}
+
+            {activeGuideMap && tripPlannerOpen && (
+              <div id="trip-planner">
+                <TripPlanner
+                  places={plannerPlaces}
+                  selectedIds={plannerPlaceIds}
+                  dayCount={plannerDayCount}
+                  plans={tripPlans}
+                  activeRouteId={guideMapSelection.routeId}
+                  onTogglePlace={togglePlannerPlace}
+                  onDayCountChange={changePlannerDays}
+                  onActivateDay={activatePlannerDay}
+                  onClear={clearPlanner}
+                />
+              </div>
             )}
 
             <GuideStructureLoader contentPath={guide.structuredPath}>
@@ -696,7 +800,7 @@ export default function TravelMap() {
           <TerrainMap
             cities={mapCities}
             activeCityId={activeMapCity?.id}
-            guideMap={activeGuideMap}
+            guideMap={displayedGuideMap}
             guideMapSelection={guideMapSelection}
             panelLayout={panelLayout}
             explorePoint={explorePoint}
