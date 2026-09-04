@@ -926,3 +926,8 @@ geonameid,status,page_path,canonical_geonameid,canonical_page_path,reason_code,r
 1798131,researched,destinations/中国/青海省/大通回族土族自治县.md,,,,,,codex,2026-09-04,1
 2033147,researched,destinations/中国/黑龙江省/肇州县.md,,,,,,codex,2026-09-04,1
 1791765,researched,destinations/中国/重庆市/万盛经开区.md,,,,,,codex,2026-09-04,1
+1798713,merged,,1806776,destinations/中国/广东省/惠州市.md,merged_urban_section,平山记录对应惠东县平山街道且惠州页已补足县城住宿海岸分流与县域交通承接,https://www.huidong.gov.cn/hdxwz/zjhd/xzqh/content/post_5470213.html,codex,2026-09-04,1
+1814915,merged,,13608003,destinations/中国/上海市/崇明区.md,merged_urban_section,城桥记录对应崇明区城桥镇且崇明页已由城桥人文线住宿与三岛交通完整承接,https://www.shcm.gov.cn/zjcm/006008/20230425/5dab5433-9405-46aa-be06-7d4621c90200.html,codex,2026-09-04,1
+1809077,merged,,1804651,destinations/中国/云南省/昆明市.md,merged_urban_section,海口记录对应西山区海口街道且昆明页已补足石龙坝工业遗产住宿与公路交通,https://www.nea.gov.cn/2022-12/02/c_1310681359.htm,codex,2026-09-04,1
+1789496,merged,,1786657,destinations/中国/宁夏回族自治区/银川市.md,merged_urban_section,习岗记录对应贺兰县习岗镇与县城且银川页已补足枸杞项目住宿及县域换乘,https://dag.yinchuan.gov.cn/fzyw/nj/ycnj_01/202503/P020250624567771025802.pdf,codex,2026-09-04,1
+1814928,merged,,1790942,destinations/中国/浙江省/桐乡市.md,merged_urban_section,崇福记录对应桐乡市崇福镇且桐乡页已补足运河古城路线住宿与交通承接,https://www.tx.gov.cn/art/2023/1/29/art_1229402547_59119115.html,codex,2026-09-04,1
