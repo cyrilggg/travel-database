@@ -908,6 +908,11 @@ GitHub 相对链接一律使用 `/`，保留 UTF-8 中文路径并精确匹配�
 | [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [铁门关](./destinations/中国/新疆维吾尔自治区/铁门关市.md) | 第二师新城、军垦文化、绿洲农业与分散团场专题 | `researched` |
 | [中国](./destinations/中国/README.md) | [新疆维吾尔自治区](./destinations/中国/新疆维吾尔自治区/README.md) | [可克达拉](./destinations/中国/新疆维吾尔自治区/可克达拉市.md) | 第四师新城、公共文化、伊犁河开放岸线与团场绿洲 | `researched` |
 
+| [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [高平](./destinations/中国/山西省/高平市.md) | 炎帝文化、长平历史、铁佛寺与开化寺、古村和太行山前 | `researched` |
+| [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [河津](./destinations/中国/山西省/河津市.md) | 黄河龙门、大梯子崖、河东古建与地方历史 | `researched` |
+| [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [孝义](./destinations/中国/山西省/孝义市.md) | 三皇庙、中阳楼、孝河湿地、金龙山与皮影木偶 | `researched` |
+| [中国](./destinations/中国/README.md) | [山西省](./destinations/中国/山西省/README.md) | [汾阳](./destinations/中国/山西省/汾阳市.md) | 杏花村汾酒文化、贾家庄、文峰塔与城区古建 | `researched` |
+
 ## 项目维护
 
 - 城市页结构：[templates/city.md](./templates/city.md)

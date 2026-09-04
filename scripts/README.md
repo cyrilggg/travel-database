@@ -62,7 +62,7 @@ py -3 -B scripts/generate_cn_legal_summary.py --as-of 2026-07-30
 
 ## 质量检查与摘要
 
-`validate_repository.py` 校验所有 `researched` 城市页的元数据、标题顺序、占位符和本地链接，并把 CN 决策账本与固定库存逐项对照。`duplicate`、`merged` 和 `out_of_scope` 必须有理由、证据、审核信息；`researched` 必须对应实际页面和相同 GeoNames ID。
+`validate_repository.py` 校验所有 `researched` 城市页的元数据、标题顺序、占位符和本地链接，并把 CN 决策账本与固定库存逐项对照。`duplicate`、`merged` 和 `out_of_scope` 必须有理由、证据、审核信息；固定快照内的 `researched` 必须对应实际页面和相同 GeoNames ID。标记 `coverage_scope: legal_city_only` 的补充页必须使用固定快照外的真实 GeoNames ID、匹配法定城市账本，且不会进入 GeoNames 决策账本。
 
 ```powershell
 py -3 -B scripts/validate_repository.py --json

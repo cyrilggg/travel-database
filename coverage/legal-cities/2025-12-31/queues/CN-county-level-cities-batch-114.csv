@@ -1,0 +1,5 @@
+batch,administrative_code,official_admin_name,geonameid,geonames_name,coverage_scope,target_page,selection_rationale
+CN-county-level-cities-114,140581,高平市,1810435,Gaoping,legal_city_only,destinations/中国/山西省/高平市.md,同名城市点位于高平市现行行政范围且对应独立城市核心但人口字段为零未进入固定cities500快照
+CN-county-level-cities-114,140882,河津市,1808593,Hejin,legal_city_only,destinations/中国/山西省/河津市.md,同名城市点与法定河津市名称坐标行政归属闭合但人口字段为零未进入固定cities500快照
+CN-county-level-cities-114,141181,孝义市,1789174,Xiaoyi,legal_city_only,destinations/中国/山西省/孝义市.md,同名城市点与法定孝义市名称坐标行政归属闭合但人口字段为零未进入固定cities500快照
+CN-county-level-cities-114,141182,汾阳市,1811116,Fenyang,legal_city_only,destinations/中国/山西省/汾阳市.md,同名城市点与法定汾阳市名称坐标行政归属闭合但人口字段为零未进入固定cities500快照

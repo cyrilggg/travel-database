@@ -76,7 +76,7 @@ class ValidateRepositoryTests(unittest.TestCase):
             writer.writeheader()
             writer.writerows(rows)
 
-    def write_legal_city_ledger(self, *, city_name="测试市"):
+    def write_legal_city_ledger(self, *, city_name="测试市", geonameid="1"):
         snapshot = self.root / "coverage" / "legal-cities" / "2025-12-31"
         (snapshot / "inventory").mkdir(parents=True, exist_ok=True)
         (snapshot / "decisions").mkdir(parents=True, exist_ok=True)
@@ -118,7 +118,7 @@ class ValidateRepositoryTests(unittest.TestCase):
                     "administrative_code": "990100",
                     "status": "researched",
                     "page_path": "destinations/中国/测试省/测试市.md",
-                    "geonameid": "1",
+                    "geonameid": geonameid,
                     "reviewed_by": "reviewer",
                     "reviewed_at": "2026-07-30",
                     "quality_gate_version": "1",
@@ -177,6 +177,42 @@ class ValidateRepositoryTests(unittest.TestCase):
 
         self.assertTrue(any("lacks a researched decision" in item for item in report["errors"]))
         self.assertEqual(report["processed_count"], 0)
+
+    def test_accepts_legal_city_only_page_outside_geonames_snapshot(self):
+        original = self.city_path.read_text(encoding="utf-8")
+        self.city_path.write_text(
+            original.replace(
+                "geonames_id: 1\n",
+                "geonames_id: 2\ncoverage_scope: legal_city_only\nlegal_admin_code: 990100\n",
+            ),
+            encoding="utf-8",
+        )
+        self.write_decisions([])
+        self.write_legal_city_ledger(geonameid="2")
+
+        report = validate_repository(self.root, "2026-07-30")
+
+        self.assertEqual(report["errors"], [])
+        self.assertEqual(report["processed_count"], 0)
+        self.assertEqual(report["legal_city_coverage"]["researched_count"], 1)
+
+    def test_legal_city_only_page_requires_matching_legal_decision(self):
+        original = self.city_path.read_text(encoding="utf-8")
+        self.city_path.write_text(
+            original.replace(
+                "geonames_id: 1\n",
+                "geonames_id: 2\ncoverage_scope: legal_city_only\nlegal_admin_code: 990100\n",
+            ),
+            encoding="utf-8",
+        )
+        self.write_decisions([])
+        self.write_legal_city_ledger(geonameid="1")
+
+        report = validate_repository(self.root, "2026-07-30")
+
+        self.assertTrue(
+            any("lacks a matching legal-city decision" in item for item in report["errors"])
+        )
 
     def test_rejects_mojibake_in_china_navigation_markdown(self):
         (self.city_dir / "README.md").write_text(

@@ -30,6 +30,7 @@ REQUIRED_HEADINGS = (
 ALLOWED_DECISION_STATUSES = {"researched", "duplicate", "merged", "out_of_scope"}
 AUDIT_STATUSES = {"duplicate", "merged", "out_of_scope"}
 MERGE_STATUSES = {"duplicate", "merged"}
+ALLOWED_COVERAGE_SCOPES = {"geonames_snapshot", "legal_city_only"}
 BANNED_PHRASES = (
     "对用户",
     "适合你",
@@ -350,6 +351,13 @@ def validate_legal_city_ledger(
                 f"{label}: page city {front_matter.get('city')!r} does not match "
                 f"legal-city name {inventory_row.get('name')!r}"
             )
+        if (
+            front_matter.get("coverage_scope") == "legal_city_only"
+            and front_matter.get("legal_admin_code") != code
+        ):
+            errors.append(
+                f"{label}: legal_city_only page legal_admin_code does not match {code}"
+            )
         level = inventory_row.get("city_level", "")
         if level in level_counts:
             level_counts[level] += 1
@@ -364,6 +372,7 @@ def validate_legal_city_ledger(
         "unprocessed_count": len(inventory) - processed,
         "completion_fraction": processed / len(inventory) if inventory else 0.0,
         "researched_counts_by_city_level": level_counts,
+        "mapped_geonames_ids": sorted(mapped_geonames),
     }
 
 
@@ -479,17 +488,36 @@ def validate_repository(
         ):
             errors.append(f"{label}: {status} decision lacks a canonical target")
 
+    legal_city_coverage = validate_legal_city_ledger(
+        repository, legal_snapshot_date, city_pages, errors
+    )
+    legal_geonames_ids = set(legal_city_coverage.get("mapped_geonames_ids", []))
+
     for geonames_id, (path, front_matter) in city_pages.items():
         if front_matter.get("country_code") == "CN":
+            coverage_scope = front_matter.get("coverage_scope", "geonames_snapshot")
+            if coverage_scope not in ALLOWED_COVERAGE_SCOPES:
+                errors.append(f"{path}: invalid coverage_scope {coverage_scope!r}")
+                continue
+            if coverage_scope == "legal_city_only":
+                if geonames_id in inventory:
+                    errors.append(
+                        f"{path}: legal_city_only page uses a GeoNames ID from the fixed inventory"
+                    )
+                if geonames_id in decisions_by_id:
+                    errors.append(
+                        f"{path}: legal_city_only page must not enter the fixed GeoNames ledger"
+                    )
+                if geonames_id not in legal_geonames_ids:
+                    errors.append(
+                        f"{path}: legal_city_only page lacks a matching legal-city decision"
+                    )
+                continue
             if geonames_id not in inventory:
                 errors.append(f"{path}: researched CN page is outside the fixed inventory")
             decision = decisions_by_id.get(geonames_id)
             if not decision or decision.get("status") != "researched":
                 errors.append(f"{path}: researched CN page lacks a researched decision row")
-
-    legal_city_coverage = validate_legal_city_ledger(
-        repository, legal_snapshot_date, city_pages, errors
-    )
     processed = sum(status_counts.values())
     return {
         "schema_version": 1,
