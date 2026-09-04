@@ -1,0 +1,6 @@
+batch,administrative_code,official_admin_name,geonameid,geonames_name,coverage_scope,target_page,selection_rationale
+CN-county-level-cities-118,659007,双河市,11980730,Bashijiutuanchang,legal_city_only,destinations/中国/新疆维吾尔自治区/双河市.md,八十九团场是双河城市核心形成前的真实地名点且与现行法定双河市中心坐标闭合并位于固定cities500快照外
+CN-county-level-cities-118,659009,昆玉市,12258642,Kunyu,legal_city_only,destinations/中国/新疆维吾尔自治区/昆玉市.md,同名ADM3记录及别名直接对应法定昆玉市且位于固定cities500快照外
+CN-county-level-cities-118,659011,新星市,1538518,Huangtian Nongchang,legal_city_only,destinations/中国/新疆维吾尔自治区/新星市.md,黄田农场点对应新星市政府驻地区域的历史地名且位于固定cities500快照外
+CN-county-level-cities-118,659012,白杨市,12006877,Yiliusituanchang Yiying,legal_city_only,destinations/中国/新疆维吾尔自治区/白杨市.md,一六四团场一营是现行白杨法定市域内真实点且未借用相邻塔城市点并位于固定cities500快照外
+CN-county-level-cities-118,659013,草湖市,12454087,Dacaohu,legal_city_only,destinations/中国/新疆维吾尔自治区/草湖市.md,大草湖设施点位于四十一团草湖镇法定市域内且新设城市暂无同名GeoNames点并位于固定cities500快照外
