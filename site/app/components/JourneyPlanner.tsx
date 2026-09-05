@@ -108,10 +108,10 @@ export default function JourneyPlanner({
 
       <div className="journey-planner__heading">
         <div>
-          <strong>{generated ? "行程方案" : "已选目的地"}</strong>
+          <strong>{generated ? "行程总览" : "已选目的地"}</strong>
           <span>
             {generated
-              ? "路线按地理邻近排列，地图已展示完整走向"
+              ? "跨城顺序与每日路线已汇集完成"
               : "安排每站天数并指定起点，选完后统一生成路线"}
           </span>
         </div>
@@ -159,26 +159,53 @@ export default function JourneyPlanner({
         </div>
       )}
 
+      {generated && plan.stops.length > 0 && (
+        <section className="journey-plan-cover" aria-label="行程摘要">
+          <div className="journey-plan-cover__eyebrow">
+            <span>跨城行程</span>
+            <small>按地理邻近排列</small>
+          </div>
+          <h3>{plan.stops.map((stop) => shortCityName(stop.city.city)).join(" → ")}</h3>
+          <div className="journey-plan-cover__stats">
+            <span><strong>{plan.totalDays}</strong><small>天</small></span>
+            <span><strong>{plan.stops.length}</strong><small>座城市</small></span>
+            <span>
+              <strong>{Math.max(1, Math.round(plan.totalDistance / 10) * 10)}</strong>
+              <small>公里直线串联</small>
+            </span>
+          </div>
+        </section>
+      )}
+
       {generated && (
         <div className="journey-planner__route">
           {plan.stops.map((stop, index) => {
             const activeStart = stop.city.id === (startCityId ?? plan.stops[0]?.city.id);
             return (
-              <article key={stop.city.id} className={activeStart ? "is-start" : ""}>
+              <article
+                key={stop.city.id}
+                className={`journey-planner__city-leg${activeStart ? " is-start" : ""}`}
+              >
                 {index > 0 && (
                   <div className="journey-planner__transfer">
-                    <span aria-hidden="true">↓</span>
+                    <span aria-hidden="true" />
+                    <strong>前往 {shortCityName(stop.city.city)}</strong>
                     <small>{formatDistance(stop.distanceFromPrevious)}</small>
                   </div>
                 )}
-                <div className="journey-planner__stop">
-                  <span className="journey-planner__order">{index + 1}</span>
-                  <div className="journey-planner__city">
-                    <strong>{shortCityName(stop.city.city)}</strong>
-                    <small>{stop.city.adminArea} · 第 {stop.dayStart}{stop.dayEnd > stop.dayStart ? `–${stop.dayEnd}` : ""} 天</small>
+                <header className="journey-planner__city-header">
+                  <span className="journey-planner__city-index">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <div className="journey-planner__city-title">
+                    <span>{stop.city.adminArea}{activeStart ? " · 起点" : ""}</span>
+                    <h3>{shortCityName(stop.city.city)}</h3>
                   </div>
-                  <strong className="journey-planner__stay">{stop.days} 天</strong>
-                </div>
+                  <div className="journey-planner__city-meta">
+                    <strong>{stop.days} 天</strong>
+                    <small>总行程第 {stop.dayStart}{stop.dayEnd > stop.dayStart ? `–${stop.dayEnd}` : ""} 天</small>
+                  </div>
+                </header>
                 <JourneyCitySchedule
                   city={stop.city}
                   days={stop.days}
@@ -197,14 +224,6 @@ export default function JourneyPlanner({
             生成路线
           </button>
           {selectedCities.length < 2 && <small>再选择一座城市，即可生成跨城路线。</small>}
-        </div>
-      )}
-
-      {generated && plan.stops.length > 0 && (
-        <div className="journey-planner__summary" aria-live="polite">
-          <span><strong>{plan.stops.length}</strong> 座城市</span>
-          <span><strong>{plan.totalDays}</strong> 天</span>
-          {plan.stops.length > 1 && <span>直线串联约 <strong>{Math.max(1, Math.round(plan.totalDistance / 10) * 10)}</strong> km</span>}
         </div>
       )}
     </div>

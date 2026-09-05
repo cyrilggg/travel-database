@@ -158,32 +158,44 @@ export default function JourneyCitySchedule({
   }, [contentPath, days]);
 
   if (!contentPath) {
-    return <p className="journey-city-schedule__state">这座城市的攻略路线稍后刷新即可展开。</p>;
+    return <p className="journey-city-schedule__state">城市攻略路线正在准备中。</p>;
   }
 
   if (state.loading) {
-    return <p className="journey-city-schedule__state">正在从城市攻略整理每日路线…</p>;
+    return (
+      <div className="journey-city-schedule__loading" aria-label="正在整理每日路线">
+        <span />
+        <span />
+      </div>
+    );
   }
   if (state.failed) {
-    return <p className="journey-city-schedule__state">这座城市的攻略路线稍后刷新即可展开。</p>;
+    return <p className="journey-city-schedule__state">城市攻略路线正在准备中。</p>;
   }
 
   return (
     <div className="journey-city-schedule" aria-label={`${city.city}每日路线`}>
       {state.routes.map((route, index) => (
-        <section key={`${city.id}-${index}`}>
-          <div className="journey-city-schedule__day">
-            <strong>第 {dayStart + index} 天</strong>
-            <span>{city.city.replace(/[市区]$/, "")}第 {index + 1} 天 · {route.title}</span>
+        <section className="journey-day-card" key={`${city.id}-${index}`}>
+          <div className="journey-day-card__number" aria-label={`第 ${dayStart + index} 天`}>
+            <span>第</span>
+            <strong>{String(dayStart + index).padStart(2, "0")}</strong>
+            <small>天</small>
           </div>
-          <ol>
-            {route.stops.map((stop, stopIndex) => (
-              <li key={`${stop}-${stopIndex}`}>
-                <span>{stopIndex + 1}</span>
-                <strong>{stop}</strong>
-              </li>
-            ))}
-          </ol>
+          <div className="journey-day-card__content">
+            <div className="journey-day-card__heading">
+              <strong>{route.title}</strong>
+              <span>{city.city.replace(/[市区]$/, "")}第 {index + 1} 天</span>
+            </div>
+            <ol>
+              {route.stops.map((stop, stopIndex) => (
+                <li key={`${stop}-${stopIndex}`}>
+                  <span aria-hidden="true" />
+                  <strong>{stop}</strong>
+                </li>
+              ))}
+            </ol>
+          </div>
         </section>
       ))}
     </div>
