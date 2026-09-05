@@ -1135,7 +1135,7 @@ export default function TerrainMap({
           type: "geojson",
           cluster: true,
           clusterMaxZoom: 6,
-          clusterRadius: 42,
+          clusterRadius: 38,
           clusterProperties: {
             missing_count: [
               "+",
@@ -1149,17 +1149,27 @@ export default function TerrainMap({
           id: CLUSTER_PARTIAL_RING_LAYER_ID,
           type: "circle",
           source: GUIDE_SOURCE_ID,
-          filter: [
-            "all",
-            ["has", "point_count"],
-            [">", ["get", "missing_count"], 0],
-          ],
+          filter: ["has", "point_count"],
           paint: {
-            "circle-color": "rgba(0,0,0,0)",
-            "circle-radius": ["step", ["get", "point_count"], 20, 8, 24, 18, 29],
-            "circle-stroke-color": "#e3a43b",
-            "circle-stroke-width": 3,
-            "circle-opacity": 0.98,
+            "circle-color": [
+              "case",
+              ["==", ["get", "missing_count"], 0],
+              "rgba(196,82,55,0.13)",
+              ["==", ["get", "missing_count"], ["get", "point_count"]],
+              "rgba(64,96,87,0.11)",
+              "rgba(211,145,48,0.13)",
+            ],
+            "circle-radius": ["step", ["get", "point_count"], 19, 8, 23, 18, 28],
+            "circle-stroke-color": [
+              "case",
+              ["==", ["get", "missing_count"], 0],
+              "rgba(196,82,55,0.52)",
+              ["==", ["get", "missing_count"], ["get", "point_count"]],
+              "rgba(64,96,87,0.5)",
+              "rgba(211,145,48,0.62)",
+            ],
+            "circle-stroke-width": 1.5,
+            "circle-blur": 0.08,
           },
         });
 
@@ -1170,18 +1180,24 @@ export default function TerrainMap({
           filter: ["has", "point_count"],
           paint: {
             "circle-color": [
-              "step",
-              ["get", "point_count"],
-              "#46645d",
-              8,
-              "#365750",
-              18,
-              "#294a45",
+              "case",
+              ["==", ["get", "missing_count"], 0],
+              "#c45237",
+              ["==", ["get", "missing_count"], ["get", "point_count"]],
+              "#f3f1e8",
+              "#fff8e9",
             ],
-            "circle-radius": ["step", ["get", "point_count"], 16, 8, 20, 18, 25],
-            "circle-stroke-color": "rgba(255,250,240,0.92)",
-            "circle-stroke-width": 2.5,
-            "circle-opacity": 0.94,
+            "circle-radius": ["step", ["get", "point_count"], 14, 8, 17, 18, 21],
+            "circle-stroke-color": [
+              "case",
+              ["==", ["get", "missing_count"], 0],
+              "rgba(255,250,240,0.96)",
+              ["==", ["get", "missing_count"], ["get", "point_count"]],
+              "#59756c",
+              "#d39130",
+            ],
+            "circle-stroke-width": 2,
+            "circle-opacity": 0.98,
           },
         });
 
@@ -1192,13 +1208,26 @@ export default function TerrainMap({
           filter: ["has", "point_count"],
           layout: {
             "text-field": ["get", "point_count_abbreviated"],
-            "text-size": 11,
+            "text-size": ["step", ["get", "point_count"], 11, 8, 12, 18, 13],
             "text-font": ["Noto Sans Regular"],
+            "text-allow-overlap": true,
           },
           paint: {
-            "text-color": "#fffaf0",
-            "text-halo-color": "rgba(28,55,50,0.3)",
-            "text-halo-width": 0.5,
+            "text-color": [
+              "case",
+              ["==", ["get", "missing_count"], 0],
+              "#fffaf0",
+              ["==", ["get", "missing_count"], ["get", "point_count"]],
+              "#365b52",
+              "#8b5b16",
+            ],
+            "text-halo-color": [
+              "case",
+              ["==", ["get", "missing_count"], 0],
+              "rgba(111,43,29,0.22)",
+              "rgba(255,250,240,0.72)",
+            ],
+            "text-halo-width": 0.6,
           },
         });
 
@@ -1210,7 +1239,7 @@ export default function TerrainMap({
           paint: {
             "circle-color": "rgba(0,0,0,0)",
             "circle-radius": mobileMode
-              ? ["step", ["get", "point_count"], 24, 8, 27, 18, 31]
+              ? ["step", ["get", "point_count"], 24, 8, 28, 18, 32]
               : ["step", ["get", "point_count"], 20, 8, 24, 18, 29],
           },
         });
@@ -1657,7 +1686,7 @@ export default function TerrainMap({
     await source.setClusterOptions({
       cluster: next,
       clusterMaxZoom: 6,
-      clusterRadius: 42,
+      clusterRadius: 38,
     });
   };
 
