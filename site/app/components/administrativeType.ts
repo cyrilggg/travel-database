@@ -14,7 +14,7 @@ export const ADMINISTRATIVE_TYPE_INFO: Record<
   prefecture: { label: "地级市及以上", color: "#d55e00" },
   "county-city": { label: "县级市", color: "#0072b2" },
   county: { label: "县", color: "#cc79a7" },
-  district: { label: "区", color: "#1b1b1b" },
+  district: { label: "区", color: "#5e3c99" },
   other: { label: "镇及其他", color: "#8f949b" },
 };
 
