@@ -8,6 +8,7 @@ import {
   Popup,
   setWorkerUrl,
 } from "maplibre-gl";
+import type { ExpressionSpecification } from "@maplibre/maplibre-gl-style-spec";
 import { useEffect, useRef, useState } from "react";
 import type { MapCity } from "../generated/publicGuides";
 import type {
@@ -48,6 +49,37 @@ const GUIDE_LABEL_LAYER_ID = "travel-guide-label";
 const EXPLORE_SOURCE_ID = "travel-explore-point";
 const EXPLORE_HALO_LAYER_ID = "travel-explore-halo";
 const EXPLORE_POINT_LAYER_ID = "travel-explore-point-core";
+
+const bilingualPlaceName: ExpressionSpecification = [
+  "let",
+  "chineseName",
+  ["coalesce", ["get", "name:zh-Hans"], ["get", "name:zh"], ""],
+  "localName",
+  [
+    "coalesce",
+    ["get", "name"],
+    ["get", "name:nonlatin"],
+    ["get", "name:latin"],
+    ["get", "name_en"],
+    "",
+  ],
+  [
+    "case",
+    [
+      "all",
+      ["!=", ["var", "chineseName"], ""],
+      ["!=", ["var", "localName"], ""],
+      ["!=", ["var", "chineseName"], ["var", "localName"]],
+    ],
+    ["concat", ["var", "chineseName"], "\n", ["var", "localName"]],
+    [
+      "case",
+      ["!=", ["var", "chineseName"], ""],
+      ["var", "chineseName"],
+      ["var", "localName"],
+    ],
+  ],
+];
 
 if (typeof document !== "undefined") {
   setWorkerUrl(
@@ -354,6 +386,17 @@ const addTerrainLayers = (map: MapLibreMap) => {
     );
   }
 
+};
+
+const localizeBaseMapLabels = (map: MapLibreMap) => {
+  map.getStyle().layers.forEach((layer) => {
+    if (layer.type !== "symbol") return;
+
+    const textField = layer.layout?.["text-field"];
+    if (!textField || !JSON.stringify(textField).includes("name")) return;
+
+    map.setLayoutProperty(layer.id, "text-field", bilingualPlaceName);
+  });
 };
 
 export default function TerrainMap({
@@ -871,6 +914,7 @@ export default function TerrainMap({
     map.on("dblclick", handleBlankMapDoubleClick);
 
     const handleStyleLoad = () => {
+      localizeBaseMapLabels(map);
       addTerrainLayers(map);
 
       if (!map.getSource(ROUTE_SOURCE_ID)) {
