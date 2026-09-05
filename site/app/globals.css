@@ -3560,6 +3560,74 @@ body,
   display: grid;
 }
 
+.journey-city-schedule {
+  display: grid;
+  gap: 10px;
+  margin: 10px 0 2px 39px;
+}
+
+.journey-city-schedule section {
+  padding: 11px 12px;
+  border-left: 2px solid rgba(196, 82, 55, 0.42);
+  background: rgba(255, 253, 248, 0.72);
+}
+
+.journey-city-schedule__day {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.journey-city-schedule__day strong {
+  color: var(--cinnabar);
+  font-size: 13px;
+}
+
+.journey-city-schedule__day span {
+  color: var(--ink-soft);
+  font-size: 12px;
+  text-align: right;
+}
+
+.journey-city-schedule ol {
+  display: grid;
+  gap: 7px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.journey-city-schedule li {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  align-items: center;
+  gap: 7px;
+  color: var(--teal);
+}
+
+.journey-city-schedule li > span {
+  display: grid;
+  width: 21px;
+  height: 21px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fffaf2;
+  background: var(--teal);
+  font-size: 11px;
+}
+
+.journey-city-schedule li > strong {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.journey-city-schedule__state {
+  margin: 8px 0 2px 39px;
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
 .journey-planner__transfer {
   display: flex;
   align-items: center;
@@ -3757,5 +3825,18 @@ body,
 
   .journey-planner__generate small {
     grid-column: auto;
+  }
+
+  .journey-city-schedule,
+  .journey-city-schedule__state {
+    margin-left: 0;
+  }
+
+  .journey-city-schedule__day {
+    display: grid;
+  }
+
+  .journey-city-schedule__day span {
+    text-align: left;
   }
 }

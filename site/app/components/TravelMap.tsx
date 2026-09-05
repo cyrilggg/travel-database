@@ -869,6 +869,7 @@ export default function TravelMap() {
             cities={mapCities}
             activeCityId={activeMapCity?.id}
             highlightedCityIds={panel.kind === "planner" ? journeyCityIds : []}
+            preserveViewport={panel.kind === "planner"}
             guideMap={mapGuideMap}
             guideMapSelection={mapGuideSelection}
             panelLayout={panelLayout}

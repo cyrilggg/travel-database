@@ -64,6 +64,7 @@ type TerrainMapProps = {
   cities: MapCity[];
   activeCityId?: string;
   highlightedCityIds?: string[];
+  preserveViewport?: boolean;
   guideMap?: GuideMapContent;
   guideMapSelection: GuideMapSelection;
   panelLayout: "collapsed" | "docked" | "expanded";
@@ -359,6 +360,7 @@ export default function TerrainMap({
   cities,
   activeCityId,
   highlightedCityIds = [],
+  preserveViewport = false,
   guideMap,
   guideMapSelection,
   panelLayout,
@@ -1472,6 +1474,8 @@ export default function TerrainMap({
     const map = mapRef.current;
     if (!mapReady || !map) return;
 
+    if (preserveViewport) return;
+
     const padding = mapPadding(panelLayoutRef.current, containerRef.current);
 
     if (guideMap) {
@@ -1574,6 +1578,7 @@ export default function TerrainMap({
     guideMap,
     guideMapSelection,
     mapReady,
+    preserveViewport,
   ]);
 
   useEffect(() => {

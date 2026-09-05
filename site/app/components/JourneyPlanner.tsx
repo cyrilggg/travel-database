@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { MapCity } from "../generated/publicGuides";
+import JourneyCitySchedule from "./JourneyCitySchedule";
 import type { JourneyPlan } from "./journeyPlannerLogic";
 
 type JourneyPlannerProps = {
@@ -178,6 +179,11 @@ export default function JourneyPlanner({
                   </div>
                   <strong className="journey-planner__stay">{stop.days} 天</strong>
                 </div>
+                <JourneyCitySchedule
+                  city={stop.city}
+                  days={stop.days}
+                  dayStart={stop.dayStart}
+                />
               </article>
             );
           })}
