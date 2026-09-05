@@ -26,6 +26,7 @@ import { buildJourneyPlan } from "./journeyPlannerLogic";
 
 type PanelState =
   | { kind: "home" }
+  | { kind: "planner" }
   | { kind: "city"; guideId: string }
   | { kind: "missing"; cityId: string }
   | { kind: "nearby"; longitude: number; latitude: number };
@@ -94,7 +95,7 @@ export default function TravelMap() {
   const [guideMapSelection, setGuideMapSelection] = useState<GuideMapSelection>({
     mode: "overview",
   });
-  const [planningDestinationsOpen, setPlanningDestinationsOpen] = useState(false);
+  const [journeyGenerated, setJourneyGenerated] = useState(false);
   const [journeyCityIds, setJourneyCityIds] = useState<string[]>([]);
   const [journeyDaysByCityId, setJourneyDaysByCityId] = useState<Record<string, number>>({});
   const [journeyStartCityId, setJourneyStartCityId] = useState<string>();
@@ -151,7 +152,7 @@ export default function TravelMap() {
     journeyDaysByCityId,
     journeyStartCityId,
   );
-  const journeyGuideMap = panel.kind === "home" && planningDestinationsOpen && journeyPlan.stops.length > 0
+  const journeyGuideMap = panel.kind === "planner" && journeyGenerated && journeyPlan.stops.length > 0
     ? {
         guideId: "cross-city-planner",
         scope: "journey" as const,
@@ -195,6 +196,8 @@ export default function TravelMap() {
       ? `${cityName(activeMapCity.city)} · ${activeMapCity.coverage === 1 ? "已有攻略" : "尚未收录"}`
       : activeGuide
       ? `${cityName(activeGuide.city)}攻略`
+      : panel.kind === "planner"
+        ? "行程规划"
       : panel.kind === "nearby"
         ? "附近攻略"
         : "攻略";
@@ -236,12 +239,11 @@ export default function TravelMap() {
     setPanel({ kind: "city", guideId: guide.id });
     setPanelLayout("docked");
     setGuideMapSelection({ mode: "overview" });
-    setPlanningDestinationsOpen(false);
   };
 
   const openMapCity = (city: MapCity) => {
-    if (panel.kind === "home" && planningDestinationsOpen && city.coverage === 1) {
-      toggleJourneyCity(city.id);
+    if (panel.kind === "planner") {
+      if (!journeyGenerated && city.coverage === 1) toggleJourneyCity(city.id);
       return;
     }
     if (city.coverage === 1 && city.guideId) {
@@ -258,11 +260,17 @@ export default function TravelMap() {
   const openHome = (scope?: "viewport" | "all") => {
     setPanel({ kind: "home" });
     setPanelLayout("docked");
-    setPlanningDestinationsOpen(false);
     if (scope) setCityScope(scope);
   };
 
+  const openJourneyPlanner = () => {
+    setPanel({ kind: "planner" });
+    setPanelLayout("docked");
+    setJourneyGenerated(false);
+  };
+
   const openNearby = (point: MapPoint) => {
+    if (panel.kind === "planner") return;
     setPanel({ kind: "nearby", ...point });
     setPanelLayout("docked");
   };
@@ -374,6 +382,7 @@ export default function TravelMap() {
       ? journeyCityIds.filter((id) => id !== cityId)
       : [...journeyCityIds, cityId];
     setJourneyCityIds(next);
+    setJourneyGenerated(false);
     setJourneyDaysByCityId((current) => {
       if (!selected) return { ...current, [cityId]: current[cityId] ?? 1 };
       const updated = { ...current };
@@ -385,6 +394,7 @@ export default function TravelMap() {
   };
 
   const changeJourneyDays = (cityId: string, days: number) => {
+    setJourneyGenerated(false);
     setJourneyDaysByCityId((current) => ({
       ...current,
       [cityId]: Math.max(1, Math.min(14, days)),
@@ -395,11 +405,16 @@ export default function TravelMap() {
     setJourneyCityIds([]);
     setJourneyDaysByCityId({});
     setJourneyStartCityId(undefined);
+    setJourneyGenerated(false);
+  };
+
+  const setJourneyStart = (cityId: string) => {
+    setJourneyStartCityId(cityId);
+    setJourneyGenerated(false);
   };
 
   const handleMapGuideItemSelect = (itemId: string) => {
     if (itemId.startsWith("journey-city:")) {
-      toggleJourneyCity(itemId.slice("journey-city:".length));
       return;
     }
     const place = activeGuideMap?.places.find((candidate) => candidate.id === itemId);
@@ -424,9 +439,7 @@ export default function TravelMap() {
         <button
           type="button"
           className="planning-entry__button"
-          aria-expanded={planningDestinationsOpen}
-          aria-controls="planning-destinations"
-          onClick={() => setPlanningDestinationsOpen((open) => !open)}
+          onClick={openJourneyPlanner}
         >
           <span className="planning-entry__mark" aria-hidden="true">程</span>
           <span className="planning-entry__copy">
@@ -434,25 +447,10 @@ export default function TravelMap() {
             <small>跨城市选择目的地，分配停留天数并生成路线</small>
           </span>
           <span className="planning-entry__action">
-            {planningDestinationsOpen ? "收起" : "开始规划"}
+            开始规划
             <i aria-hidden="true">→</i>
           </span>
         </button>
-        {planningDestinationsOpen && (
-          <div className="planning-entry__destinations" id="planning-destinations">
-            <JourneyPlanner
-              cities={planningCities}
-              selectedCityIds={journeyCityIds}
-              daysByCityId={journeyDaysByCityId}
-              startCityId={journeyStartCityId}
-              plan={journeyPlan}
-              onToggleCity={toggleJourneyCity}
-              onChangeDays={changeJourneyDays}
-              onSetStart={setJourneyStartCityId}
-              onClear={clearJourney}
-            />
-          </div>
-        )}
       </section>
 
       <div className="coverage-summary" aria-label="城市攻略覆盖进度">
@@ -527,6 +525,53 @@ export default function TravelMap() {
         </div>
       )}
     </div>
+  );
+
+  const renderPlanner = () => (
+    <>
+      <div className="panel-titlebar planner-titlebar">
+        <div>
+          <span className="panel-breadcrumb">全国路线</span>
+          <h2>行程规划</h2>
+        </div>
+        <div className="panel-actions">
+          <button
+            type="button"
+            onClick={togglePanelReadingWidth}
+            aria-label={panelExpanded ? "回到地图" : "宽屏规划行程"}
+          >
+            {panelExpanded ? "回到地图" : "宽屏规划"}
+          </button>
+          <button
+            className="panel-close"
+            type="button"
+            onClick={() => openHome()}
+            aria-label="返回首页"
+          >
+            ←
+          </button>
+        </div>
+      </div>
+      <div className="journey-planner-page">
+        <p className="journey-planner-page__intro">
+          先选完城市并安排每站天数，生成后再查看跨城顺序和地图连线。
+        </p>
+        <JourneyPlanner
+          cities={planningCities}
+          selectedCityIds={journeyCityIds}
+          daysByCityId={journeyDaysByCityId}
+          startCityId={journeyStartCityId}
+          plan={journeyPlan}
+          generated={journeyGenerated}
+          onToggleCity={toggleJourneyCity}
+          onChangeDays={changeJourneyDays}
+          onSetStart={setJourneyStart}
+          onGenerate={() => setJourneyGenerated(true)}
+          onEdit={() => setJourneyGenerated(false)}
+          onClear={clearJourney}
+        />
+      </div>
+    </>
   );
 
   const renderCity = (guide: TravelGuide) => {
@@ -813,6 +858,7 @@ export default function TravelMap() {
           <TerrainMap
             cities={mapCities}
             activeCityId={activeMapCity?.id}
+            highlightedCityIds={panel.kind === "planner" ? journeyCityIds : []}
             guideMap={mapGuideMap}
             guideMapSelection={mapGuideSelection}
             panelLayout={panelLayout}
@@ -867,6 +913,7 @@ export default function TravelMap() {
             </button>
             <div className="guide-panel-scroll" ref={panelScrollRef}>
               {panel.kind === "home" && renderHome()}
+              {panel.kind === "planner" && renderPlanner()}
               {panel.kind === "city" && activeGuide && renderCity(activeGuide)}
               {panel.kind === "missing" && activeMapCity && renderMissing(activeMapCity)}
               {panel.kind === "nearby" && renderNearby(panel)}

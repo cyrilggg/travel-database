@@ -57,6 +57,7 @@ const CHINA_BOUNDS: [[number, number], [number, number]] = [
 type TerrainMapProps = {
   cities: MapCity[];
   activeCityId?: string;
+  highlightedCityIds?: string[];
   guideMap?: GuideMapContent;
   guideMapSelection: GuideMapSelection;
   panelLayout: "collapsed" | "docked" | "expanded";
@@ -299,6 +300,7 @@ const addTerrainLayers = (map: MapLibreMap) => {
 export default function TerrainMap({
   cities,
   activeCityId,
+  highlightedCityIds = [],
   guideMap,
   guideMapSelection,
   panelLayout,
@@ -1385,11 +1387,22 @@ export default function TerrainMap({
 
   useEffect(() => {
     const map = mapRef.current;
-    if (!mapReady || !map) return;
+    if (!mapReady || !map?.getLayer(ACTIVE_POINT_LAYER_ID)) return;
+    const highlightedIds = [...new Set([
+      ...highlightedCityIds,
+      ...(activeCityId ? [activeCityId] : []),
+    ])];
+    map.setFilter(
+      ACTIVE_POINT_LAYER_ID,
+      highlightedIds.length > 0
+        ? ["in", ["get", "id"], ["literal", highlightedIds]]
+        : ["==", ["get", "id"], ""],
+    );
+  }, [activeCityId, highlightedCityIds, mapReady]);
 
-    if (map.getLayer(ACTIVE_POINT_LAYER_ID)) {
-      map.setFilter(ACTIVE_POINT_LAYER_ID, ["==", ["get", "id"], activeCityId ?? ""]);
-    }
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!mapReady || !map) return;
 
     const padding = mapPadding(panelLayoutRef.current, containerRef.current);
 

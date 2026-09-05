@@ -10,9 +10,12 @@ type JourneyPlannerProps = {
   daysByCityId: Record<string, number>;
   startCityId?: string;
   plan: JourneyPlan;
+  generated: boolean;
   onToggleCity: (cityId: string) => void;
   onChangeDays: (cityId: string, days: number) => void;
   onSetStart: (cityId: string) => void;
+  onGenerate: () => void;
+  onEdit: () => void;
   onClear: () => void;
 };
 
@@ -25,9 +28,12 @@ export default function JourneyPlanner({
   daysByCityId,
   startCityId,
   plan,
+  generated,
   onToggleCity,
   onChangeDays,
   onSetStart,
+  onGenerate,
+  onEdit,
   onClear,
 }: JourneyPlannerProps) {
   const [query, setQuery] = useState("");
@@ -43,6 +49,17 @@ export default function JourneyPlanner({
       : [],
     [cities, normalizedQuery],
   );
+  const selectedCities = useMemo(
+    () => selectedCityIds.flatMap((cityId) => {
+      const city = cities.find((candidate) => candidate.id === cityId);
+      return city ? [city] : [];
+    }),
+    [cities, selectedCityIds],
+  );
+  const selectedDays = selectedCities.reduce(
+    (total, city) => total + (daysByCityId[city.id] ?? 1),
+    0,
+  );
 
   const selectCity = (cityId: string) => {
     onToggleCity(cityId);
@@ -51,56 +68,100 @@ export default function JourneyPlanner({
 
   return (
     <div className="journey-planner">
-      <div className="journey-planner__search">
-        <label htmlFor="journey-city-search">选择目的地</label>
-        <span>可搜索全国已收录城市，也可直接点击地图</span>
-        <div>
-          <input
-            id="journey-city-search"
-            type="search"
-            value={query}
-            placeholder="输入城市或省份"
-            autoComplete="off"
-            onChange={(event) => setQuery(event.target.value)}
-          />
-          <strong>{selectedCityIds.length} 站</strong>
-        </div>
-        {normalizedQuery && (
-          <div className="journey-planner__matches" aria-label="目的地搜索结果">
-            {matches.length > 0 ? matches.map((city) => {
-              const selected = selectedSet.has(city.id);
-              return (
-                <button
-                  key={city.id}
-                  type="button"
-                  className={selected ? "is-selected" : ""}
-                  aria-pressed={selected}
-                  onClick={() => selectCity(city.id)}
-                >
-                  <span><strong>{shortCityName(city.city)}</strong><small>{city.adminArea}</small></span>
-                  <i aria-hidden="true">{selected ? "✓" : "+"}</i>
-                </button>
-              );
-            }) : <p>换一个城市名称继续搜索。</p>}
+      {!generated && (
+        <div className="journey-planner__search">
+          <label htmlFor="journey-city-search">选择目的地</label>
+          <span>搜索全国已收录城市，或移动地图后直接点选</span>
+          <div>
+            <input
+              id="journey-city-search"
+              type="search"
+              value={query}
+              placeholder="输入城市或省份"
+              autoComplete="off"
+              onChange={(event) => setQuery(event.target.value)}
+            />
+            <strong>{selectedCityIds.length} 站</strong>
           </div>
-        )}
-      </div>
+          {normalizedQuery && (
+            <div className="journey-planner__matches" aria-label="目的地搜索结果">
+              {matches.length > 0 ? matches.map((city) => {
+                const selected = selectedSet.has(city.id);
+                return (
+                  <button
+                    key={city.id}
+                    type="button"
+                    className={selected ? "is-selected" : ""}
+                    aria-pressed={selected}
+                    onClick={() => selectCity(city.id)}
+                  >
+                    <span><strong>{shortCityName(city.city)}</strong><small>{city.adminArea}</small></span>
+                    <i aria-hidden="true">{selected ? "✓" : "+"}</i>
+                  </button>
+                );
+              }) : <p>换一个城市名称继续搜索。</p>}
+            </div>
+          )}
+        </div>
+      )}
 
       <div className="journey-planner__heading">
         <div>
-          <strong>跨城路线</strong>
-          <span>选择起点并分配停留天数，路线按地理邻近排列</span>
+          <strong>{generated ? "行程方案" : "已选目的地"}</strong>
+          <span>
+            {generated
+              ? "路线按地理邻近排列，地图已展示完整走向"
+              : "安排每站天数并指定起点，选完后统一生成路线"}
+          </span>
         </div>
-        {selectedCityIds.length > 0 && <button type="button" onClick={onClear}>清空</button>}
+        {generated
+          ? <button type="button" onClick={onEdit}>调整行程</button>
+          : selectedCityIds.length > 0 && <button type="button" onClick={onClear}>清空</button>}
       </div>
 
-      {plan.stops.length === 0 ? (
-        <div className="journey-planner__empty">从搜索或地图中选择城市，路线会在这里依次展开。</div>
-      ) : (
+      {!generated && selectedCities.length === 0 && (
+        <div className="journey-planner__empty">从搜索或地图中选择城市，已选目的地会汇集在这里。</div>
+      )}
+
+      {!generated && selectedCities.length > 0 && (
+        <div className="journey-planner__selection">
+          {selectedCities.map((city, index) => {
+            const activeStart = city.id === (startCityId ?? selectedCities[0]?.id);
+            const days = daysByCityId[city.id] ?? 1;
+            return (
+              <article key={city.id} className={activeStart ? "is-start" : ""}>
+                <div className="journey-planner__stop">
+                  <span className="journey-planner__order">{index + 1}</span>
+                  <div className="journey-planner__city">
+                    <strong>{shortCityName(city.city)}</strong>
+                    <small>{city.adminArea}</small>
+                  </div>
+                  <div className="journey-planner__days" aria-label={`${shortCityName(city.city)}停留天数`}>
+                    <button type="button" aria-label="减少一天" onClick={() => onChangeDays(city.id, days - 1)}>−</button>
+                    <strong>{days} 天</strong>
+                    <button type="button" aria-label="增加一天" onClick={() => onChangeDays(city.id, days + 1)}>+</button>
+                  </div>
+                  <div className="journey-planner__stop-actions">
+                    <button
+                      type="button"
+                      className={activeStart ? "is-active" : ""}
+                      onClick={() => onSetStart(city.id)}
+                    >
+                      {activeStart ? "起点" : "设为起点"}
+                    </button>
+                    <button type="button" onClick={() => onToggleCity(city.id)}>移除</button>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      )}
+
+      {generated && (
         <div className="journey-planner__route">
           {plan.stops.map((stop, index) => {
             const activeStart = stop.city.id === (startCityId ?? plan.stops[0]?.city.id);
-            const days = daysByCityId[stop.city.id] ?? 1;
             return (
               <article key={stop.city.id} className={activeStart ? "is-start" : ""}>
                 {index > 0 && (
@@ -115,21 +176,7 @@ export default function JourneyPlanner({
                     <strong>{shortCityName(stop.city.city)}</strong>
                     <small>{stop.city.adminArea} · 第 {stop.dayStart}{stop.dayEnd > stop.dayStart ? `–${stop.dayEnd}` : ""} 天</small>
                   </div>
-                  <div className="journey-planner__days" aria-label={`${shortCityName(stop.city.city)}停留天数`}>
-                    <button type="button" aria-label="减少一天" onClick={() => onChangeDays(stop.city.id, days - 1)}>−</button>
-                    <strong>{days} 天</strong>
-                    <button type="button" aria-label="增加一天" onClick={() => onChangeDays(stop.city.id, days + 1)}>+</button>
-                  </div>
-                  <div className="journey-planner__stop-actions">
-                    <button
-                      type="button"
-                      className={activeStart ? "is-active" : ""}
-                      onClick={() => onSetStart(stop.city.id)}
-                    >
-                      {activeStart ? "起点" : "设为起点"}
-                    </button>
-                    <button type="button" onClick={() => onToggleCity(stop.city.id)}>移除</button>
-                  </div>
+                  <strong className="journey-planner__stay">{stop.days} 天</strong>
                 </div>
               </article>
             );
@@ -137,7 +184,17 @@ export default function JourneyPlanner({
         </div>
       )}
 
-      {plan.stops.length > 0 && (
+      {!generated && (
+        <div className="journey-planner__generate">
+          <span>{selectedCities.length} 座城市 · 共 {selectedDays} 天</span>
+          <button type="button" disabled={selectedCities.length < 2} onClick={onGenerate}>
+            生成路线
+          </button>
+          {selectedCities.length < 2 && <small>再选择一座城市，即可生成跨城路线。</small>}
+        </div>
+      )}
+
+      {generated && plan.stops.length > 0 && (
         <div className="journey-planner__summary" aria-live="polite">
           <span><strong>{plan.stops.length}</strong> 座城市</span>
           <span><strong>{plan.totalDays}</strong> 天</span>
