@@ -40,6 +40,11 @@ type MapPoint = {
 };
 
 const cityName = (name: string) => name.replace(/[市区]$/, "");
+const countryName = (city: MapCity) => {
+  if (city.administrativeCode.startsWith("kr:")) return "韩国";
+  if (city.administrativeCode.startsWith("kp:")) return "朝鲜";
+  return "中国";
+};
 const mappedGuideIds = new Set(
   mapCities.flatMap((city) => (city.guideId ? [city.guideId] : [])),
 );
@@ -297,7 +302,7 @@ export default function TravelMap() {
     openGuide(guide);
   };
 
-  const resetToNation = () => {
+  const resetToOverview = () => {
     openHome("viewport");
     setMapResetSignal((signal) => signal + 1);
   };
@@ -493,7 +498,7 @@ export default function TravelMap() {
       <div className="panel-section-heading">
         <div>
           <span>{cityScope === "viewport" ? "当前视野" : "城市目录"}</span>
-          <small>{cityScope === "viewport" ? "拖动地图即可更新" : "按省份浏览"}</small>
+          <small>{cityScope === "viewport" ? "拖动地图即可更新" : "按地区浏览"}</small>
         </div>
       </div>
 
@@ -716,7 +721,7 @@ export default function TravelMap() {
       <>
         <div className="panel-titlebar">
           <div>
-            <span className="panel-breadcrumb">中国 / {city.adminArea}</span>
+            <span className="panel-breadcrumb">{countryName(city)} / {city.adminArea}</span>
             <h2>{cityName(city.city)}</h2>
           </div>
           <div className="panel-actions">
@@ -840,7 +845,7 @@ export default function TravelMap() {
             <h1>旅行地图</h1>
           </div>
           <div className="header-map-actions" aria-label="地图快捷操作">
-            <button type="button" onClick={resetToNation}>全国</button>
+            <button type="button" onClick={resetToOverview}>全图</button>
             <button type="button" onClick={exploreRandomGuide}>随机</button>
           </div>
         </div>
@@ -864,7 +869,7 @@ export default function TravelMap() {
       </header>
 
       <main className="experience-shell">
-        <section className="map-section" aria-label="中国城市攻略地图">
+        <section className="map-section" aria-label="东亚城市攻略地图">
           <TerrainMap
             cities={mapCities}
             activeCityId={activeMapCity?.id}

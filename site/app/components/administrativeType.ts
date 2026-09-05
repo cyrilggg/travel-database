@@ -29,14 +29,23 @@ export const administrativeTypeOf = (
     city.cityLevel === "direct_municipality" ||
     city.cityLevel === "prefecture_level_city" ||
     city.cityLevel === "taiwan_municipality" ||
-    city.cityLevel === "taiwan_provincial_city"
+    city.cityLevel === "taiwan_provincial_city" ||
+    city.cityLevel === "south_korea_special_city" ||
+    city.cityLevel === "south_korea_metropolitan_city" ||
+    city.cityLevel === "south_korea_special_self_governing_city" ||
+    city.cityLevel === "south_korea_integrated_special_city" ||
+    city.cityLevel === "north_korea_directly_governed_city" ||
+    city.cityLevel === "north_korea_special_city"
   ) {
     return "prefecture";
   }
 
   if (
     city.cityLevel === "county_level_city" ||
-    city.cityLevel === "taiwan_county_administered_city"
+    city.cityLevel === "taiwan_county_administered_city" ||
+    city.cityLevel === "south_korea_municipal_city" ||
+    city.cityLevel === "south_korea_administrative_city" ||
+    city.cityLevel === "north_korea_provincial_city"
   ) {
     return "county-city";
   }

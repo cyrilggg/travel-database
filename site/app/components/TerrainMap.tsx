@@ -87,7 +87,7 @@ if (typeof document !== "undefined") {
   );
 }
 
-const CHINA_BOUNDS: [[number, number], [number, number]] = [
+const EAST_ASIA_BOUNDS: [[number, number], [number, number]] = [
   [73.2, 18.1],
   [134.8, 53.6],
 ];
@@ -1431,7 +1431,7 @@ export default function TerrainMap({
         });
       }
 
-      map.fitBounds(CHINA_BOUNDS, {
+      map.fitBounds(EAST_ASIA_BOUNDS, {
         padding: mapPadding(panelLayoutRef.current, containerRef.current),
         duration: 0,
       });
@@ -1638,7 +1638,7 @@ export default function TerrainMap({
       return;
     }
 
-    map.fitBounds(CHINA_BOUNDS, {
+    map.fitBounds(EAST_ASIA_BOUNDS, {
       padding,
       pitch: terrainEnabledRef.current ? 18 : 0,
       bearing: 0,
@@ -1657,7 +1657,7 @@ export default function TerrainMap({
   useEffect(() => {
     const map = mapRef.current;
     if (!mapReady || !map || resetSignal === 0) return;
-    map.fitBounds(CHINA_BOUNDS, {
+    map.fitBounds(EAST_ASIA_BOUNDS, {
       padding: mapPadding(panelLayoutRef.current, containerRef.current),
       pitch: terrainEnabledRef.current ? 18 : 0,
       bearing: 0,
@@ -1703,7 +1703,7 @@ export default function TerrainMap({
         role="region"
         aria-label={guideMap
           ? "可拖动和缩放的攻略联动地图，显示当前成都攻略内容"
-          : "可拖动和双指缩放的中国城市地形地图，最大缩放级别 16"}
+          : "可拖动和双指缩放的东亚城市地形地图，最大缩放级别 16"}
       />
 
       {!mapReady && !mapFailed && (

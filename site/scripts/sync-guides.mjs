@@ -34,11 +34,26 @@ const legalCityCentersPath = path.join(
   "data",
   "cn-legal-city-centers.csv",
 );
-const taiwanCityCentersPath = path.join(
-  siteRoot,
-  "data",
-  "tw-city-centers.csv",
-);
+const additionalCityCenterSources = [
+  {
+    path: path.join(siteRoot, "data", "tw-city-centers.csv"),
+    idPrefix: "taiwan",
+    codePrefix: "tw",
+    levelPrefix: "taiwan",
+  },
+  {
+    path: path.join(siteRoot, "data", "kr-city-centers.csv"),
+    idPrefix: "south-korea",
+    codePrefix: "kr",
+    levelPrefix: "south_korea",
+  },
+  {
+    path: path.join(siteRoot, "data", "kp-city-centers.csv"),
+    idPrefix: "north-korea",
+    codePrefix: "kp",
+    levelPrefix: "north_korea",
+  },
+];
 
 class SourceRefUnavailableError extends Error {}
 
@@ -166,12 +181,16 @@ async function loadCoordinates() {
 }
 
 async function loadMapCities(guides) {
-  const [inventoryCsv, decisionsCsv, centersCsv, taiwanCitiesCsv] =
+  const [inventoryCsv, decisionsCsv, centersCsv, additionalCityCsvs] =
     await Promise.all([
       readSourceFile(legalCityInventoryPath),
       readSourceFile(legalCityDecisionsPath),
       readFile(legalCityCentersPath, "utf8"),
-      readFile(taiwanCityCentersPath, "utf8"),
+      Promise.all(
+        additionalCityCenterSources.map((source) =>
+          readFile(source.path, "utf8"),
+        ),
+      ),
     ]);
   const decisionsByCode = new Map(
     parseCsv(decisionsCsv).map((row) => [row.administrative_code, row]),
@@ -216,26 +235,32 @@ async function loadMapCities(guides) {
     };
   });
 
-  const taiwanCities = parseCsv(taiwanCitiesCsv).map((city) => {
-    const guide = city.geonames_id
-      ? guidesByGeonamesId.get(city.geonames_id)
-      : undefined;
-    if (guide) mappedGuideIds.add(guide.id);
+  const additionalCountryCities = additionalCityCenterSources.flatMap(
+    (source, sourceIndex) =>
+      parseCsv(additionalCityCsvs[sourceIndex]).map((city) => {
+        const guide = city.geonames_id
+          ? guidesByGeonamesId.get(city.geonames_id)
+          : undefined;
+        if (guide) mappedGuideIds.add(guide.id);
 
-    return {
-      id: `taiwan-${city.administrative_code}`,
-      administrativeCode: `tw:${city.administrative_code}`,
-      city: city.name,
-      adminArea: city.admin_area,
-      cityLevel: `taiwan_${city.city_level}`,
-      coverage: guide ? 1 : 0,
-      ...(guide ? { guideId: guide.id } : {}),
-      coordinates: {
-        longitude: Number(city.longitude),
-        latitude: Number(city.latitude),
-      },
-    };
-  });
+        const longitude = Number(city.longitude);
+        const latitude = Number(city.latitude);
+        if (!Number.isFinite(longitude) || !Number.isFinite(latitude)) {
+          throw new Error(`${city.name}（${city.administrative_code}）缺少有效地图中心点`);
+        }
+
+        return {
+          id: `${source.idPrefix}-${city.administrative_code}`,
+          administrativeCode: `${source.codePrefix}:${city.administrative_code}`,
+          city: city.name,
+          adminArea: city.admin_area,
+          cityLevel: `${source.levelPrefix}_${city.city_level}`,
+          coverage: guide ? 1 : 0,
+          ...(guide ? { guideId: guide.id } : {}),
+          coordinates: { longitude, latitude },
+        };
+      }),
+  );
 
   const additionalGuideDestinations = guides
     .filter((guide) => !mappedGuideIds.has(guide.id))
@@ -252,7 +277,7 @@ async function loadMapCities(guides) {
 
   const mapCities = [
     ...legalCities,
-    ...taiwanCities,
+    ...additionalCountryCities,
     ...additionalGuideDestinations,
   ];
   const visibleGuideIds = mapCities.flatMap((city) =>
