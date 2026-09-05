@@ -98,6 +98,42 @@ const administrativeColorExpression = [
   ADMINISTRATIVE_TYPE_INFO.other.color,
 ] as const;
 
+const administrativeRadiusExpression = [
+  "interpolate",
+  ["linear"],
+  ["zoom"],
+  3,
+  [
+    "match",
+    ["get", "administrativeType"],
+    "prefecture", 6.5,
+    "county-city", 5.4,
+    "county", 4.7,
+    "district", 4.1,
+    3.7,
+  ],
+  7,
+  [
+    "match",
+    ["get", "administrativeType"],
+    "prefecture", 8.5,
+    "county-city", 7.2,
+    "county", 6.2,
+    "district", 5.4,
+    4.8,
+  ],
+  10,
+  [
+    "match",
+    ["get", "administrativeType"],
+    "prefecture", 10.5,
+    "county-city", 9,
+    "county", 7.8,
+    "district", 6.8,
+    6,
+  ],
+] as const;
+
 const isMobileMapExperience = () =>
   typeof window !== "undefined" && window.matchMedia(MOBILE_MAP_QUERY).matches;
 
@@ -1143,7 +1179,7 @@ export default function TerrainMap({
               "#fffaf0",
               administrativeColorExpression,
             ],
-            "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 4.5, 7, 6.5, 10, 8],
+            "circle-radius": administrativeRadiusExpression,
             "circle-stroke-color": [
               "case",
               ["==", ["get", "coverage"], 0],
@@ -1179,7 +1215,15 @@ export default function TerrainMap({
           filter: ["==", ["get", "id"], ""],
           paint: {
             "circle-color": administrativeColorExpression,
-            "circle-radius": 9,
+            "circle-radius": [
+              "match",
+              ["get", "administrativeType"],
+              "prefecture", 12,
+              "county-city", 10.5,
+              "county", 9.5,
+              "district", 8.5,
+              8,
+            ],
             "circle-stroke-color": "rgba(255,248,236,0.72)",
             "circle-stroke-width": 6,
           },

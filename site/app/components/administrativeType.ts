@@ -11,11 +11,11 @@ export const ADMINISTRATIVE_TYPE_INFO: Record<
   AdministrativeType,
   { label: string; color: string }
 > = {
-  prefecture: { label: "地级市及以上", color: "#b64a35" },
-  "county-city": { label: "县级市", color: "#21706b" },
-  county: { label: "县", color: "#ae741d" },
-  district: { label: "区", color: "#5964a8" },
-  other: { label: "镇及其他", color: "#66746f" },
+  prefecture: { label: "地级市及以上", color: "#d55e00" },
+  "county-city": { label: "县级市", color: "#0072b2" },
+  county: { label: "县", color: "#cc79a7" },
+  district: { label: "区", color: "#1b1b1b" },
+  other: { label: "镇及其他", color: "#8f949b" },
 };
 
 export const ADMINISTRATIVE_TYPE_LEGEND = (
