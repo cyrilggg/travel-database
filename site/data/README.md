@@ -375,3 +375,11 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 本批不使用人口门槛，因此弗伦泽、比鲁因察、马亚克等普通小城市同样保留；基希讷乌的 5 个内部城区和城市下属的 42 个聚居地不重复设置为独立城市。稳定 ID 使用 CUATM 的 `CodUnic`，不随排序、中文译名或 GeoNames 更新变化；坐标逐项绑定固定 GeoNames ID，科尔内什蒂同名点使用与官方城市位置相符的记录。`scripts/import-moldova-official-cities.py` 直接解析并校验官方 CUATM XLSX 与 GeoNames 快照，固定检查 67 个城市、13 个 municipality、54 个 city、唯一 CUATM 与 GeoNames ID、三类来源层级和国界范围。
 
 2026-09-06 下载的官方 `CUATM_25.xlsx` SHA-256 为 `21FF5525A7F22F04F0D3F1517EBC1F02401613665FDFE385258AA4C35C92D705`；GeoNames 摩尔多瓦国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `049C66D9A404CE7FBD73EB83AB7E5C6FC6AE01846DD8BDB907D501688D632136`，解压文本 SHA-256 为 `3682C00E775ED596A323FD69502EF97071DD009BEB6431418565B5DF39B8204F`，生成 CSV SHA-256 为 `4CDC0934DABB999028CAB8CA8FCCBEE8052754225EC3CCD1F66F7E9172DF9F7D`。所有 67 个地图主名称均为简体中文且唯一；没有攻略的城市统一显示为“尚未收录”。
+
+## 乌克兰城市点
+
+`sources/ua-official-cities-2026-07-07.csv` 收录乌克兰 2026-07-07 版 KATOTTG 中全部 463 个法定城市：461 个 `M` 类城市，以及基辅和塞瓦斯托波尔两个 `K` 类特殊地位城市。KATOTTG 是乌克兰现行行政区划及地方共同体领土分类器，其稳定系统编号不随行政隶属关系变化；现行版本、变更命令和分类说明见：<https://mindev.gov.ua/diialnist/rozvytok-mistsevoho-samovriaduvannia/kodyfikator-administratyvno-terytorialnykh-odynyts-ta-terytorii-terytorialnykh-hromad>、<https://stat.gov.ua/uk/page-contents/kodyfikator-administratyvno-terytorialnykh-odynyts-ta-terytoriy-terytorialnykh-hromad>。
+
+本批不使用人口门槛，普里皮亚季、切尔诺贝利、卡利米乌斯凯等人口很少或当前来源人口为零、但分类器明确标为城市的地点同样保留；27,261 个 `C` 类村庄、1,979 个 `X` 类乡村聚居地和 108 个 `B` 类城市内部区不纳入。稳定 ID 直接使用 KATOTTG 城市代码，坐标逐项绑定 463 个不同的 GeoNames ID；同名城市在中文主名称中附加州名区分。`scripts/import-ukraine-official-cities.py` 直接解析并校验官方 XLSX 与 GeoNames 快照，固定检查城市总数、类别数量、27 个一级地区、六类来源层级、唯一稳定 ID、唯一中心点和国界范围。
+
+2026-09-06 下载的官方 `kodifikator-07-07.xlsx` SHA-256 为 `5C5317759B2B90208E9B00338BC3DB3C5E694272A166ACF73F1543B3E18ECBEA`；GeoNames 乌克兰国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `343F63486720162A83766E0ACACBE7BBBF9EE71DD1FF94D2B39E21D524E3242B`，解压文本 SHA-256 为 `CBBB2F639B03C525A264EE0EACE5996B9FDFF4707DFBC6E4E736E65ACE4EEDF8`，生成 CSV SHA-256 为 `136F7082DE9C4CD8EB35DEB453D1FD71513238E8F5EBF8377AFB17427121DA35`。地图主名称来自中文参考表、Wikidata 中文标签和少量人工音译，统一转为简体中文并保证 463 个名称唯一；一级地区仅用于来源分组和定位，不表示对边界、实际控制或主权争议的立场。没有攻略的城市统一显示为“尚未收录”。

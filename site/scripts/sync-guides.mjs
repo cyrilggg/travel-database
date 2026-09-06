@@ -842,6 +842,20 @@ const additionalCityCenterSources = [
     countryName: "摩尔多瓦",
     continentCode: "EU",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "ua-official-cities-2026-07-07.csv",
+    ),
+    idPrefix: "ukraine",
+    codePrefix: "ua",
+    levelPrefix: "ukraine",
+    countryCode: "UA",
+    countryName: "乌克兰",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
