@@ -688,6 +688,20 @@ const additionalCityCenterSources = [
     countryName: "土耳其",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "al-official-cities-2026-09-06.csv",
+    ),
+    idPrefix: "albania",
+    codePrefix: "al",
+    levelPrefix: "albania",
+    countryCode: "AL",
+    countryName: "阿尔巴尼亚",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
