@@ -674,6 +674,20 @@ const additionalCityCenterSources = [
     countryName: "塞浦路斯",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "tr-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "turkey",
+    codePrefix: "tr",
+    levelPrefix: "turkey",
+    countryCode: "TR",
+    countryName: "土耳其",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
