@@ -323,6 +323,20 @@ const additionalCityCenterSources = [
     countryName: "阿富汗",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "pk-municipal-cities-2023.csv",
+    ),
+    idPrefix: "pakistan",
+    codePrefix: "pk",
+    levelPrefix: "pakistan",
+    countryCode: "PK",
+    countryName: "巴基斯坦",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

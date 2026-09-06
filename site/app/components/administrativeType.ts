@@ -59,7 +59,10 @@ export const administrativeTypeOf = (
     city.cityLevel === "bangladesh_capital_city_corporation" ||
     city.cityLevel === "bangladesh_city_corporation" ||
     city.cityLevel === "afghanistan_capital_municipality" ||
-    city.cityLevel === "afghanistan_provincial_municipality"
+    city.cityLevel === "afghanistan_provincial_municipality" ||
+    city.cityLevel === "pakistan_metropolitan_corporation" ||
+    city.cityLevel === "pakistan_municipal_corporation" ||
+    city.cityLevel === "pakistan_district_municipal_corporation"
   ) {
     return "prefecture";
   }
@@ -87,7 +90,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "nepal_municipality" ||
     city.cityLevel === "bangladesh_pourashava_class_a" ||
     city.cityLevel === "bangladesh_pourashava_class_b" ||
-    city.cityLevel === "bangladesh_pourashava_class_c"
+    city.cityLevel === "bangladesh_pourashava_class_c" ||
+    city.cityLevel === "pakistan_municipal_committee"
   ) {
     return "county-city";
   }
