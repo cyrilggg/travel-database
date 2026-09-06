@@ -247,3 +247,9 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 `sources/ps-city-centers-2026-09-06.csv` 收录 104 个巴勒斯坦城市级入口：2 个 GeoNames 一级行政中心、7 个二级行政中心，以及 95 个不兼任行政中心且人口超过 5,000 的普通城市型聚居地；其中加沙地带 17 个、约旦河西岸 87 个。沿用西亚批次的可复现口径，保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`。导入器固定排除耶路撒冷内部社区、三个难民营、两个重复城市点，以及四个不属于巴勒斯坦地方城市体系的以色列定居点/地方委员会记录。巴勒斯坦地方政府部当前列出的 16 个行政区用于复核城市归属和主要行政中心：<https://gate.molg.pna.ps/EN/Locales>；巴勒斯坦中央统计局正在编制的 2026 聚居地指南明确以 2017 聚居地指南和 2025 地方机构选区边界为更新基础：<https://www.pcbs.gov.ps/ar/post-details/?postId=26604>。
 
 稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-palestine-city-centers.py` 固定校验来源哈希、三类层级数量、104 个唯一 ID、唯一中心点、两个地理区域中文归属和坐标范围。2026-09-06 下载的 GeoNames 巴勒斯坦国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `5283D143B05D7BC8C2F41CCB76C287AF9C7B481B6F9B2588FC43631478E9CBB0`，解压文本 SHA-256 为 `2B85B6C5942A8F6F6B07AE889B7F84D66A8F21CB61E35AE4D48AB5197AC2EF4A`，生成 CSV SHA-256 为 `32AA495C6400DABB84BF98CDEFB2E51A08A4612604401A59C51EBA921AC7CA98`。人口字段只用于本批筛选，并非对当前人口或现场状况的陈述；“加沙地带”和“约旦河西岸”标签用于说明来源分组与位置，不表达边界或主权立场。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。
+
+## 科威特城市点
+
+`sources/kw-city-centers-2026-09-06.csv` 收录 14 个科威特城市级入口：首都、5 个其他省会和 8 个不兼任行政中心且人口超过 5,000 的普通城市型聚居地。沿用西亚批次的可复现口径，保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`；固定排除科威特城内部的代斯曼、南苏拉住宅区和以农场命名的阿卜达利农业聚居地。科威特政府当前公布的 6 省清单用于复核省级覆盖：<https://www.e.gov.kw/sites/kgoenglish/Pages/Visitors/AboutKuwait/KuwaitGovernorates.aspx>；GeoNames 对城市文件和字段的官方说明见：<https://download.geonames.org/export/dump/readme.txt>。
+
+稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-kuwait-city-centers.py` 固定校验来源哈希、三类层级数量、14 个唯一 ID、唯一中心点、6 省中文归属和国界范围。2026-09-06 下载的 GeoNames 科威特国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `9DA6AD32FEDD5C09E2A8655AF1E02109E1A2D1452379FCE2A599BE29E08F649A`，解压文本 SHA-256 为 `CF831E9E798DE436FEA21DE60D89AA0E1BB762244D05E901CDAA730267CBCA7B`，生成 CSV SHA-256 为 `AE78C268104E239A85A2C8DD54C473E6849997C477390D69C2426942FD728B57`。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。

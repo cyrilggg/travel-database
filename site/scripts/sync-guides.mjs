@@ -562,6 +562,20 @@ const additionalCityCenterSources = [
     countryName: "巴勒斯坦",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "kw-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "kuwait",
+    codePrefix: "kw",
+    levelPrefix: "kuwait",
+    countryCode: "KW",
+    countryName: "科威特",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
