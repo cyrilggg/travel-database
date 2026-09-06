@@ -1,0 +1,485 @@
+administrative_code,name,admin_area,city_level,geonames_id,wikidata_id,longitude,latitude
+3007,Chaharbagh,Alborz,county_seat,,Q2437702,50.848056,35.838889
+3005,Eshtehard,Alborz,county_seat,,Q2625453,50.366111,35.725556
+3006,Fardis,Alborz,county_seat,,Q5948920,50.988333,35.722500
+3002,Hashtgerd,Alborz,county_seat,,Q720668,50.680000,35.961944
+3001,Karaj,Alborz,county_seat,,Q36529,50.991667,35.832778
+3003,Nazarabad,Alborz,county_seat,,Q2570924,50.607500,35.952222
+3004,Taleghan,Alborz,county_seat,,Q609422,50.769167,36.174444
+2412,Angut,Ardabil,county_seat,,Q4364998,47.745278,39.044167
+2401,Ardabil,Ardabil,county_seat,,Q180103,48.300000,38.250000
+2411,Aslan Duz,Ardabil,county_seat,142703,,47.405600,39.443900
+2402,Bilesuvar,Ardabil,county_seat,,Q2725024,48.361667,39.378611
+2405,Germi,Ardabil,county_seat,,Q2570951,48.080000,39.021389
+2407,Givi,Ardabil,county_seat,,Q30833,48.516667,37.616667
+2403,Khalkhal,Ardabil,county_seat,,Q10967863,48.525800,37.618900
+2404,Meshginshahr,Ardabil,county_seat,,Q720048,47.681944,38.398889
+2408,Namin,Ardabil,county_seat,,Q2549731,48.483889,38.426944
+2409,Nir,Ardabil,county_seat,,Q720633,47.998611,38.034722
+2406,Parsabad,Ardabil,county_seat,,Q720064,47.911389,39.648889
+2410,Sareyn,Ardabil,county_seat,,Q2617493,48.070833,38.151389
+1802,Ahram,Bushehr,county_seat,,Q968057,51.274722,28.882500
+1810,Asaluyeh,Bushehr,county_seat,,Q643944,52.607500,27.476111
+1808,Bandar Deylam,Bushehr,county_seat,,Q720292,50.158889,30.054167
+1805,Bandar Deyr,Bushehr,county_seat,,Q862479,51.937778,27.840000
+1807,Bandar Ganaveh,Bushehr,county_seat,,Q720298,50.516944,29.584722
+1806,Bandar Kangan,Bushehr,county_seat,,Q862332,52.062778,27.833889
+1803,Borazjan,Bushehr,county_seat,,Q720683,51.218889,29.270000
+1801,Bushehr,Bushehr,county_seat,,Q158928,50.836667,28.968889
+1809,Jam,Bushehr,county_seat,,Q862336,52.325278,27.828056
+1804,Khormoj,Bushehr,county_seat,,Q720039,51.380000,28.654167
+1410,Aluni,Chaharmahal and Bakhtiari,county_seat,143758,,51.060500,31.553030
+1405,Ardal,Chaharmahal and Bakhtiari,county_seat,,Q889142,50.656389,31.996111
+1409,Ben,Chaharmahal and Bakhtiari,county_seat,140891,,50.745150,32.540370
+1401,Borujen,Chaharmahal and Bakhtiari,county_seat,,Q888701,51.289444,31.968333
+1406,Chelgard,Chaharmahal and Bakhtiari,county_seat,,Q2634871,50.121389,32.468056
+1412,Farrokh Shahr,Chaharmahal and Bakhtiari,county_seat,120678,,50.980080,32.271740
+1403,Farsan,Chaharmahal and Bakhtiari,county_seat,,Q2325495,50.564167,32.256944
+1404,Lordegan,Chaharmahal and Bakhtiari,county_seat,,Q888694,50.828333,31.509722
+1411,Mal-e Khalifeh,Chaharmahal and Bakhtiari,county_seat,125077,,51.260260,31.290800
+1408,Saman,Chaharmahal and Bakhtiari,county_seat,117627,,50.910920,32.450140
+1402,Shahr-e Kord,Chaharmahal and Bakhtiari,county_seat,,Q386649,50.864444,32.325556
+1407,Shalamzar,Chaharmahal and Bakhtiari,county_seat,,Q888936,50.813889,32.043889
+0302,Ahar,East Azerbaijan,county_seat,,Q911727,47.066221,38.477493
+0325,Ajab Shir,East Azerbaijan,county_seat,,Q2718461,45.894167,37.477500
+0321,Azarshahr,East Azerbaijan,county_seat,,Q793611,45.978333,37.758889
+0312,Bonab,East Azerbaijan,county_seat,,Q720710,46.056111,37.340278
+0313,Bostanabad,East Azerbaijan,county_seat,,Q2717320,46.833333,37.850000
+0311,Hashtrud,East Azerbaijan,county_seat,,Q720586,47.050833,37.477778
+0316,Heris,East Azerbaijan,county_seat,,Q1610007,47.116667,38.248056
+0327,Hurand,East Azerbaijan,county_seat,,Q30916,47.368611,38.859167
+0319,Jolfa,East Azerbaijan,county_seat,,Q720079,45.643056,38.935278
+0315,Kaleybar,East Azerbaijan,county_seat,,Q862556,47.033333,38.866667
+0326,Khomarlu,East Azerbaijan,county_seat,,Q4358620,47.034722,39.148889
+0328,Leylan,East Azerbaijan,county_seat,125710,,46.206500,37.010990
+0320,Malekan,East Azerbaijan,county_seat,,Q1295841,46.102778,37.145833
+0306,Maragheh,East Azerbaijan,county_seat,,Q605021,46.239167,37.391944
+0307,Marand,East Azerbaijan,county_seat,,Q721024,45.774100,38.430636
+0310,Mianeh,East Azerbaijan,county_seat,,Q720392,47.705812,37.428415
+0322,Osku,East Azerbaijan,county_seat,,Q719770,46.123611,37.915833
+0323,Qarah Aghaj,East Azerbaijan,county_seat,,Q2633584,46.975278,37.128889
+0305,Sarab,East Azerbaijan,county_seat,,Q863240,47.536667,37.940833
+0314,Shabestar,East Azerbaijan,county_seat,,Q765501,45.702778,38.180278
+0303,Tabriz,East Azerbaijan,county_seat,,Q80053,46.296111,38.073889
+0329,Torkamanchay,East Azerbaijan,county_seat,,Q2717301,47.389722,37.585278
+0324,Varzaqan,East Azerbaijan,county_seat,,Q2717308,46.654444,38.509722
+0701,Abadeh,Fars,county_seat,,Q192928,52.650556,31.160833
+0735,Abadeh Tashk,Fars,county_seat,,Q888291,53.727500,29.810833
+0706,Ardakan,Fars,county_seat,,Q2617100,51.983412,30.263286
+0717,Arsanjan,Fars,county_seat,,Q2627738,53.308333,29.912222
+0734,Bab Anar,Fars,county_seat,,Q4811070,53.216389,28.964167
+0731,Beyza,Fars,county_seat,131536,,52.360920,30.008710
+0705,Darab,Fars,county_seat,,Q719977,54.548149,28.753194
+0703,Eqlid,Fars,county_seat,,Q720415,52.685000,30.888056
+0702,Estahban,Fars,county_seat,,Q888711,54.039444,29.126944
+0736,Evaz,Fars,county_seat,135053,,54.004170,27.762200
+0722,Farashband,Fars,county_seat,,Q2627749,52.094644,28.855378
+0708,Fasa,Fars,county_seat,,Q721034,53.650520,28.935990
+0709,Firuzabad,Fars,county_seat,,Q720952,52.570556,28.843611
+0727,Gerash,Fars,county_seat,,Q720672,54.135833,27.669722
+0719,Hajjiabad,Fars,county_seat,,Q888104,54.423333,28.357222
+0704,Jahrom,Fars,county_seat,,Q1020637,53.569587,28.501409
+0737,Juyom,Fars,county_seat,,Q888383,53.981111,28.254722
+0728,Kavar,Fars,county_seat,,Q888418,52.692608,29.200301
+0710,Kazerun,Fars,county_seat,,Q721060,51.650000,29.616667
+0729,Kharameh,Fars,county_seat,,Q888794,53.312249,29.498294
+0724,Khonj,Fars,county_seat,,Q720695,53.433333,27.883333
+0732,Korehi,Fars,county_seat,,Q4362960,53.715556,30.030000
+0715,Lamerd,Fars,county_seat,,Q740660,53.178889,27.333889
+0711,Lar,Fars,county_seat,,Q721029,54.341667,27.683333
+0712,Marvdasht,Fars,county_seat,,Q604990,52.806289,29.876290
+0726,Masiri,Fars,county_seat,,Q888074,51.522222,30.245833
+0721,Mohr,Fars,county_seat,,Q2617085,52.882125,27.551465
+0714,Neyriz,Fars,county_seat,,Q888715,54.327778,29.198889
+0713,Nurabad,Fars,county_seat,,Q719764,51.521667,30.113889
+0733,Qaemiyeh,Fars,county_seat,7451195,,51.587900,29.851760
+0720,Qir,Fars,county_seat,,Q888955,53.034722,28.482500
+0723,Saadat Shahr,Fars,county_seat,,Q2617065,53.139722,30.078611
+0718,Safashahr,Fars,county_seat,,Q888080,53.195278,30.613056
+0725,Sarvestan,Fars,county_seat,,Q765487,53.220278,29.273611
+0707,Shiraz,Fars,county_seat,,Q6397066,52.531111,29.610278
+0716,Surian,Fars,county_seat,,Q888754,53.650833,30.455000
+0730,Zarqan,Fars,county_seat,,Q888646,52.718889,29.772500
+0113,Amlash,Gilan,county_seat,,Q2549164,50.186389,37.097500
+0102,Astaneh-ye Ashrafiyeh,Gilan,county_seat,,Q643176,49.943333,37.263056
+0101,Astara,Gilan,county_seat,,Q645855,48.870000,38.430833
+0103,Bandar-e Anzali,Gilan,county_seat,141679,,49.457850,37.473180
+0109,Fuman,Gilan,county_seat,,Q2151629,49.312500,37.223889
+0117,Khomam,Gilan,county_seat,,Q1753975,49.666667,37.400000
+0111,Lahijan,Gilan,county_seat,,Q569040,50.003889,37.207222
+0110,Langarud,Gilan,county_seat,,Q721125,50.152500,37.195556
+0116,Masal,Gilan,county_seat,,Q2715420,49.132778,37.363056
+0105,Rasht,Gilan,county_seat,,Q178373,49.588611,37.276111
+0114,Rezvanshahr,Gilan,county_seat,,Q2630688,49.139444,37.551111
+0106,Rudbar,Gilan,county_seat,,Q766927,49.408056,36.805000
+0107,Rudsar,Gilan,county_seat,,Q765726,50.288056,37.137500
+0112,Shaft,Gilan,county_seat,,Q919853,49.399722,37.170278
+0115,Siahkal,Gilan,county_seat,,Q2280675,49.870833,37.152778
+0108,Sowme'eh Sara,Gilan,county_seat,,Q765771,49.321944,37.311667
+0104,Talesh,Gilan,county_seat,113343,,48.905210,37.796580
+2703,Aliabad-e Katul,Golestan,county_seat,144038,,54.867370,36.910110
+2708,Aqqala,Golestan,county_seat,,Q2572706,54.455000,37.013889
+2710,Azadshahr,Golestan,county_seat,,Q2630350,55.172222,37.086389
+2701,Bandar Gaz,Golestan,county_seat,141673,,53.947980,36.774090
+2702,Bandar Torkaman,Golestan,county_seat,,Q643394,54.071944,36.901111
+2714,Galikash,Golestan,county_seat,,Q719094,55.432500,37.271944
+2713,Gomishan,Golestan,county_seat,,Q2159878,54.076667,37.071667
+2706,Gonbad-e Kavus,Golestan,county_seat,,Q1975291,55.167210,37.250040
+2705,Gorgan,Golestan,county_seat,,Q188155,54.430000,36.846667
+2709,Kalaleh,Golestan,county_seat,,Q942587,55.493056,37.378889
+2704,Kordkuy,Golestan,county_seat,,Q720643,54.112222,36.793056
+2712,Maraveh Tappeh,Golestan,county_seat,,Q2724633,55.950000,37.900000
+2707,Minudasht,Golestan,county_seat,,Q2718241,55.374722,37.228889
+2711,Ramian,Golestan,county_seat,,Q2630596,55.141111,37.016111
+1306,Asadabad,Hamadan,county_seat,,Q888926,48.120000,34.782500
+1307,Bahar,Hamadan,county_seat,,Q888201,48.441389,34.907222
+1309,Famenin,Hamadan,county_seat,,Q957826,48.971667,35.113889
+1304,Hamadan,Hamadan,county_seat,,Q28587,48.516667,34.800000
+1305,Kabudarahang,Hamadan,county_seat,,Q2639152,48.723889,35.208333
+1302,Malayer,Hamadan,county_seat,,Q605209,48.820000,34.294167
+1303,Nahavand,Hamadan,county_seat,,Q720045,48.376944,34.188333
+1310,Qorveh-e Dargazin,Hamadan,county_seat,119160,,49.100230,35.309540
+1308,Razan,Hamadan,county_seat,,Q615773,49.033611,35.386389
+1301,Tuyserkan,Hamadan,county_seat,,Q765739,48.443611,34.551111
+2201,Abu Musa,Hormozgan,county_seat,,Q4359113,55.023611,25.866944
+2202,Bandar Abbas,Hormozgan,county_seat,,Q154814,56.280833,27.186389
+2210,Bandar Khamir,Hormozgan,county_seat,,Q2415324,55.585000,26.952222
+2203,Bandar Lengeh,Hormozgan,county_seat,141665,,54.883820,26.562070
+2209,Bastak,Hormozgan,county_seat,,Q2887669,54.366667,27.199167
+2208,Hajjiabad,Hormozgan,county_seat,,Q2160114,55.901667,28.309167
+2206,Jask,Hormozgan,county_seat,,Q719781,57.775556,25.645278
+2205,Minab,Hormozgan,county_seat,,Q691052,57.087222,27.131111
+2211,Parsian,Hormozgan,county_seat,,Q1763105,53.036111,27.208333
+2204,Qeshm,Hormozgan,county_seat,,Q888344,56.269167,26.949167
+2207,Rudan,Hormozgan,county_seat,,Q888682,57.192222,27.440556
+2213,Sardasht,Hormozgan,county_seat,117116,,57.902710,26.455740
+2212,Sirik,Hormozgan,county_seat,,Q2620766,57.102778,26.516667
+1606,Abdanan,Ilam,county_seat,,Q862554,47.419722,32.992500
+1608,Arakvaz,Ilam,county_seat,,Q2416578,46.598333,33.382778
+1610,Badreh,Ilam,county_seat,,Q2416584,47.037222,33.306667
+1612,Chavar,Ilam,county_seat,,Q861964,46.297778,33.695278
+1602,Darreh Shahr,Ilam,county_seat,,Q862604,47.380000,33.144444
+1603,Dehloran,Ilam,county_seat,,Q862457,47.267778,32.694167
+1607,Eyvan-gharb,Ilam,county_seat,,Q368958,46.309722,33.827222
+1601,Ilam,Ilam,county_seat,,Q499470,46.422778,33.637500
+1609,Lumar,Ilam,county_seat,,Q4371553,46.813889,33.568056
+1605,Mehran,Ilam,county_seat,,Q720410,46.164722,33.122222
+1604,Sarableh,Ilam,county_seat,,Q2415433,46.566389,33.766667
+1611,Towhid,Ilam,county_seat,,Q4370903,47.068611,33.726389
+1018,Aran va Bidgol,Isfahan,county_seat,,Q2431335,51.482778,34.057500
+1001,Ardestan,Isfahan,county_seat,,Q639119,52.372500,33.379722
+1024,Buin va Miandasht,Isfahan,county_seat,,Q2407921,50.164722,33.073611
+1020,Chadegan,Isfahan,county_seat,,Q2717325,50.628611,32.768333
+1006,Daran,Isfahan,county_seat,,Q2407798,50.412500,32.988611
+1021,Dehaqan,Isfahan,county_seat,,Q2630618,51.647778,31.940000
+1022,Dowlatabad,Isfahan,county_seat,,Q2616779,51.695556,32.799722
+1008,Falavarjan,Isfahan,county_seat,,Q2421737,51.509722,32.555278
+1007,Fereydunshahr,Isfahan,county_seat,,Q2321858,50.121111,32.941111
+1011,Golpayegan,Isfahan,county_seat,,Q720421,50.288333,33.453611
+1028,Harand,Isfahan,county_seat,,Q514633,52.437222,32.562222
+1002,Isfahan,Isfahan,county_seat,,Q42053,51.674722,32.652500
+1010,Kashan,Isfahan,county_seat,,Q240475,51.442500,33.988056
+1003,Khomeyni Shahr,Isfahan,county_seat,,Q720001,51.536111,32.685556
+1023,Khur,Isfahan,county_seat,,Q2409254,55.083333,33.775000
+1004,Khvansar,Isfahan,county_seat,,Q2718227,50.315000,33.220556
+1025,Kuhpayeh,Isfahan,county_seat,,Q4357648,52.438889,32.715000
+1017,Mobarakeh,Isfahan,county_seat,,Q81440,51.504444,32.346389
+1013,Nain,Isfahan,county_seat,,Q720388,53.087500,32.860000
+1014,Najafabad,Isfahan,county_seat,,Q721198,51.365278,32.634722
+1015,Natanz,Isfahan,county_seat,,Q124669,51.918056,33.511111
+1026,Nikabad,Isfahan,county_seat,,Q4371518,52.205833,32.303056
+1005,Semirom,Isfahan,county_seat,,Q2718234,51.569444,31.414167
+1016,Shahin Shahr,Isfahan,county_seat,417472,,51.552900,32.857880
+1009,Shahreza,Isfahan,county_seat,,Q765571,51.864167,32.008889
+1019,Tiran,Isfahan,county_seat,,Q2633350,51.153611,32.702500
+1027,Varzaneh,Isfahan,county_seat,,Q2613914,52.648056,32.419444
+1012,Zarrin Shahr,Isfahan,county_seat,,Q765759,51.376667,32.389722
+0820,Anar,Kerman,county_seat,,Q2778889,55.270278,30.870556
+0812,Anbarabad,Kerman,county_seat,,Q2159887,57.848056,28.475833
+0823,Arzuiyeh,Kerman,county_seat,,Q2416632,56.372778,28.441389
+0801,Baft,Kerman,county_seat,,Q1799624,56.602222,29.233056
+0802,Bam,Kerman,county_seat,,Q106636,58.356944,29.106111
+0810,Bardsir,Kerman,county_seat,,Q2159871,56.574444,29.922778
+0819,Fahraj,Kerman,county_seat,,Q2420935,58.885000,28.950278
+0822,Faryab,Kerman,county_seat,,Q588171,57.220278,28.084722
+0824,Gonbaki,Kerman,county_seat,46023,,58.864160,28.722420
+0803,Jiroft,Kerman,county_seat,,Q720007,57.740556,28.678056
+0809,Kahnuj,Kerman,county_seat,,Q2159855,57.702000,27.950000
+0808,Kerman,Kerman,county_seat,,Q171714,57.067778,30.291111
+0814,Kuhbanan,Kerman,county_seat,,Q2416601,56.282500,31.410278
+0813,Manujan,Kerman,county_seat,,Q385569,57.494973,27.401495
+0817,Mohammadabad,Kerman,county_seat,,Q498124,59.073333,28.668889
+0821,Narmashir,Kerman,county_seat,,Q2420932,58.695278,28.951111
+0816,Qaleh Ganj,Kerman,county_seat,,Q498462,57.881111,27.523611
+0818,Rabor,Kerman,county_seat,,Q2416555,56.913056,29.291111
+0804,Rafsanjan,Kerman,county_seat,,Q575804,55.993889,30.406667
+0811,Ravar,Kerman,county_seat,,Q2628801,56.805556,31.265556
+0815,Rudbar,Kerman,county_seat,,Q2420234,58.002500,28.006389
+0807,Shahr-e Babak,Kerman,county_seat,,Q2159862,55.118611,30.116389
+0806,Sirjan,Kerman,county_seat,,Q605224,55.680833,29.451389
+0805,Zarand,Kerman,county_seat,,Q147736,56.563889,30.812778
+0825,Zeh-e Kalut,Kerman,county_seat,,Q5820831,58.586900,27.792500
+0501,Eslamabad-e Gharb,Kermanshah,county_seat,,Q720689,46.530000,34.108889
+0508,Gilan-e Gharb,Kermanshah,county_seat,,Q889013,45.920278,34.142222
+0511,Harsin,Kermanshah,county_seat,,Q889116,47.586111,34.272222
+0509,Javanrud,Kermanshah,county_seat,,Q1992741,46.491389,34.806667
+0507,Kangavar,Kermanshah,county_seat,,Q720604,47.965278,34.504167
+0513,Kerend-e Gharb,Kermanshah,county_seat,,Q2633975,46.242222,34.284167
+0502,Kermanshah,Kermanshah,county_seat,,Q180078,47.068611,34.316667
+0503,Paveh,Kermanshah,county_seat,,Q720608,46.356389,35.043333
+0506,Qasr-e Shirin,Kermanshah,county_seat,,Q8139321,45.579167,34.515556
+0514,Ravansar,Kermanshah,county_seat,,Q889039,46.653333,34.715278
+0510,Sahneh,Kermanshah,county_seat,,Q889731,47.690833,34.481389
+0504,Sarpol-e Zahab,Kermanshah,county_seat,,Q765582,45.864722,34.461389
+0505,Sonqor,Kermanshah,county_seat,,Q3964916,47.599444,34.781944
+0512,Tazehabad,Kermanshah,county_seat,,Q888188,46.149444,34.738611
+0601,Abadan,Khuzestan,county_seat,,Q63049,48.304167,30.339167
+0626,Aghajari,Khuzestan,county_seat,,Q889045,49.831389,30.700556
+0603,Ahvaz,Khuzestan,county_seat,,Q170366,48.684167,31.318889
+0628,Alvan,Khuzestan,county_seat,,Q888761,48.460000,32.111389
+0602,Andimeshk,Khuzestan,county_seat,,Q371112,48.346701,32.471946
+0615,Bagh-e Malek,Khuzestan,county_seat,,Q2620725,49.889444,31.523611
+0605,Bandar-e Mahshahr,Khuzestan,county_seat,141663,,49.188520,30.556550
+0606,Behbahan,Khuzestan,county_seat,,Q643207,50.241667,30.595833
+0629,Dehdez,Khuzestan,county_seat,,Q1773463,50.288333,31.709722
+0608,Dezful,Khuzestan,county_seat,,Q605142,48.405833,32.381111
+0620,Gotvand,Khuzestan,county_seat,,Q2639110,48.813889,32.245278
+0622,Haftkel,Khuzestan,county_seat,,Q888947,49.529444,31.446944
+0625,Hamidiyeh,Khuzestan,county_seat,,Q888408,48.435278,31.485000
+0618,Hendijan,Khuzestan,county_seat,,Q888705,49.711944,30.236389
+0623,Hoveyzeh,Khuzestan,county_seat,,Q888725,48.073889,31.461944
+0604,Izeh,Khuzestan,county_seat,,Q430308,49.869444,31.831389
+0607,Khorramshahr,Khuzestan,county_seat,,Q458396,48.184167,30.440833
+0627,Kut-e Abdollah,Khuzestan,county_seat,,Q3817549,48.652500,31.241389
+0617,Lali,Khuzestan,county_seat,,Q585002,49.093611,32.328889
+0613,Masjed Soleyman,Khuzestan,county_seat,,Q643172,49.290198,31.957989
+0624,Mollasani,Khuzestan,county_seat,,Q888790,48.885000,31.585000
+0616,Omidiyeh,Khuzestan,county_seat,,Q719776,49.705000,30.759722
+0621,Qaleh-ye Khvajeh,Khuzestan,county_seat,,Q2714258,49.443611,32.206389
+0610,Ramhormoz,Khuzestan,county_seat,,Q888697,49.603611,31.280000
+0619,Ramshir,Khuzestan,county_seat,,Q862341,49.409167,30.894722
+0630,Seydun,Khuzestan,county_seat,116318,,50.083350,31.366820
+0611,Shadegan,Khuzestan,county_seat,,Q778162,48.664722,30.649722
+0614,Shush,Khuzestan,county_seat,,Q4168823,48.243611,32.194167
+0612,Shushtar,Khuzestan,county_seat,,Q643386,48.848333,32.049722
+0609,Susangerd,Khuzestan,county_seat,,Q888309,48.183056,31.560833
+1707,Basht,Kohgiluyeh and Boyer-Ahmad,county_seat,,Q888371,51.157222,30.361111
+1706,Choram,Kohgiluyeh and Boyer-Ahmad,county_seat,,Q888941,50.743611,30.753333
+1702,Dehdasht,Kohgiluyeh and Boyer-Ahmad,county_seat,,Q888365,50.565000,30.793611
+1703,Dogonbadan,Kohgiluyeh and Boyer-Ahmad,county_seat,,Q719982,50.798056,30.358611
+1708,Landeh,Kohgiluyeh and Boyer-Ahmad,county_seat,,Q888376,50.423333,30.981667
+1705,Likak,Kohgiluyeh and Boyer-Ahmad,county_seat,,Q2630625,50.093056,30.895000
+1709,Margown,Kohgiluyeh and Boyer-Ahmad,county_seat,124771,,51.082530,30.992370
+1704,Sisakht,Kohgiluyeh and Boyer-Ahmad,county_seat,,Q533476,51.455833,30.863889
+1701,Yasuj,Kohgiluyeh and Boyer-Ahmad,county_seat,,Q383129,51.583333,30.666667
+1201,Baneh,Kurdistan,county_seat,,Q643430,45.885278,35.997500
+1202,Bijar,Kurdistan,county_seat,,Q720596,47.602778,35.872778
+1210,Dehgolan,Kurdistan,county_seat,,Q889008,47.418333,35.277778
+1207,Divandarreh,Kurdistan,county_seat,,Q889022,47.023889,35.913889
+1208,Kamyaran,Kurdistan,county_seat,,Q720616,46.936944,34.795278
+1206,Marivan,Kurdistan,county_seat,,Q631517,46.176111,35.526944
+1205,Qorveh,Kurdistan,county_seat,,Q765594,47.804444,35.166389
+1204,Sanandaj,Kurdistan,county_seat,,Q272093,46.998889,35.309722
+1203,Saqqez,Kurdistan,county_seat,,Q348972,46.273611,36.250000
+1209,Sarvabad,Kurdistan,county_seat,,Q889017,46.366667,35.312500
+1509,Aleshtar,Lorestan,county_seat,,Q967701,48.261667,33.863056
+1501,Aligudarz,Lorestan,county_seat,,Q643166,49.694722,33.400556
+1507,Azna,Lorestan,county_seat,,Q604576,49.455000,33.453889
+1502,Borujerd,Lorestan,county_seat,,Q605454,48.751389,33.897222
+1511,Chaqabol,Lorestan,county_seat,,Q2624797,47.508889,33.280833
+1505,Dorud,Lorestan,county_seat,,Q238375,49.075000,33.493333
+1503,Khorramabad,Lorestan,county_seat,,Q502212,48.350000,33.466667
+1506,Kuhdasht,Lorestan,county_seat,,Q720059,47.600000,33.530000
+1512,Mamulan,Lorestan,county_seat,,Q2621304,47.950000,33.366667
+1504,Nurabad,Lorestan,county_seat,,Q720657,47.973611,34.072222
+1508,Pol-e Dokhtar,Lorestan,county_seat,,Q2004387,47.713611,33.153611
+1510,Sarab-e Dowreh,Lorestan,county_seat,,Q1026071,48.022222,33.562778
+0001,Arak,Markazi,county_seat,,Q212628,49.698056,34.095000
+0002,Ashtian,Markazi,county_seat,,Q643743,50.006111,34.523056
+0005,Delijan,Markazi,county_seat,,Q888740,50.683889,33.990556
+0013,Farmahin,Markazi,county_seat,,Q2421225,49.684444,34.503889
+0004,Khomein,Markazi,county_seat,,Q720750,50.080000,33.638889
+0012,Khondab,Markazi,county_seat,,Q888959,49.183889,34.392778
+0011,Komijan,Markazi,county_seat,,Q2620904,49.326667,34.721389
+0009,Mahallat,Markazi,county_seat,,Q613306,50.453056,33.911111
+0010,Mamuniyeh,Markazi,county_seat,,Q888206,50.511667,35.298889
+0006,Saveh,Markazi,county_seat,,Q765518,50.356667,35.021389
+0007,Shazand,Markazi,county_seat,,Q888678,49.411389,33.927500
+0003,Tafresh,Markazi,county_seat,,Q614236,50.016111,34.693056
+0224,Abbasabad,Mazandaran,county_seat,,Q2633198,51.105833,36.727778
+0201,Amol,Mazandaran,county_seat,,Q331078,52.350833,36.469722
+0202,Babol,Mazandaran,county_seat,,Q605157,52.678611,36.551111
+0216,Babolsar,Mazandaran,county_seat,,Q643187,52.650000,36.699167
+0204,Behshahr,Mazandaran,county_seat,,Q814594,53.552500,36.692222
+0220,Chalus,Mazandaran,county_seat,,Q862547,51.420278,36.655000
+0223,Fereydunkenar,Mazandaran,county_seat,,Q2714615,52.519167,36.685000
+0222,Galugah,Mazandaran,county_seat,,Q2633230,53.808889,36.727222
+0221,Juybar,Mazandaran,county_seat,,Q945447,52.911944,36.640833
+0228,Kelardasht,Mazandaran,county_seat,,Q1738431,51.166667,36.516667
+0226,Kiakola,Mazandaran,county_seat,,Q2633218,52.815278,36.580278
+0218,Mahmudabad,Mazandaran,county_seat,,Q862511,52.262800,36.631900
+0219,Neka,Mazandaran,county_seat,,Q531943,53.299167,36.650833
+0215,Nowshahr,Mazandaran,county_seat,,Q720381,51.496111,36.648611
+0214,Nur,Mazandaran,county_seat,,Q1553458,52.015278,36.571667
+0208,Pol-e Sefid,Mazandaran,county_seat,,Q1020830,53.055278,36.117778
+0210,Qaem Shahr,Mazandaran,county_seat,,Q720937,52.860000,36.463056
+0206,Ramsar,Mazandaran,county_seat,,Q951051,50.648056,36.918056
+0207,Sari,Mazandaran,county_seat,,Q168843,53.059722,36.565833
+0227,Shirgah,Mazandaran,county_seat,115001,,52.890210,36.298700
+0225,Surak,Mazandaran,county_seat,,Q2427424,53.207500,36.595000
+0205,Tonekabon,Mazandaran,county_seat,,Q765561,50.873889,36.816389
+2806,Ashkhaneh,North Khorasan,county_seat,142768,,56.921250,37.561500
+2802,Bojnord,North Khorasan,county_seat,,Q317946,57.333333,37.466667
+2801,Esfarayen,North Khorasan,county_seat,,Q42284,57.510000,37.076389
+2805,Faruj,North Khorasan,county_seat,,Q2630643,58.218889,37.231111
+2807,Garmeh,North Khorasan,county_seat,,Q2630650,56.289444,36.986944
+2803,Jajram,North Khorasan,county_seat,,Q720034,56.373333,36.954722
+2810,Pish Qaleh,North Khorasan,county_seat,,Q4371192,57.001944,37.651944
+2808,Raz,North Khorasan,county_seat,,Q2724644,57.112500,37.933889
+2809,"Safiabad, North Khorasan",North Khorasan,county_seat,,Q2420283,57.930000,36.696111
+2804,Shirvan,North Khorasan,county_seat,,Q10881114,57.929444,37.396667
+2604,Abyek,Qazvin,county_seat,,Q783176,50.516667,36.016667
+2605,Alvand,Qazvin,county_seat,,Q1773455,50.064167,36.189167
+2606,Avaj,Qazvin,county_seat,,Q2625048,49.224167,35.578889
+2601,Buin Zahra,Qazvin,county_seat,,Q2630693,50.057778,35.766944
+2603,Qazvin,Qazvin,county_seat,,Q181578,50.004100,36.285437
+2602,Takestan,Qazvin,county_seat,,Q655078,49.695833,36.069444
+2502,Jafariyeh,Qom,county_seat,,Q2633306,50.574722,34.789444
+2503,Kahak,Qom,county_seat,,Q2715670,50.864167,34.393889
+2501,Qom,Qom,county_seat,,Q170573,50.876389,34.640000
+0931,Bajestan,Razavi Khorasan,county_seat,,Q2630607,58.184444,34.516389
+0937,Bakharz,Razavi Khorasan,county_seat,,Q2428507,60.302222,34.837500
+0923,Bardaskan,Razavi Khorasan,county_seat,141349,,57.970750,35.262180
+0918,Chenaran,Razavi Khorasan,county_seat,,Q2570968,59.121111,36.645556
+0907,Dargaz,Razavi Khorasan,county_seat,,Q719986,59.108056,37.444444
+0939,Davarzan,Razavi Khorasan,county_seat,,Q1771089,56.878333,36.351667
+0935,"Dowlatabad, Razavi Khorasan",Razavi Khorasan,county_seat,,Q1771085,59.519722,35.282222
+0945,Eshqabad,Razavi Khorasan,county_seat,,Q1770147,58.682500,36.043056
+0922,Fariman,Razavi Khorasan,county_seat,,Q430494,59.850000,35.706944
+0930,Feyzabad,Razavi Khorasan,county_seat,,Q1771049,58.783333,35.018889
+0933,Firuzeh,Razavi Khorasan,county_seat,,Q1771082,58.586111,36.285833
+0944,Golbahar,Razavi Khorasan,county_seat,,Q29396461,59.194722,36.571111
+0915,Gonabad,Razavi Khorasan,county_seat,,Q721046,58.683611,34.352778
+0934,Joghatai,Razavi Khorasan,county_seat,,Q236348,57.072778,36.636111
+0928,Kalat,Razavi Khorasan,county_seat,,Q2626972,59.760833,36.995278
+0914,Kashmar,Razavi Khorasan,county_seat,,Q720403,58.465556,35.238333
+0919,Khaf,Razavi Khorasan,county_seat,,Q2421210,60.140833,34.576389
+0929,Khalilabad,Razavi Khorasan,county_seat,,Q1771058,58.285556,35.253889
+0916,Mashhad,Razavi Khorasan,county_seat,124665,,59.605670,36.298070
+0936,Neqab,Razavi Khorasan,county_seat,,Q80983,57.421389,36.708056
+0917,Nishapur,Razavi Khorasan,county_seat,122285,,58.795750,36.213290
+0942,Qadamgah,Razavi Khorasan,county_seat,120743,,59.060850,36.106630
+0913,Quchan,Razavi Khorasan,county_seat,119115,,58.509550,37.106000
+0941,Rivash,Razavi Khorasan,county_seat,,Q1770199,58.457222,35.475278
+0927,Roshtkhar,Razavi Khorasan,county_seat,,Q581373,59.624722,34.975000
+0908,Sabzevar,Razavi Khorasan,county_seat,118063,,57.681910,36.212600
+0940,Salehabad,Razavi Khorasan,county_seat,,Q1770115,61.095556,35.688056
+0920,Sarakhs,Razavi Khorasan,county_seat,,Q765536,61.157778,36.545000
+0943,Sheshtamad,Razavi Khorasan,county_seat,,Q1771069,57.766667,35.959722
+0938,Soltanabad,Razavi Khorasan,county_seat,,Q1771074,58.038889,36.403611
+0904,Taybad,Razavi Khorasan,county_seat,,Q217067,60.775556,34.740000
+0905,Torbat-e Heydarieh,Razavi Khorasan,county_seat,,Q765528,59.219444,35.273889
+0906,Torbat-e Jam,Razavi Khorasan,county_seat,,Q765715,60.622500,35.243889
+0932,Torqabeh,Razavi Khorasan,county_seat,112616,,59.373500,36.310400
+2006,Aradan,Semnan,county_seat,,Q2320730,52.493333,35.249722
+2001,Damghan,Semnan,county_seat,,Q720053,54.348056,36.168056
+2004,Garmsar,Semnan,county_seat,,Q795092,52.333333,35.216667
+2005,Mahdishahr,Semnan,county_seat,,Q888688,53.353889,35.710833
+2007,Meyami,Semnan,county_seat,,Q2423532,55.650278,36.410833
+2002,Semnan,Semnan,county_seat,,Q203045,53.383333,35.583333
+2003,Shahrud,Semnan,county_seat,,Q605002,54.976389,36.418056
+2008,Sorkheh,Semnan,county_seat,,Q1776167,53.213889,35.463333
+1115,Adimi,Sistan and Baluchestan,county_seat,,Q2422726,61.415278,31.109167
+1120,Bampur,Sistan and Baluchestan,county_seat,,Q643711,60.455833,27.194444
+1102,Chabahar,Sistan and Baluchestan,county_seat,1161724,,60.643000,25.291900
+1111,Dust Mohammad,Sistan and Baluchestan,county_seat,,Q2423607,61.792500,31.144722
+1125,Espakeh,Sistan and Baluchestan,county_seat,,Q2422775,60.173056,26.840000
+1119,Fanuj,Sistan and Baluchestan,county_seat,,Q2423455,59.639722,26.575833
+1112,Galmurti,Sistan and Baluchestan,county_seat,,Q2423589,59.446667,27.482222
+1101,Iranshahr,Sistan and Baluchestan,county_seat,,Q643687,60.684722,27.202500
+1124,Jaleq,Sistan and Baluchestan,county_seat,,Q720647,62.691111,27.592500
+1103,Khash,Sistan and Baluchestan,county_seat,,Q2112778,61.215833,28.221111
+1109,Konarak,Sistan and Baluchestan,county_seat,,Q2112791,60.399444,25.360278
+1113,Mehrestan,Sistan and Baluchestan,county_seat,,Q587738,61.674444,27.131111
+1117,Mirjaveh,Sistan and Baluchestan,county_seat,,Q1716776,61.450000,29.000000
+1116,Mohammadabad,Sistan and Baluchestan,county_seat,,Q2423658,61.463611,30.885556
+1122,Negur,Sistan and Baluchestan,county_seat,,Q2421310,61.138333,25.388889
+1107,Nik Shahr,Sistan and Baluchestan,county_seat,,Q2422655,60.214167,26.225833
+1121,Nukabad,Sistan and Baluchestan,county_seat,,Q2423518,60.759444,28.539722
+1118,Qasr-e Qand,Sistan and Baluchestan,county_seat,,Q967001,60.752500,26.248333
+1108,Rask,Sistan and Baluchestan,county_seat,,Q936543,61.398889,26.236944
+1106,Saravan,Sistan and Baluchestan,county_seat,,Q765671,62.330833,27.370833
+1123,Sarbaz,Sistan and Baluchestan,county_seat,,Q2609581,61.256389,26.630833
+1114,Suran,Sistan and Baluchestan,county_seat,,Q2403040,61.996389,27.285556
+1104,Zabol,Sistan and Baluchestan,county_seat,,Q139024,61.495000,31.030556
+1105,Zahedan,Sistan and Baluchestan,county_seat,,Q140561,60.850302,29.492887
+1126,Zarabad,Sistan and Baluchestan,county_seat,,Q5823014,59.404167,25.596389
+1110,Zehak,Sistan and Baluchestan,county_seat,,Q2423427,61.680300,30.893900
+2902,Asadiyeh,South Khorasan,county_seat,,Q2420846,60.025833,32.916389
+2901,Birjand,South Khorasan,county_seat,,Q193806,59.221111,32.866389
+2908,Boshruyeh,South Khorasan,county_seat,,Q81444,57.425381,33.866210
+2912,Eshqabad,South Khorasan,county_seat,,Q2450840,56.931111,34.366944
+2907,Ferdows,South Khorasan,county_seat,,Q720397,58.172222,34.018611
+2909,Hajjiabad,South Khorasan,county_seat,,Q83735,59.993333,33.605000
+2910,Khusf,South Khorasan,county_seat,,Q1764389,58.890556,32.780833
+2905,Nehbandan,South Khorasan,county_seat,,Q2429202,60.036389,31.541944
+2904,Qaen,South Khorasan,county_seat,,Q720028,59.189722,33.725556
+2906,Sarayan,South Khorasan,county_seat,,Q2429147,58.521667,33.860278
+2903,Sarbisheh,South Khorasan,county_seat,,Q2429190,59.798333,32.575556
+2911,Tabas,South Khorasan,county_seat,,Q767820,56.924444,33.595833
+2302,Damavand,Tehran,county_seat,,Q745055,52.065000,35.717778
+2310,Eslamshahr,Tehran,county_seat,,Q862519,51.235000,35.552222
+2314,Firuzkuh,Tehran,county_seat,,Q1026069,52.773889,35.756944
+2317,Malard,Tehran,county_seat,,Q2538472,50.976667,35.665833
+2319,Nasimshahr,Tehran,county_seat,,Q2629444,51.163333,35.565000
+2313,Pakdasht,Tehran,county_seat,,Q720714,51.683333,35.478611
+2320,Pardis,Tehran,county_seat,,Q2629400,51.815556,35.737778
+2318,Pishva,Tehran,county_seat,,Q720560,51.726667,35.308056
+2321,Qarchak,Tehran,county_seat,,Q2537446,51.568889,35.439444
+2316,Qods,Tehran,county_seat,,Q766974,51.108889,35.721389
+2303,Ray,Tehran,county_seat,,Q636188,51.434444,35.597500
+2312,Robat Karim,Tehran,county_seat,,Q967688,51.082778,35.484722
+2309,Shahriar,Tehran,county_seat,,Q2663243,51.059167,35.659722
+2304,Shemiran,Tehran,county_seat,,Q565405,51.465454,35.804728
+2301,Tehran,Tehran,county_seat,,Q3616,51.389722,35.688889
+2306,Varamin,Tehran,county_seat,,Q518985,51.645833,35.324167
+0419,Baruq,West Azerbaijan,county_seat,,Q4373564,46.325000,36.958333
+0410,Bukan,West Azerbaijan,county_seat,,Q606564,46.208889,36.521111
+0418,Chahar Borj,West Azerbaijan,county_seat,,Q4371135,45.978333,37.125278
+0403,Khoy,West Azerbaijan,county_seat,,Q605105,44.959542,38.551700
+0407,Mahabad,West Azerbaijan,county_seat,,Q335518,45.721000,36.765000
+0406,Maku,West Azerbaijan,county_seat,,Q720318,44.458333,39.290556
+0408,Miandoab,West Azerbaijan,county_seat,,Q605033,46.109610,36.966670
+0420,Mirabad,West Azerbaijan,county_seat,,Q4810120,45.371944,36.405278
+0409,Naqadeh,West Azerbaijan,county_seat,,Q1820789,45.388056,36.955278
+0413,Oshnavieh,West Azerbaijan,county_seat,,Q720699,45.098333,37.039722
+0402,Piranshahr,West Azerbaijan,county_seat,,Q3015863,45.141667,36.694444
+0415,Poldasht,West Azerbaijan,county_seat,,Q2556849,45.071111,39.348056
+0416,Qarah Zia od Din,West Azerbaijan,county_seat,,Q862549,45.025556,38.891389
+0405,Salmas,West Azerbaijan,county_seat,,Q765806,44.766667,38.200000
+0404,Sardasht,West Azerbaijan,county_seat,,Q862516,45.478889,36.155278
+0411,Shahin Dezh,West Azerbaijan,county_seat,,Q862551,46.566667,36.679167
+0417,Showt,West Azerbaijan,county_seat,,Q2575075,44.770000,39.219167
+0414,Siah Cheshmeh,West Azerbaijan,county_seat,,Q10296798,44.386944,39.072778
+0412,Takab,West Azerbaijan,county_seat,,Q766617,47.113056,36.400833
+0401,Urmia,West Azerbaijan,county_seat,,Q179665,45.067500,37.548611
+2107,Abarkuh,Yazd,county_seat,,Q919547,53.282222,31.128889
+2101,Ardakan,Yazd,county_seat,,Q580084,54.018611,32.309444
+2108,Ashkezar,Yazd,county_seat,,Q643730,54.204444,32.000000
+2102,Bafq,Yazd,county_seat,,Q799795,55.402778,31.605278
+2111,Behabad,Yazd,county_seat,,Q2450216,56.023611,31.872778
+2109,Herat,Yazd,county_seat,,Q2438142,54.367402,30.058590
+2112,Marvast,Yazd,county_seat,,Q2450807,54.211667,30.478333
+2104,Mehriz,Yazd,county_seat,,Q888964,54.444566,31.584194
+2106,Meybod,Yazd,county_seat,,Q664115,54.016667,32.250000
+2103,Taft,Yazd,county_seat,,Q30901,54.202778,31.743889
+2105,Yazd,Yazd,county_seat,,Q182394,54.367500,31.897222
+2113,Zarch,Yazd,county_seat,,Q2450195,54.231944,31.991111
+1908,Ab Bar,Zanjan,county_seat,,Q861916,48.974444,36.922500
+1901,Abhar,Zanjan,county_seat,,Q643359,49.218056,36.146667
+1907,Khorramdarreh,Zanjan,county_seat,,Q862503,49.186944,36.203056
+1909,Mah Neshan,Zanjan,county_seat,,Q2629429,47.672500,36.744167
+1903,Qeydar,Zanjan,county_seat,,Q861898,48.591111,36.114722
+1910,Soltaniyeh,Zanjan,county_seat,,Q4531,48.797500,36.434722
+1904,Zanjan,Zanjan,county_seat,,Q146699,48.483333,36.666667
+1906,Zarrinabad,Zanjan,county_seat,,Q862369,48.281944,36.425000

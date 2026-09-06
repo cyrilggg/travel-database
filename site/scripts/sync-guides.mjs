@@ -34,6 +34,7 @@ const legalCityCentersPath = path.join(
   "data",
   "cn-legal-city-centers.csv",
 );
+const cityNamesZhPath = path.join(siteRoot, "data", "city-names-zh.csv");
 const additionalCityCenterSources = [
   {
     path: path.join(siteRoot, "data", "tw-city-centers.csv"),
@@ -463,6 +464,20 @@ const additionalCityCenterSources = [
     countryName: "格鲁吉亚",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "ir-county-seats-1404.csv",
+    ),
+    idPrefix: "iran",
+    codePrefix: "ir",
+    levelPrefix: "iran",
+    countryCode: "IR",
+    countryName: "伊朗",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
@@ -591,11 +606,18 @@ async function loadCoordinates() {
 }
 
 async function loadMapCities(guides) {
-  const [inventoryCsv, decisionsCsv, centersCsv, additionalCityCsvs] =
+  const [
+    inventoryCsv,
+    decisionsCsv,
+    centersCsv,
+    cityNamesZhCsv,
+    additionalCityCsvs,
+  ] =
     await Promise.all([
       readSourceFile(legalCityInventoryPath),
       readSourceFile(legalCityDecisionsPath),
       readFile(legalCityCentersPath, "utf8"),
+      readFile(cityNamesZhPath, "utf8"),
       Promise.all(
         additionalCityCenterSources.map((source) =>
           readFile(source.path, "utf8"),
@@ -614,6 +636,17 @@ async function loadMapCities(guides) {
   const guidesByGeonamesId = new Map(
     guides.map((guide) => [guide.geonamesId, guide]),
   );
+  const cityNamesZh = new Map();
+  for (const row of parseCsv(cityNamesZhCsv)) {
+    const key = `${row.country_code}:${row.administrative_code}`;
+    if (cityNamesZh.has(key)) {
+      throw new Error(`城市中文名称存在重复键：${key}`);
+    }
+    if (!/[\u3400-\u9fff]/u.test(row.name_zh) || /[A-Za-z]/u.test(row.name_zh)) {
+      throw new Error(`城市中文名称无效：${key}=${row.name_zh}`);
+    }
+    cityNamesZh.set(key, row);
+  }
   const mappedGuideIds = new Set();
 
   const legalCities = parseCsv(inventoryCsv).map((city) => {
@@ -651,6 +684,16 @@ async function loadMapCities(guides) {
   const additionalCountryCities = additionalCityCenterSources.flatMap(
     (source, sourceIndex) =>
       parseCsv(additionalCityCsvs[sourceIndex]).map((city) => {
+        const localizationKey = `${source.countryCode}:${city.administrative_code}`;
+        const localizedName = cityNamesZh.get(localizationKey);
+        if (!localizedName && !/[\u3400-\u9fff]/u.test(city.name)) {
+          throw new Error(`${localizationKey} 缺少中文城市名称：${city.name}`);
+        }
+        if (localizedName && localizedName.source_name !== city.name) {
+          throw new Error(
+            `${localizationKey} 的中文名称来源已漂移：${localizedName.source_name} != ${city.name}`,
+          );
+        }
         const guide = city.geonames_id
           ? guidesByGeonamesId.get(city.geonames_id)
           : undefined;
@@ -665,7 +708,7 @@ async function loadMapCities(guides) {
         return {
           id: `${source.idPrefix}-${city.administrative_code}`,
           administrativeCode: `${source.codePrefix}:${city.administrative_code}`,
-          city: city.name,
+          city: localizedName?.name_zh ?? city.name,
           adminArea: city.admin_area,
           cityLevel: `${source.levelPrefix}_${city.city_level}`,
           countryCode: source.countryCode,

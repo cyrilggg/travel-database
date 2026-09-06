@@ -1,5 +1,7 @@
 # 地图目标城市中心点
 
+地图面向中文用户，所有城市主名称统一使用简体中文。`city-names-zh.csv` 以国家代码和稳定行政代码关联海外城市：优先使用 Wikidata 与 GeoNames 的现有中文标签，没有通行中文名的城市使用中文音译；`source_name` 保留官方或来源拼写用于匹配和复核。同步脚本会拒绝缺少中文名、夹带拉丁字母、重复键或原名已经漂移的记录，名称调整不改变城市 ID、攻略关联或已保存记录。
+
 `cn-legal-city-centers.csv` 对应仓库固定的 2025-12-31 中国大陆法定城市清单，共 695 座。
 
 中心点取自 AreaCity-JsSpider-StatsGov 的 2025.251231.260403 版 `ok_geo.csv`，原始坐标为 GCJ-02；生成脚本在写入本文件时转换为供网页地图使用的 WGS84。上游仓库采用 MIT License：<https://github.com/xiangyuecn/AreaCity-JsSpider-StatsGov>。
@@ -203,3 +205,9 @@
 `sources/ge-statutory-cities-2026-09-06.csv` 收录格鲁吉亚现行 63 个法定城市：5 个自治市、政府实际管辖区内的另外 50 个城市，以及法律与官方统计城市序列中位于未实际管辖地区的 8 个城市。政府实际管辖区的 55 城逐城取自国家统计局 2024 年人口普查最终行政地域工作簿：<https://www.geostat.ge/en/modules/categories/909/the-geographical-distribution-of-the-population-and-internal-migration>，本次官方 Excel 快照 SHA-256 为 `D6348F94CB4827C4C9433F3EE5820EC35DC016254316AE65EB07FE923EDC0DE1`。国家统计局年鉴把 New Athos、Gagra、Gali、Gudauta、Ochamchire、Sokhumi、Tkvarcheli 和 Tskhinvali 列在 `Cities` 而非 `Urban type settlements` 下：<https://geostat.ge/media/20935/Yearbook_2014.pdf>；现行《地方自治法典》定义城市与小城镇为不同聚居地类别，并确认当前 5 个自治市为 Tbilisi、Rustavi、Kutaisi、Poti 和 Batumi：<https://www.matsne.gov.ge/en/document/view/2244429?publication=63>。因此不纳入 borough / daba、村庄、城市内部行政区或多个聚居地组成的自治市整体。
 
 官方工作簿没有为地图中心点提供坐标，也不公开当前内部行政地域分类的可复用城市代码，因此稳定 ID 使用对应 GeoNames 标识。`scripts/import-georgia-statutory-cities.py` 固定校验官方工作簿与 GeoNames 快照哈希、55 城原始顺序、63 城及三级数量、唯一名称、唯一 ID、唯一中心点和国界范围。中心点来自 2026-09-06 下载的 GeoNames 国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；压缩包 SHA-256 为 `2AF7C3CE99A740E95191C374FE619B9809B5E9F3378340E17DABB3E27D9AFB56`，解压文本 SHA-256 为 `C931624C25587EEECA8ABB6490C572122C85188B5DDD765F5B1589E967F816B7`，生成 CSV SHA-256 为 `C58DC6212D90153A7813B1DBCA031AE1CFF76FD50B054EF78607F43C3229837E`。对同名居民点与拼写差异使用固定 GeoNames 标识，避免中心点漂移；没有对应攻略的城市统一显示为“尚未收录”。
+
+## 伊朗城市点
+
+`sources/ir-county-seats-1404.csv` 按伊朗统计中心 1404 年度行政地理工作簿收录全部 484 个县治城市，作为本项目与“地级城市”最接近且可稳定复现的地图层级；不把 1,481 个法定城市、城市内部区域或村庄全部展开。工作簿使用 `Hameds/IranCountryDivisions` 在提交 `68687cf96cc1852d5d38c7283353c80829331758` 中保存的统计中心原始文件：<https://github.com/Hameds/IranCountryDivisions>，快照 SHA-256 为 `4EBF8DE69F64E7634867E096F52346828690DF31975E8638CEC4BF863746C704`。
+
+`scripts/import-iran-county-seats.py` 固定校验 31 省、484 县和原始行政层级数量，以县级稳定代码作为城市 ID；452 个县治通过固定的 Wikidata 查询快照取得中心点，32 个新设、改名或拼写无法稳定连接的县治使用固定 GeoNames 城市记录。Wikidata 快照 SHA-256 为 `D684241C6AF4E7526FC24968C5ECC3C17CCA597AF660CCE8F27F1A532952A587`，GeoNames 伊朗文本快照 SHA-256 为 `D950D5EB5C449D7441BD1A3166F7FE46A70ED452199F1E8D7C083D4E7CE669E9`，生成 CSV SHA-256 为 `DE856D18C7D4960F48E3C83AA225D07FE61B5669009637C7F42DABE08864DEAE`。所有地图主名称通过中文名称表显示；没有攻略的县治统一显示为“尚未收录”。
