@@ -57,3 +57,9 @@
 `sources/th-city-municipalities-2026-06-10.csv` 收录泰国 35 个 `เทศบาลนคร`（นคร级市政体），以及曼谷、芭堤雅两个特别地方行政体，共 37 个城市入口；不包含 246 个 `เทศบาลเมือง`（镇级市政体）和 2,489 个 `เทศบาลตำบล`（街镇级市政体）。类别总数依据泰国内政部地方行政厅截至 2025-12-16 的官方统计：<https://asean.dla.go.th/public/article.do?lang=th&lv2Index=36&random=1786068602604>；35 个นคร级市政体及芭堤雅逐项取自地方行政厅 2026-06-10 更新的地方行政组织名录：<https://opendata.dla.go.th/dataset/dlads_05_01>。曼谷不在该地方行政组织名录内，按同一官方统计中的特别地方行政体单列。
 
 泰国当前名录没有随 CSV 提供可复用的行政代码，因此稳定 ID 由行政体类别与规范化官方名称组成；后续新增或改制不重排既有 ID。中心点与 GeoNames 标识主要取自 2026-09-06 下载的 GeoNames 泰国国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `62B27E399569A63277FFEBE6B7884F4852E1F10CB2EBF7ED3BC5D7A8B505F125`。Chao Phraya Surasak 在 GeoNames 快照中没有独立城市记录，使用其市政体公开中心坐标且留空 GeoNames 标识，避免误绑到相邻的 Si Racha。
+
+## 马来西亚城市点
+
+`sources/my-city-local-authorities-2026-09-06.csv` 收录马来西亚当前 20 个城市级地方行政入口：地方政府发展局现行目录中的 19 个 `Dewan/Majlis Bandaraya`，以及依据《联邦首都法》单列的吉隆坡市政厅。目录、地方政府类别、PBT 代码与机构坐标均来自马来西亚房屋及地方政府部地方政府发展局的实时官方目录：<https://jkt.kpkt.gov.my/senarai-nama-dan-alamat-pbt/>、<https://ejkt.kpkt.gov.my/eprofil/api/jkt-portal-senarai-maklumat>。名称中含 `Bandaraya` 但类别仍为 `Majlis Perbandaran` 的哥打巴鲁和兰卡威不在本批范围内；普通市议会和县议会同样不收录。
+
+19 个目录内单位使用官方 PBT 代码作为稳定 ID，吉隆坡使用官方机构缩写 `DBKL`；古晋按北市政厅与南市议会两个法定管辖单位分别保留。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 马来西亚国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `D7CDF5057205A319180BACDAB86ADE70D38239CDA6C1BEE87A54191F8874A598`。GeoNames 没有与 Seberang Perai、Kuching North、Kuching South 法定管辖单位一一对应的城市记录，这三项使用官方目录坐标并留空 GeoNames 标识，避免误绑到辖区内单一聚居点。

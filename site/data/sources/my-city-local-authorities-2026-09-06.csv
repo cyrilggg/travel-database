@@ -1,0 +1,21 @@
+administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
+0101,Johor Bahru,Johor,city_local_authority,1732752,103.757800,1.465500
+0102,Iskandar Puteri,Johor,city_local_authority,10063567,103.623220,1.393240
+0116,Pasir Gudang,Johor,city_local_authority,1732722,103.905300,1.462000
+0201,Alor Setar,Kedah,city_local_authority,1736309,100.360140,6.121040
+0401,Melaka,Melaka,city_local_authority,1734759,102.240500,2.196000
+0501,Seremban,Negeri Sembilan,city_local_authority,1734810,101.938100,2.729700
+0601,Kuantan,Pahang,city_local_authority,1735227,103.326000,3.807700
+0701,Penang Island,Pulau Pinang,city_local_authority,1735106,100.335430,5.411230
+0702,Seberang Perai,Pulau Pinang,city_local_authority,,100.432627,5.370803
+0801,Ipoh,Perak,city_local_authority,1734634,101.082900,4.584100
+1001,Shah Alam,Selangor,city_local_authority,1732903,101.532810,3.085070
+1003,Petaling Jaya,Selangor,city_local_authority,1735158,101.606710,3.107260
+1005,Klang,Selangor,city_local_authority,1732905,101.443330,3.036670
+1007,Subang Jaya,Selangor,city_local_authority,8504423,101.580620,3.043840
+1101,Kuala Terengganu,Terengganu,city_local_authority,1734705,103.140800,5.330200
+1201,Kota Kinabalu,Sabah,city_local_authority,1733432,116.072400,5.974900
+1301,Kuching North,Sarawak,city_local_authority,,110.341400,1.587800
+1302,Kuching South,Sarawak,city_local_authority,,110.363733,1.550390
+1303,Miri,Sarawak,city_local_authority,1738050,113.991630,4.399280
+DBKL,Kuala Lumpur,Wilayah Persekutuan Kuala Lumpur,federal_capital_city_hall,1735161,101.686530,3.141200

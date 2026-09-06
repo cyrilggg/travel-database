@@ -141,6 +141,20 @@ const additionalCityCenterSources = [
     countryName: "泰国",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "my-city-local-authorities-2026-09-06.csv",
+    ),
+    idPrefix: "malaysia",
+    codePrefix: "my",
+    levelPrefix: "malaysia",
+    countryCode: "MY",
+    countryName: "马来西亚",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
