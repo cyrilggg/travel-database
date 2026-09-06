@@ -111,3 +111,9 @@
 `sources/bt-autonomous-thromdes-2026-09-06.csv` 收录不丹当前 4 个具独立民选 Thromde Tshogde 的城市自治体：Thimphu、Phuentsholing、Gelephu 和 Samdrup Jongkhar。不丹内政部地方治理部门的现行说明明确将地方政府中的 Thromde Tshogde 数量列为 4：<https://www.dlgdm.gov.bt/dlg-faq>；内政部人口登记部门的 Thromde 办公室目录逐项列出同一 4 个单位：<https://dcrc.moha.gov.bt/index.php/dzongkhag-office/>。其他 Dzongkhag Thromde、Yenlag Thromde 和县城规划边界没有作为独立城市自治体重复纳入。
 
 全国没有统一公开的 Thromde 代码目录，稳定 ID 使用规范化官方名称。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 不丹国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `66925274ED081FAC2D265A19CD45CD9878E20B5BE232F0EC7BFBFB4FD3743A06`。
+
+## 斯里兰卡城市点
+
+`sources/lk-municipal-councils-2026-09-06.csv` 收录斯里兰卡现行 29 个 Municipal Council；不包含 36 个 Urban Council 和 276 个 Pradeshiya Sabha。名单与各区数量按斯里兰卡统计局截至 2024-08-01 的官方行政区划表核对：<https://www.statistics.gov.lk/Publication/PocketBook2025>。其中 Kalutara、Vavuniya、Trincomalee、Puttalam 和 Kegalle 依据第 2296/05、2296/37 号公报自 2023-02-20 由 Urban Council 升格；2025 年地方选举结果页仍保留部分旧类别标签，且未列入没有参加该次选举的 Kalmunai，因此只用于逐项复核地方政府名称，不覆盖统计局的现行法定分类：<https://elections.gov.lk/Pages/2025/LAE_2025_Results.html>。
+
+当前官方公开表没有提供可复用的全国 Municipal Council 代码，本批稳定 ID 使用规范化官方英文名称，后续新增或改制不重排既有 ID。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 斯里兰卡国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `34CC6412A53EB48491B91E1FD11299B00C0D709C54FC65170BD4E283050C14B1`。Dehiwala-Mount Lavinia 使用其 Dehiwala 城市中心点；没有对应攻略的城市统一显示为“尚未收录”。

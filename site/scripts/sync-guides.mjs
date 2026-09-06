@@ -267,6 +267,20 @@ const additionalCityCenterSources = [
     countryName: "不丹",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "lk-municipal-councils-2026-09-06.csv",
+    ),
+    idPrefix: "sri-lanka",
+    codePrefix: "lk",
+    levelPrefix: "sri_lanka",
+    countryCode: "LK",
+    countryName: "斯里兰卡",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
