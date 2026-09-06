@@ -57,7 +57,9 @@ export const administrativeTypeOf = (
     city.cityLevel === "nepal_metropolitan_city" ||
     city.cityLevel === "nepal_sub_metropolitan_city" ||
     city.cityLevel === "bangladesh_capital_city_corporation" ||
-    city.cityLevel === "bangladesh_city_corporation"
+    city.cityLevel === "bangladesh_city_corporation" ||
+    city.cityLevel === "afghanistan_capital_municipality" ||
+    city.cityLevel === "afghanistan_provincial_municipality"
   ) {
     return "prefecture";
   }

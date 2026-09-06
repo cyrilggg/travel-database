@@ -309,6 +309,20 @@ const additionalCityCenterSources = [
     countryName: "孟加拉国",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "af-provincial-municipalities-2026-09-06.csv",
+    ),
+    idPrefix: "afghanistan",
+    codePrefix: "af",
+    levelPrefix: "afghanistan",
+    countryCode: "AF",
+    countryName: "阿富汗",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
