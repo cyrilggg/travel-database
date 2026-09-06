@@ -660,6 +660,20 @@ const additionalCityCenterSources = [
     countryName: "也门",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "cy-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "cyprus",
+    codePrefix: "cy",
+    levelPrefix: "cyprus",
+    countryCode: "CY",
+    countryName: "塞浦路斯",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
