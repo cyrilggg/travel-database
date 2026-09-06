@@ -63,7 +63,9 @@ export const administrativeTypeOf = (
     city.cityLevel === "pakistan_metropolitan_corporation" ||
     city.cityLevel === "pakistan_municipal_corporation" ||
     city.cityLevel === "pakistan_district_municipal_corporation" ||
-    city.cityLevel === "india_municipal_corporation"
+    city.cityLevel === "india_municipal_corporation" ||
+    city.cityLevel === "kazakhstan_republican_significance_city" ||
+    city.cityLevel === "kazakhstan_regional_significance_city"
   ) {
     return "prefecture";
   }
@@ -95,7 +97,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "pakistan_municipal_committee" ||
     city.cityLevel === "india_municipality" ||
     city.cityLevel === "india_municipal_council" ||
-    city.cityLevel === "india_city_municipal_council"
+    city.cityLevel === "india_city_municipal_council" ||
+    city.cityLevel === "kazakhstan_district_significance_city"
   ) {
     return "county-city";
   }

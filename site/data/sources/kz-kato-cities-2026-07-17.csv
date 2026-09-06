@@ -1,0 +1,91 @@
+administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
+103620100,Ayagoz,Abay Region,district_significance_city,1525988,80.434370,47.964470
+101810000,Kurchatov,Abay Region,regional_significance_city,1520885,78.541880,50.756170
+101010000,Semey,Abay Region,regional_significance_city,1519422,80.250250,50.420640
+104221100,Shar,Abay Region,district_significance_city,1519275,81.048830,49.587200
+113220100,Akkol',Akmola Region,district_significance_city,1526797,69.599970,53.296170
+113820100,Atbasar,Akmola Region,district_significance_city,1526038,68.358230,51.808540
+115420100,Derzhavinsk,Akmola Region,district_significance_city,1524606,66.318750,51.097180
+114820100,Esil,Akmola Region,district_significance_city,1524296,66.407720,51.954530
+111010000,Kokshetau,Akmola Region,regional_significance_city,1522203,69.393640,53.284140
+114020100,Makinsk,Akmola Region,district_significance_city,1521230,70.419110,52.632900
+111610000,Qosshy,Akmola Region,regional_significance_city,1522202,71.353110,50.970750
+117020100,Shchuchinsk,Akmola Region,district_significance_city,1519244,70.188950,52.935920
+111810000,Stepnogorsk,Akmola Region,regional_significance_city,1537939,71.881610,52.350620
+114520100,Stepnyak,Akmola Region,district_significance_city,1518768,70.788610,52.834890
+114620100,Yereymentau,Akmola Region,district_significance_city,1524302,73.102650,51.623640
+151010000,Aktobe,Aktobe Region,regional_significance_city,610611,57.207180,50.279690
+153220100,Algha,Aktobe Region,district_significance_city,610658,57.327870,49.898630
+154823100,Embi,Aktobe Region,district_significance_city,609924,58.150420,48.829810
+154820100,Kandyagash,Aktobe Region,district_significance_city,608679,57.418650,49.469170
+156020100,Khromtau,Aktobe Region,district_significance_city,609404,58.435740,50.251610
+156420100,Shalqar,Aktobe Region,district_significance_city,608359,59.619260,47.831540
+155621100,Temir,Aktobe Region,district_significance_city,608036,57.127360,49.142840
+154825100,Zhem,Aktobe Region,district_significance_city,,58.071269,48.775253
+750000000,Almaty,Almaty,republican_significance_city,1526384,76.911500,43.252490
+191810000,Alatau,Almaty Region,regional_significance_city,1520706,77.109050,43.676540
+194020100,Esik,Almaty Region,district_significance_city,1523741,77.452450,43.355200
+195220100,Kaskelen,Almaty Region,district_significance_city,1519931,76.630990,43.198390
+191010000,Konayev,Almaty Region,regional_significance_city,1519948,77.063040,43.866810
+196220100,Talghar,Almaty Region,district_significance_city,1518518,77.238110,43.302350
+710000000,Astana,Astana,republican_significance_city,1526273,71.445980,51.180100
+231010000,Atyrau,Atyrau Region,regional_significance_city,610529,51.884270,47.104800
+233620100,Qulsary,Atyrau Region,district_significance_city,609123,54.019780,46.953070
+634820100,Altay,East Kazakhstan Region,district_significance_city,1516438,84.254160,49.736260
+632410000,Ridder,East Kazakhstan Region,regional_significance_city,1521370,83.515620,50.345240
+634821100,Serebryansk,East Kazakhstan Region,district_significance_city,1519395,83.296770,49.684020
+636820100,Shemonaikha,East Kazakhstan Region,district_significance_city,1519226,81.910920,50.628990
+631010000,Ust-Kamenogorsk,East Kazakhstan Region,regional_significance_city,1520316,82.605860,49.971430
+634620100,Zaysan,East Kazakhstan Region,district_significance_city,1517060,84.871440,47.466570
+316220100,Karatau,Jambyl Region,district_significance_city,1519938,70.459200,43.179590
+316621100,Shu,Jambyl Region,district_significance_city,1519030,73.762210,43.605070
+311010000,Taraz,Jambyl Region,regional_significance_city,1516905,71.373340,42.897990
+316020100,Zhangatas,Jambyl Region,district_significance_city,1516788,69.732090,43.562740
+334820100,Sarqan,Jetisu Region,district_significance_city,1519691,79.917130,45.413220
+331010000,Taldykorgan,Jetisu Region,regional_significance_city,1518542,78.373890,45.015560
+331810000,Tekeli,Jetisu Region,regional_significance_city,1518296,78.728070,44.867800
+333420100,Usharal,Jetisu Region,district_significance_city,1517836,80.943310,46.169260
+334420100,Ushtobe,Jetisu Region,district_significance_city,1517637,77.982840,45.252580
+334620100,Zharkent,Jetisu Region,district_significance_city,1520253,80.007360,44.166190
+353220100,Abay,Karaganda Region,district_significance_city,1526970,72.865230,49.635390
+351610000,Balqash,Karaganda Region,regional_significance_city,1525798,74.982130,46.845460
+351010000,Karagandy,Karaganda Region,regional_significance_city,609655,73.102110,49.801870
+352110000,Priozersk,Karaganda Region,regional_significance_city,7536148,73.702470,46.031060
+354820100,Qarqaraly,Karaganda Region,district_significance_city,1519934,75.472280,49.412440
+352210000,Saran,Karaganda Region,regional_significance_city,1519725,72.831860,49.802450
+352810000,Shakhtinsk,Karaganda Region,regional_significance_city,1519327,72.593210,49.707130
+352410000,Temirtau,Karaganda Region,regional_significance_city,1518262,72.954970,50.051970
+391610000,Arkalyk,Kostanay Region,regional_significance_city,1526193,66.903840,50.250310
+391010000,Kostanay,Kostanay Region,regional_significance_city,1519928,63.624630,53.214350
+392010000,Lisakovsk,Kostanay Region,regional_significance_city,1521315,62.498930,52.544880
+392410000,Rudnyy,Kostanay Region,regional_significance_city,1519843,63.110550,52.972440
+395420100,Tobol,Kostanay Region,district_significance_city,1518139,62.591400,52.693660
+394420100,Zhitikara,Kostanay Region,district_significance_city,1516601,61.198940,52.190190
+433220100,Aral,Kyzylorda Region,district_significance_city,1526265,61.663120,46.801740
+431910000,Baikonur,Kyzylorda Region,regional_significance_city,1521368,63.316670,45.616670
+434423100,Kazalinsk,Kyzylorda Region,district_significance_city,1522862,62.103340,45.762570
+431010000,Kyzylorda,Kyzylorda Region,regional_significance_city,1519922,65.509170,44.852780
+471010000,Aktau,Mangystau Region,regional_significance_city,610612,51.173920,43.661050
+475220100,Fort-Shevchenko,Mangystau Region,district_significance_city,609906,50.263880,44.506540
+471810000,Zhanaozen,Mangystau Region,regional_significance_city,607610,52.861920,43.341160
+593620100,Bulayevo,North Kazakhstan Region,district_significance_city,1525014,70.441550,54.905960
+595220100,Mamlyutka,North Kazakhstan Region,district_significance_city,1521153,68.538890,54.938960
+591010000,Petropavl,North Kazakhstan Region,regional_significance_city,1520172,69.150650,54.873430
+595620100,Sergeyevka,North Kazakhstan Region,district_significance_city,1519385,67.408820,53.881390
+596020100,Taiynsha,North Kazakhstan Region,district_significance_city,1522035,69.767730,53.847960
+551610000,Aksu,Pavlodar Region,regional_significance_city,1524298,76.927480,52.040230
+552210000,Ekibastuz,Pavlodar Region,regional_significance_city,1524325,75.322870,51.723710
+551010000,Pavlodar,Pavlodar Region,regional_significance_city,1520240,76.968810,52.276010
+790000000,Shymkent,Shymkent,republican_significance_city,1518980,69.600420,42.309880
+611610000,Arys,Turkistan Region,regional_significance_city,1526168,68.808700,42.430150
+612010000,Kentau,Turkistan Region,regional_significance_city,1522751,68.504630,43.516720
+615820100,Lenger,Turkistan Region,district_significance_city,1521379,69.885820,42.181520
+615420100,Saryaghash,Turkistan Region,district_significance_city,1519673,69.167910,41.460420
+616420100,Shardara,Turkistan Region,district_significance_city,1524889,67.969910,41.258320
+611010000,Turkistan,Turkistan Region,regional_significance_city,1517945,68.256850,43.294580
+613820100,Zhetysay,Turkistan Region,district_significance_city,1524385,68.327740,40.776310
+621810000,Qarazhal,Ulytau Region,regional_significance_city,1519935,70.800580,48.010850
+622010000,Satpayev,Ulytau Region,regional_significance_city,1520692,67.541120,47.904090
+621010000,Zhezqazghan,Ulytau Region,regional_significance_city,1516589,67.706280,47.794110
+273620100,Aqsay,West Kazakhstan Region,district_significance_city,610613,52.997820,51.168100
+271010000,Oral,West Kazakhstan Region,regional_significance_city,608668,51.425580,51.246010

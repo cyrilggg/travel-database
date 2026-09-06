@@ -351,6 +351,20 @@ const additionalCityCenterSources = [
     countryName: "印度",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "kz-kato-cities-2026-07-17.csv",
+    ),
+    idPrefix: "kazakhstan",
+    codePrefix: "kz",
+    levelPrefix: "kazakhstan",
+    countryCode: "KZ",
+    countryName: "哈萨克斯坦",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
