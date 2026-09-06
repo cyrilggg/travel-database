@@ -71,6 +71,20 @@ const additionalCityCenterSources = [
     countryName: "日本",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "mn-official-cities-2026-09-06.csv",
+    ),
+    idPrefix: "mongolia",
+    codePrefix: "mn",
+    levelPrefix: "mongolia",
+    countryCode: "MN",
+    countryName: "蒙古",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
