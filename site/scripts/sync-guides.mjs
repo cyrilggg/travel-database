@@ -127,6 +127,20 @@ const additionalCityCenterSources = [
     countryName: "越南",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "th-city-municipalities-2026-06-10.csv",
+    ),
+    idPrefix: "thailand",
+    codePrefix: "th",
+    levelPrefix: "thailand",
+    countryCode: "TH",
+    countryName: "泰国",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

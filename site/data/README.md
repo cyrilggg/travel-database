@@ -51,3 +51,9 @@
 `sources/vn-central-cities-2025-07-01.csv` 收录越南 2025 年两级地方政府改革后仍作为正式行政单位存在的 6 个中央直辖市。越南已于 2025-07-01 结束县级行政单位运作，因此不继续罗列改革前的省辖市、县级市和市社；这能避免地图把已经失效的旧层级误标为现行城市。名单依据越南政府公布的 34 个省级行政单位（28 省、6 中央直辖市）核对：<https://xaydungchinhsach.chinhphu.vn/chi-tiet-34-don-vi-hanh-chinh-cap-tinh-tu-12-6-2025-119250612141845533.htm>。
 
 稳定 ID 使用越南总理 2025 年第 19/2025/QĐ-TTg 号决定公布的省级单位代码；官方代码目录：<https://danhmuchanhchinh.nso.gov.vn/>。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 越南国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `49F45EF72735D8833D528384EECD89E86C690667B63C35D9F132A21E2B02F6C2`。
+
+## 泰国城市点
+
+`sources/th-city-municipalities-2026-06-10.csv` 收录泰国 35 个 `เทศบาลนคร`（นคร级市政体），以及曼谷、芭堤雅两个特别地方行政体，共 37 个城市入口；不包含 246 个 `เทศบาลเมือง`（镇级市政体）和 2,489 个 `เทศบาลตำบล`（街镇级市政体）。类别总数依据泰国内政部地方行政厅截至 2025-12-16 的官方统计：<https://asean.dla.go.th/public/article.do?lang=th&lv2Index=36&random=1786068602604>；35 个นคร级市政体及芭堤雅逐项取自地方行政厅 2026-06-10 更新的地方行政组织名录：<https://opendata.dla.go.th/dataset/dlads_05_01>。曼谷不在该地方行政组织名录内，按同一官方统计中的特别地方行政体单列。
+
+泰国当前名录没有随 CSV 提供可复用的行政代码，因此稳定 ID 由行政体类别与规范化官方名称组成；后续新增或改制不重排既有 ID。中心点与 GeoNames 标识主要取自 2026-09-06 下载的 GeoNames 泰国国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `62B27E399569A63277FFEBE6B7884F4852E1F10CB2EBF7ED3BC5D7A8B505F125`。Chao Phraya Surasak 在 GeoNames 快照中没有独立城市记录，使用其市政体公开中心坐标且留空 GeoNames 标识，避免误绑到相邻的 Si Racha。

@@ -41,7 +41,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "mongolia_national_city" ||
     city.cityLevel === "philippines_highly_urbanized_city" ||
     city.cityLevel === "philippines_independent_component_city" ||
-    city.cityLevel === "vietnam_centrally_governed_city"
+    city.cityLevel === "vietnam_centrally_governed_city" ||
+    city.cityLevel === "thailand_special_local_government"
   ) {
     return "prefecture";
   }
@@ -56,7 +57,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "mongolia_aimag_city" ||
     city.cityLevel === "philippines_component_city" ||
     city.cityLevel === "indonesia_autonomous_city" ||
-    city.cityLevel === "indonesia_administrative_city"
+    city.cityLevel === "indonesia_administrative_city" ||
+    city.cityLevel === "thailand_city_municipality"
   ) {
     return "county-city";
   }

@@ -1,0 +1,38 @@
+administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
+NCM-KHON-KAEN,Khon Kaen,Khon Kaen,city_municipality,1609776,102.833000,16.446710
+NCM-BAN-SUAN,Ban Suan,Chonburi,city_municipality,1613139,101.008200,13.351610
+NCM-CHAO-PHRAYA-SURASAK,Chao Phraya Surasak,Chonburi,city_municipality,,100.999615,13.124059
+NCM-LAEM-CHABANG,Laem Chabang,Chonburi,city_municipality,1897926,100.884330,13.087750
+NCM-CHIANG-RAI,Chiang Rai,Chiang Rai,city_municipality,1153669,99.832500,19.908580
+NCM-CHIANG-MAI,Chiang Mai,Chiang Mai,city_municipality,1153671,98.984680,18.790380
+NCM-TRANG,Trang,Trang,city_municipality,1150007,99.611410,7.556330
+NCM-MAE-SOT,Mae Sot,Tak,city_municipality,1152188,98.566670,16.716670
+NCM-NAKHON-PATHOM,Nakhon Pathom,Nakhon Pathom,city_municipality,1608534,100.044270,13.819600
+NCM-NAKHON-RATCHASIMA,Nakhon Ratchasima,Nakhon Ratchasima,city_municipality,1608529,102.101960,14.970660
+NCM-NAKHON-SI-THAMMARAT,Nakhon Si Thammarat,Nakhon Si Thammarat,city_municipality,1151933,99.966670,8.433330
+NCM-NAKHON-SAWAN,Nakhon Sawan,Nakhon Sawan,city_municipality,1608527,100.137170,15.704720
+NCM-BANG-BUA-THONG,Bang Bua Thong,Nonthaburi,city_municipality,1619602,100.424030,13.917830
+NCM-PAK-KRET,Pak Kret,Nonthaburi,city_municipality,1608048,100.497740,13.911790
+NCM-NONTHABURI,Nonthaburi,Nonthaburi,city_municipality,1608133,100.514770,13.860750
+NCM-BURI-RAM,Buri Ram,Buriram,city_municipality,1611453,103.103920,14.994330
+NCM-RANGSIT,Rangsit,Pathum Thani,city_municipality,1612966,100.616670,13.983330
+NCM-HUA-HIN,Hua Hin,Prachuap Khiri Khan,city_municipality,1153269,99.958760,12.570650
+NCM-PHRA-NAKHON-SI-AYUTTHAYA,Phra Nakhon Si Ayutthaya,Phra Nakhon Si Ayutthaya,city_municipality,1607532,100.577390,14.351670
+NCM-PHITSANULOK,Phitsanulok,Phitsanulok,city_municipality,1607708,100.258580,16.824810
+NCM-PHUKET,Phuket,Phuket,city_municipality,1151254,98.398100,7.890590
+NCM-YALA,Yala,Yala,city_municipality,1604870,101.281280,6.539950
+NCM-MAP-TA-PHUT,Map Ta Phut,Rayong,city_municipality,1616685,101.170340,12.725950
+NCM-RAYONG,Rayong,Rayong,city_municipality,1607017,101.257980,12.680950
+NCM-LAMPANG,Lampang,Lampang,city_municipality,1152473,99.492770,18.292320
+NCM-SAKON-NAKHON,Sakon Nakhon,Sakon Nakhon,city_municipality,1606790,104.147250,17.161160
+NCM-SONGKHLA,Songkhla,Songkhla,city_municipality,1606147,100.595100,7.198820
+NCM-HAT-YAI,Hat Yai,Songkhla,city_municipality,1610780,100.476680,7.008360
+NCM-SAMUT-PRAKAN,Samut Prakan,Samut Prakan,city_municipality,1606590,100.597200,13.597600
+NCM-OM-NOI,Om Noi,Samut Sakhon,city_municipality,1618211,100.309470,13.704220
+NCM-SAMUT-SAKHON,Samut Sakhon,Samut Sakhon,city_municipality,1606588,100.273620,13.547530
+NCM-KO-SAMUI,Ko Samui,Surat Thani,city_municipality,1154689,99.935670,9.535670
+NCM-SURAT-THANI,Surat Thani,Surat Thani,city_municipality,1150515,99.333110,9.140110
+NCM-UDON-THANI,Udon Thani,Udon Thani,city_municipality,1605239,102.785890,17.415670
+NCM-UBON-RATCHATHANI,Ubon Ratchathani,Ubon Ratchathani,city_municipality,1605245,104.848660,15.238440
+SLA-BANGKOK,Bangkok,Bangkok Special Administrative Area,special_local_government,1609350,100.501440,13.753980
+SLA-PATTAYA,Pattaya,Chonburi,special_local_government,1614295,100.883330,12.933330
