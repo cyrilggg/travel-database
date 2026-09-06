@@ -4116,16 +4116,6 @@ body,
 }
 
 
-.regional-reading-links {
-  margin: 1.2rem 0;
-  padding: 1rem;
-  border: 1px solid #d8ded6;
-  border-radius: 12px;
-}
-.regional-reading-links h3 { margin: 0 0 .5rem; }
-.regional-reading-links p { font-size: .85rem; line-height: 1.6; }
-.regional-reading-links > div { display: flex; flex-wrap: wrap; gap: .5rem .85rem; }
-.regional-reading-links a { text-decoration: underline; text-underline-offset: 3px; line-height: 1.8; }
 .regional-reading-panel { padding: 1rem; }
 .guide-full-text > summary { cursor: pointer; padding: 1rem 0; font-weight: 600; }
 

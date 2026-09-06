@@ -489,16 +489,6 @@ export default function TravelMap() {
     if (panelCollapsed) setPanelLayout("docked");
   };
 
-  const renderRegionalLinks = () => (
-    <section className="regional-reading-links" aria-label="台湾旅行区域">
-      <h3>台湾旅行区域</h3>
-      <p>城市之外的山海、乡镇与离岛，按旅行范围阅读。</p>
-      <div>{regionalReadings.map((reading) => (
-        <a key={reading.id} href={`#reading=${encodeURIComponent(reading.id)}`} onClick={() => { setPanel({ kind: "reading", readingId: reading.id }); setPanelLayout("expanded"); }}>{reading.title}</a>
-      ))}</div>
-    </section>
-  );
-
   const renderHome = () => (
     <div className="panel-home">
       <p className="panel-eyebrow">旅行地图</p>
@@ -751,7 +741,6 @@ export default function TravelMap() {
               )}
             </GuideStructureLoader>
 
-            {guide.fullTextPath && renderRegionalLinks()}
             {guide.fullTextPath && (
               <details className="guide-full-text" key={guide.id}>
                 <summary>阅读完整攻略（含旅行者须知与核查来源）</summary>
@@ -1018,7 +1007,6 @@ export default function TravelMap() {
                       <h2>{reading.title}</h2>
                       <button className="regional-reading-back" type="button" onClick={() => openHome()}>返回地图目录</button>
                     </div>
-                    <details className="regional-reading-switcher" key={`switcher-${reading.id}`}><summary>切换旅行区域</summary>{renderRegionalLinks()}</details>
                     <GuideContentLoader key={reading.id} contentPath={reading.fullTextPath} />
                   </div>
                 ) : null;
