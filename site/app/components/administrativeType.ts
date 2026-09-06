@@ -55,7 +55,9 @@ export const administrativeTypeOf = (
     city.cityLevel === "sri_lanka_capital_municipal_council" ||
     city.cityLevel === "nepal_capital_metropolitan_city" ||
     city.cityLevel === "nepal_metropolitan_city" ||
-    city.cityLevel === "nepal_sub_metropolitan_city"
+    city.cityLevel === "nepal_sub_metropolitan_city" ||
+    city.cityLevel === "bangladesh_capital_city_corporation" ||
+    city.cityLevel === "bangladesh_city_corporation"
   ) {
     return "prefecture";
   }
@@ -80,7 +82,10 @@ export const administrativeTypeOf = (
     city.cityLevel === "maldives_city_council" ||
     city.cityLevel === "bhutan_autonomous_thromde" ||
     city.cityLevel === "sri_lanka_municipal_council" ||
-    city.cityLevel === "nepal_municipality"
+    city.cityLevel === "nepal_municipality" ||
+    city.cityLevel === "bangladesh_pourashava_class_a" ||
+    city.cityLevel === "bangladesh_pourashava_class_b" ||
+    city.cityLevel === "bangladesh_pourashava_class_c"
   ) {
     return "county-city";
   }

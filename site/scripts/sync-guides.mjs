@@ -295,6 +295,20 @@ const additionalCityCenterSources = [
     countryName: "尼泊尔",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "bd-urban-local-bodies-2026-09-06.csv",
+    ),
+    idPrefix: "bangladesh",
+    codePrefix: "bd",
+    levelPrefix: "bangladesh",
+    countryCode: "BD",
+    countryName: "孟加拉国",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

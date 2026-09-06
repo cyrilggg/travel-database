@@ -123,3 +123,13 @@
 `sources/np-urban-municipalities-2026-09-06.csv` 收录尼泊尔 293 个城市型地方政府：6 个 Metropolitan City、11 个 Sub-Metropolitan City 和 276 个 Municipality；460 个 Gaunpalika（农村 Municipality）不纳入城市入口。数量与分类依据尼泊尔联邦事务与总务部现行说明复核：<https://mofaga.gov.np/local-contact>。名称和稳定 ID 直接使用尼泊尔国家统计局 753 个地方政府代码表中的官方英文名及五位 Local Level Code：<https://ec.nsonepal.gov.np/html/admin_code.html>；2026-09-06 页面快照 SHA-256 为 `C7EEEFDAF7CD03CB797E54BB1C1CB6E8ECDD4B5A204919166B573663D442CE61`。
 
 城市点由 `scripts/import-nepal-city-centers.mjs` 将上述 293 个官方单位逐区匹配到 Open Knowledge Nepal 的 WGS84 地方政府边界，并计算保证落在各自辖区内的几何代表点：<https://localboundries.oknp.org/download/>。边界项目按 CC BY 4.0 发布并说明其行政资料来源包含尼泊尔 Survey Department / National Geoportal；本次边界快照 SHA-256 为 `CCB2C0EE43EB997AF724DF65B3C262C9DAE441E8983448A812AFC053087B97B2`。导入器固定校验两个快照哈希、官方总数、三级城市数量、一一匹配和名称距离；不使用 GeoNames 标识，避免把新合并或同名 Municipality 误绑到普通聚居点。没有对应攻略的城市统一显示为“尚未收录”。
+
+## 孟加拉国城市点
+
+`sources/bd-urban-local-bodies-2026-09-06.csv` 收录孟加拉国现行 340 个城市级地方机构：13 个 City Corporation，以及 327 个 Pourashava（182 个 A 类、104 个 B 类、41 个 C 类）；Upazila 和 Union 不作为城市入口。基础名单及等级取自地方政府工程局发布的 328 个 Pourashava、12 个 City Corporation 逐项清单：<https://oldweb.lged.gov.bd/uploadeddocument/unitpublication/10/1142/Paura%20List.pdf>，本次 PDF 快照 SHA-256 为 `2A7C8FBFDDD9603F1D00EB17D882786C5B068AECC54A7A8BE1A7C3E5459F2AFA`。
+
+2026-05-14 发布的公报已将 Bogura Pourashava 改制为 Bogura City Corporation，因此生成时移除旧 Pourashava 条目并加入其法定继承单位；地方政府司现行全国目录也已列出 13 个 City Corporation：<https://lgd.gov.bd/pages/static-pages/69414020c4774958d7b54af5>。Bogura 的设立边界与管理人任命公报分别见：<https://www.dpp.gov.bd/bgpress/index.php/document/get_extraordinary/61652>、<https://www.dpp.gov.bd/bgpress/index.php/document/get_extraordinary/61653>。这样既不会重复显示 Bogura，也保留全国 340 个城市型地方机构的现行总数。
+
+官方名单没有提供可覆盖全部现行单位、且能直接复用的统一城市代码，稳定 ID 使用“区名 + 官方英文名称 + 机构类型”的规范化组合，后续新增或改制不重排既有条目。`scripts/import-bangladesh-city-centers.py` 固定校验官方 PDF 与 GeoNames 快照哈希、分类数量、唯一 ID、唯一 GeoNames 标识和坐标国界范围；GeoNames 2026-09-06 国家数据快照按 CC BY 4.0 使用：<https://www.geonames.org/export/>，压缩包 SHA-256 为 `C5FAFB3EB4297E521255056EF6D6E4F27C07AD0E66856A1FBBAD8D81823C9830`，解压文本 SHA-256 为 `04D29E3DB226675E5E29A5D83A1A36271B610C311BB078326EF93012E0F79A74`。
+
+少数官方拼写无法自动可靠对应 GeoNames：Baroiyarhat 使用孟加拉国 Urban Development Directorate 城市规划勘测点：<https://mudp.gov.bd/documents/reports/pk2_Geophysical_investigation_report_Final.PDF>；Keshorhat 使用 OpenStreetMap 中标注为“কেশরহাট পৌরসভা ভবন”的市政府建筑中心点，并与市政府官网所列 Mohanpur、Rajshahi 位置交叉核对：<https://www.openstreetmap.org/way/529370752>、<https://www.keshorhatpourashava.gov.bd/InstituteInfo/DetailsInfo>；Dhaka North 使用该 City Corporation 的区域代表点，与使用 Dhaka 主城中心点的 Dhaka South 分开显示：<https://www.wikidata.org/wiki/Q5268748>。没有对应攻略的城市统一显示为“尚未收录”。
