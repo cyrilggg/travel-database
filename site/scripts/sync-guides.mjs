@@ -520,6 +520,20 @@ const additionalCityCenterSources = [
     countryName: "黎巴嫩",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "jo-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "jordan",
+    codePrefix: "jo",
+    levelPrefix: "jordan",
+    countryCode: "JO",
+    countryName: "约旦",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

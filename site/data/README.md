@@ -229,3 +229,9 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 `sources/lb-city-centers-2026-09-06.csv` 收录 40 个黎巴嫩城市级入口：首都、7 个省会、18 个区治，以及 14 个不兼任行政中心且人口超过 5,000 的普通城市。公开资料没有提供一张现行、稳定且带全国统一代码的法定城市总表，因此沿用西亚批次的可复现口径：保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`；不纳入废弃地、地方性聚居地类别、农场、毁坏地或城市内部片区。GeoNames 对 cities 系列数据和字段的官方说明见：<https://download.geonames.org/export/dump/readme.txt>。
 
 稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-lebanon-city-centers.py` 固定校验来源哈希、四类层级数量、40 个唯一 ID、唯一中心点、8 省中文归属和国界范围。2026-09-06 下载的 GeoNames 黎巴嫩国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `7FCCEEDFCE97D7A3C132A57F311A4A054F9097ACE3C5C02A0250B5C074A32A4A`，解压文本 SHA-256 为 `C22BEB564C2640FA221E493061EE18060D119D278467F89A0BF82B1303E5ABE8`，生成 CSV SHA-256 为 `816EBE52F7E493F7BDF019FB0E049844BB0FFC036619982D0D564D88F4886584`。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。
+
+## 约旦城市点
+
+`sources/jo-city-centers-2026-09-06.csv` 收录 115 个约旦城市级入口：首都、11 个省会、30 个区治、37 个次区治，以及 36 个不兼任行政中心且人口超过 5,000 的普通城市。沿用西亚批次的可复现口径，保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`。导入器固定排除鲁克班难民营、三个以公路交叉口作为中心的记录、安曼内部城区，以及鲁赛法、鲁韦希德、卡拉克的重复城市点；废弃地、地方性聚居地类别、农场和毁坏地同样不纳入。GeoNames 对 cities 系列数据和字段的官方说明见：<https://download.geonames.org/export/dump/readme.txt>。
+
+稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-jordan-city-centers.py` 固定校验来源哈希、五类层级数量、115 个唯一 ID、唯一中心点、12 省中文归属和国界范围。2026-09-06 下载的 GeoNames 约旦国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `BD843C1008D74BE315F67B0EEFC31E95E3CE9C947E2551440371C5AA98FDC4BA`，解压文本 SHA-256 为 `CDCC54B0F5741106D1053DECA5FEC8917B70991A6A679D66073A1C1DB2EA67E7`，生成 CSV SHA-256 为 `417947DB71FCC2D4E6950B19B71C3EBB7A931D9FE0818687F1CF3D3D6C41258E`。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。
