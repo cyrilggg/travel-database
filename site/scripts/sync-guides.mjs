@@ -365,6 +365,20 @@ const additionalCityCenterSources = [
     countryName: "哈萨克斯坦",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "kg-soate-cities-2025-10.csv",
+    ),
+    idPrefix: "kyrgyzstan",
+    codePrefix: "kg",
+    levelPrefix: "kyrgyzstan",
+    countryCode: "KG",
+    countryName: "吉尔吉斯斯坦",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

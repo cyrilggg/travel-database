@@ -1,0 +1,35 @@
+administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
+41705258600010,Aydarken,Batken Region,district_significance_city,1222635,71.341840,39.943190
+41705410000010,Batken,Batken Region,regional_significance_city,1528735,70.819290,40.060400
+41705258610020,Kadamjay,Batken Region,district_significance_city,1528336,71.723510,40.127670
+41705430000010,Kyzyl-Kyya,Batken Region,regional_significance_city,1527719,72.127930,40.256840
+41705236610010,Razzakov,Batken Region,district_significance_city,1222662,69.527600,39.838950
+41705420000010,Suluktu,Batken Region,regional_significance_city,1222562,69.567790,39.936520
+41711000000000,Bishkek,Bishkek,republican_significance_city,1528675,74.590000,42.870000
+41708410000010,Kant,Chuy Region,regional_significance_city,1528193,74.850770,42.891060
+41708420000010,Kara-Balta,Chuy Region,regional_significance_city,1528182,73.848130,42.814230
+41708219600010,Kayyngdy,Chuy Region,district_significance_city,1528234,73.675850,42.824690
+41708213610020,Kemin,Chuy Region,district_significance_city,1528606,75.691670,42.786110
+41708213600010,Orlovka,Chuy Region,district_significance_city,1527551,75.592250,42.747070
+41708222600010,Shopokov,Chuy Region,district_significance_city,1527370,74.342170,42.854740
+41708400000010,Tokmok,Chuy Region,regional_significance_city,1527199,75.301490,42.841940
+41702420000010,Balykchy,Issyk-Kul Region,regional_significance_city,1527004,76.187090,42.460170
+41702215600010,Cholpon-Ata,Issyk-Kul Region,district_significance_city,1528512,77.082250,42.649440
+41702410000010,Karakol,Issyk-Kul Region,regional_significance_city,1528121,78.391970,42.490470
+41703207600010,Bazar-Korgon,Jalal-Abad Region,district_significance_city,1528717,72.745860,41.037600
+41703440000010,Kara-Kul,Jalal-Abad Region,regional_significance_city,1528124,72.670270,41.628280
+41703211610010,Kerben,Jalal-Abad Region,district_significance_city,1528052,71.758260,41.493990
+41703215600010,Kochkor-Ata,Jalal-Abad Region,district_significance_city,1527903,72.483200,41.037090
+41703220600010,Kok-Jangak,Jalal-Abad Region,district_significance_city,1527873,73.196130,41.030260
+41703430000010,Mailuu-Suu,Jalal-Abad Region,regional_significance_city,11153720,72.455900,41.249160
+41703410000010,Manas,Jalal-Abad Region,regional_significance_city,1528249,72.993130,40.944980
+41703215600020,Shamaldy-Say,Jalal-Abad Region,district_significance_city,1527398,72.178870,41.200600
+41703420000010,Tash-Kumyr,Jalal-Abad Region,regional_significance_city,1527260,72.217070,41.346120
+41703225600010,Toktogul,Jalal-Abad Region,district_significance_city,1538648,72.941920,41.874420
+41704400000010,Naryn,Naryn Region,regional_significance_city,1527592,75.995700,41.428300
+41721000000000,Osh,Osh,republican_significance_city,1527534,72.798500,40.528280
+41706207600010,Gulcho,Osh Region,district_significance_city,1528320,73.444180,40.313800
+41706226600010,Kara-Suu,Osh Region,district_significance_city,1528091,72.866660,40.704600
+41706242600010,Nookat,Osh Region,district_significance_city,1528339,72.618340,40.265970
+41706255600010,Uzgen,Osh Region,district_significance_city,1527513,73.300680,40.769940
+41707400000010,Talas,Talas Region,regional_significance_city,1527299,72.241700,42.522560
