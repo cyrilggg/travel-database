@@ -1,0 +1,151 @@
+administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
+0102805000,Batac,Ilocos Norte,component_city,1726339,120.564890,18.055400
+0102812000,Laoag,Ilocos Norte,component_city,1707404,120.595700,18.197800
+0102906000,Candon,Ilocos Sur,component_city,1719251,120.451670,17.194720
+0102934000,Vigan,Ilocos Sur,component_city,1679980,120.386940,17.574720
+0103314000,San Fernando,La Union,component_city,1690033,120.316630,16.615910
+0105503000,Alaminos,Pangasinan,component_city,1731685,119.981110,16.156110
+0105518000,Dagupan,Pangasinan,independent_component_city,1716198,120.333250,16.043130
+0105532000,San Carlos,Pangasinan,component_city,1690206,120.348630,15.929410
+0105546000,Urdaneta,Pangasinan,component_city,1680197,120.571110,15.976110
+0201529000,Tuguegarao City,Cagayan,component_city,1680932,121.722850,17.615770
+0203108000,Cauayan,Isabela,component_city,1717729,121.772500,16.934720
+0203114000,Ilagan,Isabela,component_city,1711146,121.889240,17.148540
+0203135000,Santiago,Isabela,independent_component_city,1687801,121.548700,16.688080
+0300803000,Balanga,Bataan,component_city,1728523,120.536110,14.676110
+0301403000,Baliwag,Bulacan,component_city,1727995,120.896940,14.954720
+0301410000,Malolos,Bulacan,component_city,1702540,120.810390,14.844300
+0301412000,Meycauayan,Bulacan,component_city,1699802,120.960830,14.736940
+0301420000,San Jose Del Monte,Bulacan,component_city,1689395,121.045280,14.813890
+0304903000,Cabanatuan,Nueva Ecija,component_city,1721906,120.966480,15.485860
+0304908000,Gapan,Nueva Ecija,component_city,1713226,120.946400,15.307200
+0304917000,Science City of Muñoz,Nueva Ecija,component_city,1699088,120.903060,15.716110
+0304919000,Palayan,Nueva Ecija,component_city,1696165,121.084800,15.541500
+0304926000,San Jose City,Nueva Ecija,component_city,1689431,120.989400,15.792300
+0305409000,Mabalacat City,Pampanga,component_city,1704703,120.571170,15.223030
+0305416000,San Fernando,Pampanga,component_city,1690039,120.684450,15.034250
+0306916000,Tarlac,Tarlac,component_city,1682812,120.597940,15.480170
+0330100000,Angeles,Pampanga,highly_urbanized_city,1730737,120.583330,15.150000
+0331400000,Olongapo,Zambales,highly_urbanized_city,1697175,120.282780,14.829170
+0401005000,Batangas City,Batangas,component_city,1726280,121.058400,13.756700
+0401007000,Calaca,Batangas,component_city,1720751,120.813270,13.932440
+0401014000,Lipa,Batangas,component_city,1706090,121.163100,13.941100
+0401028000,Sto. Tomas,Batangas,component_city,1687534,121.141360,14.107900
+0401031000,Tanauan,Batangas,component_city,1683340,121.149750,14.086270
+0402103000,Bacoor,Cavite,component_city,1729524,120.938510,14.458960
+0402104000,Carmona,Cavite,component_city,1718306,121.057600,14.313200
+0402105000,Cavite,Cavite,component_city,1717641,120.898780,14.483690
+0402106000,Dasmariñas,Cavite,component_city,1715430,120.936670,14.329440
+0402108000,General Trias,Cavite,component_city,1713014,120.881670,14.386940
+0402109000,Imus,Cavite,component_city,1710914,120.936670,14.429720
+0402119000,Tagaytay,Cavite,component_city,1684553,120.933550,14.095320
+0402122000,Trece Martires,Cavite,component_city,1681339,120.867660,14.283230
+0403403000,Biñan,Laguna,component_city,1725115,121.080710,14.342670
+0403404000,Cabuyao,Laguna,component_city,1721281,121.126200,14.272600
+0403405000,Calamba,Laguna,component_city,1720681,121.165280,14.211670
+0403424000,San Pablo,Laguna,component_city,1688830,121.325600,14.068300
+0403425000,San Pedro,Laguna,component_city,1688749,121.047300,14.359500
+0403428000,Santa Rosa,Laguna,component_city,1687894,121.111390,14.312220
+0405647000,Tayabas,Quezon,component_city,1682659,121.592900,14.025900
+0405802000,Antipolo,Rizal,component_city,1730501,121.122510,14.625780
+0431200000,Lucena,Quezon,highly_urbanized_city,1705357,121.617220,13.931390
+0500506000,Legazpi,Albay,component_city,1706889,123.740730,13.141250
+0500508000,Ligao,Albay,component_city,1706474,123.519240,13.216970
+0500517000,Tabaco,Albay,component_city,1685117,123.733610,13.358610
+0501716000,Iriga,Camarines Sur,component_city,1710544,123.411500,13.432400
+0501724000,Naga,Camarines Sur,independent_component_city,1698829,123.181390,13.619170
+0504111000,Masbate,Masbate,component_city,1700712,123.624940,12.371690
+0506216000,Sorsogon,Sorsogon,component_city,1685755,123.993330,12.973890
+0601914000,Roxas,Capiz,component_city,1691444,122.751110,11.585280
+0603035000,Passi,Iloilo,component_city,1694498,122.641940,11.107780
+0631000000,Iloilo,Iloilo,highly_urbanized_city,1711005,122.564440,10.696940
+0701242000,Tagbilaran,Bohol,component_city,1684497,123.852190,9.655560
+0702211000,Bogo,Cebu,component_city,1724435,124.005500,11.051700
+0702214000,Carcar,Cebu,component_city,1718436,123.640200,10.106100
+0702223000,Danao City,Cebu,component_city,1715804,124.027220,10.520830
+0702234000,Naga,Cebu,component_city,1698839,123.758000,10.208980
+0702250000,Talisay,Cebu,component_city,1683881,123.849440,10.244720
+0702251000,Toledo,Cebu,component_city,1681602,123.638600,10.377300
+0730600000,Cebu,Cebu,highly_urbanized_city,1717512,123.890710,10.316720
+0731100000,Lapu-Lapu,Cebu,highly_urbanized_city,1707267,123.949440,10.310280
+0731300000,Mandaue,Cebu,highly_urbanized_city,1701947,123.922220,10.323610
+0802604000,Borongan,Eastern Samar,component_city,1723893,125.431940,11.608060
+0803708000,Baybay,Leyte,component_city,1725799,124.800600,10.678500
+0803738000,Ormoc City,Leyte,independent_component_city,1697018,124.607500,11.006390
+0806003000,Calbayog,Samar,component_city,1720402,124.596200,12.066800
+0806005000,Catbalogan,Samar,component_city,1717911,124.886110,11.775280
+0806407000,Maasin,Southern Leyte,component_city,1704758,124.840820,10.132720
+0831600000,Tacloban,Leyte,highly_urbanized_city,1684712,125.004720,11.243330
+0907201000,Dapitan,Zamboanga del Norte,component_city,1715542,123.422700,8.656100
+0907202000,Dipolog,Zamboanga del Norte,component_city,1714674,123.334710,8.566970
+0907322000,Pagadian,Zamboanga del Sur,component_city,1696710,123.437000,7.825700
+0931700000,Zamboanga,Zamboanga del Sur,highly_urbanized_city,1679432,122.073890,6.910280
+0990101000,Isabela,Zamboanga Sibugay,component_city,1710519,121.971170,6.704070
+1001312000,Malaybalay,Bukidnon,component_city,1702934,125.127780,8.157500
+1001321000,Valencia,Bukidnon,component_city,1680116,125.094170,7.906390
+1004209000,Oroquieta,Misamis Occidental,component_city,1697006,123.804800,8.485900
+1004210000,Ozamiz,Misamis Occidental,component_city,1696899,123.840500,8.148100
+1004215000,Tangub,Misamis Occidental,component_city,1683116,123.747700,8.061800
+1004307000,El Salvador,Misamis Oriental,component_city,1713911,124.522500,8.563060
+1004308000,Gingoog,Misamis Oriental,component_city,1712875,125.099720,8.827780
+1030500000,Cagayan De Oro,Misamis Oriental,highly_urbanized_city,1721080,124.647220,8.482220
+1030900000,Iligan,Lanao del Norte,highly_urbanized_city,1711084,124.243440,8.228900
+1102315000,Panabo,Davao del Norte,component_city,1695804,125.684170,7.308060
+1102317000,Island Garden City of Samal,Davao del Norte,component_city,1690666,125.708330,7.074440
+1102319000,Tagum,Davao del Norte,component_city,1684269,125.804600,7.447500
+1102403000,Digos,Davao del Sur,component_city,1714956,125.357220,6.749720
+1102509000,Mati,Davao Oriental,component_city,1700360,126.216550,6.955080
+1130700000,Davao,Davao del Sur,highly_urbanized_city,1715348,125.612780,7.073060
+1204704000,Kidapawan,Cotabato,component_city,1708824,125.089440,7.008330
+1206306000,Koronadal,South Cotabato,component_city,1708522,124.846940,6.503060
+1206511000,Tacurong,Sultan Kudarat,component_city,1684681,124.676390,6.692500
+1230800000,General Santos,South Cotabato,highly_urbanized_city,1713022,125.171670,6.112780
+1380100000,Caloocan,National Capital Region (NCR),highly_urbanized_city,1720151,120.967880,14.649530
+1380200000,Las Piñas,National Capital Region (NCR),highly_urbanized_city,1707174,120.982780,14.450560
+1380300000,Makati,National Capital Region (NCR),highly_urbanized_city,1703417,121.032690,14.550270
+1380400000,Malabon,National Capital Region (NCR),highly_urbanized_city,1703320,120.939720,14.673330
+1380500000,Mandaluyong,National Capital Region (NCR),highly_urbanized_city,1701966,121.040900,14.583200
+1380600000,Manila,National Capital Region (NCR),highly_urbanized_city,1701668,120.982200,14.604200
+1380700000,Marikina,National Capital Region (NCR),highly_urbanized_city,1700925,121.113300,14.648100
+1380800000,Muntinlupa,National Capital Region (NCR),highly_urbanized_city,1699076,121.047500,14.390280
+1380900000,Navotas,National Capital Region (NCR),highly_urbanized_city,1697846,120.950000,14.666670
+1381000000,Parañaque,National Capital Region (NCR),highly_urbanized_city,1694781,121.017490,14.481560
+1381100000,Pasay City,National Capital Region (NCR),highly_urbanized_city,1694611,121.001440,14.537480
+1381200000,Pasig,National Capital Region (NCR),highly_urbanized_city,7290466,121.061400,14.586910
+1381300000,Quezon City,National Capital Region (NCR),highly_urbanized_city,1692192,121.050900,14.648800
+1381400000,San Juan,National Capital Region (NCR),highly_urbanized_city,1689286,121.033300,14.600000
+1381500000,Taguig,National Capital Region (NCR),highly_urbanized_city,1684308,121.079200,14.524300
+1381600000,Valenzuela,National Capital Region (NCR),highly_urbanized_city,1680102,120.966700,14.700000
+1403213000,Tabuk,Kalinga,component_city,8031389,121.278500,17.408400
+1430300000,Baguio,Benguet,highly_urbanized_city,1728930,120.593060,16.416390
+1600203000,Cabadbaran,Agusan del Norte,component_city,1722032,125.535490,9.122610
+1600301000,Bayugan,Agusan del Sur,component_city,1725684,125.767500,8.756110
+1606724000,Surigao,Surigao del Norte,component_city,1685218,125.495000,9.789000
+1606803000,Bislig,Surigao del Sur,component_city,1724767,126.316390,8.215280
+1606819000,Tandag,Surigao del Sur,component_city,1683302,126.198610,9.078330
+1630400000,Butuan,Agusan del Norte,highly_urbanized_city,1722186,125.543610,8.949170
+1705205000,Calapan,Oriental Mindoro,component_city,1720561,121.180300,13.411700
+1731500000,Puerto Princesa,Palawan,highly_urbanized_city,1692685,118.735280,9.739170
+1804502000,Bago,Negros Occidental,component_city,1729085,122.833330,10.533330
+1804504000,Cadiz,Negros Occidental,component_city,1721168,123.288000,10.946500
+1804509000,Escalante,Negros Occidental,component_city,1713818,123.499170,10.840280
+1804510000,Himamaylan,Negros Occidental,component_city,1711718,122.870560,10.098890
+1804515000,Kabankalan,Negros Occidental,component_city,1709968,122.814230,9.983900
+1804516000,La Carlota,Negros Occidental,component_city,1708226,122.921200,10.424200
+1804523000,Sagay,Negros Occidental,component_city,1691150,123.424170,10.944720
+1804524000,San Carlos,Negros Occidental,component_city,1690219,123.420300,10.484000
+1804526000,Silay,Negros Occidental,component_city,1686501,122.976300,10.800300
+1804527000,Sipalay,Negros Occidental,component_city,1686102,122.404170,9.751940
+1804528000,Talisay,Negros Occidental,component_city,1683877,122.966600,10.737500
+1804531000,Victorias,Negros Occidental,component_city,1680007,123.070500,10.901540
+1804604000,Bais,Negros Oriental,component_city,1728772,123.122780,9.591110
+1804606000,Bayawan,Negros Oriental,component_city,1725804,122.804000,9.364900
+1804608000,Canlaon,Negros Oriental,component_city,1719053,123.222700,10.386970
+1804610000,Dumaguete,Negros Oriental,component_city,1714201,123.307690,9.306460
+1804611000,Guihulngan,Negros Oriental,component_city,1712520,123.272870,10.119470
+1804621000,Tanjay,Negros Oriental,component_city,1683088,123.158000,9.516200
+1830200000,Bacolod,Negros Occidental,highly_urbanized_city,1729564,122.950000,10.666670
+1900702000,Lamitan,Basilan,component_city,1707761,122.129520,6.650200
+1903617000,Marawi,Lanao del Sur,component_city,1701053,124.283950,8.003400
+1908703000,Cotabato,Maguindanao del Norte,independent_component_city,1716771,124.246390,7.223610
+

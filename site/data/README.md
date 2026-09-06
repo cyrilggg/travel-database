@@ -33,3 +33,9 @@
 `sources/mn-official-cities-2026-09-06.csv` 收录蒙古当前适用口径下的 24 个城市入口：首都乌兰巴托、3 个国家级城市和 20 个省级城市。城市等级与名单依据现行官方土地等级表核对：<https://legalinfo.mn/mn/detail?lawId=203479>。2024 年国家大呼拉尔第 72 号《关于建立城市的决议》所列新体系要到 2027-01-01 才生效，因此本快照不提前录入其中新增的地方级和卫星城市：<https://legalinfo.mn/mn/detail?lawId=17140840711681&type=2>。
 
 中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 蒙古国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `ACF1C98BB5DC4468B3953D727DDCD2388375831C44332F4ED04296910244C9D0`。蒙古当前体系没有供本项目直接使用的统一城市代码，稳定 ID 由城市等级与官方名称组成；2027 年切换新体系时保留这些既有 ID 并另做增量映射。
+
+## 菲律宾城市点
+
+`sources/ph-official-cities-2026-06-30.csv` 按菲律宾统计局 PSGC 2026 年第二季度口径收录 149 个法定 City：33 个 Highly Urbanized City、5 个 Independent Component City 和 111 个 Component City；不包含 1,493 个 Municipality。稳定 ID 直接使用 PSGC 10 位代码。总数与发布日期依据 2026-07-13 发布、统计截至 2026-06-30 的官方更新：<https://psa.gov.ph/classification/psgc>；城市分级逐项按官方 HUC、ICC、CC 名单核对：<https://psa.gov.ph/classification/psgc/hucs>、<https://psa.gov.ph/classification/psgc/iccs>、<https://psa.gov.ph/classification/psgc/ccs>。
+
+中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 菲律宾国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `0AD6226C3AEDD9AA0D486DBEEDEB4899FC1D1E3F1714350FEC353525F3CDAC95`。名称匹配同时使用 PSGC 省区归属和 GeoNames 行政代码排除重名地点；没有对应攻略的城市统一显示为“尚未收录”。

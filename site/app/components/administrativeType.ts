@@ -38,7 +38,9 @@ export const administrativeTypeOf = (
     city.cityLevel === "north_korea_special_city" ||
     city.cityLevel === "japan_special_ward_area" ||
     city.cityLevel === "mongolia_capital_city" ||
-    city.cityLevel === "mongolia_national_city"
+    city.cityLevel === "mongolia_national_city" ||
+    city.cityLevel === "philippines_highly_urbanized_city" ||
+    city.cityLevel === "philippines_independent_component_city"
   ) {
     return "prefecture";
   }
@@ -50,7 +52,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "south_korea_administrative_city" ||
     city.cityLevel === "north_korea_provincial_city" ||
     city.cityLevel === "japan_municipal_city" ||
-    city.cityLevel === "mongolia_aimag_city"
+    city.cityLevel === "mongolia_aimag_city" ||
+    city.cityLevel === "philippines_component_city"
   ) {
     return "county-city";
   }

@@ -85,6 +85,20 @@ const additionalCityCenterSources = [
     countryName: "蒙古",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "ph-official-cities-2026-06-30.csv",
+    ),
+    idPrefix: "philippines",
+    codePrefix: "ph",
+    levelPrefix: "philippines",
+    countryCode: "PH",
+    countryName: "菲律宾",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
