@@ -105,3 +105,9 @@
 `sources/mv-city-councils-2026-09-06.csv` 收录马尔代夫《地方分权法》下现行 5 个 City Council：Male、Addu、Fuvahmulah、Kulhudhuffushi 和 Thinadhoo。地方政府管理局当前目录统计为 5 个 City Council：<https://www.lga.gov.mv/en/councils>；总统府 2023 年授予 Thinadhoo 城市地位的公告同时确认全国城市数增至 5：<https://presidency.gov.mv/Press/Article/28841>。178 个 Island Council 及 Atoll Council 不作为城市入口。
 
 全国没有供这 5 个 City Council 统一复用的城市代码，稳定 ID 使用规范化官方城市名。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 马尔代夫国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `0ABB3BB889545F7D781EF038D0DF4307F91EF9AA7CCFE11B27ADB8E7EB1838B0`。Addu City 跨多个岛屿，使用官方登记的市议会驻地 Hithadhoo 城市中心点：<https://www.tourism.gov.mv/en/page/homestay_permitted_councils>。
+
+## 不丹城市点
+
+`sources/bt-autonomous-thromdes-2026-09-06.csv` 收录不丹当前 4 个具独立民选 Thromde Tshogde 的城市自治体：Thimphu、Phuentsholing、Gelephu 和 Samdrup Jongkhar。不丹内政部地方治理部门的现行说明明确将地方政府中的 Thromde Tshogde 数量列为 4：<https://www.dlgdm.gov.bt/dlg-faq>；内政部人口登记部门的 Thromde 办公室目录逐项列出同一 4 个单位：<https://dcrc.moha.gov.bt/index.php/dzongkhag-office/>。其他 Dzongkhag Thromde、Yenlag Thromde 和县城规划边界没有作为独立城市自治体重复纳入。
+
+全国没有统一公开的 Thromde 代码目录，稳定 ID 使用规范化官方名称。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 不丹国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `66925274ED081FAC2D265A19CD45CD9878E20B5BE232F0EC7BFBFB4FD3743A06`。

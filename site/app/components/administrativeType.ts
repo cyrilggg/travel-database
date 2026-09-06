@@ -50,7 +50,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "laos_capital_prefecture" ||
     city.cityLevel === "myanmar_capital_city_development_area" ||
     city.cityLevel === "timor_leste_capital_city" ||
-    city.cityLevel === "maldives_capital_city_council"
+    city.cityLevel === "maldives_capital_city_council" ||
+    city.cityLevel === "bhutan_capital_thromde"
   ) {
     return "prefecture";
   }
@@ -72,7 +73,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "cambodia_municipality" ||
     city.cityLevel === "laos_city" ||
     city.cityLevel === "myanmar_city_development_area" ||
-    city.cityLevel === "maldives_city_council"
+    city.cityLevel === "maldives_city_council" ||
+    city.cityLevel === "bhutan_autonomous_thromde"
   ) {
     return "county-city";
   }

@@ -253,6 +253,20 @@ const additionalCityCenterSources = [
     countryName: "马尔代夫",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "bt-autonomous-thromdes-2026-09-06.csv",
+    ),
+    idPrefix: "bhutan",
+    codePrefix: "bt",
+    levelPrefix: "bhutan",
+    countryCode: "BT",
+    countryName: "不丹",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
