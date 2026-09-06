@@ -393,6 +393,20 @@ const additionalCityCenterSources = [
     countryName: "塔吉克斯坦",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "uz-soato-cities-2026-06-12.csv",
+    ),
+    idPrefix: "uzbekistan",
+    codePrefix: "uz",
+    levelPrefix: "uzbekistan",
+    countryCode: "UZ",
+    countryName: "乌兹别克斯坦",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
