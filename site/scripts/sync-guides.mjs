@@ -786,6 +786,20 @@ const additionalCityCenterSources = [
     countryName: "北马其顿",
     continentCode: "EU",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "xk-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "kosovo",
+    codePrefix: "xk",
+    levelPrefix: "kosovo",
+    countryCode: "XK",
+    countryName: "科索沃",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

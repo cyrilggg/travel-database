@@ -345,3 +345,9 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 `sources/mk-official-cities-2026-09-06.csv` 收录北马其顿全部 34 个城市。北马其顿国家统计局的国家统计概览明确给出全国 34 城口径；2021 年人口普查继续在聚居地层级将斯科普里与比托拉、库马诺沃、普里莱普、泰托沃、韦莱斯、奥赫里德等称为城市，同时明确斯科普里聚居地由 10 个市辖区片段组成。来源见：<https://www.stat.gov.mk/publikacii/makbrojki2014_en.pdf>、<https://makstat.stat.gov.mk/PXWeb/pxweb/en/MakStat/MakStat__Popisi__Popis2021__NaselenieVkupno__PodatociNaselenie/T1502P21.px/>。
 
 本批按 34 个独立城市逐项绑定固定 GeoNames ID，不把斯科普里的 10 个内部市辖区重复设置为城市，也不因人口较少而删除代米尔希萨尔、佩赫切沃等普通小城市。`scripts/import-north-macedonia-official-cities.py` 固定校验 34 个城市、首都与 33 个其他城市中心、唯一 ID、唯一中心点、8 个统计区中文归属和国界范围。2026-09-06 下载的 GeoNames 北马其顿国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `39749E6DE9526A99781B8419D779EA235737D883957FCB25DAB0D15E42D05625`，解压文本 SHA-256 为 `063C22470EE3690820943B5962B0F53F5B5C3978B3B789B324A574C24337714F`，生成 CSV SHA-256 为 `A6A0DFF05BDF35A200CDE6F1C78063681EFCFD436F02EFD6B83D147A6A280BE6`。所有地图主名称均为简体中文；没有攻略的城市统一显示为“尚未收录”。
+
+## 科索沃城市点
+
+`sources/xk-city-centers-2026-09-06.csv` 收录 39 个科索沃实体城市与城镇：以现行 38 个市镇的中心为基础，把南、北米特罗维察合并成一个连续城市中心，再补入巴尼亚和莱沙克两个仍被官方城市型名录单列的普通城镇。科索沃统计局 2024 年人口普查资料列出 38 个市镇，地方行政战略同时说明全国 38 个市镇、1,469 个聚居地和七个统计/经济地区：<https://askapi.rks-gov.net/Custom/edd9891f-da39-49a5-9b1c-4e933cd58f5f.pdf>、<https://kryeministri.rks-gov.net/wp-content/uploads/2023/01/STRATEGJIA-2022-2028-FINAL-ENG-Web-Noprint-final-PDF.pdf>。
+
+本批没有采用只统计七个三万人以上大城市的农业发展口径，而是保留德雷纳斯、克洛科特、帕尔泰什、拉尼卢格、尤尼克等普通小型市镇中心；同时不把米特罗维察跨河的两个市镇行政区重复显示为两座城市。地图主名称采用便于中文用户识别的简体中文，来源中的阿尔巴尼亚语、塞尔维亚语异名只用于稳定绑定。`scripts/import-kosovo-city-centers.py` 固定校验 39 个唯一城市点、四类来源层级数量、七个统计地区和坐标范围。2026-09-06 下载的 GeoNames `XK` 数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `16841FE7BFA2844342E1FDCFC5B5A3697F6B45871F172FD3673AAAEA589B1678`，解压文本 SHA-256 为 `AFC2F76FED2AB89B8D62988D546C24C036EEDD6C567C78501344F378BEE05A41`，生成 CSV SHA-256 为 `8F6883ED7DECB11CCDE891EB6EE5AE7173A898C095F2B5783A5326FA993EE20A`。地区标签仅用于数据分组与定位，不表达边界或主权立场；没有攻略的城市统一显示为“尚未收录”。
