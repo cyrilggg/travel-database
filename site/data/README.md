@@ -265,3 +265,9 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 `sources/qa-city-centers-2026-09-06.csv` 收录 13 个卡塔尔城市级入口：首都多哈、7 个其他市级行政中心和 5 个不兼任行政中心且人口超过 5,000 的普通城市型聚居地。沿用西亚批次的可复现口径，保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`。卡塔尔国家总体规划把努艾贾和乌姆古韦利纳明确列为多哈内部的 District Centre，并把相关赖扬建成区列为市内中心，因此导入器固定排除这三个内部城区记录；国家总体规划同时确认全国共有 8 个市：<https://www.mme.gov.qa/QatarMasterPlan/English/MSDP-Municipalities.aspx?panel=about>、<https://www.mme.gov.qa/QatarMasterPlan/English/Centers.aspx?panel=about>。
 
 稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-qatar-city-centers.py` 固定校验来源哈希、三类层级数量、13 个唯一 ID、唯一中心点、8 市中文归属和国界范围。2026-09-06 下载的 GeoNames 卡塔尔国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `44385A2651AB21ED51D425C10C38EC021DF8F9455065BE30A96D563D6DDFDFAC`，解压文本 SHA-256 为 `393AE7831C80D9C3EA2FC4022187956D9B05DAD5256288F5BEE1C8FD93A88E04`，生成 CSV SHA-256 为 `4CE6FB9C5892F64F725412B2439FCD5D5D6DD9C0A1F27D2982807070DDAB2C0E`。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。
+
+## 阿联酋城市点
+
+`sources/ae-city-centers-2026-09-06.csv` 收录 24 个阿联酋城市级入口：联邦首都、6 个其他酋长国首府和 17 个不兼任行政中心且人口超过 5,000 的普通城市型聚居地。沿用西亚批次的可复现口径，保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`。导入器固定排除阿布扎比、迪拜、富查伊拉和沙迦的内部城区、工业区、规划社区及重复城市中心，例如哈利法城、穆萨法、迪拜汽车城和朱美拉棕榈岛；迪巴希森按阿联酋政府公布的七酋长国地理关系从 GeoNames 的富查伊拉分组修正到沙迦。七酋长国清单以阿联酋政府官方平台复核：<https://u.ae/en/about-the-uae/the-seven-emirates>。
+
+稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-uae-city-centers.py` 固定校验来源哈希、三类层级数量、24 个唯一 ID、唯一中心点、7 个酋长国中文归属和国界范围。2026-09-06 下载的 GeoNames 阿联酋国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `ED7BD42AF618973D1FD51DDE8FE050E63375E0448C9629337F8B4552D5026100`，解压文本 SHA-256 为 `CB3D6AD67234DD9CEE04DE8D38E0E27743669F2E1C6F20121F7D7497D65B61DA`，生成 CSV SHA-256 为 `EBD5357257CE720B0C30AFD18298E3560D32A65637158FC969511CAAD050A5D1`。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。
