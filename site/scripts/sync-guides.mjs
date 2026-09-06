@@ -421,6 +421,20 @@ const additionalCityCenterSources = [
     countryName: "土库曼斯坦",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "am-statutory-cities-2026-09-06.csv",
+    ),
+    idPrefix: "armenia",
+    codePrefix: "am",
+    levelPrefix: "armenia",
+    countryCode: "AM",
+    countryName: "亚美尼亚",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

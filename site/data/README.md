@@ -185,3 +185,9 @@
 `sources/tm-statutory-cities-2026-09-06.csv` 收录土库曼斯坦现行全部 50 个法定城市：1 个具有州权的首都、1 个国家重要城市 Arkadag、6 个具有区权的城市和 42 个区内城市。土库曼斯坦议会当前行政区划页面明确公布上述总数与层级构成：<https://mejlis.gov.tm/turkmenistan/general-information?lang=ru>；逐城名称以 2022 年人口普查行政地域表为基线：<https://stat.gov.tm/population-census-pdfs/results/en/1.pdf>，并按议会 2025 年第 171-VII 号决议复核 Altyn asyr、Andalyp、Gubadag、Dostluk、Farap、Garabekewül 和 Şatlyk 等城市的现行归属：<https://mejlis.gov.tm/single-decree/472?lang=ru>。不把 71 个城镇、城市内部 7 个区、村庄或 geňeşlik 重复作为城市。
 
 官方公开清单没有提供可复用的全国城市代码，因此稳定 ID 使用对应 GeoNames 标识。`scripts/import-turkmenistan-statutory-cities.py` 固定校验 50 城及四级数量、唯一名称、唯一 ID、唯一中心点和国界范围。中心点来自 2026-09-06 下载的 GeoNames 国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；压缩包 SHA-256 为 `FEDD754C28450629CC3F11CE3CC9AB0F7552DCBC5BB3D1DA59B05919A1B96C3B`，解压文本 SHA-256 为 `0473C102550AAD307C6D660718DF4BA07D34D97B50597560DF9E807114C5B9A7`，生成 CSV SHA-256 为 `82CAE97A48D0F7B861500AF99AFC7E85DFC94404970786A80B249F960CE9707B`。Şabat、Seýdi、Sakarçäge 固定到其现行城市中心，避免沿用 GeoNames 的空白或旧州归属；没有对应攻略的城市统一显示为“尚未收录”。
+
+## 亚美尼亚城市点
+
+`sources/am-statutory-cities-2026-09-06.csv` 按亚美尼亚现行《行政区域划分法》附件 2 收录 48 个标注为 `քաղաք` 的法定城市，并单列首都 Yerevan，共 49 城。现行法律及完整社区、居民点附件见：<https://www.arlis.am/hy/acts/209495/latest>；本次官方 HTML 快照 SHA-256 为 `A5C9DBF418C3AF4D3395BEFFE848D4B4E6952D884ED76EAA203C6085FFE67040`。清单以现行法条为准，包含 Shamlugh、Agarak 和 Dastakert，不沿用仍只列 46 城的旧版统计清单；不把合并后的多居民点社区整体重复作为城市，也不纳入村庄。
+
+法律附件没有公布可复用的城市代码，因此稳定 ID 使用对应 GeoNames 标识。`scripts/import-armenia-statutory-cities.py` 直接从固定法律快照复核全部 48 个亚美尼亚文城市名，并校验 49 个唯一城市、唯一 ID、唯一中心点和国界范围。中心点来自 2026-09-06 下载的 GeoNames 国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；压缩包 SHA-256 为 `D2141F51F6937D8852A15148E21E1DB9C69DC6080B8722A3DCF9469483A0B13A`，解压文本 SHA-256 为 `B71FF40F3520FEF61F11B874E19C1D9567348489E3FAD625681E2D58611BDA75`，生成 CSV SHA-256 为 `63EE18F837B9ADD342E9D6512FECF7A4C81748CD852B7ACEBE85AA44EC4D29EE`。没有对应攻略的城市统一显示为“尚未收录”。
