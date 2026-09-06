@@ -548,6 +548,20 @@ const additionalCityCenterSources = [
     countryName: "以色列",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "ps-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "palestine",
+    codePrefix: "ps",
+    levelPrefix: "palestine",
+    countryCode: "PS",
+    countryName: "巴勒斯坦",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

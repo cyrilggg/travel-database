@@ -1,0 +1,105 @@
+administrative_code,name,admin_area,city_level,geonames_id,feature_code,population,longitude,latitude
+281133,Gaza,加沙地带,administrative_center,281133,PPLA,410000,34.466720,31.501610
+281141,Dayr al Balaḩ,加沙地带,governorate_center,281141,PPLA2,59504,34.349330,31.418340
+281124,Khān Yūnis,加沙地带,governorate_center,281124,PPLA2,173183,34.306270,31.340180
+281102,Rafaḩ,加沙地带,governorate_center,281102,PPLA2,126305,34.243570,31.297220
+281160,Al Fukhkhārī,加沙地带,populated_place_5000_plus,281160,PPL,5464,34.330610,31.292780
+6968063,Al Mughrāqah,加沙地带,populated_place_5000_plus,6968063,PPL,6448,34.412080,31.465870
+6967865,Al Qarārah,加沙地带,populated_place_5000_plus,6967865,PPL,19500,34.340850,31.373890
+6967857,An Naşr,加沙地带,populated_place_5000_plus,6967857,PPL,6211,34.302530,31.281370
+6967990,Az Zuwāydah,加沙地带,populated_place_5000_plus,6967990,PPL,16688,34.380530,31.439540
+281148,Banī Suhaylā,加沙地带,populated_place_5000_plus,281148,PPL,31272,34.323370,31.343370
+281145,Bayt Lāhyā,加沙地带,populated_place_5000_plus,281145,PPL,56919,34.495140,31.546400
+281146,Bayt Ḩānūn,加沙地带,populated_place_5000_plus,281146,PPL,37392,34.535790,31.535300
+281129,Jabālyā,加沙地带,populated_place_5000_plus,281129,PPL,168568,34.483470,31.527200
+281119,Khuzā‘ah,加沙地带,populated_place_5000_plus,281119,PPL,9023,34.361100,31.306750
+281093,Shūkat aş Şūfī,加沙地带,populated_place_5000_plus,281093,PPL,10566,34.282600,31.259970
+6967863,‘Abasān al Jadīdah,加沙地带,populated_place_5000_plus,6967863,PPL,5984,34.345920,31.341580
+281165,‘Abasān al Kabīrah,加沙地带,populated_place_5000_plus,281165,PPL,18163,34.340050,31.319130
+284899,Jericho,约旦河西岸,administrative_center,284899,PPLA,19783,35.450000,31.866670
+284315,Bethlehem,约旦河西岸,governorate_center,284315,PPLA2,29019,35.203760,31.704870
+285066,Hebron,约旦河西岸,governorate_center,285066,PPLA2,160470,35.093800,31.529350
+282615,Nablus,约旦河西岸,governorate_center,282615,PPLA2,130326,35.254440,32.221110
+281581,Ţūbās,约旦河西岸,governorate_center,281581,PPLA2,15591,35.369890,32.320910
+285279,Abū Dīs,约旦河西岸,populated_place_5000_plus,285279,PPL,11753,35.261660,31.762150
+7890368,Ad Dawḩah,约旦河西岸,populated_place_5000_plus,7890368,PPL,9631,35.180470,31.699480
+285108,Al Bīrah,约旦河西岸,populated_place_5000_plus,285108,PPL,38192,35.216450,31.910010
+285061,Al Khaḑir,约旦河西岸,populated_place_5000_plus,285061,PPL,9003,35.166850,31.694050
+284999,Al Yāmūn,约旦河西岸,populated_place_5000_plus,284999,PPL,16164,35.230110,32.485630
+285111,Al ‘Ayzarīyah,约旦河西岸,populated_place_5000_plus,285111,PPL,17455,35.269170,31.770780
+7890350,Al ‘Ubaydīyah,约旦河西岸,populated_place_5000_plus,7890350,PPL,10618,35.290070,31.716970
+284890,Ar Rām wa Ḑāḩiyat al Barīd,约旦河西岸,populated_place_5000_plus,284890,PPL,24838,35.234200,31.849450
+284583,As Samū‘,约旦河西岸,populated_place_5000_plus,284583,PPL,19355,35.066110,31.396710
+284597,Ash Shuyūkh,约旦河西岸,populated_place_5000_plus,284597,PPL,8151,35.156060,31.570040
+285034,Az Zaytūnīyah,约旦河西岸,populated_place_5000_plus,285034,PPL,6107,35.162400,31.954030
+284486,Az̧ Z̧āhirīyah,约旦河西岸,populated_place_5000_plus,284486,PPL,27616,34.973290,31.409670
+284461,Bal‘ā,约旦河西岸,populated_place_5000_plus,284461,PPL,6545,35.111600,32.333920
+284431,Banī Na‘īm,约旦河西岸,populated_place_5000_plus,284431,PPL,19783,35.164160,31.515910
+7889665,Banī Zayd,约旦河西岸,populated_place_5000_plus,7889665,PPL,5441,35.103160,32.039240
+282783,Banī Zayd ash Shārqīyah,约旦河西岸,populated_place_5000_plus,282783,PPL,5015,35.165930,32.049350
+284341,Bayt Fajjār,约旦河西岸,populated_place_5000_plus,284341,PPL,10579,35.154570,31.624430
+284339,Bayt Fūrīk,约旦河西岸,populated_place_5000_plus,284339,PPL,10108,35.335410,32.176890
+284324,Bayt Jālā,约旦河西岸,populated_place_5000_plus,284324,PPL,16183,35.187880,31.715450
+284320,Bayt Kāḩil,约旦河西岸,populated_place_5000_plus,284320,PPL,5663,35.065020,31.570110
+284312,Bayt Liqyā,约旦河西岸,populated_place_5000_plus,284312,PPL,7795,35.065400,31.869580
+284313,Bayt Līd,约旦河西岸,populated_place_5000_plus,284313,PPL,5740,35.131690,32.260890
+284304,Bayt Sāḩūr,约旦河西岸,populated_place_5000_plus,284304,PPL,14921,35.226310,31.700950
+284347,Bayt Ūlā,约旦河西岸,populated_place_5000_plus,284347,PPL,9159,35.029600,31.596180
+284329,Bayt Ūmmar,约旦河西岸,populated_place_5000_plus,284329,PPL,12238,35.104460,31.623290
+283129,Bayt ‘Awwā,约旦河西岸,populated_place_5000_plus,283129,PPL,7943,34.949380,31.509110
+284362,Baytā al Fawqā,约旦河西岸,populated_place_5000_plus,284362,PPL,8535,35.287740,32.142600
+284294,Baytūnyā,约旦河西岸,populated_place_5000_plus,284294,PPL,12822,35.170480,31.896600
+284270,Biddū,约旦河西岸,populated_place_5000_plus,284270,PPL,6180,35.149470,31.834780
+284271,Bidyā,约旦河西岸,populated_place_5000_plus,284271,PPL,8065,35.080280,32.114600
+284194,Birqīn,约旦河西岸,populated_place_5000_plus,284194,PPL,5730,35.260760,32.454610
+284237,Bīr Zayt,约旦河西岸,populated_place_5000_plus,284237,PPL,6398,35.194080,31.969590
+284105,Dayr Abū Ḑa‘īf,约旦河西岸,populated_place_5000_plus,284105,PPL,5506,35.361640,32.456010
+284078,Dayr Dibwān,约旦河西岸,populated_place_5000_plus,284078,PPL,6692,35.266610,31.911120
+7890847,Dayr Sāmit,约旦河西岸,populated_place_5000_plus,7890847,PPL,6144,34.974420,31.520570
+284100,Dayr al Ghuşūn,约旦河西岸,populated_place_5000_plus,284100,PPL,9187,35.076890,32.352440
+284046,Dhannābah,约旦河西岸,populated_place_5000_plus,284046,PPL,8193,35.041440,32.313410
+284011,Dūrā,约旦河西岸,populated_place_5000_plus,284011,PPL,20835,35.029290,31.507770
+283621,Idhnā,约旦河西岸,populated_place_5000_plus,283621,PPL,18727,34.974360,31.558740
+283570,Jaba‘,约旦河西岸,populated_place_5000_plus,283570,PPL,8391,35.221330,32.324090
+283521,Jammā‘īn,约旦河西岸,populated_place_5000_plus,283521,PPL,6158,35.204030,32.131640
+283133,Jannātah,约旦河西岸,populated_place_5000_plus,283133,PPL,5348,35.219610,31.669590
+283506,Janīn,约旦河西岸,populated_place_5000_plus,283506,PPL,34730,35.300860,32.459430
+283361,Kafr Rā‘ī,约旦河西岸,populated_place_5000_plus,283361,PPL,7276,35.154510,32.373980
+283157,Kharbathā al Mişbāḩ,约旦河西岸,populated_place_5000_plus,283157,PPL,5141,35.071850,31.885460
+283246,Khārās,约旦河西岸,populated_place_5000_plus,283246,PPL,6885,35.041740,31.614800
+282793,Maythalūn,约旦河西岸,populated_place_5000_plus,282793,PPL,6804,35.274460,32.347980
+282593,Naḩḩālīn,约旦河西岸,populated_place_5000_plus,282593,PPL,6215,35.120810,31.685590
+282477,Qabalān,约旦河西岸,populated_place_5000_plus,282477,PPL,7043,35.289380,32.101820
+282476,Qabāţīyah,约旦河西岸,populated_place_5000_plus,282476,PPL,19127,35.280870,32.410350
+282463,Qaffīn,约旦河西岸,populated_place_5000_plus,282463,PPL,8489,35.082660,32.432740
+282457,Qalqīlyah,约旦河西岸,populated_place_5000_plus,282457,PPL,43212,34.970630,32.189660
+282376,Qaţanah,约旦河西岸,populated_place_5000_plus,282376,PPL,7274,35.118940,31.833660
+282239,Ramallah,约旦河西岸,populated_place_5000_plus,282239,PPL,43880,35.204220,31.899640
+282039,Salfīt,约旦河西岸,populated_place_5000_plus,282039,PPL,11000,35.180790,32.083710
+281793,Sa‘īr,约旦河西岸,populated_place_5000_plus,281793,PPL,17775,35.140170,31.578550
+281789,Silwād,约旦河西岸,populated_place_5000_plus,281789,PPL,7006,35.261300,31.976250
+281778,Sinjil,约旦河西岸,populated_place_5000_plus,281778,PPL,5371,35.265450,32.033340
+281715,Surif City,约旦河西岸,populated_place_5000_plus,281715,PPL,25242,35.064390,31.650780
+281791,Sīlat al Ḩārithīyah,约旦河西岸,populated_place_5000_plus,281791,PPL,9557,35.227520,32.508470
+281790,Sīlat az̧ Z̧ahr,约旦河西岸,populated_place_5000_plus,281790,PPL,6079,35.184180,32.319340
+281690,Taffūḩ,约旦河西岸,populated_place_5000_plus,281690,PPL,9480,35.049660,31.538550
+281637,Tarqūmyā,约旦河西岸,populated_place_5000_plus,281637,PPL,14202,35.012230,31.575510
+281292,Yaţţā,约旦河西岸,populated_place_5000_plus,281292,PPL,41425,35.094430,31.445900
+281318,Ya‘bad,约旦河西岸,populated_place_5000_plus,281318,PPL,13477,35.168220,32.445660
+281240,Za‘tarah,约旦河西岸,populated_place_5000_plus,281240,PPL,6210,35.256620,31.673610
+281657,Ţammūn,约旦河西岸,populated_place_5000_plus,281657,PPL,10119,35.383670,32.283470
+281577,Ţūlkarm,约旦河西岸,populated_place_5000_plus,281577,PPL,44169,35.026900,32.311560
+283843,Ḩablah,约旦河西岸,populated_place_5000_plus,283843,PPL,5945,34.977480,32.165230
+283806,Ḩalḩūl,约旦河西岸,populated_place_5000_plus,283806,PPL,21076,35.101780,31.580290
+283676,Ḩizmā,约旦河西岸,populated_place_5000_plus,283676,PPL,5916,35.263150,31.833370
+283636,Ḩuwwārah,约旦河西岸,populated_place_5000_plus,283636,PPL,5633,35.256730,32.152240
+283643,Ḩūsān,约旦河西岸,populated_place_5000_plus,283643,PPL,5535,35.134750,31.709310
+284976,‘Anabtā,约旦河西岸,populated_place_5000_plus,284976,PPL,7106,35.116930,32.307920
+284973,‘Anātā,约旦河西岸,populated_place_5000_plus,284973,PPL,11946,35.259020,31.809240
+284922,‘Aqrabā,约旦河西岸,populated_place_5000_plus,284922,PPL,7707,35.345470,32.124950
+284893,‘Arrābah,约旦河西岸,populated_place_5000_plus,284893,PPL,9703,35.201890,32.405170
+284557,‘Attīl,约旦河西岸,populated_place_5000_plus,284557,PPL,10100,35.071890,32.369350
+284547,‘Awartā,约旦河西岸,populated_place_5000_plus,284547,PPL,5563,35.283880,32.161080
+284480,‘Azzūn,约旦河西岸,populated_place_5000_plus,284480,PPL,7727,35.057520,32.174960
+284593,‘Aşīrah ash Shamālīyah,约旦河西岸,populated_place_5000_plus,284593,PPL,7475,35.267160,32.251240
+283612,‘Illār,约旦河西岸,populated_place_5000_plus,283612,PPL,6681,35.107080,32.370240
