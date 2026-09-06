@@ -576,6 +576,20 @@ const additionalCityCenterSources = [
     countryName: "科威特",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "bh-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "bahrain",
+    codePrefix: "bh",
+    levelPrefix: "bahrain",
+    countryCode: "BH",
+    countryName: "巴林",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

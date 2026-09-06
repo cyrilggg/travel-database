@@ -253,3 +253,9 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 `sources/kw-city-centers-2026-09-06.csv` 收录 14 个科威特城市级入口：首都、5 个其他省会和 8 个不兼任行政中心且人口超过 5,000 的普通城市型聚居地。沿用西亚批次的可复现口径，保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`；固定排除科威特城内部的代斯曼、南苏拉住宅区和以农场命名的阿卜达利农业聚居地。科威特政府当前公布的 6 省清单用于复核省级覆盖：<https://www.e.gov.kw/sites/kgoenglish/Pages/Visitors/AboutKuwait/KuwaitGovernorates.aspx>；GeoNames 对城市文件和字段的官方说明见：<https://download.geonames.org/export/dump/readme.txt>。
 
 稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-kuwait-city-centers.py` 固定校验来源哈希、三类层级数量、14 个唯一 ID、唯一中心点、6 省中文归属和国界范围。2026-09-06 下载的 GeoNames 科威特国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `9DA6AD32FEDD5C09E2A8655AF1E02109E1A2D1452379FCE2A599BE29E08F649A`，解压文本 SHA-256 为 `CF831E9E798DE436FEA21DE60D89AA0E1BB762244D05E901CDAA730267CBCA7B`，生成 CSV SHA-256 为 `AE78C268104E239A85A2C8DD54C473E6849997C477390D69C2426942FD728B57`。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。
+
+## 巴林城市点
+
+`sources/bh-city-centers-2026-09-06.csv` 收录 11 个巴林城市级入口：首都麦纳麦和 10 个不兼任行政中心且人口超过 5,000 的普通城市型聚居地。沿用西亚批次的可复现口径，保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`；本批没有混入 `PPLX` 城市内部片区、村庄或废弃聚居地。巴林国家门户当前公布的首都、穆哈拉格、北方和南方四省用于复核省级覆盖：<https://www.bahrain.bh/>；GeoNames 对城市文件和字段的官方说明见：<https://download.geonames.org/export/dump/readme.txt>。
+
+稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-bahrain-city-centers.py` 固定校验来源哈希、两类层级数量、11 个唯一 ID、唯一中心点、4 省中文归属和国界范围。2026-09-06 下载的 GeoNames 巴林国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `BDA7F2729070F599E19015036E06DC7BE4F00CD6F829B43CCEDA12EF18F5C75F`，解压文本 SHA-256 为 `F95E6967AD10E7AA2544C7750878D50F24CE944781AF53F48E55FE8BF70CA7C9`，生成 CSV SHA-256 为 `A4F3412C3A22A5679B5E230E0721D53E32B59ECAE1100DE4E15050F6DEC2F5BF`。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。
