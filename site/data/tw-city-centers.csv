@@ -17,7 +17,7 @@ administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
 10008010,南投市,台湾,county_administered_city,1671566,120.678818,23.921805
 10009010,斗六市,台湾,county_administered_city,1665196,120.560089,23.706613
 10010010,太保市,台湾,county_administered_city,1668347,120.343942,23.473006
-10010020,朴子市,台湾,county_administered_city,,120.253848,23.446150
+10010020,朴子市,台湾,county_administered_city,1670367,120.253848,23.446150
 10013010,屏东市,台湾,county_administered_city,1670481,120.479992,22.664838
 10014010,台东市,台湾,county_administered_city,1668295,121.110557,22.751694
 10015010,花莲市,台湾,county_administered_city,1674504,121.608703,23.996299

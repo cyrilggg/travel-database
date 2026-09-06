@@ -745,6 +745,7 @@ function extractItems(key: GuideBrowseKey, section: MarkdownSection): GuideBrows
 export function parseGuideBrowse(
   markdown: string,
   structuredSections: readonly GuideSection[] = [],
+  allowGenericFallback = false,
 ): GuideBrowseSection[] {
   const markdownSections = splitSections(markdown);
   const resolved = resolveSections(markdownSections, structuredSections);
@@ -752,9 +753,20 @@ export function parseGuideBrowse(
   return GUIDE_BROWSE_DEFINITIONS.flatMap((definition) => {
     const source = resolved.get(definition.key);
     if (!source) return [];
-    const items = extractItems(definition.key, source).filter(
+    let items = extractItems(definition.key, source).filter(
       (item) => item.title || item.description || item.fields.length > 0,
     );
+    if (items.length === 0 && allowGenericFallback) {
+      // Preserve a researched section even when its natural table headings differ
+      // from legacy aliases. This opt-in leaves existing city extraction unchanged.
+      items = tableItems(definition.key, parseTables(source.lines), [/./], []);
+      if (items.length === 0) {
+        items = fallbackSectionItems(definition.key, source).map((item) => ({
+          ...item,
+          title: item.title === "行前提醒" ? source.title : item.title,
+        }));
+      }
+    }
     if (items.length === 0) return [];
 
     return [{

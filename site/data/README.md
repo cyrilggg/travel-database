@@ -16,6 +16,8 @@
 
 直辖市和市采用 GeoNames 城市中心点；14 个县辖市采用国土测绘中心界线的几何中心。数据源分别采用 CC BY 4.0 与政府资料开放授权条款第 1 版。
 
+2026-09-06 为朴子市补齐 GeoNames 关联 `1670367`，保留原行政代码、地图 ID 与几何中心。核对 [GeoNames TW 数据](https://download.geonames.org/export/dump/TW.zip)中的 `Pozi`、别名 `朴子`、嘉义县 `CYQ` 与朴子 `Q02`，并以 [Wikidata Q706520](https://www.wikidata.org/wiki/Q706520)交叉确认；没有误配台中“埔子”。下载包 SHA-256：`224d3e868ce87e4f58e9137c17fba3b42b9419b10311442dca60946e00d189b2`。
+
 ## 朝鲜半岛城市点
 
 `kr-city-centers.csv` 收录韩国 85 个城市入口，包含中央直辖层级城市、一般市与济州特别自治道的 2 个行政市。行政层级按 2026-07-01 生效的韩国行政区划处理：原光州广域市与全罗南道合并为全南光州统合特别市，原全罗南道辖 5 个市继续保留为城市入口。合并口径参考韩国行政安全部行政区划代码公告与《全南光州统合特别市设置特别法》：<https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&nttId=127039>、<https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033748505>。

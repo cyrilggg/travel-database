@@ -2,6 +2,8 @@ import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { guides, mapCities } from "../app/generated/guides";
+import matter from "gray-matter";
+import { loadTaiwanReadings, rewriteReadingLinks } from "./taiwan-reading";
 import { parseGuideBrowse } from "../app/components/guideBrowse";
 
 const siteRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -11,7 +13,17 @@ const structuredDirectory = path.join(siteRoot, "public", "structured");
 await rm(structuredDirectory, { recursive: true, force: true });
 await mkdir(structuredDirectory, { recursive: true });
 
-const fullTextGuideIds = new Set(["cn-1668341", "cn-1668355", "cn-1673820"]);
+const fullTextGuideIds = new Set(mapCities.filter((city) => city.id.startsWith("taiwan-")).flatMap((city) => city.guideId ? [city.guideId] : []));
+const readings = await loadTaiwanReadings(path.resolve(siteRoot, ".."));
+const readingTargets = new Map([
+  ...guides.filter((guide) => fullTextGuideIds.has(guide.id)).map((guide) => [guide.sourcePath, guide.id] as const),
+  ...readings.map((reading) => [reading.sourcePath, reading.id] as const),
+]);
+for (const reading of readings) {
+  await writeFile(path.join(structuredDirectory, `${reading.id}.md`),
+    rewriteReadingLinks(reading.markdown, reading.sourcePath, readingTargets), "utf8");
+}
+const publicReadings = readings.map(({ id, title, fullTextPath }) => ({ id, title, fullTextPath }));
 
 const publicGuides = await Promise.all(
   guides.map(async (guide) => {
@@ -19,7 +31,7 @@ const publicGuides = await Promise.all(
       path.join(siteRoot, "public", guide.markdownPath.replace(/^\/+/, "")),
       "utf8",
     );
-    const browseSections = parseGuideBrowse(markdown, guide.sections);
+    const browseSections = parseGuideBrowse(markdown, guide.sections, fullTextGuideIds.has(guide.id));
     await writeFile(
       path.join(structuredDirectory, `${guide.id}.json`),
       JSON.stringify(browseSections),
@@ -30,7 +42,8 @@ const publicGuides = await Promise.all(
       ? `/structured/${guide.id}.md`
       : undefined;
     if (fullTextPath) {
-      await writeFile(path.join(structuredDirectory, `${guide.id}.md`), markdown, "utf8");
+      const source = matter(await readFile(path.join(siteRoot, "..", guide.sourcePath), "utf8")).content;
+      await writeFile(path.join(structuredDirectory, `${guide.id}.md`), rewriteReadingLinks(source, guide.sourcePath, readingTargets), "utf8");
     }
     return {
       ...(fullTextPath ? { fullTextPath } : {}),
@@ -63,6 +76,9 @@ const serializedMapCities = JSON.stringify(mapCities, null, 2)
   .replaceAll("\u2029", "\\u2029");
 
 const moduleSource = `// 公开结构化数据；经本批授权的台湾攻略另有全文路径。
+
+export interface RegionalReading { id: string; title: string; fullTextPath: string; }
+export const regionalReadings: RegionalReading[] = ${JSON.stringify(publicReadings, null, 2)};
 
 export type GuideBrowseKey = "overview" | "regions" | "attractions" | "food" | "itinerary" | "stay" | "transport" | "checklist";
 export interface GuideCoordinates { longitude: number; latitude: number; }

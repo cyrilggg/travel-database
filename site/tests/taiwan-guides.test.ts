@@ -1,14 +1,10 @@
 import assert from 'node:assert/strict';
 import { readFile, access } from 'node:fs/promises';
 import test from 'node:test';
-import { guides, mapCities } from '../app/generated/publicGuides';
+import { guides, mapCities, regionalReadings } from '../app/generated/publicGuides';
 
 const root = new URL('../', import.meta.url);
-const samples = [
-  ['cn-1668341', 'taiwan-63000', '台北市'],
-  ['cn-1668355', 'taiwan-67000', '台南市'],
-  ['cn-1673820', 'taiwan-64000', '高雄市'],
-];
+const samples = mapCities.filter(city => city.id.startsWith('taiwan-')).map(city => [city.guideId ?? '', city.id, city.city]);
 
 for (const [guideId, mapId, name] of samples) {
   test(`${name}: stable map entry opens researched guide and complete reading content`, async () => {
@@ -35,5 +31,26 @@ for (const [guideId, mapId, name] of samples) {
 
 test('Taiwan batch does not expose other guides as full text', () => {
   assert.equal(guides.filter(guide => guide.fullTextPath).length, samples.length);
-  assert.equal(mapCities.find(item => item.id === 'taiwan-65000')?.coverage, 0);
+  assert.equal(samples.length, 23);
+  assert.equal(guides.filter(guide => !samples.some(([id]) => id === guide.id) && guide.fullTextPath).length, 0);
+});
+
+
+test('Taiwan overview and eight regions are readable without fabricated map points', async () => {
+  assert.equal(regionalReadings.length, 9);
+  assert.deepEqual(new Set(regionalReadings.filter(reading => reading.id !== 'taiwan-overview').map(reading => reading.id)),
+    new Set(['北部山海与客家乡镇', '彰化与云林乡镇', '日月潭与南投山地', '阿里山与嘉义海岸', '恒春半岛与屏东沿海', '花东纵谷与东海岸', '澎湖群岛', '绿岛与兰屿'].map(name => `taiwan-region-${name}`)));
+  assert.ok(regionalReadings.some(reading => reading.id === 'taiwan-overview'));
+  const readableIds = new Set([...regionalReadings.map(reading => reading.id), ...samples.map(([id]) => id)]);
+  for (const reading of [...regionalReadings, ...guides.filter(guide => guide.fullTextPath)]) {
+    const markdown = await readFile(new URL(`public${reading.fullTextPath}`, root), 'utf8');
+    await access(new URL(`pages-dist${reading.fullTextPath}`, root));
+    assert.ok(markdown.length > 500);
+    assert.ok(!mapCities.some(city => city.guideId === reading.id) || reading.id.startsWith('cn-'));
+    for (const match of markdown.matchAll(/(?<!!)\[[^\]]+\]\(([^)]+)\)/g)) {
+      const href = match[1];
+      assert.match(href, /^(?:https?:|mailto:|#)/, `unpublished local link: ${href}`);
+      if (href.startsWith('#reading=')) assert.ok(readableIds.has(decodeURIComponent(href.slice(9))), href);
+    }
+  }
 });

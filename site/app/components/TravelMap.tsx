@@ -11,6 +11,7 @@ import {
   guides,
   mapCities,
   targetCityCount,
+  regionalReadings,
   type GuideBrowseItem,
   type GuideBrowseKey,
   type MapCity,
@@ -28,6 +29,7 @@ import { administrativeTypeInfoOf } from "./administrativeType";
 
 type PanelState =
   | { kind: "home" }
+  | { kind: "reading"; readingId: string }
   | { kind: "planner" }
   | { kind: "city"; guideId: string }
   | { kind: "missing"; cityId: string }
@@ -225,6 +227,28 @@ export default function TravelMap() {
         : "攻略";
 
   useEffect(() => {
+    const readLocation = () => {
+      const hash = window.location.hash;
+      if (!hash) {
+        setPanel((current) => current.kind === "reading" ? { kind: "home" } : current);
+        setPanelLayout("docked");
+        return;
+      }
+      if (!hash.startsWith("#reading=")) return;
+      let readingId: string;
+      try { readingId = decodeURIComponent(hash.slice(9)); } catch { return; }
+      const exists = regionalReadings.some((reading) => reading.id === readingId)
+        || guides.some((guide) => guide.id === readingId && guide.fullTextPath);
+      if (!exists) return;
+      setPanel({ kind: "reading", readingId });
+      setPanelLayout("expanded");
+    };
+    readLocation();
+    window.addEventListener("hashchange", readLocation);
+    return () => window.removeEventListener("hashchange", readLocation);
+  }, []);
+
+  useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     panelScrollRef.current?.scrollTo({
       top: 0,
@@ -257,7 +281,14 @@ export default function TravelMap() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
+  const clearReadingHash = () => {
+    if (window.location.hash.startsWith("#reading=")) {
+      window.history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+  };
+
   const openGuide = (guide: TravelGuide) => {
+    clearReadingHash();
     setPanel({ kind: "city", guideId: guide.id });
     setPanelLayout("docked");
     setGuideMapSelection({ mode: "overview" });
@@ -275,17 +306,20 @@ export default function TravelMap() {
         return;
       }
     }
+    clearReadingHash();
     setPanel({ kind: "missing", cityId: city.id });
     setPanelLayout("docked");
   };
 
   const openHome = (scope?: "viewport" | "all") => {
+    clearReadingHash();
     setPanel({ kind: "home" });
     setPanelLayout("docked");
     if (scope) setCityScope(scope);
   };
 
   const openJourneyPlanner = () => {
+    clearReadingHash();
     setPanel({ kind: "planner" });
     setPanelLayout("docked");
     setJourneyGenerated(false);
@@ -293,6 +327,7 @@ export default function TravelMap() {
 
   const openNearby = (point: MapPoint) => {
     if (panel.kind === "planner") return;
+    clearReadingHash();
     setPanel({ kind: "nearby", ...point });
     setPanelLayout("docked");
   };
@@ -454,6 +489,16 @@ export default function TravelMap() {
     if (panelCollapsed) setPanelLayout("docked");
   };
 
+  const renderRegionalLinks = () => (
+    <section className="regional-reading-links" aria-label="台湾旅行区域">
+      <h3>台湾旅行区域</h3>
+      <p>城市之外的山海、乡镇与离岛，按旅行范围阅读。</p>
+      <div>{regionalReadings.map((reading) => (
+        <a key={reading.id} href={`#reading=${encodeURIComponent(reading.id)}`} onClick={() => { setPanel({ kind: "reading", readingId: reading.id }); setPanelLayout("expanded"); }}>{reading.title}</a>
+      ))}</div>
+    </section>
+  );
+
   const renderHome = () => (
     <div className="panel-home">
       <p className="panel-eyebrow">旅行地图</p>
@@ -479,6 +524,8 @@ export default function TravelMap() {
           </span>
         </button>
       </section>
+
+      {renderRegionalLinks()}
 
       <div className="coverage-summary" aria-label="城市攻略覆盖进度">
         <strong>{coveredCityCount}</strong>
@@ -706,6 +753,7 @@ export default function TravelMap() {
               )}
             </GuideStructureLoader>
 
+            {guide.fullTextPath && renderRegionalLinks()}
             {guide.fullTextPath && (
               <details className="guide-full-text" key={guide.id}>
                 <summary>阅读完整攻略（含旅行者须知与核查来源）</summary>
@@ -963,6 +1011,20 @@ export default function TravelMap() {
               <span />
             </button>
             <div className="guide-panel-scroll" ref={panelScrollRef}>
+              {panel.kind === "reading" && (() => {
+                const reading = regionalReadings.find((entry) => entry.id === panel.readingId)
+                  ?? guides.find((entry) => entry.id === panel.readingId && entry.fullTextPath);
+                return reading?.fullTextPath ? (
+                  <div className="regional-reading-panel">
+                    <div className="panel-titlebar">
+                      <h2>{reading.title}</h2>
+                      <button className="regional-reading-back" type="button" onClick={() => openHome()}>返回地图目录</button>
+                    </div>
+                    <details className="regional-reading-switcher" key={`switcher-${reading.id}`}><summary>切换旅行区域</summary>{renderRegionalLinks()}</details>
+                    <GuideContentLoader key={reading.id} contentPath={reading.fullTextPath} />
+                  </div>
+                ) : null;
+              })()}
               {panel.kind === "home" && renderHome()}
               {panel.kind === "planner" && renderPlanner()}
               {panel.kind === "city" && activeGuide && renderCity(activeGuide)}

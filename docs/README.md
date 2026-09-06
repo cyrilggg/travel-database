@@ -9,7 +9,7 @@ Markdown 继续承担攻略正文；地点、路线、图片等按目的地和�
 | [旅行攻略写作技能](../skills/travel-guide-writing/SKILL.md) | 城市简介、正文、研究核查与交付审校；新增与存量共用 | 当前攻略编辑标准 |
 | [核心协作约定](working-agreement.md) | 产品、设计、开发怎样同步变化，兼容旧能力并扩展新功能 | 当前项目协作约定 |
 | [功能变更记录模板](templates/feature-change.md) | 共同记录场景、交互、数据增量、兼容和验收 | 按变化影响使用的轻量模板 |
-| [台湾首访批次](../coverage/CN/taiwan-2026-09-06/README.md) | 当前工作区的范围、兼容差距与验收证据 | 2026-09-06 增量交付 |
+| [台湾城市与旅行区域批次](../coverage/CN/taiwan-2026-09-06/README.md) | 23 篇城市、8 篇区域及总览的覆盖、阅读与验证 | 2026-09-06 增量交付 |
 | [攻略内容呈现研究](research/guide-presentation-lonely-planet.md) | 借鉴 Lonely Planet 的编辑层次，改善精选、片区、路线和实用查阅 | 2026-09-06；编辑调整已进入模板，界面建议待验证 |
 | [攻略数据契约](designs/travel-guide-data-contract.md) | 查字段、身份、地图关系、迁移及验收要求 | v2 设计提案，尚未接入程序 |
 | [新国家扩展流程](new-country-playbook.md) | 从国家范围、样板攻略推进到批次验收 | 内容流程可采用；程序门槛见文内 |
