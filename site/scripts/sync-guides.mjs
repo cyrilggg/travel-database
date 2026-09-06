@@ -239,6 +239,20 @@ const additionalCityCenterSources = [
     countryName: "东帝汶",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "mv-city-councils-2026-09-06.csv",
+    ),
+    idPrefix: "maldives",
+    codePrefix: "mv",
+    levelPrefix: "maldives",
+    countryCode: "MV",
+    countryName: "马尔代夫",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

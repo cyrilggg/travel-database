@@ -99,3 +99,9 @@
 `sources/tl-capital-city-2026-09-06.csv` 只收录东帝汶国家首都城市帝力。东帝汶政府行政区划说明明确称其首都为 `the city of Dili`：<https://timor-leste.gov.tl/?lang=en&p=91>；同一官方口径将 Aileu、Baucau、Covalima 等列为 Municipality，并把各自驻地称为 Municipality Capital，因此不把这些一级行政区或普通驻地重复视为法定城市。
 
 帝力城市没有独立于同名 Municipality 的全国统一城市代码，稳定 ID 使用规范化官方名称 `DILI`。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 东帝汶国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `3DF62836BF2A66E4AF57EACF62696C98A552E7A8457DC2F0D386A89CA3A87A25`。
+
+## 马尔代夫城市点
+
+`sources/mv-city-councils-2026-09-06.csv` 收录马尔代夫《地方分权法》下现行 5 个 City Council：Male、Addu、Fuvahmulah、Kulhudhuffushi 和 Thinadhoo。地方政府管理局当前目录统计为 5 个 City Council：<https://www.lga.gov.mv/en/councils>；总统府 2023 年授予 Thinadhoo 城市地位的公告同时确认全国城市数增至 5：<https://presidency.gov.mv/Press/Article/28841>。178 个 Island Council 及 Atoll Council 不作为城市入口。
+
+全国没有供这 5 个 City Council 统一复用的城市代码，稳定 ID 使用规范化官方城市名。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 马尔代夫国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `0ABB3BB889545F7D781EF038D0DF4307F91EF9AA7CCFE11B27ADB8E7EB1838B0`。Addu City 跨多个岛屿，使用官方登记的市议会驻地 Hithadhoo 城市中心点：<https://www.tourism.gov.mv/en/page/homestay_permitted_councils>。
