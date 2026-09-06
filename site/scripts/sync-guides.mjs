@@ -730,6 +730,20 @@ const additionalCityCenterSources = [
     countryName: "波斯尼亚和黑塞哥维那",
     continentCode: "EU",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "hr-official-cities-2026-09-06.csv",
+    ),
+    idPrefix: "croatia",
+    codePrefix: "hr",
+    levelPrefix: "croatia",
+    countryCode: "HR",
+    countryName: "克罗地亚",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
