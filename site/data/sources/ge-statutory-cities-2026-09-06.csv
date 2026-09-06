@@ -1,0 +1,64 @@
+administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
+614622,Gagra,Abkhazia,statutory_city_outside_government_control,614622,40.271240,43.278580
+614613,Gali,Abkhazia,statutory_city_outside_government_control,614613,41.736450,42.627050
+614409,Gudauta,Abkhazia,statutory_city_outside_government_control,614409,40.622450,43.101910
+612660,New Athos,Abkhazia,statutory_city_outside_government_control,612660,40.818500,43.084270
+612652,Ochamchire,Abkhazia,statutory_city_outside_government_control,612652,41.468630,42.712320
+611847,Sokhumi,Abkhazia,statutory_city_outside_government_control,611847,40.989300,43.006970
+611583,Tkvarcheli,Abkhazia,statutory_city_outside_government_control,611583,41.680070,42.840350
+615532,Batumi,Adjara,self_governing_city,615532,41.630600,41.640770
+613762,Kobuleti,Adjara,statutory_city,613762,41.778230,41.832830
+613311,Lanchkhuti,Guria,statutory_city,613311,42.036110,42.087440
+612536,Ozurgeti,Guria,statutory_city,612536,42.005250,41.923360
+615607,Baghdati,Imereti,statutory_city,615607,42.825050,42.069430
+615211,Chiatura,Imereti,statutory_city,615211,43.298890,42.298060
+613902,Khoni,Imereti,statutory_city,613902,42.422430,42.325350
+613607,Kutaisi,Imereti,self_governing_city,613607,42.694590,42.267910
+612256,Sachkhere,Imereti,statutory_city,612256,43.405750,42.335940
+612126,Samtredia,Imereti,statutory_city,612126,42.335170,42.153700
+611682,Terjola,Imereti,statutory_city,611682,42.977600,42.180580
+611584,Tkibuli,Imereti,statutory_city,611584,42.997740,42.347810
+824288,Tskaltubo,Imereti,statutory_city,824288,42.598080,42.328580
+611219,Vani,Imereti,statutory_city,611219,42.511890,42.084080
+610864,Zestaponi,Imereti,statutory_city,610864,43.032910,42.107520
+615844,Akhmeta,Kakheti,statutory_city,615844,45.208040,42.034950
+615005,Dedoplistskaro,Kakheti,statutory_city,615005,46.103850,41.465660
+614351,Gurjaani,Kakheti,statutory_city,614351,45.802460,41.743840
+612338,Kvareli,Kakheti,statutory_city,612338,45.817160,41.954930
+613342,Lagodekhi,Kakheti,statutory_city,613342,46.274950,41.827470
+612230,Sagarejo,Kakheti,statutory_city,612230,45.325960,41.736910
+611902,Sighnaghi,Kakheti,statutory_city,611902,45.922270,41.619180
+611694,Telavi,Kakheti,statutory_city,611694,45.470020,41.919570
+611373,Tsnori,Kakheti,statutory_city,611373,45.979000,41.618000
+615419,Bolnisi,Kvemo Kartli,statutory_city,615419,44.538350,41.451240
+614891,Dmanisi,Kvemo Kartli,statutory_city,614891,44.202960,41.331830
+614575,Gardabani,Kvemo Kartli,statutory_city,614575,45.089880,41.459670
+613074,Marneuli,Kvemo Kartli,statutory_city,613074,44.798450,41.487580
+612287,Rustavi,Kvemo Kartli,self_governing_city,612287,44.978700,41.562710
+611674,Tetritskaro,Kvemo Kartli,statutory_city,611674,44.461810,41.543790
+611548,Tsalka,Kvemo Kartli,statutory_city,611548,44.091120,41.598220
+614843,Dusheti,Mtskheta-Mtianeti,statutory_city,614843,44.695000,42.086420
+612890,Mtskheta,Mtskheta-Mtianeti,statutory_city,612890,44.718750,41.845140
+615776,Ambrolauri,Racha-Lechkhumi and Kvemo Svaneti,statutory_city,615776,43.149820,42.523220
+612592,Oni,Racha-Lechkhumi and Kvemo Svaneti,statutory_city,612592,43.443560,42.584530
+611566,Tsageri,Racha-Lechkhumi and Kvemo Svaneti,statutory_city,611566,42.769110,42.645340
+616022,Abasha,Samegrelo-Zemo Svaneti,statutory_city,616022,42.203570,42.204530
+615140,Chkhorotsku,Samegrelo-Zemo Svaneti,statutory_city,615140,42.127340,42.519540
+614740,Jvari,Samegrelo-Zemo Svaneti,statutory_city,614740,42.052000,42.716930
+613918,Khobi,Samegrelo-Zemo Svaneti,statutory_city,613918,41.900200,42.317460
+613065,Martvili,Samegrelo-Zemo Svaneti,statutory_city,613065,42.378920,42.414290
+612366,Poti,Samegrelo-Zemo Svaneti,self_governing_city,612366,41.673840,42.142720
+612053,Senaki,Samegrelo-Zemo Svaneti,statutory_city,612053,42.063340,42.270770
+611551,Tsalenjikha,Samegrelo-Zemo Svaneti,statutory_city,611551,42.066930,42.608570
+610824,Zugdidi,Samegrelo-Zemo Svaneti,statutory_city,610824,41.867960,42.508400
+615893,Akhalkalaki,Samtskhe-Javakheti,statutory_city,615893,43.486290,41.405140
+615860,Akhaltsikhe,Samtskhe-Javakheti,statutory_city,615860,42.986040,41.639520
+615403,Borjomi,Samtskhe-Javakheti,statutory_city,615403,43.397100,41.846920
+612691,Ninotsminda,Samtskhe-Javakheti,statutory_city,612691,43.589590,41.266970
+611230,Vale,Samtskhe-Javakheti,statutory_city,611230,42.881120,41.616080
+614455,Gori,Shida Kartli,statutory_city,614455,44.112900,41.985320
+7669163,Kareli,Shida Kartli,statutory_city,7669163,43.895530,42.021500
+614104,Kaspi,Shida Kartli,statutory_city,614104,44.423550,41.927760
+613988,Khashuri,Shida Kartli,statutory_city,613988,43.599050,41.997330
+611717,Tbilisi,Tbilisi,self_governing_city,611717,44.834120,41.691430
+611403,Tskhinvali,Tskhinvali Region,statutory_city_outside_government_control,611403,43.968610,42.227640

@@ -449,6 +449,20 @@ const additionalCityCenterSources = [
     countryName: "阿塞拜疆",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "ge-statutory-cities-2026-09-06.csv",
+    ),
+    idPrefix: "georgia",
+    codePrefix: "ge",
+    levelPrefix: "georgia",
+    countryCode: "GE",
+    countryName: "格鲁吉亚",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
