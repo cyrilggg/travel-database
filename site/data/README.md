@@ -223,3 +223,9 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 `sources/sy-city-centers-2026-09-06.csv` 收录 296 个叙利亚城市级入口：首都、12 个省会、46 个区治、211 个次区治，以及 26 个不兼任行政中心且人口超过 5,000 的普通城市。公开资料没有提供一张现行、稳定且带全国统一代码的法定城市总表，因此沿用西亚批次的可复现口径：保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`。Yarmouk 是大马士革内部城区和难民营，不作为独立城市；废弃地、地方性聚居地类别、农场、毁坏地和城市内部片区同样不纳入。GeoNames 对 cities 系列数据和字段的官方说明见：<https://download.geonames.org/export/dump/readme.txt>。
 
 稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-syria-city-centers.py` 固定校验来源哈希、五类层级数量、296 个唯一 ID、唯一中心点、14 省中文归属和国界范围。2026-09-06 下载的 GeoNames 叙利亚国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `A242AB60ED19F6EEABDD9DACA65C7A23C8928E3FEE9F0410E341884233DB9CE5`，解压文本 SHA-256 为 `B02C93103FBCF70A3AC02048DB3A6F2EE2B814A5BDD3E84A9F56FBCFE78FAD2A`，生成 CSV SHA-256 为 `22102A3BA1F069EB397099DF97C315F75EE55C0528613768E2DF9EEE75E1FC29`。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。
+
+## 黎巴嫩城市点
+
+`sources/lb-city-centers-2026-09-06.csv` 收录 40 个黎巴嫩城市级入口：首都、7 个省会、18 个区治，以及 14 个不兼任行政中心且人口超过 5,000 的普通城市。公开资料没有提供一张现行、稳定且带全国统一代码的法定城市总表，因此沿用西亚批次的可复现口径：保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`；不纳入废弃地、地方性聚居地类别、农场、毁坏地或城市内部片区。GeoNames 对 cities 系列数据和字段的官方说明见：<https://download.geonames.org/export/dump/readme.txt>。
+
+稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-lebanon-city-centers.py` 固定校验来源哈希、四类层级数量、40 个唯一 ID、唯一中心点、8 省中文归属和国界范围。2026-09-06 下载的 GeoNames 黎巴嫩国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `7FCCEEDFCE97D7A3C132A57F311A4A054F9097ACE3C5C02A0250B5C074A32A4A`，解压文本 SHA-256 为 `C22BEB564C2640FA221E493061EE18060D119D278467F89A0BF82B1303E5ABE8`，生成 CSV SHA-256 为 `816EBE52F7E493F7BDF019FB0E049844BB0FFC036619982D0D564D88F4886584`。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。

@@ -506,6 +506,20 @@ const additionalCityCenterSources = [
     countryName: "叙利亚",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "lb-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "lebanon",
+    codePrefix: "lb",
+    levelPrefix: "lebanon",
+    countryCode: "LB",
+    countryName: "黎巴嫩",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
