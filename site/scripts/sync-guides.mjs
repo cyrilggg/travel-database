@@ -828,6 +828,20 @@ const additionalCityCenterSources = [
     countryName: "罗马尼亚",
     continentCode: "EU",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "md-official-cities-2026-09-06.csv",
+    ),
+    idPrefix: "moldova",
+    codePrefix: "md",
+    levelPrefix: "moldova",
+    countryCode: "MD",
+    countryName: "摩尔多瓦",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
