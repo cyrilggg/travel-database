@@ -191,3 +191,9 @@
 `sources/am-statutory-cities-2026-09-06.csv` 按亚美尼亚现行《行政区域划分法》附件 2 收录 48 个标注为 `քաղաք` 的法定城市，并单列首都 Yerevan，共 49 城。现行法律及完整社区、居民点附件见：<https://www.arlis.am/hy/acts/209495/latest>；本次官方 HTML 快照 SHA-256 为 `A5C9DBF418C3AF4D3395BEFFE848D4B4E6952D884ED76EAA203C6085FFE67040`。清单以现行法条为准，包含 Shamlugh、Agarak 和 Dastakert，不沿用仍只列 46 城的旧版统计清单；不把合并后的多居民点社区整体重复作为城市，也不纳入村庄。
 
 法律附件没有公布可复用的城市代码，因此稳定 ID 使用对应 GeoNames 标识。`scripts/import-armenia-statutory-cities.py` 直接从固定法律快照复核全部 48 个亚美尼亚文城市名，并校验 49 个唯一城市、唯一 ID、唯一中心点和国界范围。中心点来自 2026-09-06 下载的 GeoNames 国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；压缩包 SHA-256 为 `D2141F51F6937D8852A15148E21E1DB9C69DC6080B8722A3DCF9469483A0B13A`，解压文本 SHA-256 为 `B71FF40F3520FEF61F11B874E19C1D9567348489E3FAD625681E2D58611BDA75`，生成 CSV SHA-256 为 `63EE18F837B9ADD342E9D6512FECF7A4C81748CD852B7ACEBE85AA44EC4D29EE`。没有对应攻略的城市统一显示为“尚未收录”。
+
+## 阿塞拜疆城市点
+
+`sources/az-statutory-cities-2026-09-06.csv` 收录阿塞拜疆现行全部 79 个法定城市，包括 11 个共和国直属城市或自治共和国首府层级城市、68 个区属城市。逐城名称与法定层级依据国家统计委员会 2024 年《行政区域划分分类器》：<https://stat.gov.az/menu/5/classifications/source/Inzibati-1.05.2024.pdf>；分类器明确以八位编码末位 `2` 表示共和国直属城市、`4` 表示区属城市。国家统计委员会最新 2025 年行政区划工作簿独立核对全国总数为 79，同时列出 12 个市辖区和 263 个城镇型居民点，后二者均不作为城市重复纳入：<https://www.stat.gov.az/source/demoqraphy/ap/az/2_5.xls>。本次官方 Excel 快照 SHA-256 为 `88593D2C4FE8C4338D32B025BFA66A21F75BB5B6D11EDC7954D005C26C75CD6B`。
+
+官方分类器没有为地图中心点提供坐标，稳定 ID 因此使用对应 GeoNames 标识。`scripts/import-azerbaijan-statutory-cities.py` 固定校验官方工作簿与 GeoNames 快照哈希、79 城及两级数量、唯一 ID、唯一中心点和国界范围；中心点来自 2026-09-06 下载的 GeoNames 国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>，压缩包 SHA-256 为 `0FBABA2C25F75D66535A4F09F60403EA34FE9FE1B89CDB566CF2627F8CC128C3`，解压文本 SHA-256 为 `B695685D6A41C074381D581433E78CB5B25569F9AF9C6BFD4C541FD25841D5C0`，生成 CSV SHA-256 为 `7AFAB16208DA81ACEF9C8B3AB605E2B1DE0F02E179E40D47B6B9F95F2C94AC9C`。Gobustan 固定为原名 Maraza 的区治中心，Liman 固定为里海南岸原 Port-Ilich 城市，避免绑定到国内同名居民点；没有对应攻略的城市统一显示为“尚未收录”。

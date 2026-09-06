@@ -435,6 +435,20 @@ const additionalCityCenterSources = [
     countryName: "亚美尼亚",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "az-statutory-cities-2026-09-06.csv",
+    ),
+    idPrefix: "azerbaijan",
+    codePrefix: "az",
+    levelPrefix: "azerbaijan",
+    countryCode: "AZ",
+    countryName: "阿塞拜疆",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
