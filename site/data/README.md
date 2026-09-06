@@ -45,3 +45,9 @@
 `sources/id-official-cities-2025.csv` 按印尼内政部 2025 年第 300.2.2-2138 号决定收录 98 个 `kota`：93 个自治市和雅加达的 5 个行政市；不包含 416 个 `kabupaten`。稳定 ID 使用内政部两级地区代码。现行法规记录：<https://peraturan.bpk.go.id/Details/322912/keputusan-mendagri-no-30022-2430-tahun-2025>；98 市总数由印度尼西亚中央统计局 2025 年省际统计资料复核。为避免从 4,428 页附件手工抄录，名称与代码使用该决定的结构化转录版 `masmaksum/kode-wilayah-2025@a878917` 提取，并逐省核对总数：<https://github.com/masmaksum/kode-wilayah-2025>。
 
 中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 印度尼西亚国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `8CEF7AC3A959E64261EDD2A07059BC80B8D9412C72222F7B183536BF9BDD5122`。雅加达行政市采用 GeoNames 的 ADM2 几何中心，其余城市采用人口地名中心；重名城市同时按省份消歧。
+
+## 越南城市点
+
+`sources/vn-central-cities-2025-07-01.csv` 收录越南 2025 年两级地方政府改革后仍作为正式行政单位存在的 6 个中央直辖市。越南已于 2025-07-01 结束县级行政单位运作，因此不继续罗列改革前的省辖市、县级市和市社；这能避免地图把已经失效的旧层级误标为现行城市。名单依据越南政府公布的 34 个省级行政单位（28 省、6 中央直辖市）核对：<https://xaydungchinhsach.chinhphu.vn/chi-tiet-34-don-vi-hanh-chinh-cap-tinh-tu-12-6-2025-119250612141845533.htm>。
+
+稳定 ID 使用越南总理 2025 年第 19/2025/QĐ-TTg 号决定公布的省级单位代码；官方代码目录：<https://danhmuchanhchinh.nso.gov.vn/>。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 越南国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `49F45EF72735D8833D528384EECD89E86C690667B63C35D9F132A21E2B02F6C2`。

@@ -40,7 +40,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "mongolia_capital_city" ||
     city.cityLevel === "mongolia_national_city" ||
     city.cityLevel === "philippines_highly_urbanized_city" ||
-    city.cityLevel === "philippines_independent_component_city"
+    city.cityLevel === "philippines_independent_component_city" ||
+    city.cityLevel === "vietnam_centrally_governed_city"
   ) {
     return "prefecture";
   }

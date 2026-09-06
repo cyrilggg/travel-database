@@ -113,6 +113,20 @@ const additionalCityCenterSources = [
     countryName: "印度尼西亚",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "vn-central-cities-2025-07-01.csv",
+    ),
+    idPrefix: "vietnam",
+    codePrefix: "vn",
+    levelPrefix: "vietnam",
+    countryCode: "VN",
+    countryName: "越南",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
