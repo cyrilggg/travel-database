@@ -407,6 +407,20 @@ const additionalCityCenterSources = [
     countryName: "乌兹别克斯坦",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "tm-statutory-cities-2026-09-06.csv",
+    ),
+    idPrefix: "turkmenistan",
+    codePrefix: "tm",
+    levelPrefix: "turkmenistan",
+    countryCode: "TM",
+    countryName: "土库曼斯坦",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
