@@ -646,6 +646,20 @@ const additionalCityCenterSources = [
     countryName: "沙特阿拉伯",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "ye-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "yemen",
+    codePrefix: "ye",
+    levelPrefix: "yemen",
+    countryCode: "YE",
+    countryName: "也门",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
