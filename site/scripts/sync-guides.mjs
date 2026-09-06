@@ -337,6 +337,20 @@ const additionalCityCenterSources = [
     countryName: "巴基斯坦",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "in-municipal-cities-2026-09-05.csv",
+    ),
+    idPrefix: "india",
+    codePrefix: "in",
+    levelPrefix: "india",
+    countryCode: "IN",
+    countryName: "印度",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
