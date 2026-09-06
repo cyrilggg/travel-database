@@ -117,3 +117,9 @@
 `sources/lk-municipal-councils-2026-09-06.csv` 收录斯里兰卡现行 29 个 Municipal Council；不包含 36 个 Urban Council 和 276 个 Pradeshiya Sabha。名单与各区数量按斯里兰卡统计局截至 2024-08-01 的官方行政区划表核对：<https://www.statistics.gov.lk/Publication/PocketBook2025>。其中 Kalutara、Vavuniya、Trincomalee、Puttalam 和 Kegalle 依据第 2296/05、2296/37 号公报自 2023-02-20 由 Urban Council 升格；2025 年地方选举结果页仍保留部分旧类别标签，且未列入没有参加该次选举的 Kalmunai，因此只用于逐项复核地方政府名称，不覆盖统计局的现行法定分类：<https://elections.gov.lk/Pages/2025/LAE_2025_Results.html>。
 
 当前官方公开表没有提供可复用的全国 Municipal Council 代码，本批稳定 ID 使用规范化官方英文名称，后续新增或改制不重排既有 ID。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 斯里兰卡国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `34CC6412A53EB48491B91E1FD11299B00C0D709C54FC65170BD4E283050C14B1`。Dehiwala-Mount Lavinia 使用其 Dehiwala 城市中心点；没有对应攻略的城市统一显示为“尚未收录”。
+
+## 尼泊尔城市点
+
+`sources/np-urban-municipalities-2026-09-06.csv` 收录尼泊尔 293 个城市型地方政府：6 个 Metropolitan City、11 个 Sub-Metropolitan City 和 276 个 Municipality；460 个 Gaunpalika（农村 Municipality）不纳入城市入口。数量与分类依据尼泊尔联邦事务与总务部现行说明复核：<https://mofaga.gov.np/local-contact>。名称和稳定 ID 直接使用尼泊尔国家统计局 753 个地方政府代码表中的官方英文名及五位 Local Level Code：<https://ec.nsonepal.gov.np/html/admin_code.html>；2026-09-06 页面快照 SHA-256 为 `C7EEEFDAF7CD03CB797E54BB1C1CB6E8ECDD4B5A204919166B573663D442CE61`。
+
+城市点由 `scripts/import-nepal-city-centers.mjs` 将上述 293 个官方单位逐区匹配到 Open Knowledge Nepal 的 WGS84 地方政府边界，并计算保证落在各自辖区内的几何代表点：<https://localboundries.oknp.org/download/>。边界项目按 CC BY 4.0 发布并说明其行政资料来源包含尼泊尔 Survey Department / National Geoportal；本次边界快照 SHA-256 为 `CCB2C0EE43EB997AF724DF65B3C262C9DAE441E8983448A812AFC053087B97B2`。导入器固定校验两个快照哈希、官方总数、三级城市数量、一一匹配和名称距离；不使用 GeoNames 标识，避免把新合并或同名 Municipality 误绑到普通聚居点。没有对应攻略的城市统一显示为“尚未收录”。

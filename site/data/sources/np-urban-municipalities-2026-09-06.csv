@@ -1,0 +1,294 @@
+administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
+10106,Phungling,Taplejung,municipality,,87.714617,27.380617
+10206,Khandabari,Sankhuwasabha,municipality,,87.195493,27.398721
+10207,Panchakhapan,Sankhuwasabha,municipality,,87.309667,27.354685
+10208,Chainapur,Sankhuwasabha,municipality,,87.363819,27.304923
+10209,Madi,Sankhuwasabha,municipality,,87.418158,27.256885
+10210,Dharmadevi,Sankhuwasabha,municipality,,87.348731,27.207592
+10307,Solu Dhudhakunda,Solukhumbu,municipality,,86.574962,27.567046
+10402,Siddhicharan,Okhaldhunga,municipality,,86.516487,27.323352
+10504,Halesi Tuwachung,Khotang,municipality,,86.606420,27.166405
+10505,Diktel Rupakot Majhuwagadhi,Khotang,municipality,,86.805067,27.232806
+10601,Shadananda,Bhojpur,municipality,,87.111350,27.329730
+10604,Bhojpur,Bhojpur,municipality,,87.060580,27.201683
+10701,Mahalaxmi,Dhankuta,municipality,,87.332646,27.136705
+10702,Pakhribas,Dhankuta,municipality,,87.254372,27.052204
+10704,Dhankuta,Dhankuta,municipality,,87.330912,26.982895
+10804,Myanglung,Terhathum,municipality,,87.528644,27.138452
+10805,Laligurans,Terhathum,municipality,,87.450667,27.127621
+10904,Phidim,Panchthar,municipality,,87.801941,27.116558
+11003,Illam,Ilam,municipality,,87.911279,26.930978
+11004,Deumai,Ilam,municipality,,87.832541,26.920891
+11008,Mai,Ilam,municipality,,87.870611,26.766408
+11009,Suryodaya,Ilam,municipality,,88.071227,26.890317
+11101,Mechinagar,Jhapa,municipality,,88.118349,26.674937
+11103,Arjundhara,Jhapa,municipality,,87.986923,26.704138
+11104,Kankai,Jhapa,municipality,,87.908169,26.640160
+11105,Shivasatakshi,Jhapa,municipality,,87.823307,26.611745
+11107,Damak,Jhapa,municipality,,87.679239,26.672618
+11108,Gauradaha,Jhapa,municipality,,87.707539,26.532150
+11112,Birtamod,Jhapa,municipality,,87.996576,26.608380
+11114,Bhadrapur,Jhapa,municipality,,88.076911,26.523931
+11202,Letang,Morang,municipality,,87.519206,26.755068
+11204,Sundarharaicha,Morang,municipality,,87.352388,26.657149
+11205,Belbari,Morang,municipality,,87.442013,26.629296
+11207,Pathari Shanishchare,Morang,municipality,,87.567714,26.611481
+11208,Urlabari,Morang,municipality,,87.624323,26.648927
+11209,Ratuwamai,Morang,municipality,,87.622587,26.478805
+11210,Sunwarshi,Morang,municipality,,87.557206,26.481002
+11211,Rangeli,Morang,municipality,,87.472756,26.494236
+11214,Biratnagar,Morang,metropolitan_city,,87.279699,26.448979
+11301,Dharan,Sunsari,sub_metropolitan_city,,87.276985,26.800559
+11302,Barahachhetra,Sunsari,municipality,,87.136086,26.754392
+11305,Ramdhuni,Sunsari,municipality,,87.183110,26.687242
+11306,Itahari,Sunsari,sub_metropolitan_city,,87.267499,26.672379
+11307,Duhabi,Sunsari,municipality,,87.248966,26.554160
+11309,Inaruwa,Sunsari,municipality,,87.164877,26.606709
+11401,Belaka,Udayapur,municipality,,87.052574,26.824210
+11402,Chaudandigadhi,Udayapur,municipality,,86.882764,26.808430
+11403,Triyuga,Udayapur,municipality,,86.693330,26.806632
+11407,Katari,Udayapur,municipality,,86.386577,26.998628
+20101,Saptakoshi,Saptari,municipality,,86.929829,26.710331
+20102,Kanchanrup,Saptari,municipality,,86.900750,26.635756
+20105,Shambhunath,Saptari,municipality,,86.684537,26.637902
+20106,Khadak,Saptari,municipality,,86.607083,26.640438
+20107,Surunga,Saptari,municipality,,86.542086,26.699048
+20109,Bode Barsain,Saptari,municipality,,86.573850,26.564207
+20110,Dakneshwori,Saptari,municipality,,86.632837,26.529844
+20113,Rajbiraj,Saptari,municipality,,86.767869,26.535148
+20116,Hanumannagar Kankalini,Saptari,municipality,,86.878688,26.512112
+20201,Lahan,Siraha,municipality,,86.483634,26.756467
+20202,Dhangadhimai,Siraha,municipality,,86.416125,26.810372
+20203,Golbazar,Siraha,municipality,,86.346283,26.814441
+20204,Mirchaiya,Siraha,municipality,,86.259941,26.835005
+20205,Karjanha,Siraha,municipality,,86.181851,26.867912
+20206,Kalyanpur,Siraha,municipality,,86.202046,26.760224
+20210,Sukhipur,Siraha,municipality,,86.352676,26.696308
+20217,Siraha,Siraha,municipality,,86.221932,26.647137
+20301,Ganeshman Charnath,Dhanusha,municipality,,86.125725,26.939023
+20302,Dhanushadham,Dhanusha,municipality,,86.045465,26.873953
+20303,Mithila,Dhanusha,municipality,,85.967153,26.978749
+20305,Chhireshwornath,Dhanusha,municipality,,85.975703,26.846202
+20307,Mithila Bihari,Dhanusha,municipality,,86.003511,26.797269
+20308,Hansapur,Dhanusha,municipality,,86.029876,26.757725
+20309,Sabaila,Dhanusha,municipality,,86.104679,26.798442
+20310,Shahidnagar,Dhanusha,municipality,,86.109196,26.734705
+20311,Kamala,Dhanusha,municipality,,86.158314,26.699235
+20313,Bideha,Dhanusha,municipality,,86.062710,26.678663
+20315,Janakpurdham,Dhanusha,sub_metropolitan_city,,85.936673,26.725432
+20317,Nagarain,Dhanusha,municipality,,85.926879,26.644122
+20401,Bardibas,Mahottari,municipality,,85.857642,27.035739
+20402,Gaushala,Mahottari,municipality,,85.783891,26.949198
+20404,Aurahi,Mahottari,municipality,,85.803047,26.865618
+20405,Bhangaha,Mahottari,municipality,,85.874424,26.849095
+20406,Loharpatti,Mahottari,municipality,,85.867396,26.769206
+20407,Balawa,Mahottari,municipality,,85.821819,26.768207
+20408,Ram Gopalpur,Mahottari,municipality,,85.785860,26.809649
+20410,Manara Shisawa,Mahottari,municipality,,85.755693,26.724423
+20414,Matihani,Mahottari,municipality,,85.862137,26.642417
+20415,Jaleshwor,Mahottari,municipality,,85.801922,26.646372
+20501,Lalbandi,Sarlahi,municipality,,85.691339,27.102593
+20502,Hariwan,Sarlahi,municipality,,85.576540,27.100336
+20503,Bagmati,Sarlahi,municipality,,85.479508,27.077455
+20504,Barahathawa,Sarlahi,municipality,,85.456045,26.981490
+20505,Haripur,Sarlahi,municipality,,85.550739,27.010951
+20506,Ishworpur,Sarlahi,municipality,,85.696204,27.008975
+20507,Haripurwa,Sarlahi,municipality,,85.689158,26.914386
+20511,Kabilashi,Sarlahi,municipality,,85.539126,26.940806
+20516,Balara,Sarlahi,municipality,,85.370979,26.794974
+20517,Godaita,Sarlahi,municipality,,85.447904,26.844097
+20520,Malangawa,Sarlahi,municipality,,85.550189,26.858519
+20601,Chandrapur,Rautahat,municipality,,85.370508,27.138633
+20602,Gujara,Rautahat,municipality,,85.271818,27.104682
+20603,Phatuwa Bijayapur,Rautahat,municipality,,85.205676,27.020021
+20604,Katahariya,Rautahat,municipality,,85.252374,26.995346
+20605,Brindaban,Rautahat,municipality,,85.377869,27.040726
+20606,Gadhimai,Rautahat,municipality,,85.370041,26.941971
+20607,Madhav Narayan,Rautahat,municipality,,85.331628,26.890605
+20608,Garuda,Rautahat,municipality,,85.318759,26.953553
+20609,Dewahi Gonahi,Rautahat,municipality,,85.261448,26.931741
+20610,Maulapur,Rautahat,municipality,,85.203493,26.929482
+20611,Boudhimai,Rautahat,municipality,,85.220971,26.890240
+20612,Paroha,Rautahat,municipality,,85.237055,26.854465
+20613,Rajpur,Rautahat,municipality,,85.258113,26.816608
+20616,Rajdevi,Rautahat,municipality,,85.317407,26.777543
+20617,Gaur,Rautahat,municipality,,85.276977,26.777835
+20618,Ishanath,Rautahat,municipality,,85.215607,26.793110
+20701,Nijagadh,Bara,municipality,,85.139618,27.234029
+20702,Kolhabi,Bara,municipality,,85.147733,27.103899
+20703,Jitpur Simara,Bara,sub_metropolitan_city,,85.010677,27.200261
+20708,Kalaiya,Bara,sub_metropolitan_city,,85.011545,27.028609
+20712,Simroungadh,Bara,municipality,,85.137723,26.895757
+20713,Pacharauta,Bara,municipality,,85.077434,26.895562
+20714,Mahagadhimai,Bara,municipality,,85.060011,26.982195
+20806,Parsagadhi,Parsa,municipality,,84.891706,27.170726
+20807,Birgunj,Parsa,metropolitan_city,,84.896037,27.082438
+20808,Bahudarmai,Parsa,municipality,,84.829509,27.082649
+20809,Pokhariya,Parsa,municipality,,84.765862,27.076828
+30105,Jiri,Dolakha,municipality,,86.285464,27.663280
+30109,Bhimeshwor,Dolakha,municipality,,86.020422,27.686838
+30205,Melamchi,Sindhupalchok,municipality,,85.543138,27.826253
+30207,Choutara Sangachowkgadhi,Sindhupalchok,municipality,,85.722075,27.757697
+30209,Bahrabise,Sindhupalchok,municipality,,85.902415,27.821520
+30406,Nilkhantha,Dhading,municipality,,84.921755,27.918642
+30413,Dhunibenshi,Dhading,municipality,,85.182061,27.729466
+30504,Bidur,Nuwakot,municipality,,85.138285,27.925658
+30508,Belkotgadhi,Nuwakot,municipality,,85.125078,27.824730
+30601,Shankharapur,Kathmandu,municipality,,85.501343,27.753322
+30602,Kageshwori Manahara,Kathmandu,municipality,,85.421549,27.734883
+30603,Gokarneshwor,Kathmandu,municipality,,85.416237,27.773672
+30604,Budhanilkhantha,Kathmandu,municipality,,85.364525,27.772025
+30605,Tokha,Kathmandu,municipality,,85.332454,27.775169
+30606,Tarakeshwor,Kathmandu,municipality,,85.299312,27.777440
+30607,Nagarjun,Kathmandu,municipality,,85.263576,27.727044
+30608,Kathmandu,Kathmandu,capital_metropolitan_city,,85.329507,27.708754
+30609,Kirtipur,Kathmandu,municipality,,85.277435,27.666508
+30610,Chandragiri,Kathmandu,municipality,,85.231820,27.686623
+30611,Dakshinkali,Kathmandu,municipality,,85.263348,27.615967
+30701,Changunarayan,Bhaktapur,municipality,,85.465032,27.696004
+30702,Bhaktapur,Bhaktapur,municipality,,85.431932,27.674769
+30703,Madhyapur Thimi,Bhaktapur,municipality,,85.383782,27.682229
+30704,Suryabinayak,Bhaktapur,municipality,,85.427751,27.648996
+30801,Mahalaxmi,Lalitpur,municipality,,85.382509,27.634847
+30802,Lalitpur,Lalitpur,metropolitan_city,,85.317995,27.650354
+30803,Godawari,Lalitpur,municipality,,85.337814,27.584295
+30903,Mandan Deupur,Kabhrepalanchok,municipality,,85.600938,27.709979
+30904,Banepa,Kabhrepalanchok,municipality,,85.515902,27.648070
+30905,Dhulikhel,Kabhrepalanchok,municipality,,85.574585,27.617763
+30906,Panchkhal,Kabhrepalanchok,municipality,,85.640929,27.636735
+30908,Namobuddha,Kabhrepalanchok,municipality,,85.642076,27.552966
+30909,Panauti,Kabhrepalanchok,municipality,,85.480565,27.576991
+31004,Ramechhap,Ramechhap,municipality,,86.148826,27.315858
+31005,Manthali,Ramechhap,municipality,,86.066712,27.408507
+31101,Dudhouli,Sindhuli,municipality,,86.241104,27.032290
+31105,Kamalamai,Sindhuli,municipality,,85.932937,27.187531
+31202,Thaha,Makawanpur,municipality,,85.088318,27.651298
+31206,Hetauda,Makawanpur,sub_metropolitan_city,,85.029445,27.415651
+31301,Rapti,Chitawan,municipality,,84.691780,27.649121
+31302,Kalika,Chitawan,municipality,,84.588365,27.709539
+31304,Bharatpur,Chitawan,metropolitan_city,,84.386297,27.652668
+31305,Ratnanagar,Chitawan,municipality,,84.516071,27.618895
+31306,Khairahani,Chitawan,municipality,,84.573329,27.605500
+31307,Madi,Chitawan,municipality,,84.373340,27.420350
+40108,Palungtar,Gorkha,municipality,,84.508298,28.010095
+40109,Gorkha,Gorkha,municipality,,84.601515,27.982714
+40406,Beni,Myagdi,municipality,,83.535722,28.352658
+40504,Pokhara,Kaski,metropolitan_city,,83.991437,28.210325
+40604,Madhya Nepal,Lamjung,municipality,,84.264060,28.149419
+40605,Bensishahar,Lamjung,municipality,,84.382551,28.217327
+40606,Sundarbazar,Lamjung,municipality,,84.371579,28.152965
+40607,Rainas,Lamjung,municipality,,84.497836,28.116450
+40701,Bhanu,Tanahu,municipality,,84.398953,28.053872
+40702,Byas,Tanahu,municipality,,84.287455,28.013004
+40704,Shuklagandaki,Tanahu,municipality,,84.068750,28.064641
+40705,Bhimad,Tanahu,municipality,,84.045005,27.965369
+40801,Gaidakot,Nawalparasi E,municipality,,84.331495,27.729605
+40805,Devchuli,Nawalparasi E,municipality,,84.207717,27.715373
+40806,Kawasoti,Nawalparasi E,municipality,,84.123770,27.641542
+40807,Madhya Bindu,Nawalparasi E,municipality,,83.982295,27.627925
+40901,Putalibazar,Syangja,municipality,,83.895025,28.098281
+40905,Bhirkot,Syangja,municipality,,83.774654,28.039573
+40908,Chapakot,Syangja,municipality,,83.858698,27.912072
+40909,Walling,Syangja,municipality,,83.768941,27.984150
+40910,Galyang,Syangja,municipality,,83.674343,27.954700
+41003,Kushma,Parbat,municipality,,83.706372,28.231435
+41004,Phalebas,Parbat,municipality,,83.688189,28.155969
+41101,Baglung,Baglung,municipality,,83.598059,28.246202
+41105,Dhorpatan,Baglung,municipality,,83.142178,28.394159
+41108,Galkot,Baglung,municipality,,83.391820,28.232852
+41110,Jaimuni,Baglung,municipality,,83.583254,28.157463
+50207,Rolpa,Rolpa,municipality,,82.628098,28.337068
+50304,Pyuthan,Pyuthan,municipality,,82.853051,28.125424
+50305,Sworgadwari,Pyuthan,municipality,,82.695970,28.133869
+50404,Musikot,Gulmi,municipality,,83.293716,28.166905
+50409,Resunga,Gulmi,municipality,,83.260271,28.067619
+50503,Bhumikasthan,Arghakhanchi,municipality,,83.038612,27.986406
+50504,Sandhikharka,Arghakhanchi,municipality,,83.139727,27.973604
+50506,Shitaganga,Arghakhanchi,municipality,,83.015967,27.840962
+50601,Rampur,Palpa,municipality,,83.885674,27.853569
+50605,Tansen,Palpa,municipality,,83.522465,27.866386
+50701,Bardaghat,Nawalparasi W,municipality,,83.797847,27.556259
+50702,Sunawal,Nawalparasi W,municipality,,83.667651,27.617717
+50703,Ramgram,Nawalparasi W,municipality,,83.651013,27.526583
+50801,Devdaha,Rupandehi,municipality,,83.561747,27.651000
+50802,Butwal,Rupandehi,sub_metropolitan_city,,83.435114,27.688875
+50803,Sainamaina,Rupandehi,municipality,,83.307695,27.711672
+50808,Tilottama,Rupandehi,municipality,,83.488391,27.608094
+50811,Siddharthanagar,Rupandehi,municipality,,83.444321,27.501076
+50813,Lumbini Sanskritik,Rupandehi,municipality,,83.269212,27.473363
+50901,Banganga,Kapilbastu,municipality,,83.159703,27.684825
+50902,Buddhabhumi,Kapilbastu,municipality,,82.999645,27.685478
+50903,Shivaraj,Kapilbastu,municipality,,82.854417,27.693441
+50905,Krishnanagar,Kapilbastu,municipality,,82.817348,27.529496
+50906,Maharajganj,Kapilbastu,municipality,,82.937811,27.543751
+50907,Kapilbastu,Kapilbastu,municipality,,83.074309,27.563758
+51002,Ghorahi,Dang,sub_metropolitan_city,,82.478829,28.023146
+51003,Tulsipur,Dang,sub_metropolitan_city,,82.308252,28.111421
+51007,Lamahi,Dang,municipality,,82.418650,27.913080
+51102,Kohalpur,Banke,municipality,,81.720963,28.215688
+51106,Nepalganj,Banke,sub_metropolitan_city,,81.647783,28.060292
+51201,Bansgadhi,Bardiya,municipality,,81.528035,28.260347
+51202,Barbardiya,Bardiya,municipality,,81.384144,28.322892
+51203,Thakurbaba,Bardiya,municipality,,81.297843,28.442192
+51205,Rajapur,Bardiya,municipality,,81.139295,28.421198
+51206,Madhuwan,Bardiya,municipality,,81.260411,28.340173
+51207,Gulariya,Bardiya,municipality,,81.347403,28.210761
+60105,Tripurasundari,Dolpa,municipality,,82.751714,29.022312
+60106,Thulibheri,Dolpa,municipality,,82.868861,28.931940
+60202,Chhayanath Rara,Mugu,municipality,,82.170017,29.532913
+60404,Chandannath,Jumla,municipality,,82.154103,29.295036
+60503,Raskot,Kalikot,municipality,,81.645980,29.272707
+60506,Khandachakra,Kalikot,municipality,,81.675844,29.150193
+60507,Tilagupha,Kalikot,municipality,,81.857515,29.145869
+60605,Aathbis,Dailekh,municipality,,81.492557,29.023522
+60606,Chamunda Bindrasaini,Dailekh,municipality,,81.560383,28.934616
+60607,Dullu,Dailekh,municipality,,81.608381,28.831738
+60608,Narayan,Dailekh,municipality,,81.740859,28.861832
+60704,Chhedagad,Jajarkot,municipality,,82.028466,28.748301
+60706,Bheri Malika,Jajarkot,municipality,,82.164878,28.697312
+60707,Nalgad,Jajarkot,municipality,,82.376008,28.878585
+60801,Aathabisakot,Rukum W,municipality,,82.515715,28.842457
+60804,Musikot,Rukum W,municipality,,82.480509,28.611131
+60806,Chaurjahari,Rukum W,municipality,,82.264168,28.635709
+60903,Banagad Kupinde,Salyan,municipality,,82.055631,28.489325
+60905,Bagachour,Salyan,municipality,,82.329009,28.475529
+60907,Sharada,Salyan,municipality,,82.164154,28.381637
+61003,Lekabeshi,Surkhet,municipality,,81.753366,28.539804
+61004,Gurbhakot,Surkhet,municipality,,81.893657,28.428875
+61005,Bheriganga,Surkhet,municipality,,81.693708,28.457472
+61006,Birendranagar,Surkhet,municipality,,81.636295,28.602194
+61008,Panchapuri,Surkhet,municipality,,81.384498,28.789600
+70103,Budhinanda,Bajura,municipality,,81.619199,29.529479
+70106,Badimalika,Bajura,municipality,,81.497569,29.432610
+70108,Budhiganga,Bajura,municipality,,81.320253,29.362334
+70109,Tribeni,Bajura,municipality,,81.421557,29.329267
+70202,Bungal,Bajhang,municipality,,80.931379,29.660212
+70206,Jayaprithbi,Bajhang,municipality,,81.193560,29.540190
+70303,Mahakali,Darchula,municipality,,80.542856,29.804347
+70307,Shailyashikhar,Darchula,municipality,,80.571358,29.709209
+70403,Puchaundi,Baitadi,municipality,,80.701459,29.599458
+70405,Dasharathchand,Baitadi,municipality,,80.432230,29.534844
+70408,Melauli,Baitadi,municipality,,80.421600,29.429168
+70409,Patan,Baitadi,municipality,,80.579999,29.445201
+70502,Amargadhi,Dadeldhura,municipality,,80.584718,29.282566
+70505,Parashuram,Dadeldhura,municipality,,80.346359,29.128698
+70604,Shikhar,Doti,municipality,,80.820865,29.235216
+70605,Dipayal Silgadhi,Doti,municipality,,80.969940,29.263611
+70701,Panchdebal Binayak,Achham,municipality,,81.454067,29.108140
+70704,Sanphebagar,Achham,municipality,,81.207617,29.268452
+70706,Mangalsen,Achham,municipality,,81.226829,29.101625
+70708,Kamal bazar,Achham,municipality,,81.339964,29.059858
+70803,Godawari,Kailali,municipality,,80.577796,28.869728
+70804,Gauriganga,Kailali,municipality,,80.783181,28.752928
+70805,Ghodaghodi,Kailali,municipality,,80.941726,28.705406
+70807,Lamki Chuha,Kailali,municipality,,81.156081,28.651157
+70810,Tikapur,Kailali,municipality,,81.088296,28.485038
+70811,Bhajani,Kailali,municipality,,80.965598,28.517307
+70813,Dhangadhi,Kailali,sub_metropolitan_city,,80.656386,28.693048
+70901,Krishnapur,Kanchanpur,municipality,,80.470720,28.861134
+70902,Shuklaphanta,Kanchanpur,municipality,,80.379789,28.928697
+70903,Bedkot,Kanchanpur,municipality,,80.272226,28.993622
+70904,Bhimdatta,Kanchanpur,municipality,,80.169595,29.006718
+70905,Dodhara Chadani,Kanchanpur,municipality,,80.086194,28.896020
+70907,Punarbas,Kanchanpur,municipality,,80.478687,28.647601
+70908,Belouri,Kanchanpur,municipality,,80.354201,28.700230

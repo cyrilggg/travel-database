@@ -52,7 +52,10 @@ export const administrativeTypeOf = (
     city.cityLevel === "timor_leste_capital_city" ||
     city.cityLevel === "maldives_capital_city_council" ||
     city.cityLevel === "bhutan_capital_thromde" ||
-    city.cityLevel === "sri_lanka_capital_municipal_council"
+    city.cityLevel === "sri_lanka_capital_municipal_council" ||
+    city.cityLevel === "nepal_capital_metropolitan_city" ||
+    city.cityLevel === "nepal_metropolitan_city" ||
+    city.cityLevel === "nepal_sub_metropolitan_city"
   ) {
     return "prefecture";
   }
@@ -76,7 +79,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "myanmar_city_development_area" ||
     city.cityLevel === "maldives_city_council" ||
     city.cityLevel === "bhutan_autonomous_thromde" ||
-    city.cityLevel === "sri_lanka_municipal_council"
+    city.cityLevel === "sri_lanka_municipal_council" ||
+    city.cityLevel === "nepal_municipality"
   ) {
     return "county-city";
   }

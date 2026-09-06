@@ -281,6 +281,20 @@ const additionalCityCenterSources = [
     countryName: "斯里兰卡",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "np-urban-municipalities-2026-09-06.csv",
+    ),
+    idPrefix: "nepal",
+    codePrefix: "np",
+    levelPrefix: "nepal",
+    countryCode: "NP",
+    countryName: "尼泊尔",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
