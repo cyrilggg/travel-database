@@ -359,3 +359,11 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 本批不设置人口门槛，梅尔尼克、马贾罗沃和普利斯卡等人口很少但具有法定城市身份的地点同样保留。由于国家统计局档案下载端点在本次构建环境中拒绝自动下载，导入器使用公开的 EKATTE 派生清单 `settlements_loc.csv`（`vlados/bulgaria-geocoding` 提交 `288010604df0a87b51b1a20ad0e247a3a1ca1345`）复现城市选择，并以国家统计局现行 257 城总数校验；该派生清单把两座修道院和两个铁路站也标成非村庄，导入器明确排除这四条非城市记录。来源文件 SHA-256 为 `6918087B9DA34DDCEFCFED4E98FC0EA86C1BA4B398F92847B63ACB31224EC40C`。
 
 地图稳定 ID 采用五位 EKATTE 聚居地代码，不随排序、中文译名或 GeoNames 更新变化；坐标逐项绑定固定 GeoNames ID。`scripts/import-bulgaria-official-towns.py` 固定校验 257 个法定城市、28 个州、唯一 EKATTE 与 GeoNames ID、六类来源层级和国界范围。2026-09-06 下载的 GeoNames 保加利亚国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `123D40F4DC71BD7CD59290E309C97C6ACA32CA2897A2DC64B3E20922967F756E`，解压文本 SHA-256 为 `6BCF14265A04CB0A4CEAF6BA65E2D112966A52DF826E10ADAA125AA515661366`，生成 CSV SHA-256 为 `620391E235FF4C5DA8915422765E4FB40D149008DC748E35A7580082EE540D8E`。所有 257 个地图主名称均为简体中文；同名的两座比亚拉以州名区分，没有攻略的城市统一显示为“尚未收录”。
+
+## 罗马尼亚城市点
+
+`sources/ro-official-cities-2026-09-06.csv` 收录罗马尼亚 SIRUTA 2025 中全部 319 个城市级行政单位：首都布加勒斯特、102 个其他 `municipiu` 和 216 个 `oraș`。SIRUTA 是罗马尼亚国家统计局按县、城市/市镇/乡和组成聚居地三级组织的现行行政区划注册表；2025 数据集由国家统计局发布，并于 2026-01-20 更新：<https://data.europa.eu/data/datasets/fcba1a54-cffd-422c-b3ac-920f63564085?locale=en>、<https://data.gov.ro/dataset/siruta-2025>。
+
+本批不使用人口门槛，也不把城市下属的组成聚居地、村庄或布加勒斯特六区重复设置为独立城市。埃福列、布雷亚扎、伯伊莱戈沃拉、伯伊莱奥勒内什蒂和奥克内莱马里等法定城市的名称与其主要组成聚居地不同，地图以法定城市名显示、以主要聚居地绑定坐标。稳定 ID 使用城市级 SIRUTA 代码，不随排序、中文译名或主要聚居地名称变化。
+
+`scripts/import-romania-official-cities.py` 直接解析并校验 SIRUTA 2025 与 GeoNames 快照，固定检查 319 个城市、103 个 `municipiu`、216 个 `oraș`、42 个县级地区、唯一 SIRUTA 与 GeoNames ID、五类来源层级和国界范围。因官方数据门户在本次构建环境中无法稳定建立下载连接，导入器使用官方 CSV 的公开镜像 `ionelmc/django-siruta`（提交 `3ec1db41d37606206367d3dadd38dcc99c8f66a4`）；CSV SHA-256 为 `A223E6FD6C2B1B63DFD1339CB1E16C07A7E0A3C810AC4987112147CE9DDF806B`。2026-09-06 下载的 GeoNames 罗马尼亚国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `4D22A888882026B36E6E415A24CB884695E4B29FF32A5032EF9290A1E7D80550`，解压文本 SHA-256 为 `799F1C2D360E0C4D562510DC9EB0FFEBCD4339E871ECC030FBC61A5D6F1730EA`，生成 CSV SHA-256 为 `D28D3235C9CD9E86DDBF0588CF3EFB4BFCA8E9F50B6CC6474C27166FF9B3CAF0`。地图主名称参照中文维基百科完整城市表并统一转为简体，纠正其中少量重名或错配后，319 个名称均为中文且唯一；没有攻略的城市统一显示为“尚未收录”。

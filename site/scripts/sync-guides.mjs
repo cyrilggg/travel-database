@@ -814,6 +814,20 @@ const additionalCityCenterSources = [
     countryName: "保加利亚",
     continentCode: "EU",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "ro-official-cities-2026-09-06.csv",
+    ),
+    idPrefix: "romania",
+    codePrefix: "ro",
+    levelPrefix: "romania",
+    countryCode: "RO",
+    countryName: "罗马尼亚",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
