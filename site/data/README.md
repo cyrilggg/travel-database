@@ -39,3 +39,9 @@
 `sources/ph-official-cities-2026-06-30.csv` 按菲律宾统计局 PSGC 2026 年第二季度口径收录 149 个法定 City：33 个 Highly Urbanized City、5 个 Independent Component City 和 111 个 Component City；不包含 1,493 个 Municipality。稳定 ID 直接使用 PSGC 10 位代码。总数与发布日期依据 2026-07-13 发布、统计截至 2026-06-30 的官方更新：<https://psa.gov.ph/classification/psgc>；城市分级逐项按官方 HUC、ICC、CC 名单核对：<https://psa.gov.ph/classification/psgc/hucs>、<https://psa.gov.ph/classification/psgc/iccs>、<https://psa.gov.ph/classification/psgc/ccs>。
 
 中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 菲律宾国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `0AD6226C3AEDD9AA0D486DBEEDEB4899FC1D1E3F1714350FEC353525F3CDAC95`。名称匹配同时使用 PSGC 省区归属和 GeoNames 行政代码排除重名地点；没有对应攻略的城市统一显示为“尚未收录”。
+
+## 印度尼西亚城市点
+
+`sources/id-official-cities-2025.csv` 按印尼内政部 2025 年第 300.2.2-2138 号决定收录 98 个 `kota`：93 个自治市和雅加达的 5 个行政市；不包含 416 个 `kabupaten`。稳定 ID 使用内政部两级地区代码。现行法规记录：<https://peraturan.bpk.go.id/Details/322912/keputusan-mendagri-no-30022-2430-tahun-2025>；98 市总数由印度尼西亚中央统计局 2025 年省际统计资料复核。为避免从 4,428 页附件手工抄录，名称与代码使用该决定的结构化转录版 `masmaksum/kode-wilayah-2025@a878917` 提取，并逐省核对总数：<https://github.com/masmaksum/kode-wilayah-2025>。
+
+中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 印度尼西亚国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `8CEF7AC3A959E64261EDD2A07059BC80B8D9412C72222F7B183536BF9BDD5122`。雅加达行政市采用 GeoNames 的 ADM2 几何中心，其余城市采用人口地名中心；重名城市同时按省份消歧。

@@ -53,7 +53,9 @@ export const administrativeTypeOf = (
     city.cityLevel === "north_korea_provincial_city" ||
     city.cityLevel === "japan_municipal_city" ||
     city.cityLevel === "mongolia_aimag_city" ||
-    city.cityLevel === "philippines_component_city"
+    city.cityLevel === "philippines_component_city" ||
+    city.cityLevel === "indonesia_autonomous_city" ||
+    city.cityLevel === "indonesia_administrative_city"
   ) {
     return "county-city";
   }

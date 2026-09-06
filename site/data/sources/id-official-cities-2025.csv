@@ -1,0 +1,99 @@
+administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
+11.71,Banda Aceh,Aceh,autonomous_city,1215502,95.333330,5.541670
+11.72,Sabang,Aceh,autonomous_city,1214026,95.316440,5.889690
+11.73,Lhokseumawe,Aceh,autonomous_city,1214658,97.150700,5.180100
+11.74,Langsa,Aceh,autonomous_city,1214724,97.968300,4.468300
+11.75,Subulussalam,Aceh,autonomous_city,6713355,97.882700,2.662000
+12.71,Medan,Sumatera Utara,autonomous_city,1214520,98.666670,3.583330
+12.72,Pematangsiantar,Sumatera Utara,autonomous_city,1214204,99.068700,2.959500
+12.73,Sibolga,Sumatera Utara,autonomous_city,1213855,98.781170,1.740160
+12.74,Tanjungbalai,Sumatera Utara,autonomous_city,1213547,99.800000,2.966670
+12.75,Binjai,Sumatera Utara,autonomous_city,1215355,98.485400,3.600100
+12.76,Tebing Tinggi,Sumatera Utara,autonomous_city,6703528,99.634300,3.075600
+12.77,Padangsidimpuan,Sumatera Utara,autonomous_city,11054666,99.276170,1.371550
+12.78,Gunungsitoli,Sumatera Utara,autonomous_city,1215102,97.614300,1.288800
+13.71,Padang,Sumatera Barat,autonomous_city,1633419,100.354270,-0.949240
+13.72,Solok,Sumatera Barat,autonomous_city,1626649,100.657100,-0.800600
+13.73,Sawahlunto,Sumatera Barat,autonomous_city,1628472,100.807150,-0.674830
+13.74,Padang Panjang,Sumatera Barat,autonomous_city,1633375,100.405210,-0.456020
+13.75,Bukittinggi,Sumatera Barat,autonomous_city,1647866,100.370550,-0.309070
+13.76,Payakumbuh,Sumatera Barat,autonomous_city,1631905,100.633400,-0.215900
+13.77,Pariaman,Sumatera Barat,autonomous_city,1632334,100.119970,-0.618980
+14.71,Pekanbaru,Riau,autonomous_city,1631761,101.441670,0.516670
+14.72,Dumai,Riau,autonomous_city,1645133,101.443160,1.667110
+15.71,Jambi,Jambi,autonomous_city,1642858,103.616670,-1.600000
+15.72,Sungai Penuh,Jambi,autonomous_city,1625929,101.391300,-2.056100
+16.71,Palembang,Sumatera Selatan,autonomous_city,1633070,104.745800,-2.916730
+16.72,Pagar Alam,Sumatera Selatan,autonomous_city,1633308,103.246940,-4.025060
+16.73,Lubuk Linggau,Sumatera Selatan,autonomous_city,1637158,102.861400,-3.294500
+16.74,Prabumulih,Sumatera Selatan,autonomous_city,1631393,104.230560,-3.434470
+17.71,Bengkulu,Bengkulu,autonomous_city,1649150,102.265540,-3.800440
+18.71,Bandar Lampung,Lampung,autonomous_city,1624917,105.261110,-5.429170
+18.72,Metro,Lampung,autonomous_city,1635283,105.306670,-5.113060
+19.71,Pangkal Pinang,Kepulauan Bangka Belitung,autonomous_city,1632654,106.113770,-2.129140
+21.71,Batam,Kepulauan Riau,autonomous_city,8314434,103.964930,1.128000
+21.72,Tanjung Pinang,Kepulauan Riau,autonomous_city,1624863,104.458330,0.916670
+31.71,Jakarta Pusat,Daerah Khusus Ibukota Jakarta,administrative_city,1642908,106.833330,-6.183330
+31.72,Jakarta Utara,Daerah Khusus Ibukota Jakarta,administrative_city,1642903,106.904170,-6.136110
+31.73,Jakarta Barat,Daerah Khusus Ibukota Jakarta,administrative_city,1642909,106.750000,-6.166670
+31.74,Jakarta Selatan,Daerah Khusus Ibukota Jakarta,administrative_city,1642905,106.808330,-6.266670
+31.75,Jakarta Timur,Daerah Khusus Ibukota Jakarta,administrative_city,1642904,106.887500,-6.250000
+32.71,Bogor,Jawa Barat,autonomous_city,1648473,106.789170,-6.594440
+32.72,Sukabumi,Jawa Barat,autonomous_city,1626381,106.926670,-6.918060
+32.73,Bandung,Jawa Barat,autonomous_city,1650357,107.606940,-6.922220
+32.74,Cirebon,Jawa Barat,autonomous_city,1646170,108.557000,-6.706300
+32.75,Bekasi,Jawa Barat,autonomous_city,1649378,106.989600,-6.234900
+32.76,Depok,Jawa Barat,autonomous_city,1645524,106.818610,-6.400000
+32.77,Cimahi,Jawa Barat,autonomous_city,1646448,107.542500,-6.872220
+32.78,Tasikmalaya,Jawa Barat,autonomous_city,1624647,108.220700,-7.327400
+32.79,Banjar,Jawa Barat,autonomous_city,1650233,108.532900,-7.368800
+33.71,Magelang,Jawa Tengah,autonomous_city,1636884,110.217780,-7.470560
+33.72,Surakarta,Jawa Tengah,autonomous_city,1625812,110.831670,-7.556110
+33.73,Salatiga,Jawa Tengah,autonomous_city,1629131,110.492780,-7.331940
+33.74,Semarang,Jawa Tengah,autonomous_city,1627896,110.420830,-6.993060
+33.75,Pekalongan,Jawa Tengah,autonomous_city,1631766,109.675300,-6.888600
+33.76,Tegal,Jawa Tengah,autonomous_city,1624494,109.140200,-6.869400
+34.71,Yogyakarta,Daerah Istimewa Yogyakarta,autonomous_city,1621177,110.364720,-7.801390
+35.71,Kediri,Jawa Timur,autonomous_city,1640660,112.016670,-7.816670
+35.72,Blitar,Jawa Timur,autonomous_city,1648580,112.168100,-8.098300
+35.73,Malang,Jawa Timur,autonomous_city,1636722,112.630400,-7.979700
+35.74,Probolinggo,Jawa Timur,autonomous_city,1630634,113.215900,-7.754300
+35.75,Pasuruan,Jawa Timur,autonomous_city,1632033,112.907500,-7.645300
+35.76,Mojokerto,Jawa Timur,autonomous_city,1635111,112.433800,-7.466400
+35.77,Madiun,Jawa Timur,autonomous_city,1636930,111.523900,-7.629800
+35.78,Surabaya,Jawa Timur,autonomous_city,1625822,112.750830,-7.249170
+35.79,Batu,Jawa Timur,autonomous_city,1649824,112.528330,-7.870000
+36.71,Tangerang,Banten,autonomous_city,1625084,106.630000,-6.178060
+36.72,Cilegon,Banten,autonomous_city,1646511,106.054200,-6.014400
+36.73,Serang,Banten,autonomous_city,1627549,106.154170,-6.115280
+36.74,Tangerang Selatan,Banten,autonomous_city,8581443,106.717890,-6.288620
+51.71,Denpasar,Bali,autonomous_city,1645528,115.216670,-8.650000
+52.71,Mataram,Nusa Tenggara Barat,autonomous_city,1635882,116.116670,-8.583330
+52.72,Bima,Nusa Tenggara Barat,autonomous_city,1648759,118.726670,-8.460060
+53.71,Kupang,Nusa Tenggara Timur,autonomous_city,2057087,123.606940,-10.170830
+61.71,Pontianak,Kalimantan Barat,autonomous_city,1630789,109.325000,-0.031940
+61.72,Singkawang,Kalimantan Barat,autonomous_city,1626916,108.984630,0.909250
+62.71,Palangkaraya,Kalimantan Tengah,autonomous_city,1633118,113.916670,-2.208330
+63.71,Banjarmasin,Kalimantan Selatan,autonomous_city,1650213,114.590750,-3.319870
+63.72,Banjarbaru,Kalimantan Selatan,autonomous_city,1650217,114.836500,-3.440600
+64.71,Balikpapan,Kalimantan Timur,autonomous_city,1650527,116.828870,-1.267530
+64.72,Samarinda,Kalimantan Timur,autonomous_city,1629001,117.145830,-0.491670
+64.74,Bontang,Kalimantan Timur,autonomous_city,1648186,117.485400,0.132400
+65.71,Tarakan,Kalimantan Utara,autonomous_city,1624725,117.591520,3.313320
+71.71,Manado,Sulawesi Utara,autonomous_city,1636544,124.848920,1.482180
+71.72,Bitung,Sulawesi Utara,autonomous_city,1648637,125.128240,1.440590
+71.73,Tomohon,Sulawesi Utara,autonomous_city,1623446,124.803790,1.316780
+71.74,Kotamobagu,Sulawesi Utara,autonomous_city,1639500,124.312080,0.741940
+72.71,Palu,Sulawesi Tengah,autonomous_city,1633034,119.870830,-0.908330
+73.71,Makassar,Sulawesi Selatan,autonomous_city,1622786,119.431940,-5.148610
+73.72,Parepare,Sulawesi Selatan,autonomous_city,1632353,119.625500,-4.013500
+73.73,Palopo,Sulawesi Selatan,autonomous_city,1633037,120.196940,-2.992500
+74.71,Kendari,Sulawesi Tenggara,autonomous_city,1640344,122.515070,-3.977800
+74.72,Bau Bau,Sulawesi Tenggara,autonomous_city,1649541,122.602400,-5.463300
+75.71,Gorontalo,Gorontalo,autonomous_city,1643837,123.062500,0.537500
+81.71,Ambon,Maluku,autonomous_city,1651531,128.183330,-3.695830
+81.72,Tual,Maluku,autonomous_city,1623197,132.752290,-5.628780
+82.71,Ternate,Maluku Utara,autonomous_city,1624041,127.384240,0.790650
+82.72,Tidore Kepulauan,Maluku Utara,autonomous_city,1623951,127.445330,0.652770
+91.71,Jayapura,Papua,autonomous_city,2082600,140.718130,-2.533710
+96.71,Sorong,Papua Barat Daya,autonomous_city,1626542,131.261040,-0.879560

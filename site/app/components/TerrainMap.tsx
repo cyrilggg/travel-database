@@ -88,7 +88,7 @@ if (typeof document !== "undefined") {
 }
 
 const CURRENT_ASIA_BOUNDS: [[number, number], [number, number]] = [
-  [73.2, 4],
+  [73.2, -12],
   [154.5, 53.6],
 ];
 

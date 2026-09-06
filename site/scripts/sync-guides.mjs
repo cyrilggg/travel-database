@@ -99,6 +99,20 @@ const additionalCityCenterSources = [
     countryName: "菲律宾",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "id-official-cities-2025.csv",
+    ),
+    idPrefix: "indonesia",
+    codePrefix: "id",
+    levelPrefix: "indonesia",
+    countryCode: "ID",
+    countryName: "印度尼西亚",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
