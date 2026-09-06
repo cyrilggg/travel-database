@@ -632,6 +632,20 @@ const additionalCityCenterSources = [
     countryName: "阿曼",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "sa-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "saudi-arabia",
+    codePrefix: "sa",
+    levelPrefix: "saudi_arabia",
+    countryCode: "SA",
+    countryName: "沙特阿拉伯",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
