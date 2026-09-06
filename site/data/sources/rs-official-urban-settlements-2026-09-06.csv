@@ -1,0 +1,168 @@
+administrative_code,name,official_name,admin_area,city_level,geonames_id,feature_code,population,longitude,latitude
+801542,Zrenjanin,Зрењанин,中巴纳特行政区,district_capital,783814,PPLA2,79773,20.381940,45.383610
+801399,Žitište,Житиште,中巴纳特行政区,municipal_center,783887,PPLA3,3060,20.549720,45.485000
+802611,Novi Bečej,Нови Бечеј,中巴纳特行政区,municipal_center,787610,PPLA3,0,20.135560,45.598610
+803766,Jaša Tomić,Јаша Томић,中巴纳特行政区,urban_settlement,789875,PPL,3625,20.855460,45.447250
+724548,Leskovac,Лесковац,亚布拉尼察行政区,district_capital,788709,PPLA2,94758,21.946110,42.998060
+710717,Vlasotince,Власотинце,亚布拉尼察行政区,municipal_center,784318,PPLA3,0,22.134020,42.966970
+723355,Lebane,Лебане,亚布拉尼察行政区,municipal_center,788762,PPLA3,0,21.737500,42.923890
+727539,Medveđa,Медвеђа,亚布拉尼察行政区,municipal_center,788057,PPLA3,0,21.583330,42.843060
+723894,Vučje,Вучје,亚布拉尼察行政区,urban_settlement,784091,PPL,0,21.910460,42.865280
+724084,Grdelica,Грделица,亚布拉尼察行政区,urban_settlement,790179,PPL,0,22.070470,42.901570
+727652,Sijarinska Banja,Сијаринска Бања,亚布拉尼察行政区,urban_settlement,785923,PPL,0,21.603690,42.777680
+741892,Užice,Ужице,兹拉蒂博尔行政区,district_capital,3188434,PPLA2,63577,19.848780,43.858610
+701629,Arilje,Ариље,兹拉蒂博尔行政区,municipal_center,793093,PPLA3,6762,20.095560,43.753060
+702455,Bajina Bašta,Бајина Башта,兹拉蒂博尔行政区,municipal_center,3204623,PPLA3,8533,19.567500,43.970830
+718203,Kosjerić,Косјерић,兹拉蒂博尔行政区,municipal_center,3197622,PPLA3,0,19.906940,43.996110
+729884,Nova Varoš,Нова Варош,兹拉蒂博尔行政区,municipal_center,3194407,PPLA3,0,19.811390,43.460560
+733440,Požega,Пожега,兹拉蒂博尔行政区,municipal_center,786824,PPLA3,0,20.036320,43.848890
+734233,Priboj,Прибој,兹拉蒂博尔行政区,municipal_center,3192450,PPLA3,3,19.525190,43.583060
+735078,Prijepolje,Пријепоље,兹拉蒂博尔行政区,municipal_center,3192404,PPLA3,3,19.648700,43.389960
+739995,Sjenica,Сјеница,兹拉蒂博尔行政区,municipal_center,3190776,PPLA3,0,19.999440,43.273060
+745294,Zlatibor,Златибор,兹拉蒂博尔行政区,urban_settlement,3302765,PPL,2344,19.700290,43.729000
+741850,Sevojno,Севојно,兹拉蒂博尔行政区,urban_settlement,3190947,PPL,0,19.910750,43.849600
+804614,Subotica,Суботица,北巴奇卡行政区,district_capital,3189595,PPLA2,100000,19.666670,46.100000
+800473,Bačka Topola,Бачка Топола,北巴奇卡行政区,municipal_center,3204672,PPLA3,16154,19.631800,45.815160
+804592,Palić,Палић,北巴奇卡行政区,urban_settlement,3193678,PPL,5476,19.756470,46.106460
+802158,Kikinda,Кикинда,北巴纳特行政区,district_capital,789518,PPLA2,41935,20.465280,45.829720
+800015,Ada,Ада,北巴纳特行政区,municipal_center,793171,PPLA3,0,20.125830,45.802500
+802018,Kanjiža,Кањижа,北巴纳特行政区,municipal_center,789600,PPLA3,10200,20.050000,46.066670
+802689,Novi Kneževac,Нови Кнежевац,北巴纳特行政区,municipal_center,787600,PPLA3,8166,20.100000,46.050000
+803707,Senta,Сента,北巴纳特行政区,municipal_center,785965,PPLA3,20302,20.077220,45.927500
+804908,Čoka,Чока,北巴纳特行政区,municipal_center,791900,PPLA3,5414,20.143330,45.942500
+800023,Mol,Мол,北巴纳特行政区,urban_settlement,787855,PPL,7950,20.132860,45.764570
+802824,Novi Sad,Нови Сад,南巴奇卡行政区,district_capital,3194360,PPLA,215400,19.836940,45.251670
+800236,Bač,Бач,南巴奇卡行政区,municipal_center,3204692,PPLA3,0,19.236670,45.391940
+800309,Bačka Palanka,Бачка Паланка,南巴奇卡行政区,municipal_center,3204674,PPLA3,29449,19.396640,45.249660
+800694,Bački Petrovac,Бачки Петровац,南巴奇卡行政区,municipal_center,3204665,PPLA3,7229,19.591670,45.360560
+800902,Beočin,Беочин,南巴奇卡行政区,municipal_center,3204289,PPLA3,0,19.720630,45.208290
+801003,Bečej,Бечеј,南巴奇卡行政区,municipal_center,792814,PPLA3,25774,20.033310,45.616320
+804827,Vrbas,Врбас,南巴奇卡行政区,municipal_center,3187297,PPLA3,25907,19.640830,45.571390
+801321,Žabalj,Жабаљ,南巴奇卡行政区,municipal_center,784068,PPLA3,8503,20.063890,45.372220
+802832,Petrovaradin,Петроварадин,南巴奇卡行政区,municipal_center,3193406,PPLA3,13917,19.879440,45.246670
+804045,Srbobran,Србобран,南巴奇卡行政区,municipal_center,3190169,PPLA3,0,19.802780,45.553890
+804355,Sremski Karlovci,Сремски Карловци,南巴奇卡行政区,municipal_center,3190101,PPLA3,8839,19.933730,45.202850
+804681,Temerin,Темерин,南巴奇卡行政区,municipal_center,3189166,PPLA3,0,19.889170,45.408610
+804738,Titel,Тител,南巴奇卡行政区,municipal_center,785062,PPLA3,6227,20.294440,45.206110
+804665,Bački Jarak,Бачки Јарак,南巴奇卡行政区,urban_settlement,3204667,PPL,0,19.875070,45.369950
+802867,Sremska Kamenica,Сремска Каменица,南巴奇卡行政区,urban_settlement,3190104,PPL,14205,19.842630,45.223340
+802883,Futog,Футог,南巴奇卡行政区,urban_settlement,3200802,PPL,18018,19.714160,45.238740
+803138,Pančevo,Панчево,南巴纳特行政区,district_capital,787237,PPLA2,76654,20.641670,44.871770
+800066,Alibunar,Алибунар,南巴纳特行政区,municipal_center,793134,PPLA3,3803,20.965830,45.080830
+800767,Bela Crkva,Бела Црква,南巴纳特行政区,municipal_center,792794,PPLA3,10675,21.417220,44.897500
+801089,Vršac,Вршац,南巴纳特行政区,municipal_center,784136,PPLA3,36300,21.303610,45.116670
+802255,Kovačica,Ковачица,南巴纳特行政区,municipal_center,789178,PPLA3,7357,20.621390,45.111670
+802352,Kovin,Ковин,南巴纳特行政区,municipal_center,789168,PPLA3,14250,20.976110,44.747500
+802913,Opovo,Опово,南巴纳特行政区,municipal_center,787461,PPLA3,4769,20.430280,45.052220
+800074,Banatski Karlovac,Банатски Карловац,南巴纳特行政区,urban_settlement,792945,PPL,6319,21.018000,45.049870
+803111,Kačarevo,Качарево,南巴纳特行政区,urban_settlement,789715,PPL,0,20.699570,44.967210
+803146,Starčevo,Старчево,南巴纳特行政区,urban_settlement,785544,PPL,6661,20.705460,44.807290
+706418,Bor,Бор,博尔行政区,district_capital,792456,PPLA2,39387,22.095910,44.074880
+716588,Kladovo,Кладово,博尔行政区,municipal_center,789485,PPLA3,0,22.609550,44.611470
+726869,Majdanpek,Мајданпек,博尔行政区,municipal_center,788357,PPLA3,10071,21.945960,44.427710
+728675,Negotin,Неготин,博尔行政区,municipal_center,787718,PPLA3,17612,22.530830,44.226390
+716502,Brza Palanka,Брза Паланка,博尔行政区,urban_settlement,792217,PPL,0,22.446820,44.470890
+726818,Donji Milanovac,Доњи Милановац,博尔行政区,urban_settlement,791175,PPL,2410,22.151700,44.465930
+79022,Niš,Ниш,尼沙瓦行政区,district_capital,787657,PPLA2,250000,21.903330,43.324720
+700614,Aleksinac,Алексинац,尼沙瓦行政区,municipal_center,793138,PPLA3,14593,21.707780,43.541670
+729370,Niška Banja,Нишка Бања,尼沙瓦行政区,municipal_center,834855,PPLA3,0,22.005700,43.295070
+739090,Svrljig,Сврљиг,尼沙瓦行政区,municipal_center,785164,PPLA3,0,22.121110,43.413330
+700649,Aleksinački Rudnici Uglja,Алексиначки Рудник,尼沙瓦行政区,urban_settlement,836583,PPL,0,21.691390,43.558060
+733083,Požarevac,Пожаревац,布拉尼切沃行政区,district_capital,786827,PPLA2,41736,21.187820,44.621330
+709492,Veliko Gradište,Велико Градиште,布拉尼切沃行政区,municipal_center,784535,PPLA3,0,21.516460,44.763290
+722782,Kučevo,Кучево,布拉尼切沃行政区,municipal_center,788937,PPLA3,0,21.670000,44.477500
+731960,Petrovac,Петровац на Млави,布拉尼切沃行政区,municipal_center,787078,PPLA3,0,21.419170,44.376940
+733016,Kostolac,Костолац,布拉尼切沃行政区,urban_settlement,789210,PPL,0,21.169290,44.713560
+715689,Zaječar,Зајечар,扎耶查尔行政区,district_capital,784024,PPLA2,49800,22.264050,43.903580
+706213,Boljevac,Бољевац,扎耶查尔行政区,municipal_center,792470,PPLA3,0,21.953060,43.830280
+717657,Knjazevac,Књажевац,扎耶查尔行政区,municipal_center,6619277,PPLA3,25000,22.257010,43.566340
+740977,Soko Banja,Сокобања,扎耶查尔行政区,municipal_center,785704,PPLA3,0,21.871110,43.643330
+706205,Bogovina,Боговина,扎耶查尔行政区,urban_settlement,792502,PPL,0,21.949850,43.892960
+736210,Prokuplje,Прокупље,托普利察行政区,district_capital,786690,PPLA2,27673,21.588060,43.234170
+705225,Blace,Блаце,托普利察行政区,municipal_center,792564,PPLA3,0,21.285830,43.295280
+722103,Kuršumlija,Куршумлија,托普利察行政区,municipal_center,788852,PPLA3,0,21.273390,43.138260
+722111,Kuršumlijska Banja,Куршумлијска Бања,托普利察行政区,urban_settlement,788850,SPA,0,21.252560,43.057860
+719714,Kraljevo,Краљево,拉什卡行政区,district_capital,789107,PPLA2,82846,20.689440,43.725830
+712353,Vrnjačka Banja,Врњачка Бања,拉什卡行政区,municipal_center,784141,PPLA3,10207,20.896340,43.627250
+730602,Novi Pazar,Нови Пазар,拉什卡行政区,municipal_center,787595,PPLA3,85996,20.512220,43.136670
+737445,Raška,Рашка,拉什卡行政区,municipal_center,793790,PPLA3,4,20.615280,43.287220
+744123,Tutin,Тутин,拉什卡行政区,municipal_center,784800,PPLA3,4,20.331390,42.990280
+737135,Jošanička Banja,Јошаничка Бања,拉什卡行政区,urban_settlement,789762,PPLL,0,20.750510,43.389410
+736872,Baljevac,Баљевац,拉什卡行政区,urban_settlement,792964,PPL,0,20.635340,43.392290
+719811,Mataruška Banja,Матарушка Бања,拉什卡行政区,urban_settlement,788107,PPL,4,20.610070,43.688160
+720097,Ribnica,Рибница,拉什卡行政区,urban_settlement,786303,PPL,4,20.689860,43.713190
+721107,Kruševac,Крушевац,拉西纳行政区,district_capital,788975,PPLA2,75256,21.333890,43.580000
+744328,Ćićevac,Ћићевац,拉西纳行政区,municipal_center,791936,PPLA3,4,21.440850,43.718820
+700029,Aleksandrovac,Александровац,拉西纳行政区,municipal_center,793142,PPLA3,0,21.052500,43.458610
+743178,Trstenik,Трстеник,拉西纳行政区,municipal_center,784873,PPLA3,49043,21.002500,43.616940
+707066,Brus,Брус,拉西纳行政区,urban_settlement,792241,PPL,0,21.028880,43.384600
+804266,Sremska Mitrovica,Сремска Митровица,斯雷姆行政区,district_capital,3190103,PPLA2,39084,19.612220,44.976390
+801895,Irig,Ириг,斯雷姆行政区,municipal_center,3199103,PPLA3,0,19.858330,45.101110
+803634,Ruma,Рума,斯雷姆行政区,municipal_center,3191429,PPLA3,32229,19.822220,45.008060
+804428,Stara Pazova,Стара Пазова,斯雷姆行政区,municipal_center,785559,PPLA3,16217,20.160830,44.985000
+805106,Šid,Шид,斯雷姆行政区,municipal_center,3190922,PPLA3,0,19.226390,45.128330
+801747,Inđija,Инђија,斯雷姆行政区,urban_settlement,790015,PPL,24450,20.081650,45.048160
+804215,Mačvanska Mitrovica,Мачванска Митровица,斯雷姆行政区,urban_settlement,3195962,PPL,3661,19.593140,44.967390
+711306,Vranje,Врање,普奇尼亚行政区,district_capital,784227,PPLA2,56199,21.900280,42.551390
+706604,Bosilegrad,Босилеград,普奇尼亚行政区,municipal_center,792421,PPLA3,0,22.472380,42.501100
+707694,Bujanovac,Бујановац,普奇尼亚行政区,municipal_center,792173,PPLA3,0,21.766670,42.459170
+710156,Vladičin Han,Владичин Хан,普奇尼亚行政区,municipal_center,784355,PPLA3,0,22.063330,42.707780
+711314,Vranjska Banja,Врањска Бања,普奇尼亚行政区,municipal_center,784222,PPLA3,0,21.992220,42.555000
+741400,Surdulica,Сурдулица,普奇尼亚行政区,municipal_center,785285,PPLA3,0,22.170830,42.690560
+746665,Bijelo Polje,Бело Поље,普奇尼亚行政区,urban_settlement,861049,PPL,0,22.153780,42.702310
+740527,Smederevo,Смедерево,波杜纳夫列行政区,district_capital,785756,PPLA2,62000,20.927630,44.664360
+709344,Velika Plana,Велика Плана,波杜纳夫列行政区,municipal_center,784630,PPLA3,0,21.076760,44.333890
+740721,Smederevska Palanka,Смедеревска Паланка,波杜纳夫列行政区,municipal_center,785753,PPLA3,27000,20.958850,44.365480
+738352,Jagodina,Јагодина,波莫拉夫列行政区,district_capital,789923,PPLA2,35589,21.261210,43.977130
+744492,Ćuprija,Ћуприја,波莫拉夫列行政区,municipal_center,791678,PPLA3,20585,21.370000,43.927500
+713937,Despotovac,Деспотовац,波莫拉夫列行政区,municipal_center,791516,PPLA3,0,21.446940,44.092500
+731501,Paraćin,Параћин,波莫拉夫列行政区,municipal_center,787215,PPLA3,6000,21.407780,43.860830
+738654,Svilajnac,Свилајнац,波莫拉夫列行政区,municipal_center,785184,PPLA3,0,21.196700,44.233700
+714119,Resavica,Ресавица,波莫拉夫列行政区,urban_settlement,786343,PPL,0,21.517380,44.069470
+732575,Pirot,Пирот,皮罗特行政区,district_capital,787050,PPLA2,40678,22.586110,43.153060
+703001,Bela Palanka,Бела Паланка,皮罗特行政区,municipal_center,792784,PPLA3,0,22.311110,43.218330
+714364,Dimitrovgrad,Димитровград,皮罗特行政区,municipal_center,791487,PPLA3,0,22.775560,43.014170
+701866,Babušnica,Бабушница,皮罗特行政区,urban_settlement,793034,PPL,0,22.413830,43.064120
+708402,Valjevo,Ваљево,科卢巴拉行政区,district_capital,3188402,PPLA2,61035,19.898210,44.275130
+726362,Ljig,Љиг,科卢巴拉行政区,municipal_center,788584,PPLA3,2979,20.238190,44.230070
+723029,Lajkovac,Лајковац,科卢巴拉行政区,municipal_center,788812,PPLA3,0,20.165280,44.369440
+728268,Mionica,Мионица,科卢巴拉行政区,municipal_center,787935,PPLA3,0,20.081670,44.251940
+744883,Ub,Уб,科卢巴拉行政区,municipal_center,784795,PPLA3,0,20.073890,44.456110
+726192,Belanovica,Белановица,科卢巴拉行政区,urban_settlement,792785,PPL,0,20.396130,44.249470
+708534,Divčibare,Дивчибаре,科卢巴拉行政区,urban_settlement,3202017,PPL,86,19.992500,44.106000
+718980,Kragujevac,Крагујевац,舒马迪亚行政区,district_capital,789128,PPLA2,147473,20.916670,44.016670
+701408,Aranđelovac,Аранђеловац,舒马迪亚行政区,municipal_center,793111,PPLA3,24309,20.560000,44.306940
+702927,Lapovo,Лапово,舒马迪亚行政区,municipal_center,788792,PPLA3,7422,21.097270,44.184240
+736813,Rača,Рача,舒马迪亚行政区,municipal_center,786624,PPLA3,0,20.977540,44.227120
+742228,Topola,Топола,舒马迪亚行政区,municipal_center,785013,PPLA3,0,20.682500,44.254170
+746061,Čačak,Чачак,莫拉维察行政区,district_capital,792078,PPLA2,117072,20.349720,43.891390
+713325,Gornji Milanovac,Горњи Милановац,莫拉维察行政区,municipal_center,790367,PPLA3,23982,20.461520,44.026030
+716154,Ivanjica,Ивањица,莫拉维察行政区,municipal_center,789988,PPLA3,0,20.231110,43.580280
+726044,Lučani,Лучани,莫拉维察行政区,municipal_center,788452,PPLA3,0,20.138060,43.860830
+725889,Guča,Гуча,莫拉维察行政区,urban_settlement,790106,PPL,0,20.225570,43.778950
+803979,Sombor,Сомбор,西巴奇卡行政区,district_capital,3190342,PPLA2,48454,19.112220,45.774170
+800180,Apatin,Апатин,西巴奇卡行政区,municipal_center,3204793,PPLA3,18320,18.978000,45.672600
+802433,Kula,Кула,西巴奇卡行政区,municipal_center,3196973,PPLA3,0,19.526390,45.608890
+803014,Odžaci,Оџаци,西巴奇卡行政区,municipal_center,3194209,PPLA3,0,19.261110,45.506670
+802484,Crvenka,Црвенка,西巴奇卡行政区,urban_settlement,3202318,PPL,8532,19.454350,45.660980
+79014,Belgrade,Београд,贝尔格莱德市,capital,792680,PPLC,1273651,20.465130,44.804010
+703737,Grocka,Гроцка,贝尔格莱德市,municipal_center,790132,PPLA3,0,20.716480,44.671520
+704091,Lazarevac,Лазаревац,贝尔格莱德市,municipal_center,788771,PPLA3,23551,20.255700,44.385340
+704458,Mladenovac,Младеновац,贝尔格莱德市,municipal_center,787893,PPLA3,0,20.699170,44.438610
+704741,Obrenovac,Обреновац,贝尔格莱德市,municipal_center,787516,PPLA3,16821,20.200170,44.654860
+705101,Sopot,Сопот,贝尔格莱德市,municipal_center,785671,PPLA3,0,20.573610,44.519720
+703907,Surčin,Сурчин,贝尔格莱德市,municipal_center,785288,PPLA3,12575,20.280280,44.793060
+703621,Beli Potok,Бели Поток,贝尔格莱德市,urban_settlement,792732,PPL,0,20.517680,44.706260
+704865,Borča,Борча,贝尔格莱德市,urban_settlement,792453,PPL,1246,20.454130,44.869690
+703869,Dobanovci,Добановци,贝尔格莱德市,urban_settlement,791471,PPL,7592,20.224870,44.826310
+704903,Ovča,Овча,贝尔格莱德市,urban_settlement,787296,PPL,2567,20.533360,44.883490
+705136,Ostružnica,Остружница,贝尔格莱德市,urban_settlement,787306,PPL,4060,20.318450,44.727690
+705144,Pećani,Пећани,贝尔格莱德市,urban_settlement,846837,PPL,0,20.330560,44.693060
+703648,Pinosava,Пиносава,贝尔格莱德市,urban_settlement,787058,PPL,0,20.483050,44.695430
+705152,Rucka,Руцка,贝尔格莱德市,urban_settlement,837120,PPL,0,20.309570,44.660940
+705195,Umka,Умка,贝尔格莱德市,urban_settlement,784764,PPL,5618,20.304720,44.678060
+746606,Šabac,Шабац,马奇瓦行政区,district_capital,3191376,PPLA2,55114,19.690000,44.746670
+720453,Krupanj,Крупањ,马奇瓦行政区,municipal_center,3197111,PPLA3,3779,19.361940,44.365560
+725552,Loznica,Лозница,马奇瓦行政区,municipal_center,3196153,PPLA3,19515,19.242670,44.531180
+727008,Mali Zvornik,Мали Зворник,马奇瓦行政区,municipal_center,3195591,PPLA3,4,19.106510,44.373440
+725196,Banja Koviljača,Бања Ковиљача,马奇瓦行政区,urban_settlement,3204545,PPL,4,19.152780,44.514640

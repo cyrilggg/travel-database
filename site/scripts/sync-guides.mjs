@@ -744,6 +744,20 @@ const additionalCityCenterSources = [
     countryName: "克罗地亚",
     continentCode: "EU",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "rs-official-urban-settlements-2026-09-06.csv",
+    ),
+    idPrefix: "serbia",
+    codePrefix: "rs",
+    levelPrefix: "serbia",
+    countryCode: "RS",
+    countryName: "塞尔维亚",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
