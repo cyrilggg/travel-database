@@ -29,10 +29,10 @@ for (const [guideId, mapId, name] of samples) {
   });
 }
 
-test('Taiwan batch does not expose other guides as full text', () => {
-  assert.equal(guides.filter(guide => guide.fullTextPath).length, samples.length);
+test('Taiwan full text remains scoped to its 23 cities alongside explicit country batches', () => {
+  assert.equal(guides.filter(guide => guide.countryCode === 'CN' && guide.fullTextPath).length, samples.length);
   assert.equal(samples.length, 23);
-  assert.equal(guides.filter(guide => !samples.some(([id]) => id === guide.id) && guide.fullTextPath).length, 0);
+  assert.equal(guides.filter(guide => guide.countryCode === 'CN' && !samples.some(([id]) => id === guide.id) && guide.fullTextPath).length, 0);
 });
 
 
@@ -42,7 +42,7 @@ test('Taiwan overview and eight regions are readable without fabricated map poin
     new Set(['北部山海与客家乡镇', '彰化与云林乡镇', '日月潭与南投山地', '阿里山与嘉义海岸', '恒春半岛与屏东沿海', '花东纵谷与东海岸', '澎湖群岛', '绿岛与兰屿'].map(name => `taiwan-region-${name}`)));
   assert.ok(regionalReadings.some(reading => reading.id === 'taiwan-overview'));
   const readableIds = new Set([...regionalReadings.map(reading => reading.id), ...samples.map(([id]) => id)]);
-  for (const reading of [...regionalReadings, ...guides.filter(guide => guide.fullTextPath)]) {
+  for (const reading of [...regionalReadings, ...guides.filter(guide => guide.countryCode === 'CN' && guide.fullTextPath)]) {
     const markdown = await readFile(new URL(`public${reading.fullTextPath}`, root), 'utf8');
     await access(new URL(`pages-dist${reading.fullTextPath}`, root));
     assert.ok(markdown.length > 500);

@@ -44,7 +44,7 @@ type MapPoint = {
 
 const cityName = (name: string) => name.replace(/[市区]$/, "");
 const citySearchLabel = (city: MapCity) =>
-  `${cityName(city.city)} · ${city.adminArea} · ${city.countryName}`;
+  [cityName(city.city), ...new Set([city.adminArea, city.countryName])].join(" · ");
 const cityBreadcrumb = (city: MapCity) =>
   city.adminArea === city.countryName
     ? city.countryName
@@ -53,7 +53,7 @@ const mappedGuideIds = new Set(
   mapCities.flatMap((city) => (city.guideId ? [city.guideId] : [])),
 );
 const coveredGuides = guides.filter((guide) => mappedGuideIds.has(guide.id));
-const planningCities = mapCities.filter((city) => city.coverage === 1 && city.guideId);
+const planningCities = mapCities.filter((city) => city.coverage === 1 && city.guideId && city.countryCode !== "KP");
 
 const formatDate = (value: string) => {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
@@ -88,9 +88,10 @@ const nearestGuides = (
   limit: number,
   excludedGuideId?: string,
   maxDistance = Number.POSITIVE_INFINITY,
+  countryCode?: string,
 ) =>
   coveredGuides
-    .filter((guide) => guide.id !== excludedGuideId)
+    .filter((guide) => guide.id !== excludedGuideId && (!countryCode || guide.countryCode === countryCode))
     .map((guide) => ({
       guide,
       distance: distanceInKilometers(point, guide.coordinates),
@@ -644,13 +645,13 @@ export default function TravelMap() {
   );
 
   const renderCity = (guide: TravelGuide) => {
-    const nearby = nearestGuides(guide.coordinates, 3, guide.id);
+    const nearby = nearestGuides(guide.coordinates, 3, guide.id, undefined, guide.countryCode);
 
     return (
       <>
         <div className="panel-titlebar">
           <div>
-            <span className="panel-breadcrumb">中国 / {guide.adminArea}</span>
+            <span className="panel-breadcrumb">{[guide.countryName, guide.adminArea].filter((value, index, values) => values.indexOf(value) === index).join(" / ")}</span>
             <h2>{cityName(guide.city)}</h2>
           </div>
           <div className="panel-actions">
@@ -778,7 +779,7 @@ export default function TravelMap() {
   };
 
   const renderMissing = (city: MapCity) => {
-    const nearby = nearestGuides(city.coordinates, 3, undefined, 300);
+    const nearby = nearestGuides(city.coordinates, 3, undefined, 300, city.countryCode);
 
     return (
       <>

@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - "destinations/中国/**"
+      - "destinations/韩国/**"
+      - "destinations/朝鲜/**"
       - "coverage/geonames/2026-07-30/inventory/CN.csv"
       - "coverage/legal-cities/**"
       - "site/**"

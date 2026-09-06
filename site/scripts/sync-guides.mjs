@@ -22,7 +22,7 @@ const outputPath = path.join(generatedDirectory, "guides.ts");
 const publicRoot = path.join(siteRoot, "public");
 const publicGuidesPath = path.join(publicRoot, "guides");
 
-const guidesRoot = "destinations/中国";
+const guideCountries = new Map([["CN", "中国"], ["KR", "韩国"], ["KP", "朝鲜"]]);
 const coordinateInventoryPath =
   "coverage/geonames/2026-07-30/inventory/CN.csv";
 const legalCityInventoryPath =
@@ -840,10 +840,13 @@ async function resolveSourceRevision() {
 }
 
 async function listGuidePaths() {
-  const localRoot = path.join(projectRoot, ...guidesRoot.split("/"));
-  const entries = await readdir(localRoot, { recursive: true });
-
-  return entries
+  const groups = await Promise.all([...guideCountries.values()].map(async (country) => {
+    const guidesRoot = `destinations/${country}`;
+    const localRoot = path.join(projectRoot, ...guidesRoot.split("/"));
+    let entries;
+    try { entries = await readdir(localRoot, { recursive: true }); }
+    catch (error) { if (error.code === "ENOENT") return []; throw error; }
+    return entries
     .map((entry) => String(entry).replaceAll(path.sep, "/"))
     .filter(
       (relativePath) =>
@@ -852,6 +855,8 @@ async function listGuidePaths() {
     )
     .map((relativePath) => path.posix.join(guidesRoot, relativePath))
     .sort();
+  }));
+  return groups.flat().sort();
 }
 
 async function readSourceFile(sourcePath) {
@@ -954,6 +959,17 @@ async function loadCoordinates() {
     coordinates.set(row.geonames_id, { longitude, latitude });
   }
 
+  for (const source of additionalCityCenterSources.filter((entry) => ["KR", "KP"].includes(entry.countryCode))) {
+    for (const row of parseCsv(await readFile(source.path, "utf8"))) {
+      const longitude = Number(row.longitude);
+      const latitude = Number(row.latitude);
+      if (!row.geonames_id || !row.longitude || !row.latitude || !Number.isFinite(longitude) || !Number.isFinite(latitude)) {
+        throw new Error(`${source.countryCode}:${row.administrative_code} 城市身份或中心点无效`);
+      }
+      if (coordinates.has(row.geonames_id)) throw new Error(`跨国家 GeoNames ID 冲突：${row.geonames_id}`);
+      coordinates.set(row.geonames_id, { longitude, latitude });
+    }
+  }
   return coordinates;
 }
 
@@ -1049,6 +1065,9 @@ async function loadMapCities(guides) {
         const guide = city.geonames_id
           ? guidesByGeonamesId.get(city.geonames_id)
           : undefined;
+        if (guide && guide.countryCode !== source.countryCode) {
+          throw new Error(`${localizationKey} 攻略国家与城市名录不一致`);
+        }
         if (guide) mappedGuideIds.add(guide.id);
 
         const longitude = Number(city.longitude);
@@ -1081,8 +1100,8 @@ async function loadMapCities(guides) {
       city: guide.city,
       adminArea: guide.adminArea,
       cityLevel: "guide_destination",
-      countryCode: "CN",
-      countryName: "中国",
+      countryCode: guide.countryCode,
+      countryName: guide.countryName,
       continentCode: "AS",
       coverage: 1,
       guideId: guide.id,
@@ -1279,6 +1298,7 @@ async function loadCityGuides(coordinateByGeonamesId) {
     const source = await readSourceFile(sourcePath);
     const parsed = matter(source);
     assertRequiredFrontmatter(parsed.data, sourcePath);
+    if (parsed.data.content_status !== "researched") continue;
 
     const city = String(parsed.data.city).trim();
     const adminArea = String(parsed.data.admin_area).trim();
@@ -1289,10 +1309,13 @@ async function loadCityGuides(coordinateByGeonamesId) {
         : String(parsed.data.wikidata_id).trim();
     const coordinates = coordinateByGeonamesId.get(geonamesId);
 
-    if (parsed.data.country !== "中国" || parsed.data.country_code !== "CN") {
-      throw new Error(`${sourcePath} 不是中国 CN 城市指南`);
+    const countryCode = String(parsed.data.country_code).trim();
+    const countryName = guideCountries.get(countryCode);
+    if (!countryName || parsed.data.country !== countryName || !sourcePath.startsWith(`destinations/${countryName}/`)) {
+      throw new Error(`${sourcePath} 国家元数据与目录不一致`);
     }
-    if (seenCities.has(city)) throw new Error(`城市名重复：${city}`);
+    const cityKey = `${countryCode}:${adminArea}:${city}`;
+    if (seenCities.has(cityKey)) throw new Error(`城市名重复：${cityKey}`);
     if (seenGeonamesIds.has(geonamesId)) {
       throw new Error(`GeoNames ID 重复：${geonamesId}`);
     }
@@ -1300,10 +1323,10 @@ async function loadCityGuides(coordinateByGeonamesId) {
       throw new Error(`${sourcePath} 的 GeoNames ${geonamesId} 无坐标`);
     }
 
-    seenCities.add(city);
+    seenCities.add(cityKey);
     seenGeonamesIds.add(geonamesId);
 
-    const id = `cn-${geonamesId}`;
+    const id = `${countryCode.toLowerCase()}-${geonamesId}`;
     const markdownPath = `/guides/${id}.md`;
     const rawMarkdown = cleanMarkdownForWeb(parsed.content).trim();
     const contentStatus = String(parsed.data.content_status).trim();
@@ -1312,6 +1335,8 @@ async function loadCityGuides(coordinateByGeonamesId) {
       kind: "city",
       id,
       title: String(parsed.data.title).trim(),
+      countryCode,
+      countryName,
       city,
       adminArea,
       geonamesId,
@@ -1356,6 +1381,8 @@ export interface GuideSection {
 
 export interface TravelGuide {
   kind: "city";
+  countryCode: string;
+  countryName: string;
   id: string;
   title: string;
   city: string;
@@ -1481,7 +1508,7 @@ async function syncGuides() {
   const coordinateByGeonamesId = await loadCoordinates();
   const cityResult = await loadCityGuides(coordinateByGeonamesId);
   if (!cityResult.guides.length) {
-    throw new Error("当前仓库中没有可生成的中国城市指南");
+    throw new Error("当前仓库中没有可生成的城市指南");
   }
   const incompleteGuides = cityResult.guides
     .filter((guide) => !guide.summary || !guide.suggestedStay)

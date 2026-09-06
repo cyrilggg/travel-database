@@ -13,7 +13,7 @@ const structuredDirectory = path.join(siteRoot, "public", "structured");
 await rm(structuredDirectory, { recursive: true, force: true });
 await mkdir(structuredDirectory, { recursive: true });
 
-const fullTextGuideIds = new Set(mapCities.filter((city) => city.id.startsWith("taiwan-")).flatMap((city) => city.guideId ? [city.guideId] : []));
+const fullTextGuideIds = new Set(mapCities.filter((city) => city.id.startsWith("taiwan-") || ["KR", "KP"].includes(city.countryCode)).flatMap((city) => city.guideId ? [city.guideId] : []));
 const readings = await loadTaiwanReadings(path.resolve(siteRoot, ".."));
 const readingTargets = new Map([
   ...guides.filter((guide) => fullTextGuideIds.has(guide.id)).map((guide) => [guide.sourcePath, guide.id] as const),
@@ -51,6 +51,8 @@ const publicGuides = await Promise.all(
       id: guide.id,
       title: guide.title,
       city: guide.city,
+      countryCode: guide.countryCode,
+      countryName: guide.countryName,
       adminArea: guide.adminArea,
       geonamesId: guide.geonamesId,
       lastResearched: guide.lastResearched,
@@ -64,7 +66,7 @@ const publicGuides = await Promise.all(
   }),
 );
 
-// 清除中间输入；本批台湾原创攻略显式发布全文到 structured。
+// 清除中间输入；显式选择的原创攻略发布全文到 structured。
 await rm(path.join(siteRoot, "public", "guides"), { recursive: true, force: true });
 
 const provinceCount = new Set(publicGuides.map((guide) => guide.adminArea)).size;
@@ -75,7 +77,7 @@ const serializedMapCities = JSON.stringify(mapCities, null, 2)
   .replaceAll("\u2028", "\\u2028")
   .replaceAll("\u2029", "\\u2029");
 
-const moduleSource = `// 公开结构化数据；经本批授权的台湾攻略另有全文路径。
+const moduleSource = `// 公开结构化数据；显式选择的原创攻略另有全文路径。
 
 export interface RegionalReading { id: string; title: string; fullTextPath: string; }
 export const regionalReadings: RegionalReading[] = ${JSON.stringify(publicReadings, null, 2)};
@@ -87,6 +89,7 @@ export interface GuideBrowseField { label: string; value: string; links?: GuideB
 export interface GuideBrowseItem { id: string; title: string; description?: string; badges: string[]; fields: GuideBrowseField[]; }
 export interface GuideBrowseSection { key: GuideBrowseKey; label: string; hint: string; sourceTitle: string; items: GuideBrowseItem[]; totalCount: number; }
 export interface TravelGuide {
+  countryCode: string; countryName: string;
   kind: "city"; id: string; title: string; city: string; adminArea: string; geonamesId: string;
   lastResearched: string; contentStatus: string; summary: string;
   suggestedStay: string; keywords: string[]; coordinates: GuideCoordinates; structuredPath: string; fullTextPath?: string;
@@ -109,4 +112,4 @@ export const coveredCityCount = mapCities.filter((city) => city.coverage === 1).
 
 await mkdir(path.dirname(outputPath), { recursive: true });
 await writeFile(outputPath, moduleSource, "utf8");
-console.log(`已生成 ${publicGuides.length} 城公开结构化数据；另发布 ${publicGuides.filter((guide) => guide.fullTextPath).length} 篇台湾完整攻略`);
+console.log(`已生成 ${publicGuides.length} 城公开结构化数据；另发布 ${publicGuides.filter((guide) => guide.fullTextPath).length} 篇完整攻略`);
