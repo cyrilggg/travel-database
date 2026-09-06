@@ -235,3 +235,9 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 `sources/jo-city-centers-2026-09-06.csv` 收录 115 个约旦城市级入口：首都、11 个省会、30 个区治、37 个次区治，以及 36 个不兼任行政中心且人口超过 5,000 的普通城市。沿用西亚批次的可复现口径，保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`。导入器固定排除鲁克班难民营、三个以公路交叉口作为中心的记录、安曼内部城区，以及鲁赛法、鲁韦希德、卡拉克的重复城市点；废弃地、地方性聚居地类别、农场和毁坏地同样不纳入。GeoNames 对 cities 系列数据和字段的官方说明见：<https://download.geonames.org/export/dump/readme.txt>。
 
 稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-jordan-city-centers.py` 固定校验来源哈希、五类层级数量、115 个唯一 ID、唯一中心点、12 省中文归属和国界范围。2026-09-06 下载的 GeoNames 约旦国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `BD843C1008D74BE315F67B0EEFC31E95E3CE9C947E2551440371C5AA98FDC4BA`，解压文本 SHA-256 为 `CDCC54B0F5741106D1053DECA5FEC8917B70991A6A679D66073A1C1DB2EA67E7`，生成 CSV SHA-256 为 `417947DB71FCC2D4E6950B19B71C3EBB7A931D9FE0818687F1CF3D3D6C41258E`。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。
+
+## 以色列城市点
+
+`sources/il-city-centers-2026-09-06.csv` 收录 160 个以色列城市级入口：7 个 GeoNames 行政中心，以及 153 个不兼任行政中心且人口超过 5,000 的普通城市型聚居地。沿用西亚批次的可复现口径，保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`。导入器固定排除耶路撒冷内部社区、三个戈兰高地的叙利亚旧行政中心、同一城市或地方政府的重复记录，以及部落、村庄、莫沙夫和隶属区域委员会的社区型聚居地。非城市记录以以色列人口与移民局持续更新的官方聚居地名录辅助核对：<https://data.gov.il/datasets/population_authority/citiesandsettelments>；GeoNames 对城市文件和字段的官方说明见：<https://download.geonames.org/export/dump/readme.txt>。
+
+稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-israel-city-centers.py` 固定校验来源哈希、两类层级数量、160 个唯一 ID、唯一中心点、7 个地区中文归属和坐标范围。2026-09-06 下载的 GeoNames 以色列国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `24C182AB70064F3D2DCDB5169BA2A825CE4DF8AA07B6D5F41D59138BA5662AF6`，解压文本 SHA-256 为 `FFDADAA0E6159DEE5DB4B390803B30EC5DE99953E3F97C93C81B2E0BF592D5F8`，生成 CSV SHA-256 为 `BB854FEC5CC5BD13D712003DE0B4C72DBA68C3B31C14E750EE18C0B9EBEA6EF2`。来源文件把阿里埃勒归入 `WE` 地区，本项目保留其来源分组并显示为“约旦河西岸”；该地区标签用于说明数据来源与位置，不表达边界或主权立场。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。
