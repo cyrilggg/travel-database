@@ -618,6 +618,20 @@ const additionalCityCenterSources = [
     countryName: "阿联酋",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "om-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "oman",
+    codePrefix: "om",
+    levelPrefix: "oman",
+    countryCode: "OM",
+    countryName: "阿曼",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
