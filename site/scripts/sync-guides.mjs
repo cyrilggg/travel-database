@@ -702,6 +702,20 @@ const additionalCityCenterSources = [
     countryName: "阿尔巴尼亚",
     continentCode: "EU",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "me-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "montenegro",
+    codePrefix: "me",
+    levelPrefix: "montenegro",
+    countryCode: "ME",
+    countryName: "黑山",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
