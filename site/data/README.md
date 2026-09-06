@@ -81,3 +81,9 @@
 `sources/kh-official-municipalities-2026-09-06.csv` 按柬埔寨国家地方民主发展委员会（NCDD）在线 Gazetteer 的现行行政区划收录 33 个 `Krong`（Municipality），并单列金边特别首都，共 34 个城市入口；不包含 163 个 District，也不把金边 14 个 Khan 或普通 Commune、Sangkat、Village 作为城市重复收录。现行清单、代码和层级均取自官方 Gazetteer：<https://db.ncdd.gov.kh/gazetteer/view/index.castle>；稳定 ID 使用其省级代码 `12` 或四位 Municipality 代码。
 
 27 个既有城市中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 柬埔寨国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `24A6D6DA9F4292A3D43862D6176636302738B0E8AE8E879FAFFBB0D57C066F61`。Odongk Maechay、Bokor、Sampeou Poun、Akreiy Ksatr 和 Kaoh Rung 使用柬埔寨国土规划与建设部 2023 Gazetteer PDF 公布的市级中心坐标；Run Ta Aek Techo Sen 在 2024 年建市，使用该 PDF 中同名核心行政区 Run Ta Aek 的中心坐标。Kampong Soam 是由 Ream、Bet Trang、Ou Oknha Heng、Boeng Ta Prum 和 Ou Chrov 五个行政区新设的城市，数据点取这五个官方行政区中心的算术平均值。上述 7 项留空 GeoNames 标识，避免绑定到旧县、单一村庄或同名岛屿；官方坐标文件：<https://asset.cambodia.gov.kh/mlmupc/wp-content/uploads/2023/10/Gazetteer-of-Cambodia-2.pdf>。
+
+## 老挝城市点
+
+`sources/la-official-cities-2026-09-06.csv` 收录万象首都和老挝现行 3 个正式 `ນະຄອນ` 城市，共 4 个入口。老挝总理于 2018 年批准将琅勃拉邦、凯山·丰威汉和巴色三个县级行政体升级为城市，官方通讯社公告：<https://kpl.gov.la/EN/detail.aspx?id=33983>；老挝政府第十个国家社会经济发展五年计划仍使用“Vientiane Capital, 3 cities”的现行口径：<https://rtm.org.la/wp-content/uploads/2025/11/10th_NSEDP_10112025_Eng.CLN1_.pdf>。塔凯克、万荣及其他省会、县治和普通城镇不因英文资料中的泛称 `city` 自动纳入。
+
+稳定 ID 使用老挝官方行政代码：万象首都使用省级代码 `01`，三个城市沿用升级前后不变的县级代码 `0601`、`1301` 和 `1601`。代码目录可由老挝贸易门户公布的部级决定复核：<https://laotradeportal.gov.la/en-gb/site/display/674>。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 老挝国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `97983335A0835F6F46C11D72D0A85D49E039074CC144F6B417C22D5A5A98F99B`。

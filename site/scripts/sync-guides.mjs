@@ -197,6 +197,20 @@ const additionalCityCenterSources = [
     countryName: "柬埔寨",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "la-official-cities-2026-09-06.csv",
+    ),
+    idPrefix: "laos",
+    codePrefix: "la",
+    levelPrefix: "laos",
+    countryCode: "LA",
+    countryName: "老挝",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
