@@ -645,13 +645,6 @@ export default function TravelMap() {
 
         <div className="guide-overview">
             <p className="guide-summary">{guide.summary}</p>
-            {guide.fullTextPath && (
-              <p className="guide-reading-links">
-                <a href={`https://github.com/cyrilggg/travel-database/blob/main/destinations/中国/台湾省/${encodeURIComponent(guide.city)}.md`} target="_blank" rel="noreferrer">完整攻略与核查来源（GitHub）</a>
-                {" · "}
-                <a href="https://github.com/cyrilggg/travel-database/blob/main/destinations/中国/台湾省/README.md" target="_blank" rel="noreferrer">台湾总览与跨城线路（GitHub）</a>
-              </p>
-            )}
             <div className="quick-facts">
               <div>
                 <span>建议停留</span>
