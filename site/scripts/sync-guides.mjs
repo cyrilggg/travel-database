@@ -478,6 +478,20 @@ const additionalCityCenterSources = [
     countryName: "伊朗",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "iq-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "iraq",
+    codePrefix: "iq",
+    levelPrefix: "iraq",
+    countryCode: "IQ",
+    countryName: "伊拉克",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

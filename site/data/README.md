@@ -211,3 +211,9 @@
 `sources/ir-county-seats-1404.csv` 按伊朗统计中心 1404 年度行政地理工作簿收录全部 484 个县治城市，作为本项目与“地级城市”最接近且可稳定复现的地图层级；不把 1,481 个法定城市、城市内部区域或村庄全部展开。工作簿使用 `Hameds/IranCountryDivisions` 在提交 `68687cf96cc1852d5d38c7283353c80829331758` 中保存的统计中心原始文件：<https://github.com/Hameds/IranCountryDivisions>，快照 SHA-256 为 `4EBF8DE69F64E7634867E096F52346828690DF31975E8638CEC4BF863746C704`。
 
 `scripts/import-iran-county-seats.py` 固定校验 31 省、484 县和原始行政层级数量，以县级稳定代码作为城市 ID；452 个县治通过固定的 Wikidata 查询快照取得中心点，32 个新设、改名或拼写无法稳定连接的县治使用固定 GeoNames 城市记录。Wikidata 快照 SHA-256 为 `D684241C6AF4E7526FC24968C5ECC3C17CCA597AF660CCE8F27F1A532952A587`，GeoNames 伊朗文本快照 SHA-256 为 `D950D5EB5C449D7441BD1A3166F7FE46A70ED452199F1E8D7C083D4E7CE669E9`，生成 CSV SHA-256 为 `DE856D18C7D4960F48E3C83AA225D07FE61B5669009637C7F42DABE08864DEAE`。所有地图主名称通过中文名称表显示；没有攻略的县治统一显示为“尚未收录”。
+
+## 伊拉克城市点
+
+`sources/iq-city-centers-2026-09-06.csv` 收录 154 个伊拉克城市级入口：首都、17 个 GeoNames 省会、82 个区治、21 个次区治、1 个更低层级行政中心，以及 32 个不兼任行政中心且人口超过 5,000 的普通城市。伊拉克没有公开、稳定且带全国统一代码的法定城市总表，因此本批使用可复现的国际地名口径：保留 GeoNames `PPLC`、`PPLA`、`PPLA2`、`PPLA3`、`PPLA4` 行政中心，并补充人口超过 5,000 的 `PPL`；不纳入废弃地、村落/地方性聚居地类别、农场、毁坏地、城市内部片区或同一城市的重复记录。Sadr City 作为巴格达内部城区排除。GeoNames 对 cities 系列数据和字段的官方说明见：<https://download.geonames.org/export/dump/readme.txt>。
+
+GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，因此导入器按伊拉克第 7/2025 号法律把 Halabja 固定为第 19 省省会：<https://moj.gov.iq/upload/pdf/4825_compressed_244.pdf>。稳定 ID 使用 GeoNames 标识，不随排序或中文译名变化。`scripts/import-iraq-city-centers.py` 固定校验来源哈希、六类层级数量、154 个唯一 ID、唯一中心点、19 省中文归属和国界范围；2026-09-06 下载的 GeoNames 伊拉克国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `EB7C1532C27BD3F8C960F53E84D5F3AC0ACE6D399402286CDE346384BA8C73D1`，解压文本 SHA-256 为 `F699E53135801F5594C7BD8AA2238B41132DCE82B8967A81547E1B3F852D0164`，生成 CSV SHA-256 为 `A3918FDB82E1F91786C5C9C3F7453C636FE3ECA95CDBCA678E808CB68040DF93`。所有地图主名称通过中文名称表显示；没有攻略的城市统一显示为“尚未收录”。
