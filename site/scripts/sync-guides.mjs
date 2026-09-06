@@ -169,6 +169,20 @@ const additionalCityCenterSources = [
     countryName: "新加坡",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "bn-municipal-areas-2026-09-06.csv",
+    ),
+    idPrefix: "brunei",
+    codePrefix: "bn",
+    levelPrefix: "brunei",
+    countryCode: "BN",
+    countryName: "文莱",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

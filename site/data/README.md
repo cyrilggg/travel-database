@@ -69,3 +69,9 @@
 `sources/sg-city-state-2026-09-06.csv` 只收录新加坡一个城市国家级入口。新加坡外交部将其明确表述为 `city-state`：<https://www.mfa.gov.sg/about-singapore/>；城市规划使用的区域、规划区和分区是土地规划单元，不作为独立法定城市重复列入。稳定 ID 使用 ISO 3166-1 国家代码 `SG`。
 
 中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 新加坡国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `3DBBB2ACD8DD924F90DD5179B3444EA1FC0229D708BDBE08DC80000A26771A52`。
+
+## 文莱城市点
+
+`sources/bn-municipal-areas-2026-09-06.csv` 收录文莱《Municipal Boards Act》（Cap. 57）下划定的 4 个法定市政辖区：Bandar Seri Begawan、Kuala Belait、Seria 和 Tutong。文莱总检察署现行附属法例目录分别列有首都、Kuala Belait 与 Seria、Tutong 的市政委员会及其边界文件：<https://www.agc.gov.bn/SitePages/MUNICIPAL%2520BOARDS%2520ACT%2520-%2520SL.aspx>；Kuala Belait 与 Seria 虽由同一市政部门管理，官方说明明确保留两个市政委员会和两个市政辖区：<https://www.bandaran-kb.gov.bn/perkhidmatan/>。Bangar 等其他 `pekan` 没有纳入该法定市政体系，因此不按普通地名补入。
+
+稳定 ID 使用长期通行的市政简称或规范化名称。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 文莱国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `E025A22E0D0D8352C9A29500DC75F4B9F4079D7E4B13FD139D291D5706E80E7E`。
