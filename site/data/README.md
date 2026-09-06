@@ -75,3 +75,9 @@
 `sources/bn-municipal-areas-2026-09-06.csv` 收录文莱《Municipal Boards Act》（Cap. 57）下划定的 4 个法定市政辖区：Bandar Seri Begawan、Kuala Belait、Seria 和 Tutong。文莱总检察署现行附属法例目录分别列有首都、Kuala Belait 与 Seria、Tutong 的市政委员会及其边界文件：<https://www.agc.gov.bn/SitePages/MUNICIPAL%2520BOARDS%2520ACT%2520-%2520SL.aspx>；Kuala Belait 与 Seria 虽由同一市政部门管理，官方说明明确保留两个市政委员会和两个市政辖区：<https://www.bandaran-kb.gov.bn/perkhidmatan/>。Bangar 等其他 `pekan` 没有纳入该法定市政体系，因此不按普通地名补入。
 
 稳定 ID 使用长期通行的市政简称或规范化名称。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 文莱国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `E025A22E0D0D8352C9A29500DC75F4B9F4079D7E4B13FD139D291D5706E80E7E`。
+
+## 柬埔寨城市点
+
+`sources/kh-official-municipalities-2026-09-06.csv` 按柬埔寨国家地方民主发展委员会（NCDD）在线 Gazetteer 的现行行政区划收录 33 个 `Krong`（Municipality），并单列金边特别首都，共 34 个城市入口；不包含 163 个 District，也不把金边 14 个 Khan 或普通 Commune、Sangkat、Village 作为城市重复收录。现行清单、代码和层级均取自官方 Gazetteer：<https://db.ncdd.gov.kh/gazetteer/view/index.castle>；稳定 ID 使用其省级代码 `12` 或四位 Municipality 代码。
+
+27 个既有城市中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 柬埔寨国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `24A6D6DA9F4292A3D43862D6176636302738B0E8AE8E879FAFFBB0D57C066F61`。Odongk Maechay、Bokor、Sampeou Poun、Akreiy Ksatr 和 Kaoh Rung 使用柬埔寨国土规划与建设部 2023 Gazetteer PDF 公布的市级中心坐标；Run Ta Aek Techo Sen 在 2024 年建市，使用该 PDF 中同名核心行政区 Run Ta Aek 的中心坐标。Kampong Soam 是由 Ream、Bet Trang、Ou Oknha Heng、Boeng Ta Prum 和 Ou Chrov 五个行政区新设的城市，数据点取这五个官方行政区中心的算术平均值。上述 7 项留空 GeoNames 标识，避免绑定到旧县、单一村庄或同名岛屿；官方坐标文件：<https://asset.cambodia.gov.kh/mlmupc/wp-content/uploads/2023/10/Gazetteer-of-Cambodia-2.pdf>。

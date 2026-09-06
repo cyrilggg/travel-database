@@ -183,6 +183,20 @@ const additionalCityCenterSources = [
     countryName: "文莱",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "kh-official-municipalities-2026-09-06.csv",
+    ),
+    idPrefix: "cambodia",
+    codePrefix: "kh",
+    levelPrefix: "cambodia",
+    countryCode: "KH",
+    countryName: "柬埔寨",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

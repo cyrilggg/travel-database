@@ -1,0 +1,35 @@
+administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
+12,Phnom Penh,Phnom Penh,capital_municipality,1821306,104.916010,11.562450
+0106,Serei Saophoan,Banteay Meanchey,municipality,1822207,102.973690,13.585880
+0110,Paoy Paet,Banteay Meanchey,municipality,1830194,102.563650,13.658050
+0203,Battambang,Battambang,municipality,1831797,103.198220,13.102710
+0305,Kampong Cham,Kampong Cham,municipality,1831173,105.463500,11.993390
+0403,Kampong Chhnang,Kampong Chhnang,municipality,1831167,104.666670,12.250000
+0502,Chbar Mon,Kampong Speu,municipality,11450640,104.497710,11.486730
+0509,Odongk Maechay,Kampong Speu,municipality,,104.699265,11.682681
+0603,Stueng Saen,Kampong Thom,municipality,11476830,104.891080,12.711210
+0708,Kampot,Kampot,municipality,1831112,104.181450,10.610410
+0709,Bokor,Kampot,municipality,,104.128287,10.566786
+0811,Ta Khmau,Kandal,municipality,1821935,104.950000,11.483330
+0812,Sampeou Poun,Kandal,municipality,,105.043909,10.987847
+0813,Akreiy Ksatr,Kandal,municipality,,104.973354,11.584488
+0904,Khemara Phoumin,Koh Kong,municipality,1830468,102.983800,11.615310
+1002,Kracheh,Kratie,municipality,1830564,106.018790,12.488110
+1105,Saen Monourom,Mondul Kiri,municipality,1822227,107.188110,12.455830
+1308,Preah Vihear,Preah Vihear,municipality,13436894,104.978250,13.804700
+1410,Prey Veng,Prey Veng,municipality,1822610,105.325330,11.486820
+1505,Pursat,Pursat,municipality,1822768,103.919200,12.538780
+1602,Ban Lung,Ratanak Kiri,municipality,1831732,106.987270,13.739390
+1710,Siem Reap,Siemreap,municipality,1822214,103.860560,13.361790
+1715,Run Ta Aek Techo Sen,Siemreap,municipality,,103.997696,13.464948
+1801,Preah Sihanouk,Preah Sihanouk,municipality,1831142,103.529580,10.609320
+1805,Kaoh Rung,Preah Sihanouk,municipality,,103.275661,10.681840
+1806,Kampong Soam,Preah Sihanouk,municipality,,103.718721,10.582232
+1904,Stueng Traeng,Stung Treng,municipality,1822029,105.968300,13.525860
+2006,Svay Rieng,Svay Rieng,municipality,1821993,105.799350,11.087850
+2008,Bavet,Svay Rieng,municipality,1829516,106.135570,11.063170
+2108,Doun Kaev,Takeo,municipality,1821940,104.784980,10.990810
+2204,Samraong,Oddar Meanchey,municipality,1825093,103.517610,14.181750
+2302,Kaeb,Kep,municipality,1830467,104.316720,10.482910
+2401,Pailin,Pailin,municipality,1830205,102.609280,12.848950
+2506,Suong,Tboung Khmum,municipality,1822019,105.658210,11.911780
