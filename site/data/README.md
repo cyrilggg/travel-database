@@ -93,3 +93,9 @@
 `sources/mm-city-development-areas-2026-09-06.csv` 收录缅甸国家门户当前单列的 3 个城市发展辖区：内比都、仰光和曼德勒。国家门户的政府机构目录同时列出 Naypyitaw、Yangon、Mandalay 三个 City Development Committee：<https://myanmar.gov.mm/government-website>；仰光城市发展法也明确其委员会管辖 `City of Yangon Municipality` 的法定边界。其余 330 个 Township、普通 Town 及地方 Development Affairs 管辖区不因聚居地名称或英文泛称 `city` 纳入本批。
 
 稳定 ID 使用三个法定机构长期通行的官方简称 `NPTDC`、`YCDC`、`MCDC`，避免未来区县边界调整造成 ID 重排。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 缅甸国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `FC711D9BCC1F43DB60E0C2C36C07B743AD7D0E3AA7F6C4980B1710F4694AD156`。
+
+## 东帝汶城市点
+
+`sources/tl-capital-city-2026-09-06.csv` 只收录东帝汶国家首都城市帝力。东帝汶政府行政区划说明明确称其首都为 `the city of Dili`：<https://timor-leste.gov.tl/?lang=en&p=91>；同一官方口径将 Aileu、Baucau、Covalima 等列为 Municipality，并把各自驻地称为 Municipality Capital，因此不把这些一级行政区或普通驻地重复视为法定城市。
+
+帝力城市没有独立于同名 Municipality 的全国统一城市代码，稳定 ID 使用规范化官方名称 `DILI`。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 东帝汶国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `3DF62836BF2A66E4AF57EACF62696C98A552E7A8457DC2F0D386A89CA3A87A25`。

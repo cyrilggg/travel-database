@@ -48,7 +48,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "brunei_capital_municipal_area" ||
     city.cityLevel === "cambodia_capital_municipality" ||
     city.cityLevel === "laos_capital_prefecture" ||
-    city.cityLevel === "myanmar_capital_city_development_area"
+    city.cityLevel === "myanmar_capital_city_development_area" ||
+    city.cityLevel === "timor_leste_capital_city"
   ) {
     return "prefecture";
   }

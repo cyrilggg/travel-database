@@ -225,6 +225,20 @@ const additionalCityCenterSources = [
     countryName: "缅甸",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "tl-capital-city-2026-09-06.csv",
+    ),
+    idPrefix: "timor-leste",
+    codePrefix: "tl",
+    levelPrefix: "timor_leste",
+    countryCode: "TL",
+    countryName: "东帝汶",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
