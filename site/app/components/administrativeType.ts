@@ -67,7 +67,9 @@ export const administrativeTypeOf = (
     city.cityLevel === "kazakhstan_republican_significance_city" ||
     city.cityLevel === "kazakhstan_regional_significance_city" ||
     city.cityLevel === "kyrgyzstan_republican_significance_city" ||
-    city.cityLevel === "kyrgyzstan_regional_significance_city"
+    city.cityLevel === "kyrgyzstan_regional_significance_city" ||
+    city.cityLevel === "tajikistan_capital_city" ||
+    city.cityLevel === "tajikistan_republic_subordinate_city"
   ) {
     return "prefecture";
   }
@@ -101,7 +103,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "india_municipal_council" ||
     city.cityLevel === "india_city_municipal_council" ||
     city.cityLevel === "kazakhstan_district_significance_city" ||
-    city.cityLevel === "kyrgyzstan_district_significance_city"
+    city.cityLevel === "kyrgyzstan_district_significance_city" ||
+    city.cityLevel === "tajikistan_regional_city"
   ) {
     return "county-city";
   }

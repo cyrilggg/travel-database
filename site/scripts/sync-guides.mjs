@@ -379,6 +379,20 @@ const additionalCityCenterSources = [
     countryName: "吉尔吉斯斯坦",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "tj-statutory-cities-2025.csv",
+    ),
+    idPrefix: "tajikistan",
+    codePrefix: "tj",
+    levelPrefix: "tajikistan",
+    countryCode: "TJ",
+    countryName: "塔吉克斯坦",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
