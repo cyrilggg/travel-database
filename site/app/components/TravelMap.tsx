@@ -525,8 +525,6 @@ export default function TravelMap() {
         </button>
       </section>
 
-      {renderRegionalLinks()}
-
       <div className="coverage-summary" aria-label="城市攻略覆盖进度">
         <strong>{coveredCityCount}</strong>
         <span>座城市已有攻略 · {targetCityCount - coveredCityCount} 座尚未收录</span>
