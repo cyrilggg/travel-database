@@ -339,3 +339,9 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 `sources/si-official-cities-2026-09-06.csv` 收录斯洛文尼亚全部 69 个具有正式城市地位的聚居地。斯洛文尼亚政府当前明确区分 69 个法定城市与 12 个“城市市镇”：后者是承担更多法定职能的地方行政辖区，不能被误读为全国只有 12 座城市。政府城市主题页和完整法定城市清单见：<https://www.gov.si/teme/mesta-in-druga-urbana-naselja/>、<https://www.gov.si/assets/ministrstva/MNVP/Dokumenti/Urbani-razvoj/naselja_s_statusom_mesta.pdf>。
 
 本批按 69 个法定城市逐项绑定固定 GeoNames ID，不以人口门槛删除科斯塔涅维察、维什尼亚戈拉、博韦茨等小城市，也不把统计上的都市圈组成聚居地或市镇辖区整体另设为城市。`scripts/import-slovenia-official-cities.py` 固定校验 69 个法定城市、三类来源层级数量、唯一 ID、唯一中心点、12 个统计区中文归属和国界范围。2026-09-06 下载的官方 PDF SHA-256 为 `C5F446A92FA0C7038F1FEDB241C67F1204E72049043BE900F3DF0D048B27778A`；GeoNames 斯洛文尼亚国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `AC8636BF26A16522E7AA481F1E8C55B1C798E0EBFFF3EA823C3A5BACD26F8590`，解压文本 SHA-256 为 `82A5E0C53656C359C8DE6C39070960121B10647AD024CBAC960C21F34F47D0F9`，生成 CSV SHA-256 为 `C59B0A4816CDA8F911D47EC7FABC644477BF1D844E62922D3563BCB0B2247C65`。所有地图主名称均为简体中文；没有攻略的城市统一显示为“尚未收录”。
+
+## 北马其顿城市点
+
+`sources/mk-official-cities-2026-09-06.csv` 收录北马其顿全部 34 个城市。北马其顿国家统计局的国家统计概览明确给出全国 34 城口径；2021 年人口普查继续在聚居地层级将斯科普里与比托拉、库马诺沃、普里莱普、泰托沃、韦莱斯、奥赫里德等称为城市，同时明确斯科普里聚居地由 10 个市辖区片段组成。来源见：<https://www.stat.gov.mk/publikacii/makbrojki2014_en.pdf>、<https://makstat.stat.gov.mk/PXWeb/pxweb/en/MakStat/MakStat__Popisi__Popis2021__NaselenieVkupno__PodatociNaselenie/T1502P21.px/>。
+
+本批按 34 个独立城市逐项绑定固定 GeoNames ID，不把斯科普里的 10 个内部市辖区重复设置为城市，也不因人口较少而删除代米尔希萨尔、佩赫切沃等普通小城市。`scripts/import-north-macedonia-official-cities.py` 固定校验 34 个城市、首都与 33 个其他城市中心、唯一 ID、唯一中心点、8 个统计区中文归属和国界范围。2026-09-06 下载的 GeoNames 北马其顿国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `39749E6DE9526A99781B8419D779EA235737D883957FCB25DAB0D15E42D05625`，解压文本 SHA-256 为 `063C22470EE3690820943B5962B0F53F5B5C3978B3B789B324A574C24337714F`，生成 CSV SHA-256 为 `A6A0DFF05BDF35A200CDE6F1C78063681EFCFD436F02EFD6B83D147A6A280BE6`。所有地图主名称均为简体中文；没有攻略的城市统一显示为“尚未收录”。

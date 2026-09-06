@@ -772,6 +772,20 @@ const additionalCityCenterSources = [
     countryName: "斯洛文尼亚",
     continentCode: "EU",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "mk-official-cities-2026-09-06.csv",
+    ),
+    idPrefix: "north-macedonia",
+    codePrefix: "mk",
+    levelPrefix: "north_macedonia",
+    countryCode: "MK",
+    countryName: "北马其顿",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
