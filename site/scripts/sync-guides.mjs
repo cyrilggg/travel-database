@@ -590,6 +590,20 @@ const additionalCityCenterSources = [
     countryName: "巴林",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "qa-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "qatar",
+    codePrefix: "qa",
+    levelPrefix: "qatar",
+    countryCode: "QA",
+    countryName: "卡塔尔",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
