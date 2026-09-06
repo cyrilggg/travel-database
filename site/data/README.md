@@ -351,3 +351,11 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 `sources/xk-city-centers-2026-09-06.csv` 收录 39 个科索沃实体城市与城镇：以现行 38 个市镇的中心为基础，把南、北米特罗维察合并成一个连续城市中心，再补入巴尼亚和莱沙克两个仍被官方城市型名录单列的普通城镇。科索沃统计局 2024 年人口普查资料列出 38 个市镇，地方行政战略同时说明全国 38 个市镇、1,469 个聚居地和七个统计/经济地区：<https://askapi.rks-gov.net/Custom/edd9891f-da39-49a5-9b1c-4e933cd58f5f.pdf>、<https://kryeministri.rks-gov.net/wp-content/uploads/2023/01/STRATEGJIA-2022-2028-FINAL-ENG-Web-Noprint-final-PDF.pdf>。
 
 本批没有采用只统计七个三万人以上大城市的农业发展口径，而是保留德雷纳斯、克洛科特、帕尔泰什、拉尼卢格、尤尼克等普通小型市镇中心；同时不把米特罗维察跨河的两个市镇行政区重复显示为两座城市。地图主名称采用便于中文用户识别的简体中文，来源中的阿尔巴尼亚语、塞尔维亚语异名只用于稳定绑定。`scripts/import-kosovo-city-centers.py` 固定校验 39 个唯一城市点、四类来源层级数量、七个统计地区和坐标范围。2026-09-06 下载的 GeoNames `XK` 数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `16841FE7BFA2844342E1FDCFC5B5A3697F6B45871F172FD3673AAAEA589B1678`，解压文本 SHA-256 为 `AFC2F76FED2AB89B8D62988D546C24C036EEDD6C567C78501344F378BEE05A41`，生成 CSV SHA-256 为 `8F6883ED7DECB11CCDE891EB6EE5AE7173A898C095F2B5783A5326FA993EE20A`。地区标签仅用于数据分组与定位，不表达边界或主权立场；没有攻略的城市统一显示为“尚未收录”。
+
+## 保加利亚城市点
+
+`sources/bg-official-towns-2026-09-06.csv` 收录保加利亚全部 257 个法定城市。保加利亚国家统计局截至 2025 年 12 月 31 日的行政区划统计明确列出全国 5,256 个聚居地，其中 257 个为城市、4,999 个为村庄，并分属 28 个州和 265 个市镇：<https://www.nsi.bg/en/press-release/administrative-territorial-and-territorial-division-of-the-republic-of-bulgaria-9010>。国家聚居地注册表（ЕКАТТЕ）提供年度 JSON、Excel 档案：<https://www.nsi.bg/nrnm/ekatte/archive>。
+
+本批不设置人口门槛，梅尔尼克、马贾罗沃和普利斯卡等人口很少但具有法定城市身份的地点同样保留。由于国家统计局档案下载端点在本次构建环境中拒绝自动下载，导入器使用公开的 EKATTE 派生清单 `settlements_loc.csv`（`vlados/bulgaria-geocoding` 提交 `288010604df0a87b51b1a20ad0e247a3a1ca1345`）复现城市选择，并以国家统计局现行 257 城总数校验；该派生清单把两座修道院和两个铁路站也标成非村庄，导入器明确排除这四条非城市记录。来源文件 SHA-256 为 `6918087B9DA34DDCEFCFED4E98FC0EA86C1BA4B398F92847B63ACB31224EC40C`。
+
+地图稳定 ID 采用五位 EKATTE 聚居地代码，不随排序、中文译名或 GeoNames 更新变化；坐标逐项绑定固定 GeoNames ID。`scripts/import-bulgaria-official-towns.py` 固定校验 257 个法定城市、28 个州、唯一 EKATTE 与 GeoNames ID、六类来源层级和国界范围。2026-09-06 下载的 GeoNames 保加利亚国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `123D40F4DC71BD7CD59290E309C97C6ACA32CA2897A2DC64B3E20922967F756E`，解压文本 SHA-256 为 `6BCF14265A04CB0A4CEAF6BA65E2D112966A52DF826E10ADAA125AA515661366`，生成 CSV SHA-256 为 `620391E235FF4C5DA8915422765E4FB40D149008DC748E35A7580082EE540D8E`。所有 257 个地图主名称均为简体中文；同名的两座比亚拉以州名区分，没有攻略的城市统一显示为“尚未收录”。

@@ -800,6 +800,20 @@ const additionalCityCenterSources = [
     countryName: "科索沃",
     continentCode: "EU",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "bg-official-towns-2026-09-06.csv",
+    ),
+    idPrefix: "bulgaria",
+    codePrefix: "bg",
+    levelPrefix: "bulgaria",
+    countryCode: "BG",
+    countryName: "保加利亚",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
