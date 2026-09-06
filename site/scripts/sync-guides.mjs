@@ -758,6 +758,20 @@ const additionalCityCenterSources = [
     countryName: "塞尔维亚",
     continentCode: "EU",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "si-official-cities-2026-09-06.csv",
+    ),
+    idPrefix: "slovenia",
+    codePrefix: "si",
+    levelPrefix: "slovenia",
+    countryCode: "SI",
+    countryName: "斯洛文尼亚",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

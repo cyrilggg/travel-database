@@ -1,0 +1,70 @@
+administrative_code,name,official_name,admin_area,city_level,geonames_id,feature_code,population,longitude,latitude
+3203925,Bled,Bled,上卡尼奥拉统计区,official_city,3203925,PPLA,5181,14.116520,46.368590
+3198647,Jesenice,Jesenice,上卡尼奥拉统计区,official_city,3198647,PPLA,13255,14.062320,46.432400
+3197378,Kranj,Kranj,上卡尼奥拉统计区,official_city,3197378,PPLA,37966,14.355610,46.238870
+3192063,Radovljica,Radovljica,上卡尼奥拉统计区,official_city,3192063,PPLA,5940,14.175470,46.343470
+3188688,Tržič,Tržič,上卡尼奥拉统计区,official_city,3188688,PPLA,3670,14.310460,46.363570
+3190717,Škofja Loka,Škofja Loka,上卡尼奥拉统计区,official_city,3190717,PPLA,11619,14.306260,46.165510
+3186607,Železniki,Železniki,上卡尼奥拉统计区,official_city,3186607,PPLA,3075,14.172050,46.224820
+3186450,Žiri,Žiri,上卡尼奥拉统计区,official_city,3186450,PPLA,3588,14.107360,46.044050
+3203412,Brežice,Brežice,下萨瓦统计区,official_city,3203412,PPLA,6843,15.593190,45.907260
+3197581,Kostanjevica na Krki,Kostanjevica na Krki,下萨瓦统计区,official_city,3197581,PPLA,695,15.420360,45.845600
+3197147,Krško,Krško,下萨瓦统计区,official_city,3197147,PPLA,6852,15.491670,45.959150
+3192144,Radeče,Radeče,下萨瓦统计区,official_city,3192144,PPLA,2168,15.182060,46.065510
+3190950,Sevnica,Sevnica,下萨瓦统计区,official_city,3190950,PPLA,4660,15.316460,46.007920
+3197943,Kočevje,Kočevje,东南斯洛文尼亚统计区,official_city,3197943,PPLA,8113,14.860360,45.643230
+3195214,Metlika,Metlika,东南斯洛文尼亚统计区,official_city,3195214,PPLA,3206,15.313330,45.649830
+3194351,Novo Mesto,Novo mesto,东南斯洛文尼亚统计区,official_city,3194351,PPLA,24446,15.168860,45.803970
+3191685,Ribnica,Ribnica,东南斯洛文尼亚统计区,official_city,3191685,PPLA,3604,14.727500,45.738610
+3188886,Trebnje,Trebnje,东南斯洛文尼亚统计区,official_city,3188886,PPLA,3477,15.022380,45.904240
+3202333,Črnomelj,Črnomelj,东南斯洛文尼亚统计区,official_city,3202333,PPLA,5496,15.191900,45.572620
+3201730,Domžale,Domžale,中斯洛文尼亚统计区,official_city,3201730,PPLA,13204,14.593710,46.137740
+3199523,Grosuplje,Grosuplje,中斯洛文尼亚统计区,official_city,3199523,PPLA,7098,14.658910,45.955790
+3198365,Kamnik,Kamnik,中斯洛文尼亚统计区,official_city,3198365,PPLA,13644,14.612070,46.225870
+3196359,Ljubljana,Ljubljana,中斯洛文尼亚统计区,capital,3196359,PPLC,272220,14.505130,46.051080
+3218907,Logatec,Logatec,中斯洛文尼亚统计区,official_city,3218907,PPLA,8942,14.226520,45.916800
+3195281,Medvode,Medvode,中斯洛文尼亚统计区,official_city,3195281,PPLA,5380,14.411140,46.142200
+3195250,Mengeš,Mengeš,中斯洛文尼亚统计区,official_city,3195250,PPLA,6112,14.574420,46.168590
+3187663,Višnja Gora,Višnja Gora,中斯洛文尼亚统计区,official_city,3187663,PPL,1000,14.745280,45.953890
+3187214,Vrhnika,Vrhnika,中斯洛文尼亚统计区,official_city,3187214,PPLA,8413,14.294840,45.963500
+3199297,Hrastnik,Hrastnik,中萨瓦统计区,official_city,3199297,PPLA,5621,15.084560,46.146550
+3196425,Litija,Litija,中萨瓦统计区,official_city,3196425,PPLA,6505,14.821800,46.060380
+3188915,Trbovlje,Trbovlje,中萨瓦统计区,official_city,3188915,PPLA,15163,15.051780,46.154100
+3186906,Zagorje ob Savi,Zagorje ob Savi,中萨瓦统计区,official_city,3186906,PPLA,6439,14.996940,46.131790
+3204854,Ajdovščina,Ajdovščina,戈里齐亚统计区,official_city,3204854,PPLA,6843,13.909460,45.886010
+3203611,Bovec,Bovec,戈里齐亚统计区,official_city,3203611,PPLA,1631,13.552450,46.338080
+3199171,Idrija,Idrija,戈里齐亚统计区,official_city,3199171,PPLA,5955,14.027870,46.002950
+3194452,Nova Gorica,Nova Gorica,戈里齐亚统计区,official_city,3194452,PPLA,13031,13.648370,45.956040
+3189038,Tolmin,Tolmin,戈里齐亚统计区,official_city,3189038,PPLA,3534,13.733210,46.183040
+3191063,Šempeter pri Gorici,Šempeter pri Gorici,戈里齐亚统计区,official_city,3191063,PPLA,3694,13.641250,45.929270
+3196682,Lenart v Slovenskih Goricah,Lenart v Slovenskih goricah,波德拉夫统计区,official_city,3196682,PPLA,3285,15.831720,46.576760
+3195506,Maribor,Maribor,波德拉夫统计区,official_city,3195506,PPLA,96209,15.645930,46.555830
+3193965,Ormož,Ormož,波德拉夫统计区,official_city,3193965,PPLA,2174,16.152200,46.412100
+3192241,Ptuj,Ptuj,波德拉夫统计区,official_city,3192241,PPLA,17984,15.870180,46.420050
+3191401,Ruše,Ruše,波德拉夫统计区,official_city,3191401,PPLA,4503,15.517900,46.540130
+3190534,Slovenska Bistrica,Slovenska Bistrica,波德拉夫统计区,official_city,3190534,PPLA,7454,15.573470,46.393090
+3200197,Gornja Radgona,Gornja Radgona,波穆尔统计区,official_city,3200197,PPLA,3159,15.992190,46.672630
+3196681,Lendava,Lendava,波穆尔统计区,official_city,3196681,PPLA,3129,16.450910,46.564940
+3196307,Ljutomer,Ljutomer,波穆尔统计区,official_city,3196307,PPLA,3460,16.198170,46.517650
+3194648,Murska Sobota,Murska Sobota,波穆尔统计区,official_city,3194648,PPLA,11107,16.166430,46.662640
+3202709,Cerknica,Cerknica,滨海-内卡尼奥拉统计区,official_city,3202709,PPLA,4018,14.362630,45.797030
+3199131,Ilirska Bistrica,Ilirska Bistrica,滨海-内卡尼奥拉统计区,official_city,3199131,PPLA,4553,14.245710,45.567570
+3192673,Postojna,Postojna,滨海-内卡尼奥拉统计区,official_city,3192673,PPLA,9605,14.215280,45.774350
+3199017,Izola,Izola,滨海-喀斯特统计区,official_city,3199017,PPLA,11223,13.660150,45.536610
+3197753,Koper,Koper,滨海-喀斯特统计区,official_city,3197753,PPLA,25753,13.729630,45.548200
+3193341,Piran,Piran,滨海-喀斯特统计区,official_city,3193341,PPLA,4192,13.570560,45.527780
+3190945,Sežana,Sežana,滨海-喀斯特统计区,official_city,3190945,PPLA,6037,13.873330,45.709240
+3201253,Dravograd,Dravograd,科罗什卡统计区,official_city,3201253,PPLA,3289,15.018740,46.588460
+3195202,Mežica,Mežica,科罗什卡统计区,official_city,3195202,PPLA,3254,14.853070,46.520300
+3192484,Prevalje,Prevalje,科罗什卡统计区,official_city,3192484,PPLA,4643,14.920230,46.547030
+3191839,Ravne na Koroškem,Ravne na Koroškem,科罗什卡统计区,official_city,3191839,PPLA,6979,14.970530,46.543150
+3190536,Slovenj Gradec,Slovenj Gradec,科罗什卡统计区,official_city,3190536,PPLA,7249,15.083770,46.510880
+3202781,Celje,Celje,萨维尼亚统计区,official_city,3202781,PPLA,38059,15.260440,46.230920
+3196760,Laško,Laško,萨维尼亚统计区,official_city,3196760,PPLA,3456,15.235550,46.154630
+3191580,Rogaška Slatina,Rogaška Slatina,萨维尼亚统计区,official_city,3191580,PPLA,5111,15.639120,46.237330
+3190530,Slovenske Konjice,Slovenske Konjice,萨维尼亚统计区,official_city,3190530,PPLA,4869,15.423290,46.337350
+3189075,Velenje,Velenje,萨维尼亚统计区,official_city,3189075,PPLA,24327,15.112770,46.357190
+3339120,Zreče,Zreče,萨维尼亚统计区,official_city,3339120,PPLA,2935,15.379170,46.382220
+3191029,Šentjur,Šentjur,萨维尼亚统计区,official_city,3191029,PPLA,4940,15.397500,46.217220
+3190311,Šoštanj,Šoštanj,萨维尼亚统计区,official_city,3190311,PPLA,2880,15.048610,46.380000
+3186844,Žalec,Žalec,萨维尼亚统计区,official_city,3186844,PPLA,4943,15.164820,46.251510
