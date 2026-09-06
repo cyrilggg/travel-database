@@ -43,7 +43,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "philippines_independent_component_city" ||
     city.cityLevel === "vietnam_centrally_governed_city" ||
     city.cityLevel === "thailand_special_local_government" ||
-    city.cityLevel === "malaysia_federal_capital_city_hall"
+    city.cityLevel === "malaysia_federal_capital_city_hall" ||
+    city.cityLevel === "singapore_city_state_capital"
   ) {
     return "prefecture";
   }

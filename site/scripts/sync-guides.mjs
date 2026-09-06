@@ -155,6 +155,20 @@ const additionalCityCenterSources = [
     countryName: "马来西亚",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "sg-city-state-2026-09-06.csv",
+    ),
+    idPrefix: "singapore",
+    codePrefix: "sg",
+    levelPrefix: "singapore",
+    countryCode: "SG",
+    countryName: "新加坡",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

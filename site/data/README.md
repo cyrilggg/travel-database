@@ -63,3 +63,9 @@
 `sources/my-city-local-authorities-2026-09-06.csv` 收录马来西亚当前 20 个城市级地方行政入口：地方政府发展局现行目录中的 19 个 `Dewan/Majlis Bandaraya`，以及依据《联邦首都法》单列的吉隆坡市政厅。目录、地方政府类别、PBT 代码与机构坐标均来自马来西亚房屋及地方政府部地方政府发展局的实时官方目录：<https://jkt.kpkt.gov.my/senarai-nama-dan-alamat-pbt/>、<https://ejkt.kpkt.gov.my/eprofil/api/jkt-portal-senarai-maklumat>。名称中含 `Bandaraya` 但类别仍为 `Majlis Perbandaran` 的哥打巴鲁和兰卡威不在本批范围内；普通市议会和县议会同样不收录。
 
 19 个目录内单位使用官方 PBT 代码作为稳定 ID，吉隆坡使用官方机构缩写 `DBKL`；古晋按北市政厅与南市议会两个法定管辖单位分别保留。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 马来西亚国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `D7CDF5057205A319180BACDAB86ADE70D38239CDA6C1BEE87A54191F8874A598`。GeoNames 没有与 Seberang Perai、Kuching North、Kuching South 法定管辖单位一一对应的城市记录，这三项使用官方目录坐标并留空 GeoNames 标识，避免误绑到辖区内单一聚居点。
+
+## 新加坡城市点
+
+`sources/sg-city-state-2026-09-06.csv` 只收录新加坡一个城市国家级入口。新加坡外交部将其明确表述为 `city-state`：<https://www.mfa.gov.sg/about-singapore/>；城市规划使用的区域、规划区和分区是土地规划单元，不作为独立法定城市重复列入。稳定 ID 使用 ISO 3166-1 国家代码 `SG`。
+
+中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 新加坡国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `3DBBB2ACD8DD924F90DD5179B3444EA1FC0229D708BDBE08DC80000A26771A52`。
