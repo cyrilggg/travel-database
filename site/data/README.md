@@ -87,3 +87,9 @@
 `sources/la-official-cities-2026-09-06.csv` 收录万象首都和老挝现行 3 个正式 `ນະຄອນ` 城市，共 4 个入口。老挝总理于 2018 年批准将琅勃拉邦、凯山·丰威汉和巴色三个县级行政体升级为城市，官方通讯社公告：<https://kpl.gov.la/EN/detail.aspx?id=33983>；老挝政府第十个国家社会经济发展五年计划仍使用“Vientiane Capital, 3 cities”的现行口径：<https://rtm.org.la/wp-content/uploads/2025/11/10th_NSEDP_10112025_Eng.CLN1_.pdf>。塔凯克、万荣及其他省会、县治和普通城镇不因英文资料中的泛称 `city` 自动纳入。
 
 稳定 ID 使用老挝官方行政代码：万象首都使用省级代码 `01`，三个城市沿用升级前后不变的县级代码 `0601`、`1301` 和 `1601`。代码目录可由老挝贸易门户公布的部级决定复核：<https://laotradeportal.gov.la/en-gb/site/display/674>。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 老挝国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `97983335A0835F6F46C11D72D0A85D49E039074CC144F6B417C22D5A5A98F99B`。
+
+## 缅甸城市点
+
+`sources/mm-city-development-areas-2026-09-06.csv` 收录缅甸国家门户当前单列的 3 个城市发展辖区：内比都、仰光和曼德勒。国家门户的政府机构目录同时列出 Naypyitaw、Yangon、Mandalay 三个 City Development Committee：<https://myanmar.gov.mm/government-website>；仰光城市发展法也明确其委员会管辖 `City of Yangon Municipality` 的法定边界。其余 330 个 Township、普通 Town 及地方 Development Affairs 管辖区不因聚居地名称或英文泛称 `city` 纳入本批。
+
+稳定 ID 使用三个法定机构长期通行的官方简称 `NPTDC`、`YCDC`、`MCDC`，避免未来区县边界调整造成 ID 重排。中心点与 GeoNames 标识取自 2026-09-06 下载的 GeoNames 缅甸国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；下载压缩包 SHA-256 为 `FC711D9BCC1F43DB60E0C2C36C07B743AD7D0E3AA7F6C4980B1710F4694AD156`。

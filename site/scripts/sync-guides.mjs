@@ -211,6 +211,20 @@ const additionalCityCenterSources = [
     countryName: "老挝",
     continentCode: "AS",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "mm-city-development-areas-2026-09-06.csv",
+    ),
+    idPrefix: "myanmar",
+    codePrefix: "mm",
+    levelPrefix: "myanmar",
+    countryCode: "MM",
+    countryName: "缅甸",
+    continentCode: "AS",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}

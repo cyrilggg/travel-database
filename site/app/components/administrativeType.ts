@@ -47,7 +47,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "singapore_city_state_capital" ||
     city.cityLevel === "brunei_capital_municipal_area" ||
     city.cityLevel === "cambodia_capital_municipality" ||
-    city.cityLevel === "laos_capital_prefecture"
+    city.cityLevel === "laos_capital_prefecture" ||
+    city.cityLevel === "myanmar_capital_city_development_area"
   ) {
     return "prefecture";
   }
@@ -67,7 +68,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "malaysia_city_local_authority" ||
     city.cityLevel === "brunei_municipal_area" ||
     city.cityLevel === "cambodia_municipality" ||
-    city.cityLevel === "laos_city"
+    city.cityLevel === "laos_city" ||
+    city.cityLevel === "myanmar_city_development_area"
   ) {
     return "county-city";
   }
