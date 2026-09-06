@@ -615,10 +615,11 @@ function parseCsv(csv) {
 }
 
 async function loadCoordinates() {
-  const [csv, legalDecisionsCsv, legalCentersCsv] = await Promise.all([
+  const [csv, legalDecisionsCsv, legalCentersCsv, taiwanCsv] = await Promise.all([
     readSourceFile(coordinateInventoryPath),
     readSourceFile(legalCityDecisionsPath),
     readFile(legalCityCentersPath, "utf8"),
+    readFile(additionalCityCenterSources[0].path, "utf8"),
   ]);
   const coordinates = new Map();
 
@@ -642,6 +643,21 @@ async function loadCoordinates() {
     if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) continue;
 
     coordinates.set(String(decision.geonameid), { longitude, latitude });
+  }
+
+  // Taiwan entries already own stable map IDs; reuse the same reviewed centers.
+  for (const row of parseCsv(taiwanCsv)) {
+    if (!row.geonames_id) continue;
+    const latitude = Number(row.latitude);
+    const longitude = Number(row.longitude);
+    if (!row.latitude || !row.longitude ||
+        !Number.isFinite(latitude) || !Number.isFinite(longitude)) {
+      throw new Error(`台湾地图中心点无效：${row.administrative_code}`);
+    }
+    if (coordinates.has(row.geonames_id)) {
+      throw new Error(`台湾与大陆坐标库存 GeoNames ID 冲突：${row.geonames_id}`);
+    }
+    coordinates.set(row.geonames_id, { longitude, latitude });
   }
 
   return coordinates;

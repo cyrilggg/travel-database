@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate researched guides and both sparse China coverage ledgers."""
+"""Validate researched guides, China coverage snapshots, and the Taiwan batch."""
 
 from __future__ import annotations
 
@@ -30,7 +30,7 @@ REQUIRED_HEADINGS = (
 ALLOWED_DECISION_STATUSES = {"researched", "duplicate", "merged", "out_of_scope"}
 AUDIT_STATUSES = {"duplicate", "merged", "out_of_scope"}
 MERGE_STATUSES = {"duplicate", "merged"}
-ALLOWED_COVERAGE_SCOPES = {"geonames_snapshot", "legal_city_only"}
+ALLOWED_COVERAGE_SCOPES = {"geonames_snapshot", "legal_city_only", "taiwan_batch"}
 BANNED_PHRASES = (
     "对用户",
     "适合你",
@@ -376,6 +376,60 @@ def validate_legal_city_ledger(
     }
 
 
+def validate_taiwan_ledger(repository, city_pages, errors):
+    """Audit the Taiwan batch against its existing city centers, separately from CN snapshots."""
+    ledger_path = repository / "coverage/CN/taiwan-2026-09-06/decisions.csv"
+    if not ledger_path.exists():
+        return {"available": False, "researched_ids": []}
+    centers = {f"tw:{row['administrative_code']}": row
+               for row in read_csv(repository / "site/data/tw-city-centers.csv")}
+    seen = set()
+    researched = set()
+    for number, row in enumerate(read_csv(ledger_path), 2):
+        label = f"{ledger_path}:{number}"
+        candidate = row.get("candidate_id", "")
+        if candidate in seen:
+            errors.append(f"{label}: duplicate Taiwan candidate {candidate}")
+        seen.add(candidate)
+        center = centers.get(candidate)
+        if center is None:
+            errors.append(f"{label}: Taiwan candidate is not in existing city centers")
+            continue
+        if row.get("country_code") != "CN" or row.get("display_name") != center["name"]:
+            errors.append(f"{label}: Taiwan country/name does not match center")
+        for key in ("reason", "evidence", "updated_at"):
+            if not row.get(key):
+                errors.append(f"{label}: missing {key}")
+        if row.get("updated_at"):
+            parse_iso_date(row["updated_at"], label, errors)
+        status = row.get("status")
+        if status not in {"researched", "deferred"}:
+            errors.append(f"{label}: unsupported Taiwan status {status!r}")
+            continue
+        geonames_id = center["geonames_id"]
+        if status == "deferred":
+            if row.get("source_path") or row.get("guide_id") or row.get("target_guide_id"):
+                errors.append(f"{label}: deferred Taiwan candidate must not claim a guide")
+            continue
+        expected_path = f"destinations/中国/台湾省/{center['name']}.md"
+        page = city_pages.get(geonames_id)
+        if (row.get("guide_id") != f"cn-{geonames_id}"
+                or row.get("source_path") != expected_path
+                or row.get("target_guide_id") not in {"", f"cn-{geonames_id}"}
+                or page is None
+                or page[0].resolve() != (repository / expected_path).resolve()
+                or page[1].get("coverage_scope") != "taiwan_batch"
+                or page[1].get("country_code") != "CN"
+                or page[1].get("city") != center["name"]):
+            errors.append(f"{label}: Taiwan researched guide identity/path/scope mismatch")
+            continue
+        researched.add(geonames_id)
+    if seen != set(centers):
+        errors.append(f"{ledger_path}: Taiwan decisions must account for all existing city centers")
+    return {"available": True, "candidate_count": len(centers),
+            "researched_count": len(researched), "researched_ids": sorted(researched)}
+
+
 def validate_repository(
     repository: Path,
     snapshot_date: str,
@@ -492,12 +546,20 @@ def validate_repository(
         repository, legal_snapshot_date, city_pages, errors
     )
     legal_geonames_ids = set(legal_city_coverage.get("mapped_geonames_ids", []))
+    taiwan_coverage = validate_taiwan_ledger(repository, city_pages, errors)
+    taiwan_ids = set(taiwan_coverage["researched_ids"])
 
     for geonames_id, (path, front_matter) in city_pages.items():
         if front_matter.get("country_code") == "CN":
             coverage_scope = front_matter.get("coverage_scope", "geonames_snapshot")
             if coverage_scope not in ALLOWED_COVERAGE_SCOPES:
                 errors.append(f"{path}: invalid coverage_scope {coverage_scope!r}")
+                continue
+            if coverage_scope == "taiwan_batch":
+                if geonames_id in inventory or geonames_id in decisions_by_id:
+                    errors.append(f"{path}: Taiwan page must not enter the fixed CN inventory/ledger")
+                if geonames_id not in taiwan_ids:
+                    errors.append(f"{path}: Taiwan page lacks a matching researched Taiwan decision")
                 continue
             if coverage_scope == "legal_city_only":
                 if geonames_id in inventory:
@@ -531,6 +593,7 @@ def validate_repository(
         "phase_status_counts": phase_counts,
         "researched_page_count_all_countries": len(city_pages),
         "legal_city_coverage": legal_city_coverage,
+        "taiwan_coverage": taiwan_coverage,
         "errors": errors,
     }
 
