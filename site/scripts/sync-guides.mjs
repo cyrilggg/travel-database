@@ -716,6 +716,20 @@ const additionalCityCenterSources = [
     countryName: "黑山",
     continentCode: "EU",
   },
+  {
+    path: path.join(
+      siteRoot,
+      "data",
+      "sources",
+      "ba-city-centers-2026-09-06.csv",
+    ),
+    idPrefix: "bosnia-herzegovina",
+    codePrefix: "ba",
+    levelPrefix: "bosnia_herzegovina",
+    countryCode: "BA",
+    countryName: "波斯尼亚和黑塞哥维那",
+    continentCode: "EU",
+  },
 ];
 
 class SourceRefUnavailableError extends Error {}
