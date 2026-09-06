@@ -40,11 +40,12 @@ type MapPoint = {
 };
 
 const cityName = (name: string) => name.replace(/[市区]$/, "");
-const countryName = (city: MapCity) => {
-  if (city.administrativeCode.startsWith("kr:")) return "韩国";
-  if (city.administrativeCode.startsWith("kp:")) return "朝鲜";
-  return "中国";
-};
+const citySearchLabel = (city: MapCity) =>
+  `${cityName(city.city)} · ${city.adminArea} · ${city.countryName}`;
+const cityBreadcrumb = (city: MapCity) =>
+  city.adminArea === city.countryName
+    ? city.countryName
+    : `${city.countryName} / ${city.adminArea}`;
 const mappedGuideIds = new Set(
   mapCities.flatMap((city) => (city.guideId ? [city.guideId] : [])),
 );
@@ -79,13 +80,19 @@ const formatDistance = (distance: number) => {
   return `约 ${Math.round(distance / 10) * 10} km`;
 };
 
-const nearestGuides = (point: MapPoint, limit: number, excludedGuideId?: string) =>
+const nearestGuides = (
+  point: MapPoint,
+  limit: number,
+  excludedGuideId?: string,
+  maxDistance = Number.POSITIVE_INFINITY,
+) =>
   coveredGuides
     .filter((guide) => guide.id !== excludedGuideId)
     .map((guide) => ({
       guide,
       distance: distanceInKilometers(point, guide.coordinates),
     }))
+    .filter(({ distance }) => distance <= maxDistance)
     .sort((a, b) => a.distance - b.distance)
     .slice(0, limit);
 
@@ -123,6 +130,7 @@ export default function TravelMap() {
     () =>
       [...listedCities].sort(
         (a, b) =>
+          a.countryName.localeCompare(b.countryName, "zh-CN") ||
           a.adminArea.localeCompare(b.adminArea, "zh-CN") ||
           a.city.localeCompare(b.city, "zh-CN"),
       ),
@@ -130,11 +138,18 @@ export default function TravelMap() {
   );
 
   const cityGroups = useMemo(() => {
-    const groups = new Map<string, MapCity[]>();
+    const groups = new Map<string, { label: string; cities: MapCity[] }>();
     sortedCities.forEach((city) => {
-      const group = groups.get(city.adminArea) ?? [];
-      group.push(city);
-      groups.set(city.adminArea, group);
+      const key = `${city.countryCode}:${city.adminArea}`;
+      const group = groups.get(key) ?? {
+        label:
+          city.adminArea === city.countryName
+            ? city.countryName
+            : `${city.countryName} · ${city.adminArea}`,
+        cities: [],
+      };
+      group.cities.push(city);
+      groups.set(key, group);
     });
     return [...groups.entries()];
   }, [sortedCities]);
@@ -327,14 +342,19 @@ export default function TravelMap() {
       return;
     }
 
-    const cityMatch = mapCities.find((city) =>
-      `${city.city}${city.adminArea}`
-        .toLocaleLowerCase("zh-CN")
-        .includes(normalized),
+    const exactCityMatch = mapCities.find(
+      (city) => citySearchLabel(city).toLocaleLowerCase("zh-CN") === normalized,
     );
+    const cityMatch =
+      exactCityMatch ??
+      mapCities.find((city) =>
+        `${city.city}${city.adminArea}${city.countryName}`
+          .toLocaleLowerCase("zh-CN")
+          .includes(normalized),
+      );
     if (cityMatch) {
       openMapCity(cityMatch);
-      setSearchQuery(cityName(cityMatch.city));
+      setSearchQuery(citySearchLabel(cityMatch));
       return;
     }
 
@@ -504,11 +524,11 @@ export default function TravelMap() {
 
       {cityGroups.length > 0 ? (
         <div className="province-city-groups">
-          {cityGroups.map(([adminArea, areaCities]) => (
-            <section className="province-city-group" key={adminArea}>
-              <h3>{adminArea}</h3>
+          {cityGroups.map(([groupKey, group]) => (
+            <section className="province-city-group" key={groupKey}>
+              <h3>{group.label}</h3>
               <div className="city-index">
-                {areaCities.map((city) => (
+                {group.cities.map((city) => (
                   <button
                     key={city.id}
                     className={city.coverage === 0 ? "is-missing" : ""}
@@ -715,13 +735,13 @@ export default function TravelMap() {
   };
 
   const renderMissing = (city: MapCity) => {
-    const nearby = nearestGuides(city.coordinates, 3);
+    const nearby = nearestGuides(city.coordinates, 3, undefined, 300);
 
     return (
       <>
         <div className="panel-titlebar">
           <div>
-            <span className="panel-breadcrumb">{countryName(city)} / {city.adminArea}</span>
+            <span className="panel-breadcrumb">{cityBreadcrumb(city)}</span>
             <h2>{cityName(city.city)}</h2>
           </div>
           <div className="panel-actions">
@@ -754,17 +774,24 @@ export default function TravelMap() {
               </div>
               <small>直线距离</small>
             </div>
-            <div className="nearby-guides__list">
-              {nearby.map(({ guide, distance }) => (
-                <button key={guide.id} type="button" onClick={() => openGuide(guide)}>
-                  <span>
-                    <strong>{cityName(guide.city)}</strong>
-                    <small>{guide.adminArea}</small>
-                  </span>
-                  <em>{formatDistance(distance)}</em>
-                </button>
-              ))}
-            </div>
+            {nearby.length > 0 ? (
+              <div className="nearby-guides__list">
+                {nearby.map(({ guide, distance }) => (
+                  <button key={guide.id} type="button" onClick={() => openGuide(guide)}>
+                    <span>
+                      <strong>{cityName(guide.city)}</strong>
+                      <small>{guide.adminArea}</small>
+                    </span>
+                    <em>{formatDistance(distance)}</em>
+                  </button>
+                ))}
+              </div>
+            ) : (
+              <div className="map-list-empty">
+                <strong>附近还没有已收录攻略</strong>
+                <span>这座城市会先保留在地图上，攻略内容以后再补。</span>
+              </div>
+            )}
           </section>
         </div>
       </>
@@ -861,7 +888,7 @@ export default function TravelMap() {
           />
           <datalist id="city-options">
             {mapCities.map((city) => (
-              <option key={city.id} value={cityName(city.city)} />
+              <option key={city.id} value={citySearchLabel(city)} />
             ))}
           </datalist>
           <button type="submit">查找</button>
@@ -869,7 +896,7 @@ export default function TravelMap() {
       </header>
 
       <main className="experience-shell">
-        <section className="map-section" aria-label="东亚城市攻略地图">
+        <section className="map-section" aria-label="亚洲城市攻略地图">
           <TerrainMap
             cities={mapCities}
             activeCityId={activeMapCity?.id}

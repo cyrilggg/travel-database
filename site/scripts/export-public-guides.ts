@@ -68,6 +68,7 @@ export interface TravelGuide {
 }
 export interface MapCity {
   id: string; administrativeCode: string; city: string; adminArea: string; cityLevel: string;
+  countryCode: string; countryName: string; continentCode: string;
   coverage: 0 | 1; guideId?: string; coordinates: GuideCoordinates;
 }
 export const guides: TravelGuide[] = ${serialized};

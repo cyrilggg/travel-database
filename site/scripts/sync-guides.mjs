@@ -40,18 +40,36 @@ const additionalCityCenterSources = [
     idPrefix: "taiwan",
     codePrefix: "tw",
     levelPrefix: "taiwan",
+    countryCode: "CN",
+    countryName: "中国",
+    continentCode: "AS",
   },
   {
     path: path.join(siteRoot, "data", "kr-city-centers.csv"),
     idPrefix: "south-korea",
     codePrefix: "kr",
     levelPrefix: "south_korea",
+    countryCode: "KR",
+    countryName: "韩国",
+    continentCode: "AS",
   },
   {
     path: path.join(siteRoot, "data", "kp-city-centers.csv"),
     idPrefix: "north-korea",
     codePrefix: "kp",
     levelPrefix: "north_korea",
+    countryCode: "KP",
+    countryName: "朝鲜",
+    continentCode: "AS",
+  },
+  {
+    path: path.join(siteRoot, "data", "jp-city-centers.csv"),
+    idPrefix: "japan",
+    codePrefix: "jp",
+    levelPrefix: "japan",
+    countryCode: "JP",
+    countryName: "日本",
+    continentCode: "AS",
   },
 ];
 
@@ -226,6 +244,9 @@ async function loadMapCities(guides) {
       city: city.name,
       adminArea: city.province_name,
       cityLevel: city.city_level,
+      countryCode: "CN",
+      countryName: "中国",
+      continentCode: "AS",
       coverage: guide ? 1 : 0,
       ...(guide ? { guideId: guide.id } : {}),
       coordinates: {
@@ -255,6 +276,9 @@ async function loadMapCities(guides) {
           city: city.name,
           adminArea: city.admin_area,
           cityLevel: `${source.levelPrefix}_${city.city_level}`,
+          countryCode: source.countryCode,
+          countryName: source.countryName,
+          continentCode: source.continentCode,
           coverage: guide ? 1 : 0,
           ...(guide ? { guideId: guide.id } : {}),
           coordinates: { longitude, latitude },
@@ -270,6 +294,9 @@ async function loadMapCities(guides) {
       city: guide.city,
       adminArea: guide.adminArea,
       cityLevel: "guide_destination",
+      countryCode: "CN",
+      countryName: "中国",
+      continentCode: "AS",
       coverage: 1,
       guideId: guide.id,
       coordinates: guide.coordinates,
@@ -565,6 +592,9 @@ export interface MapCity {
   city: string;
   adminArea: string;
   cityLevel: string;
+  countryCode: string;
+  countryName: string;
+  continentCode: string;
   coverage: 0 | 1;
   guideId?: string;
   coordinates: GuideCoordinates;

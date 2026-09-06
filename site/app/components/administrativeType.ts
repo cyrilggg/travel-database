@@ -11,11 +11,11 @@ export const ADMINISTRATIVE_TYPE_INFO: Record<
   AdministrativeType,
   { label: string; color: string }
 > = {
-  prefecture: { label: "地级市及以上", color: "#d55e00" },
-  "county-city": { label: "县级市", color: "#0072b2" },
+  prefecture: { label: "主要城市", color: "#d55e00" },
+  "county-city": { label: "一般城市", color: "#0072b2" },
   county: { label: "县", color: "#cc79a7" },
   district: { label: "区", color: "#5e3c99" },
-  other: { label: "镇及其他", color: "#8f949b" },
+  other: { label: "其他入口", color: "#8f949b" },
 };
 
 export const ADMINISTRATIVE_TYPE_LEGEND = (
@@ -35,7 +35,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "south_korea_special_self_governing_city" ||
     city.cityLevel === "south_korea_integrated_special_city" ||
     city.cityLevel === "north_korea_directly_governed_city" ||
-    city.cityLevel === "north_korea_special_city"
+    city.cityLevel === "north_korea_special_city" ||
+    city.cityLevel === "japan_special_ward_area"
   ) {
     return "prefecture";
   }
@@ -45,7 +46,8 @@ export const administrativeTypeOf = (
     city.cityLevel === "taiwan_county_administered_city" ||
     city.cityLevel === "south_korea_municipal_city" ||
     city.cityLevel === "south_korea_administrative_city" ||
-    city.cityLevel === "north_korea_provincial_city"
+    city.cityLevel === "north_korea_provincial_city" ||
+    city.cityLevel === "japan_municipal_city"
   ) {
     return "county-city";
   }

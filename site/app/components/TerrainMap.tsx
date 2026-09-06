@@ -87,9 +87,9 @@ if (typeof document !== "undefined") {
   );
 }
 
-const EAST_ASIA_BOUNDS: [[number, number], [number, number]] = [
+const CURRENT_ASIA_BOUNDS: [[number, number], [number, number]] = [
   [73.2, 18.1],
-  [134.8, 53.6],
+  [154.5, 53.6],
 ];
 
 type TerrainMapProps = {
@@ -250,6 +250,7 @@ const guideFeatureCollection = (cities: MapCity[]) => ({
       guideId: city.guideId ?? "",
       city: shortCityName(city.city),
       adminArea: city.adminArea,
+      countryName: city.countryName,
       administrativeType: administrativeTypeOf(city),
       administrativeTypeLabel: administrativeTypeInfoOf(city).label,
       coverage: city.coverage,
@@ -1375,9 +1376,11 @@ export default function TerrainMap({
             const card = document.createElement("div");
             card.className = "terrain-popup-card";
             const title = document.createElement("strong");
-            title.textContent = `${String(feature.properties?.city ?? "")} · ${String(
-              feature.properties?.adminArea ?? "",
-            )}`;
+            const countryName = String(feature.properties?.countryName ?? "");
+            const adminArea = String(feature.properties?.adminArea ?? "");
+            title.textContent = `${String(feature.properties?.city ?? "")} · ${
+              countryName === adminArea ? countryName : `${countryName} / ${adminArea}`
+            }`;
             const stay = document.createElement("span");
             stay.textContent = `${String(
               feature.properties?.administrativeTypeLabel ?? "",
@@ -1431,7 +1434,7 @@ export default function TerrainMap({
         });
       }
 
-      map.fitBounds(EAST_ASIA_BOUNDS, {
+      map.fitBounds(CURRENT_ASIA_BOUNDS, {
         padding: mapPadding(panelLayoutRef.current, containerRef.current),
         duration: 0,
       });
@@ -1638,7 +1641,7 @@ export default function TerrainMap({
       return;
     }
 
-    map.fitBounds(EAST_ASIA_BOUNDS, {
+    map.fitBounds(CURRENT_ASIA_BOUNDS, {
       padding,
       pitch: terrainEnabledRef.current ? 18 : 0,
       bearing: 0,
@@ -1657,7 +1660,7 @@ export default function TerrainMap({
   useEffect(() => {
     const map = mapRef.current;
     if (!mapReady || !map || resetSignal === 0) return;
-    map.fitBounds(EAST_ASIA_BOUNDS, {
+    map.fitBounds(CURRENT_ASIA_BOUNDS, {
       padding: mapPadding(panelLayoutRef.current, containerRef.current),
       pitch: terrainEnabledRef.current ? 18 : 0,
       bearing: 0,
