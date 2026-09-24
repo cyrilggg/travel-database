@@ -60,6 +60,7 @@
 ## 非洲
 
 - [南非](./南非/README.md)
+- [埃及](./埃及/README.md)
 
 [旅行地图](https://cyrilggg.github.io/travel-database/)提供城市位置及已接入攻略的阅读入口，Markdown 目录按现有正文组织。
 
