@@ -230,5 +230,21 @@
     "city": "宿务",
     "country": "PH",
     "geonamesId": "1717512"
+  },
+  {
+    "sourcePath": "destinations/日本/京都府/京都市.md",
+    "mapId": "japan-26100",
+    "guideId": "jp-1857906",
+    "city": "京都市",
+    "country": "JP",
+    "geonamesId": "1857906"
+  },
+  {
+    "sourcePath": "destinations/日本/大阪府/大阪市.md",
+    "mapId": "japan-27100",
+    "guideId": "jp-1853897",
+    "city": "大阪市",
+    "country": "JP",
+    "geonamesId": "1853897"
   }
 ]
