@@ -13,7 +13,7 @@ const structuredDirectory = path.join(siteRoot, "public", "structured");
 await rm(structuredDirectory, { recursive: true, force: true });
 await mkdir(structuredDirectory, { recursive: true });
 
-const fullTextGuideIds = new Set(mapCities.filter((city) => city.id.startsWith("taiwan-") || ["KR", "KP", "JP", "SG", "TH", "MY", "VN", "ID", "KH", "LA", "PH", "SI", "HR", "BG", "RO", "RS", "AE", "TR"].includes(city.countryCode)).flatMap((city) => city.guideId ? [city.guideId] : []));
+const fullTextGuideIds = new Set(mapCities.filter((city) => city.id.startsWith("taiwan-") || ["KR", "KP", "JP", "SG", "TH", "MY", "VN", "ID", "KH", "LA", "PH", "SI", "HR", "BG", "RO", "RS", "AE", "TR", "IN"].includes(city.countryCode)).flatMap((city) => city.guideId ? [city.guideId] : []));
 const readings = await loadTaiwanReadings(path.resolve(siteRoot, ".."));
 const readingTargets = new Map([
   ...guides.filter((guide) => fullTextGuideIds.has(guide.id)).map((guide) => [guide.sourcePath, guide.id] as const),
