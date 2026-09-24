@@ -214,5 +214,21 @@
     "city": "万象",
     "country": "LA",
     "geonamesId": "1651944"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/国家首都区/马尼拉.md",
+    "mapId": "philippines-1380600000",
+    "guideId": "ph-1701668",
+    "city": "马尼拉",
+    "country": "PH",
+    "geonamesId": "1701668"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/宿务/宿务.md",
+    "mapId": "philippines-0730600000",
+    "guideId": "ph-1717512",
+    "city": "宿务",
+    "country": "PH",
+    "geonamesId": "1717512"
   }
 ]
