@@ -41,6 +41,7 @@
 - [挪威](./挪威/README.md)
 - [芬兰](./芬兰/README.md)
 - [波兰](./波兰/README.md)
+- [爱沙尼亚](./爱沙尼亚/README.md)
 - [斯洛文尼亚](./斯洛文尼亚/README.md)
 - [克罗地亚](./克罗地亚/README.md)
 - [保加利亚](./保加利亚/README.md)
