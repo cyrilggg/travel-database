@@ -468,6 +468,12 @@ input:focus-visible {
   gap: 6px;
 }
 
+.map-legend .legend-scale {
+  flex-basis: 100%;
+  font-weight: 600;
+  color: #365b52;
+}
+
 .legend-dot {
   width: 8px;
   height: 8px;

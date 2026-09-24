@@ -10,7 +10,6 @@ import {
   coveredCityCount,
   guides,
   mapCities,
-  targetCityCount,
   regionalReadings,
   type GuideBrowseItem,
   type GuideBrowseKey,
@@ -25,7 +24,9 @@ import {
   type GuideMapSelection,
 } from "./guideMapData";
 import { buildJourneyPlan } from "./journeyPlannerLogic";
-import { administrativeTypeInfoOf } from "./administrativeType";
+import { administrativeTypeInfoOf, cityLevelPolicyOf } from "./administrativeType";
+import { isDefaultMapDestination } from "./cityMapVisibility";
+import { citySearchLabel, findMapCity } from "./citySearch";
 
 type PanelState =
   | { kind: "home" }
@@ -43,8 +44,6 @@ type MapPoint = {
 };
 
 const cityName = (name: string) => name.replace(/[市区]$/, "");
-const citySearchLabel = (city: MapCity) =>
-  [cityName(city.city), ...new Set([city.adminArea, city.countryName])].join(" · ");
 const cityBreadcrumb = (city: MapCity) =>
   city.adminArea === city.countryName
     ? city.countryName
@@ -54,6 +53,7 @@ const mappedGuideIds = new Set(
 );
 const coveredGuides = guides.filter((guide) => mappedGuideIds.has(guide.id));
 const planningCities = mapCities.filter((city) => city.coverage === 1 && city.guideId && city.countryCode !== "KP");
+const catalogDestinations = mapCities.filter(isDefaultMapDestination);
 
 const formatDate = (value: string) => {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
@@ -107,7 +107,7 @@ export default function TravelMap() {
   const [searchQuery, setSearchQuery] = useState("");
   const [cityScope, setCityScope] = useState<"viewport" | "all">("viewport");
   const [viewportCityIds, setViewportCityIds] = useState<string[]>(() =>
-    mapCities.map((city) => city.id),
+    catalogDestinations.map((city) => city.id),
   );
   const [guideMapSelection, setGuideMapSelection] = useState<GuideMapSelection>({
     mode: "overview",
@@ -125,8 +125,8 @@ export default function TravelMap() {
   const listedCities = useMemo(
     () =>
       cityScope === "viewport"
-        ? mapCities.filter((city) => viewportCityIdSet.has(city.id))
-        : mapCities,
+        ? catalogDestinations.filter((city) => viewportCityIdSet.has(city.id))
+        : catalogDestinations,
     [cityScope, viewportCityIdSet],
   );
 
@@ -379,16 +379,7 @@ export default function TravelMap() {
       return;
     }
 
-    const exactCityMatch = mapCities.find(
-      (city) => citySearchLabel(city).toLocaleLowerCase("zh-CN") === normalized,
-    );
-    const cityMatch =
-      exactCityMatch ??
-      mapCities.find((city) =>
-        `${city.city}${city.adminArea}${city.countryName}`
-          .toLocaleLowerCase("zh-CN")
-          .includes(normalized),
-      );
+    const cityMatch = findMapCity(mapCities, normalized);
     if (cityMatch) {
       openMapCity(cityMatch);
       setSearchQuery(citySearchLabel(cityMatch));
@@ -495,7 +486,7 @@ export default function TravelMap() {
       <p className="panel-eyebrow">旅行地图</p>
       <h2>从地图开始</h2>
       <p className="panel-intro">
-        地图颜色区分地级市、县级市、县与区；实心表示已有攻略，空心表示尚未收录。拖动或缩放地图，目录会跟着当前视野变化。
+        先看主要城市，放大后逐步显示一般城市和地方中心。数字圆点可点击展开；实心表示已有攻略，空心表示尚未收录。各国类型按当地口径标注。
       </p>
 
       <section className="planning-entry" aria-labelledby="planning-entry-title">
@@ -518,7 +509,7 @@ export default function TravelMap() {
 
       <div className="coverage-summary" aria-label="城市攻略覆盖进度">
         <strong>{coveredCityCount}</strong>
-        <span>座城市已有攻略 · {targetCityCount - coveredCityCount} 座尚未收录</span>
+        <span>个目的地已有攻略 · {catalogDestinations.length - coveredCityCount} 个尚未收录</span>
       </div>
 
       <button className="random-explore" type="button" onClick={exploreRandomGuide}>
@@ -807,7 +798,9 @@ export default function TravelMap() {
 
         <div className="guide-overview missing-guide-overview">
           <p className="guide-summary">
-            这座城市的攻略还在路上，先从附近已经整理好的城市继续看看。
+            {cityLevelPolicyOf(city).reviewRequired
+              ? "此地点的城市身份尚待核验，暂不列入默认地图。搜索仍可定位，攻略尚未收录。"
+              : "这个目的地的攻略还在路上，先从附近已经整理好的城市继续看看。"}
           </p>
 
           <section className="nearby-guides" aria-labelledby={`${city.id}-nearby`}>
@@ -833,7 +826,7 @@ export default function TravelMap() {
             ) : (
               <div className="map-list-empty">
                 <strong>附近还没有已收录攻略</strong>
-                <span>这座城市会先保留在地图上，攻略内容以后再补。</span>
+                <span>可以继续搜索其他目的地，或缩小地图探索周边。</span>
               </div>
             )}
           </section>
@@ -940,7 +933,7 @@ export default function TravelMap() {
       </header>
 
       <main className="experience-shell">
-        <section className="map-section" aria-label="亚洲城市攻略地图">
+        <section className="map-section" aria-label="全球目的地攻略地图">
           <TerrainMap
             cities={mapCities}
             activeCityId={activeMapCity?.id}

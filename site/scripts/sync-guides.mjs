@@ -12,6 +12,8 @@ import path from "node:path";
 import { promisify } from "node:util";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
+import { validateCityLevelPolicies } from "./city-level-policy.mjs";
+import { readWorldCityInventory, worldMapCities } from "./world-city-inventory.mjs";
 
 const execFileAsync = promisify(execFile);
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
@@ -1014,6 +1016,11 @@ async function loadCoordinates() {
       coordinates.set(row.geonames_id, { longitude, latitude });
     }
   }
+  for (const row of await readWorldCityInventory()) {
+    if (!row.geonamesId || !guideCountries.has(row.countryCode)) continue;
+    if (coordinates.has(row.geonamesId)) throw new Error(`全球城市 GeoNames ID 冲突：${row.geonamesId}`);
+    coordinates.set(row.geonamesId, row.coordinates);
+  }
   return coordinates;
 }
 
@@ -1136,6 +1143,15 @@ async function loadMapCities(guides) {
       }),
   );
 
+  const worldRows = await readWorldCityInventory();
+  const existingGeonamesIds = new Set(additionalCityCsvs.flatMap(csv =>
+    parseCsv(csv).map(city => city.geonames_id).filter(Boolean)));
+  for (const row of worldRows) {
+    if (row.geonamesId && existingGeonamesIds.has(row.geonamesId)) {
+      throw new Error(`全球城市与已有入口重复：${row.id} / GeoNames ${row.geonamesId}；保留已有 ID 并更新全球导入排除表`);
+    }
+  }
+  const globalCities = worldMapCities(worldRows, guides, mappedGuideIds);
   const additionalGuideDestinations = guides
     .filter((guide) => !mappedGuideIds.has(guide.id))
     .map((guide) => ({
@@ -1155,8 +1171,11 @@ async function loadMapCities(guides) {
   const mapCities = [
     ...legalCities,
     ...additionalCountryCities,
+    ...globalCities,
     ...additionalGuideDestinations,
   ];
+  const policies = JSON.parse(await readFile(path.join(siteRoot, "data", "city-level-policy.json"), "utf8"));
+  validateCityLevelPolicies(mapCities, policies);
   const visibleGuideIds = mapCities.flatMap((city) =>
     city.guideId ? [city.guideId] : [],
   );
@@ -1586,7 +1605,7 @@ async function syncGuides() {
   const coveredCount = mapCities.filter((city) => city.coverage === 1).length;
   const missingCount = mapCities.filter((city) => city.coverage === 0).length;
   console.log(
-    `已从当前仓库@${sourceRevision.slice(0, 7)} 同步 ${cityResult.guides.length} 个单目的地攻略；地图显示 ${coveredCount} 个已有攻略点、${missingCount} 个尚未收录点（${provinceCount} 个省级地区）`,
+    `已从当前仓库@${sourceRevision.slice(0, 7)} 同步 ${cityResult.guides.length} 个单目的地攻略；地图原始库存 ${coveredCount} 个已有攻略点、${missingCount} 个尚未收录点（${provinceCount} 个省级地区），实际显示按类型与缩放筛选`,
   );
 }
 

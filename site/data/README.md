@@ -1,5 +1,23 @@
 # 地图目标城市中心点
 
+## 全球主要城市增量（2026-09-25）
+
+`world-major-city-centers.json` 为其余国家新增 1,106 个主要城市或地区中心，覆盖新增 162 个国家或地区；与既有库存合计 222 个国家或地区代码，包含全部 193 个联合国会员国及 2 个观察员国。地图入口不等于已完成攻略，也不意味着所有属地或所有城市均已收录。新增来源为 [Natural Earth](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/)（公有领域）及 [GeoNames](https://www.geonames.org/about.html)（CC BY 4.0）。
+
+本增量以来源首都标记、都市人口估计至少 25 万，或区域重要性等级不高于 4 且人口估计至少 5 万作为选点条件；空白地区补充一个主要中心，另补基特加与亚伦。人口仅用于筛选，不作为当前人口或法定身份声明。新点统一显示“主要城市/地区中心”，不直接沿用来源中的历史首都标签。旧国家清单、ID 和 684 条待核验状态保持兼容。
+
+当前全库存 11,753 条，默认目录 11,069 条，958 个入口已有攻略。固定版本、来源哈希、重复点排除、中文名覆盖和额外补充记录在 `world-major-cities.sources.json`。常规构建使用本地快照；更新源文件后执行 `npm run cities:world:import`，再构建、运行 `npm run test:map` 和 `npm run guides:audit`。完整规则、兼容方案和验收见[全球主要城市记录](../../docs/changes/2026-09-25-world-major-cities.md)。
+
+## 当前地图展示与待核验清单
+
+自 2026-09-24 的本地维护版本起，下文各国数量表示**原始入口库存**，不等于默认地图同时显示的点数，也不代表全部已获法定城市身份确认。显示规则集中在 `city-level-policy.json`：区分主要城市与区域中心、一般城市、地方行政中心和其他目的地；不同国家同色不表示法定行政级别相等。
+
+概览优先显示主要城市与区域中心，7 级缩放加入一般城市，9 级加入地方行政中心，10 级加入其他目的地；已有攻略不受这些门槛限制。如果某国清单未区分主要城市，则用其已有最高展示组参与聚合，不臆造首都或省会身份。聚合持续到 12 级，放大可逐步展开。
+
+仅凭 `*_5000_plus` 人口门槛接入、或同时混用官方城市和人口聚居点的来源类型，进入待核验状态，退出默认地图和目录，保留原 ID、坐标和搜索定位。当前共 684 条，其中土耳其 111 条。此状态表示证据尚不足，不表示这些地点一定不是城市；补充逐项官方证据后再细化类型。已有攻略始终保留。
+
+新增国家/类型必须补充该规则表，构建会拒绝未分类的输入。运行 `npm run build:pages` 后执行 `npm run guides:audit` 可生成 `outputs/city-map-audit.json`，列出每国各尺度数量和待核验地点 ID。完整行为与验收见[城市地图密度维护记录](../../docs/changes/2026-09-24-map-density.md)。
+
 地图面向中文用户，所有城市主名称统一使用简体中文。`city-names-zh.csv` 以国家代码和稳定行政代码关联海外城市：优先使用 Wikidata 与 GeoNames 的现有中文标签，没有通行中文名的城市使用中文音译；`source_name` 保留官方或来源拼写用于匹配和复核。同步脚本会拒绝缺少中文名、夹带拉丁字母、重复键或原名已经漂移的记录，名称调整不改变城市 ID、攻略关联或已保存记录。
 
 `cn-legal-city-centers.csv` 对应仓库固定的 2025-12-31 中国大陆法定城市清单，共 695 座。
@@ -204,7 +222,7 @@
 
 ## 格鲁吉亚城市点
 
-`sources/ge-statutory-cities-2026-09-06.csv` 收录格鲁吉亚现行 63 个法定城市：5 个自治市、政府实际管辖区内的另外 50 个城市，以及法律与官方统计城市序列中位于未实际管辖地区的 8 个城市。政府实际管辖区的 55 城逐城取自国家统计局 2024 年人口普查最终行政地域工作簿：<https://www.geostat.ge/en/modules/categories/909/the-geographical-distribution-of-the-population-and-internal-migration>，本次官方 Excel 快照 SHA-256 为 `D6348F94CB4827C4C9433F3EE5820EC35DC016254316AE65EB07FE923EDC0DE1`。国家统计局年鉴把 New Athos、Gagra、Gali、Gudauta、Ochamchire、Sokhumi、Tkvarcheli 和 Tskhinvali 列在 `Cities` 而非 `Urban type settlements` 下：<https://geostat.ge/media/20935/Yearbook_2014.pdf>；现行《地方自治法典》定义城市与小城镇为不同聚居地类别，并确认当前 5 个自治市为 Tbilisi、Rustavi、Kutaisi、Poti 和 Batumi：<https://www.matsne.gov.ge/en/document/view/2244429?publication=63>。因此不纳入 borough / daba、村庄、城市内部行政区或多个聚居地组成的自治市整体。
+`sources/ge-statutory-cities-2026-09-06.csv` 收录格鲁吉亚现行 63 个法定城市：5 个自治市、政府实际管辖区内的另外 50 个城市，以及法律与官方统计城市序列中位于未实际管辖地区的 8 个城市。政府实际管辖区的 55 城逐城取自国家统计局 2024 年人口普查最终行政地域工作簿：<https://www.geostat.ge/en/modules/categories/909/the-geographical-distribution-of-the-population-and-internal-migration>，本次官方 Excel 快照 SHA-256 为 `D6348F94CB4827C4C9583F3EE5820EC35DC016254316AE65EB07FE923EDC0DE1`。国家统计局年鉴把 New Athos、Gagra、Gali、Gudauta、Ochamchire、Sokhumi、Tkvarcheli 和 Tskhinvali 列在 `Cities` 而非 `Urban type settlements` 下：<https://geostat.ge/media/20935/Yearbook_2014.pdf>；现行《地方自治法典》定义城市与小城镇为不同聚居地类别，并确认当前 5 个自治市为 Tbilisi、Rustavi、Kutaisi、Poti 和 Batumi：<https://www.matsne.gov.ge/en/document/view/2244429?publication=63>。因此不纳入 borough / daba、村庄、城市内部行政区或多个聚居地组成的自治市整体。
 
 官方工作簿没有为地图中心点提供坐标，也不公开当前内部行政地域分类的可复用城市代码，因此稳定 ID 使用对应 GeoNames 标识。`scripts/import-georgia-statutory-cities.py` 固定校验官方工作簿与 GeoNames 快照哈希、55 城原始顺序、63 城及三级数量、唯一名称、唯一 ID、唯一中心点和国界范围。中心点来自 2026-09-06 下载的 GeoNames 国家数据快照，按 CC BY 4.0 使用：<https://www.geonames.org/export/>；压缩包 SHA-256 为 `2AF7C3CE99A740E95191C374FE619B9809B5E9F3378340E17DABB3E27D9AFB56`，解压文本 SHA-256 为 `C931624C25587EEECA8ABB6490C572122C85188B5DDD765F5B1589E967F816B7`，生成 CSV SHA-256 为 `C58DC6212D90153A7813B1DBCA031AE1CFF76FD50B054EF78607F43C3229837E`。对同名居民点与拼写差异使用固定 GeoNames 标识，避免中心点漂移；没有对应攻略的城市统一显示为“尚未收录”。
 
@@ -344,7 +362,7 @@ GeoNames 快照尚未把 2025 年新设的哈拉卜贾省会提升为 `PPLA`，�
 
 `sources/mk-official-cities-2026-09-06.csv` 收录北马其顿全部 34 个城市。北马其顿国家统计局的国家统计概览明确给出全国 34 城口径；2021 年人口普查继续在聚居地层级将斯科普里与比托拉、库马诺沃、普里莱普、泰托沃、韦莱斯、奥赫里德等称为城市，同时明确斯科普里聚居地由 10 个市辖区片段组成。来源见：<https://www.stat.gov.mk/publikacii/makbrojki2014_en.pdf>、<https://makstat.stat.gov.mk/PXWeb/pxweb/en/MakStat/MakStat__Popisi__Popis2021__NaselenieVkupno__PodatociNaselenie/T1502P21.px/>。
 
-本批按 34 个独立城市逐项绑定固定 GeoNames ID，不把斯科普里的 10 个内部市辖区重复设置为城市，也不因人口较少而删除代米尔希萨尔、佩赫切沃等普通小城市。`scripts/import-north-macedonia-official-cities.py` 固定校验 34 个城市、首都与 33 个其他城市中心、唯一 ID、唯一中心点、8 个统计区中文归属和国界范围。2026-09-06 下载的 GeoNames 北马其顿国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `39749E6DE9526A99781B8419D779EA235737D883957FCB25DAB0D15E42D05625`，解压文本 SHA-256 为 `063C22470EE3690820943B5962B0F53F5B5C3978B3B789B324A574C24337714F`，生成 CSV SHA-256 为 `A6A0DFF05BDF35A200CDE6F1C78063681EFCFD436F02EFD6B83D147A6A280BE6`。所有地图主名称均为简体中文；没有攻略的城市统一显示为“尚未收录”。
+本批按 34 个独立城市逐项绑定固定 GeoNames ID，不把斯科普里的 10 个内部市辖区重复设置为城市，也不因人口较少而删除代米尔希萨尔、佩赫切沃等普通小城市。`scripts/import-north-macedonia-official-cities.py` 固定校验 34 个城市、首都与 33 个其他城市中心、唯一 ID、唯一中心点、8 个统计区中文归属和国界范围。2026-09-06 下载的 GeoNames 北马其顿国家数据快照按 CC BY 4.0 使用，压缩包 SHA-256 为 `39749E6DE9526A99781B8419D779EA235737D883957FCB25DAB0D15E42D05625`，解压文本 SHA-256 为 `063C22470EE3690820958B5962B0F53F5B5C3978B3B789B324A574C24337714F`，生成 CSV SHA-256 为 `A6A0DFF05BDF35A200CDE6F1C78063681EFCFD436F02EFD6B83D147A6A280BE6`。所有地图主名称均为简体中文；没有攻略的城市统一显示为“尚未收录”。
 
 ## 科索沃城市点
 
