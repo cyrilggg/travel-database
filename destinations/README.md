@@ -26,6 +26,7 @@
 - [英国](./英国/README.md)
 - [意大利](./意大利/README.md)
 - [西班牙](./西班牙/README.md)
+- [葡萄牙](./葡萄牙/README.md)
 - [斯洛文尼亚](./斯洛文尼亚/README.md)
 - [克罗地亚](./克罗地亚/README.md)
 - [保加利亚](./保加利亚/README.md)
