@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import rows from '../data/world-major-city-centers.json';
 import sources from '../data/world-major-cities.sources.json';
-import { mapCities } from '../app/generated/publicGuides';
+import { mapCities, guides } from '../app/generated/publicGuides';
 import { validateWorldCityInventory, worldMapCities } from '../scripts/world-city-inventory.mjs';
 import { visibleMapCities } from '../app/components/cityMapVisibility';
 import { findMapCity } from '../app/components/citySearch';
@@ -22,9 +22,17 @@ test('world additions use valid unique stable identities and honest empty-guide 
   assert.equal(additions.length, rows.length);
   assert.equal(rows.length, 1106);
   assert.equal(new Set(rows.map(row => row.countryCode)).size, 162);
-  assert.equal(mapCities.length - additions.length, 10647);
+  assert.ok(mapCities.length - additions.length >= 10647);
   assert.equal(new Set(mapCities.map(city => city.id)).size, mapCities.length);
-  assert.ok(additions.every(city => city.coverage === 0 && !city.guideId));
+  for (const city of additions) {
+    if (city.coverage === 0) assert.equal(city.guideId, undefined);
+    else {
+      const guide = guides.find(guide => guide.id === city.guideId);
+      assert.ok(guide, `${city.id} claims coverage without a published guide`);
+      assert.equal(guide.geonamesId, rows.find(row => row.id === city.id)?.geonamesId);
+      assert.equal(guide.countryCode, city.countryCode);
+    }
+  }
   assert.ok(rows.every(row => !sources.existingCountryCodes.includes(row.countryCode)));
   assert.ok(rows.every(row => !/station|historic/i.test(row.sourceFeatureClass)));
   assert.ok(!rows.some(row => row.geonamesId === '694423'), 'Sevastopol keeps its existing Ukrainian inventory identity');

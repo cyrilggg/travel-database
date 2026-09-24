@@ -17,7 +17,9 @@ test("all imported levels require deliberate policies, unknown levels fail the b
 });
 
 test("Turkey: 81 overview anchors; 779 district centers on zoom; 111 candidates stay out", () => {
-  const cities = mapCities.filter(city => city.countryCode === "TR");
+  // Check the inventory policy independently of newly authored guide exemptions.
+  const cities = mapCities.filter(city => city.id.startsWith("turkey-"))
+    .map(city => ({...city, coverage: 0 as const, guideId: undefined}));
   assert.equal(cities.length, 971);
   assert.equal(visibleMapCities(cities, 6.9).length, 81);
   assert.equal(visibleMapCities(cities, 8.9).length, 81);
