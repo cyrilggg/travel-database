@@ -22,7 +22,7 @@ const outputPath = path.join(generatedDirectory, "guides.ts");
 const publicRoot = path.join(siteRoot, "public");
 const publicGuidesPath = path.join(publicRoot, "guides");
 
-const guideCountries = new Map([["CN", "中国"], ["KR", "韩国"], ["KP", "朝鲜"], ["JP", "日本"], ["SG", "新加坡"], ["TH", "泰国"], ["MY", "马来西亚"], ["VN", "越南"], ["ID", "印度尼西亚"], ["KH", "柬埔寨"], ["LA", "老挝"], ["PH", "菲律宾"], ["SI", "斯洛文尼亚"], ["HR", "克罗地亚"]]);
+const guideCountries = new Map([["CN", "中国"], ["KR", "韩国"], ["KP", "朝鲜"], ["JP", "日本"], ["SG", "新加坡"], ["TH", "泰国"], ["MY", "马来西亚"], ["VN", "越南"], ["ID", "印度尼西亚"], ["KH", "柬埔寨"], ["LA", "老挝"], ["PH", "菲律宾"], ["SI", "斯洛文尼亚"], ["HR", "克罗地亚"], ["BG", "保加利亚"]]);
 const coordinateInventoryPath =
   "coverage/geonames/2026-07-30/inventory/CN.csv";
 const legalCityInventoryPath =
@@ -1591,3 +1591,4 @@ async function syncGuides() {
 }
 
 await syncGuides();
+

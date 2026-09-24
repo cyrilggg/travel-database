@@ -13,7 +13,7 @@ const structuredDirectory = path.join(siteRoot, "public", "structured");
 await rm(structuredDirectory, { recursive: true, force: true });
 await mkdir(structuredDirectory, { recursive: true });
 
-const fullTextGuideIds = new Set(mapCities.filter((city) => city.id.startsWith("taiwan-") || ["KR", "KP", "JP", "SG", "TH", "MY", "VN", "ID", "KH", "LA", "PH", "SI", "HR"].includes(city.countryCode)).flatMap((city) => city.guideId ? [city.guideId] : []));
+const fullTextGuideIds = new Set(mapCities.filter((city) => city.id.startsWith("taiwan-") || ["KR", "KP", "JP", "SG", "TH", "MY", "VN", "ID", "KH", "LA", "PH", "SI", "HR", "BG"].includes(city.countryCode)).flatMap((city) => city.guideId ? [city.guideId] : []));
 const readings = await loadTaiwanReadings(path.resolve(siteRoot, ".."));
 const readingTargets = new Map([
   ...guides.filter((guide) => fullTextGuideIds.has(guide.id)).map((guide) => [guide.sourcePath, guide.id] as const),
@@ -113,3 +113,4 @@ export const coveredCityCount = mapCities.filter((city) => city.coverage === 1).
 await mkdir(path.dirname(outputPath), { recursive: true });
 await writeFile(outputPath, moduleSource, "utf8");
 console.log(`已生成 ${publicGuides.length} 城公开结构化数据；另发布 ${publicGuides.filter((guide) => guide.fullTextPath).length} 篇完整攻略`);
+
