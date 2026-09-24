@@ -182,5 +182,21 @@
     "city": "登巴萨",
     "country": "ID",
     "geonamesId": "1645528"
+  },
+  {
+    "sourcePath": "destinations/柬埔寨/暹粒省/暹粒.md",
+    "mapId": "cambodia-1710",
+    "guideId": "kh-1822214",
+    "city": "暹粒",
+    "country": "KH",
+    "geonamesId": "1822214"
+  },
+  {
+    "sourcePath": "destinations/柬埔寨/金边/金边.md",
+    "mapId": "cambodia-12",
+    "guideId": "kh-1821306",
+    "city": "金边",
+    "country": "KH",
+    "geonamesId": "1821306"
   }
 ]
