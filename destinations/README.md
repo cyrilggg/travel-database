@@ -16,6 +16,7 @@
 - [柬埔寨](./柬埔寨/README.md)
 - [老挝](./老挝/README.md)
 - [菲律宾](./菲律宾/README.md)
+- [阿联酋](./阿联酋/README.md)
 
 ## 欧洲
 
@@ -29,6 +30,7 @@
 [旅行地图](https://cyrilggg.github.io/travel-database/)提供城市位置及已接入攻略的阅读入口，Markdown 目录按现有正文组织。
 
 2026-09-25：整理当前目的地导航，城市具体开放信息见各篇行前核对。
+
 
 
 
