@@ -246,5 +246,13 @@
     "city": "大阪市",
     "country": "JP",
     "geonamesId": "1853897"
+  },
+  {
+    "sourcePath": "destinations/日本/福冈县/福冈市.md",
+    "mapId": "japan-40130",
+    "guideId": "jp-1863955",
+    "city": "福冈市",
+    "country": "JP",
+    "geonamesId": "1863955"
   }
 ]
