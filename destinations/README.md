@@ -38,6 +38,7 @@
 - [瑞士](./瑞士/README.md)
 - [比利时](./比利时/README.md)
 - [爱尔兰](./爱尔兰/README.md)
+- [挪威](./挪威/README.md)
 - [斯洛文尼亚](./斯洛文尼亚/README.md)
 - [克罗地亚](./克罗地亚/README.md)
 - [保加利亚](./保加利亚/README.md)
