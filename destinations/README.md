@@ -34,6 +34,7 @@
 - [匈牙利](./匈牙利/README.md)
 - [希腊](./希腊/README.md)
 - [丹麦](./丹麦/README.md)
+- [瑞典](./瑞典/README.md)
 - [斯洛文尼亚](./斯洛文尼亚/README.md)
 - [克罗地亚](./克罗地亚/README.md)
 - [保加利亚](./保加利亚/README.md)
