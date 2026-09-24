@@ -22,7 +22,7 @@ const outputPath = path.join(generatedDirectory, "guides.ts");
 const publicRoot = path.join(siteRoot, "public");
 const publicGuidesPath = path.join(publicRoot, "guides");
 
-const guideCountries = new Map([["CN", "中国"], ["KR", "韩国"], ["KP", "朝鲜"]]);
+const guideCountries = new Map([["CN", "中国"], ["KR", "韩国"], ["KP", "朝鲜"], ["JP", "日本"], ["SG", "新加坡"], ["TH", "泰国"], ["MY", "马来西亚"], ["VN", "越南"], ["ID", "印度尼西亚"]]);
 const coordinateInventoryPath =
   "coverage/geonames/2026-07-30/inventory/CN.csv";
 const legalCityInventoryPath =
@@ -1001,8 +1001,10 @@ async function loadCoordinates() {
     coordinates.set(row.geonames_id, { longitude, latitude });
   }
 
-  for (const source of additionalCityCenterSources.filter((entry) => ["KR", "KP"].includes(entry.countryCode))) {
+  for (const source of additionalCityCenterSources.filter((entry) => guideCountries.has(entry.countryCode) && entry.countryCode !== "CN")) {
     for (const row of parseCsv(await readFile(source.path, "utf8"))) {
+      // Map-only cities may lack a GeoNames identity; authored guides still require one.
+      if (!row.geonames_id && !["KR", "KP"].includes(source.countryCode)) continue;
       const longitude = Number(row.longitude);
       const latitude = Number(row.latitude);
       if (!row.geonames_id || !row.longitude || !row.latitude || !Number.isFinite(longitude) || !Number.isFinite(latitude)) {
