@@ -49,7 +49,8 @@ const rows = selected.map(({ properties: p, geometry }) => {
   const fallback = fallbackIds.has(p.NE_ID);
   return {
     id: `world-ne-${p.NE_ID}`, sourceId: String(p.NE_ID), source: 'natural-earth',
-    geonamesId: Number(p.GEONAMESID) > 0 ? String(p.GEONAMESID) : null,
+    geonamesId: sources.geonamesIdOverrides?.[String(p.NE_ID)]?.geonamesId
+      ?? (Number(p.GEONAMESID) > 0 ? String(p.GEONAMESID) : null),
     city, sourceName: p.NAME, countryCode, countryName: countryNames.of(countryCode),
     continentCode: continents.get(countryCode),
     cityLevel: fallback ? 'world_regional_center' : 'world_major_city',

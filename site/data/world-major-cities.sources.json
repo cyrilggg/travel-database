@@ -324,5 +324,13 @@
   "excludedNaturalEarthIds": {
     "1159134155": "Simferopol already uses ukraine-UA01160330010074014; retain the existing country inventory and ID.",
     "1159150561": "Sevastopol already uses ukraine-UA85000000000065278 / GeoNames 694423; retain the existing country inventory and ID."
+  },
+  "geonamesIdOverrides": {
+    "1159151359": {
+      "geonamesId": "3067696",
+      "sourceUrl": "https://www.geonames.org/3067696/prague.html",
+      "researchedAt": "2026-09-25",
+      "reason": "Prague, Czechia；修正原始关联 4548393，保留 Natural Earth 地图 ID 与坐标。"
+    }
   }
 }
