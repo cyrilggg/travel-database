@@ -1,0 +1,218 @@
+[
+  {
+    "sourcePath": "destinations/日本/北海道/札幌市.md",
+    "mapId": "japan-01100",
+    "guideId": "jp-2128291",
+    "city": "札幌市",
+    "country": "JP",
+    "geonamesId": "2128291"
+  },
+  {
+    "sourcePath": "destinations/日本/北海道/函馆市.md",
+    "mapId": "japan-01202",
+    "guideId": "jp-2130184",
+    "city": "函馆市",
+    "country": "JP",
+    "geonamesId": "2130184"
+  },
+  {
+    "sourcePath": "destinations/日本/宫城县/仙台市.md",
+    "mapId": "japan-04100",
+    "guideId": "jp-2111147",
+    "city": "仙台市",
+    "country": "JP",
+    "geonamesId": "2111147"
+  },
+  {
+    "sourcePath": "destinations/日本/神奈川县/横滨市.md",
+    "mapId": "japan-14100",
+    "guideId": "jp-1848350",
+    "city": "横滨市",
+    "country": "JP",
+    "geonamesId": "1848350"
+  },
+  {
+    "sourcePath": "destinations/日本/神奈川县/镰仓市.md",
+    "mapId": "japan-14204",
+    "guideId": "jp-1860670",
+    "city": "镰仓市",
+    "country": "JP",
+    "geonamesId": "1860670"
+  },
+  {
+    "sourcePath": "destinations/日本/爱知县/名古屋市.md",
+    "mapId": "japan-23100",
+    "guideId": "jp-1856053",
+    "city": "名古屋市",
+    "country": "JP",
+    "geonamesId": "1856053"
+  },
+  {
+    "sourcePath": "destinations/日本/石川县/金泽市.md",
+    "mapId": "japan-17201",
+    "guideId": "jp-1860240",
+    "city": "金泽市",
+    "country": "JP",
+    "geonamesId": "1860240"
+  },
+  {
+    "sourcePath": "destinations/日本/奈良县/奈良市.md",
+    "mapId": "japan-29201",
+    "guideId": "jp-1855604",
+    "city": "奈良市",
+    "country": "JP",
+    "geonamesId": "1855604"
+  },
+  {
+    "sourcePath": "destinations/日本/兵库县/神户市.md",
+    "mapId": "japan-28100",
+    "guideId": "jp-1859161",
+    "city": "神户市",
+    "country": "JP",
+    "geonamesId": "1859161"
+  },
+  {
+    "sourcePath": "destinations/日本/广岛县/广岛市.md",
+    "mapId": "japan-34100",
+    "guideId": "jp-1862412",
+    "city": "广岛市",
+    "country": "JP",
+    "geonamesId": "1862412"
+  },
+  {
+    "sourcePath": "destinations/日本/长崎县/长崎市.md",
+    "mapId": "japan-42201",
+    "guideId": "jp-1856152",
+    "city": "长崎市",
+    "country": "JP",
+    "geonamesId": "1856152"
+  },
+  {
+    "sourcePath": "destinations/日本/冲绳县/那霸市.md",
+    "mapId": "japan-47201",
+    "guideId": "jp-1856030",
+    "city": "那霸市",
+    "country": "JP",
+    "geonamesId": "1856030"
+  },
+  {
+    "sourcePath": "destinations/新加坡/新加坡.md",
+    "mapId": "singapore-SG",
+    "guideId": "sg-1880252",
+    "city": "新加坡",
+    "country": "SG",
+    "geonamesId": "1880252"
+  },
+  {
+    "sourcePath": "destinations/泰国/曼谷/曼谷.md",
+    "mapId": "thailand-SLA-BANGKOK",
+    "guideId": "th-1609350",
+    "city": "曼谷",
+    "country": "TH",
+    "geonamesId": "1609350"
+  },
+  {
+    "sourcePath": "destinations/泰国/清迈府/清迈.md",
+    "mapId": "thailand-NCM-CHIANG-MAI",
+    "guideId": "th-1153671",
+    "city": "清迈",
+    "country": "TH",
+    "geonamesId": "1153671"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/吉隆坡/吉隆坡.md",
+    "mapId": "malaysia-DBKL",
+    "guideId": "my-1735161",
+    "city": "吉隆坡",
+    "country": "MY",
+    "geonamesId": "1735161"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/槟城州/乔治市.md",
+    "mapId": "malaysia-0701",
+    "guideId": "my-1735106",
+    "city": "乔治市",
+    "country": "MY",
+    "geonamesId": "1735106"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/马六甲州/马六甲.md",
+    "mapId": "malaysia-0401",
+    "guideId": "my-1734759",
+    "city": "马六甲",
+    "country": "MY",
+    "geonamesId": "1734759"
+  },
+  {
+    "sourcePath": "destinations/越南/河内/河内.md",
+    "mapId": "vietnam-01",
+    "guideId": "vn-1581130",
+    "city": "河内",
+    "country": "VN",
+    "geonamesId": "1581130"
+  },
+  {
+    "sourcePath": "destinations/越南/胡志明市/胡志明市.md",
+    "mapId": "vietnam-79",
+    "guideId": "vn-1566083",
+    "city": "胡志明市",
+    "country": "VN",
+    "geonamesId": "1566083"
+  },
+  {
+    "sourcePath": "destinations/越南/岘港/岘港.md",
+    "mapId": "vietnam-48",
+    "guideId": "vn-1583992",
+    "city": "岘港",
+    "country": "VN",
+    "geonamesId": "1583992"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/日惹特区/日惹.md",
+    "mapId": "indonesia-34.71",
+    "guideId": "id-1621177",
+    "city": "日惹",
+    "country": "ID",
+    "geonamesId": "1621177"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/巴厘省/登巴萨.md",
+    "mapId": "indonesia-51.71",
+    "guideId": "id-1645528",
+    "city": "登巴萨",
+    "country": "ID",
+    "geonamesId": "1645528"
+  },
+  {
+    "sourcePath": "destinations/柬埔寨/暹粒省/暹粒.md",
+    "mapId": "cambodia-1710",
+    "guideId": "kh-1822214",
+    "city": "暹粒",
+    "country": "KH",
+    "geonamesId": "1822214"
+  },
+  {
+    "sourcePath": "destinations/柬埔寨/金边/金边.md",
+    "mapId": "cambodia-12",
+    "guideId": "kh-1821306",
+    "city": "金边",
+    "country": "KH",
+    "geonamesId": "1821306"
+  },
+  {
+    "sourcePath": "destinations/老挝/琅勃拉邦省/琅勃拉邦.md",
+    "mapId": "laos-0601",
+    "guideId": "la-1655559",
+    "city": "琅勃拉邦",
+    "country": "LA",
+    "geonamesId": "1655559"
+  },
+  {
+    "sourcePath": "destinations/老挝/万象/万象.md",
+    "mapId": "laos-01",
+    "guideId": "la-1651944",
+    "city": "万象",
+    "country": "LA",
+    "geonamesId": "1651944"
+  }
+]
