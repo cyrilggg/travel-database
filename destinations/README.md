@@ -21,6 +21,7 @@
 
 - [法国](./法国/README.md)
 - [斯洛文尼亚](./斯洛文尼亚/README.md)
+- [克罗地亚](./克罗地亚/README.md)
 
 [旅行地图](https://cyrilggg.github.io/travel-database/)提供城市位置及已接入攻略的阅读入口，Markdown 目录按现有正文组织。
 
