@@ -24,9 +24,11 @@
 - [克罗地亚](./克罗地亚/README.md)
 - [保加利亚](./保加利亚/README.md)
 - [罗马尼亚](./罗马尼亚/README.md)
+- [塞尔维亚](./塞尔维亚/README.md)
 
 [旅行地图](https://cyrilggg.github.io/travel-database/)提供城市位置及已接入攻略的阅读入口，Markdown 目录按现有正文组织。
 
 2026-09-25：整理当前目的地导航，城市具体开放信息见各篇行前核对。
+
 
 
