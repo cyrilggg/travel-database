@@ -2,6 +2,7 @@
 
 import {
   AttributionControl,
+  LngLat,
   type GeoJSONSource,
   Map as MapLibreMap,
   type MapMouseEvent,
@@ -90,9 +91,9 @@ if (typeof document !== "undefined") {
   );
 }
 
-const CURRENT_ASIA_BOUNDS: [[number, number], [number, number]] = [
-  [73.2, -12],
-  [154.5, 53.6],
+const WORLD_BOUNDS: [[number, number], [number, number]] = [
+  [-179, -56],
+  [179, 78],
 ];
 
 type TerrainMapProps = {
@@ -136,6 +137,13 @@ const administrativeColorExpression: ExpressionSpecification = [
   ADMINISTRATIVE_TYPE_INFO["local-center"].color,
   ADMINISTRATIVE_TYPE_INFO.other.color,
 ];
+
+const fitWorld = (map: MapLibreMap, padding: ReturnType<typeof mapPadding>, duration: number) => {
+  // fitBounds also accounts for current camera padding; clear it first so the
+  // sidebar is reserved once, including when returning from a city selection.
+  map.setPadding({ top: 0, right: 0, bottom: 0, left: 0 });
+  map.fitBounds(WORLD_BOUNDS, { padding, pitch: 0, bearing: 0, duration });
+};
 
 const administrativeRadiusExpression: ExpressionSpecification = [
   "interpolate",
@@ -785,14 +793,20 @@ export default function TerrainMap({
     const map = new MapLibreMap({
       container: containerRef.current,
       style: BASE_STYLE,
-      center: [104.4, 35.4],
-      zoom: 3.2,
-      minZoom: 1.8,
+      center: [12, 20],
+      zoom: 0.4,
+      minZoom: -1,
       maxZoom: 16,
       pitch: 0,
       bearing: 0,
       maxPitch: 60,
       renderWorldCopies: false,
+      // Permit a whole-world view even when a tall viewport or side panel makes
+      // the usable map narrower than its height. Clamp the center, not its scale.
+      transformConstrain: (center, zoom) => ({
+        center: new LngLat(Math.max(-180, Math.min(180, center.lng)), Math.max(-85, Math.min(85, center.lat))),
+        zoom: Math.max(-1, Math.min(16, zoom ?? 0)),
+      }),
       attributionControl: false,
       dragRotate: !mobileMode,
       touchPitch: !mobileMode,
@@ -811,7 +825,7 @@ export default function TerrainMap({
       new AttributionControl({
         compact: true,
         customAttribution:
-          '<a href="https://mapterhorn.com/" target="_blank" rel="noreferrer">Terrain © Mapterhorn</a>',
+          '<a href="https://mapterhorn.com/" target="_blank" rel="noreferrer">Terrain © Mapterhorn</a> · <a href="https://www.naturalearthdata.com/" target="_blank" rel="noreferrer">Natural Earth</a> · <a href="https://www.geonames.org/" target="_blank" rel="noreferrer">GeoNames</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a>)',
       }),
       "bottom-left",
     );
@@ -1473,10 +1487,7 @@ export default function TerrainMap({
         });
       }
 
-      map.fitBounds(CURRENT_ASIA_BOUNDS, {
-        padding: mapPadding(panelLayoutRef.current, containerRef.current),
-        duration: 0,
-      });
+      fitWorld(map, mapPadding(panelLayoutRef.current, containerRef.current), 0);
       publishViewportGuides();
       appliedPanelLayoutRef.current = panelLayoutRef.current;
       setMapReady(true);
@@ -1687,12 +1698,7 @@ export default function TerrainMap({
       return;
     }
 
-    map.fitBounds(CURRENT_ASIA_BOUNDS, {
-      padding,
-      pitch: terrainEnabledRef.current ? 18 : 0,
-      bearing: 0,
-      duration: reducedMotionRef.current ? 0 : 720,
-    });
+    fitWorld(map, padding, reducedMotionRef.current ? 0 : 720);
   }, [
     activeCityId,
     exploreLatitude,
@@ -1706,12 +1712,7 @@ export default function TerrainMap({
   useEffect(() => {
     const map = mapRef.current;
     if (!mapReady || !map || resetSignal === 0) return;
-    map.fitBounds(CURRENT_ASIA_BOUNDS, {
-      padding: mapPadding(panelLayoutRef.current, containerRef.current),
-      pitch: terrainEnabledRef.current ? 18 : 0,
-      bearing: 0,
-      duration: reducedMotionRef.current ? 0 : 720,
-    });
+    fitWorld(map, mapPadding(panelLayoutRef.current, containerRef.current), reducedMotionRef.current ? 0 : 720);
   }, [mapReady, resetSignal]);
 
   const toggleTerrain = () => {

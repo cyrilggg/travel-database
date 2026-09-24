@@ -2,12 +2,18 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { mapCities } from "../app/generated/publicGuides";
 import { cityLevelPolicyOf } from "../app/components/administrativeType";
 import { visibleMapCities, isDefaultMapDestination } from "../app/components/cityMapVisibility";
+import worldSources from "../data/world-major-cities.sources.json";
 
 const countries = [...new Set(mapCities.map(city => city.countryCode))].sort();
 const report = {
   inventory: mapCities.length,
   guideDestinations: mapCities.filter(city => city.coverage === 1).length,
   defaultCatalog: mapCities.filter(isDefaultMapDestination).length,
+  worldCoverage: {
+    expectedMemberAndObserverStates: worldSources.expectedCountryCodes.length,
+    missing: worldSources.expectedCountryCodes.filter(code => !countries.includes(code)),
+    majorCityAdditions: mapCities.filter(city => city.id.startsWith("world-")).length,
+  },
   countries: countries.map(countryCode => {
     const cities = mapCities.filter(city => city.countryCode === countryCode);
     return {

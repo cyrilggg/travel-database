@@ -1,4 +1,6 @@
 {
+  "world_major_city": {"type":"prefecture","label":"主要城市","minZoom":0,"reviewRequired":false},
+  "world_regional_center": {"type":"prefecture","label":"地区中心","minZoom":0,"reviewRequired":false},
   "afghanistan_capital_municipality": {"type":"prefecture","label":"首都城市","minZoom":0,"reviewRequired":false},
   "afghanistan_provincial_municipality": {"type":"prefecture","label":"主要城市","minZoom":0,"reviewRequired":false},
   "albania_country_capital": {"type":"prefecture","label":"首都","minZoom":0,"reviewRequired":false},
