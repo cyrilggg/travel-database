@@ -21,6 +21,7 @@ import {
   administrativeTypeInfoOf,
   administrativeTypeOf,
 } from "./administrativeType";
+import { CITY_CLUSTER_OPTIONS, cityZoomBand, cityZoomHint, visibleMapCities } from "./cityMapVisibility";
 
 const BASE_STYLE = "https://tiles.openfreemap.org/styles/bright";
 const TERRAIN_TILEJSON = "https://tiles.mapterhorn.com/tilejson.json";
@@ -38,6 +39,8 @@ const GUIDE_CONTENT_LABEL_LAYER_ID = "travel-guide-content-label";
 const ROUTE_STOP_LAYER_ID = "travel-route-stop";
 const ROUTE_STOP_LABEL_LAYER_ID = "travel-route-stop-label";
 const GUIDE_SOURCE_ID = "travel-guide-points";
+const FOCUS_SOURCE_ID = "travel-focused-cities";
+const FOCUS_LABEL_LAYER_ID = "travel-focused-city-label";
 const CLUSTER_LAYER_ID = "travel-guide-clusters";
 const CLUSTER_PARTIAL_RING_LAYER_ID = "travel-guide-cluster-partial-ring";
 const CLUSTER_HIT_LAYER_ID = "travel-guide-cluster-hit-area";
@@ -118,7 +121,7 @@ const PANEL_HISTORY_KEY = "__travelMapPanel";
 
 const shortCityName = (name: string) => name.replace(/[市区]$/, "");
 
-const administrativeColorExpression = [
+const administrativeColorExpression: ExpressionSpecification = [
   "match",
   ["get", "administrativeType"],
   "prefecture",
@@ -129,10 +132,12 @@ const administrativeColorExpression = [
   ADMINISTRATIVE_TYPE_INFO.county.color,
   "district",
   ADMINISTRATIVE_TYPE_INFO.district.color,
+  "local-center",
+  ADMINISTRATIVE_TYPE_INFO["local-center"].color,
   ADMINISTRATIVE_TYPE_INFO.other.color,
-] as const;
+];
 
-const administrativeRadiusExpression = [
+const administrativeRadiusExpression: ExpressionSpecification = [
   "interpolate",
   ["linear"],
   ["zoom"],
@@ -140,33 +145,33 @@ const administrativeRadiusExpression = [
   [
     "match",
     ["get", "administrativeType"],
-    "prefecture", 6.5,
-    "county-city", 5.4,
-    "county", 4.7,
-    "district", 4.1,
-    3.7,
+    "prefecture", 4.5,
+    "county-city", 3.8,
+    "county", 3.4,
+    "district", 3.2,
+    3,
   ],
   7,
   [
     "match",
     ["get", "administrativeType"],
-    "prefecture", 8.5,
-    "county-city", 7.2,
-    "county", 6.2,
-    "district", 5.4,
-    4.8,
+    "prefecture", 5.5,
+    "county-city", 4.5,
+    "county", 4,
+    "district", 3.6,
+    3.4,
   ],
   10,
   [
     "match",
     ["get", "administrativeType"],
-    "prefecture", 10.5,
-    "county-city", 9,
-    "county", 7.8,
-    "district", 6.8,
-    6,
+    "prefecture", 7,
+    "county-city", 5.5,
+    "county", 5,
+    "district", 4.5,
+    4.2,
   ],
-] as const;
+];
 
 const isMobileMapExperience = () =>
   typeof window !== "undefined" && window.matchMedia(MOBILE_MAP_QUERY).matches;
@@ -437,6 +442,7 @@ export default function TerrainMap({
   const [mapFailed, setMapFailed] = useState(false);
   const [terrainEnabled, setTerrainEnabled] = useState(false);
   const [clusterEnabled, setClusterEnabled] = useState(true);
+  const [zoomBand, setZoomBand] = useState(0);
   const [mobileExperience, setMobileExperience] = useState(false);
 
   useEffect(() => {
@@ -476,6 +482,7 @@ export default function TerrainMap({
     let baselineVisualHeight = visualViewport?.height ?? window.innerHeight;
     let orientationKey = screenOrientation?.type ?? "default";
     let appliedMobileMode: boolean | null = null;
+    let appliedViewportMetrics = "";
 
     const syncInteractionMode = () => {
       const nextMobileMode = isMobileMapExperience();
@@ -523,8 +530,12 @@ export default function TerrainMap({
         app?.style.setProperty("--android-visual-top", `${Math.round(viewportTop)}px`);
         app?.classList.toggle("is-mobile-keyboard-open", keyboardOpen);
 
+        const viewportMetrics = `${visualViewport?.width ?? window.innerWidth}:${viewportHeight}:${viewportTop}:${keyboardOpen}:${mobileExperienceRef.current}`;
+        const viewportChanged = viewportMetrics !== appliedViewportMetrics;
+        appliedViewportMetrics = viewportMetrics;
         const map = mapRef.current;
-        if (map) {
+        // Focusing/blurring desktop search must not interrupt its fly-to animation.
+        if (map && viewportChanged) {
           map.resize();
           map.setPadding(mapPadding(panelLayoutRef.current, containerRef.current));
         }
@@ -856,7 +867,7 @@ export default function TerrainMap({
       if (!map.getSource(GUIDE_SOURCE_ID)) return;
       const padding = mapPadding(panelLayoutRef.current, containerRef.current);
       const canvas = map.getCanvas();
-      const visibleGuideIds = citiesRef.current
+      const visibleGuideIds = visibleMapCities(citiesRef.current, map.getZoom())
         .filter(({ coordinates }) => {
           const projected = map.project([coordinates.longitude, coordinates.latitude]);
           return (
@@ -879,6 +890,7 @@ export default function TerrainMap({
         GUIDE_POINT_LAYER_ID,
         GUIDE_HIT_LAYER_ID,
         ACTIVE_POINT_LAYER_ID,
+        FOCUS_LABEL_LAYER_ID,
         GUIDE_LABEL_LAYER_ID,
         GUIDE_CONTENT_HIT_LAYER_ID,
         GUIDE_CONTENT_LABEL_LAYER_ID,
@@ -1135,15 +1147,14 @@ export default function TerrainMap({
         map.addSource(GUIDE_SOURCE_ID, {
           type: "geojson",
           cluster: true,
-          clusterMaxZoom: 6,
-          clusterRadius: 38,
+          ...CITY_CLUSTER_OPTIONS,
           clusterProperties: {
             missing_count: [
               "+",
               ["case", ["==", ["get", "coverage"], 0], 1, 0],
             ],
           },
-          data: guideFeatureCollection(citiesRef.current),
+          data: guideFeatureCollection(visibleMapCities(citiesRef.current, map.getZoom())),
         });
 
         map.addLayer({
@@ -1160,7 +1171,7 @@ export default function TerrainMap({
               "rgba(64,96,87,0.11)",
               "rgba(211,145,48,0.13)",
             ],
-            "circle-radius": ["step", ["get", "point_count"], 19, 8, 23, 18, 28],
+            "circle-radius": ["step", ["get", "point_count"], 15, 20, 18, 100, 21],
             "circle-stroke-color": [
               "case",
               ["==", ["get", "missing_count"], 0],
@@ -1188,7 +1199,7 @@ export default function TerrainMap({
               "#f3f1e8",
               "#fff8e9",
             ],
-            "circle-radius": ["step", ["get", "point_count"], 14, 8, 17, 18, 21],
+            "circle-radius": ["step", ["get", "point_count"], 12, 20, 15, 100, 18],
             "circle-stroke-color": [
               "case",
               ["==", ["get", "missing_count"], 0],
@@ -1267,8 +1278,8 @@ export default function TerrainMap({
             "circle-stroke-width": [
               "case",
               ["==", ["get", "coverage"], 0],
-              2.5,
-              2,
+              1.6,
+              1.5,
             ],
           },
         });
@@ -1286,13 +1297,15 @@ export default function TerrainMap({
           },
         });
 
+        // Selected/search results must remain visible even inside a cluster or
+        // below their normal zoom threshold, including legacy candidate IDs.
+        map.addSource(FOCUS_SOURCE_ID, { type: "geojson", data: emptyFeatureCollection() });
         map.addLayer({
           id: ACTIVE_POINT_LAYER_ID,
           type: "circle",
-          source: GUIDE_SOURCE_ID,
-          filter: ["==", ["get", "id"], ""],
+          source: FOCUS_SOURCE_ID,
           paint: {
-            "circle-color": administrativeColorExpression,
+            "circle-color": ["case", ["==", ["get", "coverage"], 0], "#fffaf0", administrativeColorExpression],
             "circle-radius": [
               "match",
               ["get", "administrativeType"],
@@ -1302,8 +1315,8 @@ export default function TerrainMap({
               "district", 8.5,
               8,
             ],
-            "circle-stroke-color": "rgba(255,248,236,0.72)",
-            "circle-stroke-width": 6,
+            "circle-stroke-color": administrativeColorExpression,
+            "circle-stroke-width": 3,
           },
         });
 
@@ -1329,6 +1342,32 @@ export default function TerrainMap({
             "text-halo-width": 1.8,
           },
         });
+
+        map.addLayer({
+          id: FOCUS_LABEL_LAYER_ID,
+          type: "symbol",
+          source: FOCUS_SOURCE_ID,
+          layout: {
+            "text-field": ["get", "city"],
+            "text-size": 13,
+            "text-offset": [0, 1.4],
+            "text-anchor": "top",
+            "text-font": ["Noto Sans Regular"],
+          },
+          paint: {
+            "text-color": "#243936",
+            "text-halo-color": "#fffaf0",
+            "text-halo-width": 2,
+          },
+        });
+        for (const layerId of [ACTIVE_POINT_LAYER_ID, FOCUS_LABEL_LAYER_ID]) {
+          map.on("click", layerId, (event) => {
+            const city = citiesRef.current.find(item => item.id === event.features?.[0]?.properties?.id);
+            if (city) onSelectCityRef.current(city);
+          });
+          map.on("mouseenter", layerId, () => { map.getCanvas().style.cursor = "pointer"; });
+          map.on("mouseleave", layerId, () => { map.getCanvas().style.cursor = ""; });
+        }
 
         map.on("click", CLUSTER_HIT_LAYER_ID, async (event) => {
           const feature = event.features?.[0];
@@ -1481,7 +1520,17 @@ export default function TerrainMap({
     const map = mapRef.current;
     const source = map?.getSource(GUIDE_SOURCE_ID) as GeoJSONSource | undefined;
     if (!mapReady || !map || !source) return;
-    source.setData(guideFeatureCollection(cities));
+    let appliedBand = -1;
+    const refreshCities = () => {
+      const band = cityZoomBand(map.getZoom());
+      if (band === appliedBand) return;
+      appliedBand = band;
+      setZoomBand(band);
+      source.setData(guideFeatureCollection(visibleMapCities(cities, map.getZoom())));
+    };
+    refreshCities();
+    map.on("zoomend", refreshCities);
+    return () => { map.off("zoomend", refreshCities); };
   }, [cities, mapReady]);
 
   useEffect(() => {
@@ -1508,6 +1557,7 @@ export default function TerrainMap({
       GUIDE_POINT_LAYER_ID,
       GUIDE_HIT_LAYER_ID,
       ACTIVE_POINT_LAYER_ID,
+      FOCUS_LABEL_LAYER_ID,
       GUIDE_LABEL_LAYER_ID,
     ];
     const hideCityLayers = Boolean(guideMap && guideMap.scope !== "journey");
@@ -1538,13 +1588,9 @@ export default function TerrainMap({
       ...highlightedCityIds,
       ...(activeCityId ? [activeCityId] : []),
     ])];
-    map.setFilter(
-      ACTIVE_POINT_LAYER_ID,
-      highlightedIds.length > 0
-        ? ["in", ["get", "id"], ["literal", highlightedIds]]
-        : ["==", ["get", "id"], ""],
-    );
-  }, [activeCityId, highlightedCityIds, mapReady]);
+    const source = map.getSource(FOCUS_SOURCE_ID) as GeoJSONSource | undefined;
+    source?.setData(guideFeatureCollection(cities.filter(city => highlightedIds.includes(city.id))));
+  }, [activeCityId, highlightedCityIds, cities, mapReady]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -1688,8 +1734,7 @@ export default function TerrainMap({
     setClusterEnabled(next);
     await source.setClusterOptions({
       cluster: next,
-      clusterMaxZoom: 6,
-      clusterRadius: 38,
+      ...CITY_CLUSTER_OPTIONS,
     });
   };
 
@@ -1706,7 +1751,7 @@ export default function TerrainMap({
         role="region"
         aria-label={guideMap
           ? "可拖动和缩放的攻略联动地图，显示当前成都攻略内容"
-          : "可拖动和双指缩放的东亚城市地形地图，最大缩放级别 16"}
+          : "可拖动和双指缩放的全球目的地地图，放大逐步显示更多地点"}
       />
 
       {!mapReady && !mapFailed && (
@@ -1748,7 +1793,7 @@ export default function TerrainMap({
 
       <div
         className={`map-legend${guideMap ? " is-guide-map" : ""}`}
-        aria-label={guideMap ? "攻略地图图例" : "行政层级地图图例"}
+        aria-label={guideMap ? "攻略地图图例" : "目的地类型图例，不表示跨国行政级别相等"}
       >
         {guideMap ? (
           guideMapSelection.mode === "itinerary" ? (
@@ -1769,6 +1814,7 @@ export default function TerrainMap({
           )
         ) : (
           <>
+            <span className="legend-scale" role="status">{cityZoomHint(zoomBand)}</span>
             {ADMINISTRATIVE_TYPE_LEGEND.map(({ type, label, color }) => (
               <span key={type}>
                 <i className="legend-dot" style={{ backgroundColor: color, borderColor: color }} />

@@ -12,6 +12,7 @@ import path from "node:path";
 import { promisify } from "node:util";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
+import { validateCityLevelPolicies } from "./city-level-policy.mjs";
 
 const execFileAsync = promisify(execFile);
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
@@ -1155,6 +1156,8 @@ async function loadMapCities(guides) {
     ...additionalCountryCities,
     ...additionalGuideDestinations,
   ];
+  const policies = JSON.parse(await readFile(path.join(siteRoot, "data", "city-level-policy.json"), "utf8"));
+  validateCityLevelPolicies(mapCities, policies);
   const visibleGuideIds = mapCities.flatMap((city) =>
     city.guideId ? [city.guideId] : [],
   );
@@ -1584,7 +1587,7 @@ async function syncGuides() {
   const coveredCount = mapCities.filter((city) => city.coverage === 1).length;
   const missingCount = mapCities.filter((city) => city.coverage === 0).length;
   console.log(
-    `已从当前仓库@${sourceRevision.slice(0, 7)} 同步 ${cityResult.guides.length} 个单目的地攻略；地图显示 ${coveredCount} 个已有攻略点、${missingCount} 个尚未收录点（${provinceCount} 个省级地区）`,
+    `已从当前仓库@${sourceRevision.slice(0, 7)} 同步 ${cityResult.guides.length} 个单目的地攻略；地图原始库存 ${coveredCount} 个已有攻略点、${missingCount} 个尚未收录点（${provinceCount} 个省级地区），实际显示按类型与缩放筛选`,
   );
 }
 
