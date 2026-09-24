@@ -6,7 +6,7 @@ Markdown 是主要产品。覆盖清单与辅助脚本只用于审计和维护�
 
 ## 旅行地图
 
-[打开旅行地图](https://cyrilggg.github.io/travel-database/)可以在地形图上浏览已有的中国单城市攻略。地图站代码位于 [`site/`](./site/)，每次中国城市攻略或地图代码合并到 `main` 后，GitHub Pages 会自动重新构建。
+[打开旅行地图](https://cyrilggg.github.io/travel-database/)可以浏览已接入国家的城市位置与攻略。地图站代码位于 [`site/`](./site/)，攻略目录或地图代码推送到 `main` 后，由 GitHub Pages 工作流构建发布。各国地图与正文覆盖分别记录，已接入正文的城市提供阅读入口。
 
 > **当前阶段：中国固定清单与分批扩展。** 仓库已保存 2026-07-30 GeoNames 四档原始快照，并建立 `country_code=CN` 的 16,049 条固定清单；同时保存民政部数据截止 2025-12-31 的 695 座大陆法定城市清单，作为独立交叉核对。全球分母尚未建立；中国进度只按已研究页面和有证据的审计决定计算。详见 [GeoNames CN 快照摘要](./coverage/geonames/2026-07-30/summary.md)与[法定城市核对摘要](./coverage/legal-cities/2025-12-31/README.md)。
 
@@ -14,7 +14,9 @@ Markdown 是主要产品。覆盖清单与辅助脚本只用于审计和维护�
 
 [台湾旅行总览](./destinations/中国/台湾省/README.md)收录 23 篇城市攻略、8 篇旅行区域攻略及跨城线路；[独立批次账本](./coverage/CN/taiwan-2026-09-06/README.md)记录覆盖与验证，未改变大陆快照分母。产品与攻略扩展遵循[协作及编辑规范](./docs/README.md)。
 
-首页不逐项罗列目的地。可以直接使用上方旅行地图，或进入 [`destinations/`](./destinations/) 浏览 Markdown 原文。目录页只承担导航与跨城市背景，完整旅行资料位于城市页；未完成的城市不进入浏览索引。
+使用上方旅行地图，或进入[目的地总目录](./destinations/README.md)，按国家和地区浏览 Markdown 原文。目录页承担导航与跨城市背景，完整旅行资料位于城市页。
+
+当前主要城市内容按[世界主要城市持续目标](./docs/changes/2026-09-25-world-major-city-guides-goal.md)分批推进；亚洲新增正文及推送记录见[主要城市覆盖记录](./coverage/ASIA/major-cities-2026-09-25/README.md)。这一编辑清单与下方历史固定快照分母分别管理。
 
 ## 城市指南包含什么
 
