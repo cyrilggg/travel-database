@@ -30,6 +30,7 @@
 - [荷兰](./荷兰/README.md)
 - [德国](./德国/README.md)
 - [捷克](./捷克/README.md)
+- [奥地利](./奥地利/README.md)
 - [斯洛文尼亚](./斯洛文尼亚/README.md)
 - [克罗地亚](./克罗地亚/README.md)
 - [保加利亚](./保加利亚/README.md)
