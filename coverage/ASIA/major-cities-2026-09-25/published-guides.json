@@ -214,5 +214,45 @@
     "city": "万象",
     "country": "LA",
     "geonamesId": "1651944"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/国家首都区/马尼拉.md",
+    "mapId": "philippines-1380600000",
+    "guideId": "ph-1701668",
+    "city": "马尼拉",
+    "country": "PH",
+    "geonamesId": "1701668"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/宿务/宿务.md",
+    "mapId": "philippines-0730600000",
+    "guideId": "ph-1717512",
+    "city": "宿务",
+    "country": "PH",
+    "geonamesId": "1717512"
+  },
+  {
+    "sourcePath": "destinations/日本/京都府/京都市.md",
+    "mapId": "japan-26100",
+    "guideId": "jp-1857906",
+    "city": "京都市",
+    "country": "JP",
+    "geonamesId": "1857906"
+  },
+  {
+    "sourcePath": "destinations/日本/大阪府/大阪市.md",
+    "mapId": "japan-27100",
+    "guideId": "jp-1853897",
+    "city": "大阪市",
+    "country": "JP",
+    "geonamesId": "1853897"
+  },
+  {
+    "sourcePath": "destinations/日本/福冈县/福冈市.md",
+    "mapId": "japan-40130",
+    "guideId": "jp-1863955",
+    "city": "福冈市",
+    "country": "JP",
+    "geonamesId": "1863955"
   }
 ]
