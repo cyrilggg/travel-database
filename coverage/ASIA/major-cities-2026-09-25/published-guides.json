@@ -198,5 +198,21 @@
     "city": "金边",
     "country": "KH",
     "geonamesId": "1821306"
+  },
+  {
+    "sourcePath": "destinations/老挝/琅勃拉邦省/琅勃拉邦.md",
+    "mapId": "laos-0601",
+    "guideId": "la-1655559",
+    "city": "琅勃拉邦",
+    "country": "LA",
+    "geonamesId": "1655559"
+  },
+  {
+    "sourcePath": "destinations/老挝/万象/万象.md",
+    "mapId": "laos-01",
+    "guideId": "la-1651944",
+    "city": "万象",
+    "country": "LA",
+    "geonamesId": "1651944"
   }
 ]
