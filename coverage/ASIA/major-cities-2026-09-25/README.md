@@ -91,3 +91,17 @@
 | [松山市](../../../destinations/日本/爱媛县/松山市.md) | japan-38201 | 1857456 |
 | [别府市](../../../destinations/日本/大分县/别府市.md) | japan-44202 | 7414050 |
 | [石垣市](../../../destinations/日本/冲绳县/石垣市.md) | japan-47207 | 1861412 |
+
+## 东南亚五国增补（2026-11-23）
+
+| 城市攻略 | 地图 ID | GeoNames |
+|---|---|---|
+| [海防](../../../destinations/越南/海防/海防.md) | vietnam-31 | 1581298 |
+| [顺化](../../../destinations/越南/顺化/顺化.md) | vietnam-46 | 1580240 |
+| [芹苴](../../../destinations/越南/芹苴/芹苴.md) | vietnam-92 | 1586203 |
+| [公主港](../../../destinations/菲律宾/巴拉望/公主港.md) | philippines-1731500000 | 1692685 |
+| [碧瑶](../../../destinations/菲律宾/本格特/碧瑶.md) | philippines-1430300000 | 1728930 |
+| [新山](../../../destinations/马来西亚/柔佛州/新山.md) | malaysia-0101 | 1732752 |
+| [芭提雅](../../../destinations/泰国/春武里府/芭提雅.md) | thailand-SLA-PATTAYA | 1614295 |
+| [三宝垄](../../../destinations/印度尼西亚/中爪哇省/三宝垄.md) | indonesia-33.74 | 1627896 |
+| [玛琅](../../../destinations/印度尼西亚/东爪哇省/玛琅.md) | indonesia-35.73 | 1636722 |

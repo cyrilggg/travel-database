@@ -470,5 +470,77 @@
     "city": "石垣市",
     "country": "JP",
     "geonamesId": "1861412"
+  },
+  {
+    "sourcePath": "destinations/越南/海防/海防.md",
+    "mapId": "vietnam-31",
+    "guideId": "vn-1581298",
+    "city": "海防",
+    "country": "VN",
+    "geonamesId": "1581298"
+  },
+  {
+    "sourcePath": "destinations/越南/顺化/顺化.md",
+    "mapId": "vietnam-46",
+    "guideId": "vn-1580240",
+    "city": "顺化",
+    "country": "VN",
+    "geonamesId": "1580240"
+  },
+  {
+    "sourcePath": "destinations/越南/芹苴/芹苴.md",
+    "mapId": "vietnam-92",
+    "guideId": "vn-1586203",
+    "city": "芹苴",
+    "country": "VN",
+    "geonamesId": "1586203"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/巴拉望/公主港.md",
+    "mapId": "philippines-1731500000",
+    "guideId": "ph-1692685",
+    "city": "普林塞萨港",
+    "country": "PH",
+    "geonamesId": "1692685"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/本格特/碧瑶.md",
+    "mapId": "philippines-1430300000",
+    "guideId": "ph-1728930",
+    "city": "碧瑶",
+    "country": "PH",
+    "geonamesId": "1728930"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/柔佛州/新山.md",
+    "mapId": "malaysia-0101",
+    "guideId": "my-1732752",
+    "city": "新山",
+    "country": "MY",
+    "geonamesId": "1732752"
+  },
+  {
+    "sourcePath": "destinations/泰国/春武里府/芭提雅.md",
+    "mapId": "thailand-SLA-PATTAYA",
+    "guideId": "th-1614295",
+    "city": "芭提雅",
+    "country": "TH",
+    "geonamesId": "1614295"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/中爪哇省/三宝垄.md",
+    "mapId": "indonesia-33.74",
+    "guideId": "id-1627896",
+    "city": "三宝垄",
+    "country": "ID",
+    "geonamesId": "1627896"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/东爪哇省/玛琅.md",
+    "mapId": "indonesia-35.73",
+    "guideId": "id-1636722",
+    "city": "玛琅",
+    "country": "ID",
+    "geonamesId": "1636722"
   }
 ]
