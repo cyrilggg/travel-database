@@ -326,5 +326,77 @@
     "city": "普吉市",
     "country": "TH",
     "geonamesId": "1151254"
+  },
+  {
+    "sourcePath": "destinations/日本/北海道/小樽市.md",
+    "mapId": "japan-01203",
+    "guideId": "jp-2128570",
+    "city": "小樽市",
+    "country": "JP",
+    "geonamesId": "2128570"
+  },
+  {
+    "sourcePath": "destinations/日本/栃木县/日光市.md",
+    "mapId": "japan-09206",
+    "guideId": "jp-1861696",
+    "city": "日光市",
+    "country": "JP",
+    "geonamesId": "1861696"
+  },
+  {
+    "sourcePath": "destinations/日本/长野县/松本市.md",
+    "mapId": "japan-20202",
+    "guideId": "jp-1857516",
+    "city": "松本市",
+    "country": "JP",
+    "geonamesId": "1857516"
+  },
+  {
+    "sourcePath": "destinations/日本/岐阜县/高山市.md",
+    "mapId": "japan-21203",
+    "guideId": "jp-1850890",
+    "city": "高山市",
+    "country": "JP",
+    "geonamesId": "1850890"
+  },
+  {
+    "sourcePath": "destinations/日本/兵库县/姬路市.md",
+    "mapId": "japan-28201",
+    "guideId": "jp-1862625",
+    "city": "姬路市",
+    "country": "JP",
+    "geonamesId": "1862625"
+  },
+  {
+    "sourcePath": "destinations/日本/冈山县/冈山市.md",
+    "mapId": "japan-33100",
+    "guideId": "jp-1854380",
+    "city": "冈山市",
+    "country": "JP",
+    "geonamesId": "1854380"
+  },
+  {
+    "sourcePath": "destinations/日本/香川县/高松市.md",
+    "mapId": "japan-37201",
+    "guideId": "jp-1851095",
+    "city": "高松市",
+    "country": "JP",
+    "geonamesId": "1851095"
+  },
+  {
+    "sourcePath": "destinations/日本/熊本县/熊本市.md",
+    "mapId": "japan-43100",
+    "guideId": "jp-1858418",
+    "city": "熊本市",
+    "country": "JP",
+    "geonamesId": "1858418"
+  },
+  {
+    "sourcePath": "destinations/日本/鹿儿岛县/鹿儿岛市.md",
+    "mapId": "japan-46201",
+    "guideId": "jp-1860823",
+    "city": "鹿儿岛市",
+    "country": "JP",
+    "geonamesId": "1860823"
   }
 ]

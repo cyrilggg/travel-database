@@ -63,3 +63,17 @@
 | [清莱](../../../destinations/泰国/清莱府/清莱.md) | thailand-NCM-CHIANG-RAI | 1153669 |
 | [阿瑜陀耶](../../../destinations/泰国/大城府/阿瑜陀耶.md) | thailand-NCM-PHRA-NAKHON-SI-AYUTTHAYA | 1607532 |
 | [普吉市](../../../destinations/泰国/普吉府/普吉市.md) | thailand-NCM-PHUKET | 1151254 |
+
+## 2026-11-23 日本九城扩充
+
+| 城市 | 地图 ID | GeoNames ID |
+|---|---|---|
+| [小樽市](../../../destinations/日本/北海道/小樽市.md) | japan-01203 | 2128570 |
+| [日光市](../../../destinations/日本/栃木县/日光市.md) | japan-09206 | 1861696 |
+| [松本市](../../../destinations/日本/长野县/松本市.md) | japan-20202 | 1857516 |
+| [高山市](../../../destinations/日本/岐阜县/高山市.md) | japan-21203 | 1850890 |
+| [姬路市](../../../destinations/日本/兵库县/姬路市.md) | japan-28201 | 1862625 |
+| [冈山市](../../../destinations/日本/冈山县/冈山市.md) | japan-33100 | 1854380 |
+| [高松市](../../../destinations/日本/香川县/高松市.md) | japan-37201 | 1851095 |
+| [熊本市](../../../destinations/日本/熊本县/熊本市.md) | japan-43100 | 1858418 |
+| [鹿儿岛市](../../../destinations/日本/鹿儿岛县/鹿儿岛市.md) | japan-46201 | 1860823 |
