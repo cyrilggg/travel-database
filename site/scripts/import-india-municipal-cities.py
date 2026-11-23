@@ -152,6 +152,15 @@ POINT_OVERRIDES = {
     "297027": "1271780",   # Gajralua / Gajraula
 }
 
+# These guide identities refer to the same city as the LGD body.
+# The coordinates still come from the catalog's municipal center.
+MUNICIPAL_GEONAMES_IDS = {
+    "251488": "1275339",  # Greater Mumbai
+    "252294": "1264527",  # Greater Chennai Corporation
+    "250299": "1275004",  # Kolkata
+    "252220": "1273874",  # Kochi
+}
+
 # These municipal centers were checked against a second public map or
 # government document because the pinned GeoNames archive either lacks the
 # locality or resolves the official LGD spelling to a different place.
@@ -516,7 +525,7 @@ def build_rows(
                 "name": display_name(row["name"]),
                 "admin_area": row["state"],
                 "city_level": row["city_level"],
-                "geonames_id": str(point["id"]),
+                "geonames_id": MUNICIPAL_GEONAMES_IDS.get(row["code"], str(point["id"])),
                 "longitude": f"{longitude:.6f}",
                 "latitude": f"{latitude:.6f}",
             }

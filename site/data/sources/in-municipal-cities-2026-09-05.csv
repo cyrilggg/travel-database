@@ -804,7 +804,7 @@ MCD,Delhi,Delhi,municipal_corporation,1273294,77.231490,28.651950
 252108,Kasaragod,Kerala,municipality,,74.995896,12.493695
 272883,Kattappana,Kerala,municipality,,77.108638,9.741921
 252248,Kayamkulam,Kerala,municipality,,76.506764,9.177654
-252220,Kochi,Kerala,municipal_corporation,,76.286760,9.982179
+252220,Kochi,Kerala,municipal_corporation,1273874,76.286760,9.982179
 252200,Kodungallur,Kerala,municipality,,76.203557,10.222297
 272897,Koduvally,Kerala,municipality,,75.918930,11.371021
 252255,Kollam,Kerala,municipal_corporation,,76.592226,8.892785
@@ -1064,7 +1064,7 @@ MCD,Delhi,Delhi,municipal_corporation,1273294,77.231490,28.651950
 251394,Ghatanji,Maharashtra,municipality,1271343,78.313330,20.141830
 298902,Ghugus,Maharashtra,municipality,1271244,79.111920,19.938100
 251371,Gondiya,Maharashtra,municipality,1270990,80.192050,21.460260
-251488,Greater Mumbai,Maharashtra,municipal_corporation,,72.871870,19.107489
+251488,Greater Mumbai,Maharashtra,municipal_corporation,1275339,72.871870,19.107489
 251399,Hadgaon,Maharashtra,municipality,1270554,77.658630,19.495520
 251338,Hinganghat,Maharashtra,municipality,1270077,78.839780,20.548750
 251411,Hingoli,Maharashtra,municipality,1270072,77.142380,19.714640
@@ -1628,7 +1628,7 @@ MCD,Delhi,Delhi,municipal_corporation,1273294,77.231490,28.651950
 252468,Edappadi,Tamil Nadu,municipality,11712070,78.657000,11.435890
 252568,Erode,Tamil Nadu,municipal_corporation,1272013,77.727410,11.342800
 252547,Gobichettipalayam,Tamil Nadu,municipality,1270947,77.442200,11.454960
-252294,Greater Chennai Corporation,Tamil Nadu,municipal_corporation,,80.158419,13.099551
+252294,Greater Chennai Corporation,Tamil Nadu,municipal_corporation,1264527,80.158419,13.099551
 252596,Gudalur,Tamil Nadu,municipality,1270820,77.249510,9.678260
 252639,Gudalur,Tamil Nadu,municipality,1270819,76.481410,11.520730
 252920,Gudalur-Cbe,Tamil Nadu,municipality,11461524,76.949800,11.276640
@@ -2275,7 +2275,7 @@ MCD,Delhi,Delhi,municipal_corporation,1273294,77.231490,28.651950
 250228,Kharar,West Bengal,municipality,1266962,87.678240,22.722110
 250137,Khardah,West Bengal,municipality,1266945,88.378060,22.718610
 250227,Khirpai,West Bengal,municipality,1266708,87.617680,22.709960
-250299,Kolkata,West Bengal,municipal_corporation,,88.353062,22.562379
+250299,Kolkata,West Bengal,municipal_corporation,1275004,88.353062,22.562379
 250178,Konnagar,West Bengal,municipality,1266179,88.344460,22.705080
 250096,Krishnanagar,West Bengal,municipality,1265859,88.490730,23.405760
 249949,Kurseong,West Bengal,municipality,1267675,88.277290,26.882510
