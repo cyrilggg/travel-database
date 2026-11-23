@@ -326,6 +326,12 @@
     "1159150561": "Sevastopol already uses ukraine-UA85000000000065278 / GeoNames 694423; retain the existing country inventory and ID."
   },
   "geonamesIdOverrides": {
+    "1159146373": {
+      "geonamesId": "2653822",
+      "sourceUrl": "https://www.geonames.org/2653822/cardiff.html",
+      "researchedAt": "2026-11-23",
+      "reason": "英国威尔士首府 Cardiff。原关联 2172349 指向澳大利亚同名城市，沿用原地图 ID 和坐标。"
+    },
     "1159151359": {
       "geonamesId": "3067696",
       "sourceUrl": "https://www.geonames.org/3067696/prague.html",
