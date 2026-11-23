@@ -398,5 +398,77 @@
     "city": "鹿儿岛市",
     "country": "JP",
     "geonamesId": "1860823"
+  },
+  {
+    "sourcePath": "destinations/日本/青森县/青森市.md",
+    "mapId": "japan-02201",
+    "guideId": "jp-2130654",
+    "city": "青森市",
+    "country": "JP",
+    "geonamesId": "2130654"
+  },
+  {
+    "sourcePath": "destinations/日本/富山县/富山市.md",
+    "mapId": "japan-16201",
+    "guideId": "jp-1849870",
+    "city": "富山市",
+    "country": "JP",
+    "geonamesId": "1849870"
+  },
+  {
+    "sourcePath": "destinations/日本/长野县/长野市.md",
+    "mapId": "japan-20201",
+    "guideId": "jp-1856209",
+    "city": "长野市",
+    "country": "JP",
+    "geonamesId": "1856209"
+  },
+  {
+    "sourcePath": "destinations/日本/静冈县/静冈市.md",
+    "mapId": "japan-22100",
+    "guideId": "jp-1851714",
+    "city": "静冈市",
+    "country": "JP",
+    "geonamesId": "1851714"
+  },
+  {
+    "sourcePath": "destinations/日本/三重县/伊势市.md",
+    "mapId": "japan-24203",
+    "guideId": "jp-1861434",
+    "city": "伊势市",
+    "country": "JP",
+    "geonamesId": "1861434"
+  },
+  {
+    "sourcePath": "destinations/日本/冈山县/仓敷市.md",
+    "mapId": "japan-33202",
+    "guideId": "jp-1858309",
+    "city": "仓敷市",
+    "country": "JP",
+    "geonamesId": "1858309"
+  },
+  {
+    "sourcePath": "destinations/日本/爱媛县/松山市.md",
+    "mapId": "japan-38201",
+    "guideId": "jp-1857456",
+    "city": "松山市",
+    "country": "JP",
+    "geonamesId": "1857456"
+  },
+  {
+    "sourcePath": "destinations/日本/大分县/别府市.md",
+    "mapId": "japan-44202",
+    "guideId": "jp-7414050",
+    "city": "别府市",
+    "country": "JP",
+    "geonamesId": "7414050"
+  },
+  {
+    "sourcePath": "destinations/日本/冲绳县/石垣市.md",
+    "mapId": "japan-47207",
+    "guideId": "jp-1861412",
+    "city": "石垣市",
+    "country": "JP",
+    "geonamesId": "1861412"
   }
 ]
