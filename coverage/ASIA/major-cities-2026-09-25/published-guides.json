@@ -254,5 +254,77 @@
     "city": "福冈市",
     "country": "JP",
     "geonamesId": "1863955"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/雅加达首都特区/中雅加达.md",
+    "mapId": "indonesia-31.71",
+    "guideId": "id-1642908",
+    "city": "中雅加达",
+    "country": "ID",
+    "geonamesId": "1642908"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/西爪哇省/万隆.md",
+    "mapId": "indonesia-32.73",
+    "guideId": "id-1650357",
+    "city": "万隆",
+    "country": "ID",
+    "geonamesId": "1650357"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/东爪哇省/泗水.md",
+    "mapId": "indonesia-35.78",
+    "guideId": "id-1625822",
+    "city": "泗水",
+    "country": "ID",
+    "geonamesId": "1625822"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/北苏门答腊省/棉兰.md",
+    "mapId": "indonesia-12.71",
+    "guideId": "id-1214520",
+    "city": "棉兰",
+    "country": "ID",
+    "geonamesId": "1214520"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/霹雳州/怡保.md",
+    "mapId": "malaysia-0801",
+    "guideId": "my-1734634",
+    "city": "怡保",
+    "country": "MY",
+    "geonamesId": "1734634"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/沙巴州/哥打基纳巴卢.md",
+    "mapId": "malaysia-1201",
+    "guideId": "my-1733432",
+    "city": "哥打基纳巴卢",
+    "country": "MY",
+    "geonamesId": "1733432"
+  },
+  {
+    "sourcePath": "destinations/泰国/清莱府/清莱.md",
+    "mapId": "thailand-NCM-CHIANG-RAI",
+    "guideId": "th-1153669",
+    "city": "清莱",
+    "country": "TH",
+    "geonamesId": "1153669"
+  },
+  {
+    "sourcePath": "destinations/泰国/大城府/阿瑜陀耶.md",
+    "mapId": "thailand-NCM-PHRA-NAKHON-SI-AYUTTHAYA",
+    "guideId": "th-1607532",
+    "city": "阿瑜陀耶",
+    "country": "TH",
+    "geonamesId": "1607532"
+  },
+  {
+    "sourcePath": "destinations/泰国/普吉府/普吉市.md",
+    "mapId": "thailand-NCM-PHUKET",
+    "guideId": "th-1151254",
+    "city": "普吉市",
+    "country": "TH",
+    "geonamesId": "1151254"
   }
 ]
