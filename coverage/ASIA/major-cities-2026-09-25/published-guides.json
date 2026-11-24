@@ -2134,5 +2134,53 @@
     "city": "乌兹根",
     "country": "KG",
     "geonamesId": "1527513"
+  },
+  {
+    "sourcePath": "destinations/日本/北海道/室兰市.md",
+    "mapId": "japan-01205",
+    "guideId": "jp-2129098",
+    "city": "室兰市",
+    "country": "JP",
+    "geonamesId": "2129098"
+  },
+  {
+    "sourcePath": "destinations/日本/北海道/稚内市.md",
+    "mapId": "japan-01214",
+    "guideId": "jp-2127513",
+    "city": "稚内市",
+    "country": "JP",
+    "geonamesId": "2127513"
+  },
+  {
+    "sourcePath": "destinations/日本/北海道/根室市.md",
+    "mapId": "japan-01223",
+    "guideId": "jp-2128971",
+    "city": "根室市",
+    "country": "JP",
+    "geonamesId": "2128971"
+  },
+  {
+    "sourcePath": "destinations/日本/北海道/千岁市.md",
+    "mapId": "japan-01224",
+    "guideId": "jp-2130449",
+    "city": "千岁市",
+    "country": "JP",
+    "geonamesId": "2130449"
+  },
+  {
+    "sourcePath": "destinations/日本/青森县/八户市.md",
+    "mapId": "japan-02203",
+    "guideId": "jp-2130200",
+    "city": "八户市",
+    "country": "JP",
+    "geonamesId": "2130200"
+  },
+  {
+    "sourcePath": "destinations/日本/青森县/十和田市.md",
+    "mapId": "japan-02206",
+    "guideId": "jp-2127674",
+    "city": "十和田市",
+    "country": "JP",
+    "geonamesId": "2127674"
   }
 ]
