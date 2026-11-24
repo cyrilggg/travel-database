@@ -1350,5 +1350,77 @@
     "city": "三宝颜",
     "country": "PH",
     "geonamesId": "1679432"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/柔佛州/依斯干达公主城.md",
+    "mapId": "malaysia-0102",
+    "guideId": "my-10063567",
+    "city": "依斯干达公主城",
+    "country": "MY",
+    "geonamesId": "10063567"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/柔佛州/巴西古当.md",
+    "mapId": "malaysia-0116",
+    "guideId": "my-1732722",
+    "city": "巴西古当",
+    "country": "MY",
+    "geonamesId": "1732722"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/森美兰州/芙蓉.md",
+    "mapId": "malaysia-0501",
+    "guideId": "my-1734810",
+    "city": "芙蓉",
+    "country": "MY",
+    "geonamesId": "1734810"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/槟城州/威省.md",
+    "mapId": "malaysia-0702",
+    "guideId": "malaysia-0702",
+    "city": "威省",
+    "country": "MY",
+    "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/马来西亚/雪兰莪州/莎阿南.md",
+    "mapId": "malaysia-1001",
+    "guideId": "my-1732903",
+    "city": "莎阿南",
+    "country": "MY",
+    "geonamesId": "1732903"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/雪兰莪州/八打灵再也.md",
+    "mapId": "malaysia-1003",
+    "guideId": "my-1735158",
+    "city": "八打灵再也",
+    "country": "MY",
+    "geonamesId": "1735158"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/雪兰莪州/梳邦再也.md",
+    "mapId": "malaysia-1007",
+    "guideId": "my-8504423",
+    "city": "梳邦再也",
+    "country": "MY",
+    "geonamesId": "8504423"
+  },
+  {
+    "sourcePath": "destinations/马来西亚/砂拉越州/古晋北区.md",
+    "mapId": "malaysia-1301",
+    "guideId": "malaysia-1301",
+    "city": "古晋北区",
+    "country": "MY",
+    "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/马来西亚/砂拉越州/古晋南区.md",
+    "mapId": "malaysia-1302",
+    "guideId": "malaysia-1302",
+    "city": "古晋南区",
+    "country": "MY",
+    "geonamesId": null
   }
 ]

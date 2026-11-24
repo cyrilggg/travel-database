@@ -90,7 +90,7 @@ export interface GuideBrowseItem { id: string; title: string; description?: stri
 export interface GuideBrowseSection { key: GuideBrowseKey; label: string; hint: string; sourceTitle: string; items: GuideBrowseItem[]; totalCount: number; }
 export interface TravelGuide {
   countryCode: string; countryName: string;
-  kind: "city"; id: string; title: string; city: string; adminArea: string; geonamesId: string;
+  kind: "city"; id: string; title: string; city: string; adminArea: string; geonamesId: string | null;
   lastResearched: string; contentStatus: string; summary: string;
   suggestedStay: string; keywords: string[]; coordinates: GuideCoordinates; structuredPath: string; fullTextPath?: string;
 }
