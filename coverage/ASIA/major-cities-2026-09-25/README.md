@@ -461,3 +461,16 @@
 | [拜斯](../../../destinations/菲律宾/东内格罗斯/拜斯.md) | philippines-1804604000 | 1728772 |
 
 Angeles 和 Batangas City 的地图标签分别从“安吉尔”和“巴卡斯”更新为“安赫莱斯”和“八打雁市”，保留原有城市 ID 和坐标。[安赫莱斯老城中文地名](https://gs.ctrip.com/html5/you/sight/angeles14602/1757262.html) · [中国驻菲律宾使馆对八打雁市的称呼](https://ph.china-embassy.gov.cn/sgdt/202209/t20220907_10763260.htm)
+
+## 日本中部四县（2026-11-24）
+
+| 城市攻略 | 地图 ID | GeoNames |
+|---|---|---|
+| [诹访市](../../../destinations/日本/长野县/诹访市.md) | japan-20206 | 1851362 |
+| [安昙野市](../../../destinations/日本/长野县/安昙野市.md) | japan-20220 | 10629642 |
+| [中津川市](../../../destinations/日本/岐阜县/中津川市.md) | japan-21206 | 1855750 |
+| [飞驒市](../../../destinations/日本/岐阜县/飞驒市.md) | japan-21217 | 7419032 |
+| [郡上市](../../../destinations/日本/岐阜县/郡上市.md) | japan-21219 | 7419031 |
+| [下田市](../../../destinations/日本/静冈县/下田市.md) | japan-22219 | 1852349 |
+| [富士宫市](../../../destinations/日本/静冈县/富士宫市.md) | japan-22207 | 1864104 |
+| [北杜市](../../../destinations/日本/山梨县/北杜市.md) | japan-19209 | 7415915 |

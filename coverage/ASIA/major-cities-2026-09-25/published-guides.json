@@ -2438,5 +2438,69 @@
     "city": "拜斯",
     "country": "PH",
     "geonamesId": "1728772"
+  },
+  {
+    "sourcePath": "destinations/日本/长野县/诹访市.md",
+    "mapId": "japan-20206",
+    "guideId": "jp-1851362",
+    "city": "诹访市",
+    "country": "JP",
+    "geonamesId": "1851362"
+  },
+  {
+    "sourcePath": "destinations/日本/长野县/安昙野市.md",
+    "mapId": "japan-20220",
+    "guideId": "jp-10629642",
+    "city": "安昙野市",
+    "country": "JP",
+    "geonamesId": "10629642"
+  },
+  {
+    "sourcePath": "destinations/日本/岐阜县/中津川市.md",
+    "mapId": "japan-21206",
+    "guideId": "jp-1855750",
+    "city": "中津川市",
+    "country": "JP",
+    "geonamesId": "1855750"
+  },
+  {
+    "sourcePath": "destinations/日本/岐阜县/飞驒市.md",
+    "mapId": "japan-21217",
+    "guideId": "jp-7419032",
+    "city": "飞驒市",
+    "country": "JP",
+    "geonamesId": "7419032"
+  },
+  {
+    "sourcePath": "destinations/日本/岐阜县/郡上市.md",
+    "mapId": "japan-21219",
+    "guideId": "jp-7419031",
+    "city": "郡上市",
+    "country": "JP",
+    "geonamesId": "7419031"
+  },
+  {
+    "sourcePath": "destinations/日本/静冈县/下田市.md",
+    "mapId": "japan-22219",
+    "guideId": "jp-1852349",
+    "city": "下田市",
+    "country": "JP",
+    "geonamesId": "1852349"
+  },
+  {
+    "sourcePath": "destinations/日本/静冈县/富士宫市.md",
+    "mapId": "japan-22207",
+    "guideId": "jp-1864104",
+    "city": "富士宫市",
+    "country": "JP",
+    "geonamesId": "1864104"
+  },
+  {
+    "sourcePath": "destinations/日本/山梨县/北杜市.md",
+    "mapId": "japan-19209",
+    "guideId": "jp-7415915",
+    "city": "北杜市",
+    "country": "JP",
+    "geonamesId": "7415915"
   }
 ]
