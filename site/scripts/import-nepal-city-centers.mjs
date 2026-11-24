@@ -413,12 +413,19 @@ if (officialRows.length !== 753 || officialCities.length !== 293) {
 }
 
 const matches = matchCities(officialCities, boundaryCities);
-// GeoNames populated places matched to the four published guide destinations.
+// GeoNames destinations linked to the official municipality codes.
 const guideGeoNamesByCode = new Map([
   ["30608", "1283240"],
   ["30802", "1282931"],
   ["30702", "1283617"],
   ["40504", "1282898"],
+  ["50813", "12095978"],
+  ["31305", "7935005"],
+  ["20315", "1283318"],
+  ["30609", "1283190"],
+  ["30701", "8010131"],
+  ["30905", "1283448"],
+  ["50605", "1282714"],
 ]);
 const outputRows = matches
   .map(({ official, boundary, distance }) => {

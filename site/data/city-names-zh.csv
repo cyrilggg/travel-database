@@ -561,10 +561,10 @@ NP,30605,托赫卡,Tokha,phonetic_translation
 NP,30606,塔拉克什沃,Tarakeshwor,phonetic_translation
 NP,30607,纳加尔朱恩,Nagarjun,phonetic_translation
 NP,30608,加德满都,Kathmandu,phonetic_translation
-NP,30609,基特,Kirtipur,phonetic_translation
+NP,30609,基尔蒂普尔,Kirtipur,manual
 NP,30610,昌德拉吉里,Chandragiri,phonetic_translation
 NP,30611,达希金卡利,Dakshinkali,phonetic_translation
-NP,30701,昌扬那瑞安,Changunarayan,phonetic_translation
+NP,30701,昌古纳拉扬,Changunarayan,manual
 NP,30702,巴克塔普尔,Bhaktapur,phonetic_translation
 NP,30703,马德雅普特米,Madhyapur Thimi,phonetic_translation
 NP,30704,苏里比纳亚克,Suryabinayak,phonetic_translation
@@ -573,7 +573,7 @@ NP,30802,拉利特普尔,Lalitpur,phonetic_translation
 NP,30803,戈达瓦里,Godawari,phonetic_translation
 NP,30903,曼达恩德普尔,Mandan Deupur,phonetic_translation
 NP,30904,巴内帕,Banepa,phonetic_translation
-NP,30905,楚里克尔,Dhulikhel,phonetic_translation
+NP,30905,杜利凯尔,Dhulikhel,manual
 NP,30906,潘乔卡赫,Panchkhal,phonetic_translation
 NP,30908,纳摩佛陀,Namobuddha,phonetic_translation
 NP,30909,帕纳提,Panauti,phonetic_translation
@@ -634,7 +634,7 @@ NP,50802,巴特韦尔,Butwal,phonetic_translation
 NP,50803,塞纳马因,Sainamaina,phonetic_translation
 NP,50808,提洛塔马,Tilottama,phonetic_translation
 NP,50811,悉达多纳加,Siddharthanagar,phonetic_translation
-NP,50813,蓝毗尼文化,Lumbini Sanskritik,phonetic_translation
+NP,50813,蓝毗尼,Lumbini Sanskritik,manual
 NP,50901,班加加,Banganga,phonetic_translation
 NP,50902,佛陀大地,Buddhabhumi,phonetic_translation
 NP,50903,什瓦拉杰,Shivaraj,phonetic_translation

@@ -75,7 +75,7 @@ administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
 20310,Shahidnagar,Dhanusha,municipality,,86.109196,26.734705
 20311,Kamala,Dhanusha,municipality,,86.158314,26.699235
 20313,Bideha,Dhanusha,municipality,,86.062710,26.678663
-20315,Janakpurdham,Dhanusha,sub_metropolitan_city,,85.936673,26.725432
+20315,Janakpurdham,Dhanusha,sub_metropolitan_city,1283318,85.936673,26.725432
 20317,Nagarain,Dhanusha,municipality,,85.926879,26.644122
 20401,Bardibas,Mahottari,municipality,,85.857642,27.035739
 20402,Gaushala,Mahottari,municipality,,85.783891,26.949198
@@ -142,10 +142,10 @@ administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
 30606,Tarakeshwor,Kathmandu,municipality,,85.299312,27.777440
 30607,Nagarjun,Kathmandu,municipality,,85.263576,27.727044
 30608,Kathmandu,Kathmandu,capital_metropolitan_city,1283240,85.329507,27.708754
-30609,Kirtipur,Kathmandu,municipality,,85.277435,27.666508
+30609,Kirtipur,Kathmandu,municipality,1283190,85.277435,27.666508
 30610,Chandragiri,Kathmandu,municipality,,85.231820,27.686623
 30611,Dakshinkali,Kathmandu,municipality,,85.263348,27.615967
-30701,Changunarayan,Bhaktapur,municipality,,85.465032,27.696004
+30701,Changunarayan,Bhaktapur,municipality,8010131,85.465032,27.696004
 30702,Bhaktapur,Bhaktapur,municipality,1283617,85.431932,27.674769
 30703,Madhyapur Thimi,Bhaktapur,municipality,,85.383782,27.682229
 30704,Suryabinayak,Bhaktapur,municipality,,85.427751,27.648996
@@ -154,7 +154,7 @@ administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
 30803,Godawari,Lalitpur,municipality,,85.337814,27.584295
 30903,Mandan Deupur,Kabhrepalanchok,municipality,,85.600938,27.709979
 30904,Banepa,Kabhrepalanchok,municipality,,85.515902,27.648070
-30905,Dhulikhel,Kabhrepalanchok,municipality,,85.574585,27.617763
+30905,Dhulikhel,Kabhrepalanchok,municipality,1283448,85.574585,27.617763
 30906,Panchkhal,Kabhrepalanchok,municipality,,85.640929,27.636735
 30908,Namobuddha,Kabhrepalanchok,municipality,,85.642076,27.552966
 30909,Panauti,Kabhrepalanchok,municipality,,85.480565,27.576991
@@ -167,7 +167,7 @@ administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
 31301,Rapti,Chitawan,municipality,,84.691780,27.649121
 31302,Kalika,Chitawan,municipality,,84.588365,27.709539
 31304,Bharatpur,Chitawan,metropolitan_city,,84.386297,27.652668
-31305,Ratnanagar,Chitawan,municipality,,84.516071,27.618895
+31305,Ratnanagar,Chitawan,municipality,7935005,84.516071,27.618895
 31306,Khairahani,Chitawan,municipality,,84.573329,27.605500
 31307,Madi,Chitawan,municipality,,84.373340,27.420350
 40108,Palungtar,Gorkha,municipality,,84.508298,28.010095
@@ -206,7 +206,7 @@ administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
 50504,Sandhikharka,Arghakhanchi,municipality,,83.139727,27.973604
 50506,Shitaganga,Arghakhanchi,municipality,,83.015967,27.840962
 50601,Rampur,Palpa,municipality,,83.885674,27.853569
-50605,Tansen,Palpa,municipality,,83.522465,27.866386
+50605,Tansen,Palpa,municipality,1282714,83.522465,27.866386
 50701,Bardaghat,Nawalparasi W,municipality,,83.797847,27.556259
 50702,Sunawal,Nawalparasi W,municipality,,83.667651,27.617717
 50703,Ramgram,Nawalparasi W,municipality,,83.651013,27.526583
@@ -215,7 +215,7 @@ administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
 50803,Sainamaina,Rupandehi,municipality,,83.307695,27.711672
 50808,Tilottama,Rupandehi,municipality,,83.488391,27.608094
 50811,Siddharthanagar,Rupandehi,municipality,,83.444321,27.501076
-50813,Lumbini Sanskritik,Rupandehi,municipality,,83.269212,27.473363
+50813,Lumbini Sanskritik,Rupandehi,municipality,12095978,83.269212,27.473363
 50901,Banganga,Kapilbastu,municipality,,83.159703,27.684825
 50902,Buddhabhumi,Kapilbastu,municipality,,82.999645,27.685478
 50903,Shivaraj,Kapilbastu,municipality,,82.854417,27.693441
