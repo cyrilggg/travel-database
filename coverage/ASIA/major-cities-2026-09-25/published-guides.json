@@ -2070,5 +2070,69 @@
     "city": "指宿市",
     "country": "JP",
     "geonamesId": "1862007"
+  },
+  {
+    "sourcePath": "destinations/乌兹别克斯坦/花剌子模州/乌尔根奇.md",
+    "mapId": "uzbekistan-1733401",
+    "guideId": "uz-1512473",
+    "city": "乌尔根奇",
+    "country": "UZ",
+    "geonamesId": "1512473"
+  },
+  {
+    "sourcePath": "destinations/乌兹别克斯坦/费尔干纳州/里什顿.md",
+    "mapId": "uzbekistan-1730224501",
+    "guideId": "uz-1512955",
+    "city": "里什顿",
+    "country": "UZ",
+    "geonamesId": "1512955"
+  },
+  {
+    "sourcePath": "destinations/乌兹别克斯坦/布哈拉州/吉日杜万.md",
+    "mapId": "uzbekistan-1706215501",
+    "guideId": "uz-1513983",
+    "city": "吉日杜万",
+    "country": "UZ",
+    "geonamesId": "1513983"
+  },
+  {
+    "sourcePath": "destinations/乌兹别克斯坦/纳曼干州/纳曼干.md",
+    "mapId": "uzbekistan-1714401",
+    "guideId": "uz-1513157",
+    "city": "纳曼干",
+    "country": "UZ",
+    "geonamesId": "1513157"
+  },
+  {
+    "sourcePath": "destinations/吉尔吉斯斯坦/楚河州/托克马克.md",
+    "mapId": "kyrgyzstan-41708400000010",
+    "guideId": "kg-1527199",
+    "city": "托克马克",
+    "country": "KG",
+    "geonamesId": "1527199"
+  },
+  {
+    "sourcePath": "destinations/吉尔吉斯斯坦/伊塞克湖州/乔尔蓬阿塔.md",
+    "mapId": "kyrgyzstan-41702215600010",
+    "guideId": "kg-1528512",
+    "city": "乔尔蓬阿塔",
+    "country": "KG",
+    "geonamesId": "1528512"
+  },
+  {
+    "sourcePath": "destinations/吉尔吉斯斯坦/纳伦州/纳伦.md",
+    "mapId": "kyrgyzstan-41704400000010",
+    "guideId": "kg-1527592",
+    "city": "纳伦",
+    "country": "KG",
+    "geonamesId": "1527592"
+  },
+  {
+    "sourcePath": "destinations/吉尔吉斯斯坦/奥什州/乌兹根.md",
+    "mapId": "kyrgyzstan-41706255600010",
+    "guideId": "kg-1527513",
+    "city": "乌兹根",
+    "country": "KG",
+    "geonamesId": "1527513"
   }
 ]
