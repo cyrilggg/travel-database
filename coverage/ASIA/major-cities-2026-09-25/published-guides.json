@@ -1286,5 +1286,69 @@
     "city": "巴淡",
     "country": "ID",
     "geonamesId": "8314434"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/宿务/拉普拉普.md",
+    "mapId": "philippines-0731100000",
+    "guideId": "ph-1707267",
+    "city": "拉普拉普",
+    "country": "PH",
+    "geonamesId": "1707267"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/国家首都区/马卡蒂.md",
+    "mapId": "philippines-1380300000",
+    "guideId": "ph-1703417",
+    "city": "马卡蒂",
+    "country": "PH",
+    "geonamesId": "1703417"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/国家首都区/奎松市.md",
+    "mapId": "philippines-1381300000",
+    "guideId": "ph-1692192",
+    "city": "奎松市",
+    "country": "PH",
+    "geonamesId": "1692192"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/甲米地/大雅台.md",
+    "mapId": "philippines-0402119000",
+    "guideId": "ph-1684553",
+    "city": "大雅台",
+    "country": "PH",
+    "geonamesId": "1684553"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/阿尔拜/黎牙实比.md",
+    "mapId": "philippines-0500506000",
+    "guideId": "ph-1706889",
+    "city": "黎牙实比",
+    "country": "PH",
+    "geonamesId": "1706889"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/莱特/塔克洛班.md",
+    "mapId": "philippines-0831600000",
+    "guideId": "ph-1684712",
+    "city": "塔克洛班",
+    "country": "PH",
+    "geonamesId": "1684712"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/东米萨米斯/卡加延德奥罗.md",
+    "mapId": "philippines-1030500000",
+    "guideId": "ph-1721080",
+    "city": "卡加延德奥罗",
+    "country": "PH",
+    "geonamesId": "1721080"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/南三宝颜/三宝颜.md",
+    "mapId": "philippines-0931700000",
+    "guideId": "ph-1679432",
+    "city": "三宝颜",
+    "country": "PH",
+    "geonamesId": "1679432"
   }
 ]
