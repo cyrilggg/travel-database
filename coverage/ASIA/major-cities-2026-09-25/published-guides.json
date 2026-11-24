@@ -1094,5 +1094,69 @@
     "city": "太宰府市",
     "country": "JP",
     "geonamesId": "1864394"
+  },
+  {
+    "sourcePath": "destinations/日本/岛根县/出云市.md",
+    "mapId": "japan-32203",
+    "guideId": "jp-1861082",
+    "city": "出云市",
+    "country": "JP",
+    "geonamesId": "1861082"
+  },
+  {
+    "sourcePath": "destinations/日本/德岛县/德岛市.md",
+    "mapId": "japan-36201",
+    "guideId": "jp-1850156",
+    "city": "德岛市",
+    "country": "JP",
+    "geonamesId": "1850156"
+  },
+  {
+    "sourcePath": "destinations/日本/德岛县/鸣门市.md",
+    "mapId": "japan-36202",
+    "guideId": "jp-10172903",
+    "city": "鸣门市",
+    "country": "JP",
+    "geonamesId": "10172903"
+  },
+  {
+    "sourcePath": "destinations/日本/爱媛县/今治市.md",
+    "mapId": "japan-38202",
+    "guideId": "jp-1926135",
+    "city": "今治市",
+    "country": "JP",
+    "geonamesId": "1926135"
+  },
+  {
+    "sourcePath": "destinations/日本/佐贺县/佐贺市.md",
+    "mapId": "japan-41201",
+    "guideId": "jp-1853274",
+    "city": "佐贺市",
+    "country": "JP",
+    "geonamesId": "1853274"
+  },
+  {
+    "sourcePath": "destinations/日本/长崎县/佐世保市.md",
+    "mapId": "japan-42202",
+    "guideId": "jp-1852895",
+    "city": "佐世保市",
+    "country": "JP",
+    "geonamesId": "1852895"
+  },
+  {
+    "sourcePath": "destinations/日本/大分县/大分市.md",
+    "mapId": "japan-44201",
+    "guideId": "jp-1854480",
+    "city": "大分市",
+    "country": "JP",
+    "geonamesId": "1854480"
+  },
+  {
+    "sourcePath": "destinations/日本/宫崎县/宫崎市.md",
+    "mapId": "japan-45201",
+    "guideId": "jp-1856706",
+    "city": "宫崎市",
+    "country": "JP",
+    "geonamesId": "1856706"
   }
 ]
