@@ -1222,5 +1222,69 @@
     "city": "武里南",
     "country": "TH",
     "geonamesId": "1611453"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/西爪哇省/茂物.md",
+    "mapId": "indonesia-32.71",
+    "guideId": "id-1648473",
+    "city": "茂物",
+    "country": "ID",
+    "geonamesId": "1648473"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/西爪哇省/井里汶.md",
+    "mapId": "indonesia-32.74",
+    "guideId": "id-1646170",
+    "city": "井里汶",
+    "country": "ID",
+    "geonamesId": "1646170"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/西努沙登加拉省/马塔兰.md",
+    "mapId": "indonesia-52.71",
+    "guideId": "id-1635882",
+    "city": "马塔兰",
+    "country": "ID",
+    "geonamesId": "1635882"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/西加里曼丹省/坤甸.md",
+    "mapId": "indonesia-61.71",
+    "guideId": "id-1630789",
+    "city": "坤甸",
+    "country": "ID",
+    "geonamesId": "1630789"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/南加里曼丹省/马辰.md",
+    "mapId": "indonesia-63.71",
+    "guideId": "id-1650213",
+    "city": "马辰",
+    "country": "ID",
+    "geonamesId": "1650213"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/马鲁古省/安汶.md",
+    "mapId": "indonesia-81.71",
+    "guideId": "id-1651531",
+    "city": "安汶",
+    "country": "ID",
+    "geonamesId": "1651531"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/北马鲁古省/特尔纳特.md",
+    "mapId": "indonesia-82.71",
+    "guideId": "id-1624041",
+    "city": "特尔纳特",
+    "country": "ID",
+    "geonamesId": "1624041"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/廖内群岛省/巴淡.md",
+    "mapId": "indonesia-21.71",
+    "guideId": "id-8314434",
+    "city": "巴淡",
+    "country": "ID",
+    "geonamesId": "8314434"
   }
 ]

@@ -281,3 +281,18 @@
 | [乌隆他尼](../../../destinations/泰国/乌隆他尼府/乌隆他尼.md) | thailand-NCM-UDON-THANI | 1605239 |
 | [乌汶叻差他尼](../../../destinations/泰国/乌汶府/乌汶叻差他尼.md) | thailand-NCM-UBON-RATCHATHANI | 1605245 |
 | [武里南](../../../destinations/泰国/武里南府/武里南.md) | thailand-NCM-BURI-RAM | 1611453 |
+
+## 印度尼西亚爪哇与外岛八城（2026-11-24）
+
+在既有自治市地图上补入西爪哇两城、龙目岛州府、加里曼丹两座河港、马鲁古两座港城及廖内群岛的巴淡。
+
+| 城市攻略 | 地图 ID | GeoNames |
+|---|---|---|
+| [茂物](../../../destinations/印度尼西亚/西爪哇省/茂物.md) | indonesia-32.71 | 1648473 |
+| [井里汶](../../../destinations/印度尼西亚/西爪哇省/井里汶.md) | indonesia-32.74 | 1646170 |
+| [马塔兰](../../../destinations/印度尼西亚/西努沙登加拉省/马塔兰.md) | indonesia-52.71 | 1635882 |
+| [坤甸](../../../destinations/印度尼西亚/西加里曼丹省/坤甸.md) | indonesia-61.71 | 1630789 |
+| [马辰](../../../destinations/印度尼西亚/南加里曼丹省/马辰.md) | indonesia-63.71 | 1650213 |
+| [安汶](../../../destinations/印度尼西亚/马鲁古省/安汶.md) | indonesia-81.71 | 1651531 |
+| [特尔纳特](../../../destinations/印度尼西亚/北马鲁古省/特尔纳特.md) | indonesia-82.71 | 1624041 |
+| [巴淡](../../../destinations/印度尼西亚/廖内群岛省/巴淡.md) | indonesia-21.71 | 8314434 |

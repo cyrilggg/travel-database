@@ -204,7 +204,7 @@ ID,17.71,明古鲁,Bengkulu,reference
 ID,18.71,楠榜港,Bandar Lampung,reference
 ID,18.72,梅托,Metro,phonetic_translation
 ID,19.71,邦加槟港,Pangkal Pinang,reference
-ID,21.71,巴塔麻,Batam,phonetic_translation
+ID,21.71,巴淡,Batam,manual
 ID,21.72,廖都,Tanjung Pinang,reference
 ID,31.71,中雅加达,Jakarta Pusat,reference
 ID,31.72,北雅加达,Jakarta Utara,reference
@@ -247,7 +247,7 @@ ID,53.71,古邦,Kupang,reference
 ID,61.71,坤甸,Pontianak,reference
 ID,61.72,山口洋,Singkawang,reference
 ID,62.71,帕朗卡拉亚,Palangkaraya,reference
-ID,63.71,班达兰顺,Banjarmasin,phonetic_translation
+ID,63.71,马辰,Banjarmasin,manual
 ID,63.72,巴宁巴鲁,Banjarbaru,phonetic_translation
 ID,64.71,巴厘巴板,Balikpapan,reference
 ID,64.72,沙马林达,Samarinda,reference
@@ -266,7 +266,7 @@ ID,74.72,巴务巴务市,Bau Bau,reference
 ID,75.71,哥伦打洛,Gorontalo,reference
 ID,81.71,安汶,Ambon,reference
 ID,81.72,图阿尔,Tual,reference
-ID,82.71,坦内特,Ternate,phonetic_translation
+ID,82.71,特尔纳特,Ternate,manual
 ID,82.72,蒂多雷群岛,Tidore Kepulauan,phonetic_translation
 ID,91.71,查雅普拉,Jayapura,reference
 ID,96.71,索龙,Sorong,reference
