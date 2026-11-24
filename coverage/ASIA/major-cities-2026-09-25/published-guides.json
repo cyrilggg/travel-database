@@ -1030,5 +1030,69 @@
     "city": "由布市",
     "country": "JP",
     "geonamesId": "8739980"
+  },
+  {
+    "sourcePath": "destinations/日本/神奈川县/川崎市.md",
+    "mapId": "japan-14130",
+    "guideId": "jp-1859635",
+    "city": "川崎市",
+    "country": "JP",
+    "geonamesId": "1859635"
+  },
+  {
+    "sourcePath": "destinations/日本/神奈川县/横须贺市.md",
+    "mapId": "japan-14201",
+    "guideId": "jp-1848308",
+    "city": "横须贺市",
+    "country": "JP",
+    "geonamesId": "1848308"
+  },
+  {
+    "sourcePath": "destinations/日本/岐阜县/岐阜市.md",
+    "mapId": "japan-21201",
+    "guideId": "jp-1863639",
+    "city": "岐阜市",
+    "country": "JP",
+    "geonamesId": "1863639"
+  },
+  {
+    "sourcePath": "destinations/日本/静冈县/滨松市.md",
+    "mapId": "japan-22130",
+    "guideId": "jp-1863288",
+    "city": "滨松市",
+    "country": "JP",
+    "geonamesId": "1863288"
+  },
+  {
+    "sourcePath": "destinations/日本/爱知县/犬山市.md",
+    "mapId": "japan-23215",
+    "guideId": "jp-1861527",
+    "city": "犬山市",
+    "country": "JP",
+    "geonamesId": "1861527"
+  },
+  {
+    "sourcePath": "destinations/日本/滋贺县/大津市.md",
+    "mapId": "japan-25201",
+    "guideId": "jp-1853552",
+    "city": "大津市",
+    "country": "JP",
+    "geonamesId": "1853552"
+  },
+  {
+    "sourcePath": "destinations/日本/和歌山县/和歌山市.md",
+    "mapId": "japan-30201",
+    "guideId": "jp-1848936",
+    "city": "和歌山市",
+    "country": "JP",
+    "geonamesId": "1848936"
+  },
+  {
+    "sourcePath": "destinations/日本/福冈县/太宰府市.md",
+    "mapId": "japan-40221",
+    "guideId": "jp-1864394",
+    "city": "太宰府市",
+    "country": "JP",
+    "geonamesId": "1864394"
   }
 ]
