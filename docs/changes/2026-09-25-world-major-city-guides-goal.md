@@ -398,3 +398,5 @@
 2026-11-24：加拿大增补十一城，当前地图 20 处入口均有全文，世界主要城市目标累计编写 630 篇。见[加拿大覆盖记录](../../coverage/NORTH-AMERICA/canada-major-cities-2026-09-25/README.md)。
 
 2026-11-24：美国增补十二座重点城市，地图已有攻略的入口增至 32 处。世界主要城市目标累计编写 642 篇。见[美国覆盖记录](../../coverage/NORTH-AMERICA/us-major-cities-2026-09-25/README.md)。
+
+2026-11-24：巴西增补八城，已有攻略的地图入口从 6 处增至 14 处。世界主要城市目标累计编写 650 篇。见[南美覆盖记录](../../coverage/SOUTH-AMERICA/major-cities-2026-09-25/README.md)。
