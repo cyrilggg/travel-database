@@ -446,3 +446,18 @@
 | [铫子市](../../../destinations/日本/千叶县/铫子市.md) | japan-12202 | 2112994 |
 | [馆山市](../../../destinations/日本/千叶县/馆山市.md) | japan-12205 | 1850520 |
 | [常陆那珂市](../../../destinations/日本/茨城县/常陆那珂市.md) | japan-08221 | 8304033 |
+
+## 菲律宾港口与历史城市（2026-11-24）
+
+| 城市攻略 | 地图 ID | GeoNames |
+|---|---|---|
+| [土格加劳](../../../destinations/菲律宾/卡加延/土格加劳.md) | philippines-0201529000 | 1680932 |
+| [马洛洛斯](../../../destinations/菲律宾/布拉干/马洛洛斯.md) | philippines-0301410000 | 1702540 |
+| [安赫莱斯](../../../destinations/菲律宾/邦板牙/安赫莱斯.md) | philippines-0330100000 | 1730737 |
+| [奥隆阿波](../../../destinations/菲律宾/三描礼士/奥隆阿波.md) | philippines-0331400000 | 1697175 |
+| [八打雁市](../../../destinations/菲律宾/八打雁/八打雁市.md) | philippines-0401005000 | 1726280 |
+| [奥尔莫克](../../../destinations/菲律宾/莱特/奥尔莫克.md) | philippines-0803738000 | 1697018 |
+| [武端市](../../../destinations/菲律宾/北阿古桑/武端市.md) | philippines-1630400000 | 1722186 |
+| [拜斯](../../../destinations/菲律宾/东内格罗斯/拜斯.md) | philippines-1804604000 | 1728772 |
+
+Angeles 和 Batangas City 的地图标签分别从“安吉尔”和“巴卡斯”更新为“安赫莱斯”和“八打雁市”，保留原有城市 ID 和坐标。[安赫莱斯老城中文地名](https://gs.ctrip.com/html5/you/sight/angeles14602/1757262.html) · [中国驻菲律宾使馆对八打雁市的称呼](https://ph.china-embassy.gov.cn/sgdt/202209/t20220907_10763260.htm)

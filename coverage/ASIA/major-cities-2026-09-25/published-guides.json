@@ -2374,5 +2374,69 @@
     "city": "常陆那珂市",
     "country": "JP",
     "geonamesId": "8304033"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/卡加延/土格加劳.md",
+    "mapId": "philippines-0201529000",
+    "guideId": "ph-1680932",
+    "city": "土格加劳",
+    "country": "PH",
+    "geonamesId": "1680932"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/布拉干/马洛洛斯.md",
+    "mapId": "philippines-0301410000",
+    "guideId": "ph-1702540",
+    "city": "马洛洛斯",
+    "country": "PH",
+    "geonamesId": "1702540"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/邦板牙/安赫莱斯.md",
+    "mapId": "philippines-0330100000",
+    "guideId": "ph-1730737",
+    "city": "安赫莱斯",
+    "country": "PH",
+    "geonamesId": "1730737"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/三描礼士/奥隆阿波.md",
+    "mapId": "philippines-0331400000",
+    "guideId": "ph-1697175",
+    "city": "奥隆阿波",
+    "country": "PH",
+    "geonamesId": "1697175"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/八打雁/八打雁市.md",
+    "mapId": "philippines-0401005000",
+    "guideId": "ph-1726280",
+    "city": "八打雁市",
+    "country": "PH",
+    "geonamesId": "1726280"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/莱特/奥尔莫克.md",
+    "mapId": "philippines-0803738000",
+    "guideId": "ph-1697018",
+    "city": "奥尔莫克",
+    "country": "PH",
+    "geonamesId": "1697018"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/北阿古桑/武端市.md",
+    "mapId": "philippines-1630400000",
+    "guideId": "ph-1722186",
+    "city": "武端市",
+    "country": "PH",
+    "geonamesId": "1722186"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/东内格罗斯/拜斯.md",
+    "mapId": "philippines-1804604000",
+    "guideId": "ph-1728772",
+    "city": "拜斯",
+    "country": "PH",
+    "geonamesId": "1728772"
   }
 ]
