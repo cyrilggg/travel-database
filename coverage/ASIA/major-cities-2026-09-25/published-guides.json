@@ -2182,5 +2182,69 @@
     "city": "十和田市",
     "country": "JP",
     "geonamesId": "2127674"
+  },
+  {
+    "sourcePath": "destinations/日本/岩手县/花卷市.md",
+    "mapId": "japan-03205",
+    "guideId": "jp-2112822",
+    "city": "花卷市",
+    "country": "JP",
+    "geonamesId": "2112822"
+  },
+  {
+    "sourcePath": "destinations/日本/岩手县/一关市.md",
+    "mapId": "japan-03209",
+    "guideId": "jp-2112655",
+    "city": "一关市",
+    "country": "JP",
+    "geonamesId": "2112655"
+  },
+  {
+    "sourcePath": "destinations/日本/秋田县/仙北市.md",
+    "mapId": "japan-05215",
+    "guideId": "jp-9035660",
+    "city": "仙北市",
+    "country": "JP",
+    "geonamesId": "9035660"
+  },
+  {
+    "sourcePath": "destinations/日本/秋田县/横手市.md",
+    "mapId": "japan-05203",
+    "guideId": "jp-2110504",
+    "city": "横手市",
+    "country": "JP",
+    "geonamesId": "2110504"
+  },
+  {
+    "sourcePath": "destinations/日本/山形县/酒田市.md",
+    "mapId": "japan-06204",
+    "guideId": "jp-1853136",
+    "city": "酒田市",
+    "country": "JP",
+    "geonamesId": "1853136"
+  },
+  {
+    "sourcePath": "destinations/日本/山形县/米泽市.md",
+    "mapId": "japan-06202",
+    "guideId": "jp-2110496",
+    "city": "米泽市",
+    "country": "JP",
+    "geonamesId": "2110496"
+  },
+  {
+    "sourcePath": "destinations/日本/福岛县/喜多方市.md",
+    "mapId": "japan-07208",
+    "guideId": "jp-1859317",
+    "city": "喜多方市",
+    "country": "JP",
+    "geonamesId": "1859317"
+  },
+  {
+    "sourcePath": "destinations/日本/宫城县/多贺城市.md",
+    "mapId": "japan-04209",
+    "guideId": "jp-8303941",
+    "city": "多贺城市",
+    "country": "JP",
+    "geonamesId": "8303941"
   }
 ]
