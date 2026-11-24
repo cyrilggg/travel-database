@@ -430,3 +430,5 @@
 2026-11-24：摩洛哥目录增补七篇，含西撒哈拉的阿尤恩。现有 12 个地图入口均可打开攻略，世界主要城市目标累计编写 761 篇。见[覆盖记录](../../coverage/AFRICA/major-cities-2026-09-25/README.md)。
 
 2026-11-24：[乌兹别克斯坦](../../coverage/ASIA/uzbekistan-major-cities-2026-11-24/README.md)与[吉尔吉斯斯坦](../../coverage/ASIA/kyrgyzstan-major-cities-2026-11-24/README.md)各增四城，已有攻略的地图入口分别增至 15 处和 7 处。世界主要城市目标累计编写 769 篇。
+
+2026-11-24：新西兰增补哈密尔顿与曼努考，7 个既有地图点全部接入攻略。世界主要城市目标累计编写 771 篇。见[新西兰覆盖记录](../../coverage/OCEANIA/new-zealand-major-cities-2026-09-25/README.md)。
