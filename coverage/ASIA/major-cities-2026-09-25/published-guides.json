@@ -2246,5 +2246,69 @@
     "city": "多贺城市",
     "country": "JP",
     "geonamesId": "8303941"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/东加里曼丹省/巴厘巴板.md",
+    "mapId": "indonesia-64.71",
+    "guideId": "id-1650527",
+    "city": "巴厘巴板",
+    "country": "ID",
+    "geonamesId": "1650527"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/东加里曼丹省/沙马林达.md",
+    "mapId": "indonesia-64.72",
+    "guideId": "id-1629001",
+    "city": "沙马林达",
+    "country": "ID",
+    "geonamesId": "1629001"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/西加里曼丹省/山口洋.md",
+    "mapId": "indonesia-61.72",
+    "guideId": "id-1626916",
+    "city": "山口洋",
+    "country": "ID",
+    "geonamesId": "1626916"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/东爪哇省/巴都.md",
+    "mapId": "indonesia-35.79",
+    "guideId": "id-1649824",
+    "city": "巴都",
+    "country": "ID",
+    "geonamesId": "1649824"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/北苏拉威西省/比通.md",
+    "mapId": "indonesia-71.72",
+    "guideId": "id-1648637",
+    "city": "比通",
+    "country": "ID",
+    "geonamesId": "1648637"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/廖内省/北干巴鲁.md",
+    "mapId": "indonesia-14.71",
+    "guideId": "id-1631761",
+    "city": "北干巴鲁",
+    "country": "ID",
+    "geonamesId": "1631761"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/明古鲁省/明古鲁.md",
+    "mapId": "indonesia-17.71",
+    "guideId": "id-1649150",
+    "city": "明古鲁",
+    "country": "ID",
+    "geonamesId": "1649150"
+  },
+  {
+    "sourcePath": "destinations/印度尼西亚/邦加-勿里洞群岛省/邦加槟港.md",
+    "mapId": "indonesia-19.71",
+    "guideId": "id-1632654",
+    "city": "邦加槟港",
+    "country": "ID",
+    "geonamesId": "1632654"
   }
 ]
