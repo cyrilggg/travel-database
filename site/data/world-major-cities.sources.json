@@ -294,6 +294,7 @@
     "1159146001"
   ],
   "nameOverrides": {
+    "1159131491": "基奇纳",
     "1159139527": "墨西拿",
     "1159149755": "卡塔尼亚",
     "1159150481": "萨克拉门托",
@@ -327,6 +328,12 @@
     "1159150561": "Sevastopol already uses ukraine-UA85000000000065278 / GeoNames 694423; retain the existing country inventory and ID."
   },
   "geonamesIdOverrides": {
+    "1159147659": {
+      "geonamesId": "5969782",
+      "sourceUrl": "https://www.geonames.org/5969782/hamilton.html",
+      "researchedAt": "2026-11-24",
+      "reason": "加拿大安大略省哈密尔顿市，保留已有地图 ID 和中心点。"
+    },
     "1159127279": {
       "geonamesId": "2637487",
       "sourceUrl": "https://www.geonames.org/2637487/southampton.html",

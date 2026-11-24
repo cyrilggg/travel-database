@@ -394,3 +394,5 @@
 2026-11-24：德国增补十三城，当前德国地图 30 处入口均有全文，世界主要城市目标累计编写 612 篇。见[德国覆盖记录](../../coverage/EUROPE/germany-second-cities-2026-09-25/README.md)。
 
 2026-11-24：澳大利亚增补七处，当前地图 17 处入口均有全文，世界主要城市目标累计编写 619 篇。见[澳大利亚覆盖记录](../../coverage/OCEANIA/australia-major-cities-2026-09-25/README.md)。
+
+2026-11-24：加拿大增补十一城，当前地图 20 处入口均有全文，世界主要城市目标累计编写 630 篇。见[加拿大覆盖记录](../../coverage/NORTH-AMERICA/canada-major-cities-2026-09-25/README.md)。
