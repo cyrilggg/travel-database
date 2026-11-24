@@ -19,6 +19,7 @@
 - [菲律宾](./菲律宾/README.md)
 - [阿联酋](./阿联酋/README.md)
 - [阿曼](./阿曼/README.md)
+- [约旦](./约旦/README.md)
 - [卡塔尔](./卡塔尔/README.md)
 - [巴林](./巴林/README.md)
 - [土耳其](./土耳其/README.md)
