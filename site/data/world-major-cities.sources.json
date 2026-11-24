@@ -328,6 +328,12 @@
     "1159150561": "Sevastopol already uses ukraine-UA85000000000065278 / GeoNames 694423; retain the existing country inventory and ID."
   },
   "geonamesIdOverrides": {
+    "1159149515": {
+      "geonamesId": "1006984",
+      "sourceUrl": "https://www.geonames.org/1006984/east-london.html",
+      "researchedAt": "2026-11-24",
+      "reason": "南非东开普省 KuGompo City（East London），沿用原地图 ID 和坐标。"
+    },
     "1159147659": {
       "geonamesId": "5969782",
       "sourceUrl": "https://www.geonames.org/5969782/hamilton.html",
