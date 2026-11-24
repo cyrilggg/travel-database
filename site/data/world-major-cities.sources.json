@@ -329,6 +329,12 @@
     "1159150561": "Sevastopol already uses ukraine-UA85000000000065278 / GeoNames 694423; retain the existing country inventory and ID."
   },
   "geonamesIdOverrides": {
+    "1159149855": {
+      "geonamesId": "358619",
+      "sourceUrl": "https://www.geonames.org/358619/port-said.html",
+      "researchedAt": "2026-11-24",
+      "reason": "关联埃及塞得港省省会城市记录，沿用原地图 ID 和坐标。"
+    },
     "1159150931": {
       "geonamesId": "3868626",
       "sourceUrl": "https://www.geonames.org/3868626/valparaiso.html",
