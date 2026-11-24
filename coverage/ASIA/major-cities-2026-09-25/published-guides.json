@@ -1686,5 +1686,133 @@
     "city": "迪亚巴克尔",
     "country": "TR",
     "geonamesId": "316541"
+  },
+  {
+    "sourcePath": "destinations/印度/喜马偕尔邦/达兰萨拉.md",
+    "mapId": "india-248211",
+    "guideId": "in-1272832",
+    "city": "达兰萨拉",
+    "country": "IN",
+    "geonamesId": "1272832"
+  },
+  {
+    "sourcePath": "destinations/印度/喜马偕尔邦/马纳利.md",
+    "mapId": "india-248218",
+    "guideId": "in-1263967",
+    "city": "马纳利",
+    "country": "IN",
+    "geonamesId": "1263967"
+  },
+  {
+    "sourcePath": "destinations/印度/拉贾斯坦邦/阿杰梅尔.md",
+    "mapId": "india-248788",
+    "guideId": "in-1279159",
+    "city": "阿杰梅尔",
+    "country": "IN",
+    "geonamesId": "1279159"
+  },
+  {
+    "sourcePath": "destinations/印度/泰米尔纳德邦/乌塔卡蒙德.md",
+    "mapId": "india-252600",
+    "guideId": "in-1253993",
+    "city": "乌塔卡蒙德",
+    "country": "IN",
+    "geonamesId": "1253993"
+  },
+  {
+    "sourcePath": "destinations/印度/阿萨姆邦/古瓦哈蒂.md",
+    "mapId": "india-249854",
+    "guideId": "in-1271476",
+    "city": "古瓦哈蒂",
+    "country": "IN",
+    "geonamesId": "1271476"
+  },
+  {
+    "sourcePath": "destinations/印度/梅加拉亚邦/西隆.md",
+    "mapId": "india-249814",
+    "guideId": "in-1256523",
+    "city": "西隆",
+    "country": "IN",
+    "geonamesId": "1256523"
+  },
+  {
+    "sourcePath": "destinations/印度/锡金邦/甘托克.md",
+    "mapId": "india-249694",
+    "guideId": "india-249694",
+    "city": "甘托克",
+    "country": "IN",
+    "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/印度/中央邦/乌贾因.md",
+    "mapId": "india-250851",
+    "guideId": "in-1253914",
+    "city": "乌贾因",
+    "country": "IN",
+    "geonamesId": "1253914"
+  },
+  {
+    "sourcePath": "destinations/日本/北海道/网走市.md",
+    "mapId": "japan-01211",
+    "guideId": "jp-2130736",
+    "city": "网走市",
+    "country": "JP",
+    "geonamesId": "2130736"
+  },
+  {
+    "sourcePath": "destinations/日本/宫城县/石卷市.md",
+    "mapId": "japan-04202",
+    "guideId": "jp-2112574",
+    "city": "石卷市",
+    "country": "JP",
+    "geonamesId": "2112574"
+  },
+  {
+    "sourcePath": "destinations/日本/山形县/鹤冈市.md",
+    "mapId": "japan-06203",
+    "guideId": "jp-1849562",
+    "city": "鹤冈市",
+    "country": "JP",
+    "geonamesId": "1849562"
+  },
+  {
+    "sourcePath": "destinations/日本/富山县/高冈市.md",
+    "mapId": "japan-16202",
+    "guideId": "jp-1851028",
+    "city": "高冈市",
+    "country": "JP",
+    "geonamesId": "1851028"
+  },
+  {
+    "sourcePath": "destinations/日本/石川县/加贺市.md",
+    "mapId": "japan-17206",
+    "guideId": "jp-1860845",
+    "city": "加贺市",
+    "country": "JP",
+    "geonamesId": "1860845"
+  },
+  {
+    "sourcePath": "destinations/日本/长野县/上田市.md",
+    "mapId": "japan-20203",
+    "guideId": "jp-1849427",
+    "city": "上田市",
+    "country": "JP",
+    "geonamesId": "1849427"
+  },
+  {
+    "sourcePath": "destinations/日本/静冈县/伊豆市.md",
+    "mapId": "japan-22222",
+    "guideId": "jp-9036693",
+    "city": "伊豆市",
+    "country": "JP",
+    "geonamesId": "9036693"
+  },
+  {
+    "sourcePath": "destinations/日本/广岛县/福山市.md",
+    "mapId": "japan-34207",
+    "guideId": "jp-1863914",
+    "city": "福山市",
+    "country": "JP",
+    "geonamesId": "1863914"
   }
 ]
