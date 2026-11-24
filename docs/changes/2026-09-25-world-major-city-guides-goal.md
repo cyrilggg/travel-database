@@ -422,3 +422,5 @@
 2026-11-24：[尼泊尔](../../coverage/ASIA/nepal-major-cities-2026-11-24/README.md)与[斯里兰卡](../../coverage/ASIA/sri-lanka-major-cities-2026-11-24/README.md)各增四城，地图可读入口分别增至 15 处和 17 处。世界主要城市目标累计编写 730 篇。
 
 2026-11-24：日本增补八城，已有攻略的地图入口增至 105 处。世界主要城市目标累计编写 738 篇。见[日本覆盖记录](../../coverage/ASIA/major-cities-2026-09-25/README.md)。
+
+2026-11-24：智利首批八城接入既有地图与全文阅读。世界主要城市目标累计编写 746 篇。见[智利覆盖记录](../../coverage/SOUTH-AMERICA/major-cities-2026-09-25/README.md)。
