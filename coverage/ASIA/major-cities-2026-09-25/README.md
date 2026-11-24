@@ -266,3 +266,18 @@
 | [佐世保市](../../../destinations/日本/长崎县/佐世保市.md) | japan-42202 | 1852895 |
 | [大分市](../../../destinations/日本/大分县/大分市.md) | japan-44201 | 1854480 |
 | [宫崎市](../../../destinations/日本/宫崎县/宫崎市.md) | japan-45201 | 1856706 |
+
+## 泰国中部、东北与南部八城（2026-11-24）
+
+沿用八个既有市级地图入口，补入南部大陆城镇、中部铁路门户和伊桑四座主要城市。洛坤亦译那空是贪玛叻。
+
+| 城市攻略 | 地图 ID | GeoNames |
+|---|---|---|
+| [董里](../../../destinations/泰国/董里府/董里.md) | thailand-NCM-TRANG | 1150007 |
+| [佛统](../../../destinations/泰国/佛统府/佛统.md) | thailand-NCM-NAKHON-PATHOM | 1608534 |
+| [洛坤](../../../destinations/泰国/洛坤府/洛坤.md) | thailand-NCM-NAKHON-SI-THAMMARAT | 1151933 |
+| [彭世洛](../../../destinations/泰国/彭世洛府/彭世洛.md) | thailand-NCM-PHITSANULOK | 1607708 |
+| [孔敬](../../../destinations/泰国/孔敬府/孔敬.md) | thailand-NCM-KHON-KAEN | 1609776 |
+| [乌隆他尼](../../../destinations/泰国/乌隆他尼府/乌隆他尼.md) | thailand-NCM-UDON-THANI | 1605239 |
+| [乌汶叻差他尼](../../../destinations/泰国/乌汶府/乌汶叻差他尼.md) | thailand-NCM-UBON-RATCHATHANI | 1605245 |
+| [武里南](../../../destinations/泰国/武里南府/武里南.md) | thailand-NCM-BURI-RAM | 1611453 |

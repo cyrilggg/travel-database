@@ -1158,5 +1158,69 @@
     "city": "宫崎市",
     "country": "JP",
     "geonamesId": "1856706"
+  },
+  {
+    "sourcePath": "destinations/泰国/董里府/董里.md",
+    "mapId": "thailand-NCM-TRANG",
+    "guideId": "th-1150007",
+    "city": "董里",
+    "country": "TH",
+    "geonamesId": "1150007"
+  },
+  {
+    "sourcePath": "destinations/泰国/佛统府/佛统.md",
+    "mapId": "thailand-NCM-NAKHON-PATHOM",
+    "guideId": "th-1608534",
+    "city": "佛统",
+    "country": "TH",
+    "geonamesId": "1608534"
+  },
+  {
+    "sourcePath": "destinations/泰国/洛坤府/洛坤.md",
+    "mapId": "thailand-NCM-NAKHON-SI-THAMMARAT",
+    "guideId": "th-1151933",
+    "city": "洛坤",
+    "country": "TH",
+    "geonamesId": "1151933"
+  },
+  {
+    "sourcePath": "destinations/泰国/彭世洛府/彭世洛.md",
+    "mapId": "thailand-NCM-PHITSANULOK",
+    "guideId": "th-1607708",
+    "city": "彭世洛",
+    "country": "TH",
+    "geonamesId": "1607708"
+  },
+  {
+    "sourcePath": "destinations/泰国/孔敬府/孔敬.md",
+    "mapId": "thailand-NCM-KHON-KAEN",
+    "guideId": "th-1609776",
+    "city": "孔敬",
+    "country": "TH",
+    "geonamesId": "1609776"
+  },
+  {
+    "sourcePath": "destinations/泰国/乌隆他尼府/乌隆他尼.md",
+    "mapId": "thailand-NCM-UDON-THANI",
+    "guideId": "th-1605239",
+    "city": "乌隆他尼",
+    "country": "TH",
+    "geonamesId": "1605239"
+  },
+  {
+    "sourcePath": "destinations/泰国/乌汶府/乌汶叻差他尼.md",
+    "mapId": "thailand-NCM-UBON-RATCHATHANI",
+    "guideId": "th-1605245",
+    "city": "乌汶叻差他尼",
+    "country": "TH",
+    "geonamesId": "1605245"
+  },
+  {
+    "sourcePath": "destinations/泰国/武里南府/武里南.md",
+    "mapId": "thailand-NCM-BURI-RAM",
+    "guideId": "th-1611453",
+    "city": "武里南",
+    "country": "TH",
+    "geonamesId": "1611453"
   }
 ]
