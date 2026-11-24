@@ -326,6 +326,12 @@
     "1159150561": "Sevastopol already uses ukraine-UA85000000000065278 / GeoNames 694423; retain the existing country inventory and ID."
   },
   "geonamesIdOverrides": {
+    "1159127279": {
+      "geonamesId": "2637487",
+      "sourceUrl": "https://www.geonames.org/2637487/southampton.html",
+      "researchedAt": "2026-11-24",
+      "reason": "英格兰汉普郡南安普敦的城市条目，原地图缺少 GeoNames 关联。"
+    },
     "1159146373": {
       "geonamesId": "2653822",
       "sourceUrl": "https://www.geonames.org/2653822/cardiff.html",

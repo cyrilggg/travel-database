@@ -141,16 +141,16 @@ administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
 30605,Tokha,Kathmandu,municipality,,85.332454,27.775169
 30606,Tarakeshwor,Kathmandu,municipality,,85.299312,27.777440
 30607,Nagarjun,Kathmandu,municipality,,85.263576,27.727044
-30608,Kathmandu,Kathmandu,capital_metropolitan_city,,85.329507,27.708754
+30608,Kathmandu,Kathmandu,capital_metropolitan_city,1283240,85.329507,27.708754
 30609,Kirtipur,Kathmandu,municipality,,85.277435,27.666508
 30610,Chandragiri,Kathmandu,municipality,,85.231820,27.686623
 30611,Dakshinkali,Kathmandu,municipality,,85.263348,27.615967
 30701,Changunarayan,Bhaktapur,municipality,,85.465032,27.696004
-30702,Bhaktapur,Bhaktapur,municipality,,85.431932,27.674769
+30702,Bhaktapur,Bhaktapur,municipality,1283617,85.431932,27.674769
 30703,Madhyapur Thimi,Bhaktapur,municipality,,85.383782,27.682229
 30704,Suryabinayak,Bhaktapur,municipality,,85.427751,27.648996
 30801,Mahalaxmi,Lalitpur,municipality,,85.382509,27.634847
-30802,Lalitpur,Lalitpur,metropolitan_city,,85.317995,27.650354
+30802,Lalitpur,Lalitpur,metropolitan_city,1282931,85.317995,27.650354
 30803,Godawari,Lalitpur,municipality,,85.337814,27.584295
 30903,Mandan Deupur,Kabhrepalanchok,municipality,,85.600938,27.709979
 30904,Banepa,Kabhrepalanchok,municipality,,85.515902,27.648070
@@ -173,7 +173,7 @@ administrative_code,name,admin_area,city_level,geonames_id,longitude,latitude
 40108,Palungtar,Gorkha,municipality,,84.508298,28.010095
 40109,Gorkha,Gorkha,municipality,,84.601515,27.982714
 40406,Beni,Myagdi,municipality,,83.535722,28.352658
-40504,Pokhara,Kaski,metropolitan_city,,83.991437,28.210325
+40504,Pokhara,Kaski,metropolitan_city,1282898,83.991437,28.210325
 40604,Madhya Nepal,Lamjung,municipality,,84.264060,28.149419
 40605,Bensishahar,Lamjung,municipality,,84.382551,28.217327
 40606,Sundarbazar,Lamjung,municipality,,84.371579,28.152965

@@ -5,6 +5,7 @@
 ## 亚洲
 
 - [中国](./中国/README.md)
+- [蒙古](./蒙古/README.md)
 - [日本](./日本/README.md)
 - [韩国](./韩国/README.md)
 - [朝鲜](./朝鲜/README.md)
@@ -17,8 +18,16 @@
 - [老挝](./老挝/README.md)
 - [菲律宾](./菲律宾/README.md)
 - [阿联酋](./阿联酋/README.md)
+- [阿曼](./阿曼/README.md)
+- [卡塔尔](./卡塔尔/README.md)
+- [巴林](./巴林/README.md)
 - [土耳其](./土耳其/README.md)
 - [印度](./印度/README.md)
+- [斯里兰卡](./斯里兰卡/README.md)
+- [尼泊尔](./尼泊尔/README.md)
+- [乌兹别克斯坦](./乌兹别克斯坦/README.md)
+- [哈萨克斯坦](./哈萨克斯坦/README.md)
+- [吉尔吉斯斯坦](./吉尔吉斯斯坦/README.md)
 
 ## 欧洲
 

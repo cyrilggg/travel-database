@@ -413,6 +413,13 @@ if (officialRows.length !== 753 || officialCities.length !== 293) {
 }
 
 const matches = matchCities(officialCities, boundaryCities);
+// GeoNames populated places matched to the four published guide destinations.
+const guideGeoNamesByCode = new Map([
+  ["30608", "1283240"],
+  ["30802", "1282931"],
+  ["30702", "1283617"],
+  ["40504", "1282898"],
+]);
 const outputRows = matches
   .map(({ official, boundary, distance }) => {
     const [longitude, latitude] = representativePoint(boundary.geometry);
@@ -425,7 +432,7 @@ const outputRows = matches
         official.cityLevel === "metropolitan_city"
           ? "capital_metropolitan_city"
           : official.cityLevel,
-      geonamesId: "",
+      geonamesId: guideGeoNamesByCode.get(String(official.llCode)) ?? "",
       longitude: longitude.toFixed(6),
       latitude: latitude.toFixed(6),
       distance,
