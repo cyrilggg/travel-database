@@ -2006,5 +2006,69 @@
     "city": "汉班托塔",
     "country": "LK",
     "geonamesId": "1244926"
+  },
+  {
+    "sourcePath": "destinations/日本/北海道/带广市.md",
+    "mapId": "japan-01207",
+    "guideId": "jp-2128812",
+    "city": "带广市",
+    "country": "JP",
+    "geonamesId": "2128812"
+  },
+  {
+    "sourcePath": "destinations/日本/京都府/宫津市.md",
+    "mapId": "japan-26205",
+    "guideId": "jp-7412197",
+    "city": "宫津市",
+    "country": "JP",
+    "geonamesId": "7412197"
+  },
+  {
+    "sourcePath": "destinations/日本/和歌山县/新宫市.md",
+    "mapId": "japan-30207",
+    "guideId": "jp-1852105",
+    "city": "新宫市",
+    "country": "JP",
+    "geonamesId": "1852105"
+  },
+  {
+    "sourcePath": "destinations/日本/鸟取县/仓吉市.md",
+    "mapId": "japan-31203",
+    "guideId": "jp-7392255",
+    "city": "仓吉市",
+    "country": "JP",
+    "geonamesId": "7392255"
+  },
+  {
+    "sourcePath": "destinations/日本/山口县/萩市.md",
+    "mapId": "japan-35204",
+    "guideId": "jp-1863413",
+    "city": "萩市",
+    "country": "JP",
+    "geonamesId": "1863413"
+  },
+  {
+    "sourcePath": "destinations/日本/长崎县/五岛市.md",
+    "mapId": "japan-42211",
+    "guideId": "jp-7418804",
+    "city": "五岛市",
+    "country": "JP",
+    "geonamesId": "7418804"
+  },
+  {
+    "sourcePath": "destinations/日本/熊本县/天草市.md",
+    "mapId": "japan-43215",
+    "guideId": "jp-1865358",
+    "city": "天草市",
+    "country": "JP",
+    "geonamesId": "1865358"
+  },
+  {
+    "sourcePath": "destinations/日本/鹿儿岛县/指宿市.md",
+    "mapId": "japan-46210",
+    "guideId": "jp-1862007",
+    "city": "指宿市",
+    "country": "JP",
+    "geonamesId": "1862007"
   }
 ]
