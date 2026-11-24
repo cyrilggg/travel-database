@@ -1502,5 +1502,93 @@
     "city": "唐津市",
     "country": "JP",
     "geonamesId": "8300623"
+  },
+  {
+    "sourcePath": "destinations/印度/安得拉邦/蒂鲁伯蒂.md",
+    "mapId": "india-248121",
+    "guideId": "in-1254360",
+    "city": "蒂鲁伯蒂",
+    "country": "IN",
+    "geonamesId": "1254360"
+  },
+  {
+    "sourcePath": "destinations/印度/北阿坎德邦/赫里德瓦尔.md",
+    "mapId": "india-248485",
+    "guideId": "in-1270351",
+    "city": "赫里德瓦尔",
+    "country": "IN",
+    "geonamesId": "1270351"
+  },
+  {
+    "sourcePath": "destinations/印度/拉贾斯坦邦/比卡内尔.md",
+    "mapId": "india-248667",
+    "guideId": "in-1275665",
+    "city": "比卡内尔",
+    "country": "IN",
+    "geonamesId": "1275665"
+  },
+  {
+    "sourcePath": "destinations/印度/中央邦/博帕尔.md",
+    "mapId": "india-250946",
+    "guideId": "in-1275841",
+    "city": "博帕尔",
+    "country": "IN",
+    "geonamesId": "1275841"
+  },
+  {
+    "sourcePath": "destinations/印度/古吉拉特邦/瓦多达拉.md",
+    "mapId": "india-251209",
+    "guideId": "in-1253573",
+    "city": "瓦多达拉",
+    "country": "IN",
+    "geonamesId": "1253573"
+  },
+  {
+    "sourcePath": "destinations/印度/马哈拉施特拉邦/奥兰加巴德.md",
+    "mapId": "india-251428",
+    "guideId": "india-251428",
+    "city": "奥兰加巴德",
+    "country": "IN",
+    "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/印度/果阿邦/帕纳吉.md",
+    "mapId": "india-252071",
+    "guideId": "india-252071",
+    "city": "帕纳吉",
+    "country": "IN",
+    "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/印度/喀拉拉邦/阿拉普扎.md",
+    "mapId": "india-252247",
+    "guideId": "india-252247",
+    "city": "阿拉普扎",
+    "country": "IN",
+    "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/印度/喀拉拉邦/特里凡得琅.md",
+    "mapId": "india-252260",
+    "guideId": "india-252260",
+    "city": "特里凡得琅",
+    "country": "IN",
+    "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/印度/泰米尔纳德邦/蒂鲁吉拉帕利.md",
+    "mapId": "india-252749",
+    "guideId": "in-1254388",
+    "city": "蒂鲁吉拉帕利",
+    "country": "IN",
+    "geonamesId": "1254388"
+  },
+  {
+    "sourcePath": "destinations/印度/卡纳塔克邦/班加罗尔中央区.md",
+    "mapId": "india-305851",
+    "guideId": "india-305851",
+    "city": "班加罗尔中央区",
+    "country": "IN",
+    "geonamesId": null
   }
 ]

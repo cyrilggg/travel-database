@@ -1747,7 +1747,7 @@ IN,MCD,德里,Delhi,reference
 IN,276447,新德里,New Delhi Municipal Council,reference
 IN,252075,比乔利姆,Bicholim,reference
 IN,252100,卡那孔卡,Canacona,phonetic_translation
-IN,252071,潘杰,City Corporation Panaji,phonetic_translation
+IN,252071,帕纳吉,City Corporation Panaji,reference
 IN,252095,丘恩乔利姆,Cuncolim,reference
 IN,252096,库尔查罗,Curchorem Cacora,phonetic_translation
 IN,252061,马普萨,Mapusa,reference
@@ -2121,7 +2121,7 @@ IN,251927,贝拉里,Ballari,reference
 IN,299416,邦格阿拉佩特,Bangarpete,reference
 IN,251864,巴萨瓦卡尔延,Basavakalyan,reference
 IN,251824,贝尔高姆,Belagavi,reference
-IN,305851,班加罗尔中央-加巴,Bengaluru Central City Corporation(Gba),phonetic_translation
+IN,305851,班加罗尔中央区,Bengaluru Central City Corporation(Gba),reference
 IN,305850,班加罗尔东,Bengaluru East City Corporation,phonetic_translation
 IN,305853,班加罗尔北,Bengaluru North City Corporation (Gba),phonetic_translation
 IN,305852,班加罗尔南,Bengaluru South City Corporation (Gba),phonetic_translation
