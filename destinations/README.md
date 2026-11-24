@@ -12,6 +12,7 @@
 - [新加坡](./新加坡/README.md)
 - [泰国](./泰国/README.md)
 - [马来西亚](./马来西亚/README.md)
+- [文莱](./文莱/README.md)
 - [越南](./越南/README.md)
 - [印度尼西亚](./印度尼西亚/README.md)
 - [柬埔寨](./柬埔寨/README.md)
