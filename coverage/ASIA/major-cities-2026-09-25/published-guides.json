@@ -1422,5 +1422,85 @@
     "city": "古晋南区",
     "country": "MY",
     "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/日本/茨城县/水户市.md",
+    "mapId": "japan-08201",
+    "guideId": "jp-2111899",
+    "city": "水户市",
+    "country": "JP",
+    "geonamesId": "2111899"
+  },
+  {
+    "sourcePath": "destinations/日本/栃木县/宇都宫市.md",
+    "mapId": "japan-09201",
+    "guideId": "jp-1849052",
+    "city": "宇都宫市",
+    "country": "JP",
+    "geonamesId": "1849052"
+  },
+  {
+    "sourcePath": "destinations/日本/千叶县/成田市.md",
+    "mapId": "japan-12211",
+    "guideId": "jp-2111683",
+    "city": "成田市",
+    "country": "JP",
+    "geonamesId": "2111683"
+  },
+  {
+    "sourcePath": "destinations/日本/福井县/福井市.md",
+    "mapId": "japan-18201",
+    "guideId": "jp-1863982",
+    "city": "福井市",
+    "country": "JP",
+    "geonamesId": "1863982"
+  },
+  {
+    "sourcePath": "destinations/日本/山梨县/甲府市.md",
+    "mapId": "japan-19201",
+    "guideId": "jp-1859096",
+    "city": "甲府市",
+    "country": "JP",
+    "geonamesId": "1859096"
+  },
+  {
+    "sourcePath": "destinations/日本/三重县/松阪市.md",
+    "mapId": "japan-24204",
+    "guideId": "jp-1857496",
+    "city": "松阪市",
+    "country": "JP",
+    "geonamesId": "1857496"
+  },
+  {
+    "sourcePath": "destinations/日本/滋贺县/长滨市.md",
+    "mapId": "japan-25203",
+    "guideId": "jp-1856237",
+    "city": "长滨市",
+    "country": "JP",
+    "geonamesId": "1856237"
+  },
+  {
+    "sourcePath": "destinations/日本/大阪府/堺市.md",
+    "mapId": "japan-27140",
+    "guideId": "jp-1853167",
+    "city": "堺市",
+    "country": "JP",
+    "geonamesId": "1853167"
+  },
+  {
+    "sourcePath": "destinations/日本/山口县/下关市.md",
+    "mapId": "japan-35201",
+    "guideId": "jp-1852222",
+    "city": "下关市",
+    "country": "JP",
+    "geonamesId": "1852222"
+  },
+  {
+    "sourcePath": "destinations/日本/佐贺县/唐津市.md",
+    "mapId": "japan-41202",
+    "guideId": "jp-8300623",
+    "city": "唐津市",
+    "country": "JP",
+    "geonamesId": "8300623"
   }
 ]
