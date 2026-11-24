@@ -1878,5 +1878,69 @@
     "city": "索龙",
     "country": "ID",
     "geonamesId": "1626542"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/邦阿西楠/阿拉米诺斯.md",
+    "mapId": "philippines-0105503000",
+    "guideId": "ph-1731685",
+    "city": "阿拉米诺斯",
+    "country": "PH",
+    "geonamesId": "1731685"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/黎刹/安蒂波洛.md",
+    "mapId": "philippines-0405802000",
+    "guideId": "ph-1730501",
+    "city": "安蒂波洛",
+    "country": "PH",
+    "geonamesId": "1730501"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/南甘马粦/那牙.md",
+    "mapId": "philippines-0501724000",
+    "guideId": "ph-1698829",
+    "city": "那牙",
+    "country": "PH",
+    "geonamesId": "1698829"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/卡皮斯/罗克斯.md",
+    "mapId": "philippines-0601914000",
+    "guideId": "ph-1691444",
+    "city": "罗克斯",
+    "country": "PH",
+    "geonamesId": "1691444"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/西内格罗斯/锡莱市.md",
+    "mapId": "philippines-1804526000",
+    "guideId": "ph-1686501",
+    "city": "锡莱市",
+    "country": "PH",
+    "geonamesId": "1686501"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/北达沃/萨马尔.md",
+    "mapId": "philippines-1102317000",
+    "guideId": "ph-1690666",
+    "city": "萨马尔",
+    "country": "PH",
+    "geonamesId": "1690666"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/北苏里高/苏里高.md",
+    "mapId": "philippines-1606724000",
+    "guideId": "ph-1685218",
+    "city": "苏里高",
+    "country": "PH",
+    "geonamesId": "1685218"
+  },
+  {
+    "sourcePath": "destinations/菲律宾/北三宝颜/达皮丹.md",
+    "mapId": "philippines-0907201000",
+    "guideId": "ph-1715542",
+    "city": "达皮丹",
+    "country": "PH",
+    "geonamesId": "1715542"
   }
 ]
