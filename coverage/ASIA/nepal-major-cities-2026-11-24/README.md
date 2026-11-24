@@ -22,3 +22,12 @@
 | [昌古纳拉扬](../../../destinations/尼泊尔/巴克塔普尔县/昌古纳拉扬.md) | nepal-30701 | [8010131](https://www.geonames.org/8010131/) |
 | [杜利凯尔](../../../destinations/尼泊尔/卡夫雷帕兰乔克县/杜利凯尔.md) | nepal-30905 | [1283448](https://www.geonames.org/1283448/) |
 | [坦森](../../../destinations/尼泊尔/帕尔帕县/坦森.md) | nepal-50605 | [1282714](https://www.geonames.org/1282714/) |
+
+## 2026-11-24 城市增补
+
+| 城市指南 | 地图 ID | 攻略 ID |
+|---|---|---|
+| [廓尔喀](../../../destinations/尼泊尔/廓尔喀县/廓尔喀.md) | nepal-40109 | nepal-40109 |
+| [帕纳提](../../../destinations/尼泊尔/卡夫雷帕兰乔克县/帕纳提.md) | nepal-30909 | nepal-30909 |
+| [纳摩佛陀](../../../destinations/尼泊尔/卡夫雷帕兰乔克县/纳摩佛陀.md) | nepal-30908 | nepal-30908 |
+| [伊拉姆](../../../destinations/尼泊尔/伊拉姆县/伊拉姆.md) | nepal-11003 | nepal-11003 |

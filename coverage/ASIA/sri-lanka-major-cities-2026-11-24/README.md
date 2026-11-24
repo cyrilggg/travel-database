@@ -24,3 +24,12 @@
 | [马塔拉](../../../destinations/斯里兰卡/马塔拉区/马塔拉.md) | sri-lanka-MATARA | lk-1235846 |
 | [巴提卡洛阿](../../../destinations/斯里兰卡/巴提卡洛阿区/巴提卡洛阿.md) | sri-lanka-BATTICALOA | lk-1250161 |
 | [巴杜勒](../../../destinations/斯里兰卡/巴杜勒区/巴杜勒.md) | sri-lanka-BADULLA | lk-1250615 |
+
+## 2026-11-24 城市增补
+
+| 城市指南 | 地图 ID | 攻略 ID |
+|---|---|---|
+| [卡鲁塔拉](../../../destinations/斯里兰卡/卡鲁塔拉区/卡鲁塔拉.md) | sri-lanka-KALUTARA | lk-1241964 |
+| [马特莱](../../../destinations/斯里兰卡/马特莱区/马特莱.md) | sri-lanka-MATALE | lk-1235855 |
+| [拉特纳普勒](../../../destinations/斯里兰卡/拉特纳普勒区/拉特纳普勒.md) | sri-lanka-RATNAPURA | lk-1228730 |
+| [汉班托塔](../../../destinations/斯里兰卡/汉班托塔区/汉班托塔.md) | sri-lanka-HAMBANTOTA | lk-1244926 |

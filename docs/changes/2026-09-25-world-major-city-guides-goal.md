@@ -418,3 +418,5 @@
 2026-11-24：秘鲁增补八城，当前地图 13 处城市入口均有攻略。世界主要城市目标累计编写 714 篇。见[秘鲁覆盖记录](../../coverage/SOUTH-AMERICA/major-cities-2026-09-25/README.md)。
 
 2026-11-24：哥伦比亚首批八城接入既有地图与全文阅读。世界主要城市目标累计编写 722 篇。见[哥伦比亚覆盖记录](../../coverage/SOUTH-AMERICA/major-cities-2026-09-25/README.md)。
+
+2026-11-24：[尼泊尔](../../coverage/ASIA/nepal-major-cities-2026-11-24/README.md)与[斯里兰卡](../../coverage/ASIA/sri-lanka-major-cities-2026-11-24/README.md)各增四城，地图可读入口分别增至 15 处和 17 处。世界主要城市目标累计编写 730 篇。

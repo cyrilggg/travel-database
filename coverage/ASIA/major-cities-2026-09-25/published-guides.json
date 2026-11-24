@@ -1942,5 +1942,69 @@
     "city": "达皮丹",
     "country": "PH",
     "geonamesId": "1715542"
+  },
+  {
+    "sourcePath": "destinations/尼泊尔/廓尔喀县/廓尔喀.md",
+    "mapId": "nepal-40109",
+    "guideId": "nepal-40109",
+    "city": "廓尔喀",
+    "country": "NP",
+    "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/尼泊尔/卡夫雷帕兰乔克县/帕纳提.md",
+    "mapId": "nepal-30909",
+    "guideId": "nepal-30909",
+    "city": "帕纳提",
+    "country": "NP",
+    "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/尼泊尔/卡夫雷帕兰乔克县/纳摩佛陀.md",
+    "mapId": "nepal-30908",
+    "guideId": "nepal-30908",
+    "city": "纳摩佛陀",
+    "country": "NP",
+    "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/尼泊尔/伊拉姆县/伊拉姆.md",
+    "mapId": "nepal-11003",
+    "guideId": "nepal-11003",
+    "city": "伊拉姆",
+    "country": "NP",
+    "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/斯里兰卡/卡鲁塔拉区/卡鲁塔拉.md",
+    "mapId": "sri-lanka-KALUTARA",
+    "guideId": "lk-1241964",
+    "city": "卡鲁塔拉",
+    "country": "LK",
+    "geonamesId": "1241964"
+  },
+  {
+    "sourcePath": "destinations/斯里兰卡/马特莱区/马特莱.md",
+    "mapId": "sri-lanka-MATALE",
+    "guideId": "lk-1235855",
+    "city": "马特莱",
+    "country": "LK",
+    "geonamesId": "1235855"
+  },
+  {
+    "sourcePath": "destinations/斯里兰卡/拉特纳普勒区/拉特纳普勒.md",
+    "mapId": "sri-lanka-RATNAPURA",
+    "guideId": "lk-1228730",
+    "city": "拉特纳普勒",
+    "country": "LK",
+    "geonamesId": "1228730"
+  },
+  {
+    "sourcePath": "destinations/斯里兰卡/汉班托塔区/汉班托塔.md",
+    "mapId": "sri-lanka-HAMBANTOTA",
+    "guideId": "lk-1244926",
+    "city": "汉班托塔",
+    "country": "LK",
+    "geonamesId": "1244926"
   }
 ]
