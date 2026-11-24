@@ -20,6 +20,7 @@
 - [阿联酋](./阿联酋/README.md)
 - [阿曼](./阿曼/README.md)
 - [约旦](./约旦/README.md)
+- [沙特阿拉伯](./沙特阿拉伯/README.md)
 - [格鲁吉亚](./格鲁吉亚/README.md)
 - [卡塔尔](./卡塔尔/README.md)
 - [巴林](./巴林/README.md)
