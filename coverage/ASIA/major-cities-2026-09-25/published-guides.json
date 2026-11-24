@@ -1590,5 +1590,101 @@
     "city": "班加罗尔中央区",
     "country": "IN",
     "geonamesId": null
+  },
+  {
+    "sourcePath": "destinations/土耳其/伊兹密尔省/切什梅.md",
+    "mapId": "turkey-318755",
+    "guideId": "tr-318755",
+    "city": "切什梅",
+    "country": "TR",
+    "geonamesId": "318755"
+  },
+  {
+    "sourcePath": "destinations/土耳其/伊兹密尔省/贝尔加马.md",
+    "mapId": "turkey-321426",
+    "guideId": "tr-321426",
+    "city": "贝尔加马",
+    "country": "TR",
+    "geonamesId": "321426"
+  },
+  {
+    "sourcePath": "destinations/土耳其/艾登省/库沙达瑟.md",
+    "mapId": "turkey-305359",
+    "guideId": "tr-305359",
+    "city": "库沙达瑟",
+    "country": "TR",
+    "geonamesId": "305359"
+  },
+  {
+    "sourcePath": "destinations/土耳其/穆拉省/马尔马里斯.md",
+    "mapId": "turkey-304782",
+    "guideId": "tr-304782",
+    "city": "马尔马里斯",
+    "country": "TR",
+    "geonamesId": "304782"
+  },
+  {
+    "sourcePath": "destinations/土耳其/安塔利亚省/阿拉尼亚.md",
+    "mapId": "turkey-324190",
+    "guideId": "tr-324190",
+    "city": "阿拉尼亚",
+    "country": "TR",
+    "geonamesId": "324190"
+  },
+  {
+    "sourcePath": "destinations/土耳其/安塔利亚省/卡什.md",
+    "mapId": "turkey-308948",
+    "guideId": "tr-308948",
+    "city": "卡什",
+    "country": "TR",
+    "geonamesId": "308948"
+  },
+  {
+    "sourcePath": "destinations/土耳其/卡拉比克省/萨夫兰博卢.md",
+    "mapId": "turkey-740430",
+    "guideId": "tr-740430",
+    "city": "萨夫兰博卢",
+    "country": "TR",
+    "geonamesId": "740430"
+  },
+  {
+    "sourcePath": "destinations/土耳其/卡尔斯省/卡尔斯.md",
+    "mapId": "turkey-743952",
+    "guideId": "tr-743952",
+    "city": "卡尔斯",
+    "country": "TR",
+    "geonamesId": "743952"
+  },
+  {
+    "sourcePath": "destinations/土耳其/开塞利省/开塞利.md",
+    "mapId": "turkey-308464",
+    "guideId": "tr-308464",
+    "city": "开塞利",
+    "country": "TR",
+    "geonamesId": "308464"
+  },
+  {
+    "sourcePath": "destinations/土耳其/阿马西亚省/阿马西亚.md",
+    "mapId": "turkey-752015",
+    "guideId": "tr-752015",
+    "city": "阿马西亚",
+    "country": "TR",
+    "geonamesId": "752015"
+  },
+  {
+    "sourcePath": "destinations/土耳其/埃斯基谢希尔省/埃斯基谢希尔.md",
+    "mapId": "turkey-315202",
+    "guideId": "tr-315202",
+    "city": "埃斯基谢希尔",
+    "country": "TR",
+    "geonamesId": "315202"
+  },
+  {
+    "sourcePath": "destinations/土耳其/迪亚巴克尔省/迪亚巴克尔.md",
+    "mapId": "turkey-316541",
+    "guideId": "tr-316541",
+    "city": "迪亚巴克尔",
+    "country": "TR",
+    "geonamesId": "316541"
   }
 ]
