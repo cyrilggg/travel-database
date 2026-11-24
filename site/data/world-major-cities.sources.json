@@ -301,7 +301,9 @@
     "1159150481": "萨克拉门托",
     "1159150529": "布法罗",
     "1159151305": "达累斯萨拉姆",
-    "1159151573": "华盛顿"
+    "1159151573": "华盛顿",
+    "1159150849": "圣何塞",
+    "1159150909": "危地马拉城"
   },
   "supplements": [
     {
@@ -376,6 +378,18 @@
       "sourceUrl": "https://www.geonames.org/3067696/prague.html",
       "researchedAt": "2026-09-25",
       "reason": "Prague, Czechia；修正原始关联 4548393，保留 Natural Earth 地图 ID 与坐标。"
+    },
+    "1159150849": {
+      "geonamesId": "3621849",
+      "sourceUrl": "https://www.geonames.org/3621849/san-jose.html",
+      "researchedAt": "2026-11-24",
+      "reason": "对齐本国首都的 GeoNames PPLC 条目，沿用原地图 ID 与坐标。"
+    },
+    "1159150853": {
+      "geonamesId": "3583361",
+      "sourceUrl": "https://www.geonames.org/3583361/san-salvador.html",
+      "researchedAt": "2026-11-24",
+      "reason": "对齐本国首都的 GeoNames PPLC 条目，沿用原地图 ID 与坐标。"
     }
   }
 }
