@@ -966,5 +966,69 @@
     "city": "宫古岛市",
     "country": "JP",
     "geonamesId": "7415819"
+  },
+  {
+    "sourcePath": "destinations/日本/北海道/富良野市.md",
+    "mapId": "japan-01229",
+    "guideId": "jp-2130304",
+    "city": "富良野市",
+    "country": "JP",
+    "geonamesId": "2130304"
+  },
+  {
+    "sourcePath": "destinations/日本/北海道/登别市.md",
+    "mapId": "japan-01230",
+    "guideId": "jp-2128892",
+    "city": "登别市",
+    "country": "JP",
+    "geonamesId": "2128892"
+  },
+  {
+    "sourcePath": "destinations/日本/北海道/钏路市.md",
+    "mapId": "japan-01206",
+    "guideId": "jp-2129370",
+    "city": "钏路市",
+    "country": "JP",
+    "geonamesId": "2129370"
+  },
+  {
+    "sourcePath": "destinations/日本/埼玉县/川越市.md",
+    "mapId": "japan-11201",
+    "guideId": "jp-1859739",
+    "city": "川越市",
+    "country": "JP",
+    "geonamesId": "1859739"
+  },
+  {
+    "sourcePath": "destinations/日本/神奈川县/藤泽市.md",
+    "mapId": "japan-14205",
+    "guideId": "jp-1864091",
+    "city": "藤泽市",
+    "country": "JP",
+    "geonamesId": "1864091"
+  },
+  {
+    "sourcePath": "destinations/日本/静冈县/伊东市.md",
+    "mapId": "japan-22208",
+    "guideId": "jp-8301106",
+    "city": "伊东市",
+    "country": "JP",
+    "geonamesId": "8301106"
+  },
+  {
+    "sourcePath": "destinations/日本/滋贺县/彦根市.md",
+    "mapId": "japan-25202",
+    "guideId": "jp-1862635",
+    "city": "彦根市",
+    "country": "JP",
+    "geonamesId": "1862635"
+  },
+  {
+    "sourcePath": "destinations/日本/大分县/由布市.md",
+    "mapId": "japan-44213",
+    "guideId": "jp-8739980",
+    "city": "由布市",
+    "country": "JP",
+    "geonamesId": "8739980"
   }
 ]
