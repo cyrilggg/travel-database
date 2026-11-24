@@ -2310,5 +2310,69 @@
     "city": "邦加槟港",
     "country": "ID",
     "geonamesId": "1632654"
+  },
+  {
+    "sourcePath": "destinations/日本/埼玉县/秩父市.md",
+    "mapId": "japan-11207",
+    "guideId": "jp-7464121",
+    "city": "秩父市",
+    "country": "JP",
+    "geonamesId": "7464121"
+  },
+  {
+    "sourcePath": "destinations/日本/埼玉县/埼玉市.md",
+    "mapId": "japan-11100",
+    "guideId": "jp-1849187",
+    "city": "埼玉市",
+    "country": "JP",
+    "geonamesId": "1849187"
+  },
+  {
+    "sourcePath": "destinations/日本/栃木县/足利市.md",
+    "mapId": "japan-09202",
+    "guideId": "jp-1865004",
+    "city": "足利市",
+    "country": "JP",
+    "geonamesId": "1865004"
+  },
+  {
+    "sourcePath": "destinations/日本/群马县/高崎市.md",
+    "mapId": "japan-10202",
+    "guideId": "jp-1850994",
+    "city": "高崎市",
+    "country": "JP",
+    "geonamesId": "1850994"
+  },
+  {
+    "sourcePath": "destinations/日本/群马县/富冈市.md",
+    "mapId": "japan-10210",
+    "guideId": "jp-1850090",
+    "city": "富冈市",
+    "country": "JP",
+    "geonamesId": "1850090"
+  },
+  {
+    "sourcePath": "destinations/日本/千叶县/铫子市.md",
+    "mapId": "japan-12202",
+    "guideId": "jp-2112994",
+    "city": "铫子市",
+    "country": "JP",
+    "geonamesId": "2112994"
+  },
+  {
+    "sourcePath": "destinations/日本/千叶县/馆山市.md",
+    "mapId": "japan-12205",
+    "guideId": "jp-1850520",
+    "city": "馆山市",
+    "country": "JP",
+    "geonamesId": "1850520"
+  },
+  {
+    "sourcePath": "destinations/日本/茨城县/常陆那珂市.md",
+    "mapId": "japan-08221",
+    "guideId": "jp-8304033",
+    "city": "常陆那珂市",
+    "country": "JP",
+    "geonamesId": "8304033"
   }
 ]
